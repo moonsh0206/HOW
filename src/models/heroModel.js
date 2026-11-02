@@ -19,7 +19,7 @@ export function normalizeHeroes(data) {
 }
 
 export function createHeroModel(favorites = []) {
-  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'meta-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS }, previousSnapshot: null, snapshotStatus: 'idle', snapshotError: '' };
+  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'tier-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS }, previousSnapshot: null, snapshotStatus: 'idle', snapshotError: '' };
   const enriched = () => {
     // Production Service always supplies cohort metadata. Never score a different cohort.
     const matches = state.statistics?.filters && statisticsQuery(state.statistics.filters) === statisticsQuery(state.statsFilters);
@@ -33,12 +33,18 @@ export function createHeroModel(favorites = []) {
       const query = state.query.trim().normalize('NFKC').toLocaleLowerCase('ko');
       return enriched().filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
         .sort((a, b) => {
-          if (state.sort === 'meta-desc') {
+          if (state.sort === 'tier-desc') {
+            const order = ['S', 'A', 'B', 'C', 'D'];
+            const tierOrder = hero => order.includes(hero.tier) ? order.indexOf(hero.tier) : order.length;
+            const difference = tierOrder(a) - tierOrder(b);
+            if (difference) return difference;
+          }
+          if (state.sort === 'meta-desc' || state.sort === 'tier-desc') {
             if (a.metaScore == null && b.metaScore != null) return 1;
             if (b.metaScore == null && a.metaScore != null) return -1;
             if (a.metaScore !== b.metaScore) return b.metaScore - a.metaScore;
           }
-          const field = state.sort === 'winrate-desc' ? 'winRate' : state.sort === 'pickrate-desc' ? 'pickRate' : null;
+          const field = state.sort === 'winrate-desc' ? 'winRate' : state.sort === 'pickrate-desc' ? 'pickRate' : state.sort === 'banrate-desc' ? 'banRate' : null;
           if (field) {
             const av = a.statistics?.[field], bv = b.statistics?.[field];
             if (av != null || bv != null) {

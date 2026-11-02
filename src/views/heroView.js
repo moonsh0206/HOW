@@ -81,6 +81,7 @@ export function createHeroView() {
     render(model) {
       const { state } = model;
       const heroes = model.visibleHeroes();
+      document.querySelector('#sort').value = state.sort;
       document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 메타 티어';
       document.querySelector('#meta-formula').textContent = formulaText();
       document.querySelector('#stats-mode').value = state.statsFilters.gamemode;

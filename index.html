@@ -52,7 +52,7 @@
             </div>
             <label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">영웅 이름 검색</span><input id="hero-search" type="search" placeholder="영웅 이름 검색" autocomplete="off"></label>
           </div>
-          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="meta-desc">메타 점수순</option><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
+          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="tier-desc">기본 (HOW 티어순)</option><option value="meta-desc">Meta Score 높은순</option><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="banrate-desc">밴률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
           <div id="data-state" class="data-state" role="status" aria-live="polite"></div>
           <div id="table-wrap" class="table-wrap" hidden>
             <table><caption class="sr-only">영웅별 승률·픽률·밴률과 역할별 승률·픽률·밴률 백분위 기반 HOW 메타 티어. 결측값은 미제공.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
