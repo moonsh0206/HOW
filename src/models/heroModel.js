@@ -1,3 +1,5 @@
+import { attachRoleTiers } from '../domain/tier.js';
+import { DEFAULT_FILTERS } from './statisticsModel.js';
 export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
 
 export function safeImage(value) {
@@ -17,13 +19,27 @@ export function normalizeHeroes(data) {
 }
 
 export function createHeroModel(favorites = []) {
-  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'name-asc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null };
+  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'winrate-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS } };
+  const enriched = () => attachRoleTiers(state.heroes, state.statistics?.records ?? []);
   return {
     state,
+    enrichedHeroes: enriched,
+    heroByKey(key) { return enriched().find(hero => hero.key === key); },
     visibleHeroes() {
       const query = state.query.trim().normalize('NFKC').toLocaleLowerCase('ko');
-      return state.heroes.filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
-        .sort((a, b) => a.name.localeCompare(b.name, 'ko') * (state.sort === 'name-desc' ? -1 : 1));
+      return enriched().filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
+        .sort((a, b) => {
+          const field = state.sort === 'winrate-desc' ? 'winRate' : state.sort === 'pickrate-desc' ? 'pickRate' : null;
+          if (field) {
+            const av = a.statistics?.[field], bv = b.statistics?.[field];
+            if (av != null || bv != null) {
+              if (av == null) return 1;
+              if (bv == null) return -1;
+              if (av !== bv) return bv - av;
+            }
+          }
+          return a.name.localeCompare(b.name, 'ko') * (state.sort === 'name-desc' ? -1 : 1) || a.key.localeCompare(b.key, 'en');
+        });
     },
   };
 }

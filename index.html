@@ -29,32 +29,41 @@
       <span class="banner-caption">HUB OVERWATCH <span> / HERO DIRECTORY</span></span>
     </section>
     <div class="page-shell">
-      <div class="section-heading"><div><p class="eyebrow">THE HERO ROSTER</p><h2 id="list-title">영웅 탐색<span id="result-count">—</span></h2></div><span class="directory-label">영웅 정보 공개 · 통계 연동 준비 중</span></div>
+      <div class="section-heading"><div><p class="eyebrow">THE HERO ROSTER</p><h2 id="list-title">영웅 티어리스트<span id="result-count">—</span></h2></div><span class="directory-label">실제 통계 · HOW 자체 산정 티어</span></div>
       <div class="workspace">
         <section id="heroes" class="roster-panel" aria-labelledby="list-title"><span id="favorites" aria-hidden="true"></span>
+          <div id="statistics-filters" class="statistics-filters" role="group" aria-label="통계 조회 조건">
+            <span class="fixed-filter">PC · 전체 전장</span>
+            <label>모드<select id="stats-mode" data-stats-filter="gamemode"></select></label>
+            <label>지역<select id="stats-region" data-stats-filter="region"></select></label>
+            <label>경쟁전 등급<select id="stats-division" data-stats-filter="division"></select></label>
+          </div>
+          <div class="statistics-notice"><p id="stats-status" role="status" aria-live="polite">통계 연결 준비 중</p><button data-action="stats-refresh">통계 확인</button></div>
           <div class="toolbar">
             <div class="role-filters" role="group" aria-label="역할 필터">
               <button data-role="all" aria-pressed="true">전체</button><button data-role="tank" aria-pressed="false">돌격</button><button data-role="damage" aria-pressed="false">공격</button><button data-role="support" aria-pressed="false">지원</button>
             </div>
             <label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">영웅 이름 검색</span><input id="hero-search" type="search" placeholder="영웅 이름 검색" autocomplete="off"></label>
           </div>
-          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
+          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
           <div id="data-state" class="data-state" role="status" aria-live="polite"></div>
           <div id="table-wrap" class="table-wrap" hidden>
-            <table><caption class="sr-only">영웅 목록. 승률과 픽률 및 티어는 아직 제공되지 않습니다.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
+            <table><caption class="sr-only">영웅별 승률·픽률·밴률과 역할 내 승률 기준 HOW 자체 티어. 결측값은 미제공.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
+            <ul id="hero-cards" class="hero-cards" aria-label="영웅 목록"></ul>
           </div>
           <div class="source-bar"><span><span class="source-dot"></span> 영웅 정보 · <a href="https://overfast-api.tekrop.fr/" target="_blank" rel="noreferrer">OverFast API ↗</a></span><span id="updated-at">마지막 조회 —</span></div>
+          <div class="stats-provenance"><p id="stats-cohort"></p><p id="stats-timestamp"></p><p>통계 원본 집계 시각·표본 수: API 미제공. 픽률을 표본 수나 신뢰도로 환산하지 않습니다.</p></div>
         </section>
         <aside class="sidebar">
           <section class="info-card favorites-card"><p class="eyebrow">YOUR COLLECTION</p><h3>내 즐겨찾기 <span aria-hidden="true">☆</span></h3><p>자주 찾는 영웅을 가까이에.</p><div id="favorite-preview"></div><a href="#favorites" class="text-link">즐겨찾기 모두 보기 <span aria-hidden="true">→</span></a><small>이 브라우저에 저장됩니다. 계정 동기화는 지원하지 않습니다.</small></section>
-          <section class="info-card"><p class="eyebrow blue">DATA TRANSPARENCY</p><h3>숫자보다 중요한 신뢰</h3><p>현재는 영웅 정보를 제공합니다. 검증된 통계가 연결되기 전까지 승률·픽률·티어를 표시하지 않습니다.</p><div class="tier-legend" aria-label="향후 제공할 티어 등급"><span class="tier-s">S</span><span class="tier-a">A</span><span class="tier-b">B</span><span class="tier-c">C</span><span class="tier-d">D</span></div><small>등급 안내용 예시 · 영웅에게 부여된 등급이 아닙니다.</small></section>
+          <section class="info-card"><p class="eyebrow blue">DATA TRANSPARENCY</p><h3>역할별로 비교하는 티어</h3><p>OverFast 승률 기준 HOW 자체 산정입니다. 같은 역할 안에서 S 15%, A 30%, B 50%, C 75%까지 누적 경계를 올림합니다. 동률은 같은 순위·티어를 받습니다.</p><div class="tier-legend" aria-label="HOW 티어 등급"><span class="tier-s">S</span><span class="tier-a">A</span><span class="tier-b">B</span><span class="tier-c">C</span><span class="tier-d">D</span></div><small>공식 등급이 아닙니다. 동률·소규모 그룹에서는 등급별 비율이 달라질 수 있습니다. 통계 누락 영웅은 미분류입니다.</small></section>
           <section class="future-card"><span class="eyebrow">COMING NEXT</span><h3>나의 플레이를 더 깊이.</h3><p>플레이어 전적 검색은 개발 예정입니다.</p><span class="planned">개발 예정</span></section>
         </aside>
       </div>
     </div>
   </main>
   <footer><a class="brand" href="#">H<span>O</span>W</a><p>HUB OVERWATCH · 독립 팬 프로젝트<br>Overwatch 및 관련 이미지의 권리는 Blizzard Entertainment에 있습니다.</p><span>PLAY WITH INSIGHT.</span></footer>
-  <dialog id="hero-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span class="eyebrow">HERO PROFILE</span><button id="close-detail" aria-label="영웅 정보 닫기">✕</button></div><div id="detail-content"></div><p class="dialog-note">기술·통계가 포함된 전체 상세 페이지는 확장 예정입니다.</p></dialog>
+  <dialog id="hero-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span class="eyebrow">HERO PROFILE</span><button id="close-detail" aria-label="영웅 정보 닫기">✕</button></div><div id="detail-content"></div><p class="dialog-note">티어는 역할 내 승률 기준 HOW 자체 산정입니다. 기술 전체 상세 페이지는 확장 예정입니다.</p></dialog>
   <p id="storage-notice" class="toast" role="status" hidden></p>
   <script type="module" src="/src/main.js"></script>
 </body>
