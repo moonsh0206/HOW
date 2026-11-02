@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { pagesBase } from './pages-base.js';
+import { normalizeSnapshot } from '../src/models/snapshotModel.js';
+import { statisticsQuery } from '../src/models/statisticsModel.js';
 
 const base = pagesBase(process.env.VITE_BASE_PATH);
 const root = path.resolve('dist');
@@ -27,8 +29,22 @@ for (const ref of references) {
   local.add(ref);
 }
 assert([...local].some(ref => ref.endsWith('/hero-banner.jpg')), 'Banner URL not found in built CSS');
-const allowed = new Set(['index.html', 'assets']);
+const allowed = new Set(['index.html', 'assets', 'data']);
 assert((await readdir(root)).every(file => allowed.has(file)), 'Unexpected file in dist (possible private document)');
+const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));
+assert.equal(manifest.schemaVersion, 1);
+assert.deepEqual(await readdir(path.join(root, 'data')), ['snapshots']);
+const snapshotFiles = new Set(['index.json']);
+local.add(`${base}data/snapshots/index.json`);
+for (const entry of manifest.snapshots) {
+  assert(/^\d{4}-\d{2}-\d{2}T[\dZ.-]+\.json$/.test(entry.file), 'Invalid snapshot file path');
+  assert((await stat(path.join(root, 'data/snapshots', entry.file))).isFile(), 'Snapshot file missing');
+  const snapshot = normalizeSnapshot(JSON.parse(await readFile(path.join(root, 'data/snapshots', entry.file), 'utf8')));
+  assert.equal(snapshot.collectedAt, entry.collectedAt);
+  assert.equal(statisticsQuery(snapshot.filters), statisticsQuery(entry.filters));
+  snapshotFiles.add(entry.file); local.add(`${base}data/snapshots/${entry.file}`);
+}
+assert((await readdir(path.join(root, 'data/snapshots'))).every(file => snapshotFiles.has(file)), 'Unexpected file in snapshot output');
 const httpOrigin = process.argv[2];
 if (httpOrigin) {
   const origin = new URL(httpOrigin);
@@ -40,6 +56,7 @@ if (httpOrigin) {
     if (ref.endsWith('.js')) assert(/javascript/.test(type), 'JS returned fallback HTML');
     if (ref.endsWith('.css')) assert(/text\/css/.test(type), 'CSS returned fallback HTML');
     if (ref.endsWith('.jpg')) assert(/image\/jpeg/.test(type), 'Image returned fallback HTML');
+    if (ref.endsWith('.json')) assert(/application\/json/.test(type), 'Snapshot returned fallback HTML');
   }
 }
 console.log(`Pages assets verified: base=${base}, ${local.size} local assets${httpOrigin ? ', HTTP responses and MIME types verified' : ''}.`);

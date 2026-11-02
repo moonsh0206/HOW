@@ -130,3 +130,5 @@ html.detail-open{overflow:hidden}
   .site-header nav{font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.tier-badge[data-tier],button.unavailable[data-tier]{cursor:pointer;min-height:44px;min-width:44px;border:1px solid currentColor}.tier-reason-dialog{box-sizing:border-box;width:min(680px,calc(100% - 24px));max-height:85dvh;overflow:auto;background:#151e2d;color:#edf0f5;border:1px solid #64748b;border-radius:16px;padding:24px;line-height:1.7}.tier-reason-dialog::backdrop{background:#050912cc}.tier-reason-dialog button{min-height:44px;padding:8px 20px;background:#f99e1a;color:#111827;border:0;border-radius:8px}

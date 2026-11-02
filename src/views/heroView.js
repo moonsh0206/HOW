@@ -1,13 +1,7 @@
 import { ROLES } from '../models/heroModel.js';
-import { MODES, REGIONS, DIVISIONS, filterLabel } from '../models/statisticsModel.js';
-
-const METRICS = [['tier', '티어'], ['winRate', '승률'], ['pickRate', '픽률'], ['banRate', '밴률']];
-function metricValue(hero, field) {
-  return field === 'tier' ? hero.tier ?? '미분류' : hero.statistics?.[field] == null ? '미제공' : `${hero.statistics[field].toFixed(1)}%`;
-}
-function metricClass(hero, field) {
-  return field === 'tier' && hero.tier ? `tier-badge tier-${hero.tier.toLowerCase()}` : field === 'tier' || hero.statistics?.[field] == null ? 'unavailable' : 'metric-value';
-}
+import { MODES, REGIONS, DIVISIONS, DIVISION_GROUPS, filterLabel } from '../models/statisticsModel.js';
+import { METRICS, metricValue, metricClass } from './statisticsUI.js';
+import { tierButton, showTierReason, formulaText } from './tierReasonView.js';
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -37,9 +31,10 @@ function heroIdentity(hero, { card = false } = {}) {
   button.dataset.hero = hero.key;
   const text = element('span', undefined, 'hero-name');
   text.append(element('strong', hero.name), element('small', hero.key.toUpperCase()));
+  if (hero.metaScore != null) text.append(element('small', `META ${hero.metaScore.toFixed(1)}${hero.lowPick ? ' · 낮은 픽률 주의' : ''}`, 'meta-hint'));
   if (card) text.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
   button.append(portrait(hero), text);
-  button.setAttribute('aria-label', `${hero.name} 기본 정보 보기`);
+  button.setAttribute('aria-label', `${hero.name} 상세 페이지 보기`);
   return button;
 }
 
@@ -51,7 +46,7 @@ export function createHeroCard(hero, favorites) {
   const stats = element('dl', undefined, 'hero-card-stats');
   for (const [field, label] of METRICS) {
     const metric = element('div');
-    metric.append(element('dt', label), element('dd', metricValue(hero, field), metricClass(hero, field)));
+    metric.append(element('dt', label), metricCell(hero, field));
     stats.append(metric);
   }
   card.append(header, stats);
@@ -63,9 +58,15 @@ export function createHeroView() {
   const dialog = document.querySelector('#hero-dialog');
   let detailKey;
   dialog.addEventListener('close', () => document.documentElement.classList.remove('detail-open'));
-  for (const [id, choices] of [['#stats-mode', MODES], ['#stats-region', REGIONS], ['#stats-division', DIVISIONS]]) {
+  for (const [id, choices] of [['#stats-mode', MODES], ['#stats-region', REGIONS]]) {
     const select = document.querySelector(id);
     for (const [value, label] of Object.entries(choices)) { const option = element('option', label); option.value = value; select.append(option); }
+  }
+  const divisions = document.querySelector('#stats-division');
+  for (const group of DIVISION_GROUPS) {
+    const optgroup = element('optgroup'); optgroup.label = group.label;
+    for (const key of group.keys) { const option = element('option', DIVISIONS[key]); option.value = key; optgroup.append(option); }
+    divisions.append(optgroup);
   }
   function renderDetailStatistics(hero, state) {
     let summary = document.querySelector('#detail-statistics');
@@ -80,7 +81,8 @@ export function createHeroView() {
     render(model) {
       const { state } = model;
       const heroes = model.visibleHeroes();
-      document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 티어리스트';
+      document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 메타 티어';
+      document.querySelector('#meta-formula').textContent = formulaText();
       document.querySelector('#stats-mode').value = state.statsFilters.gamemode;
       document.querySelector('#stats-region').value = state.statsFilters.region;
       document.querySelector('#stats-division').value = state.statsFilters.division;
@@ -88,8 +90,11 @@ export function createHeroView() {
       const statsMessage = document.querySelector('#stats-status');
       const hasStats = state.statistics?.records.length > 0;
       const stale = state.statistics?.stale || state.statsStatus === 'error' && hasStats;
+      document.querySelector('#active-cohort').textContent = filterLabel(state.statsFilters);
+      document.querySelector('#active-cohort-freshness').textContent = `출처: OverFast API · ${state.statsStatus === 'loading' ? '현재 조건 조회 중' : state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' · 오래된 통계' : ''}` : '현재 조건의 성공한 통계 조회 없음'} · 원본 집계 시각 미제공`;
+      document.querySelector('#rank-help').textContent = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전에서는 경쟁전 등급을 적용하지 않습니다.' : `${DIVISION_GROUPS.find(group => group.keys.includes(state.statsFilters.division)).label} · 선택한 개별 API 등급만 사용합니다. grandmaster는 공식 스키마상 챔피언을 포함하며 챔피언 단독 필터는 제공하지 않습니다.`;
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;
-      statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할 내 승률 기준 HOW 자체 티어' : '통계 연결 대기 중';
+      statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어' : '통계 연결 대기 중';
       document.querySelector('[data-action="stats-refresh"]').disabled = state.statsStatus === 'loading';
       document.querySelector('#stats-cohort').textContent = `통계 출처: OverFast API · ${filterLabel(state.statsFilters)}`;
       document.querySelector('#stats-timestamp').textContent = state.statistics ? `HOW 통계 조회: ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' (오래됨)' : ''} · 최대 1시간 캐시` : 'HOW 통계 조회: 아직 성공한 조회 없음';
@@ -121,13 +126,13 @@ export function createHeroView() {
         identity.append(heroIdentity(hero));
         const role = element('td'); role.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
         row.append(identity, role);
-        for (const [field, label] of METRICS) { const cell = element('td'); const value = metricValue(hero, field); cell.append(element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
+        for (const [field, label] of METRICS) { const cell = element('td'); const value = metricValue(hero, field); cell.append(field === 'tier' ? tierButton(hero) : element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
         const favoriteCell = element('td');
         favoriteCell.append(favoriteButton(hero, state.favorites)); row.append(favoriteCell); fragment.append(row);
         cardFragment.append(createHeroCard(hero, state.favorites));
       }
       const focused = document.activeElement;
-      const active = focused?.dataset.favorite;
+      const active = rows.contains(focused) || cards.contains(focused) ? focused?.dataset.favorite : undefined;
       const focusRegion = focused?.closest('#hero-cards') ? cards : rows;
       const focusIndex = [...focusRegion.querySelectorAll('[data-favorite]')].indexOf(focused);
       rows.replaceChildren(fragment);
@@ -144,6 +149,8 @@ export function createHeroView() {
       }
       if (!favorites.length) preview.append(element('p', state.status === 'loading' ? '목록을 불러오는 중입니다.' : '영웅 옆의 ☆을 눌러 저장하세요.', 'favorite-empty'));
     },
+    showTierReason,
+    closeTierReason() { document.querySelector('#tier-reason-dialog')?.close(); },
     showDetail(hero, state) {
       detailKey = hero.key;
       const content = document.querySelector('#detail-content'); content.replaceChildren(portrait(hero));
@@ -157,3 +164,5 @@ export function createHeroView() {
     notify(message) { const notice = document.querySelector('#storage-notice'); notice.textContent = message; notice.hidden = false; },
   };
 }
+
+function metricCell(hero, field) { const cell = element('dd'); cell.append(field === 'tier' ? tierButton(hero) : element('span', metricValue(hero, field), metricClass(hero, field))); return cell; }

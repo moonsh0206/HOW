@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "snapshots": [
+    {
+      "file": "2026-11-02T05-36-24.500Z.json",
+      "collectedAt": "2026-11-02T05:36:24.500Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "all",
+        "map": "all"
+      }
+    }
+  ]
+}

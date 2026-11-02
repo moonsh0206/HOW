@@ -1,5 +1,5 @@
-import { attachRoleTiers } from '../domain/tier.js';
-import { DEFAULT_FILTERS } from './statisticsModel.js';
+import { attachMetaTiers } from '../domain/meta.js';
+import { DEFAULT_FILTERS, statisticsQuery } from './statisticsModel.js';
 export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
 
 export function safeImage(value) {
@@ -19,8 +19,12 @@ export function normalizeHeroes(data) {
 }
 
 export function createHeroModel(favorites = []) {
-  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'winrate-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS } };
-  const enriched = () => attachRoleTiers(state.heroes, state.statistics?.records ?? []);
+  const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'meta-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS }, previousSnapshot: null, snapshotStatus: 'idle', snapshotError: '' };
+  const enriched = () => {
+    // Production Service always supplies cohort metadata. Never score a different cohort.
+    const matches = state.statistics?.filters && statisticsQuery(state.statistics.filters) === statisticsQuery(state.statsFilters);
+    return attachMetaTiers(state.heroes, matches ? state.statistics?.records ?? [] : []);
+  };
   return {
     state,
     enrichedHeroes: enriched,
@@ -29,6 +33,11 @@ export function createHeroModel(favorites = []) {
       const query = state.query.trim().normalize('NFKC').toLocaleLowerCase('ko');
       return enriched().filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
         .sort((a, b) => {
+          if (state.sort === 'meta-desc') {
+            if (a.metaScore == null && b.metaScore != null) return 1;
+            if (b.metaScore == null && a.metaScore != null) return -1;
+            if (a.metaScore !== b.metaScore) return b.metaScore - a.metaScore;
+          }
           const field = state.sort === 'winrate-desc' ? 'winRate' : state.sort === 'pickrate-desc' ? 'pickRate' : null;
           if (field) {
             const av = a.statistics?.[field], bv = b.statistics?.[field];

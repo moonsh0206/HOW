@@ -19,6 +19,7 @@
     <span class="header-tag">INFORMATION HUB <b> / 01</b></span>
   </header>
   <main>
+    <div id="list-page">
     <section class="hero-banner" aria-labelledby="hero-title">
       <div class="banner-content">
         <p class="eyebrow"><span></span> KNOW YOUR HERO. FIND YOUR EDGE.</p>
@@ -29,15 +30,21 @@
       <span class="banner-caption">HUB OVERWATCH <span> / HERO DIRECTORY</span></span>
     </section>
     <div class="page-shell">
+      <section class="cohort-banner" aria-labelledby="active-cohort"><p class="eyebrow">YOUR COMPETITIVE META</p><h2 id="active-cohort">아시아 / PC / 경쟁전 / 다이아몬드 / 전체 전장</h2><p id="active-cohort-freshness">현재 조회 조건을 확인하고 있습니다.</p><p>아시아 지역 통계이며 한국 전용 통계가 아닙니다. 다른 지역·등급의 통계를 합산하지 않습니다.</p>
+        <div id="statistics-filters" class="statistics-filters" role="group" aria-label="통계 조회 조건">
+          <span class="fixed-filter">PC · 전체 전장</span>
+          <label>모드<select id="stats-mode" data-stats-filter="gamemode"></select></label>
+          <label>지역<select id="stats-region" data-stats-filter="region"></select></label>
+          <label>경쟁전 등급<select id="stats-division" data-stats-filter="division" aria-describedby="rank-help"></select></label>
+        </div>
+        <p id="rank-help" class="rank-help">등급 그룹은 탐색용 분류이며 선택한 개별 등급만 요청합니다.</p>
+        <a class="text-link cohort-jump" href="#heroes">현재 등급의 티어리스트 보기 ↓</a>
+      </section>
+      <section class="meta-insights" aria-labelledby="insights-heading"><div class="section-heading"><div><p class="eyebrow">META INTELLIGENCE</p><h2 id="insights-heading">지금 주목할 영웅</h2></div></div><p id="insight-cohort" class="insight-cohort"></p><div class="insight-grid"><article class="insight-panel"><p class="eyebrow">HOT / MOMENTUM</p><h3>상승하는 선택</h3><div id="hot-content"><p>이전 실제 통계가 없어 추세 미제공</p></div></article><article class="insight-panel gems-panel"><p class="eyebrow">HIDDEN PICKS</p><h3>숨은 선택 후보</h3><div id="gems-content"><p>현재 실제 통계 확인 중</p></div></article></div><div class="classification-grid"><article class="insight-panel"><p class="eyebrow">HIGH WIN RATE</p><h3>높은 승률</h3><div data-category="highWinRate"></div></article><article class="insight-panel"><p class="eyebrow">POPULAR PICKS</p><h3>많이 선택되는 영웅</h3><div data-category="popularPicks"></div></article><article class="insight-panel"><p class="eyebrow">CONTESTED PICKS</p><h3>높은 밴률</h3><p class="classification-note">밴률은 보조 영향력 지표로 메타 점수의 10%를 차지합니다. 성능의 직접 증거는 아닙니다.</p><div data-category="contestedPicks"></div></article></div></section>
+      <details class="meta-method"><summary>HOW 메타 점수는 어떻게 계산하나요?</summary><p id="meta-formula"></p><p>같은 역할의 완전한 승률·픽률·밴률을 가진 영웅끼리 백분위를 계산합니다. 평균 동률 순위를 0~100으로 변환하고 가중합합니다. 메타 점수 동률은 같은 순위·티어를 받으며, S/A/B/C는 누적 15/30/50/75% 인원 경계를 올림합니다.</p><p>픽률은 인기 지표이며 전투 성능의 직접적인 증거가 아닙니다. 픽률 1% 미만에는 주의를 표시하지만 통계적 신뢰도로 환산하지 않습니다. 표본 수·집계 기간이 없어 유의성·신뢰구간을 제공하지 않습니다. 공식 게임 등급이 아닌 HOW의 탐색용 상대평가입니다.</p></details>
       <div class="section-heading"><div><p class="eyebrow">THE HERO ROSTER</p><h2 id="list-title">영웅 티어리스트<span id="result-count">—</span></h2></div><span class="directory-label">실제 통계 · HOW 자체 산정 티어</span></div>
       <div class="workspace">
         <section id="heroes" class="roster-panel" aria-labelledby="list-title"><span id="favorites" aria-hidden="true"></span>
-          <div id="statistics-filters" class="statistics-filters" role="group" aria-label="통계 조회 조건">
-            <span class="fixed-filter">PC · 전체 전장</span>
-            <label>모드<select id="stats-mode" data-stats-filter="gamemode"></select></label>
-            <label>지역<select id="stats-region" data-stats-filter="region"></select></label>
-            <label>경쟁전 등급<select id="stats-division" data-stats-filter="division"></select></label>
-          </div>
           <div class="statistics-notice"><p id="stats-status" role="status" aria-live="polite">통계 연결 준비 중</p><button data-action="stats-refresh">통계 확인</button></div>
           <div class="toolbar">
             <div class="role-filters" role="group" aria-label="역할 필터">
@@ -45,10 +52,10 @@
             </div>
             <label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">영웅 이름 검색</span><input id="hero-search" type="search" placeholder="영웅 이름 검색" autocomplete="off"></label>
           </div>
-          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
+          <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="meta-desc">메타 점수순</option><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div>
           <div id="data-state" class="data-state" role="status" aria-live="polite"></div>
           <div id="table-wrap" class="table-wrap" hidden>
-            <table><caption class="sr-only">영웅별 승률·픽률·밴률과 역할 내 승률 기준 HOW 자체 티어. 결측값은 미제공.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
+            <table><caption class="sr-only">영웅별 승률·픽률·밴률과 역할별 승률·픽률·밴률 백분위 기반 HOW 메타 티어. 결측값은 미제공.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
             <ul id="hero-cards" class="hero-cards" aria-label="영웅 목록"></ul>
           </div>
           <div class="source-bar"><span><span class="source-dot"></span> 영웅 정보 · <a href="https://overfast-api.tekrop.fr/" target="_blank" rel="noreferrer">OverFast API ↗</a></span><span id="updated-at">마지막 조회 —</span></div>
@@ -56,14 +63,17 @@
         </section>
         <aside class="sidebar">
           <section class="info-card favorites-card"><p class="eyebrow">YOUR COLLECTION</p><h3>내 즐겨찾기 <span aria-hidden="true">☆</span></h3><p>자주 찾는 영웅을 가까이에.</p><div id="favorite-preview"></div><a href="#favorites" class="text-link">즐겨찾기 모두 보기 <span aria-hidden="true">→</span></a><small>이 브라우저에 저장됩니다. 계정 동기화는 지원하지 않습니다.</small></section>
-          <section class="info-card"><p class="eyebrow blue">DATA TRANSPARENCY</p><h3>역할별로 비교하는 티어</h3><p>OverFast 승률 기준 HOW 자체 산정입니다. 같은 역할 안에서 S 15%, A 30%, B 50%, C 75%까지 누적 경계를 올림합니다. 동률은 같은 순위·티어를 받습니다.</p><div class="tier-legend" aria-label="HOW 티어 등급"><span class="tier-s">S</span><span class="tier-a">A</span><span class="tier-b">B</span><span class="tier-c">C</span><span class="tier-d">D</span></div><small>공식 등급이 아닙니다. 동률·소규모 그룹에서는 등급별 비율이 달라질 수 있습니다. 통계 누락 영웅은 미분류입니다.</small></section>
+          <section class="info-card"><p class="eyebrow blue">DATA TRANSPARENCY</p><h3>성능과 인기를 함께</h3><p>역할 내 승률·픽률·밴률 백분위 65:25:10 메타 점수를 사용합니다. S 15%, A 30%, B 50%, C 75% 누적 경계를 올림하며, 점수 동률은 같은 순위·티어입니다.</p><div class="tier-legend" aria-label="HOW 티어 등급"><span class="tier-s">S</span><span class="tier-a">A</span><span class="tier-b">B</span><span class="tier-c">C</span><span class="tier-d">D</span></div><small>공식 등급이 아닙니다. 픽률은 인기 지표이며 표본 수나 신뢰도를 뜻하지 않습니다. 세 비율 중 하나라도 없으면 미분류입니다. S는 최소 승률·채용 조건을 충족해야 하며 등급을 누르면 근거를 확인할 수 있습니다.</small></section>
           <section class="future-card"><span class="eyebrow">COMING NEXT</span><h3>나의 플레이를 더 깊이.</h3><p>플레이어 전적 검색은 개발 예정입니다.</p><span class="planned">개발 예정</span></section>
         </aside>
       </div>
     </div>
+    </div>
+    <section id="hero-detail-page" class="page-shell hero-detail-page" aria-label="영웅 상세" hidden></section>
+    <section id="route-not-found" class="page-shell data-state" hidden><h1>페이지를 찾을 수 없습니다</h1><a class="primary-button" href="#heroes">영웅 목록으로</a></section>
   </main>
   <footer><a class="brand" href="#">H<span>O</span>W</a><p>HUB OVERWATCH · 독립 팬 프로젝트<br>Overwatch 및 관련 이미지의 권리는 Blizzard Entertainment에 있습니다.</p><span>PLAY WITH INSIGHT.</span></footer>
-  <dialog id="hero-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span class="eyebrow">HERO PROFILE</span><button id="close-detail" aria-label="영웅 정보 닫기">✕</button></div><div id="detail-content"></div><p class="dialog-note">티어는 역할 내 승률 기준 HOW 자체 산정입니다. 기술 전체 상세 페이지는 확장 예정입니다.</p></dialog>
+  <dialog id="hero-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span class="eyebrow">HERO PROFILE</span><button id="close-detail" aria-label="영웅 정보 닫기">✕</button></div><div id="detail-content"></div><p class="dialog-note">HOW 자체 종합 메타 티어입니다. 영웅 이름을 누르면 기술·특전 상세 페이지로 이동합니다.</p></dialog>
   <p id="storage-notice" class="toast" role="status" hidden></p>
   <script type="module" src="/src/main.js"></script>
 </body>

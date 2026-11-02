@@ -6,7 +6,7 @@ import { createHeroModel, normalizeHeroes } from '../src/models/heroModel.js';
 import { createHeroView } from '../src/views/heroView.js';
 import { createHeroController } from '../src/controllers/heroController.js';
 import { createFavoritesStorage } from '../src/storage/favoritesStorage.js';
-import { normalizeStatistics } from '../src/models/statisticsModel.js';
+import { normalizeStatistics, DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const heroes = normalizeHeroes([
@@ -90,14 +90,14 @@ test('error and loading states hide both roster layouts', async () => withDOM(as
 
 test('mock: table/card/modal show identical actual-shaped metrics, including zero and null', async () => withDOM(async window => {
   const model = createHeroModel();
-  Object.assign(model.state, { heroes, status: 'ready', statsStatus: 'ready', statistics: { records: normalizeStatistics([{ hero: 'ana', winrate: 52.3, pickrate: 0, banrate: null }]), fetchedAt: '2026-11-02T00:00:00Z' } });
+  Object.assign(model.state, { heroes, status: 'ready', statsStatus: 'ready', statistics: { filters: { ...DEFAULT_FILTERS }, records: normalizeStatistics([{ hero: 'ana', winrate: 52.3, pickrate: 0, banrate: null }]), fetchedAt: '2026-11-02T00:00:00Z' } });
   const view = createHeroView(); view.render(model);
-  const cells = document.querySelector('#hero-rows tr').querySelectorAll('td');
-  assert.equal(cells[2].textContent, 'S'); assert.equal(cells[3].textContent, '52.3%'); assert.equal(cells[4].textContent, '0.0%'); assert.equal(cells[5].textContent, '미제공');
-  assert.deepEqual([...document.querySelectorAll('#hero-cards .hero-card:first-child dd')].map(node => node.textContent), ['S', '52.3%', '0.0%', '미제공']);
+  const cells = document.querySelector('#hero-rows [data-hero="ana"]').closest('tr').querySelectorAll('td');
+  assert.equal(cells[2].textContent, '미분류'); assert.equal(cells[3].textContent, '52.3%'); assert.equal(cells[4].textContent, '0.0%'); assert.equal(cells[5].textContent, '미제공');
+  assert.deepEqual([...document.querySelector('#hero-cards [data-hero="ana"]').closest('.hero-card').querySelectorAll('dd')].map(node => node.textContent), ['미분류', '52.3%', '0.0%', '미제공']);
   const dialog = document.querySelector('#hero-dialog'); dialog.showModal = () => dialog.setAttribute('open', '');
   view.showDetail(model.heroByKey('ana'), model.state);
-  assert.deepEqual([...document.querySelectorAll('#detail-statistics dd')].map(node => node.textContent), ['S', '52.3%', '0.0%', '미제공']);
+  assert.deepEqual([...document.querySelectorAll('#detail-statistics dd')].map(node => node.textContent), ['미분류', '52.3%', '0.0%', '미제공']);
 }));
 
 test('mock: changing cohort clears old values and ignores slow previous responses', async () => withDOM(async window => {
@@ -111,9 +111,9 @@ test('mock: changing cohort clears old values and ignores slow previous response
   controller.start(); await new Promise(resolve => setImmediate(resolve));
   const region = document.querySelector('#stats-region'); region.value = 'europe'; region.dispatchEvent(new window.Event('change', { bubbles: true }));
   assert.equal(model.state.statistics, null);
-  deferred[1].resolve({ records: normalizeStatistics([{ hero: 'ana', winrate: 60 }]), fetchedAt: '2026-11-02T00:00:00Z', expiresAt: Date.now() + 3600000 });
+  deferred[1].resolve({ filters: deferred[1].filters, records: normalizeStatistics([{ hero: 'ana', winrate: 60 }]), fetchedAt: '2026-11-02T00:00:00Z', expiresAt: Date.now() + 3600000 });
   await new Promise(resolve => setImmediate(resolve));
-  deferred[0].resolve({ records: normalizeStatistics([{ hero: 'ana', winrate: 40 }]), fetchedAt: '2026-11-02T00:00:00Z' });
+  deferred[0].resolve({ filters: deferred[0].filters, records: normalizeStatistics([{ hero: 'ana', winrate: 40 }]), fetchedAt: '2026-11-02T00:00:00Z' });
   await new Promise(resolve => setImmediate(resolve));
   assert.equal(model.heroByKey('ana').statistics.winRate, 60); assert.equal(model.state.statsFilters.region, 'europe');
   const mode = document.querySelector('#stats-mode'); model.state.statsFilters.division = 'gold'; mode.value = 'quickplay'; mode.dispatchEvent(new window.Event('change', { bubbles: true }));

@@ -28,14 +28,15 @@ test('mock: cumulative ceil boundaries and small groups, tie ranks and missing w
 });
 test('mock: key joins, unknown records, role/search do not change assigned tiers, numeric sorting', () => {
   const model = createHeroModel(); model.state.heroes = heroes;
-  model.state.statistics = { records: normalizeStatistics([...raw, { hero: 'mercy', winrate: 80, pickrate: 0 }, { hero: 'unknown-hero', winrate: 99 }]) };
+  model.state.statistics = { filters: { ...DEFAULT_FILTERS }, records: normalizeStatistics([...raw, { hero: 'mercy', winrate: 80, pickrate: 0 }, { hero: 'unknown-hero', winrate: 99 }]) };
   const original = model.heroByKey('ana').tier;
   model.state.role = 'support'; model.state.query = 'ana'; assert.equal(model.visibleHeroes()[0].tier, original);
   Object.assign(model.state, { query: '', role: 'all', sort: 'pickrate-desc' });
   assert.deepEqual(model.visibleHeroes().map(hero => hero.key), ['ana', 'mercy', 'dva']);
 });
 test('mock: filter enum checks and quickplay division constraints happen before fetch', async () => {
-  assert.equal(statisticsQuery(DEFAULT_FILTERS), 'platform=pc&gamemode=competitive&region=asia');
+  assert.equal(statisticsQuery(DEFAULT_FILTERS), 'platform=pc&gamemode=competitive&region=asia&competitive_division=diamond');
+  assert.equal(statisticsQuery({ ...DEFAULT_FILTERS, division: 'all' }), 'platform=pc&gamemode=competitive&region=asia');
   assert.throws(() => validateFilters({ gamemode: 'quickplay', division: 'gold' }));
   let called = false;
   const service = createStatisticsService({ fetcher: async () => { called = true; return response(); } });

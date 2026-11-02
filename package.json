@@ -9,6 +9,9 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
     "test:live": "node --test tests/live/overfast.integration.js",
+    "snapshots:collect": "node scripts/collect-snapshot.js",
+    "audit:ranks": "node scripts/audit-ranked-meta.js",
+    "report:ranks": "node scripts/report-ranked-meta.js",
     "verify:pages": "node scripts/verify-pages.js"
   },
   "devDependencies": {

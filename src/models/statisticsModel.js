@@ -1,7 +1,15 @@
-export const DEFAULT_FILTERS = Object.freeze({ platform: 'pc', gamemode: 'competitive', region: 'asia', division: 'all', map: 'all' });
+export const DEFAULT_FILTERS = Object.freeze({ platform: 'pc', gamemode: 'competitive', region: 'asia', division: 'diamond', map: 'all' });
+// Historical collection stays explicitly all-rank; changing UI defaults must not relabel history.
+export const ALL_RANK_FILTERS = Object.freeze({ ...DEFAULT_FILTERS, division: 'all' });
 export const MODES = Object.freeze({ competitive: '경쟁전', quickplay: '빠른 대전' });
 export const REGIONS = Object.freeze({ asia: '아시아', europe: '유럽', americas: '아메리카' });
-export const DIVISIONS = Object.freeze({ all: '전체 등급', bronze: '브론즈', silver: '실버', gold: '골드', platinum: '플래티넘', emerald: '에메랄드', diamond: '다이아몬드', master: '마스터', grandmaster: '그랜드마스터 이상' });
+export const DIVISIONS = Object.freeze({ all: '전체 등급', bronze: '브론즈', silver: '실버', gold: '골드', platinum: '플래티넘', emerald: '에메랄드', diamond: '다이아몬드', master: '마스터', grandmaster: '그랜드마스터·챔피언' });
+export const DIVISION_GROUPS = Object.freeze([
+  Object.freeze({ label: '전체 등급', keys: Object.freeze(['all']) }),
+  Object.freeze({ label: '일반 경쟁전', keys: Object.freeze(['bronze', 'silver', 'gold', 'platinum']) }),
+  Object.freeze({ label: '중상위권', keys: Object.freeze(['emerald', 'diamond']) }),
+  Object.freeze({ label: '최상위권', keys: Object.freeze(['master', 'grandmaster']) }),
+]);
 
 export function validateFilters(input = DEFAULT_FILTERS) {
   const filters = { ...DEFAULT_FILTERS, ...input };
@@ -17,7 +25,7 @@ export function statisticsQuery(input) {
 }
 export function filterLabel(input) {
   const f = validateFilters(input);
-  return `PC · ${MODES[f.gamemode]} · ${REGIONS[f.region]} · ${DIVISIONS[f.division]} · 전체 전장`;
+  return `${REGIONS[f.region]} / PC / ${MODES[f.gamemode]} / ${DIVISIONS[f.division]} / 전체 전장`;
 }
 export function normalizeStatistics(data) {
   if (!Array.isArray(data)) throw new Error('통계 응답이 목록 형식이 아닙니다.');
