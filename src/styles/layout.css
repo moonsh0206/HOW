@@ -1,0 +1,117 @@
+/* Roster-first information layout. Shared data and behavior stay in the MVC modules. */
+#list-page > .page-shell { max-width: 1440px; padding: 24px 32px 56px; }
+#list-page .hero-banner { min-height: 350px; }
+#list-page .workspace { grid-template-columns: minmax(0, 1fr) 288px; gap: 24px; }
+#list-page .workspace > * { min-width: 0; }
+.roster-heading { padding: 24px 24px 0; margin-bottom: 20px; align-items: center; }
+.roster-heading h2 { font-size: 26px; }
+.roster-heading .directory-label { max-width: 130px; text-align: right; line-height: 1.7; }
+#heroes > .cohort-banner { margin: 0; padding: 0 24px 16px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: none; }
+#heroes .cohort-banner > .eyebrow { display: none; }
+#heroes .cohort-banner h2 { font-size: 14px; margin-bottom: 6px; color: #d7e0ee; }
+#heroes .cohort-banner p { font-size: 11px; line-height: 1.75; }
+#heroes .cohort-banner .statistics-filters { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); gap: 12px; margin: 14px 0 0; padding: 0; border: 0; }
+#heroes .statistics-filters label { font-size: 12px; }
+#heroes .statistics-filters select { font-size: 13px; }
+#heroes .fixed-filter { grid-column: 1 / -1; width: auto; font-size: 11px; }
+.filter-help { margin-top: 8px; color: var(--muted); }
+.filter-help summary { cursor: pointer; font-size: 11px; min-height: 32px; padding: 6px 0; width: fit-content; }
+#heroes .filter-help .rank-help { padding: 4px 0; margin: 0; }
+#heroes .toolbar { padding: 16px 24px 12px; border: 0; }
+#heroes .role-filters button { min-height: 44px; }
+#heroes .search-field { min-height: 44px; }
+#heroes .list-meta { padding: 0 24px 16px; gap: 12px; }
+#heroes .list-meta label { display: flex; align-items: center; gap: 8px; font-size: 12px; min-width: 0; }
+#heroes .list-meta select { min-height: 44px; max-width: 230px; min-width: 0; font-size: 13px; border: 1px solid #465267; border-radius: 6px; margin: 0; padding: 8px 10px; background: #111722; }
+#heroes .list-meta p { font-size: 11px; line-height: 1.7; }
+#heroes .statistics-notice { padding: 8px 24px; border-top: 1px solid var(--line); background: #151d29; }
+#heroes .statistics-notice p { font-size: 11px; }
+#heroes table th, #heroes table td { padding-inline: 14px; }
+#heroes table th:first-child, #heroes table td:first-child { padding-left: 24px; }
+#heroes table th:first-child { width: 35%; }
+#heroes .table-wrap { overflow-x: visible; }
+
+/* Compact sidebar: descriptions remain available, including missing-data notices. */
+#list-page .sidebar { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+.sidebar .meta-insights { margin: 0; min-width: 0; }
+.sidebar .meta-insights .section-heading { padding: 0 2px; margin: 0 0 10px; }
+.sidebar .meta-insights h2 { font-size: 18px; letter-spacing: -.5px; }
+.sidebar .section-heading .eyebrow { font-size: 8px; letter-spacing: 1.5px; }
+.sidebar .insight-cohort { font-size: 10px; margin-bottom: 12px; padding: 0 2px; overflow-wrap: anywhere; }
+.sidebar .insight-grid, .sidebar .classification-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.sidebar .classification-grid { margin-top: 12px; }
+.sidebar .insight-panel, .sidebar .info-card, .sidebar .future-card { padding: 16px; border-radius: 10px; }
+.sidebar .insight-panel h3, .sidebar .info-card h3, .sidebar .future-card h3 { font-size: 15px; line-height: 1.6; margin: 0 0 8px; }
+.sidebar .insight-panel .eyebrow, .sidebar .info-card .eyebrow { font-size: 8px; margin: 0 0 6px; letter-spacing: 1.2px; }
+.sidebar .insight-panel p, .sidebar .info-card p { font-size: 12px; line-height: 1.75; margin: 8px 0; overflow-wrap: anywhere; }
+.sidebar .insight-panel small, .sidebar .info-card small { font-size: 11px; line-height: 1.7; margin-top: 8px; overflow-wrap: anywhere; }
+.sidebar .insight-hero { min-height: 60px; gap: 10px; padding: 8px 0; }
+.sidebar .insight-hero img { width: 40px; height: 40px; border-radius: 7px; }
+.sidebar .insight-hero strong { font-size: 13px; }
+.sidebar .insight-hero small { margin-top: 2px; font-size: 11px; }
+.sidebar .meta-guide { margin-top: 12px; }
+.sidebar .meta-method { padding: 10px 0 0; margin: 12px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: none; }
+.sidebar .meta-method summary { font-size: 12px; min-height: 44px; line-height: 1.7; }
+.sidebar .meta-method p { font-size: 11px; }
+.sidebar .tier-legend { margin: 12px 0; }
+.sidebar .future-card { grid-column: auto; }
+
+/* Tablet: give the full width to the roster; auxiliary cards follow it in DOM order. */
+@media (max-width: 1100px) {
+  #list-page > .page-shell { padding-inline: 24px; }
+  #list-page .workspace { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .sidebar .insight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sidebar .classification-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Mobile uses the same controls and hero selection, before all insights. */
+@media (min-width: 601px) and (max-width: 767px) {
+  #heroes table { table-layout: fixed; white-space: normal; }
+  #heroes table th, #heroes table td { padding: 10px 4px; font-size: 11px; }
+  #heroes table th:first-child, #heroes table td:first-child { padding-left: 8px; width: 30%; }
+  #heroes table th:last-child { width: 10%; }
+  #heroes .hero-identity { gap: 8px; }
+  #heroes .hero-identity strong { font-size: 12px; }
+  #heroes .portrait { width: 36px; height: 36px; }
+  #heroes .role-tag { padding-inline: 4px; }
+}
+
+@media (max-width: 600px) {
+  #list-page .hero-banner { min-height: 320px; }
+  #list-page > .page-shell { padding: 16px 12px 32px; }
+  #list-page .workspace { gap: 28px; }
+  #heroes .roster-heading { padding: 0 4px; margin: 0 0 14px; }
+  #heroes .roster-heading h2 { font-size: 22px; }
+  #heroes > .cohort-banner { padding: 0 4px 14px; margin: 0 0 14px; }
+  #heroes .cohort-banner h2 { font-size: 13px; }
+  #heroes .cohort-banner .statistics-filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 10px; margin-top: 12px; }
+  #heroes .statistics-filters select { font-size: 16px; padding-inline: 8px; }
+  #heroes .fixed-filter { grid-column: auto; align-self: end; display: flex; align-items: center; min-height: 44px; }
+  .filter-help summary { min-height: 44px; padding-block: 12px; }
+  #heroes .toolbar { padding: 0 4px 12px; gap: 12px; }
+  #heroes .search-field { grid-row: auto; min-width: 0; }
+  #heroes .list-meta { padding: 0 4px 12px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  #heroes .list-meta label { margin: 0; justify-content: space-between; gap: 12px; }
+  #heroes .list-meta select { max-width: none; width: min(270px, 85%); font-size: 16px; }
+  #heroes .statistics-notice { padding: 10px 12px; margin: 0 0 12px; background: var(--panel); }
+  #heroes .hero-cards { gap: 10px; }
+  #heroes .hero-card { padding: 14px; }
+  #heroes .hero-card .portrait { width: 72px; height: 72px; }
+  #heroes .hero-card .hero-identity { gap: 12px; min-height: 72px; }
+  #heroes .hero-card .hero-identity strong { font-size: 17px; }
+  #heroes .hero-card-stats { margin-top: 12px; padding-top: 12px; }
+  .sidebar .insight-grid, .sidebar .classification-grid { grid-template-columns: minmax(0, 1fr); }
+  .sidebar .insight-panel, .sidebar .info-card, .sidebar .future-card { padding: 16px; }
+  .sidebar .insight-panel p, .sidebar .info-card p { font-size: 13px; line-height: 1.8; }
+  .sidebar .insight-hero { min-height: 64px; }
+  .sidebar .insight-hero strong { font-size: 14px; }
+  .sidebar .insight-hero small { font-size: 12px; }
+  .sidebar .insight-hero img { width: 44px; height: 44px; }
+}
+
+@media (max-width: 350px) {
+  #heroes .hero-card { padding: 12px; }
+  #heroes .hero-card .portrait { width: 60px; height: 60px; }
+  #heroes .hero-card .hero-identity { gap: 10px; }
+  #heroes .hero-card .hero-identity strong { font-size: 16px; }
+}
