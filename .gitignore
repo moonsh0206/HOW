@@ -1,0 +1,30 @@
+node_modules/
+dist/
+.env.local
+test-results/
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.aws/
+.codex/
+.agents/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Preserve original materials locally; do not publish personal/internal files
+/HOW프로젝트 계획서.docx
+/인계사항.txt
+/API 샘플.url
+/API샘플 2(대체 수단).url
+/backups/
+/fxxk/
+/overwatch.jfif
