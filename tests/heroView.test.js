@@ -52,9 +52,14 @@ test('removing a favorite preserves useful keyboard focus and empty state', asyn
   Object.assign(model.state, { heroes, status: 'ready', favoritesOnly: true });
   const view = createHeroView(); view.render(model);
   document.querySelector('#hero-cards [data-favorite="ana"]').focus();
+  const summary = document.querySelector('.cohort-banner .favorites-summary');
+  assert(summary); assert.equal(document.querySelector('.sidebar #favorite-preview'), null);
+  assert.equal(summary.querySelectorAll('[data-hero]').length, 2);
+  assert(summary.textContent.includes('미분류'));
   model.state.favorites.delete('ana'); view.render(model);
   assert.equal(document.activeElement.dataset.favorite, 'dva');
   model.state.favorites.clear(); view.render(model);
+  assert.match(summary.textContent, /즐겨찾기한 영웅이 여기에 표시됩니다/);
   assert.equal(document.activeElement.id, 'hero-search');
   assert.equal(document.querySelector('#table-wrap').hidden, true);
   assert.match(document.querySelector('#data-state').textContent, /첫 번째 영웅/);

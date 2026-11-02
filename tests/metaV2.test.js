@@ -57,17 +57,17 @@ test('captured eight cohorts: score components and S restrictions hold independe
   }
   assert(new Set(scores.map(cohort => cohort.find(h => h.key === 'genji').metaScore)).size > 1);
 });
-test('DOM: tier is an accessible button and explanation uses safe text and exact contributions', () => {
+test('DOM: tier shows only a short hint without exposing internal formula or eligibility', () => {
   const dom = new JSDOM('<body></body>'); const previous = globalThis.document; globalThis.document = dom.window.document;
   try {
-    dom.window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
-    dom.window.HTMLDialogElement.prototype.close = function () { this.dispatchEvent(new dom.window.Event('close')); };
     const hero = attachMetaTiers(heroes, records)[0]; hero.name = '<img onerror=bad>';
     const button = tierButton(hero); document.body.append(button); button.focus();
-    assert.equal(button.dataset.tier, hero.key); assert(button.getAttribute('aria-label').includes('산정 근거'));
+    assert.equal(button.dataset.tier, hero.key); assert(button.getAttribute('aria-label').includes('티어 안내'));
     showTierReason(hero, { statsFilters: { platform: 'pc', region: 'asia', gamemode: 'competitive', division: 'diamond', map: 'all' } });
-    const dialog = document.querySelector('dialog'); assert(dialog.open); assert.equal(dialog.querySelector('img'), null);
-    assert(dialog.textContent.includes('× 0.65 = 65.00')); assert(dialog.textContent.includes('최종 S'));
-    dialog.querySelector('button').click(); assert.equal(document.querySelector('dialog'), null); assert.equal(document.activeElement, button);
+    const tip = document.querySelector('#tier-tooltip'); assert(!tip.hidden); assert.equal(tip.querySelector('img'), null);
+    assert(tip.textContent.includes('실제 통계를 바탕으로 종합 평가'));
+    assert(!/0\.65|백분위|자격|최소|65:25:10/.test(tip.textContent));
+    assert.equal(document.querySelector('dialog'), null);
+    tip.querySelector('button').click(); assert(tip.hidden);
   } finally { globalThis.document = previous; dom.window.close(); }
 });

@@ -1,7 +1,7 @@
 import { ROLES } from '../models/heroModel.js';
 import { MODES, REGIONS, DIVISIONS, DIVISION_GROUPS, filterLabel } from '../models/statisticsModel.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
-import { tierButton, showTierReason, formulaText } from './tierReasonView.js';
+import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -31,7 +31,7 @@ function heroIdentity(hero, { card = false } = {}) {
   button.dataset.hero = hero.key;
   const text = element('span', undefined, 'hero-name');
   text.append(element('strong', hero.name), element('small', hero.key.toUpperCase()));
-  if (hero.metaScore != null) text.append(element('small', `META ${hero.metaScore.toFixed(1)}${hero.lowPick ? ' · 낮은 픽률 주의' : ''}`, 'meta-hint'));
+  if (hero.metaScore != null) text.append(element('small', `META ${hero.metaScore.toFixed(1)}`, 'meta-hint'));
   if (card) text.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
   button.append(portrait(hero), text);
   button.setAttribute('aria-label', `${hero.name} 상세 페이지 보기`);
@@ -83,7 +83,6 @@ export function createHeroView() {
       const heroes = model.visibleHeroes();
       document.querySelector('#sort').value = state.sort;
       document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 메타 티어';
-      document.querySelector('#meta-formula').textContent = formulaText();
       document.querySelector('#stats-mode').value = state.statsFilters.gamemode;
       document.querySelector('#stats-region').value = state.statsFilters.region;
       document.querySelector('#stats-division').value = state.statsFilters.division;
@@ -93,7 +92,7 @@ export function createHeroView() {
       const stale = state.statistics?.stale || state.statsStatus === 'error' && hasStats;
       document.querySelector('#active-cohort').textContent = filterLabel(state.statsFilters);
       document.querySelector('#active-cohort-freshness').textContent = `출처: OverFast API · ${state.statsStatus === 'loading' ? '현재 조건 조회 중' : state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' · 오래된 통계' : ''}` : '현재 조건의 성공한 통계 조회 없음'} · 원본 집계 시각 미제공`;
-      document.querySelector('#rank-help').textContent = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전에서는 경쟁전 등급을 적용하지 않습니다.' : `${DIVISION_GROUPS.find(group => group.keys.includes(state.statsFilters.division)).label} · 선택한 개별 API 등급만 사용합니다. grandmaster는 공식 스키마상 챔피언을 포함하며 챔피언 단독 필터는 제공하지 않습니다.`;
+      document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전은 전체 등급으로 조회합니다.' : '선택한 개별 등급으로 조회합니다. 그랜드마스터는 챔피언을 포함합니다.';
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;
       statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어' : '통계 연결 대기 중';
       document.querySelector('[data-action="stats-refresh"]').disabled = state.statsStatus === 'loading';
@@ -143,15 +142,20 @@ export function createHeroView() {
         const target = remaining.find(button => button.dataset.favorite === active) ?? remaining[Math.min(focusIndex, remaining.length - 1)] ?? document.querySelector('#hero-search');
         target.focus({ preventScroll: true });
       }
-      const preview = document.querySelector('#favorite-preview'); preview.replaceChildren();
-      const favorites = state.heroes.filter(hero => state.favorites.has(hero.key));
-      for (const hero of favorites.slice(0, 4)) {
-        const button = element('button', undefined, 'preview-hero'); button.dataset.hero = hero.key; button.append(portrait(hero), element('span', hero.name), element('span', '↗')); preview.append(button);
+      const preview = document.querySelector('#favorite-preview');
+      const focusedPreview = preview.contains(document.activeElement) ? document.activeElement.dataset.hero : null;
+      preview.replaceChildren();
+      const favorites = model.enrichedHeroes().filter(hero => state.favorites.has(hero.key));
+      for (const hero of favorites) {
+        const button = element('button', undefined, 'preview-hero'); button.dataset.hero = hero.key;
+        button.setAttribute('aria-label', `${hero.name} ${hero.tier ?? '미분류'} 상세 보기`);
+        button.append(portrait(hero), element('span', hero.name), element('span', hero.tier ?? '미분류', hero.tier ? `favorite-tier tier-${hero.tier.toLowerCase()}` : 'favorite-tier unavailable')); preview.append(button);
       }
-      if (!favorites.length) preview.append(element('p', state.status === 'loading' ? '목록을 불러오는 중입니다.' : '영웅 옆의 ☆을 눌러 저장하세요.', 'favorite-empty'));
+      if (!favorites.length) preview.append(element('p', state.status === 'loading' ? '목록을 불러오는 중입니다.' : '즐겨찾기한 영웅이 여기에 표시됩니다.', 'favorite-empty'));
+      if (focusedPreview) [...preview.querySelectorAll('[data-hero]')].find(button => button.dataset.hero === focusedPreview)?.focus({ preventScroll: true });
     },
     showTierReason,
-    closeTierReason() { document.querySelector('#tier-reason-dialog')?.close(); },
+    closeTierReason: closeTierHelp,
     showDetail(hero, state) {
       detailKey = hero.key;
       const content = document.querySelector('#detail-content'); content.replaceChildren(portrait(hero));

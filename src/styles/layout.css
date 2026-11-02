@@ -1,4 +1,18 @@
 /* Roster-first information layout. Shared data and behavior stay in the MVC modules. */
+.favorites-summary { margin: 14px 0; min-width: 0; }
+.favorites-summary-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.favorites-summary h3 { font-size: 12px; margin: 0; color: #c6d0de; }
+.favorites-summary-heading .text-link { border: 0; padding: 0; margin: 0; min-height: 36px; font-size: 11px; }
+#favorite-preview { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; scrollbar-width: thin; }
+#favorite-preview .preview-hero { display: inline-flex; align-items: center; flex: 0 0 auto; gap: 8px; width: auto; max-width: 230px; min-height: 44px; margin: 0; padding: 5px 10px 5px 5px; border: 1px solid var(--line); border-radius: 24px; background: #111b29; font-size: 12px; text-align: left; }
+#favorite-preview .portrait { width: 30px; height: 30px; border-radius: 50%; }
+#favorite-preview .preview-hero > span:nth-child(2) { max-width: 130px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.favorite-tier { font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
+#favorite-preview .favorite-empty { margin: 2px 0; padding: 4px 0; border: 0; background: none; text-align: left; font-size: 12px; color: var(--muted); }
+.tier-tooltip { position: fixed; inset: auto 12px 16px; margin: 0 auto; width: min(360px, calc(100% - 24px)); padding: 8px 10px 8px 14px; border: 1px solid #59667a; border-radius: 10px; background: #202b3c; color: var(--text); font-size: 12px; line-height: 1.7; box-shadow: 0 8px 24px #0005; z-index: 20; }
+.tier-tooltip:not([hidden]) { align-items: center; gap: 8px; }
+.tier-tooltip:popover-open { display: flex; }
+.tier-tooltip button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: var(--text); font-size: 20px; }
 #list-page > .page-shell { max-width: 1440px; padding: 24px 32px 56px; }
 #list-page .hero-banner { min-height: 350px; }
 #list-page .workspace { grid-template-columns: minmax(0, 1fr) 288px; gap: 24px; }

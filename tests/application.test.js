@@ -45,7 +45,10 @@ test('captured-data DOM integration: direct page, statistics, favorite persisten
     assert.equal(document.querySelector('#list-page').hidden, false);
     assert.equal(document.querySelectorAll('#hero-cards .hero-card').length, 1);
     assert.equal(document.querySelector('#hero-cards [data-favorite="genji"]').getAttribute('aria-pressed'), 'true');
-    document.querySelector('#hero-cards [data-hero="genji"]').click(); window.dispatchEvent(new window.HashChangeEvent('hashchange'));
+    const chip = document.querySelector('.favorites-summary [data-hero="genji"]');
+    assert(chip); assert.equal(chip.querySelector('.favorite-tier').textContent, model.heroByKey('genji').tier);
+    assert.equal(document.querySelector('.meta-guide'), null); assert.equal(document.querySelector('.filter-help'), null);
+    chip.click(); window.dispatchEvent(new window.HashChangeEvent('hashchange'));
     await new Promise(resolve => setImmediate(resolve));
     assert.equal(document.querySelector('#hero-detail-page .detail-back').getAttribute('href'), '#favorites');
     assert.equal(document.querySelectorAll('#hot-content .insight-hero').length, 0);

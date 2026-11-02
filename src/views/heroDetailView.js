@@ -1,4 +1,4 @@
-import { tierButton, formulaText } from './tierReasonView.js';
+import { tierButton } from './tierReasonView.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { ROLES } from '../models/heroModel.js';
@@ -73,10 +73,10 @@ export function createHeroDetailView() {
       const summary = node('div', undefined, 'detail-summary');
       const metrics = node('dl', undefined, 'detail-metrics');
       for (const [field, label] of METRICS) { const group = node('div'); const value = node('dd'); value.append(field === 'tier' ? tierButton(hero) : node('span', metricValue(hero, field), metricClass(hero, field))); group.append(node('dt', label), value); metrics.append(group); }
-      summary.append(metrics, node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100${hero.lowPick ? ' · 픽률 1% 미만: 해석에 주의하세요.' : ''}`));
+      summary.append(metrics, node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
       const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); summary.append(button);
-      summary.append(node('p', filterLabel(state.statsFilters)), node('p', `통계: OverFast API · ${state.statsStatus === 'loading' ? '조회 중 · ' : ''}${state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}` : '현재 조건 통계 미제공'}${state.statistics?.stale || state.statsStatus === 'error' ? ' · 갱신 실패/오래된 통계' : ''}`), node('p', `원본 집계 시각·표본 수 미제공 · ${formulaText()} 공식 게임 등급이 아닙니다.`));
-      const filtersLink = node('a', '조회 조건과 산정 방식 확인 →', 'text-link'); filtersLink.href = '#heroes'; summary.append(filtersLink);
+      summary.append(node('p', filterLabel(state.statsFilters)), node('p', `통계: OverFast API · ${state.statsStatus === 'loading' ? '조회 중 · ' : ''}${state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}` : '현재 조건 통계 미제공'}${state.statistics?.stale || state.statsStatus === 'error' ? ' · 갱신 실패/오래된 통계' : ''}`));
+      const filtersLink = node('a', '영웅 목록으로 →', 'text-link'); filtersLink.href = '#heroes'; summary.append(filtersLink);
       const focused = document.activeElement === stats.querySelector('[data-favorite]');
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
       for (const link of root.querySelectorAll('[data-detail-tab]')) { if (link.dataset.detailTab === route.tab) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }
