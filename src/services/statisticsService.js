@@ -5,14 +5,14 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
   const cache = new Map(), pending = new Map(), failures = new Map();
   const fallback = (cached, failure) => {
     if (!cached) throw new Error(failure.message);
-    return { ...cached, stale: true, error: failure.message, retryAt: failure.retryAt };
+    return { ...cached, cached: true, stale: true, error: failure.message, retryAt: failure.retryAt };
   };
   return {
     getStatistics(input) {
       let filters, key;
       try { filters = validateFilters(input); key = statisticsQuery(filters); } catch (error) { return Promise.reject(error); }
       const cached = cache.get(key);
-      if (cached && now() < cached.expiresAt) return Promise.resolve({ ...cached, stale: false, error: '' });
+      if (cached && now() < cached.expiresAt) return Promise.resolve({ ...cached, cached: true, stale: false, error: '' });
       if (pending.has(key)) return pending.get(key);
       const failure = failures.get(key);
       if (failure && now() < failure.retryAt) {
@@ -37,7 +37,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
           const ageHeader = response.headers?.get('age');
           const age = ageHeader != null && /^\d+$/.test(ageHeader) ? Number(ageHeader) : 0;
           const timestamp = now();
-          const result = { records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, stale: false, error: '' };
+          const result = { records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, cached: false, providerAgeSeconds: ageHeader != null && /^\d+$/.test(ageHeader) ? age : null, stale: false, error: '' };
           cache.set(key, result); failures.delete(key);
           return result;
         } catch (error) {

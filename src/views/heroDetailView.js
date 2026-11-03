@@ -1,6 +1,7 @@
 import { tierButton } from './tierReasonView.js';
 import { renderCounters } from './counterView.js';
 import { renderPickHistory } from './pickHistoryView.js';
+import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
@@ -79,17 +80,21 @@ export function createHeroDetailView() {
       const metrics = node('dl', undefined, 'detail-metrics');
       for (const [field, label] of METRICS) { const group = node('div'); const value = node('dd'); value.append(field === 'tier' ? tierButton(hero) : node('span', metricValue(hero, field), metricClass(hero, field))); group.append(node('dt', label), value); metrics.append(group); }
       const summaryTop = node('div', undefined, 'detail-summary-top');
-      summaryTop.append(metrics, renderCounters(counters)); summary.append(summaryTop, node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
-      const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); summary.append(button);
-      summary.append(node('p', filterLabel(state.statsFilters)), node('p', `통계: OverFast API · ${state.statsStatus === 'loading' ? '조회 중 · ' : ''}${state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}` : '현재 조건 통계 미제공'}${state.statistics?.stale || state.statsStatus === 'error' ? ' · 갱신 실패/오래된 통계' : ''}`));
-      const filtersLink = node('a', '영웅 목록으로 →', 'text-link'); filtersLink.href = '#heroes'; summary.append(filtersLink);
+      const information = node('div', undefined, 'detail-summary-info');
+      const side = node('div', undefined, 'detail-summary-side');
+      summaryTop.append(metrics, side, information); summary.append(summaryTop);
+      information.append(node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
+      const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); information.append(button);
+      information.append(node('p', filterLabel(state.statsFilters)), node('p', `통계: OverFast API · ${state.statsStatus === 'loading' ? '조회 중 · ' : ''}${state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}` : '현재 조건 통계 미제공'}${state.statistics?.stale || state.statsStatus === 'error' ? ' · 갱신 실패/오래된 통계' : ''}`));
+      const filtersLink = node('a', '영웅 목록으로 →', 'text-link'); filtersLink.href = '#heroes'; information.append(filtersLink);
       const focused = document.activeElement === stats.querySelector('[data-favorite]');
       const oldHistory = stats.querySelector('.pick-history');
       const historyFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyDays : null;
       const recordsOpen = oldHistory?.querySelector('.history-records')?.open;
-      const chart = renderPickHistory(history, state.statsFilters);
+      const chart = renderPickHistory(withCurrentPickHistory(history, state.statistics, route.key, state.statsFilters), state.statsFilters);
       if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
-      stats.replaceChildren(summary, chart); if (focused) button.focus({ preventScroll: true });
+      side.append(renderCounters(counters), chart);
+      stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
       if (historyFocus) chart.querySelector(`[data-history-days="${historyFocus}"]`)?.focus({ preventScroll: true });
       for (const link of root.querySelectorAll('[data-detail-tab]')) { if (link.dataset.detailTab === route.tab) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }
       for (const id of ['detail-abilities', 'detail-passives']) root.querySelector('#' + id).hidden = route.tab === 'perks';

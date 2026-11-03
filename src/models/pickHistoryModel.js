@@ -1,6 +1,26 @@
 import { statisticsQuery } from './statisticsModel.js';
 import { isObservationTime } from './snapshotModel.js';
 
+// The current response is an observation at its original HOW fetch time, never "now".
+export function withCurrentPickHistory(history, statistics, heroKey, filters) {
+  const base = history.result ?? { points: [], segments: [], warnings: [] };
+  const result = { ...base, points: [...base.points], segments: [...base.segments] };
+  const complete = value => ['platform','gamemode','region','division','map'].every(key => typeof value?.[key] === 'string');
+  if (!complete(statistics?.filters) || !complete(filters) || statisticsQuery(statistics.filters) !== statisticsQuery(filters) || !isObservationTime(statistics.fetchedAt)) return { ...history, result };
+  const rows = statistics.records?.filter(row => row.hero === heroKey) ?? [];
+  const pickRate = rows.length === 1 ? rows[0].pickRate : null;
+  if (!Number.isFinite(pickRate) || pickRate < 0 || pickRate > 100) return { ...history, result };
+  const current = { collectedAt: statistics.fetchedAt, time: Date.parse(statistics.fetchedAt), pickRate, patch: null, current: true, stale: statistics.stale === true, cached: statistics.cached, providerAgeSeconds: statistics.providerAgeSeconds ?? null };
+  const same = result.points.findIndex(point => point.time === current.time);
+  if (same < 0) result.points.push(current);
+  else if (result.points[same].pickRate === pickRate) result.points[same] = { ...result.points[same], ...current, patch: result.points[same].patch };
+  // A conflicting archive observation at the exact same instant is not drawn twice.
+  else result.points.splice(same, 1, current);
+  result.points.sort((a,b) => a.time - b.time);
+  result.segments = result.segments.filter(([a,b]) => a.time !== current.time && b.time !== current.time);
+  return { ...history, result, current };
+}
+
 // A connected segment is only a visual guide between known-patch observations <=24h apart.
 export function buildPickHistory(snapshots, heroKey, filters, { days = 7, now = Date.now() } = {}) {
   if (![7,30].includes(days) || !Number.isFinite(now) || !Array.isArray(snapshots)) throw new Error('지원하지 않는 이력 기간 또는 기준 시각입니다.');

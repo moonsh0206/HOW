@@ -86,8 +86,8 @@ test('detail integration: counter link navigation, absent hero data and favorite
     router=createRoutingController({model,detailView:createHeroDetailView(),detailService:{async getHero(key){return{detail:normalizeHeroDetail({...raw,name:key},key),fetchedAt:'2026-11-03T00:00:00Z'};}}});
     router.start();await new Promise(r=>setImmediate(r));
     assert(document.querySelector('.detail-summary [data-favorite="genji"]'));assert.equal(document.querySelectorAll('.counter-hero').length,3);
-    const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-metrics'));assert(top.lastElementChild.matches('.counter-panel'));
-    assert.equal(document.querySelector('.detail-summary').nextElementSibling.id,'pick-history');
+    const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-metrics'));assert(top.querySelector('.detail-summary-side > .counter-panel'));
+    assert(document.querySelector('.detail-summary-side > #pick-history'));assert.equal(document.querySelectorAll('#pick-history').length,1);
     assert(document.querySelector('#pick-history').compareDocumentPosition(document.querySelector('.detail-tabs'))&4);
     assert.equal(document.querySelector('.detail-overview'),null);assert.equal(top.querySelectorAll('.detail-metrics > div').length,4);
     assert([...top.querySelectorAll('.counter-explanation')].every(el=>!el.open));

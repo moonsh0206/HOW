@@ -4,9 +4,11 @@ import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
 import { DEFAULT_FILTERS, ALL_RANK_FILTERS } from '../src/models/statisticsModel.js';
 import { normalizeSnapshot, isObservationTime } from '../src/models/snapshotModel.js';
-import { buildPickHistory } from '../src/models/pickHistoryModel.js';
+import { buildPickHistory, withCurrentPickHistory } from '../src/models/pickHistoryModel.js';
 import { createSnapshotService } from '../src/services/snapshotService.js';
-import { renderPickHistory } from '../src/views/pickHistoryView.js';
+import { renderPickHistory, historyScale } from '../src/views/pickHistoryView.js';
+import { createHeroDetailView } from '../src/views/heroDetailView.js';
+import { normalizeHeroDetail } from '../src/models/heroDetailModel.js';
 import { parseSnapshotFilters } from '../scripts/snapshot-options.js';
 import { createRoutingController } from '../src/controllers/routingController.js';
 import { createHeroModel } from '../src/models/heroModel.js';
@@ -14,6 +16,81 @@ const now=Date.parse('2026-11-03T00:00:00Z');
 const raw=(collectedAt,pickRate,patch='p1',filters=DEFAULT_FILTERS)=>({schemaVersion:1,source:'OverFast API',collectedAt,filters:{...filters},aggregateAt:null,patch,records:[{hero:'ana',winrate:50,pickrate:pickRate,banrate:0}]});
 const snap=(...args)=>normalizeSnapshot(raw(...args));
 const build=(snapshots,days=7)=>buildPickHistory(snapshots,'ana',DEFAULT_FILTERS,{days,now});
+
+test('current pick observation: exact cohort/time, cache/stale metadata, zero and duplicate handling',()=>{
+  const history={status:'ready',days:7,result:build([])};
+  const statistics={filters:{...DEFAULT_FILTERS},fetchedAt:'2026-11-02T00:00:00Z',records:[{hero:'ana',pickRate:20.2}],cached:true,stale:true,providerAgeSeconds:12};
+  const combined=withCurrentPickHistory(history,statistics,'ana',DEFAULT_FILTERS);
+  assert.equal(combined.result.points.length,1);assert.equal(combined.current.pickRate,20.2);assert.equal(combined.current.collectedAt,statistics.fetchedAt);
+  assert.equal(combined.current.cached,true);assert.equal(combined.current.stale,true);assert.equal(combined.current.providerAgeSeconds,12);
+  assert.equal(history.result.points.length,0);
+  assert.equal(withCurrentPickHistory(history,statistics,'ana',ALL_RANK_FILTERS).result.points.length,0);
+  assert.equal(withCurrentPickHistory(history,{...statistics,fetchedAt:'bad'},'ana',DEFAULT_FILTERS).result.points.length,0);
+  assert.equal(withCurrentPickHistory(history,{...statistics,records:[{hero:'ana',pickRate:null}]},'ana',DEFAULT_FILTERS).result.points.length,0);
+  assert.equal(withCurrentPickHistory(history,{...statistics,records:[{hero:'ana',pickRate:0}]},'ana',DEFAULT_FILTERS).current.pickRate,0);
+  const duplicate={...history,result:build([snap(statistics.fetchedAt,20.2,null)])};
+  assert.equal(withCurrentPickHistory(duplicate,statistics,'ana',DEFAULT_FILTERS).result.points.length,1);
+});
+
+test('current point remains visible while archive fails; live value and original fetch stamp are labelled',()=>{
+  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
+  try{
+    const state=withCurrentPickHistory({status:'error',days:30,error:'503'}, {filters:DEFAULT_FILTERS,fetchedAt:'2026-11-02T00:00:00Z',records:[{hero:'ana',pickRate:20.2}],cached:true,stale:true},'ana',DEFAULT_FILTERS);
+    const panel=renderPickHistory(state,DEFAULT_FILTERS);
+    assert.equal(panel.querySelectorAll('.history-point').length,1);assert.equal(panel.querySelectorAll('.history-segment').length,0);
+    assert(panel.textContent.includes('현재 픽률 20.2%'));assert(panel.textContent.includes('오래된 데이터'));
+    assert(panel.querySelector('[data-action="history-retry"]'));
+  }finally{globalThis.document=prior;dom.window.close();}
+});
+
+test('history scale: bounded, padded and never magnifies a tiny difference to the full plot',()=>{
+  for (const values of [[0],[100],[3.11,3.12],[99.9,100],[0,100],[40,60]]) {
+    const scale=historyScale(values.map(pickRate=>({pickRate})));
+    assert(scale.min>=0&&scale.max<=100&&scale.max-scale.min>=10);
+    assert(values.every(value=>value>=scale.min&&value<=scale.max));
+    assert.equal(scale.ticks[0],scale.max);assert.equal(scale.ticks.at(-1),scale.min);
+  }
+});
+
+test('actual Genji detail DOM: diamond empty, all-rank single point, period controls and fetch error',async()=>{
+  const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+  const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/overfast-genji.json',import.meta.url),'utf8'));
+  const dom=new JSDOM(html,{url:'https://example.github.io/HOW/#/heroes/genji'});
+  const prior={document:globalThis.document,window:globalThis.window,location:globalThis.location};
+  Object.assign(globalThis,{document:dom.window.document,window:dom.window,location:dom.window.location});
+  let router,fail=false;
+  try {
+    const model=createHeroModel(),service=createSnapshotService({now:()=>now,base:'/HOW/',fetcher:async url=>{
+      if(fail)throw new TypeError('network');
+      return {ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL('../public/'+url.replace('/HOW/',''),import.meta.url),'utf8'))};
+    }});
+    router=createRoutingController({model,detailView:createHeroDetailView(),detailService:{async getHero(){return {detail:normalizeHeroDetail(fixture,'genji'),fetchedAt:new Date(now).toISOString()};}},historyService:{getHistory(...args){if(fail)return Promise.reject(new Error('network'));return service.getHistory(...args);}}});
+    const flush=()=>new Promise(resolve=>setImmediate(resolve));router.start();await flush();await flush();
+    const panel=()=>document.querySelector('#pick-history');
+    assert.equal(document.querySelector('#hero-detail-page').hidden,false);
+    assert(panel().parentElement.matches('.detail-summary-side'));assert(panel().closest('.detail-summary'));assert(panel().previousElementSibling.matches('.counter-panel'));
+    assert(document.querySelector('.detail-summary-top .counter-panel'));
+    assert.equal(panel().querySelector('h2').textContent,'픽률 변화 추이');
+    assert(!panel().hidden);assert.equal(panel().querySelectorAll('[data-history-days]').length,2);
+    assert(panel().textContent.includes('기록 수집 중'));assert.equal(panel().querySelector('svg'),null);
+    // Mock current API value tests the integration, not a value saved to public data.
+    model.state.statistics={filters:{...DEFAULT_FILTERS},fetchedAt:'2026-11-02T12:00:00Z',records:[{hero:'genji',pickRate:20.2}],cached:false,stale:false};
+    router.refresh();
+    assert.equal(panel().querySelectorAll('.history-point').length,1);assert(panel().textContent.includes('현재 픽률 20.2%'));
+    router.refresh();assert.equal(document.querySelectorAll('#pick-history').length,1);
+    model.state.statsFilters={...ALL_RANK_FILTERS};router.refresh();await flush();await flush();
+    assert.equal(panel().querySelectorAll('.history-point').length,1);
+    assert.equal(panel().querySelectorAll('.history-segment').length,0);
+    assert.equal(panel().querySelectorAll('.history-x span').length,1);
+    panel().querySelector('[data-history-days="30"]').click();await flush();await flush();
+    assert.equal(panel().querySelector('[data-history-days="30"]').getAttribute('aria-pressed'),'true');
+    assert.equal(panel().querySelectorAll('.history-point').length,1);
+    fail=true;panel().querySelector('[data-history-days="7"]').click();await flush();await flush();
+    assert(panel().textContent.includes('픽률 이력을 불러오지 못했습니다.'));assert(panel().querySelector('[data-action="history-retry"]'));
+    fail=false;panel().querySelector('[data-action="history-retry"]').click();await flush();await flush();
+    assert.equal(panel().querySelectorAll('.history-point').length,1);
+  } finally {router?.stop();dom.window.close();Object.assign(globalThis,prior);}
+});
 test('history: zero/single/sorted multiple, null vs zero and exact values',()=>{
   assert.equal(build([]).points.length,0);
   const a=snap('2026-11-02T00:00:00Z',0),b=snap('2026-11-02T06:00:00Z',12.34);
@@ -82,11 +159,11 @@ test('history DOM: precise points, touch/click/keyboard, accessible table, no da
     const series=build([snap('2026-11-02T00:00:00Z',0),snap('2026-11-02T06:00:00Z',12.34)]);
     const panel=renderPickHistory({status:'ready',days:7,result:series},DEFAULT_FILTERS);document.body.append(panel);
     assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-segment').length,1);
-    assert(panel.querySelector('select').disabled);assert.equal(panel.querySelectorAll('.history-table tbody tr').length,2);
+    assert.equal(panel.querySelector('select'),null);assert.equal(panel.querySelector('.history-source'),null);assert.equal(panel.querySelectorAll('.history-table tbody tr').length,2);
     panel.querySelector('.history-point').dispatchEvent(new dom.window.MouseEvent('click',{bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('픽률 0%'));
     panel.querySelectorAll('.history-point')[1].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('12.34%'));
-    assert(renderPickHistory({status:'ready',result:build([])},DEFAULT_FILTERS).textContent.includes('아직 수집된 픽률 이력이 없습니다.'));
-    assert(renderPickHistory({status:'ready',result:build([snap('2026-11-02T00:00:00Z',1)])},DEFAULT_FILTERS).textContent.includes('픽률 변화를 기록 중입니다.'));
+    assert(renderPickHistory({status:'ready',result:build([])},DEFAULT_FILTERS).textContent.includes('기록 수집 중'));
+    assert.equal(renderPickHistory({status:'ready',result:build([snap('2026-11-02T00:00:00Z',1)])},DEFAULT_FILTERS).querySelectorAll('.history-point').length,1);
     assert(renderPickHistory({status:'error',error:'503'},DEFAULT_FILTERS).querySelector('[data-action="history-retry"]'));
   }finally{globalThis.document=previous;dom.window.close();}
 });
