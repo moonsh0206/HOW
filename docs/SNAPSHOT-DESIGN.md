@@ -1,5 +1,24 @@
 # 통계 스냅샷 설계 및 승인 전 워크플로 제안
 
+## Phase 3.7 로컬 확장 · 2026-11-03
+
+기존 전체 등급 기본 수집은 유지한다. 옵션 없는 `npm.cmd run snapshots:collect`는 PC/아시아/경쟁전/전체 등급/전체 전장이다. 다이아는 명시적으로 다음과 같이 지정한다.
+
+```powershell
+npm.cmd run snapshots:collect -- --division diamond
+npm.cmd run snapshots:collect -- --region asia --gamemode competitive --division all
+```
+
+`--platform`, `--gamemode`, `--region`, `--division`, `--map`만 허용한다. 기존 통계 필터 검증을 재사용하므로 PC/전체 전장과 지원 모드·지역·개별 등급만 가능하다. 중복 옵션·알 수 없는 값·빠른 대전+개별 등급을 요청 전에 거부한다. 수집 간격 제한도 정확한 조건별로 1시간 유지하며 한 시점의 전체 영웅 파일을 함께 쓴다. 이번에는 수집 명령을 실행하지 않아 기존 전체 등급 파일 1개를 유지했다.
+
+SnapshotService에 getHistory(filters,{days:7|30})를 추가했다. HOT의 getPrevious와 manifest/파일 캐시·진행 요청을 공유하되 날짜 범위·영웅 이력 계산은 별도 Model에서 처리한다. 목록은 10분 캐시하며 새 로컬 파일을 즉시 보려면 페이지를 새로고침한다. 파일 실패는 해당 시각의 누락으로 처리해 선을 잇지 않고 재시도를 제공한다.
+
+schemaVersion 1과 기존 patch:null 파일을 유지하면서, 향후 출처를 검증해 넣은 patch 문자열도 검증할 수 있게 했다. 수집기는 여전히 patch:null을 기록하며 API가 주지 않는 패치·시즌을 추측하지 않는다. 같은 확인 패치·24시간 이내·중간 누락 없음일 때만 그래프의 참고선을 만든다. 실제 수치는 관측점에만 있으며 중간 시각을 보간하지 않는다.
+
+시즌 등록·시작/종료일·패치 경계와 분모는 미검증이므로 시즌 선택은 비활성이다. 향후 `seasonCatalog`는 id/start/end/sourceUrl/verified 및 해당 스냅샷의 seasonId/patch 출처를 검증해야 한다. start<end와 관측 시각의 소속을 확인하고 겹치거나 근거가 없는 기간은 등록하지 않는다. 단순 스냅샷 평균을 시즌 전체 픽률로 제공하지 않는다. 스케줄·Git 쓰기·원격 업로드는 이번에도 활성화하지 않았다.
+
+현재 구현·검증과 모바일 카드 축소 결과는 [Phase 3.7 보고서](PHASE37-PICK-HISTORY.md)에 기록한다. 아래는 초기 설계의 기록이다.
+
 ## 적합성
 
 GitHub Pages는 서버 쓰기를 지원하지 않지만, Actions에서 공개 API를 주기적으로 읽고 JSON을 빌드에 포함하는 방식은 초기 소규모 관측에 적합합니다. 초기 조건은 PC/경쟁전/아시아/전체 등급/전체 전장 하나로 제한합니다. 1시간 캐시보다 긴 6시간 간격을 제안합니다. 정각 부하를 피한 UTC 17분 실행은 제안일 뿐이며 스케줄은 활성화하지 않았습니다. 예약 실행은 지연·누락될 수 있어 정밀 시계열이나 경기 단위 분석에 적합하지 않습니다. [GitHub schedule 문서](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).

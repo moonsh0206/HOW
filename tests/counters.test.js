@@ -87,6 +87,8 @@ test('detail integration: counter link navigation, absent hero data and favorite
     router.start();await new Promise(r=>setImmediate(r));
     assert(document.querySelector('.detail-summary [data-favorite="genji"]'));assert.equal(document.querySelectorAll('.counter-hero').length,3);
     const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-metrics'));assert(top.lastElementChild.matches('.counter-panel'));
+    assert.equal(document.querySelector('.detail-summary').nextElementSibling.id,'pick-history');
+    assert(document.querySelector('#pick-history').compareDocumentPosition(document.querySelector('.detail-tabs'))&4);
     assert.equal(document.querySelector('.detail-overview'),null);assert.equal(top.querySelectorAll('.detail-metrics > div').length,4);
     assert([...top.querySelectorAll('.counter-explanation')].every(el=>!el.open));
     assert(!/65:25:10|S 자격/.test(document.querySelector('#hero-detail-page').textContent));

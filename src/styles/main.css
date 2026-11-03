@@ -75,18 +75,18 @@ html.detail-open{overflow:hidden}
   .list-meta select{font-size:12px;min-height:44px;margin-left:0;padding:8px;border:1px solid var(--line);border-radius:6px;max-width:150px}
   .table-wrap{overflow:visible}
   .table-wrap>table{display:none}
-  .hero-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;list-style:none;margin:0;padding:0}
-  .hero-card{min-width:0;padding:16px;background:linear-gradient(135deg,#232d3d 0%,var(--panel) 65%);border:1px solid #354155;border-radius:12px;box-shadow:0 4px 12px #00000018}
+  .hero-cards{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;list-style:none;margin:0;padding:0}
+  .hero-card{min-width:0;padding:12px;background:linear-gradient(135deg,#232d3d 0%,var(--panel) 65%);border:1px solid #354155;border-radius:12px;box-shadow:0 4px 12px #00000018}
   .hero-card-header{display:flex;align-items:flex-start;gap:8px;min-width:0}
-  .hero-card .hero-identity{flex:1;gap:14px;min-height:80px;border-radius:6px}
-  .hero-card .portrait{width:80px;height:80px;border-radius:10px;border-color:#59667c;font-size:26px;background:linear-gradient(135deg,#677a96,#2d384c)}
+  .hero-card .hero-identity{flex:1;gap:10px;min-height:54px;border-radius:6px}
+  .hero-card .portrait{width:54px;height:54px;border-radius:10px;border-color:#59667c;font-size:26px;background:linear-gradient(135deg,#677a96,#2d384c)}
   .hero-card .hero-name{flex:1}
-  .hero-card .hero-identity strong{display:block;font-size:18px;line-height:1.5;font-weight:800}
+  .hero-card .hero-identity strong{display:block;font-size:15px;line-height:1.5;font-weight:800}
   .hero-card .hero-identity small{font-size:9px;line-height:1.6;letter-spacing:1px;margin-top:2px;overflow-wrap:anywhere}
   .hero-card .role-tag{font-size:11px;margin-top:8px;padding:3px 7px;line-height:1.5}
   .hero-card .favorite-button{flex:0 0 44px;width:44px;height:44px;border:1px solid #47546a;background:#141c29;color:#b2bfd2;border-radius:8px;font-size:26px}
   .hero-card .favorite-button[aria-pressed=true]{color:var(--orange);border-color:#9f6d28;background:#332b20}
-  .hero-card-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:16px 0 0;padding-top:14px;border-top:1px solid #384255;text-align:center}
+  .hero-card-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:8px 0 0;padding-top:8px;border-top:1px solid #384255;text-align:center}
   .hero-card-stats>div{min-width:0;padding:0 6px}
   .hero-card-stats>div+div{border-left:1px solid #384255}
   .hero-card-stats dt{font-size:11px;line-height:1.6;color:#a7b5c9}
@@ -123,9 +123,9 @@ html.detail-open{overflow:hidden}
 }
 @media(max-width:350px){
   .hero-card{padding:12px}
-  .hero-card .portrait{width:64px;height:64px}
+  .hero-card .portrait{width:52px;height:52px}
   .hero-card .hero-identity{gap:10px}
-  .hero-card .hero-identity strong{font-size:16px}
+  .hero-card .hero-identity strong{font-size:14px}
   .banner-content{padding-inline:16px}
   .site-header nav{font-size:11px}
 }

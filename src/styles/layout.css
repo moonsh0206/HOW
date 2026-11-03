@@ -113,12 +113,16 @@
   #heroes .list-meta label { margin: 0; justify-content: space-between; gap: 12px; }
   #heroes .list-meta select { max-width: none; width: min(270px, 85%); font-size: 16px; }
   #heroes .statistics-notice { padding: 10px 12px; margin: 0 0 12px; background: var(--panel); }
-  #heroes .hero-cards { gap: 10px; }
-  #heroes .hero-card { padding: 14px; }
-  #heroes .hero-card .portrait { width: 72px; height: 72px; }
-  #heroes .hero-card .hero-identity { gap: 12px; min-height: 72px; }
-  #heroes .hero-card .hero-identity strong { font-size: 17px; }
-  #heroes .hero-card-stats { margin-top: 12px; padding-top: 12px; }
+  #heroes .hero-cards { gap: 8px; }
+  #heroes .hero-card { padding: 12px; }
+  #heroes .hero-card .portrait { width: 54px; height: 54px; }
+  #heroes .hero-card .hero-identity { gap: 10px; min-height: 54px; }
+  #heroes .hero-card .hero-identity strong { font-size: 15px; line-height: 1.4; flex-basis: 100%; }
+  #heroes .hero-card .hero-name { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 6px; }
+  #heroes .hero-card .hero-name small { display: inline; margin-top: 0; letter-spacing: .5px; }
+  #heroes .hero-card .role-tag { margin-top: 0; font-size: 10px; padding: 2px 6px; }
+  #heroes .hero-card-stats { margin-top: 8px; padding-top: 8px; }
+  #heroes .hero-card-stats dd { margin-top: 3px; }
   .sidebar .insight-grid, .sidebar .classification-grid { grid-template-columns: minmax(0, 1fr); }
   .sidebar .insight-panel, .sidebar .info-card, .sidebar .future-card { padding: 16px; }
   .sidebar .insight-panel p, .sidebar .info-card p { font-size: 13px; line-height: 1.8; }
@@ -158,7 +162,7 @@
 
 @media (max-width: 350px) {
   #heroes .hero-card { padding: 12px; }
-  #heroes .hero-card .portrait { width: 60px; height: 60px; }
+  #heroes .hero-card .portrait { width: 52px; height: 52px; }
   #heroes .hero-card .hero-identity { gap: 10px; }
-  #heroes .hero-card .hero-identity strong { font-size: 16px; }
+  #heroes .hero-card .hero-identity strong { font-size: 14px; }
 }

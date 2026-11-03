@@ -18,11 +18,12 @@ const saved = storage.load();
 const view = createHeroView();
 const model = createHeroModel(saved.keys);
 const detailView = createHeroDetailView();
-const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView });
+const snapshots = createSnapshotService({ base: import.meta.env.BASE_URL });
+const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots });
 const insights = createInsightView();
 if (!saved.available) view.notify('저장된 즐겨찾기를 읽지 못했습니다. 이번 방문에서 새로 선택할 수 있습니다.');
 router.start();
-createHeroController({ model, view, service: createOverfastService(), statisticsService: createStatisticsService(), snapshotService: createSnapshotService({ base: import.meta.env.BASE_URL }), storage,
+createHeroController({ model, view, service: createOverfastService(), statisticsService: createStatisticsService(), snapshotService: snapshots, storage,
   onStateChange() { router.refresh(); insights.render(model); },
   onHeroSelect(key) { location.hash = `/heroes/${key}`; },
 }).start();

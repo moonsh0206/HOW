@@ -1,9 +1,11 @@
 // Explicit local command only. No Git, credentials, schedule, or deployment side effects.
 import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { ALL_RANK_FILTERS as DEFAULT_FILTERS, statisticsQuery } from '../src/models/statisticsModel.js';
+import { statisticsQuery } from '../src/models/statisticsModel.js';
+import { parseSnapshotFilters } from './snapshot-options.js';
 import { normalizeSnapshot } from '../src/models/snapshotModel.js';
 
+const DEFAULT_FILTERS = parseSnapshotFilters(process.argv.slice(2));
 const root = new URL('../public/data/snapshots/', import.meta.url);
 await mkdir(root, { recursive: true });
 const indexPath = new URL('index.json', root);
