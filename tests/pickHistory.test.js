@@ -70,8 +70,8 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     assert.equal(document.querySelector('#hero-detail-page').hidden,false);
     assert(panel().parentElement.matches('.detail-summary-main'));assert(panel().closest('.detail-summary'));assert(panel().previousElementSibling.matches('.detail-metrics'));
     assert(document.querySelector('.detail-summary-top .counter-panel'));
-    assert.equal(panel().querySelector('h2').textContent,'픽률 변화 추이');
-    assert(!panel().hidden);assert.equal(panel().querySelectorAll('[data-history-days]').length,2);
+    assert.equal(panel().querySelector('h2').textContent,'픽률 · 패치별 변화');
+    assert(!panel().hidden);assert.equal(panel().querySelectorAll('[data-history-days]').length,0);
     assert(panel().textContent.includes('기록 수집 중'));assert.equal(panel().querySelector('svg'),null);
     // Mock current API value tests the integration, not a value saved to public data.
     model.state.statistics={filters:{...DEFAULT_FILTERS},fetchedAt:'2026-11-02T12:00:00Z',records:[{hero:'genji',pickRate:20.2}],cached:false,stale:false};
@@ -79,16 +79,11 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     assert.equal(panel().querySelectorAll('.history-point').length,1);assert(panel().textContent.includes('현재 픽률 20.2%'));
     router.refresh();assert.equal(document.querySelectorAll('#pick-history').length,1);
     model.state.statsFilters={...ALL_RANK_FILTERS};router.refresh();await flush();await flush();
-    assert.equal(panel().querySelectorAll('.history-point').length,1);
-    assert.equal(panel().querySelectorAll('.history-segment').length,0);
-    assert.equal(panel().querySelectorAll('.history-x span').length,1);
-    panel().querySelector('[data-history-days="30"]').click();await flush();await flush();
-    assert.equal(panel().querySelector('[data-history-days="30"]').getAttribute('aria-pressed'),'true');
-    assert.equal(panel().querySelectorAll('.history-point').length,1);
-    fail=true;panel().querySelector('[data-history-days="7"]').click();await flush();await flush();
-    assert(panel().textContent.includes('픽률 이력을 불러오지 못했습니다.'));assert(panel().querySelector('[data-action="history-retry"]'));
+    assert.equal(panel().querySelectorAll('.history-point').length,0);
+    fail=true;model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();await flush();
+    assert(panel().querySelector('[data-action="history-retry"]'));
     fail=false;panel().querySelector('[data-action="history-retry"]').click();await flush();await flush();
-    assert.equal(panel().querySelectorAll('.history-point').length,1);
+    assert.equal(panel().querySelectorAll('.history-point').length,0);
   } finally {router?.stop();dom.window.close();Object.assign(globalThis,prior);}
 });
 test('history: zero/single/sorted multiple, null vs zero and exact values',()=>{
@@ -176,10 +171,10 @@ test('history routing: range/cohort/hero races discard late data and errors can 
     model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();assert.equal(requests.length,2);
     requests[1].resolve({snapshots:[],observedUntil:new Date(now).toISOString()});await flush();
     requests[0].resolve({snapshots:[snap('2026-11-02T00:00:00Z',99)],observedUntil:new Date(now).toISOString()});await flush();assert.equal(renders.at(-1).result.points.length,0);
-    const button=document.createElement('button');button.dataset.historyDays='30';document.body.append(button);button.click();await flush();assert.equal(requests.at(-1).options.days,30);
+    model.state.statsFilters={...DEFAULT_FILTERS,region:'americas'};router.refresh();await flush();assert.equal(requests.at(-1).options.scope,'compare');
     requests.at(-1).reject(new Error('503'));await flush();assert.equal(renders.at(-1).status,'error');
     const retry=document.createElement('button');retry.dataset.action='history-retry';document.body.append(retry);retry.click();await flush();
     requests.at(-1).resolve({snapshots:[],observedUntil:new Date(now).toISOString()});await flush();assert.equal(renders.at(-1).status,'ready');
-    location.hash='#/heroes/genji';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();assert.equal(renders.at(-1).key,'genji');assert.equal(requests.at(-1).options.days,30);
+    location.hash='#/heroes/genji';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();assert.equal(renders.at(-1).key,'genji');assert.equal(requests.at(-1).options.scope,'compare');
   }finally{router?.stop();dom.window.close();Object.assign(globalThis,prior);}
 });

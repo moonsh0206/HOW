@@ -1,7 +1,7 @@
 import { createCounterService } from '../services/counterService.js';
-import { buildMetricHistory, HISTORY_METRICS } from '../models/pickHistoryModel.js';
+import { HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
-import { buildPatchHistory } from '../models/patchHistoryModel.js';
+import { buildPatchTimeline } from '../models/patchHistoryModel.js';
 import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 export function parseRoute(hash) {
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
@@ -15,12 +15,12 @@ export function createRoutingController({ model, detailService, detailView, coun
   let historyGeneration = 0, historyKey, historyDays = 7;
   let historyState = { status: 'idle', days: historyDays };
   let historyMetric = 'pickRate', historyArchive;
-  let historyScope = 'range';
+  const historyScope = 'compare';
   function resetHistory() { ++historyGeneration; historyKey = null; historyMetric = 'pickRate'; historyArchive = null; historyState = { status: 'idle', days: historyDays }; }
   function historyResult(result, key, filters, days) {
     const snapshots = [...result.snapshots, ...(result.gaps ?? []).map(entry => ({ ...entry, records: [] }))];
     const options = { days, now: Date.parse(result.observedUntil), metric: historyMetric };
-    const data = historyScope === 'range' ? buildMetricHistory(snapshots,key,filters,options) : buildPatchHistory(snapshots,key,filters,{...options,mode:historyScope,currentPatch:CURRENT_STATISTICS_PATCH});
+    const data = buildPatchTimeline(snapshots,key,filters,{...options,currentPatch:CURRENT_STATISTICS_PATCH});
     data.warnings.push(...(result.warnings ?? [])); return { status: 'ready', days, result: data };
   }
   function loadHistory() {
@@ -74,10 +74,6 @@ export function createRoutingController({ model, detailService, detailView, coun
       if (historyArchive) historyState = historyResult(historyArchive, route.key, model.state.statsFilters, historyDays);
       render();
     }
-    const range = event.target.closest('[data-history-days]');
-    if (range && [7,30].includes(Number(range.dataset.historyDays))) { historyScope='range'; historyDays = Number(range.dataset.historyDays); historyKey = null; render(); }
-    const scope = event.target.closest('[data-history-scope]');
-    if (scope && ['patch','compare'].includes(scope.dataset.historyScope)) { historyScope=scope.dataset.historyScope; historyKey=null;render(); }
     if (event.target.closest('[data-action="history-retry"]')) { historyKey = null; render(); }
   };
   return {

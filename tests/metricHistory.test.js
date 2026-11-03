@@ -49,7 +49,7 @@ test('dashboard: metric switching shares one archive request; passive appears on
     assert.equal(calls,1);assert.equal(document.querySelector('[data-history-metric="pickRate"]').getAttribute('aria-pressed'),'true');
     for(const [metric,label,current] of [['winRate','승률',53],['banRate','밴률',0],['pickRate','픽률',14]]){
       const button=document.querySelector(`[data-history-metric="${metric}"]`);button.focus();button.click();
-      assert.equal(document.querySelector('#pick-history-title').textContent,`${label} 변화 추이`);
+      assert.equal(document.querySelector('#pick-history-title').textContent,`${label} · 패치별 변화`);
       assert.equal(document.querySelector(`[data-history-metric="${metric}"]`).getAttribute('aria-pressed'),'true');
       assert.equal(document.activeElement.dataset.historyMetric,metric);
       assert(document.querySelector('.history-current').textContent.includes(`${current}%`));
@@ -62,21 +62,11 @@ test('dashboard: metric switching shares one archive request; passive appears on
     assert.equal(document.querySelectorAll('#detail-passives').length,1);
     assert.equal(document.querySelectorAll('#pick-history').length,1);
     assert(document.querySelector('.detail-summary [data-favorite="genji"]'));
-    document.querySelector('[data-history-metric="winRate"]').click();document.querySelector('[data-history-days="30"]').click();await flush();await flush();
-    assert.equal(document.querySelector('#pick-history-title').textContent,'승률 변화 추이');
-    assert.equal(document.querySelector('[data-history-days="30"]').getAttribute('aria-pressed'),'true');
-    document.querySelector('[data-history-scope="patch"]').click();await flush();await flush();
-    assert.equal(document.querySelector('[data-history-scope="patch"]').getAttribute('aria-pressed'),'true');
-    assert.equal(document.querySelectorAll('.history-point').length,1);
-    assert.equal(document.querySelectorAll('.history-segment').length,0);
-    document.querySelector('[data-history-scope="compare"]').click();await flush();await flush();
-    assert.equal(document.querySelector('[data-history-scope="compare"]').getAttribute('aria-pressed'),'true');
-    assert.equal(document.querySelectorAll('.history-point').length,1);
-    document.querySelector('[data-history-days="30"]').click();await flush();await flush();
+    document.querySelector('[data-history-metric="winRate"]').click();
+    assert.equal(document.querySelectorAll('[data-history-days],[data-history-scope]').length,0);
     model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();await flush();
-    assert.equal(document.querySelector('#pick-history-title').textContent,'승률 변화 추이');assert.equal(document.querySelector('.history-current'),null);
+    assert.equal(document.querySelector('#pick-history-title').textContent,'승률 · 패치별 변화');assert.equal(document.querySelector('.history-current'),null);
     location.hash='#/heroes/ana';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();await flush();
-    assert.equal(document.querySelector('#pick-history-title').textContent,'픽률 변화 추이');assert.equal(document.querySelectorAll('.history-point').length,0);
-    assert.equal(document.querySelector('[data-history-days="30"]').getAttribute('aria-pressed'),'true');
+    assert.equal(document.querySelector('#pick-history-title').textContent,'픽률 · 패치별 변화');assert.equal(document.querySelectorAll('.history-point').length,0);
   }finally{router?.stop();dom.window.close();Object.assign(globalThis,prior);}
 });

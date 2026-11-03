@@ -21,13 +21,8 @@ export function historyScale(points) {
 export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) {
   const label = HISTORY_LABELS[state.metric] ?? HISTORY_LABELS.pickRate;
   const panel = node('section', undefined, 'pick-history'); panel.id = 'pick-history'; panel.setAttribute('aria-labelledby', 'pick-history-title');
-  const head = node('div', undefined, 'history-heading'), title = node('h2', `${label} 변화 추이`); title.id = 'pick-history-title';
-  const controls = node('div', undefined, 'history-controls'); controls.setAttribute('role','group'); controls.setAttribute('aria-label',`${label} 이력 기간`);
-  for (const days of [7,30]) { const button = node('button', `${days}일`); button.type = 'button'; button.dataset.historyDays = days; button.setAttribute('aria-pressed', String((state.scope ?? 'range') === 'range' && (state.days ?? 7) === days)); controls.append(button); }
-  for (const [scope,label] of [['patch','이번 패치'],['compare','패치별 비교']]) {
-    const button=node('button',label);button.type='button';button.dataset.historyScope=scope;button.setAttribute('aria-pressed',String(state.scope===scope));controls.append(button);
-  }
-  head.append(title, controls); panel.append(head);
+  const head = node('div', undefined, 'history-heading'), title = node('h2', `${label} · 패치별 변화`); title.id = 'pick-history-title';
+  head.append(title); panel.append(head);
   if (state.current) {
     panel.append(node('strong', `현재 ${label} ${rate(state.current)}%`, 'history-current'));
     if (state.current.stale) panel.append(node('p','오래된 데이터', 'history-warning'));
@@ -56,7 +51,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
       mark.addEventListener('click',()=>choose(index)); mark.addEventListener('focus',()=>choose(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();choose(index);}}); plot.append(mark);
     });
     choose(data.points.length-1); graph.append(axis,plot);
-    const axisLabel = p => state.scope==='compare' ? p.patch ?? '현재 조회' : day(p.collectedAt);
+    const axisLabel = p => p.patchLabel ? `${p.patchLabel}${p.ongoing?' · 진행 중':''}` : p.patch ?? `현재 조회 · ${day(p.collectedAt)}`;
     const labels = node('div', undefined, 'history-x'); labels.setAttribute('aria-hidden','true'); labels.append(node('span',axisLabel(data.points[0])));
     if (data.points.length > 1) labels.append(node('span',axisLabel(data.points.at(-1)))); else labels.classList.add('history-x-single');
     panel.append(graph,labels,selected);

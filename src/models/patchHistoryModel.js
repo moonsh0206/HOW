@@ -11,6 +11,18 @@ export function verifiedPatch(snapshot, catalog = PATCH_CATALOG) {
 export function representatives(snapshots) {
   return [...new Map([...snapshots].sort((a,b)=>Date.parse(a.collectedAt)-Date.parse(b.collectedAt)).map(s=>[s.collectedAt,s])).values()].slice(-2);
 }
+// Public chart policy: one latest actual observation per verified patch/cohort/hero/metric.
+export function buildPatchTimeline(snapshots, heroKey, filters, {metric='pickRate',currentPatch=null,catalog=PATCH_CATALOG,now=Date.now()}={}) {
+  const verified=snapshots.filter(s=>verifiedPatch(s,catalog));
+  const checked=buildMetricHistory(verified,heroKey,filters,{metric,now,all:true});
+  const byPatch=new Map();
+  for(const point of checked.points) byPatch.set(point.patch,point);
+  const points=[...byPatch.values()].map(point=>{
+    const patch=catalog.find(row=>row.id===point.patch);
+    return {...point,patchLabel:patch.version??patch.date??patch.id,ongoing:point.patch===currentPatch};
+  });
+  return {...checked,points,segments:[],comparisonWindow:'different-patch-windows',representativePolicy:'latest-valid-observation-per-patch',patchCount:points.length};
+}
 export function buildPatchHistory(snapshots, heroKey, filters, { metric='pickRate', mode='patch', currentPatch=null, catalog=PATCH_CATALOG, now=Date.now(), releasedAt=null } = {}) {
   if (!['patch','compare'].includes(mode)) throw new Error('Invalid patch view');
   const eligible = snapshots.filter(s=>verifiedPatch(s,catalog) && isObservationTime(s.collectedAt) && (!releasedAt || isObservationTime(releasedAt) && Date.parse(s.collectedAt)>=Date.parse(releasedAt)));

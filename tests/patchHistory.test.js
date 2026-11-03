@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { buildPatchHistory,verifiedPatch } from '../src/models/patchHistoryModel.js';
+import { buildPatchHistory,buildPatchTimeline,verifiedPatch } from '../src/models/patchHistoryModel.js';
 import { retentionPlan } from '../src/models/snapshotRetentionModel.js';
 import { DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
 import { renderMetricHistory } from '../src/views/pickHistoryView.js';
@@ -38,10 +38,17 @@ test('patch controls: accessible state and unknown data fallback; marks match al
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try {
   const panel=renderMetricHistory({scope:'compare',metric:'winRate',result:{points:[],segments:[]}});
-  assert.equal(panel.querySelector('[data-history-scope="compare"]').getAttribute('aria-pressed'),'true');
-  assert.equal(panel.querySelector('[data-history-days="7"]').getAttribute('aria-pressed'),'false');assert(panel.textContent.includes('기록 수집 중'));
+  assert.equal(panel.querySelectorAll('[data-history-scope],[data-history-days]').length,0);
+  assert.equal(panel.querySelector('h2').textContent,'승률 · 패치별 변화');assert(panel.textContent.includes('기록 수집 중'));
  }finally{globalThis.document=prior;dom.window.close();}
  validateSubroles();assert.equal(Object.keys(subroles.heroes).length,54);
  for(const row of Object.values(subroles.heroes)){const e=subroles.effects[row.subroleKey];assert.equal(e.mark.displayAllowed,false);assert.equal(e.mark.permission,'unverified');assert(e.mark.url.toLowerCase().endsWith(`/${row.subroleKey}.svg`));}
  const css=fs.readFileSync(new URL('../src/styles/detail.css',import.meta.url),'utf8');assert(css.includes('prefers-reduced-motion:reduce'));assert(css.includes('box-shadow:inset 0 -2px 0 #f99e1a'));
+});
+test('public patch timeline: one latest real value per patch, unknown excluded and current patch marked ongoing',()=>{
+ const rows=[snap('p1','2026-10-01T00:00:00Z',5),snap('p1','2026-10-02T00:00:00Z',7),snap('p2','2026-11-01T00:00:00Z',9),{...snap(null,'2026-11-02T00:00:00Z',99),patchVerification:null}];
+ const result=buildPatchTimeline(rows,'genji',DEFAULT_FILTERS,{now,catalog,currentPatch:'p2'});
+ assert.deepEqual(result.points.map(p=>p.value),[7,9]);assert.equal(result.points[1].ongoing,true);assert.equal(result.points[0].ongoing,false);
+ assert.equal(result.segments.length,0);assert.equal(result.representativePolicy,'latest-valid-observation-per-patch');
+ assert.equal(buildPatchTimeline(rows.slice(0,2),'genji',DEFAULT_FILTERS,{now,catalog}).points.length,1);
 });
