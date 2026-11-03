@@ -1,0 +1,593 @@
+{
+  "reviewedAt": "2026-11-03",
+  "heroes": [
+    {
+      "heroKey": "ana",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "anran",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/anran/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "ashe",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "명사수",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "baptiste",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/baptiste/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "bastion",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "brigitte",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "cassidy",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "명사수",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/cassidy/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "dmon",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "doctrine",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doctrine/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "domina",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/domina/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "doomfist",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "개시자",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "dva",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "개시자",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dva/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "echo",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "수색가",
+      "descriptionKo": "생명력 절반 미만인 적에게 피해를 주면 적이 드러납니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt29e4cb7dc666bbe4/69cc4288eb1d69000843727d/Recon.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "emre",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/emre/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "freja",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "수색가",
+      "descriptionKo": "생명력 절반 미만인 적에게 피해를 주면 적이 드러납니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt29e4cb7dc666bbe4/69cc4288eb1d69000843727d/Recon.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/freja/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "genji",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/genji/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "hanzo",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "명사수",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hanzo/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "hazard",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "개시자",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hazard/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "illari",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/illari/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "jetpack-cat",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/jetpack-cat/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "junker-queen",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junker-queen/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "junkrat",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junkrat/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "juno",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/juno/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "kiriko",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "의무관",
+      "descriptionKo": "무기로 아군을 치유하면 자신도 치유합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73ceffbef4364cb1/69cc4288f9e2070008cdd2ae/Medic.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "lifeweaver",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "의무관",
+      "descriptionKo": "무기로 아군을 치유하면 자신도 치유합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73ceffbef4364cb1/69cc4288f9e2070008cdd2ae/Medic.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lifeweaver/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "lucio",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lucio/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "mauga",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "투사",
+      "descriptionKo": "치명타 저항력을 얻습니다. 생명력이 절반 미만일 시 더 빨리 이동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8d23e7e22f53a72b/69cc4288f66e9400087af43b/Bruiser.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "mei",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mei/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "mercy",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "의무관",
+      "descriptionKo": "무기로 아군을 치유하면 자신도 치유합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73ceffbef4364cb1/69cc4288f9e2070008cdd2ae/Medic.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mercy/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "mizuki",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mizuki/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "moira",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "의무관",
+      "descriptionKo": "무기로 아군을 치유하면 자신도 치유합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73ceffbef4364cb1/69cc4288f9e2070008cdd2ae/Medic.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/moira/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "orisa",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "투사",
+      "descriptionKo": "치명타 저항력을 얻습니다. 생명력이 절반 미만일 시 더 빨리 이동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8d23e7e22f53a72b/69cc4288f66e9400087af43b/Bruiser.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/orisa/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "pharah",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "수색가",
+      "descriptionKo": "생명력 절반 미만인 적에게 피해를 주면 적이 드러납니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt29e4cb7dc666bbe4/69cc4288eb1d69000843727d/Recon.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/pharah/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "ramattra",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ramattra/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "reaper",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reaper/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "reinhardt",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reinhardt/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "roadhog",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "투사",
+      "descriptionKo": "치명타 저항력을 얻습니다. 생명력이 절반 미만일 시 더 빨리 이동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8d23e7e22f53a72b/69cc4288f66e9400087af43b/Bruiser.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/roadhog/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "shion",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/shion/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "sierra",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "수색가",
+      "descriptionKo": "생명력 절반 미만인 적에게 피해를 주면 적이 드러납니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt29e4cb7dc666bbe4/69cc4288eb1d69000843727d/Recon.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sierra/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "sigma",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "강건한 자",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sigma/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "sojourn",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "명사수",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sojourn/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "soldier-76",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/soldier-76/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "sombra",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sombra/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "symmetra",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/symmetra/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "torbjorn",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "전문가",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/torbjorn/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "tracer",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/tracer/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "vendetta",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/vendetta/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "venture",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "측면 공격가",
+      "descriptionKo": "생명력 팩으로 생명력을 더 회복합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/venture/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "widowmaker",
+      "parentRoleNameKo": "공격",
+      "subroleNameKo": "명사수",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/widowmaker/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "winston",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "개시자",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/winston/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "wrecking-ball",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "개시자",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wrecking-ball/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "wuyang",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "생존왕",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wuyang/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "zarya",
+      "parentRoleNameKo": "돌격",
+      "subroleNameKo": "투사",
+      "descriptionKo": "치명타 저항력을 얻습니다. 생명력이 절반 미만일 시 더 빨리 이동합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8d23e7e22f53a72b/69cc4288f66e9400087af43b/Bruiser.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zarya/",
+      "reviewedAt": "2026-11-03"
+    },
+    {
+      "heroKey": "zenyatta",
+      "parentRoleNameKo": "지원",
+      "subroleNameKo": "전술가",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "icon": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zenyatta/",
+      "reviewedAt": "2026-11-03"
+    }
+  ],
+  "patches": [
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/02/",
+      "headings": [
+        "지브롤터 서사 업데이트",
+        "리알토 및 콜로세오"
+      ],
+      "excerpts": [
+        "레거시 조준 보정 설정 사용 시 적용되지 않습니다.\n영웅 업데이트: 하위 역할\n돌격 역할 지속 능력\n\n받은 치유 및 피해에 따라 부여되는 궁극기 충전량이 감소했습니다.\n\n궁극기 충전율 감소: -40%\n\n\n역할 고정 게임 모드에서 기본 생명력이 증가했습니다.\n\n보너스 생명력: +150\n\n\n역할 지속 능력에서 밀쳐내기 저항과 치명타 피해 저항이 제거되었습니다.\n받은 치유 및 피해에 따라 부여되는 궁극기 충전량이 감소했습니다.\n\n궁극기 충전율 감소: -40%\n궁극기 충전율 감소: -40%\n역할 고정 게임 모드에서 기본 생명력이 증가했습니다.\n\n보너스 생명력: +150",
+        "역할 지속 능력 시스템이 대대적으로 개편되어, 각 역할 내 여러 분류의 지속 능력이 도입되었습니다. 이제 영웅은 역할 내 하위 분류에 할당되며, 의도한 플레이스타일과 더 긴밀히 부합하는 신규 지속 능력을 얻습니다. 이러한 방식은 영웅별 게임플레이의 깊이와 역할의 정체성을 더 발전시키려는 것입니다.\n앞으로 이 신규 시스템의 효율을 긴밀히 살펴볼 예정입니다. 저희의 지속적인 계획에는 이 시스템의 영향을 평가하고 추후 필요에 따라 조정하는 것도 포함되어 있습니다. 개별 하위 역할의 밸런스를 조정하거나, 다른 하위 역할로 영웅을 재할당하거나, 또는 아예 새로운 하위 역할을 도입해 발전하는 게임의 필요를 더욱 잘 지원하고자 합니다.\n개시자\n\n영웅: D.Va, 둠피스트, 윈스턴, 레킹볼\n\n공중에서 약간의 생명력을 회복합니다.\n\n체공 시간: 0.8초\n총 치유량: 75\n치유 지속시간: 1초\n영웅: D.Va, 둠피스트, 윈스턴, 레킹볼\n\n공중에서 약간의 생명력을 회복합니다.\n\n체공 시간: 0.8초\n총 치유량: 75\n치유 지속시간: 1초\n공중에서 약간의 생명력을 회복합니다.\n\n체공 시간: 0.8초\n총 치유량: 75\n치유 지속시간: 1초\n체공 시간: 0.8초",
+        "이동 속도 보너스: 20%\n강건한 자\n\n영웅: 도미나, 해저드, 정커퀸, 라마트라, 라인하르트, 시그마\n\n밀쳐내기 및 감속 효과가 덜 적용됩니다.\n\n밀쳐내기 저항: 40%\n감속 저항: 40%\n영웅: 도미나, 해저드, 정커퀸, 라마트라, 라인하르트, 시그마\n\n밀쳐내기 및 감속 효과가 덜 적용됩니다.\n\n밀쳐내기 저항: 40%\n감속 저항: 40%\n밀쳐내기 및 감속 효과가 덜 적용됩니다.\n\n밀쳐내기 저항: 40%\n감속 저항: 40%\n밀쳐내기 저항: 40%\n감속 저항: 40%",
+        "드러내기 지속 시간: 5초\n측면 공격가\n\n영웅: 안란, 겐지, 리퍼, 트레이서, 벤데타, 벤처\n\n생명력 팩으로 생명력을 추가 회복합니다.\n\n추가 치유량: +75\n영웅: 안란, 겐지, 리퍼, 트레이서, 벤데타, 벤처\n\n생명력 팩으로 생명력을 추가 회복합니다.\n\n추가 치유량: +75\n생명력 팩으로 생명력을 추가 회복합니다.\n\n추가 치유량: +75\n추가 치유량: +75\n명사수\n\n영웅: 애쉬, 캐서디, 한조, 소전, 위도우메이커\n\n치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.\n\n재사용 대기시간 감소: 준 피해의 0.75%",
+        "재사용 대기시간 감소: 준 피해의 0.75%\n전술가\n\n영웅: 아나, 바티스트, 제트팩 캣, 루시우, 젠야타\n\n궁극기 사용 후에도 궁극기 충전이 추가로 유지됩니다.\n\n보너스 궁극기 충전 제한: 25%\n감소한 궁극기 충전율: 100% 초과 시-25%\n영웅: 아나, 바티스트, 제트팩 캣, 루시우, 젠야타\n\n궁극기 사용 후에도 궁극기 충전이 추가로 유지됩니다.\n\n보너스 궁극기 충전 제한: 25%\n감소한 궁극기 충전율: 100% 초과 시-25%\n궁극기 사용 후에도 궁극기 충전이 추가로 유지됩니다.\n\n보너스 궁극기 충전 제한: 25%\n감소한 궁극기 충전율: 100% 초과 시-25%\n보너스 궁극기 충전 제한: 25%\n감소한 궁극기 충전율: 100% 초과 시-25%",
+        "감소한 궁극기 충전율: 100% 초과 시-25%\n생존왕\n\n영웅: 브리기테, 일리아리, 주노, 미즈키, 우양\n\n이동 기술을 사용하면 지속 체력 재생이 활성화됩니다.\n영웅: 브리기테, 일리아리, 주노, 미즈키, 우양\n\n이동 기술을 사용하면 지속 체력 재생이 활성화됩니다.\n이동 기술을 사용하면 지속 체력 재생이 활성화됩니다.\n영웅 밸런스 변경 사항\n하위 역할 지속 능력이 추가되면서 기존 몇몇 특전의 기능과 중복이 발생했습니다. 이에 해당하는 특전은 대체했으며, 전체적인 특전 선택과 밸런스 개선을 위해 다른 특전은 재작업했습니다.",
+        "영웅 밸런스 변경 사항\n하위 역할 지속 능력이 추가되면서 기존 몇몇 특전의 기능과 중복이 발생했습니다. 이에 해당하는 특전은 대체했으며, 전체적인 특전 선택과 밸런스 개선을 위해 다른 특전은 재작업했습니다.\n돌격\nD.Va\nD.Va의 기동성, 방어 기술, 유효 생명력을 모두 합치면 지나치게 튼튼해 상대하기가 어려웠습니다. 기본 생명력을 낮추면 메카 밖으로 D.Va를 몰아낼 기회가 늘어날 것입니다.\n기본 생명력이 375에서 325로 감소했습니다. (5대5)",
+        "솜브라\n수색 하위 역할 지속 능력의 도입과 함께, 중복을 피하고자 솜브라의 기회주의자를 업데이트했습니다. 이름표에 적의 궁극기 상태가 드러나면 솜브라의 플레이스타일에 어울리는 고유한 정보를 얻을 수 있을 것입니다.\n기회주의자\n더 이상 생명력이 절반 미만인 적을 탐지하지 않습니다.\n이제 이름표 위에 적의 궁극기를 드러냅니다.\n건강한 해커 - 주요 특전",
+        "메르시\n의무관 하위 역할 지속 능력의 도입과 함께, 메르시의 연민의 치유를 생명력을 더 빨리 재생시키는 신속 치유로 교체했습니다.\n연민의 치유 - 지속 능력\n제거되었습니다.\n신속 치유 - 지속 능력\n생명력 재생을 더 빠르게 시작합니다."
+      ]
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/8/",
+      "headings": [],
+      "excerpts": [
+        "잘 사용되지 않는 몇 가지 특전이 새로운 옵션으로 교체되었고, 다른 일부는 성능에 따라 조정되었습니다. 또한 영웅 밸런스를 조절하는 동시에 궁극기 획득에 필요한 시간과 기술의 전체적 효율이 더 잘 맞도록 일부 영웅의 궁극기 비용을 업데이트했습니다.\nD.Mon을 돌격 영웅 목록에 추가했습니다(하위 역할: 강건한 자).\n측면 공격가\n생명력 팩으로 얻는 추가 치유가 75에서 50으로 감소했습니다.\n해당 하위 역할의 영웅에게 소형 생명력 팩의 효율이 지나치게 높은 모습을 보였습니다. 추가로 얻는 생명력을 감소하여 생존력 효과의 밸런스를 개선하려 합니다.\n돌격",
+        "D.Mon을 돌격 영웅 목록에 추가했습니다(하위 역할: 강건한 자).\n측면 공격가\n생명력 팩으로 얻는 추가 치유가 75에서 50으로 감소했습니다.\n해당 하위 역할의 영웅에게 소형 생명력 팩의 효율이 지나치게 높은 모습을 보였습니다. 추가로 얻는 생명력을 감소하여 생존력 효과의 밸런스를 개선하려 합니다.\n돌격\n도미나",
+        "생명력 팩으로 얻는 추가 치유가 75에서 50으로 감소했습니다.\n해당 하위 역할의 영웅에게 소형 생명력 팩의 효율이 지나치게 높은 모습을 보였습니다. 추가로 얻는 생명력을 감소하여 생존력 효과의 밸런스를 개선하려 합니다.\n돌격\n도미나\n판옵티콘 방벽의 내구도가 늘어나 안정성이 개선되었습니다. 유효 생명력이 높아져 적이 벗어나기가 더 어려워졌으며, 이로써 폭발할 가능성이 증가하거나 궁극기 대처에 더 많은 시간을 소모하도록 만들었습니다.\n방벽 내구도가 450에서 500으로 증가했습니다.",
+        "리퍼가 긴박한 방아쇠를 발사하는 중 재장전 예약이 되지 않던 문제를 수정했습니다.\n생존왕 하위 역할의 지속 치유가 해당하는 이동 기술 없이 잘못 발동되던 문제를 수정했습니다.\n둠피스트의 적자생존 특전이 올바른 최대 추가 생명력을 제공하지 않던 문제를 수정했습니다.\n컨트롤러 사용 중 한조의 냉기 화살 특전을 활성화할 시 발생하던 문제를 수정했습니다.\n이전 업데이트에서 소용돌이 약병이 올바른 생명력을 제공하지 않던 문제를 수정했습니다.\n이전 업데이트에서 3연속 토미건 발사가 D.Va에게 제대로 작동되지 않던 문제를 수정했습니다."
+      ]
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/",
+      "headings": [],
+      "excerpts": [
+        "공격 역할에서 지원 역할로 변경되었습니다.\n하위 역할이 수색가에서 전술가로 변경되었습니다.\n보조 특전 획득에 필요한 경험치가 67% 증가했습니다.\n주요 특전 획득에 필요한 경험치가 69.5% 증가했습니다.\n암호화 업로드 - 보조 특전\n제거되었습니다."
+      ]
+    }
+  ],
+  "api": {
+    "sourceUrl": "https://overfast-api.tekrop.fr/heroes/genji?locale=ko-kr",
+    "fields": [
+      "name",
+      "description",
+      "backgrounds",
+      "portrait",
+      "role",
+      "subrole",
+      "location",
+      "birthday",
+      "age",
+      "hitpoints",
+      "abilities",
+      "perks",
+      "story",
+      "stadium_powers"
+    ],
+    "subrole": "flanker",
+    "abilityFields": [
+      "name",
+      "description",
+      "icon",
+      "video"
+    ],
+    "schema": {
+      "type": "string",
+      "enum": [
+        "flanker",
+        "recon",
+        "sharpshooter",
+        "specialist",
+        "medic",
+        "survivor",
+        "tactician",
+        "bruiser",
+        "initiator",
+        "stalwart"
+      ],
+      "title": "SubRole",
+      "description": "Overwatch heroes Sub-Roles"
+    },
+    "requiredCases": [
+      {
+        "key": "shion",
+        "role": "damage",
+        "subrole": "flanker"
+      },
+      {
+        "key": "sombra",
+        "role": "support",
+        "subrole": "tactician"
+      },
+      {
+        "key": "dmon",
+        "role": "tank",
+        "subrole": "stalwart"
+      },
+      {
+        "key": "doctrine",
+        "role": "support",
+        "subrole": "survivor"
+      }
+    ]
+  }
+}

@@ -58,14 +58,21 @@ export function createHeroDetailView() {
         const identity = node('div', undefined, 'detail-identity');
         if (hero.portrait) identity.append(image(hero.portrait, 'detail-portrait'));
         const title = node('div'); title.append(node('p', 'HERO INTELLIGENCE', 'eyebrow'));
-        const h1 = node('h1', hero.name); h1.tabIndex = -1; title.append(h1, node('span', ROLES[hero.role], `role-tag ${hero.role}`));
+        const h1 = node('h1', hero.name); h1.tabIndex = -1;
+        const badges = node('div', undefined, 'detail-role-badges');
+        badges.append(node('span', ROLES[hero.role], `role-tag ${hero.role}`));
+        if (hero.subrole) badges.append(node('span', hero.subrole.subroleNameKo, 'subrole-tag'));
+        title.append(h1, badges);
         identity.append(title); header.append(identity, node('p', hero.description, 'detail-description')); root.append(header);
         const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약'); root.append(stats);
         const tabs = node('nav', undefined, 'detail-tabs'); tabs.setAttribute('aria-label', '영웅 상세 섹션');
         for (const [tab, label] of [['overview', '전체 정보'], ['abilities', '기술·패시브'], ['perks', '특전']]) { const link = node('a', label); link.href = `#/heroes/${hero.key}${tab === 'overview' ? '' : '/' + tab}`; link.dataset.detailTab = tab; tabs.append(link); }
         root.append(tabs, section('detail-abilities', '영웅 기술', hero.abilities));
-        const passive = section('detail-passives', '패시브 기술', []);
-        passive.querySelector('p').textContent = 'API가 패시브 구분 필드를 제공하지 않아 별도 분류하지 않습니다. 위 기술 목록에서 확인하세요.'; root.append(passive);
+        const passive = section('detail-passives', '지속 능력', hero.subrole ? [{ name: hero.subrole.subroleNameKo, description: hero.subrole.descriptionKo }] : []);
+        if (!hero.subrole) passive.querySelector('p').textContent = '확인된 하위 역할 정보가 없습니다.';
+        // Hero-specific passives remain separate; never infer them from names or order.
+        if (hero.uniquePassives?.length) passive.append(section('detail-unique-passives', '고유 지속 능력', hero.uniquePassives));
+        root.append(passive);
         root.append(section('detail-minor', '일반 특전 · Minor', hero.minor), section('detail-major', '주요 특전 · Major', hero.major));
         const rates = section('detail-perk-rates', '특전 선택률', []);
         const perkRates = unavailablePerkSelection(hero.key);

@@ -1,0 +1,432 @@
+{
+  "effects": {
+    "tactician": {
+      "subroleKey": "tactician",
+      "subroleNameKo": "전술가",
+      "parentRole": "support",
+      "descriptionKo": "추가 궁극기 충전을 유지합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "flanker": {
+      "subroleKey": "flanker",
+      "subroleNameKo": "측면 공격가",
+      "parentRole": "damage",
+      "descriptionKo": "생명력 팩을 획득하면 생명력을 50 추가 회복합니다.",
+      "effectValue": {
+        "bonusHealing": 50
+      },
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/8/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "sharpshooter": {
+      "subroleKey": "sharpshooter",
+      "subroleNameKo": "명사수",
+      "parentRole": "damage",
+      "descriptionKo": "치명타 적중 시 이동 기술 재사용 대기시간이 감소합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "specialist": {
+      "subroleKey": "specialist",
+      "subroleNameKo": "전문가",
+      "parentRole": "damage",
+      "descriptionKo": "적을 처치하면 잠깐 동안 재장전 속도가 증가합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "survivor": {
+      "subroleKey": "survivor",
+      "subroleNameKo": "생존왕",
+      "parentRole": "support",
+      "descriptionKo": "이동 기술을 사용하면 생명력 지속 재생이 발동합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "stalwart": {
+      "subroleKey": "stalwart",
+      "subroleNameKo": "강건한 자",
+      "parentRole": "tank",
+      "descriptionKo": "밀쳐내기 및 감속에 저항력을 얻습니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "initiator": {
+      "subroleKey": "initiator",
+      "subroleNameKo": "개시자",
+      "parentRole": "tank",
+      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "recon": {
+      "subroleKey": "recon",
+      "subroleNameKo": "수색가",
+      "parentRole": "damage",
+      "descriptionKo": "생명력 절반 미만인 적에게 피해를 주면 적이 드러납니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "medic": {
+      "subroleKey": "medic",
+      "subroleNameKo": "의무관",
+      "parentRole": "support",
+      "descriptionKo": "무기로 아군을 치유하면 자신도 치유합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    },
+    "bruiser": {
+      "subroleKey": "bruiser",
+      "subroleNameKo": "투사",
+      "parentRole": "tank",
+      "descriptionKo": "치명타 저항력을 얻습니다. 생명력이 절반 미만일 시 더 빨리 이동합니다.",
+      "effectValue": null,
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
+      "reviewedAt": "2026-11-03",
+      "applicablePatch": null
+    }
+  },
+  "heroes": {
+    "ana": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
+      "reviewedAt": "2026-11-03"
+    },
+    "anran": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/anran/",
+      "reviewedAt": "2026-11-03"
+    },
+    "ashe": {
+      "subroleKey": "sharpshooter",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
+      "reviewedAt": "2026-11-03"
+    },
+    "baptiste": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/baptiste/",
+      "reviewedAt": "2026-11-03"
+    },
+    "bastion": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
+      "reviewedAt": "2026-11-03"
+    },
+    "brigitte": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
+      "reviewedAt": "2026-11-03"
+    },
+    "cassidy": {
+      "subroleKey": "sharpshooter",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/cassidy/",
+      "reviewedAt": "2026-11-03"
+    },
+    "dmon": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
+      "reviewedAt": "2026-11-03"
+    },
+    "doctrine": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doctrine/",
+      "reviewedAt": "2026-11-03"
+    },
+    "domina": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/domina/",
+      "reviewedAt": "2026-11-03"
+    },
+    "doomfist": {
+      "subroleKey": "initiator",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
+      "reviewedAt": "2026-11-03"
+    },
+    "dva": {
+      "subroleKey": "initiator",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dva/",
+      "reviewedAt": "2026-11-03"
+    },
+    "echo": {
+      "subroleKey": "recon",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
+      "reviewedAt": "2026-11-03"
+    },
+    "emre": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/emre/",
+      "reviewedAt": "2026-11-03"
+    },
+    "freja": {
+      "subroleKey": "recon",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/freja/",
+      "reviewedAt": "2026-11-03"
+    },
+    "genji": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/genji/",
+      "reviewedAt": "2026-11-03"
+    },
+    "hanzo": {
+      "subroleKey": "sharpshooter",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hanzo/",
+      "reviewedAt": "2026-11-03"
+    },
+    "hazard": {
+      "subroleKey": "initiator",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/hazard/",
+      "reviewedAt": "2026-11-03"
+    },
+    "illari": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/illari/",
+      "reviewedAt": "2026-11-03"
+    },
+    "jetpack-cat": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/jetpack-cat/",
+      "reviewedAt": "2026-11-03"
+    },
+    "junker-queen": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junker-queen/",
+      "reviewedAt": "2026-11-03"
+    },
+    "junkrat": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/junkrat/",
+      "reviewedAt": "2026-11-03"
+    },
+    "juno": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/juno/",
+      "reviewedAt": "2026-11-03"
+    },
+    "kiriko": {
+      "subroleKey": "medic",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
+      "reviewedAt": "2026-11-03"
+    },
+    "lifeweaver": {
+      "subroleKey": "medic",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lifeweaver/",
+      "reviewedAt": "2026-11-03"
+    },
+    "lucio": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/lucio/",
+      "reviewedAt": "2026-11-03"
+    },
+    "mauga": {
+      "subroleKey": "bruiser",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
+      "reviewedAt": "2026-11-03"
+    },
+    "mei": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mei/",
+      "reviewedAt": "2026-11-03"
+    },
+    "mercy": {
+      "subroleKey": "medic",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mercy/",
+      "reviewedAt": "2026-11-03"
+    },
+    "mizuki": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mizuki/",
+      "reviewedAt": "2026-11-03"
+    },
+    "moira": {
+      "subroleKey": "medic",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/moira/",
+      "reviewedAt": "2026-11-03"
+    },
+    "orisa": {
+      "subroleKey": "bruiser",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/orisa/",
+      "reviewedAt": "2026-11-03"
+    },
+    "pharah": {
+      "subroleKey": "recon",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/pharah/",
+      "reviewedAt": "2026-11-03"
+    },
+    "ramattra": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ramattra/",
+      "reviewedAt": "2026-11-03"
+    },
+    "reaper": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reaper/",
+      "reviewedAt": "2026-11-03"
+    },
+    "reinhardt": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/reinhardt/",
+      "reviewedAt": "2026-11-03"
+    },
+    "roadhog": {
+      "subroleKey": "bruiser",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/roadhog/",
+      "reviewedAt": "2026-11-03"
+    },
+    "shion": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/shion/",
+      "reviewedAt": "2026-11-03"
+    },
+    "sierra": {
+      "subroleKey": "recon",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sierra/",
+      "reviewedAt": "2026-11-03"
+    },
+    "sigma": {
+      "subroleKey": "stalwart",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sigma/",
+      "reviewedAt": "2026-11-03"
+    },
+    "sojourn": {
+      "subroleKey": "sharpshooter",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sojourn/",
+      "reviewedAt": "2026-11-03"
+    },
+    "soldier-76": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/soldier-76/",
+      "reviewedAt": "2026-11-03"
+    },
+    "sombra": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/sombra/",
+      "reviewedAt": "2026-11-03"
+    },
+    "symmetra": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/symmetra/",
+      "reviewedAt": "2026-11-03"
+    },
+    "torbjorn": {
+      "subroleKey": "specialist",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/torbjorn/",
+      "reviewedAt": "2026-11-03"
+    },
+    "tracer": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/tracer/",
+      "reviewedAt": "2026-11-03"
+    },
+    "vendetta": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/vendetta/",
+      "reviewedAt": "2026-11-03"
+    },
+    "venture": {
+      "subroleKey": "flanker",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/venture/",
+      "reviewedAt": "2026-11-03"
+    },
+    "widowmaker": {
+      "subroleKey": "sharpshooter",
+      "parentRole": "damage",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/widowmaker/",
+      "reviewedAt": "2026-11-03"
+    },
+    "winston": {
+      "subroleKey": "initiator",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/winston/",
+      "reviewedAt": "2026-11-03"
+    },
+    "wrecking-ball": {
+      "subroleKey": "initiator",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wrecking-ball/",
+      "reviewedAt": "2026-11-03"
+    },
+    "wuyang": {
+      "subroleKey": "survivor",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/wuyang/",
+      "reviewedAt": "2026-11-03"
+    },
+    "zarya": {
+      "subroleKey": "bruiser",
+      "parentRole": "tank",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zarya/",
+      "reviewedAt": "2026-11-03"
+    },
+    "zenyatta": {
+      "subroleKey": "tactician",
+      "parentRole": "support",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/zenyatta/",
+      "reviewedAt": "2026-11-03"
+    }
+  }
+}

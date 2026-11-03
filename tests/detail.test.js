@@ -49,7 +49,8 @@ test('DOM: direct detail boot, real abilities/perks, tabs, safe text and no fake
   assert.equal(document.querySelectorAll('#detail-abilities .ability-card').length, 5);
   assert.equal(document.querySelectorAll('#detail-minor .ability-card').length, 2);
   assert.equal(document.querySelectorAll('#detail-major .ability-card').length, 2);
-  assert.match(document.querySelector('#detail-passives').textContent, /구분 필드/);
+  assert.match(document.querySelector('#detail-passives').textContent, /측면 공격가/);
+  assert.match(document.querySelector('#detail-passives').textContent, /50 추가 회복/);
   assert.match(document.querySelector('#detail-perk-rates').textContent, /미제공/);
   assert(document.querySelectorAll('#detail-abilities video').length > 0);
   location.hash = '#/heroes/genji/perks'; window.dispatchEvent(new window.HashChangeEvent('hashchange'));

@@ -1,4 +1,5 @@
 import { safeImage, ROLES } from './heroModel.js';
+import { getHeroSubrole } from './subroleModel.js';
 
 export function normalizeHeroDetail(raw, key) {
   if (!raw || typeof raw.name !== 'string' || !raw.name.trim() || !Object.hasOwn(ROLES, raw.role)) throw new Error('영웅 상세 응답이 올바르지 않습니다.');
@@ -13,7 +14,7 @@ export function normalizeHeroDetail(raw, key) {
   };
   if (raw.backgrounds != null && !Array.isArray(raw.backgrounds)) throw new Error('배경 목록 형식이 올바르지 않습니다.');
   return {
-    key, name: raw.name, role: raw.role, portrait: safeImage(raw.portrait), description: typeof raw.description === 'string' ? raw.description : '',
+    key, name: raw.name, role: raw.role, subrole: getHeroSubrole(key, raw.role, raw.subrole), uniquePassives: [], portrait: safeImage(raw.portrait), description: typeof raw.description === 'string' ? raw.description : '',
     backgrounds: (raw.backgrounds ?? []).map(item => ({ url: safeImage(item?.url), sizes: Array.isArray(item?.sizes) ? item.sizes.filter(size => typeof size === 'string') : [] })).filter(item => item.url),
     abilities: list(raw.abilities, '기술'), minor: list(raw.perks?.minor, 'Minor 특전'), major: list(raw.perks?.major, 'Major 특전'), passiveClassification: 'unavailable',
   };

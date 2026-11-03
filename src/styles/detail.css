@@ -69,6 +69,11 @@
 .detail-summary-side>.counter-panel{border:0;padding:0}
 .detail-summary-side>.pick-history{border:0;border-top:1px solid var(--line);border-radius:0;padding:10px 0 0;margin:10px 0 0;background:none}
 .detail-summary-side .history-heading h2{font-size:16px}
+.detail-role-badges{display:flex;gap:8px;flex-wrap:wrap;align-items:center;min-width:0}
+.subrole-tag{display:inline-block;font-size:12px;line-height:1.5;padding:4px 9px;border:1px solid #87612f;border-radius:4px;background:#342b20;color:#ffca7b;overflow-wrap:anywhere}
+#detail-passives .ability-grid{grid-template-columns:minmax(0,1fr)}
+#detail-passives .ability-card{padding:18px 20px}
+#detail-passives .ability-card p{margin-bottom:0}
 .detail-summary .history-current{display:block;font-size:18px;color:var(--orange);margin-top:6px}
 .detail-summary .pick-history .history-empty,.detail-summary .pick-history .history-warning{font-size:11px;line-height:1.5;margin:6px 0}
 @media(max-width:600px){.pick-history .history-heading{flex-direction:row;align-items:center;gap:6px}.pick-history .history-controls{width:auto;gap:4px}.history-controls button{padding:6px 8px}.history-graph svg,.history-y{height:120px}}
