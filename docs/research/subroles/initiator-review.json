@@ -1,0 +1,57 @@
+{
+  "reviewedAt": "2026-11-03",
+  "reviews": [
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/05/",
+      "status": 200,
+      "initiatorMention": true,
+      "effectChange": {
+        "healing": 50,
+        "activation": {
+          "doomfist": "rocket-punch",
+          "winston": "jump-pack",
+          "dva": "boosters",
+          "hazard": "violent-leap",
+          "wrecking-ball": "grappling-claw"
+        }
+      }
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/06/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/07/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/8/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/09/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/10/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    },
+    {
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "initiatorMention": false,
+      "effectChange": null
+    }
+  ],
+  "caveat": "No later initiator change found in accessible monthly pages; not a guarantee of exhaustive patch indexing."
+}

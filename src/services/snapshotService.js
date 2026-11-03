@@ -35,9 +35,10 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
     return snapshot;
   }
   return {
-    async getHistory(filters, { days = 7 } = {}) {
+    async getHistory(filters, { days = 7, scope = 'range' } = {}) {
       if (![7,30].includes(days)) throw new Error('지원하지 않는 이력 기간입니다.');
-      const data = await index(), end = now(), start = end - days * 86400000;
+      if (!['range','patch','compare'].includes(scope)) throw new Error('지원하지 않는 이력 보기입니다.');
+      const data = await index(), end = now(), start = scope === 'range' ? end - days * 86400000 : -Infinity;
       const entries = data.snapshots.filter(entry => matches(entry, filters) && Date.parse(entry.collectedAt) >= start && Date.parse(entry.collectedAt) <= end);
       const snapshots = [], warnings = [], gaps = [];
       for (let i = 0; i < entries.length; i += 8) {

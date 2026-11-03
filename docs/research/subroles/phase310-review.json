@@ -1,0 +1,46 @@
+{
+  "reviewedAt": "2026-11-03",
+  "pages": [
+    {
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/07/",
+      "status": 200,
+      "mentionsInitiator": true,
+      "change50to40": true
+    },
+    {
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/8/",
+      "status": 200,
+      "mentionsInitiator": false,
+      "change50to40": false
+    },
+    {
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/09/",
+      "status": 200,
+      "mentionsInitiator": false,
+      "change50to40": false
+    },
+    {
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/10/",
+      "status": 200,
+      "mentionsInitiator": false,
+      "change50to40": false
+    },
+    {
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "mentionsInitiator": false,
+      "change50to40": false
+    }
+  ],
+  "initiatorHealing": 40,
+  "previousReviewCorrection": "Prior Korean-only search missed an English section on the July Korean page.",
+  "marks": {
+    "officialSmallSvgUrls": "Stored in each subrole mark; sourced from official hero HTML",
+    "pressSource": "https://blizzard.gamespress.com/en-AU/Overwatch-Spotlight-2026",
+    "termsSource": "https://www.blizzard.com/legal/511dbf9e-2b2d-4047-8243-4c5c65e0ebf1/",
+    "permission": "unverified",
+    "displayAllowed": false
+  },
+  "statisticsSource": "https://overwatch.blizzard.com/en-us/rates/",
+  "statisticsPolicy": "Stats are since latest patch; update delay may be up to one day. API patch attribution remains unverified."
+}

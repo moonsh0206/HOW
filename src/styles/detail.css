@@ -83,3 +83,33 @@
  .detail-summary-info{order:1}
  .detail-summary-side{padding:14px 0 0;border-left:0;border-top:1px solid var(--line)}
 }
+
+/* Phase 3.9: main metrics and chart, secondary counters and passive. */
+.detail-summary-top{grid-template-rows:auto;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr)}
+.detail-summary-main{min-width:0}
+.detail-summary-side{grid-column:auto;grid-row:auto}
+.detail-summary-main>.pick-history{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:10px 0 0;margin:10px 0}
+.detail-summary-info{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px}
+.detail-summary-info>p{margin:0}
+.detail-stat-info{font-size:11px;color:var(--muted);min-width:0;max-width:100%}
+.detail-stat-info summary{cursor:pointer;min-height:44px;display:flex;align-items:center}
+.detail-metric-button{width:100%;min-height:58px;border:1px solid transparent;border-radius:6px;padding:6px 4px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;background:transparent;text-align:left}
+.detail-metric-button .metric-label{font-size:12px;color:var(--muted)}
+.detail-metric-button[aria-pressed=true]{border-color:var(--orange);background:#332b20}
+.detail-summary-main .detail-metrics{align-items:center}
+.detail-summary-main .detail-metrics dd{margin:0}
+.detail-summary-side #detail-passives{margin:14px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.detail-summary-side #detail-passives>h2{font-size:14px;margin:0 0 8px}
+.detail-summary-side #detail-passives .ability-card{padding:12px;background:#17202c;border-radius:8px}
+.detail-summary-side #detail-passives h3{font-size:14px}
+.detail-summary-side #detail-passives p{font-size:12px;line-height:1.7}
+@media(max-width:700px){.detail-summary-main,.detail-summary-side{width:100%}.detail-summary-info{order:0}.detail-metric-button .metric-label{font-size:11px}}
+
+/* Restrained shared metric/range/patch controls. */
+.detail-metric-button,.history-controls button{background:#10151e;border:1px solid #2b3442;color:#edf1f7;position:relative;transition:background-color .18s,border-color .18s;min-width:44px;min-height:44px}
+.detail-metric-button .metric-label{color:#aeb8c7}
+.detail-metric-button[aria-pressed=true],.history-controls button[aria-pressed=true]{background:rgba(249,158,26,.06);border-color:rgba(249,158,26,.42);color:#edf1f7;box-shadow:inset 0 -2px 0 #f99e1a}
+.detail-metric-button:hover,.history-controls button:hover{background:#202735;border-color:#617085;filter:none;transform:none}
+.detail-metric-button:focus-visible,.history-controls button:focus-visible{outline:2px solid #72b9f5;outline-offset:3px}
+#detail-passives .ability-heading .subrole-mark{width:32px;height:32px;padding:0;object-fit:contain;background:transparent}
+@media(prefers-reduced-motion:reduce){.detail-metric-button,.history-controls button{transition:none}}

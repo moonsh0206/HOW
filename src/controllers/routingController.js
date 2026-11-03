@@ -1,6 +1,8 @@
 import { createCounterService } from '../services/counterService.js';
-import { buildPickHistory } from '../models/pickHistoryModel.js';
+import { buildMetricHistory, HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
+import { buildPatchHistory } from '../models/patchHistoryModel.js';
+import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 export function parseRoute(hash) {
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
@@ -12,19 +14,27 @@ export function createRoutingController({ model, detailService, detailView, coun
   let detailState = { status: 'loading', result: null, error: '' };
   let historyGeneration = 0, historyKey, historyDays = 7;
   let historyState = { status: 'idle', days: historyDays };
-  function resetHistory() { ++historyGeneration; historyKey = null; historyState = { status: 'idle', days: historyDays }; }
+  let historyMetric = 'pickRate', historyArchive;
+  let historyScope = 'range';
+  function resetHistory() { ++historyGeneration; historyKey = null; historyMetric = 'pickRate'; historyArchive = null; historyState = { status: 'idle', days: historyDays }; }
+  function historyResult(result, key, filters, days) {
+    const snapshots = [...result.snapshots, ...(result.gaps ?? []).map(entry => ({ ...entry, records: [] }))];
+    const options = { days, now: Date.parse(result.observedUntil), metric: historyMetric };
+    const data = historyScope === 'range' ? buildMetricHistory(snapshots,key,filters,options) : buildPatchHistory(snapshots,key,filters,{...options,mode:historyScope,currentPatch:CURRENT_STATISTICS_PATCH});
+    data.warnings.push(...(result.warnings ?? [])); return { status: 'ready', days, result: data };
+  }
   function loadHistory() {
     if (!historyService || detailState.status !== 'ready') return;
     const filters = { ...model.state.statsFilters }, key = route.key;
-    const signature = `${key}:${statisticsQuery(filters)}:${historyDays}`;
+    const signature = `${key}:${statisticsQuery(filters)}:${historyDays}:${historyScope}`;
     if (historyKey === signature) return;
     historyKey = signature; const token = ++historyGeneration, days = historyDays;
-    historyState = { status: 'loading', days };
-    Promise.resolve().then(() => historyService.getHistory(filters, { days })).then(result => {
+    historyArchive = null; historyState = { status: 'loading', days };
+    const scope = historyScope;
+    Promise.resolve().then(() => historyService.getHistory(filters, { days, scope })).then(result => {
       if (token !== historyGeneration || route.page !== 'detail' || route.key !== key) return;
       if (!result.snapshots.length && result.warnings?.length) throw new Error('저장된 이력 파일을 읽지 못했습니다. 다시 시도해 주세요.');
-      const data = buildPickHistory([...result.snapshots, ...(result.gaps ?? []).map(entry => ({ ...entry, records: [] }))], key, filters, { days, now: Date.parse(result.observedUntil) });
-      data.warnings.push(...(result.warnings ?? [])); historyState = { status: 'ready', days, result: data };
+      historyArchive = result; historyState = historyResult(result, key, filters, days);
     }).catch(error => {
       if (token === historyGeneration) historyState = { status: 'error', days, error: error.message };
     }).finally(() => { if (token === historyGeneration) render(); });
@@ -33,7 +43,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     document.querySelector('#list-page').hidden = route.page !== 'list';
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
-    if (route.page === 'detail') { loadHistory(); detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), historyState); }
+    if (route.page === 'detail') { loadHistory(); detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }); }
   }
   async function load() {
     resetHistory();
@@ -58,8 +68,16 @@ export function createRoutingController({ model, detailService, detailView, coun
   const retry = event => {
     if (route.page !== 'detail') return;
     if (event.target.closest('[data-action="detail-retry"]')) load();
+    const metric = event.target.closest('[data-history-metric]');
+    if (metric && HISTORY_METRICS.includes(metric.dataset.historyMetric)) {
+      historyMetric = metric.dataset.historyMetric;
+      if (historyArchive) historyState = historyResult(historyArchive, route.key, model.state.statsFilters, historyDays);
+      render();
+    }
     const range = event.target.closest('[data-history-days]');
-    if (range && [7,30].includes(Number(range.dataset.historyDays))) { historyDays = Number(range.dataset.historyDays); historyKey = null; render(); }
+    if (range && [7,30].includes(Number(range.dataset.historyDays))) { historyScope='range'; historyDays = Number(range.dataset.historyDays); historyKey = null; render(); }
+    const scope = event.target.closest('[data-history-scope]');
+    if (scope && ['patch','compare'].includes(scope.dataset.historyScope)) { historyScope=scope.dataset.historyScope; historyKey=null;render(); }
     if (event.target.closest('[data-action="history-retry"]')) { historyKey = null; render(); }
   };
   return {

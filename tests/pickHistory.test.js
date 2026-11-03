@@ -68,7 +68,7 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     const flush=()=>new Promise(resolve=>setImmediate(resolve));router.start();await flush();await flush();
     const panel=()=>document.querySelector('#pick-history');
     assert.equal(document.querySelector('#hero-detail-page').hidden,false);
-    assert(panel().parentElement.matches('.detail-summary-side'));assert(panel().closest('.detail-summary'));assert(panel().previousElementSibling.matches('.counter-panel'));
+    assert(panel().parentElement.matches('.detail-summary-main'));assert(panel().closest('.detail-summary'));assert(panel().previousElementSibling.matches('.detail-metrics'));
     assert(document.querySelector('.detail-summary-top .counter-panel'));
     assert.equal(panel().querySelector('h2').textContent,'픽률 변화 추이');
     assert(!panel().hidden);assert.equal(panel().querySelectorAll('[data-history-days]').length,2);

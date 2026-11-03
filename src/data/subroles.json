@@ -8,7 +8,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt906428e0112461d2/69cc4288fe4fec0008a19052/Tactician.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ana/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "flanker": {
       "subroleKey": "flanker",
@@ -20,7 +27,14 @@
       },
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/8/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt50cfb5504e16e801/69cc428880f5db0008566475/Flanker.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/anran/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "sharpshooter": {
       "subroleKey": "sharpshooter",
@@ -30,7 +44,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8caf99d96f16cb91/69cc42885d96c80008fac69c/Sharpshooter.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/ashe/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "specialist": {
       "subroleKey": "specialist",
@@ -40,7 +61,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt289e9f8acb0b9479/69cc4288f66e9400087af437/Specialist.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/bastion/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "survivor": {
       "subroleKey": "survivor",
@@ -50,7 +78,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt041c4d83ae3287a0/69cc428843e962000864141a/Survivor.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/brigitte/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "stalwart": {
       "subroleKey": "stalwart",
@@ -60,17 +95,33 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta4c3e206ad8a74d4/69cc4288654060000881e549/Stalwart.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/dmon/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "initiator": {
       "subroleKey": "initiator",
       "subroleNameKo": "개시자",
       "parentRole": "tank",
-      "descriptionKo": "특정 이동 기술을 사용한 후 지속 치유를 얻습니다.",
-      "effectValue": null,
-      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
+      "descriptionKo": "특정 이동 기술을 사용하면 생명력을 총 40 지속 회복합니다.",
+      "effectValue": {
+        "healing": 40
+      },
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/07/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltbfcedaced54025d8/69cc4288f54857000812e819/Initiator.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "recon": {
       "subroleKey": "recon",
@@ -80,7 +131,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt29e4cb7dc666bbe4/69cc4288eb1d69000843727d/Recon.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/echo/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "medic": {
       "subroleKey": "medic",
@@ -90,7 +148,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt73ceffbef4364cb1/69cc4288f9e2070008cdd2ae/Medic.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/kiriko/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     },
     "bruiser": {
       "subroleKey": "bruiser",
@@ -100,7 +165,14 @@
       "effectValue": null,
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
       "reviewedAt": "2026-11-03",
-      "applicablePatch": null
+      "applicablePatch": null,
+      "mark": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8d23e7e22f53a72b/69cc4288f66e9400087af43b/Bruiser.svg",
+        "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/mauga/",
+        "permission": "unverified",
+        "displayAllowed": false,
+        "reviewedAt": "2026-11-03"
+      }
     }
   },
   "heroes": {
@@ -168,7 +240,8 @@
       "subroleKey": "initiator",
       "parentRole": "tank",
       "sourceUrl": "https://overwatch.blizzard.com/ko-kr/heroes/doomfist/",
-      "reviewedAt": "2026-11-03"
+      "reviewedAt": "2026-11-03",
+      "descriptionKo": "로켓 펀치를 사용하면 생명력을 총 40 지속 회복합니다."
     },
     "dva": {
       "subroleKey": "initiator",

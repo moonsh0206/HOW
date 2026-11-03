@@ -19,6 +19,8 @@ test('subroles: full 54 hero roster, valid parents, required changed/new heroes 
   }
   for(const [key,role,subrole] of [['genji','damage','flanker'],['shion','damage','flanker'],['sombra','support','tactician'],['dmon','tank','stalwart'],['doctrine','support','survivor']])assert.equal(getHeroSubrole(key,role).subroleKey,subrole);
   assert.equal(data.effects.flanker.effectValue.bonusHealing,50);
+  assert.equal(data.effects.initiator.effectValue.healing,40);
+  assert.match(getHeroSubrole('doomfist','tank').descriptionKo,/로켓 펀치.*40/);
   assert(data.effects.flanker.descriptionKo.includes('50'));assert(!/75|2배/.test(data.effects.flanker.descriptionKo));
   const evidence=JSON.parse(fs.readFileSync(new URL('../docs/research/subroles/official-review.json',import.meta.url)));
   for(const hero of evidence.heroes)assert.equal(data.effects[data.heroes[hero.heroKey].subroleKey].subroleNameKo,hero.subroleNameKo);

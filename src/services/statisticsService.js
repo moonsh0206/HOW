@@ -37,7 +37,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
           const ageHeader = response.headers?.get('age');
           const age = ageHeader != null && /^\d+$/.test(ageHeader) ? Number(ageHeader) : 0;
           const timestamp = now();
-          const result = { records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, cached: false, providerAgeSeconds: ageHeader != null && /^\d+$/.test(ageHeader) ? age : null, stale: false, error: '' };
+          const result = { records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, patch: null, statisticsWindow: 'unverified-patch-window', cached: false, providerAgeSeconds: ageHeader != null && /^\d+$/.test(ageHeader) ? age : null, stale: false, error: '' };
           cache.set(key, result); failures.delete(key);
           return result;
         } catch (error) {
