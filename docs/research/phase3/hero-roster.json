@@ -1,0 +1,276 @@
+{
+  "fetchedAt": "2026-11-02T23:59:23.589Z",
+  "status": 200,
+  "heroes": [
+    {
+      "key": "ana",
+      "name": "아나",
+      "role": "support"
+    },
+    {
+      "key": "anran",
+      "name": "안란",
+      "role": "damage"
+    },
+    {
+      "key": "ashe",
+      "name": "애쉬",
+      "role": "damage"
+    },
+    {
+      "key": "baptiste",
+      "name": "바티스트",
+      "role": "support"
+    },
+    {
+      "key": "bastion",
+      "name": "바스티온",
+      "role": "damage"
+    },
+    {
+      "key": "brigitte",
+      "name": "브리기테",
+      "role": "support"
+    },
+    {
+      "key": "cassidy",
+      "name": "캐서디",
+      "role": "damage"
+    },
+    {
+      "key": "dmon",
+      "name": "D.Mon",
+      "role": "tank"
+    },
+    {
+      "key": "doctrine",
+      "name": "독트린",
+      "role": "support"
+    },
+    {
+      "key": "domina",
+      "name": "도미나",
+      "role": "tank"
+    },
+    {
+      "key": "doomfist",
+      "name": "둠피스트",
+      "role": "tank"
+    },
+    {
+      "key": "dva",
+      "name": "D.Va",
+      "role": "tank"
+    },
+    {
+      "key": "echo",
+      "name": "에코",
+      "role": "damage"
+    },
+    {
+      "key": "emre",
+      "name": "엠레",
+      "role": "damage"
+    },
+    {
+      "key": "freja",
+      "name": "프레야",
+      "role": "damage"
+    },
+    {
+      "key": "genji",
+      "name": "겐지",
+      "role": "damage"
+    },
+    {
+      "key": "hanzo",
+      "name": "한조",
+      "role": "damage"
+    },
+    {
+      "key": "hazard",
+      "name": "해저드",
+      "role": "tank"
+    },
+    {
+      "key": "illari",
+      "name": "일리아리",
+      "role": "support"
+    },
+    {
+      "key": "jetpack-cat",
+      "name": "제트팩 캣",
+      "role": "support"
+    },
+    {
+      "key": "junker-queen",
+      "name": "정커퀸",
+      "role": "tank"
+    },
+    {
+      "key": "junkrat",
+      "name": "정크랫",
+      "role": "damage"
+    },
+    {
+      "key": "juno",
+      "name": "주노",
+      "role": "support"
+    },
+    {
+      "key": "kiriko",
+      "name": "키리코",
+      "role": "support"
+    },
+    {
+      "key": "lifeweaver",
+      "name": "라이프위버",
+      "role": "support"
+    },
+    {
+      "key": "lucio",
+      "name": "루시우",
+      "role": "support"
+    },
+    {
+      "key": "mauga",
+      "name": "마우가",
+      "role": "tank"
+    },
+    {
+      "key": "mei",
+      "name": "메이",
+      "role": "damage"
+    },
+    {
+      "key": "mercy",
+      "name": "메르시",
+      "role": "support"
+    },
+    {
+      "key": "mizuki",
+      "name": "미즈키",
+      "role": "support"
+    },
+    {
+      "key": "moira",
+      "name": "모이라",
+      "role": "support"
+    },
+    {
+      "key": "orisa",
+      "name": "오리사",
+      "role": "tank"
+    },
+    {
+      "key": "pharah",
+      "name": "파라",
+      "role": "damage"
+    },
+    {
+      "key": "ramattra",
+      "name": "라마트라",
+      "role": "tank"
+    },
+    {
+      "key": "reaper",
+      "name": "리퍼",
+      "role": "damage"
+    },
+    {
+      "key": "reinhardt",
+      "name": "라인하르트",
+      "role": "tank"
+    },
+    {
+      "key": "roadhog",
+      "name": "로드호그",
+      "role": "tank"
+    },
+    {
+      "key": "shion",
+      "name": "시온",
+      "role": "damage"
+    },
+    {
+      "key": "sierra",
+      "name": "시에라",
+      "role": "damage"
+    },
+    {
+      "key": "sigma",
+      "name": "시그마",
+      "role": "tank"
+    },
+    {
+      "key": "sojourn",
+      "name": "소전",
+      "role": "damage"
+    },
+    {
+      "key": "soldier-76",
+      "name": "솔저: 76",
+      "role": "damage"
+    },
+    {
+      "key": "sombra",
+      "name": "솜브라",
+      "role": "support"
+    },
+    {
+      "key": "symmetra",
+      "name": "시메트라",
+      "role": "damage"
+    },
+    {
+      "key": "torbjorn",
+      "name": "토르비욘",
+      "role": "damage"
+    },
+    {
+      "key": "tracer",
+      "name": "트레이서",
+      "role": "damage"
+    },
+    {
+      "key": "vendetta",
+      "name": "벤데타",
+      "role": "damage"
+    },
+    {
+      "key": "venture",
+      "name": "벤처",
+      "role": "damage"
+    },
+    {
+      "key": "widowmaker",
+      "name": "위도우메이커",
+      "role": "damage"
+    },
+    {
+      "key": "winston",
+      "name": "윈스턴",
+      "role": "tank"
+    },
+    {
+      "key": "wrecking-ball",
+      "name": "레킹볼",
+      "role": "tank"
+    },
+    {
+      "key": "wuyang",
+      "name": "우양",
+      "role": "support"
+    },
+    {
+      "key": "zarya",
+      "name": "자리야",
+      "role": "tank"
+    },
+    {
+      "key": "zenyatta",
+      "name": "젠야타",
+      "role": "support"
+    }
+  ]
+}

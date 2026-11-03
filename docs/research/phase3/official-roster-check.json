@@ -1,0 +1,7 @@
+{
+  "url": "https://overwatch.blizzard.com/en-us/heroes/",
+  "status": 200,
+  "fetchedAt": "2026-11-03T00:03:34.108Z",
+  "slugs": [],
+  "note": "No static hero anchors matched the parser. This is not evidence of an empty official roster; coverage denominator uses the separately captured OverFast roster."
+}

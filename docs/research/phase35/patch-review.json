@@ -1,0 +1,19 @@
+{
+  "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/",
+  "status": 200,
+  "fetchedAt": "2026-11-03T00:24:24.131Z",
+  "visiblePatchTitles": [
+    "Overwatch Retail Patch Notes – October 20, 2026",
+    "Overwatch Retail Patch Notes – October 13, 2026",
+    "Overwatch Retail Patch Notes – October 6, 2026"
+  ],
+  "reviewedAt": "2026-11-03",
+  "applicablePatch": null,
+  "reviewNotes": [
+    "Read base Abilities separately from Perks and Stadium Powers.",
+    "Cassidy: Flashbang specification not verified on current official page; absence does not prove removal.",
+    "Roadhog: projectile absorption plus healing must both be considered.",
+    "Sombra: support rework; do not reuse ordinary enemy hack claims.",
+    "No patch-specific matchup performance is verified; applicablePatch remains null."
+  ]
+}

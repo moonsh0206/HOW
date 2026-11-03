@@ -1,0 +1,37 @@
+{
+  "url": "https://overfast-api.tekrop.fr/heroes/genji?locale=en-us",
+  "status": 200,
+  "fetchedAt": "2026-11-02T23:46:30.647Z",
+  "minor": [
+    {
+      "fields": [
+        "name",
+        "description",
+        "icon"
+      ]
+    },
+    {
+      "fields": [
+        "name",
+        "description",
+        "icon"
+      ]
+    }
+  ],
+  "major": [
+    {
+      "fields": [
+        "name",
+        "description",
+        "icon"
+      ]
+    },
+    {
+      "fields": [
+        "name",
+        "description",
+        "icon"
+      ]
+    }
+  ]
+}

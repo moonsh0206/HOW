@@ -1,0 +1,1038 @@
+{
+  "reviewedAt": "2026-11-03",
+  "fetchedAt": "2026-11-03T00:12:32.022Z",
+  "heroes": [
+    {
+      "key": "ana",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ana/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Biotic Rifle",
+        "Sleep Dart",
+        "Biotic Grenade",
+        "Nano Boost",
+        "Local Anesthetic",
+        "Speed Serum",
+        "Biotic Bounce",
+        "Headhunter"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "anran",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/anran/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Zhuque Fans",
+        "Fan the Flames",
+        "Dancing Blaze",
+        "Inferno Rush",
+        "Vermillion Ascent",
+        "Vermillion Revival",
+        "Ignition",
+        "Smoulder",
+        "Heat Shield",
+        "Short Fuse",
+        "Hungering Blaze"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "ashe",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ashe/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "The Viper",
+        "Coach Gun",
+        "Dynamite",
+        "B.O.B.",
+        "Remote Detonator",
+        "Double-Barreled",
+        "Viper's Sting",
+        "Airburst"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "baptiste",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/baptiste/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Biotic Launcher",
+        "Regenerative Burst",
+        "Immortality Field",
+        "Amplification Matrix",
+        "Exo Boots",
+        "Expanded Field",
+        "Assault Burst",
+        "Automated Healing",
+        "Rocket Boots"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "bastion",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/bastion/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Configuration: Assault",
+        "Configuration: Recon",
+        "A-36 Tactical Grenade",
+        "Reconfigure",
+        "Configuration: Artillery",
+        "Smart Bomb",
+        "Configuration Reload",
+        "Lindholm Explosives",
+        "Self-Repair"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "brigitte",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Rocket Flail",
+        "Repair Pack",
+        "Whip Shot",
+        "Barrier Shield",
+        "Shield Bash",
+        "Rally",
+        "Inspire",
+        "Combat Medic",
+        "Morale Boost",
+        "Inspiring Strike",
+        "Whiplash"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "cassidy",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/cassidy/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Peacekeeper",
+        "Combat Roll",
+        "Deadeye",
+        "Bang Bang",
+        "Giddy Up",
+        "Rollin' Round-Up",
+        "Silver Bullet"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "dmon",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Plasma Saber",
+        "Portable Fusion Repeater",
+        "Power Barrier",
+        "Surging Strike",
+        "Fusion Repeater",
+        "Propulsors",
+        "Eject!",
+        "Limit Break",
+        "Call Mech",
+        "Beast Within",
+        "MEKA Mobility",
+        "Overstrike",
+        "Focused Fusion"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "doctrine",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/doctrine/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Eternal Scepter",
+        "Infuse",
+        "Invigorating Drones",
+        "Shrouded Momentum",
+        "Deliverance",
+        "Saving Grace",
+        "Sanguine Siphon",
+        "Transfusion",
+        "Cost of Life"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "domina",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/domina/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Photon Magnum",
+        "Barrier Array",
+        "Sonic Repulsors",
+        "Crystal Charge",
+        "Panopticon",
+        "Efficient Design",
+        "Extended Power",
+        "Disruptive Detonation",
+        "Corporate Retreat"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "doomfist",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/doomfist/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Hand Cannon",
+        "Rocket Punch",
+        "Seismic Slam",
+        "Power Block",
+        "Meteor Strike",
+        "One-Two",
+        "Survival of the Fittest",
+        "Aftershock",
+        "Power Matrix"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "dva",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/dva/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Fusion Cannons",
+        "Light Gun",
+        "Boosters",
+        "Defense Matrix",
+        "Micro Missiles",
+        "Self-Destruct",
+        "Call Mech",
+        "Eject!",
+        "Bunny Power",
+        "Extended Boosters",
+        "Shield System",
+        "Precision Fusion"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "echo",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/echo/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Tri-Shot",
+        "Sticky Bombs",
+        "Flight",
+        "Focusing Beam",
+        "Duplicate",
+        "Glide",
+        "Aerial Munitions",
+        "Partial Scan",
+        "Full Salvo",
+        "Focused Rush"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "emre",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/emre/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Synthetic Burst Rifle",
+        "Cyber Frag",
+        "Override Protocol",
+        "Altered Vitals",
+        "Suppressive Security",
+        "Enhanced Agility",
+        "Heat Sink",
+        "Cyber Adhesion"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "freja",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/freja/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Bola Shot",
+        "Quick Dash",
+        "Take Aim",
+        "Updraft",
+        "Relentless Barrage",
+        "Momentum Boost",
+        "Aerial Recovery",
+        "Rising Winds"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "genji",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/genji/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Shuriken",
+        "Deflect",
+        "Swift Strike",
+        "Dragonblade",
+        "Cyber-Agility",
+        "Swift Cuts",
+        "Dragon's Thirst",
+        "Blade Twisting",
+        "Meditation"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "hanzo",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/hanzo/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Storm Bow",
+        "Storm Arrows",
+        "Sonic Arrow",
+        "Lunge",
+        "Dragonstrike",
+        "Wall Climb",
+        "Sonic Disruption",
+        "Dragon Fury",
+        "Frost Arrow",
+        "Scatter Arrows"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "hazard",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/hazard/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Bonespur",
+        "Spike Guard",
+        "Violent Leap",
+        "Jagged Wall",
+        "Downpour",
+        "Vault",
+        "Reconstitution",
+        "Anarchic Zeal",
+        "Deep Leap",
+        "Explosive Impalements"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "illari",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/illari/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Solar Rifle",
+        "Captive Sun",
+        "Healing Pylon",
+        "Outburst",
+        "Rapid Construction",
+        "Summer Solstice",
+        "Solar Flare",
+        "Sunburn"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "jetpack-cat",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Biotic Pawjectiles",
+        "Frenetic Flight",
+        "Lifeline",
+        "Purr",
+        "Catnapper",
+        "Ulterior Motive",
+        "Transport Shielding",
+        "Purrfect Form",
+        "Claws Out"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "junker-queen",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/junker-queen/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Scattergun",
+        "Commanding Shout",
+        "Carnage",
+        "Rampage",
+        "Adrenaline Rush",
+        "Rampant Charge",
+        "Battle Shout",
+        "Willy-Willy",
+        "Savage Satiation"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "junkrat",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/junkrat/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Frag Launcher",
+        "Concussion Mine",
+        "Steel Trap",
+        "RIP-Tire",
+        "Total Mayhem",
+        "Nitro Boost",
+        "Bomb Voyage",
+        "Mine Recycling",
+        "Frag Cannon"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "juno",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/juno/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Mediblaster",
+        "Pulsar Torpedoes",
+        "Orbital Ray",
+        "Hyper Ring",
+        "Glide Boost",
+        "Martian Overboots",
+        "Familiar Vitals",
+        "Locked On",
+        "Lift Off",
+        "Faster Blaster"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "kiriko",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/kiriko/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Healing Ofuda",
+        "Kunai",
+        "Swift Step",
+        "Protection Suzu",
+        "Kitsune Rush",
+        "Urgent Care",
+        "Fortune Teller",
+        "Ready Step",
+        "Foxtrot"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "lifeweaver",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/lifeweaver/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Healing Blossom",
+        "Thorn Volley",
+        "Petal Platform",
+        "Rejuvenating Dash",
+        "Life Grip",
+        "Tree of Life",
+        "Petal Protection",
+        "Dashing Escape",
+        "Sow the Seed",
+        "Superbloom"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "lucio",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/lucio/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Sonic Amplifier",
+        "Crossfade",
+        "Amp It Up",
+        "Soundwave",
+        "Sound Barrier",
+        "Wall Ride",
+        "Soundwave Rider",
+        "Beat Drop",
+        "Noise Violation",
+        "Accelerando"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "mauga",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mauga/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Overrun",
+        "Cardiac Overdrive",
+        "Berserker",
+        "Cage Fight",
+        "Kinetic Bandolier",
+        "Pyromaniac",
+        "Firewalker",
+        "Combat Fuel"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "mei",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mei/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Endothermic Blaster",
+        "Cryo-Freeze",
+        "Ice Wall",
+        "Blizzard",
+        "Skating Rink",
+        "Glacial Propulsion",
+        "Deep Freeze",
+        "Cryo-Storm"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "mercy",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mercy/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Caduceus Staff",
+        "Caduceus Blaster",
+        "Guardian Angel",
+        "Resurrect",
+        "Angelic Descent",
+        "Valkyrie",
+        "Angelic Resurrection",
+        "Winged Reach",
+        "Chain Boost",
+        "Double Dose"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "mizuki",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mizuki/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Spirit Glaive",
+        "Healing Kasa",
+        "Binding Chain",
+        "Katashiro Return",
+        "Kekkai Sanctuary",
+        "Remedy Aura",
+        "Wellspring",
+        "Exposed Soul",
+        "Resonant Return",
+        "Quickstep"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "moira",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/moira/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Biotic Grasp",
+        "Biotic Orb",
+        "Fade",
+        "Coalescence",
+        "Destruction's Divide",
+        "Ethical Nourishment",
+        "Reversal",
+        "Phantom Step"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "orisa",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/orisa/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Augmented Fusion Driver",
+        "Energy Javelin",
+        "Fortify",
+        "Javelin Spin",
+        "Terra Surge",
+        "Defense Protocol",
+        "Mobile Fortification",
+        "Heavy Javelin",
+        "Protective Barrier"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "pharah",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/pharah/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Rocket Launcher",
+        "Jet Dash",
+        "Jump Jet",
+        "Concussive Blast",
+        "Barrage",
+        "Hover Jets",
+        "Concussive Force",
+        "Helix Shields",
+        "Fuel Stores",
+        "Rocket Salvo"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "ramattra",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Void Accelerator (Omnic Form)",
+        "Void Barrier (Omnic Form)",
+        "Pummel (Nemesis Form)",
+        "Ravenous Vortex",
+        "Annihilation",
+        "Relentless Form",
+        "Prolonged Barrier",
+        "Void Surge",
+        "Nanite Repair"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "reaper",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/reaper/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Hellfire Shotguns",
+        "Shadow Step",
+        "Wraith Form",
+        "Death Blossom",
+        "The Reaping",
+        "Soul Reaving",
+        "Lingering Wraith",
+        "Shadow Blink",
+        "Trigger Finger"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "reinhardt",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/reinhardt/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Rocket Hammer",
+        "Charge",
+        "Fire Strike",
+        "Barrier Field",
+        "Earthshatter",
+        "Crusader's Fire",
+        "Crusader's Resolve",
+        "Shield Slam",
+        "Ignited Fury"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "roadhog",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/roadhog/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Scrap Gun",
+        "Trash Compactor",
+        "Chain Hook",
+        "Take a Breather",
+        "Whole Hog",
+        "Scrap Hook",
+        "Here, Piggy Piggy",
+        "Hogdrogen Exposure",
+        "Toxic Exhaust"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "shion",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/shion/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Kira Pistols",
+        "Execution",
+        "Joyride",
+        "Evade",
+        "Satsuriku Spree",
+        "Survival Instinct",
+        "X Machina",
+        "Refuel",
+        "Faces of Death"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "sierra",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sierra/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Helix Rifle",
+        "Tracking Shot",
+        "Tremor Charge",
+        "Anchor Drone",
+        "Trailblazer",
+        "Full Flight",
+        "Tight Grip",
+        "Medi-Drone",
+        "Locked In"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "sigma",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sigma/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Hyperspheres",
+        "Kinetic Grasp",
+        "Accretion",
+        "Experimental Barrier",
+        "Gravitic Flux",
+        "Kinetic Cycle",
+        "Hyper Regeneration",
+        "Hyper Strike",
+        "Levitation"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "sojourn",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sojourn/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Railgun",
+        "Power Slide",
+        "Disruptor Shot",
+        "Overclock",
+        "Overcharged",
+        "Deceleration Field",
+        "Friction Generators",
+        "Dual Thrusters"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "soldier-76",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/soldier-76/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Heavy Pulse Rifle",
+        "Sprint",
+        "Biotic Field",
+        "Helix Rockets",
+        "Tactical Visor",
+        "Helix Propulsion",
+        "Tactical Salvo",
+        "Full Stride",
+        "Stim Pack"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "sombra",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sombra/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Machine Pistol",
+        "Hotfix",
+        "Cyberspace",
+        "Translocator",
+        "EMP",
+        "Life Hack",
+        "CTRL ALT ESC",
+        "Data Packet",
+        "Cybersecurity"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "symmetra",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/symmetra/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Photon Projector",
+        "Sentry Turret",
+        "Teleporter",
+        "Photon Barrier",
+        "Sentry Capacity",
+        "Perfect Alignment",
+        "Hovering Barrier",
+        "Shield Battery"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "torbjorn",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/torbjorn/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Rivet Gun",
+        "Forge Hammer",
+        "Deploy Turret",
+        "Overload",
+        "Molten Core",
+        "Hammer Time",
+        "Pre-Heated",
+        "Anchor Bolts",
+        "Overloaded Turret"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "tracer",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/tracer/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Pulse Pistols",
+        "Blink",
+        "Recall",
+        "Pulse Bomb",
+        "Temporal Regen",
+        "Kinetic Reload",
+        "Blink Packs",
+        "Quantum Entanglement"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "vendetta",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Palatine Fang",
+        "Warding Stance",
+        "Whirlwind Dash",
+        "Soaring Slice",
+        "Projected Edge",
+        "Sundering Blade",
+        "Extra Edge",
+        "Raging Storm",
+        "Siphoning Strike",
+        "Relentless"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "venture",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/venture/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "SMART Excavator",
+        "Drill Dash",
+        "Burrow",
+        "Tectonic Shock",
+        "Deep Burrow",
+        "Excavation Exhilaration",
+        "SMART Extender",
+        "Covered In Dirt"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "widowmaker",
+      "role": "damage",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/widowmaker/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Widow's Kiss",
+        "Grappling Hook",
+        "Venom Mine",
+        "Infra-Sight",
+        "Scoped Efficiency",
+        "Sniper's Instinct",
+        "Seeker Mine",
+        "Widow's Bite"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "winston",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/winston/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Tesla Cannon",
+        "Jump Pack",
+        "Barrier Projector",
+        "Primal Rage",
+        "Electric Charge",
+        "Heavy Landing",
+        "Chain Lightning",
+        "Revitalizing Barrier"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "wrecking-ball",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/wrecking-ball/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Quad Cannons",
+        "Grappling Claw",
+        "Roll",
+        "Piledriver",
+        "Adaptive Shield",
+        "Minefield",
+        "Steamroller",
+        "Multi-Ball",
+        "Hang Time",
+        "Adaptive Barrier"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "wuyang",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/wuyang/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Xuanwu Staff",
+        "Restorative Stream",
+        "Rushing Torrent",
+        "Tidal Blast",
+        "Guardian Wave",
+        "Overflow",
+        "Balance",
+        "Ebb and Flow",
+        "Falling Rain"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "zarya",
+      "role": "tank",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/zarya/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Particle Cannon",
+        "Particle Barrier",
+        "Projected Barrier",
+        "Graviton Surge",
+        "Energy",
+        "Jump-Ups",
+        "Spotter",
+        "Extra Oomph",
+        "Energy Lance"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    },
+    {
+      "key": "zenyatta",
+      "role": "support",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/zenyatta/",
+      "status": 200,
+      "verified": true,
+      "sectionHeadings": [
+        "Orb of Destruction",
+        "Orb of Discord",
+        "Orb of Harmony",
+        "Transcendence",
+        "Snap Kick",
+        "Discordant Repair",
+        "Ascendance",
+        "Focused Destruction",
+        "Dual Harmony"
+      ],
+      "note": "Base Abilities text reviewed before Perks/Stadium sections; headings may also include perk names. No matchup performance claim."
+    }
+  ]
+}

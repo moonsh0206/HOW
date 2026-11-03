@@ -1,4 +1,9 @@
 /* Roster-first information layout. Shared data and behavior stay in the MVC modules. */
+/* Desktop keeps all existing insight rows visible; disclosures are mobile-only UI. */
+@media (min-width: 601px) {
+  .meta-insights .insight-details { display: contents; }
+  .meta-insights .insight-details > summary { display: none; }
+}
 .favorites-summary { margin: 14px 0; min-width: 0; }
 .favorites-summary-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .favorites-summary h3 { font-size: 12px; margin: 0; color: #c6d0de; }
@@ -121,6 +126,34 @@
   .sidebar .insight-hero strong { font-size: 14px; }
   .sidebar .insight-hero small { font-size: 12px; }
   .sidebar .insight-hero img { width: 44px; height: 44px; }
+
+  /* The same insight DOM is moved here by the View; no duplicate IDs or second data state. */
+  #heroes > .meta-insights { min-width: 0; margin: 0 0 16px; padding: 0 4px 14px; border-bottom: 1px solid var(--line); }
+  #heroes > .meta-insights .section-heading { padding: 0; margin-bottom: 10px; }
+  #heroes > .meta-insights .section-heading h2 { font-size: 15px; letter-spacing: -.4px; }
+  #heroes > .meta-insights .eyebrow, #heroes > .meta-insights .insight-cohort { display: none; }
+  #heroes > .meta-insights .insight-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  #heroes > .meta-insights .classification-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; margin-top: 8px; }
+  #heroes > .meta-insights .insight-panel { min-width: 0; padding: 10px; border-radius: 8px; }
+  #heroes > .meta-insights .insight-panel h3 { font-size: 12px; line-height: 1.5; margin: 0 0 6px; letter-spacing: -.4px; overflow-wrap: anywhere; }
+  #heroes > .meta-insights .insight-hero { display: grid; grid-template-columns: 28px minmax(0,1fr); align-items: start; gap: 6px; min-width: 0; min-height: 48px; padding: 4px 0; border: 0; }
+  #heroes > .meta-insights .insight-hero img { width: 28px; height: 28px; border-radius: 6px; }
+  #heroes > .meta-insights .insight-hero > span { grid-column: 2; }
+  #heroes > .meta-insights .insight-hero strong { display: block; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+  #heroes > .meta-insights .insight-hero small { margin: 2px 0 0; font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
+  #heroes > .meta-insights .classification-grid .insight-panel { padding: 8px; }
+  #heroes > .meta-insights .classification-grid .insight-hero { grid-template-columns: minmax(0,1fr); gap: 4px; }
+  #heroes > .meta-insights .classification-grid .insight-hero img { width: 26px; height: 26px; }
+  #heroes > .meta-insights .classification-grid .insight-hero > span { grid-column: 1; }
+  #heroes > .meta-insights .insight-details { display: block; margin-top: 4px; }
+  #heroes > .meta-insights .insight-details > summary { display: block; cursor: pointer; color: var(--blue); font-size: 11px; line-height: 1.5; padding: 13px 0; min-height: 44px; }
+  #heroes > .meta-insights .insight-details > summary::after { content: ' ＋'; }
+  #heroes > .meta-insights .insight-details[open] > summary::after { content: ' −'; }
+  #heroes > .meta-insights .insight-details[open] { border-top: 1px solid var(--line); }
+  #heroes > .meta-insights .insight-panel p { font-size: 11px; line-height: 1.65; margin: 6px 0; overflow-wrap: anywhere; }
+  #heroes > .meta-insights .insight-details > small { display: block; font-size: 10px; line-height: 1.7; margin-top: 6px; overflow-wrap: anywhere; }
+  #heroes > .meta-insights .insight-empty { min-height: 36px; color: var(--muted); }
+  #heroes > .meta-insights summary:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
 }
 
 @media (max-width: 350px) {

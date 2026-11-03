@@ -1,17 +1,18 @@
+import { createCounterService } from '../services/counterService.js';
 export function parseRoute(hash) {
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
   if (['', '#', '#heroes', '#favorites', '#/'].includes(hash)) return { page: 'list' };
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService() }) {
   let generation = 0, currentKey, route = parseRoute(location.hash);
   let detailState = { status: 'loading', result: null, error: '' };
   function render() {
     document.querySelector('#list-page').hidden = route.page !== 'list';
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
-    if (route.page === 'detail') detailView.render(detailState, model, route);
+    if (route.page === 'detail') detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes));
   }
   async function load() {
     const key = route.key; const token = ++generation;

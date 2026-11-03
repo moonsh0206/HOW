@@ -12,7 +12,9 @@
     "snapshots:collect": "node scripts/collect-snapshot.js",
     "audit:ranks": "node scripts/audit-ranked-meta.js",
     "report:ranks": "node scripts/report-ranked-meta.js",
-    "verify:pages": "node scripts/verify-pages.js"
+    "verify:pages": "node scripts/verify-pages.js",
+    "verify": "node scripts/verify.js",
+    "verify:counters": "node scripts/verify-counters.js"
   },
   "devDependencies": {
     "jsdom": "^29.1.1",

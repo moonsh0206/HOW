@@ -1,0 +1,440 @@
+{
+  "reviewedAt": "2026-11-03",
+  "targets": 54,
+  "populated": 50,
+  "relations": 82,
+  "heroes": [
+    {
+      "key": "ana",
+      "name": "아나",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "anran",
+      "name": "안란",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "ashe",
+      "name": "애쉬",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "baptiste",
+      "name": "바티스트",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "bastion",
+      "name": "바스티온",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "brigitte",
+      "name": "브리기테",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "cassidy",
+      "name": "캐서디",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "dmon",
+      "name": "D.Mon",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 0,
+      "relationshipReview": "insufficient-comparative-evidence"
+    },
+    {
+      "key": "doctrine",
+      "name": "독트린",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 0,
+      "relationshipReview": "insufficient-comparative-evidence"
+    },
+    {
+      "key": "domina",
+      "name": "도미나",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 0,
+      "relationshipReview": "insufficient-comparative-evidence"
+    },
+    {
+      "key": "doomfist",
+      "name": "둠피스트",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 3,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "dva",
+      "name": "D.Va",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "echo",
+      "name": "에코",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "emre",
+      "name": "엠레",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 0,
+      "relationshipReview": "insufficient-comparative-evidence"
+    },
+    {
+      "key": "freja",
+      "name": "프레야",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "genji",
+      "name": "겐지",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 4,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "hanzo",
+      "name": "한조",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "hazard",
+      "name": "해저드",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "illari",
+      "name": "일리아리",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "jetpack-cat",
+      "name": "제트팩 캣",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "junker-queen",
+      "name": "정커퀸",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "junkrat",
+      "name": "정크랫",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "juno",
+      "name": "주노",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "kiriko",
+      "name": "키리코",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "lifeweaver",
+      "name": "라이프위버",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "lucio",
+      "name": "루시우",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "mauga",
+      "name": "마우가",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "mei",
+      "name": "메이",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "mercy",
+      "name": "메르시",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "mizuki",
+      "name": "미즈키",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "moira",
+      "name": "모이라",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "orisa",
+      "name": "오리사",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "pharah",
+      "name": "파라",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "ramattra",
+      "name": "라마트라",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "reaper",
+      "name": "리퍼",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "reinhardt",
+      "name": "라인하르트",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "roadhog",
+      "name": "로드호그",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "shion",
+      "name": "시온",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "sierra",
+      "name": "시에라",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "sigma",
+      "name": "시그마",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "sojourn",
+      "name": "소전",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "soldier-76",
+      "name": "솔저: 76",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "sombra",
+      "name": "솜브라",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "symmetra",
+      "name": "시메트라",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "torbjorn",
+      "name": "토르비욘",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 3,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "tracer",
+      "name": "트레이서",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "vendetta",
+      "name": "벤데타",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "venture",
+      "name": "벤처",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "widowmaker",
+      "name": "위도우메이커",
+      "role": "damage",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "winston",
+      "name": "윈스턴",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "wrecking-ball",
+      "name": "레킹볼",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "wuyang",
+      "name": "우양",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 1,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "zarya",
+      "name": "자리야",
+      "role": "tank",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    },
+    {
+      "key": "zenyatta",
+      "name": "젠야타",
+      "role": "support",
+      "kitReview": "completed",
+      "candidateCount": 2,
+      "relationshipReview": "populated-with-evidence-labels"
+    }
+  ]
+}

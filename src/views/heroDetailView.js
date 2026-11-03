@@ -1,4 +1,6 @@
 import { tierButton } from './tierReasonView.js';
+import { renderCounters } from './counterView.js';
+import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { ROLES } from '../models/heroModel.js';
@@ -29,7 +31,7 @@ export function createHeroDetailView() {
     return wrapper;
   }
   return {
-    render(detailState, model, route) {
+    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }) {
       const { state } = model;
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
@@ -64,7 +66,9 @@ export function createHeroDetailView() {
         passive.querySelector('p').textContent = 'API가 패시브 구분 필드를 제공하지 않아 별도 분류하지 않습니다. 위 기술 목록에서 확인하세요.'; root.append(passive);
         root.append(section('detail-minor', '일반 특전 · Minor', hero.minor), section('detail-major', '주요 특전 · Major', hero.major));
         const rates = section('detail-perk-rates', '특전 선택률', []);
-        rates.querySelector('p').textContent = '미제공 · 정당한 재사용과 키 매핑이 검증된 데이터 소스를 확보한 뒤 그래프를 제공합니다. 특전 효과를 선택률로 추정하지 않습니다.'; root.append(rates);
+        const perkRates = unavailablePerkSelection(hero.key);
+        rates.querySelector('p').textContent = '선택률 미제공 · 재사용 가능한 데이터 연결 준비 중입니다.';
+        const rateSource = node('a', '선택률 제공처 검토: OverLooker ↗', 'counter-source'); rateSource.href = perkRates.sourceUrl; rateSource.target = '_blank'; rateSource.rel = 'noreferrer'; rates.append(rateSource); root.append(rates);
         const source = node('p', `기술·특전 출처: OverFast API · HOW 상세 조회 ${new Date(detailState.result.fetchedAt).toLocaleString('ko-KR')}`, 'detail-source'); root.append(source);
       }
       if (detailState.status !== 'ready') return;
@@ -73,7 +77,8 @@ export function createHeroDetailView() {
       const summary = node('div', undefined, 'detail-summary');
       const metrics = node('dl', undefined, 'detail-metrics');
       for (const [field, label] of METRICS) { const group = node('div'); const value = node('dd'); value.append(field === 'tier' ? tierButton(hero) : node('span', metricValue(hero, field), metricClass(hero, field))); group.append(node('dt', label), value); metrics.append(group); }
-      summary.append(metrics, node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
+      const summaryTop = node('div', undefined, 'detail-summary-top');
+      summaryTop.append(metrics, renderCounters(counters)); summary.append(summaryTop, node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
       const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); summary.append(button);
       summary.append(node('p', filterLabel(state.statsFilters)), node('p', `통계: OverFast API · ${state.statsStatus === 'loading' ? '조회 중 · ' : ''}${state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}` : '현재 조건 통계 미제공'}${state.statistics?.stale || state.statsStatus === 'error' ? ' · 갱신 실패/오래된 통계' : ''}`));
       const filtersLink = node('a', '영웅 목록으로 →', 'text-link'); filtersLink.href = '#heroes'; summary.append(filtersLink);

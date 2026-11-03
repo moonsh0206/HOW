@@ -1,0 +1,169 @@
+{
+  "reviewedAt": "2026-11-03",
+  "abilities": [
+    {
+      "key": "genji",
+      "url": "https://overfast-api.tekrop.fr/heroes/genji?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:52.152Z",
+      "abilities": [
+        {
+          "name": "Shuriken",
+          "description": "Throw an accurate burst of 3 projectiles.  Throw a fan of 3 projectiles in an arc."
+        },
+        {
+          "name": "Deflect",
+          "description": "Deflect incoming projectiles towards the direction you are aiming and block melee attacks."
+        },
+        {
+          "name": "Swift Strike",
+          "description": "Rapidly dash forward and inflict damage on enemies. Eliminations reset the cooldown."
+        },
+        {
+          "name": "Dragonblade",
+          "description": "Unsheathe a deadly melee weapon."
+        },
+        {
+          "name": "Cyber-Agility",
+          "description": "Climb on walls and double jump."
+        }
+      ]
+    },
+    {
+      "key": "winston",
+      "url": "https://overfast-api.tekrop.fr/heroes/winston?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:52.604Z",
+      "abilities": [
+        {
+          "name": "Tesla Cannon",
+          "description": "Electric frontal-cone weapon.  Hold to charge, release to fire focused electricity."
+        },
+        {
+          "name": "Jump Pack",
+          "description": "Leap forward into the air. Landing on an enemy damages them."
+        },
+        {
+          "name": "Barrier Projector",
+          "description": "Deploy a protective energy dome."
+        },
+        {
+          "name": "Primal Rage",
+          "description": "Gain immense health, but you can only leap and punch enemies."
+        }
+      ]
+    },
+    {
+      "key": "torbjorn",
+      "url": "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:52.998Z",
+      "abilities": [
+        {
+          "name": "Rivet Gun",
+          "description": "Slow firing, long-ranged weapon.  Inaccurate but powerful short-range weapon."
+        },
+        {
+          "name": "Forge Hammer",
+          "description": "Swing to repair your turret or damage an enemy."
+        },
+        {
+          "name": "Deploy Turret",
+          "description": "Deploy a self-building turret."
+        },
+        {
+          "name": "Overload",
+          "description": "Gain additional extra health as well as improved attack, movement, and reload speed."
+        },
+        {
+          "name": "Molten Core",
+          "description": "Create pools of molten slag that damage enemies. Deals additional damage to armor."
+        }
+      ]
+    },
+    {
+      "key": "hanzo",
+      "url": "https://overfast-api.tekrop.fr/heroes/hanzo?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:53.325Z",
+      "abilities": [
+        {
+          "name": "Storm Bow",
+          "description": "Hold to charge then release to launch arrows further."
+        },
+        {
+          "name": "Storm Arrows",
+          "description": "The next 5 arrows ricochet and fire instantly at reduced damage."
+        },
+        {
+          "name": "Sonic Arrow",
+          "description": "Reveals enemies for a short time upon impact."
+        },
+        {
+          "name": "Lunge",
+          "description": "Double Jump."
+        },
+        {
+          "name": "Dragonstrike",
+          "description": "Launch a deadly Dragon Spirit that devastates enemies it passes through."
+        },
+        {
+          "name": "Wall Climb",
+          "description": "Jump at walls to climb up them."
+        }
+      ]
+    },
+    {
+      "key": "ana",
+      "url": "https://overfast-api.tekrop.fr/heroes/ana?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:53.643Z",
+      "abilities": [
+        {
+          "name": "Biotic Rifle",
+          "description": "Long-range rifle that heals allies and damages enemies.  Hold to zoom in."
+        },
+        {
+          "name": "Sleep Dart",
+          "description": "Fires a dart that puts an enemy to sleep."
+        },
+        {
+          "name": "Biotic Grenade",
+          "description": "Throws a grenade that heals and increases healing on allies, while damaging and preventing healing on enemies."
+        },
+        {
+          "name": "Nano Boost",
+          "description": "Increases an ally's damage, while reducing damage taken."
+        }
+      ]
+    },
+    {
+      "key": "kiriko",
+      "url": "https://overfast-api.tekrop.fr/heroes/kiriko?locale=en-us",
+      "status": 200,
+      "fetchedAt": "2026-11-02T23:42:53.967Z",
+      "abilities": [
+        {
+          "name": "Healing Ofuda",
+          "description": "Channel a burst of healing talismans that can seek targeted allies."
+        },
+        {
+          "name": "Kunai",
+          "description": "Thrown long-ranged projectile."
+        },
+        {
+          "name": "Swift Step",
+          "description": "Teleport directly to an ally."
+        },
+        {
+          "name": "Protection Suzu",
+          "description": "Throw a protective charm to make allies become briefly invulnerable and cleansed of most negative effects."
+        },
+        {
+          "name": "Kitsune Rush",
+          "description": "Summon a fox spirit that rushes forward, accelerating the movement, attack speed, and cooldowns of allies that follow in its path."
+        }
+      ]
+    }
+  ]
+}
