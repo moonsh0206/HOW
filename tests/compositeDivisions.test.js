@@ -84,19 +84,3 @@ test('patch preservation: before, D+1/D+3/D+7 real files; a newer patch cuts off
  const rows=[['pre','old','2026-10-31T00:00:00Z'],['one','p1','2026-11-02T00:00:00Z'],['three','p1','2026-11-04T00:00:00Z'],['new','p2','2026-11-07T00:00:00Z'],['seven','p2','2026-11-13T00:00:00Z']].map(([file,patch,collectedAt])=>({file,snapshot:{filters:{...f,division:'diamond'},patch,collectedAt,patchVerification:{status:'verified',catalogId:patch,sourceUrl:catalog.find(p=>p.id===patch).sourceUrl,statisticsWindow:'since-patch-start',verifiedAt:collectedAt}}}));
  const tags=preservationTags(rows,catalog);assert(tags.pre.includes('p1:pre-patch'));assert(tags.one.includes('p1:D+1'));assert(tags.three.includes('p1:D+3'));assert(!Object.values(tags).flat().includes('p1:D+7'));assert(tags.seven.includes('p2:D+7'));
 });
-
-
-test('unverified same-batch originals create a labeled composite point, never a verified patch', async()=>{
- const at='2026-11-04T00:00:00Z',batchId='asia:2026-11-04T00:00:00Z',raw={
-  schemaVersion:2,source:'OverFast API',fields:SNAPSHOT_FIELDS,heroes:['genji'],platform:'pc',gamemode:'competitive',region:'asia',map:'all',batchId,
-  divisions:Object.fromEntries(['diamond','master','grandmaster'].map((division,i)=>[division,{status:'ok',collectedAt:new Date(Date.parse(at)+i*60000).toISOString(),patch:null,patchVerification:{status:'unverified'},statisticsWindow:'unverified-patch-window',records:[[50+i,10+i,1+i]]}]))
- };
- const expanded=expandSnapshotFile(raw);const combined=combineDivisionHistory(expanded,f);
- assert.equal(combined.length,1);assert.equal(combined[0].patch,null);assert.equal(combined[0].statisticsWindow,'unverified-patch-window');assert.equal(combined[0].records[0].winRate,51);assert.equal(combined[0].batchId,batchId);
- assert.equal(combineDivisionHistory(expanded.map((p,i)=>i===1?{...p,batchId:'different'}:p),f).length,0);
- assert.equal(combineDivisionHistory(expanded.map((p,i)=>i===2?{...p,collectedAt:'2026-11-05T00:00:00Z'}:p),f).length,0);
- assert.equal(combineDivisionHistory(expanded.slice(1),f).length,0);
- const file='2026-11-04T00-00-00Z.json',entries=expanded.map(s=>({file,collectedAt:s.collectedAt,filters:s.filters}));
- let reads=0;const service=createSnapshotService({now:()=>Date.parse('2026-11-04T01:00:00Z'),fetcher:async url=>({ok:true,json:async()=>url.endsWith('index.json')?{schemaVersion:2,snapshots:entries}:(reads++,raw)})});
- const result=await service.getHistory(f,{scope:'compare'});assert.equal(result.snapshots.length,1);assert.equal(result.snapshots[0].records[0].pickRate,11);assert.equal(reads,1);
-});

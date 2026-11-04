@@ -135,12 +135,3 @@
 .history-point[data-storage=browser] .history-dot{fill:var(--panel);stroke:var(--orange);stroke-width:3}.history-point[data-storage=browser]:focus-visible .history-dot{stroke:#fff}
 
 .composite-notice{font-size:12px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}
-
-/* Concise source-checked general 5v5 hero patch, separate from statistics. */
-.detail-patch-note{margin:12px 0 0;border:1px solid #564633;border-left:3px solid var(--orange);border-radius:8px;padding:12px 16px;background:#26251f;min-width:0}
-.detail-patch-note .detail-patch-date{font-size:11px;margin:0 0 6px;color:#ffc37a}
-.detail-patch-note strong{font-size:13px;line-height:1.6;color:#f3e5cf}
-.detail-patch-note ul{margin:7px 0 4px;padding-left:18px}
-.detail-patch-note li{font-size:12px;line-height:1.65;color:#c6cfda;overflow-wrap:anywhere}
-.detail-patch-note a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;color:var(--blue)}
-@media(max-width:600px){.detail-patch-note{padding:10px 12px;margin-top:10px}.detail-patch-note li{font-size:11px}}

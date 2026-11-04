@@ -1,5 +1,4 @@
 import { tierButton } from './tierReasonView.js';
-import { CURRENT_PATCH_NOTE, currentHeroPatch } from '../data/currentPatchNote.js';
 import { renderCounters } from './counterView.js';
 import { renderPickHistory } from './pickHistoryView.js';
 import { renderMapStatistics } from './mapStatisticsView.js';
@@ -68,14 +67,6 @@ export function createHeroDetailView() {
         if (hero.subrole) badges.append(node('span', hero.subrole.subroleNameKo, 'subrole-tag'));
         title.append(h1, badges);
         identity.append(title); header.append(identity, node('p', hero.description, 'detail-description')); root.append(header);
-        const patch=currentHeroPatch(hero.key);
-        if (patch) {
-          const compact=node('section',undefined,'detail-patch-note');compact.setAttribute('aria-label','최신 5대5 영웅 패치');
-          compact.append(node('p',`${CURRENT_PATCH_NOTE.dateKo.replaceAll('-','.')} · 일반 5대5 · ${patch.impact}`,'detail-patch-date'),node('strong',patch.summary));
-          const changes=node('ul');for(const line of patch.details)changes.append(node('li',line));compact.append(changes);
-          const original=node('a','공식 원문 ↗');original.href=CURRENT_PATCH_NOTE.sourceUrl;original.target='_blank';original.rel='noopener noreferrer';compact.append(original);
-          root.append(compact);
-        }
         const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약'); root.append(stats);
         const mapStats = node('div');mapStats.id='detail-map-statistics';root.append(mapStats);
         const tabs = node('nav', undefined, 'detail-tabs'); tabs.setAttribute('aria-label', '영웅 상세 섹션');

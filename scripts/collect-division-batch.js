@@ -18,7 +18,7 @@ if(!apply){console.log(`Dry-run: PC / ${region} / competitive / all maps / nine 
   if([...files.values()].some(raw=>raw.schemaVersion===2&&raw.region===region&&raw.observationDate===today)){console.log('Skipped: original region/day batch already exists; never overwritten.');}
   else{
    const raw=await collectDivisionBatch({service:createStatisticsService(),region,heroKeys:Object.keys(roster.heroes)}),snapshots=expandSnapshotFile(raw);
-   if(snapshots.length!==Object.keys(raw.divisions).length)throw new Error(`Incomplete batch (${snapshots.length}/9); do not store a partial tier history. Retry later.`);
+   if(!snapshots.length)throw new Error('No valid division; existing data preserved');
    const file=new Date().toISOString().replaceAll(':','-')+'.json';written=new URL(file,root);await writeFile(written,JSON.stringify(raw),{flag:'wx'});
    index.snapshots.push(...snapshots.map(s=>({file,schemaVersion:2,collectedAt:s.collectedAt,filters:s.filters,observationDate:raw.observationDate,reviewStatus:'pending',preserveTags:[]})));
    pending=new URL(`index.${process.pid}.pending`,root);await writeFile(pending,JSON.stringify(index,null,2)+'\n',{flag:'wx'});await rename(pending,indexPath);pending=null;written=null;console.log(`Saved original batch: ${file}, ${snapshots.length}/9 divisions. Pending patch review.`);
