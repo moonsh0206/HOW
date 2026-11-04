@@ -1,5 +1,6 @@
 import { statisticsQuery } from './statisticsModel.js';
 import { isObservationTime } from './snapshotModel.js';
+import {rateStatus} from './statisticsQuality.js';
 
 // The current response is an observation at its original HOW fetch time, never "now".
 export const HISTORY_METRICS = Object.freeze(['winRate','pickRate','banRate']);
@@ -10,7 +11,7 @@ export function withCurrentPickHistory(history, statistics, heroKey, filters, me
   const complete = value => ['platform','gamemode','region','division','map'].every(key => typeof value?.[key] === 'string');
   if (!complete(statistics?.filters) || !complete(filters) || statisticsQuery(statistics.filters) !== statisticsQuery(filters) || !isObservationTime(statistics.fetchedAt)) return { ...history, result };
   const rows = statistics.records?.filter(row => row.hero === heroKey) ?? [];
-  const pickRate = rows.length === 1 ? rows[0][metric] : null;
+  const pickRate = rows.length === 1 && rateStatus(rows[0],metric)==='available' ? rows[0][metric] : null;
   if (!Number.isFinite(pickRate) || pickRate < 0 || pickRate > 100) return { ...history, result };
   const current = { collectedAt: statistics.fetchedAt, time: Date.parse(statistics.fetchedAt), [metric]: pickRate, value: pickRate, patch: null, current: true, stored:false,verificationStatus:'unverified', stale: statistics.stale === true, cached: statistics.cached, providerAgeSeconds: statistics.providerAgeSeconds ?? null,composite:statistics.composite===true,observationStart:statistics.observationStart??null };
   const same = result.points.findIndex(point => point.time === current.time);
@@ -37,7 +38,7 @@ export function buildPickHistory(snapshots, heroKey, filters, { days = 7, now = 
       if (!['platform','gamemode','region','division','map'].every(key => typeof snapshot.filters?.[key] === 'string') || statisticsQuery(snapshot.filters) !== query) continue;
       const time = Date.parse(snapshot.collectedAt); if (time < start || time > now) continue;
       const rows = snapshot.records?.filter(row => row.hero === heroKey) ?? [];
-      const value = rows.length === 1 ? rows[0][metric] : null;
+      const value = rows.length === 1 && rateStatus(rows[0],metric)==='available' ? rows[0][metric] : null;
       const valid = Number.isFinite(value) && value >= 0 && value <= 100;
       const point = { collectedAt: snapshot.collectedAt, time, [metric]: valid ? value : null, value: valid ? value : null, patch: snapshot.patch ?? null,...(snapshot.composite?{composite:true,observationStart:snapshot.observationStart}: {}) };
       const prior = byTime.get(time);

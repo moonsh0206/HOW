@@ -1,0 +1,28 @@
+{
+  "url": "https://overwatch.blizzard.com/en-us/rates/",
+  "observedAt": "2026-11-04T12:41:53.171525+00:00",
+  "status": 200,
+  "headers": {
+    "Date": "Wed, 04 Nov 2026 12:41:54 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "169394",
+    "Connection": "close",
+    "Server": "nginx",
+    "X-Powered-By": "BWA",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "X-DNS-Prefetch-Control": "off",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+    "X-Download-Options": "noopen",
+    "X-Content-Type-Options": "nosniff",
+    "Origin-Agent-Cluster": "?1",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-XSS-Protection": "0",
+    "Set-Cookie": "locale=en_US; Max-Age=2628000; Path=/; Expires=Fri, 04 Dec 2026 22:41:54 GMT; HttpOnly; Secure",
+    "ETag": "W/\"295b2-9Qmq+250sK5469z10JncTOzvlJg\"",
+    "Content-Security-Policy": "block-all-mixed-content",
+    "Cache-Control": "private"
+  },
+  "sha256": "b59ea3dfbea936ff3576f24b14fbc1bdf7173cbdf5ad07c4832b88d81730d74c"
+}

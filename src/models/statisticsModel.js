@@ -30,7 +30,8 @@ export function filterLabel(input) {
   const f = validateFilters(input);
   return `${REGIONS[f.region]} / PC / ${MODES[f.gamemode]} / ${divisionName(f.division)} / ${f.map==='all'?'전체 전장':MAP_NAMES[f.map]}`;
 }
-export function normalizeStatistics(data) {
+export function normalizeStatistics(data,{source='overfast'}={}) {
+  if(!['overfast','blizzard'].includes(source))throw new Error('지원하지 않는 통계 원본입니다.');
   if (!Array.isArray(data)) throw new Error('통계 응답이 목록 형식이 아닙니다.');
   const seen = new Set();
   const percent = value => {
@@ -41,7 +42,14 @@ export function normalizeStatistics(data) {
   return data.map(row => {
     if (!row || typeof row.hero !== 'string' || !/^[a-z0-9-]+$/.test(row.hero) || seen.has(row.hero)) throw new Error('통계 영웅 키가 잘못되었거나 중복되었습니다.');
     seen.add(row.hero);
-    return Object.freeze({ hero: row.hero, winRate: percent(row.winrate), pickRate: percent(row.pickrate), banRate: percent(row.banrate) });
+    const fields={},rawValues={};
+    const values=Object.fromEntries([['winRate','winrate'],['pickRate','pickrate'],['banRate','banrate']].map(([field,key])=>{
+      const raw=row[key];
+      if(source==='blizzard'&&raw===-1){fields[field]='confirmed-missing';rawValues[field]=-1;return [field,null];}
+      const value=percent(raw);if(source==='blizzard'&&value===0)fields[field]='verified';return [field,value];
+    }));
+    if(source==='overfast'&&values.winRate===0&&values.pickRate!==null)fields.winRate='review';
+    return Object.freeze({ hero: row.hero,...values,...(Object.keys(fields).length?{quality:Object.freeze({source,fields:Object.freeze(fields),rawValues:Object.freeze(rawValues)})}:{}) });
   });
 }
 import { MAP_KEYS, MAP_NAMES } from './mapModel.js';

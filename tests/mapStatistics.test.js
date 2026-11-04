@@ -58,7 +58,7 @@ test('map view: zero/null, exact cohort comparison, empty state and stale source
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try{
   const model=createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS};model.state.statistics={filters:DEFAULT_FILTERS,records:[{hero:'torbjorn',winRate:50}]};
-  const state={maps:normalizeMaps(rawMaps),listStatus:'ready',selectedMap:'busan',status:'ready',result:{filters:{...DEFAULT_FILTERS,map:'busan'},records:[{hero:'torbjorn',winRate:0,pickRate:0,banRate:null}],fetchedAt:'2026-11-04T00:00:00Z',stale:true}};
+  const state={maps:normalizeMaps(rawMaps),listStatus:'ready',selectedMap:'busan',status:'ready',result:{filters:{...DEFAULT_FILTERS,map:'busan'},records:[{hero:'torbjorn',winRate:0,pickRate:0,banRate:null,quality:{fields:{winRate:'verified'}}}],fetchedAt:'2026-11-04T00:00:00Z',stale:true}};
   state.baseline=model.state.statistics;model.state.statsFilters={...DEFAULT_FILTERS,map:'busan'};model.state.statistics=state.result;
   const panel=renderMapStatistics(state,model,'torbjorn');
   assert.deepEqual([...panel.querySelectorAll('dd')].map(el=>el.textContent),['50%','0%','-50.0%p','0%','미제공']);

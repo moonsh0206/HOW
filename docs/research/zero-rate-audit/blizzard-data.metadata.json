@@ -1,0 +1,28 @@
+{
+  "url": "https://overwatch.blizzard.com/en-us/rates/data/?input=PC&rq=1&region=Asia&map=all-maps&tier=Grandmaster",
+  "observedAt": "2026-11-04T12:41:53.620145+00:00",
+  "status": 200,
+  "headers": {
+    "Date": "Wed, 04 Nov 2026 12:41:54 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "25107",
+    "Connection": "close",
+    "Server": "nginx",
+    "X-Powered-By": "BWA",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "X-DNS-Prefetch-Control": "off",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+    "X-Download-Options": "noopen",
+    "X-Content-Type-Options": "nosniff",
+    "Origin-Agent-Cluster": "?1",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "X-XSS-Protection": "0",
+    "Set-Cookie": "locale=en_US; Max-Age=2628000; Path=/; Expires=Fri, 04 Dec 2026 22:41:54 GMT; HttpOnly; Secure",
+    "ETag": "W/\"6213-dF391jVltJUNKaf/nhN5yvmA/+Y\"",
+    "Content-Security-Policy": "block-all-mixed-content",
+    "Cache-Control": "private"
+  },
+  "sha256": "c12b72842c6d3b9fc7a937f4511686272bc2db00c8f31213e89b981a1e977bcb"
+}

@@ -1,11 +1,12 @@
 import { statisticsQuery } from '../models/statisticsModel.js';
 import { percentile } from './meta.js';
+import {statisticsNeedsReview} from '../models/statisticsQuality.js';
 
 export const INSIGHT_POLICY = Object.freeze({ minPickRate: 1, hotPickDelta: 1, minComparisonMs: 3600000, maxComparisonMs: 7 * 86400000, highWinPercentile: 75, maxPickPercentile: 50 });
 export function hiddenGems(heroes, policy = INSIGHT_POLICY) {
   return heroes.filter(hero => {
-    if (!Number.isFinite(hero.statistics?.winRate) || !Number.isFinite(hero.statistics?.pickRate) || hero.statistics.pickRate < policy.minPickRate) return false;
-    const peers = heroes.filter(other => other.role === hero.role && Number.isFinite(other.statistics?.winRate) && Number.isFinite(other.statistics?.pickRate));
+    if (statisticsNeedsReview(hero.statistics)||!Number.isFinite(hero.statistics?.winRate) || !Number.isFinite(hero.statistics?.pickRate) || hero.statistics.pickRate < policy.minPickRate) return false;
+    const peers = heroes.filter(other => !statisticsNeedsReview(other.statistics)&&other.role === hero.role && Number.isFinite(other.statistics?.winRate) && Number.isFinite(other.statistics?.pickRate));
     return peers.length >= 3 && percentile(hero.statistics.winRate, peers.map(item => item.statistics.winRate)) >= policy.highWinPercentile && percentile(hero.statistics.pickRate, peers.map(item => item.statistics.pickRate)) <= policy.maxPickPercentile;
   }).sort((a, b) => b.statistics.winRate - a.statistics.winRate || a.key.localeCompare(b.key, 'en')).slice(0, 3);
 }
@@ -29,6 +30,7 @@ export function hotHeroes(heroes, current, previous, policy = INSIGHT_POLICY) {
   const selected = [];
   for (const hero of heroes) {
     const old = before.get(hero.key), now = hero.statistics;
+    if(statisticsNeedsReview(old)||statisticsNeedsReview(now))continue;
     if (![old?.winRate, old?.pickRate, now?.winRate, now?.pickRate].every(Number.isFinite)) continue;
     const pickDelta = now.pickRate - old.pickRate, winDelta = now.winRate - old.winRate;
     if (pickDelta >= policy.hotPickDelta && winDelta >= 0 && now.pickRate >= policy.minPickRate) selected.push({ ...hero, pickDelta, winDelta });

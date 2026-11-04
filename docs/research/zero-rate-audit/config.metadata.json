@@ -1,0 +1,33 @@
+{
+  "url": "https://raw.githubusercontent.com/TeKrop/overfast-api/main/app/config.py",
+  "observedAt": "2026-11-04T12:41:21.631245+00:00",
+  "status": 200,
+  "headers": {
+    "Connection": "close",
+    "Content-Length": "9309",
+    "Cache-Control": "max-age=300",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "Content-Type": "text/plain; charset=utf-8",
+    "ETag": "\"540965096e9e2005d0c9d4ccb35524324383c37517f7946f8b4d18b0d66c6f20\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "deny",
+    "X-XSS-Protection": "1; mode=block",
+    "X-GitHub-Request-Id": "CA92:BB25A:6E75F:F3CF3:6AEB27ED",
+    "x-github-edge-region": "koreacentral",
+    "Accept-Ranges": "bytes",
+    "Date": "Wed, 04 Nov 2026 12:41:22 GMT",
+    "Via": "1.1 varnish",
+    "X-Served-By": "cache-icn1450095-ICN",
+    "X-Cache": "MISS",
+    "X-Cache-Hits": "0",
+    "X-Timer": "S1793796082.491482,VS0,VE248",
+    "Vary": "Authorization,Accept-Encoding",
+    "Access-Control-Allow-Origin": "*",
+    "Cross-Origin-Resource-Policy": "cross-origin",
+    "X-Fastly-Request-ID": "581835c53b503223545c3bdd67a853a20d14096c",
+    "Expires": "Wed, 04 Nov 2026 12:46:22 GMT",
+    "Source-Age": "0"
+  },
+  "sha256": "8f50e41ab1e3c4ccd5e3b05ee93385feb61df56d171992fa3a17ad48ce37b990"
+}

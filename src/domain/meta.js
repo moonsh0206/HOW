@@ -1,4 +1,5 @@
 import { roleTier } from './tier.js';
+import {statisticsUsable} from '../models/statisticsQuality.js';
 
 export const LEGACY_META_POLICY = Object.freeze({ version: 'meta-v1', weights: Object.freeze({ winRate: .7, pickRate: .3 }), lowPickRate: 1 });
 export const META_POLICY = Object.freeze({ version: 'meta-v2', weights: Object.freeze({ winRate: .65, pickRate: .25, banRate: .10 }), lowPickRate: 1 });
@@ -50,7 +51,7 @@ export function attachMetaTiers(heroes, records, policy = META_POLICY) {
   const valid = value => Number.isFinite(value) && value >= 0 && value <= 100;
   const joined = heroes.map(hero => ({ ...hero, statistics: byKey.get(hero.key) ?? null, tier: null, provisionalTier: null, roleRank: null, roleSize: 0, metaScore: null, winPercentile: null, pickPercentile: null, banPercentile: null, eligibility: [], capped: false, lowPick: false }));
   for (const role of ['tank', 'damage', 'support']) {
-    const group = joined.filter(hero => hero.role === role && fields.every(field => valid(hero.statistics?.[field])));
+    const group = joined.filter(hero => hero.role === role && statisticsUsable(hero.statistics) && fields.every(field => valid(hero.statistics?.[field])));
     for (const hero of group) {
       hero.roleSize = group.length;
       [hero.winPercentile, hero.pickPercentile, hero.banPercentile] = fields.map(field => percentile(hero.statistics[field], group.map(peer => peer.statistics[field])));
