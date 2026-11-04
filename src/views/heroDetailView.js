@@ -6,7 +6,8 @@ import { renderSynergies } from './synergyView.js';
 import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
-import { METRICS, metricValue, metricClass } from './statisticsUI.js';
+import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
+import {statisticsNeedsReview} from '../models/statisticsQuality.js';
 import { ROLES } from '../models/heroModel.js';
 import { filterLabel,isCompositeDivision,COMPOSITE_NOTICE,divisionName } from '../models/statisticsModel.js';
 
@@ -79,7 +80,7 @@ export function createHeroDetailView() {
         const perkRates = unavailablePerkSelection(hero.key);
         rates.querySelector('p').textContent = '선택률 미제공 · 재사용 가능한 데이터 연결 준비 중입니다.';
         const rateSource = node('a', '선택률 제공처 검토: OverLooker ↗', 'counter-source'); rateSource.href = perkRates.sourceUrl; rateSource.target = '_blank'; rateSource.rel = 'noreferrer'; rates.append(rateSource); root.append(rates);
-        const source = node('p', `기술·특전 출처: OverFast API · HOW 상세 조회 ${new Date(detailState.result.fetchedAt).toLocaleString('ko-KR')}`, 'detail-source'); root.append(source);
+        const source = node('p', `기술·특전 출처: OverFast API · HOW 상세 조회 ${new Date(detailState.result.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}`, 'detail-source'); root.append(source);
       }
       if (detailState.status !== 'ready') return;
       const hero = model.heroByKey(route.key) ?? { ...detailState.result.detail, tier: null, statistics: null, metaScore: null };
@@ -107,10 +108,13 @@ export function createHeroDetailView() {
       information.append(node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
       if(isCompositeDivision(state.statsFilters.division))information.append(node('p',COMPOSITE_NOTICE,'composite-notice'));
       if(hero.statistics?.missingDivisions?.length)information.append(node('p',`누락 등급: ${hero.statistics.missingDivisions.map(divisionName).join(', ')}`,'history-warning'));
+      if(statisticsNeedsReview(hero.statistics))information.append(node('p',`통계 신뢰성 검토 중 · 티어 산정 보류${hero.statistics.reviewDivisions?.length?` · ${hero.statistics.reviewDivisions.map(divisionName).join(', ')}`:''}`,'history-warning'));
       const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); information.append(button);
       const sourceInfo = node('details', undefined, 'detail-stat-info'); sourceInfo.append(node('summary','통계 정보 ⓘ'));
-      sourceInfo.append(node('p', filterLabel(state.statsFilters)), node('p', `OverFast API · HOW 조회 ${state.statistics?.fetchedAt ? new Date(state.statistics.fetchedAt).toLocaleString('ko-KR') : '미제공'}${state.statistics?.stale ? ' · 오래된 데이터' : ''}`)); information.append(sourceInfo);
+      sourceInfo.append(node('p', filterLabel(state.statsFilters)), node('p', `OverFast API · HOW 조회 ${state.statistics?.fetchedAt ? new Date(state.statistics.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'}) : '미제공'}${state.statistics?.stale ? ' · 오래된 데이터' : ''}`)); information.append(sourceInfo);
       if (stats.querySelector('.detail-stat-info')?.open) sourceInfo.open = true;
+      sourceInfo.append(node('p',`${cacheLabel(state.statistics)} · 원본 집계 시각 미제공`));
+      for(const component of state.statistics?.components??[])sourceInfo.append(node('p',`${divisionName(component.filters.division)} · HOW 조회 ${component.fetchedAt??'미제공'} · API 캐시 Age ${component.providerAgeSeconds??'미제공'}초`));
       const focused = document.activeElement === stats.querySelector('[data-favorite]');
       const oldHistory = stats.querySelector('.pick-history');
       const historyFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyDays : null;

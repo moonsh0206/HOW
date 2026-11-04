@@ -1,0 +1,20 @@
+{
+  "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+  "observedAt": "2026-11-04T12:41:21.313186+00:00",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Wed, 04 Nov 2026 12:41:22 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "3271",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Age": "1985",
+    "Cache-Control": "public, max-age=3600",
+    "X-Cache-Status": "hit",
+    "X-Cache-TTL": "1615",
+    "Access-Control-Allow-Origin": "*",
+    "Strict-Transport-Security": "max-age=63072000"
+  },
+  "sha256": "9424048275a67e31a3e688b04e39b40133a82c83a643a7c94d61d3432bf4b583"
+}

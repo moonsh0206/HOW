@@ -135,3 +135,7 @@
 .history-point[data-storage=browser] .history-dot{fill:var(--panel);stroke:var(--orange);stroke-width:3}.history-point[data-storage=browser]:focus-visible .history-dot{stroke:#fff}
 
 .composite-notice{font-size:12px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}
+
+.quality-note{font-size:12px;line-height:1.4;color:#ffd298;white-space:normal;overflow-wrap:anywhere}
+
+.metric-review{color:#ffd298;font-size:12px;line-height:1.4;white-space:normal;overflow-wrap:anywhere}.hero-identity small.quality-note{font-size:11px;letter-spacing:0;color:#ffd298}

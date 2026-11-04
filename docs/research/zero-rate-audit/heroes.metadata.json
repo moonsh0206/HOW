@@ -1,0 +1,20 @@
+{
+  "url": "https://overfast-api.tekrop.fr/heroes?locale=ko-kr",
+  "observedAt": "2026-11-04T12:48:19.756486+00:00",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Wed, 04 Nov 2026 12:48:20 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "13196",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Age": "49987",
+    "Cache-Control": "public, max-age=86400",
+    "X-Cache-Status": "hit",
+    "X-Cache-TTL": "36413",
+    "Access-Control-Allow-Origin": "*",
+    "Strict-Transport-Security": "max-age=63072000"
+  },
+  "sha256": "d4a1c9464b7c5cf277be75cff35dd6964183878bc7cd6b7e64aa56a4ea92d2fe"
+}
