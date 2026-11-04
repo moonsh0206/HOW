@@ -1,0 +1,27 @@
+name: Daily diamond snapshot manual validation
+on:
+  workflow_dispatch:
+# Proposed only, NOT enabled: schedule cron '15 0 * * *' (09:15 Asia/Seoul).
+permissions:
+  contents: read
+concurrency:
+  group: how-snapshot-collection
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: node scripts/collect-snapshot.js --division diamond
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-diamond-observations
+          path: public/data/snapshots/
+          retention-days: 30

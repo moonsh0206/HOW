@@ -8,7 +8,8 @@ import {MAP_KEYS,MAP_NAMES} from '../src/models/mapModel.js';
 import {renderPatchNote} from '../src/views/patchNoteView.js';
 import {CURRENT_PATCH_NOTE} from '../src/data/currentPatchNote.js';
 import {createSnapshotService} from '../src/services/snapshotService.js';
-import {DEFAULT_FILTERS,ALL_RANK_FILTERS} from '../src/models/statisticsModel.js';
+import {DEFAULT_FILTERS as UI_DEFAULT_FILTERS,ALL_RANK_FILTERS} from '../src/models/statisticsModel.js';
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
 
 test('official localization: entire API catalogue tracked; all selectable maps match official Korean labels',()=>{
  const raw=JSON.parse(fs.readFileSync(new URL('../docs/research/map-localization/maps-response.json',import.meta.url)));

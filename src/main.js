@@ -14,11 +14,12 @@ import { createInsightView } from './views/insightView.js';
 import { createSnapshotService } from './services/snapshotService.js';
 import { createMapService } from './services/mapService.js';
 import { createMapStatisticsController } from './controllers/mapStatisticsController.js';
+import { selectMetaPolicy } from './domain/metaPolicies.js';
 
 const storage = createFavoritesStorage();
 const saved = storage.load();
 const view = createHeroView();
-const model = createHeroModel(saved.keys);
+const model = createHeroModel(saved.keys,{metaPolicy:selectMetaPolicy({development:import.meta.env.DEV,experiment:import.meta.env.VITE_META_EXPERIMENT})});
 const detailView = createHeroDetailView();
 const snapshots = createSnapshotService({ base: import.meta.env.BASE_URL });
 const statisticsService=createStatisticsService();

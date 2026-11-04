@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
-import { DEFAULT_FILTERS, ALL_RANK_FILTERS } from '../src/models/statisticsModel.js';
+import { DEFAULT_FILTERS as UI_DEFAULT_FILTERS, ALL_RANK_FILTERS } from '../src/models/statisticsModel.js';
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
 import { normalizeSnapshot, isObservationTime } from '../src/models/snapshotModel.js';
 import { buildPickHistory, withCurrentPickHistory } from '../src/models/pickHistoryModel.js';
 import { createSnapshotService } from '../src/services/snapshotService.js';
@@ -60,7 +61,7 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
   Object.assign(globalThis,{document:dom.window.document,window:dom.window,location:dom.window.location});
   let router,fail=false;
   try {
-    const model=createHeroModel(),service=createSnapshotService({now:()=>now,base:'/HOW/',fetcher:async url=>{
+    const model=createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS};const service=createSnapshotService({now:()=>now,base:'/HOW/',fetcher:async url=>{
       if(fail)throw new TypeError('network');
       return {ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL('../public/'+url.replace('/HOW/',''),import.meta.url),'utf8'))};
     }});
@@ -79,7 +80,8 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     assert.equal(panel().querySelectorAll('.history-point').length,1);assert(panel().textContent.includes('현재 픽률 20.2%'));
     router.refresh();assert.equal(document.querySelectorAll('#pick-history').length,1);
     model.state.statsFilters={...ALL_RANK_FILTERS};router.refresh();await flush();await flush();
-    assert.equal(panel().querySelectorAll('.history-point').length,0);
+    assert.equal(panel().querySelectorAll('.history-point').length,1);
+    assert(panel().textContent.includes('저장 이력'));
     fail=true;model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();await flush();
     assert(panel().querySelector('[data-action="history-retry"]'));
     fail=false;panel().querySelector('[data-action="history-retry"]').click();await flush();await flush();

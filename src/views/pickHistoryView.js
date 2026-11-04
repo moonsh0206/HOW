@@ -42,19 +42,24 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     const y = p => 12 + (scale.max-rate(p))/(scale.max-scale.min)*156;
     for (const tick of scale.ticks) { const yy = y({value:tick}); plot.append(svg('line',{x1:0,y1:yy,x2:600,y2:yy,class:'history-grid-line'})); }
     for (const [a,b] of data.segments) plot.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
+    for (const [a,b] of data.comparisonSegments??[]) plot.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','vector-effect':'non-scaling-stroke'}));
     const selected = node('p', '', 'history-observation'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
-    function choose(index) { const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} (KST) · ${label} ${rate(p)}%${p.patch ? ` · ${p.patchLabel??p.patch} · 검증됨` : ' · 패치 미확인'}`; plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
+    const provenance=p=>(p.current?(p.stored?'저장 이력 + 현재 조회':'현재 조회 · 저장 안 됨'):'저장 이력')+(p.composite?' · HOW 등급 균등 평균':'');
+    const description=p=>`${stamp(p.collectedAt)} (KST) · ${label} ${rate(p)}% · ${provenance(p)}${p.patch&&p.verificationStatus==='verified' ? ` · ${p.patchLabel??p.patch} · 검증됨${p.representative?' · 패치 대표값':''}` : ' · 패치 미확인'}`;
+    function choose(index) { const p = data.points[index]; selected.textContent = description(p); plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
     data.points.forEach((p,index)=>{
-      const mark = svg('g',{class:'history-point',tabindex:0,role:'button','aria-label':`${stamp(p.collectedAt)} ${label} ${rate(p)}%`});
-      const tooltip = svg('title',{}); tooltip.textContent = `${stamp(p.collectedAt)} · ${label} ${rate(p)}%${state.scope==='compare'&&p.patch ? ` · ${p.patch}` : ''}`;
+      const mark = svg('g',{class:'history-point',tabindex:0,role:'button','data-storage':p.current?(p.stored?'both':'browser'):'stored','data-representative':String(p.representative===true),'aria-label':description(p)});
+      const tooltip = svg('title',{}); tooltip.textContent = description(p);
       mark.append(tooltip,svg('circle',{cx:x(p),cy:y(p),r:6,class:'history-hit','vector-effect':'non-scaling-stroke'}),svg('circle',{cx:x(p),cy:y(p),r:6,class:'history-dot','vector-effect':'non-scaling-stroke'}));
       mark.addEventListener('click',()=>choose(index)); mark.addEventListener('focus',()=>choose(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();choose(index);}}); plot.append(mark);
     });
     choose(data.points.length-1); graph.append(axis,plot);
-    const axisLabel = p => p.patchLabel ? `${p.patchLabel}${p.ongoing?' · 진행 중':''}` : p.patch ?? `현재 조회 · ${day(p.collectedAt)}`;
+    const axisLabel = p => p.patchLabel&&p.verificationStatus==='verified' ? `${p.patchLabel}${p.ongoing?' · 진행 중':''}` : `${p.current?'현재 조회':'저장'} · ${day(p.collectedAt)}`;
     const labels = node('div', undefined, 'history-x'); labels.setAttribute('aria-hidden','true'); labels.append(node('span',axisLabel(data.points[0])));
     if (data.points.length > 1) labels.append(node('span',axisLabel(data.points.at(-1)))); else labels.classList.add('history-x-single');
     panel.append(graph,labels,selected);
+    if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))panel.append(node('p','채운 점: 저장 · 테두리 점: 현재 조회(미저장)','history-observation'));
+    if(data.comparisonSegments?.length)panel.append(node('p','점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다.','history-observation'));
     if(data.points.some(p=>p.verificationStatus==='verified'))panel.append(node('p','패치 후 첫 관측이며, 안정된 메타를 뜻하지 않습니다.','history-observation'));
     const disclosure = node('div', undefined, 'history-records sr-only');
     const table = node('table',undefined,'history-table'); table.append(node('caption',`${label} 관측값`));

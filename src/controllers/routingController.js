@@ -1,7 +1,7 @@
 import { createCounterService } from '../services/counterService.js';
 import { HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
-import { buildPatchTimeline } from '../models/patchHistoryModel.js';
+import { buildObservationTimeline } from '../models/patchHistoryModel.js';
 import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 import { createSynergyService } from '../services/synergyService.js';
 export function parseRoute(hash) {
@@ -22,7 +22,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   function historyResult(result, key, filters, days) {
     const snapshots = [...result.snapshots, ...(result.gaps ?? []).map(entry => ({ ...entry, records: [] }))];
     const options = { days, now: Date.parse(result.observedUntil), metric: historyMetric };
-    const data = buildPatchTimeline(snapshots,key,filters,{...options,currentPatch:CURRENT_STATISTICS_PATCH});
+    const data = buildObservationTimeline(snapshots,key,filters,{...options,currentPatch:CURRENT_STATISTICS_PATCH});
     data.warnings.push(...(result.warnings ?? [])); return { status: 'ready', days, result: data };
   }
   function loadHistory() {

@@ -1,0 +1,14 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {normalizeStatistics} from '../src/models/statisticsModel.js';
+import {combineDivisionStatistics} from '../src/models/compositeStatisticsModel.js';
+import {attachMetaTiers} from '../src/domain/meta.js';
+const evidence=JSON.parse(await readFile(new URL('../docs/research/tier-design/evidence.json',import.meta.url),'utf8'));
+const f={platform:'pc',gamemode:'competitive',region:'asia',division:'diamond_plus',map:'all'};
+const components=['diamond','master','grandmaster'].map(division=>{const c=evidence.cases.find(c=>c.filters.region==='asia'&&c.filters.division===division);return {filters:c.filters,records:normalizeStatistics(c.api.records)};});
+const individual=attachMetaTiers(evidence.heroes.records,components[0].records),combined=attachMetaTiers(evidence.heroes.records,combineDivisionStatistics(f,components));
+const rows=combined.map(h=>{const old=individual.find(o=>o.key===h.key);return {hero:h.key,name:h.name,role:h.role,diamondRank:old.roleRank,diamondTier:old.tier,plusRank:h.roleRank,plusTier:h.tier,diamondScore:old.metaScore,plusScore:h.metaScore,winRate:h.statistics?.winRate,pickRate:h.statistics?.pickRate,banRate:h.statistics?.banRate};});
+const root=new URL('../docs/research/composite-divisions/',import.meta.url);await mkdir(root,{recursive:true});
+await writeFile(new URL('comparison.json',root),JSON.stringify({sourceObservedAt:evidence.collectedAt,source:'preserved OverFast responses; not fresh live data',filters:f,rankChanged:rows.filter(r=>r.diamondRank!==r.plusRank).length,tierChanged:rows.filter(r=>r.diamondTier!==r.plusTier).length,rows},null,2)+'\n');
+let md='# 다이아몬드 → 다이아몬드 이상 비교\n\n기존에 보존된 실제 API 응답을 사용했다. 오늘의 라이브 결과가 아니다. 역할별 65:25:10과 기존 S 자격을 유지한다. 각 지표를 먼저 등급 균등 평균하며 원본 집계 기간/패치는 미확인이다.\n\n| 영웅 | 역할 | 다이아 순위/티어 | 다이아 이상 순위/티어 | 점수 전→후 | 평균 승률/픽률/밴률 |\n| --- | --- | --- | --- | --- | --- |\n';
+for(const r of rows)md+=`| ${r.name} | ${r.role} | ${r.diamondRank}/${r.diamondTier} | ${r.plusRank}/${r.plusTier} | ${r.diamondScore?.toFixed(2)}→${r.plusScore?.toFixed(2)} | ${[r.winRate,r.pickRate,r.banRate].map(v=>v?.toFixed(3)).join('/')} |\n`;
+await writeFile(new URL('COMPARISON.md',root),md);console.log(JSON.stringify({rankChanged:rows.filter(r=>r.diamondRank!==r.plusRank).length,tierChanged:rows.filter(r=>r.diamondTier!==r.plusTier).length}));

@@ -1,0 +1,50 @@
+{
+  "reviewedAt": "2026-11-04",
+  "source": "https://overfast-api.tekrop.fr/openapi.json",
+  "heroStatsSummary": {
+    "properties": {
+      "hero": {
+        "$ref": "#/components/schemas/HeroKey",
+        "description": "Hero key used to identify Overwatch heroes in general"
+      },
+      "pickrate": {
+        "type": "number",
+        "maximum": 100,
+        "minimum": 0,
+        "title": "Pickrate",
+        "description": "Pickrate (in percent)"
+      },
+      "winrate": {
+        "type": "number",
+        "maximum": 100,
+        "minimum": 0,
+        "title": "Winrate",
+        "description": "Winrate (in percent)"
+      },
+      "banrate": {
+        "anyOf": [
+          {
+            "type": "number",
+            "maximum": 100,
+            "minimum": 0
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Banrate",
+        "description": "Banrate (in percent). Only available for the competitive gamemode."
+      }
+    },
+    "type": "object",
+    "required": [
+      "hero",
+      "pickrate",
+      "winrate"
+    ],
+    "title": "HeroStatsSummary"
+  },
+  "aggregateCombatContributionAvailable": false,
+  "usablePerformanceDataset": null,
+  "reason": "No verified patch/cohort-matched aggregate performance dataset and reuse permission acquired; player profiles excluded."
+}

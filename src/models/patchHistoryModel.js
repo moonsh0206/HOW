@@ -2,6 +2,7 @@ import { PATCH_CATALOG } from '../data/patchCatalog.js';
 import { buildMetricHistory } from './pickHistoryModel.js';
 import { isObservationTime } from './snapshotModel.js';
 import { patchCollectionDue } from './patchCollectionModel.js';
+import { statisticsQuery } from './statisticsModel.js';
 
 export function verifiedPatch(snapshot, catalog = PATCH_CATALOG) {
   const proof = snapshot.patchVerification;
@@ -11,6 +12,21 @@ export function verifiedPatch(snapshot, catalog = PATCH_CATALOG) {
 }
 export function representatives(snapshots) {
   return [...new Map([...snapshots].sort((a,b)=>Date.parse(a.collectedAt)-Date.parse(b.collectedAt)).map(s=>[s.collectedAt,s])).values()].slice(-2);
+}
+// Every real stored observation remains visible; patch attribution is a separate label.
+export function buildObservationTimeline(snapshots,heroKey,filters,options={}){
+  const checked=buildMetricHistory(snapshots,heroKey,filters,{...options,all:true});
+  const catalog=options.catalog??PATCH_CATALOG;
+  const representatives=buildPatchTimeline(snapshots,heroKey,filters,options).points;
+  const points=checked.points.map(point=>{
+    const matches=snapshots.filter(s=>{try{return Date.parse(s.collectedAt)===point.time&&['platform','region','gamemode','division','map'].every(key=>typeof s.filters?.[key]==='string')&&statisticsQuery(s.filters)===statisticsQuery(filters);}catch{return false;}});
+    const verified=matches.find(s=>verifiedPatch(s,catalog));
+    const patch=verified?verifiedPatch(verified,catalog):null;
+    return {...point,stored:true,patch:patch?.id??null,patchLabel:patch?.name??patch?.version??patch?.date??patch?.id,verificationStatus:patch?'verified':'unverified',representative:representatives.some(r=>r.time===point.time&&r.patch===patch?.id),ongoing:patch?.id===options.currentPatch};
+  });
+  const segments=[],comparisonSegments=[];let previous=null;
+  for(const observation of checked.observations){const point=points.find(p=>p.time===observation.time);if(!point){previous=null;continue;}if(previous){if(previous.patch&&previous.patch===point.patch&&point.time-previous.time<=86400000)segments.push([previous,point]);else comparisonSegments.push([previous,point]);}previous=point;}
+  return {...checked,points,segments,comparisonSegments,comparisonWindow:'potentially-different-aggregation-windows',representativePolicy:'first-confirmed-after-day-one'};
 }
 // Preserve the first verified observation after day one, rather than replacing it later.
 export function buildPatchTimeline(snapshots, heroKey, filters, {metric='pickRate',currentPatch=null,catalog=PATCH_CATALOG,now=Date.now()}={}) {

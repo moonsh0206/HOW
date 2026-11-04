@@ -11,7 +11,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: how-patch-snapshot
+  group: how-snapshot-collection
   cancel-in-progress: false
 jobs:
   collect:
@@ -29,6 +29,8 @@ jobs:
           PATCH_ID: ${{ inputs.patch_id }}
         run: node scripts/collect-patch-snapshot.js "$PATCH_ID"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: reviewed-patch-snapshots
           path: public/data/snapshots/
+          retention-days: 30

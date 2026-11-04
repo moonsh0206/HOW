@@ -8,7 +8,7 @@ import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { ROLES } from '../models/heroModel.js';
-import { filterLabel } from '../models/statisticsModel.js';
+import { filterLabel,isCompositeDivision,COMPOSITE_NOTICE,divisionName } from '../models/statisticsModel.js';
 
 function itemCard(item) {
   const card = node('article', undefined, 'ability-card'); const header = node('div', undefined, 'ability-heading');
@@ -105,6 +105,8 @@ export function createHeroDetailView() {
       const main = node('div', undefined, 'detail-summary-main');
       summaryTop.append(main, side); summary.append(summaryTop);
       information.append(node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
+      if(isCompositeDivision(state.statsFilters.division))information.append(node('p',COMPOSITE_NOTICE,'composite-notice'));
+      if(hero.statistics?.missingDivisions?.length)information.append(node('p',`누락 등급: ${hero.statistics.missingDivisions.map(divisionName).join(', ')}`,'history-warning'));
       const button = node('button', state.favorites.has(route.key) ? '★ 즐겨찾기 저장됨' : '☆ 즐겨찾기', 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); information.append(button);
       const sourceInfo = node('details', undefined, 'detail-stat-info'); sourceInfo.append(node('summary','통계 정보 ⓘ'));
       sourceInfo.append(node('p', filterLabel(state.statsFilters)), node('p', `OverFast API · HOW 조회 ${state.statistics?.fetchedAt ? new Date(state.statistics.fetchedAt).toLocaleString('ko-KR') : '미제공'}${state.statistics?.stale ? ' · 오래된 데이터' : ''}`)); information.append(sourceInfo);
@@ -117,7 +119,7 @@ export function createHeroDetailView() {
       const chart = renderPickHistory(withCurrentPickHistory(history, state.statistics, route.key, state.statsFilters, activeMetric), state.statsFilters);
       if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
       main.append(metrics, chart, information);
-      const basis=node('p',state.statsFilters.map==='all'?'전체 전장 기준':'선택 전장 기준','detail-stat-basis');main.prepend(basis);
+      const basis=node('p',`${state.statsFilters.map==='all'?'전체 전장 기준':'선택 전장 기준'}${state.metaPolicy?.version==='local-60-27-13'?' · 로컬 실험 모델':''}`,'detail-stat-basis');main.prepend(basis);
       const detail = detailState.result.detail;
       const passive = section('detail-passives', '지속 능력', detail.subrole ? [{name:detail.subrole.subroleNameKo,description:detail.subrole.descriptionKo}] : []);
       const mark = detail.subrole?.mark;

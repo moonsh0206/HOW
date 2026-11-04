@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
+import { DEFAULT_FILTERS as UI_DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
 import { normalizeSnapshot } from '../src/models/snapshotModel.js';
 import { createSnapshotService } from '../src/services/snapshotService.js';
 

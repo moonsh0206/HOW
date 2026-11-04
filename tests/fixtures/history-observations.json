@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "note": "Tests only; never written to public snapshots or treated as API evidence.",
+  "filters": {"platform":"pc","region":"asia","gamemode":"competitive","division":"diamond","map":"all"},
+  "snapshots": [
+    {"collectedAt":"2026-11-01T00:00:00Z","patch":null,"records":[{"hero":"genji","winRate":50,"pickRate":10,"banRate":1},{"hero":"ana","winRate":51,"pickRate":20,"banRate":2}]},
+    {"collectedAt":"2026-11-02T00:00:00Z","patch":null,"records":[{"hero":"genji","winRate":52,"pickRate":12,"banRate":3},{"hero":"ana","winRate":53,"pickRate":22,"banRate":4}]}
+  ]
+}

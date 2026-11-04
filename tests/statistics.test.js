@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { normalizeStatistics, DEFAULT_FILTERS, statisticsQuery, validateFilters } from '../src/models/statisticsModel.js';
+import { normalizeStatistics, DEFAULT_FILTERS as UI_DEFAULT_FILTERS, statisticsQuery, validateFilters } from '../src/models/statisticsModel.js';
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
 import { normalizeHeroes, createHeroModel } from '../src/models/heroModel.js';
 import { roleTier, attachRoleTiers, calculateTierScore } from '../src/domain/tier.js';
 import { createStatisticsService } from '../src/services/statisticsService.js';
@@ -27,7 +28,7 @@ test('mock: cumulative ceil boundaries and small groups, tie ranks and missing w
   assert.equal(attachRoleTiers(heroes, records.slice(0, 1))[1].tier, null);
 });
 test('mock: key joins, unknown records, role/search do not change assigned tiers, numeric sorting', () => {
-  const model = createHeroModel(); model.state.heroes = heroes;
+  const model = createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS}; model.state.heroes = heroes;
   model.state.statistics = { filters: { ...DEFAULT_FILTERS }, records: normalizeStatistics([...raw, { hero: 'mercy', winrate: 80, pickrate: 0 }, { hero: 'unknown-hero', winrate: 99 }]) };
   const original = model.heroByKey('ana').tier;
   model.state.role = 'support'; model.state.query = 'ana'; assert.equal(model.visibleHeroes()[0].tier, original);
@@ -51,19 +52,19 @@ test('mock: exact-key pending/cache, expiry, stale fallback and cooldown do not 
   const stale = await service.getStatistics(DEFAULT_FILTERS);
   assert.equal(stale.stale, true); assert.equal(stale.fetchedAt, a.fetchedAt); assert.match(stale.error, /503/);
   await service.getStatistics(DEFAULT_FILTERS); assert.equal(calls, 2);
-  await assert.rejects(service.getStatistics({ region: 'europe' }), /503/);
+  await assert.rejects(service.getStatistics({ ...DEFAULT_FILTERS,region: 'europe' }), /503/);
   assert.equal(calls, 3);
 });
 test('mock: HTTP errors, invalid JSON/data, timeout and network failures', async () => {
   for (const status of [429, 503, 400, 422]) {
     const service = createStatisticsService({ fetcher: async () => ({ ok: false, status, headers: new Headers() }) });
-    await assert.rejects(service.getStatistics(), new RegExp(String(status)));
+    await assert.rejects(service.getStatistics(DEFAULT_FILTERS), new RegExp(String(status)));
   }
-  await assert.rejects(createStatisticsService({ fetcher: async () => response([{ hero: 'ana', winrate: 200 }]) }).getStatistics(), /0~100/);
-  await assert.rejects(createStatisticsService({ fetcher: async () => { throw new TypeError('Failed to fetch'); } }).getStatistics(), /CORS/);
-  await assert.rejects(createStatisticsService({ fetcher: async () => ({ ok: true, json: async () => { throw new SyntaxError(); } }) }).getStatistics(), /JSON/);
+  await assert.rejects(createStatisticsService({ fetcher: async () => response([{ hero: 'ana', winrate: 200 }]) }).getStatistics(DEFAULT_FILTERS), /0~100/);
+  await assert.rejects(createStatisticsService({ fetcher: async () => { throw new TypeError('Failed to fetch'); } }).getStatistics(DEFAULT_FILTERS), /CORS/);
+  await assert.rejects(createStatisticsService({ fetcher: async () => ({ ok: true, json: async () => { throw new SyntaxError(); } }) }).getStatistics(DEFAULT_FILTERS), /JSON/);
   const timeout = createStatisticsService({ timeoutMs: 5, fetcher: (_, { signal }) => new Promise((resolve, reject) => signal.addEventListener('abort', () => reject(new DOMException('timeout', 'AbortError')))) });
-  await assert.rejects(timeout.getStatistics(), /초과/);
+  await assert.rejects(timeout.getStatistics(DEFAULT_FILTERS), /초과/);
 });
 test('captured real API response: shapes, ranges, key matching and role tier construction', async () => {
   const capturedHeroes = normalizeHeroes(JSON.parse(await readFile(new URL('./fixtures/overfast-heroes.json', import.meta.url), 'utf8')));

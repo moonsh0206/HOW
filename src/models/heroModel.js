@@ -1,5 +1,5 @@
-import { attachMetaTiers } from '../domain/meta.js';
-import { DEFAULT_FILTERS, statisticsQuery } from './statisticsModel.js';
+import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
+import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
 export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
 
 export function safeImage(value) {
@@ -18,12 +18,15 @@ export function normalizeHeroes(data) {
   });
 }
 
-export function createHeroModel(favorites = []) {
+export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
   const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'tier-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS }, previousSnapshot: null, snapshotStatus: 'idle', snapshotError: '' };
+  state.metaPolicy=metaPolicy;
   const enriched = () => {
     // Production Service always supplies cohort metadata. Never score a different cohort.
     const matches = state.statistics?.filters && statisticsQuery(state.statistics.filters) === statisticsQuery(state.statsFilters);
-    return attachMetaTiers(state.heroes, matches ? state.statistics?.records ?? [] : []);
+    const records=matches?[...(state.statistics?.records??[])]:[];
+    if(matches&&isCompositeDivision(state.statsFilters.division))for(const hero of state.heroes)if(!records.some(r=>r.hero===hero.key))records.push({hero:hero.key,winRate:null,pickRate:null,banRate:null,missingDivisions:divisionMembers(state.statsFilters.division)});
+    return attachMetaTiers(state.heroes,records,metaPolicy);
   };
   return {
     state,

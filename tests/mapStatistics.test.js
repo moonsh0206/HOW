@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
-import { DEFAULT_FILTERS,statisticsQuery,validateFilters } from '../src/models/statisticsModel.js';
+import { DEFAULT_FILTERS as UI_DEFAULT_FILTERS,statisticsQuery,validateFilters } from '../src/models/statisticsModel.js';
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
 import { normalizeMaps } from '../src/models/mapModel.js';
 import { createMapService } from '../src/services/mapService.js';
 import { createStatisticsService } from '../src/services/statisticsService.js';
@@ -56,7 +57,7 @@ test('map controller: lazy queries, late map/hero/cohort responses cannot overwr
 test('map view: zero/null, exact cohort comparison, empty state and stale source',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try{
-  const model=createHeroModel();model.state.statistics={filters:DEFAULT_FILTERS,records:[{hero:'torbjorn',winRate:50}]};
+  const model=createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS};model.state.statistics={filters:DEFAULT_FILTERS,records:[{hero:'torbjorn',winRate:50}]};
   const state={maps:normalizeMaps(rawMaps),listStatus:'ready',selectedMap:'busan',status:'ready',result:{filters:{...DEFAULT_FILTERS,map:'busan'},records:[{hero:'torbjorn',winRate:0,pickRate:0,banRate:null}],fetchedAt:'2026-11-04T00:00:00Z',stale:true}};
   state.baseline=model.state.statistics;model.state.statsFilters={...DEFAULT_FILTERS,map:'busan'};model.state.statistics=state.result;
   const panel=renderMapStatistics(state,model,'torbjorn');
@@ -73,7 +74,7 @@ test('detail map integration: only overview, selection event, favorite and all-m
  const dom=new JSDOM(html,{url:'https://example.com/HOW/#/heroes/genji'}),prior={document:globalThis.document,window:globalThis.window,location:globalThis.location};Object.assign(globalThis,{document:dom.window.document,window:dom.window,location:dom.window.location});
  dom.window.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');};
  let router,controller;try{
-  const model=createHeroModel(),calls=[];
+  const model=createHeroModel(),calls=[];model.state.statsFilters={...DEFAULT_FILTERS};
   const statisticsService=createStatisticsService({fetcher:async url=>{calls.push(url);return{ok:true,headers:new Headers(),json:async()=>[{hero:'genji',winrate:url.includes('map=busan')?40:55,pickrate:2,banrate:0}]};}});
   const maps=createMapStatisticsController({statisticsService,onChange:()=>router.refresh()});
   router=createRoutingController({model,mapStatisticsController:maps,detailView:createHeroDetailView(),detailService:{async getHero(){return{detail:normalizeHeroDetail(fixture,'genji'),fetchedAt:'2026-11-04T00:00:00Z'};}}});

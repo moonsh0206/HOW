@@ -1,5 +1,5 @@
 import { ROLES } from '../models/heroModel.js';
-import { MODES, REGIONS, DIVISIONS, DIVISION_GROUPS, filterLabel } from '../models/statisticsModel.js';
+import { MODES, REGIONS, DIVISION_GROUPS, filterLabel,divisionName,isCompositeDivision,COMPOSITE_NOTICE } from '../models/statisticsModel.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
 import { MAP_KEYS,MAP_NAMES } from '../models/mapModel.js';
@@ -33,6 +33,7 @@ function heroIdentity(hero, { card = false } = {}) {
   const text = element('span', undefined, 'hero-name');
   text.append(element('strong', hero.name), element('small', hero.key.toUpperCase()));
   if (hero.metaScore != null) text.append(element('small', `META ${hero.metaScore.toFixed(1)}`, 'meta-hint'));
+  if(hero.statistics?.missingDivisions?.length)text.append(element('small',`누락: ${hero.statistics.missingDivisions.map(divisionName).join(', ')}`,'meta-hint'));
   if (card) text.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
   button.append(portrait(hero), text);
   button.setAttribute('aria-label', `${hero.name} 상세 페이지 보기`);
@@ -68,7 +69,7 @@ export function createHeroView() {
   for(const [key,name] of [['all','전체 전장'],...[...MAP_KEYS].map(key=>[key,MAP_NAMES[key]])]){const option=element('option',name);option.value=key;mapSelect.append(option);}
   for (const group of DIVISION_GROUPS) {
     const optgroup = element('optgroup'); optgroup.label = group.label;
-    for (const key of group.keys) { const option = element('option', DIVISIONS[key]); option.value = key; optgroup.append(option); }
+    for (const key of group.keys) { const option = element('option', divisionName(key)); option.value = key; optgroup.append(option); }
     divisions.append(optgroup);
   }
   function renderDetailStatistics(hero, state) {
@@ -100,12 +101,14 @@ export function createHeroView() {
       const statsMessage = document.querySelector('#stats-status');
       const hasStats = state.statistics?.records.length > 0;
       const stale = state.statistics?.stale || state.statsStatus === 'error' && hasStats;
-      document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?' · 선택 전장 기준':''}`;
+      document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?' · 선택 전장 기준':''}${state.metaPolicy?.version==='local-60-27-13'?' · 로컬 실험 모델':''}`;
       document.querySelector('#active-cohort-freshness').textContent = `출처: OverFast API · ${state.statsStatus === 'loading' ? '현재 조건 조회 중' : state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' · 오래된 통계' : ''}` : '현재 조건의 성공한 통계 조회 없음'} · 원본 집계 시각 미제공`;
-      document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전은 전체 등급으로 조회합니다.' : '선택한 개별 등급으로 조회합니다. 그랜드마스터는 챔피언을 포함합니다.';
+      document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전은 전체 등급으로 조회합니다.' : '개별 등급 또는 HOW 등급 균등 평균을 선택합니다. 그랜드마스터는 챔피언을 포함합니다.';
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;
+      statsMessage.setAttribute('aria-description',isCompositeDivision(state.statsFilters.division)?COMPOSITE_NOTICE:'');
       statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어' : '통계 연결 대기 중';
       document.querySelector('[data-action="stats-refresh"]').disabled = state.statsStatus === 'loading';
+      if(isCompositeDivision(state.statsFilters.division))statsMessage.textContent+=` · ${COMPOSITE_NOTICE}${state.statistics?.error?` · ${state.statistics.error}`:''}`;
       document.querySelector('#stats-cohort').textContent = `통계 출처: OverFast API · ${filterLabel(state.statsFilters)}`;
       document.querySelector('#stats-timestamp').textContent = state.statistics ? `HOW 통계 조회: ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' (오래됨)' : ''} · 최대 1시간 캐시` : 'HOW 통계 조회: 아직 성공한 조회 없음';
       if (dialog.open && detailKey) { const current = model.heroByKey(detailKey); if (current) renderDetailStatistics(current, state); }

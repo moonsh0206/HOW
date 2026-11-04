@@ -1,0 +1,954 @@
+{
+  "observations": 432,
+  "inputSha256": "ecd384bcf88f7bd47df72ffd690db5db6a5096e45a86a3a05e97960352ef48eb",
+  "summary": {
+    "65:25:10": {
+      "count": 432,
+      "rankChanged": 0,
+      "tierChanged": 0,
+      "meanAbsRankChange": 0,
+      "distribution": {
+        "S": 75,
+        "A": 63,
+        "B": 87,
+        "C": 113,
+        "D": 94
+      },
+      "lowWinTop3": [],
+      "lowWinProvisionalS": [],
+      "lowWinFinalS": [],
+      "capped": 5,
+      "roles": {
+        "tank": {
+          "count": 120,
+          "rankChanged": 0,
+          "tierChanged": 0,
+          "meanAbsRankChange": 0,
+          "distribution": {
+            "S": 23,
+            "A": 17,
+            "B": 24,
+            "C": 33,
+            "D": 23
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 1
+        },
+        "damage": {
+          "count": 184,
+          "rankChanged": 0,
+          "tierChanged": 0,
+          "meanAbsRankChange": 0,
+          "distribution": {
+            "S": 28,
+            "A": 29,
+            "B": 39,
+            "C": 49,
+            "D": 39
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 4
+        },
+        "support": {
+          "count": 128,
+          "rankChanged": 0,
+          "tierChanged": 0,
+          "meanAbsRankChange": 0,
+          "distribution": {
+            "S": 24,
+            "A": 17,
+            "B": 24,
+            "C": 31,
+            "D": 32
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 0
+        }
+      }
+    },
+    "60:27:13": {
+      "count": 432,
+      "rankChanged": 138,
+      "tierChanged": 40,
+      "meanAbsRankChange": 0.38657407407407407,
+      "distribution": {
+        "S": 74,
+        "A": 62,
+        "B": 88,
+        "C": 112,
+        "D": 96
+      },
+      "lowWinTop3": [
+        {
+          "cohort": "asia/master",
+          "model": "60:27:13",
+          "hero": "doomfist",
+          "name": "둠피스트",
+          "role": "tank",
+          "winrate": 49.7,
+          "pickrate": 10.7,
+          "banrate": 31.3,
+          "Qw": 64.28571428571429,
+          "Qp": 92.85714285714286,
+          "Qb": 92.85714285714286,
+          "Wpart": 38.57142857142858,
+          "Ppart": 25.071428571428573,
+          "Bpart": 12.071428571428573,
+          "score": 75.7142857143,
+          "rank": 3,
+          "baseRank": 4,
+          "rankGain": 1,
+          "provisionalTier": "S",
+          "tier": "A",
+          "baseTier": "A",
+          "capped": true,
+          "Squalified": false
+        }
+      ],
+      "lowWinProvisionalS": [
+        {
+          "cohort": "asia/master",
+          "model": "60:27:13",
+          "hero": "doomfist",
+          "name": "둠피스트",
+          "role": "tank",
+          "winrate": 49.7,
+          "pickrate": 10.7,
+          "banrate": 31.3,
+          "Qw": 64.28571428571429,
+          "Qp": 92.85714285714286,
+          "Qb": 92.85714285714286,
+          "Wpart": 38.57142857142858,
+          "Ppart": 25.071428571428573,
+          "Bpart": 12.071428571428573,
+          "score": 75.7142857143,
+          "rank": 3,
+          "baseRank": 4,
+          "rankGain": 1,
+          "provisionalTier": "S",
+          "tier": "A",
+          "baseTier": "A",
+          "capped": true,
+          "Squalified": false
+        }
+      ],
+      "lowWinFinalS": [],
+      "capped": 6,
+      "roles": {
+        "tank": {
+          "count": 120,
+          "rankChanged": 40,
+          "tierChanged": 16,
+          "meanAbsRankChange": 0.35833333333333334,
+          "distribution": {
+            "S": 22,
+            "A": 18,
+            "B": 24,
+            "C": 32,
+            "D": 24
+          },
+          "lowWinTop3": [
+            {
+              "cohort": "asia/master",
+              "model": "60:27:13",
+              "hero": "doomfist",
+              "name": "둠피스트",
+              "role": "tank",
+              "winrate": 49.7,
+              "pickrate": 10.7,
+              "banrate": 31.3,
+              "Qw": 64.28571428571429,
+              "Qp": 92.85714285714286,
+              "Qb": 92.85714285714286,
+              "Wpart": 38.57142857142858,
+              "Ppart": 25.071428571428573,
+              "Bpart": 12.071428571428573,
+              "score": 75.7142857143,
+              "rank": 3,
+              "baseRank": 4,
+              "rankGain": 1,
+              "provisionalTier": "S",
+              "tier": "A",
+              "baseTier": "A",
+              "capped": true,
+              "Squalified": false
+            }
+          ],
+          "lowWinProvisionalS": [
+            {
+              "cohort": "asia/master",
+              "model": "60:27:13",
+              "hero": "doomfist",
+              "name": "둠피스트",
+              "role": "tank",
+              "winrate": 49.7,
+              "pickrate": 10.7,
+              "banrate": 31.3,
+              "Qw": 64.28571428571429,
+              "Qp": 92.85714285714286,
+              "Qb": 92.85714285714286,
+              "Wpart": 38.57142857142858,
+              "Ppart": 25.071428571428573,
+              "Bpart": 12.071428571428573,
+              "score": 75.7142857143,
+              "rank": 3,
+              "baseRank": 4,
+              "rankGain": 1,
+              "provisionalTier": "S",
+              "tier": "A",
+              "baseTier": "A",
+              "capped": true,
+              "Squalified": false
+            }
+          ],
+          "lowWinFinalS": [],
+          "capped": 2
+        },
+        "damage": {
+          "count": 184,
+          "rankChanged": 74,
+          "tierChanged": 14,
+          "meanAbsRankChange": 0.5163043478260869,
+          "distribution": {
+            "S": 28,
+            "A": 28,
+            "B": 40,
+            "C": 48,
+            "D": 40
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 4
+        },
+        "support": {
+          "count": 128,
+          "rankChanged": 24,
+          "tierChanged": 10,
+          "meanAbsRankChange": 0.2265625,
+          "distribution": {
+            "S": 24,
+            "A": 16,
+            "B": 24,
+            "C": 32,
+            "D": 32
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 0
+        }
+      }
+    },
+    "60:25:15": {
+      "count": 432,
+      "rankChanged": 164,
+      "tierChanged": 47,
+      "meanAbsRankChange": 0.4537037037037037,
+      "distribution": {
+        "S": 74,
+        "A": 63,
+        "B": 87,
+        "C": 112,
+        "D": 96
+      },
+      "lowWinTop3": [
+        {
+          "cohort": "asia/master",
+          "model": "60:25:15",
+          "hero": "doomfist",
+          "name": "둠피스트",
+          "role": "tank",
+          "winrate": 49.7,
+          "pickrate": 10.7,
+          "banrate": 31.3,
+          "Qw": 64.28571428571429,
+          "Qp": 92.85714285714286,
+          "Qb": 92.85714285714286,
+          "Wpart": 38.57142857142858,
+          "Ppart": 23.214285714285715,
+          "Bpart": 13.928571428571429,
+          "score": 75.7142857143,
+          "rank": 3,
+          "baseRank": 4,
+          "rankGain": 1,
+          "provisionalTier": "S",
+          "tier": "A",
+          "baseTier": "A",
+          "capped": true,
+          "Squalified": false
+        }
+      ],
+      "lowWinProvisionalS": [
+        {
+          "cohort": "asia/master",
+          "model": "60:25:15",
+          "hero": "doomfist",
+          "name": "둠피스트",
+          "role": "tank",
+          "winrate": 49.7,
+          "pickrate": 10.7,
+          "banrate": 31.3,
+          "Qw": 64.28571428571429,
+          "Qp": 92.85714285714286,
+          "Qb": 92.85714285714286,
+          "Wpart": 38.57142857142858,
+          "Ppart": 23.214285714285715,
+          "Bpart": 13.928571428571429,
+          "score": 75.7142857143,
+          "rank": 3,
+          "baseRank": 4,
+          "rankGain": 1,
+          "provisionalTier": "S",
+          "tier": "A",
+          "baseTier": "A",
+          "capped": true,
+          "Squalified": false
+        }
+      ],
+      "lowWinFinalS": [],
+      "capped": 6,
+      "roles": {
+        "tank": {
+          "count": 120,
+          "rankChanged": 44,
+          "tierChanged": 18,
+          "meanAbsRankChange": 0.4083333333333333,
+          "distribution": {
+            "S": 22,
+            "A": 18,
+            "B": 24,
+            "C": 32,
+            "D": 24
+          },
+          "lowWinTop3": [
+            {
+              "cohort": "asia/master",
+              "model": "60:25:15",
+              "hero": "doomfist",
+              "name": "둠피스트",
+              "role": "tank",
+              "winrate": 49.7,
+              "pickrate": 10.7,
+              "banrate": 31.3,
+              "Qw": 64.28571428571429,
+              "Qp": 92.85714285714286,
+              "Qb": 92.85714285714286,
+              "Wpart": 38.57142857142858,
+              "Ppart": 23.214285714285715,
+              "Bpart": 13.928571428571429,
+              "score": 75.7142857143,
+              "rank": 3,
+              "baseRank": 4,
+              "rankGain": 1,
+              "provisionalTier": "S",
+              "tier": "A",
+              "baseTier": "A",
+              "capped": true,
+              "Squalified": false
+            }
+          ],
+          "lowWinProvisionalS": [
+            {
+              "cohort": "asia/master",
+              "model": "60:25:15",
+              "hero": "doomfist",
+              "name": "둠피스트",
+              "role": "tank",
+              "winrate": 49.7,
+              "pickrate": 10.7,
+              "banrate": 31.3,
+              "Qw": 64.28571428571429,
+              "Qp": 92.85714285714286,
+              "Qb": 92.85714285714286,
+              "Wpart": 38.57142857142858,
+              "Ppart": 23.214285714285715,
+              "Bpart": 13.928571428571429,
+              "score": 75.7142857143,
+              "rank": 3,
+              "baseRank": 4,
+              "rankGain": 1,
+              "provisionalTier": "S",
+              "tier": "A",
+              "baseTier": "A",
+              "capped": true,
+              "Squalified": false
+            }
+          ],
+          "lowWinFinalS": [],
+          "capped": 2
+        },
+        "damage": {
+          "count": 184,
+          "rankChanged": 86,
+          "tierChanged": 17,
+          "meanAbsRankChange": 0.5869565217391305,
+          "distribution": {
+            "S": 28,
+            "A": 29,
+            "B": 39,
+            "C": 48,
+            "D": 40
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 4
+        },
+        "support": {
+          "count": 128,
+          "rankChanged": 34,
+          "tierChanged": 12,
+          "meanAbsRankChange": 0.3046875,
+          "distribution": {
+            "S": 24,
+            "A": 16,
+            "B": 24,
+            "C": 32,
+            "D": 32
+          },
+          "lowWinTop3": [],
+          "lowWinProvisionalS": [],
+          "lowWinFinalS": [],
+          "capped": 0
+        }
+      }
+    }
+  },
+  "perCohort": {
+    "asia/all": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 9,
+          "A": 9,
+          "B": 10,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 20,
+        "tierChanged": 7,
+        "meanAbsRankChange": 0.48148148148148145,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 18,
+        "tierChanged": 6,
+        "meanAbsRankChange": 0.42592592592592593,
+        "distribution": {
+          "S": 9,
+          "A": 9,
+          "B": 10,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    },
+    "asia/gold": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 16,
+        "tierChanged": 2,
+        "meanAbsRankChange": 0.3148148148148148,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 18,
+        "tierChanged": 4,
+        "meanAbsRankChange": 0.37037037037037035,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    },
+    "asia/emerald": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 12,
+          "C": 15,
+          "D": 10
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 19,
+        "tierChanged": 9,
+        "meanAbsRankChange": 0.46296296296296297,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 21,
+        "tierChanged": 9,
+        "meanAbsRankChange": 0.5,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    },
+    "asia/diamond": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 20,
+        "tierChanged": 4,
+        "meanAbsRankChange": 0.4074074074074074,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 23,
+        "tierChanged": 6,
+        "meanAbsRankChange": 0.48148148148148145,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      }
+    },
+    "asia/master": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 20,
+        "tierChanged": 7,
+        "meanAbsRankChange": 0.42592592592592593,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [
+          {
+            "cohort": "asia/master",
+            "model": "60:27:13",
+            "hero": "doomfist",
+            "name": "둠피스트",
+            "role": "tank",
+            "winrate": 49.7,
+            "pickrate": 10.7,
+            "banrate": 31.3,
+            "Qw": 64.28571428571429,
+            "Qp": 92.85714285714286,
+            "Qb": 92.85714285714286,
+            "Wpart": 38.57142857142858,
+            "Ppart": 25.071428571428573,
+            "Bpart": 12.071428571428573,
+            "score": 75.7142857143,
+            "rank": 3,
+            "baseRank": 4,
+            "rankGain": 1,
+            "provisionalTier": "S",
+            "tier": "A",
+            "baseTier": "A",
+            "capped": true,
+            "Squalified": false
+          }
+        ],
+        "lowWinProvisionalS": [
+          {
+            "cohort": "asia/master",
+            "model": "60:27:13",
+            "hero": "doomfist",
+            "name": "둠피스트",
+            "role": "tank",
+            "winrate": 49.7,
+            "pickrate": 10.7,
+            "banrate": 31.3,
+            "Qw": 64.28571428571429,
+            "Qp": 92.85714285714286,
+            "Qb": 92.85714285714286,
+            "Wpart": 38.57142857142858,
+            "Ppart": 25.071428571428573,
+            "Bpart": 12.071428571428573,
+            "score": 75.7142857143,
+            "rank": 3,
+            "baseRank": 4,
+            "rankGain": 1,
+            "provisionalTier": "S",
+            "tier": "A",
+            "baseTier": "A",
+            "capped": true,
+            "Squalified": false
+          }
+        ],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 26,
+        "tierChanged": 9,
+        "meanAbsRankChange": 0.5370370370370371,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [
+          {
+            "cohort": "asia/master",
+            "model": "60:25:15",
+            "hero": "doomfist",
+            "name": "둠피스트",
+            "role": "tank",
+            "winrate": 49.7,
+            "pickrate": 10.7,
+            "banrate": 31.3,
+            "Qw": 64.28571428571429,
+            "Qp": 92.85714285714286,
+            "Qb": 92.85714285714286,
+            "Wpart": 38.57142857142858,
+            "Ppart": 23.214285714285715,
+            "Bpart": 13.928571428571429,
+            "score": 75.7142857143,
+            "rank": 3,
+            "baseRank": 4,
+            "rankGain": 1,
+            "provisionalTier": "S",
+            "tier": "A",
+            "baseTier": "A",
+            "capped": true,
+            "Squalified": false
+          }
+        ],
+        "lowWinProvisionalS": [
+          {
+            "cohort": "asia/master",
+            "model": "60:25:15",
+            "hero": "doomfist",
+            "name": "둠피스트",
+            "role": "tank",
+            "winrate": 49.7,
+            "pickrate": 10.7,
+            "banrate": 31.3,
+            "Qw": 64.28571428571429,
+            "Qp": 92.85714285714286,
+            "Qb": 92.85714285714286,
+            "Wpart": 38.57142857142858,
+            "Ppart": 23.214285714285715,
+            "Bpart": 13.928571428571429,
+            "score": 75.7142857143,
+            "rank": 3,
+            "baseRank": 4,
+            "rankGain": 1,
+            "provisionalTier": "S",
+            "tier": "A",
+            "baseTier": "A",
+            "capped": true,
+            "Squalified": false
+          }
+        ],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    },
+    "asia/grandmaster": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 15,
+        "tierChanged": 4,
+        "meanAbsRankChange": 0.2962962962962963,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 17,
+        "tierChanged": 2,
+        "meanAbsRankChange": 0.37037037037037035,
+        "distribution": {
+          "S": 10,
+          "A": 7,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 0
+      }
+    },
+    "americas/diamond": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 18,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0.4074074074074074,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 22,
+        "tierChanged": 4,
+        "meanAbsRankChange": 0.5,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    },
+    "europe/diamond": {
+      "65:25:10": {
+        "count": 54,
+        "rankChanged": 0,
+        "tierChanged": 0,
+        "meanAbsRankChange": 0,
+        "distribution": {
+          "S": 9,
+          "A": 9,
+          "B": 10,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:27:13": {
+        "count": 54,
+        "rankChanged": 10,
+        "tierChanged": 7,
+        "meanAbsRankChange": 0.2962962962962963,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      },
+      "60:25:15": {
+        "count": 54,
+        "rankChanged": 19,
+        "tierChanged": 7,
+        "meanAbsRankChange": 0.4444444444444444,
+        "distribution": {
+          "S": 9,
+          "A": 8,
+          "B": 11,
+          "C": 14,
+          "D": 12
+        },
+        "lowWinTop3": [],
+        "lowWinProvisionalS": [],
+        "lowWinFinalS": [],
+        "capped": 1
+      }
+    }
+  }
+}

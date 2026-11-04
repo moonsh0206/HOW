@@ -1,5 +1,7 @@
-import { statisticsQuery } from '../models/statisticsModel.js';
+import { statisticsQuery,isCompositeDivision,divisionMembers } from '../models/statisticsModel.js';
+import {combineDivisionHistory} from '../models/compositeHistoryModel.js';
 import { normalizeSnapshot, isObservationTime } from '../models/snapshotModel.js';
+import {expandSnapshotFile} from '../models/snapshotV2Model.js';
 import { INSIGHT_POLICY } from '../domain/insights.js';
 
 export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, now = Date.now } = {}) {
@@ -16,7 +18,7 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
     if (pending) return pending;
     pending = (async () => {
       const data = await json('index.json');
-      if (data.schemaVersion !== 1 || !Array.isArray(data.snapshots)) throw new Error('스냅샷 목록 형식이 올바르지 않습니다.');
+      if (![1,2].includes(data.schemaVersion) || !Array.isArray(data.snapshots)) throw new Error('스냅샷 목록 형식이 올바르지 않습니다.');
       manifest = data; expires = now() + 600000; return data;
     })();
     try { return await pending; } finally { pending = null; }
@@ -27,15 +29,20 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
   }
   async function read(entry, filters) {
     if (!cache.has(entry.file)) {
-      if (!filePending.has(entry.file)) filePending.set(entry.file, json(entry.file).then(normalizeSnapshot).then(result => { cache.set(entry.file, result); return result; }).finally(() => filePending.delete(entry.file)));
+      if (!filePending.has(entry.file)) filePending.set(entry.file, json(entry.file).then(expandSnapshotFile).then(result => { cache.set(entry.file, result); return result; }).finally(() => filePending.delete(entry.file)));
       await filePending.get(entry.file);
     }
-    const snapshot = cache.get(entry.file);
+    const snapshot = cache.get(entry.file).find(s=>statisticsQuery(s.filters)===statisticsQuery(filters)&&s.collectedAt===entry.collectedAt);
+    if(!snapshot)throw new Error('요청 등급의 원본 기록이 파일에 없습니다.');
     if (statisticsQuery(snapshot.filters) !== statisticsQuery(filters) || snapshot.collectedAt !== entry.collectedAt || entry.patch !== undefined && entry.patch !== snapshot.patch) { cache.delete(entry.file); throw new Error('스냅샷 조건 또는 시각이 목록과 다릅니다.'); }
     return snapshot;
   }
-  return {
+  const service = {
     async getHistory(filters, { days = 7, scope = 'range' } = {}) {
+      if(isCompositeDivision(filters.division)){
+        const parts=await Promise.all(divisionMembers(filters.division).map(division=>service.getHistory({...filters,division},{days,scope})));
+        return {snapshots:combineDivisionHistory(parts.flatMap(p=>p.snapshots),filters),warnings:parts.flatMap(p=>p.warnings),gaps:[],observedUntil:new Date(now()).toISOString()};
+      }
       if (![7,30].includes(days)) throw new Error('지원하지 않는 이력 기간입니다.');
       if (!['range','patch','compare'].includes(scope)) throw new Error('지원하지 않는 이력 보기입니다.');
       const data = await index(), end = now(), start = scope === 'range' ? end - days * 86400000 : -Infinity;
@@ -49,6 +56,10 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
       return { snapshots, warnings, gaps, observedUntil: new Date(end).toISOString() };
     },
     async getPrevious(filters, currentAt) {
+      if(isCompositeDivision(filters.division)){
+        const data=await service.getHistory(filters,{days:7,scope:'compare'});
+        return data.snapshots.filter(s=>{const delta=Date.parse(currentAt)-Date.parse(s.collectedAt);return delta>=INSIGHT_POLICY.minComparisonMs&&delta<=INSIGHT_POLICY.maxComparisonMs;}).sort((a,b)=>Date.parse(b.collectedAt)-Date.parse(a.collectedAt))[0]??null;
+      }
       const data = await index(); const time = Date.parse(currentAt);
       const matches = data.snapshots.filter(entry => {
         try {
@@ -61,4 +72,5 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
       return read(entry, filters);
     },
   };
+  return service;
 }

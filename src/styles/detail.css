@@ -129,3 +129,9 @@
 
 .detail-stat-basis{font-size:11px;color:var(--orange);margin:0 0 8px}.detail-summary-side .counter-portrait{width:42px;height:42px}.detail-summary-side .counter-list{gap:6px}.detail-summary-side .counter-list li{padding:2px 0}.detail-summary-side .counter-hero{gap:4px;min-height:44px}.detail-summary-side .counter-caption{margin:4px 0;line-height:1.5}.detail-summary-side .counter-explanation{margin-top:0}.detail-summary-side .counter-explanation summary{padding:4px 0;min-height:28px}.detail-summary-side .synergy-panel{margin-top:10px;padding-top:10px}.detail-summary-side #detail-passives{margin-top:10px;padding-top:10px}.detail-summary-side #detail-passives .ability-card{padding:10px}.detail-summary-side #detail-passives p{line-height:1.55;margin-top:6px}.detail-summary-side h2{margin-bottom:2px}
 @media(max-width:600px){.detail-summary-side .counter-explanation summary{min-height:44px;padding:10px 0}.detail-summary-side .counter-hero{min-width:44px}}
+
+.history-comparison{stroke:var(--blue);stroke-width:1.5;stroke-dasharray:5 5;opacity:.75}.history-point[data-storage=browser] .history-dot{fill:var(--orange)}.history-point[data-representative=true] .history-dot{stroke:var(--orange);stroke-width:4}
+
+.history-point[data-storage=browser] .history-dot{fill:var(--panel);stroke:var(--orange);stroke-width:3}.history-point[data-storage=browser]:focus-visible .history-dot{stroke:#fff}
+
+.composite-notice{font-size:12px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}

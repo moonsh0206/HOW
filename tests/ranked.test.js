@@ -21,11 +21,11 @@ const cohort = (division, region = 'asia') => {
 };
 
 test('rank filters: Asia/PC/competitive/diamond default, grouped individual enums, champion not standalone', () => {
-  assert.deepEqual(DEFAULT_FILTERS, { platform: 'pc', gamemode: 'competitive', region: 'asia', division: 'diamond', map: 'all' });
+  assert.deepEqual(DEFAULT_FILTERS, { platform: 'pc', gamemode: 'competitive', region: 'asia', division: 'diamond_plus', map: 'all' });
   assert.equal(ALL_RANK_FILTERS.division, 'all');
-  assert.match(statisticsQuery(DEFAULT_FILTERS), /competitive_division=diamond/);
+  assert.match(statisticsQuery(DEFAULT_FILTERS), /how_division_group=diamond_plus/);
   assert(!statisticsQuery(ALL_RANK_FILTERS).includes('competitive_division'));
-  assert.deepEqual(DIVISION_GROUPS.flatMap(group => group.keys), Object.keys(DIVISIONS));
+  assert.deepEqual(DIVISION_GROUPS.slice(1).flatMap(group => group.keys), Object.keys(DIVISIONS));
   for (const division of ['champion', 'mid', 'top500']) assert.throws(() => validateFilters({ division }));
   assert.throws(() => validateFilters({ region: 'korea' }));
 });
@@ -62,7 +62,7 @@ test('rank comparison: independent row calculation and model prevents explicitly
   assert.throws(() => compareHeroCohorts('genji', heroes, [inputs[0], inputs[0]]));
   const model = createHeroModel(); model.state.heroes = heroes; model.state.statistics = cohort('all');
   assert(model.enrichedHeroes().every(hero => hero.tier === null));
-  model.state.statistics = cohort('diamond'); assert(model.heroByKey('genji').tier);
+  model.state.statsFilters={...DEFAULT_FILTERS,division:'diamond'};model.state.statistics = cohort('diamond'); assert(model.heroByKey('genji').tier);
   model.state.statistics = { records: cohort('diamond').records }; assert.equal(model.heroByKey('genji').tier, null);
 });
 test('rank cache: identical keys deduplicate; Asia/all/diamond/master/GM/Americas stay separate', async () => {
@@ -96,7 +96,7 @@ test('real published history: all-rank snapshots do not become diamond history w
   let calls = 0;
   const service = createSnapshotService({ fetcher: async () => { calls++; return { ok: true, json: async () => manifest }; } });
   assert.equal(await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T12:00:00Z'), null);
-  assert.equal(calls, 1);
+  assert.equal(calls, 2);
 });
 test('DOM rank selection: accessible optgroups, diamond default, changed rank applies before slower all response', async () => {
   const dom = new JSDOM(await readFile(new URL('../index.html', import.meta.url), 'utf8'), { url: 'https://example.github.io/HOW/' });
@@ -112,7 +112,7 @@ test('DOM rank selection: accessible optgroups, diamond default, changed rank ap
     });
     controller.start(); await new Promise(resolve => setImmediate(resolve));
     const select = document.querySelector('#stats-division');
-    assert.equal(select.value, 'diamond'); assert.equal(select.querySelectorAll('optgroup').length, 4);
+    assert.equal(select.value, 'diamond_plus'); assert.equal(select.querySelectorAll('optgroup').length, 5);
     assert.match(select.querySelector('[value="grandmaster"]').textContent, /챔피언/);
     select.value = 'all'; select.dispatchEvent(new window.Event('change', { bubbles: true }));
     select.value = 'master'; select.dispatchEvent(new window.Event('change', { bubbles: true }));

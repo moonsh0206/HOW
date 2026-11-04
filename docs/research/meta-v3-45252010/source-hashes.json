@@ -1,0 +1,14 @@
+{
+  "input": {
+    "path": "docs/research/tier-design/evidence.json",
+    "sha256": "ecd384bcf88f7bd47df72ffd690db5db6a5096e45a86a3a05e97960352ef48eb"
+  },
+  "production": {
+    "src/domain/meta.js": "a7f94ee27640357faa94f7c7582ce161eb0ed9662f6e6ad11a0592d561748791",
+    "src/domain/tier.js": "81ff97e25ab9529e7f9ac8b3ceb2441ff44d33d08149426428bb56c03f76e412",
+    "src/models/heroModel.js": "694c443ca525e472e441df23a189b7e1df5987458fb6f6f5792140cceeca6d75",
+    "src/views/heroDetailView.js": "d042aea373a326d311be3ba1e396cf5a5488af896f39f9e6a3e3b9ee3a5de485",
+    "src/views/heroView.js": "47e68d83fdd4ab1ad7f7da08bed5ec602395a774a5a6b042413f5a4e4eb9f1a0",
+    "src/main.js": "af15a2aa42e8985050e78bfbfbbbbbcb91772d1b6750db0155c7c2d3ac36d2e1"
+  }
+}

@@ -1,4 +1,5 @@
-import { normalizeStatistics, statisticsQuery, validateFilters } from '../models/statisticsModel.js';
+import { normalizeStatistics, statisticsQuery, validateFilters,isCompositeDivision,divisionMembers } from '../models/statisticsModel.js';
+import {combineDivisionStatistics} from '../models/compositeStatisticsModel.js';
 
 export const STATISTICS_TTL = 60 * 60 * 1000;
 export function createStatisticsService({ fetcher = globalThis.fetch, now = Date.now, timeoutMs = 12000, ttlMs = STATISTICS_TTL, baseUrl = 'https://overfast-api.tekrop.fr' } = {}) {
@@ -7,7 +8,9 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
     if (!cached) throw new Error(failure.message);
     return { ...cached, cached: true, stale: true, error: failure.message, retryAt: failure.retryAt };
   };
-  return {
+  let active=0;const queue=[];
+  async function limited(task){if(active>=3)await new Promise(resolve=>queue.push(resolve));else active++;try{return await task();}finally{const next=queue.shift();if(next)next();else active--;}}
+  const service = {
     getStatistics(input) {
       let filters, key;
       try { filters = validateFilters(input); key = statisticsQuery(filters); } catch (error) { return Promise.reject(error); }
@@ -20,11 +23,19 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
       }
       const request = (async () => {
         await Promise.resolve(); // Register pending before even a synchronous fetcher failure.
+        if(isCompositeDivision(filters.division)){
+          try{
+            const components=await Promise.all(divisionMembers(filters.division).map(async division=>{try{return await service.getStatistics({...filters,division});}catch(error){return {filters:{...filters,division},records:[],error:error.message,failed:true};}}));
+            const available=components.filter(c=>!c.failed), times=available.map(c=>Date.parse(c.fetchedAt));
+            if(!available.length)throw new Error(`모든 구성 등급의 통계 조회에 실패했습니다. ${components.map(c=>`${c.filters.division}: ${c.error}`).join(' · ')}`);
+            return {filters,records:combineDivisionStatistics(filters,components),components,composite:true,source:'OverFast API · HOW 등급 균등 평균',fetchedAt:new Date(Math.max(...times)).toISOString(),observationStart:new Date(Math.min(...times)).toISOString(),expiresAt:Math.min(...available.map(c=>c.expiresAt)),retryAt:components.some(c=>c.error)?Math.min(...components.filter(c=>c.error).map(c=>c.retryAt??now()+60000)):undefined,cached:available.every(c=>c.cached),stale:available.some(c=>c.stale),error:components.filter(c=>c.error).map(c=>`${c.filters.division}: ${c.error}`).join(' · '),aggregateAt:null,patch:null,statisticsWindow:'composite-unverified-windows'};
+          }finally{pending.delete(key);}
+        }
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), timeoutMs);
         let retryMs = 60000;
         try {
-          const response = await fetcher(`${baseUrl}/heroes/stats?${key}`, { signal: controller.signal });
+          const {response,raw} = await limited(async()=>{const response=await fetcher(`${baseUrl}/heroes/stats?${key}`, { signal: controller.signal });return {response,raw:response.ok?await response.json():undefined};});
           if (!response.ok) {
             const header = response.headers?.get('retry-after');
             if (header) {
@@ -33,7 +44,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
             }
             throw new Error(response.status === 429 ? '통계 요청이 제한되었습니다. 잠시 후 다시 확인해 주세요. (429)' : response.status === 503 ? '통계 제공처가 일시적으로 응답하지 않습니다. (503)' : `통계 요청 실패 (HTTP ${response.status})`);
           }
-          const records = normalizeStatistics(await response.json());
+          const records = normalizeStatistics(raw);
           const ageHeader = response.headers?.get('age');
           const age = ageHeader != null && /^\d+$/.test(ageHeader) ? Number(ageHeader) : 0;
           const timestamp = now();
@@ -51,4 +62,5 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
       return request;
     },
   };
+  return service;
 }

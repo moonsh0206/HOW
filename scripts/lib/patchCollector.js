@@ -1,7 +1,8 @@
+import {expandSnapshotFile} from '../../src/models/snapshotV2Model.js';
 import {readFile,writeFile,mkdir,rename,open,unlink} from 'node:fs/promises';
 import {join} from 'node:path';
 import {collectionDecision} from '../../src/models/patchCollectionModel.js';
-import {DEFAULT_FILTERS,statisticsQuery} from '../../src/models/statisticsModel.js';
+import {DEFAULT_FILTERS as UI_DEFAULT_FILTERS,statisticsQuery} from '../../src/models/statisticsModel.js';
 import {normalizeSnapshot} from '../../src/models/snapshotModel.js';
 import {verifiedPatch} from '../../src/models/patchHistoryModel.js';
 import roster from '../../src/data/subroles.json' with {type:'json'};
@@ -9,18 +10,18 @@ import roster from '../../src/data/subroles.json' with {type:'json'};
 export async function collectPatch({patch,root,proof=null,fetcher=globalThis.fetch,now=Date.now,dryRun=false}){
  if(!patch)throw new Error('Unknown patch');
  await mkdir(root,{recursive:true});
- const indexPath=join(root,'index.json'),lockPath=join(root,'patch-collector.lock');
+ const indexPath=join(root,'index.json'),lockPath=join(root,'snapshot-collector.lock');
  const lock=await open(lockPath,'wx');
  let pending,fileWritten;
  try{
   let index;try{index=JSON.parse(await readFile(indexPath,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;index={schemaVersion:1,snapshots:[]};}
-  if(index.schemaVersion!==1||!Array.isArray(index.snapshots))throw new Error('Invalid index');
+  if(![1,2].includes(index.schemaVersion)||!Array.isArray(index.snapshots))throw new Error('Invalid index');
   const seen=new Set();
   for(const entry of index.snapshots){
-    if(!/^\d{4}-\d{2}-\d{2}T[\dZ.-]+\.json$/.test(entry.file)||seen.has(entry.file))throw new Error('Invalid or duplicate indexed file');
-    seen.add(entry.file);
-    const existing=normalizeSnapshot(JSON.parse(await readFile(join(root,entry.file),'utf8')));
-    if(existing.collectedAt!==entry.collectedAt||statisticsQuery(existing.filters)!==statisticsQuery(entry.filters)||entry.patch!==undefined&&entry.patch!==existing.patch)throw new Error('Index/file mismatch');
+    if(!/^\d{4}-\d{2}-\d{2}T[\dZ.-]+\.json$/.test(entry.file)||seen.has(entry.file+':'+statisticsQuery(entry.filters)))throw new Error('Invalid or duplicate indexed file');
+    seen.add(entry.file+':'+statisticsQuery(entry.filters));
+    const existing=expandSnapshotFile(JSON.parse(await readFile(join(root,entry.file),'utf8'))).find(s=>statisticsQuery(s.filters)===statisticsQuery(entry.filters));
+    if(!existing||existing.collectedAt!==entry.collectedAt||statisticsQuery(existing.filters)!==statisticsQuery(entry.filters)||entry.patch!==undefined&&entry.patch!==existing.patch)throw new Error('Index/file mismatch');
   }
   const decision=collectionDecision(patch,index.snapshots,DEFAULT_FILTERS,statisticsQuery,now());
   if(!decision.collect||dryRun)return {...decision,dryRun};
@@ -43,3 +44,5 @@ export async function collectPatch({patch,root,proof=null,fetcher=globalThis.fet
   await lock.close();await unlink(lockPath);
  }
 }
+
+const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Always collect raw individual rank.
