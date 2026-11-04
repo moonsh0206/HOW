@@ -1,6 +1,7 @@
 import { PATCH_CATALOG } from '../data/patchCatalog.js';
 import { buildMetricHistory } from './pickHistoryModel.js';
 import { isObservationTime } from './snapshotModel.js';
+import { patchCollectionDue } from './patchCollectionModel.js';
 
 export function verifiedPatch(snapshot, catalog = PATCH_CATALOG) {
   const proof = snapshot.patchVerification;
@@ -11,17 +12,17 @@ export function verifiedPatch(snapshot, catalog = PATCH_CATALOG) {
 export function representatives(snapshots) {
   return [...new Map([...snapshots].sort((a,b)=>Date.parse(a.collectedAt)-Date.parse(b.collectedAt)).map(s=>[s.collectedAt,s])).values()].slice(-2);
 }
-// Public chart policy: one latest actual observation per verified patch/cohort/hero/metric.
+// Preserve the first verified observation after day one, rather than replacing it later.
 export function buildPatchTimeline(snapshots, heroKey, filters, {metric='pickRate',currentPatch=null,catalog=PATCH_CATALOG,now=Date.now()}={}) {
-  const verified=snapshots.filter(s=>verifiedPatch(s,catalog));
+  const verified=snapshots.filter(s=>{const patch=verifiedPatch(s,catalog),due=patchCollectionDue(patch);return due!==null&&Date.parse(s.collectedAt)>=due;});
   const checked=buildMetricHistory(verified,heroKey,filters,{metric,now,all:true});
   const byPatch=new Map();
-  for(const point of checked.points) byPatch.set(point.patch,point);
+  for(const point of checked.points) if(!byPatch.has(point.patch))byPatch.set(point.patch,point);
   const points=[...byPatch.values()].map(point=>{
     const patch=catalog.find(row=>row.id===point.patch);
-    return {...point,patchLabel:patch.version??patch.date??patch.id,ongoing:point.patch===currentPatch};
+    return {...point,patchLabel:patch.name??patch.version??patch.date??patch.id,ongoing:point.patch===currentPatch,verificationStatus:'verified'};
   });
-  return {...checked,points,segments:[],comparisonWindow:'different-patch-windows',representativePolicy:'latest-valid-observation-per-patch',patchCount:points.length};
+  return {...checked,points,segments:[],comparisonWindow:'different-patch-windows',representativePolicy:'first-confirmed-after-day-one',patchCount:points.length};
 }
 export function buildPatchHistory(snapshots, heroKey, filters, { metric='pickRate', mode='patch', currentPatch=null, catalog=PATCH_CATALOG, now=Date.now(), releasedAt=null } = {}) {
   if (!['patch','compare'].includes(mode)) throw new Error('Invalid patch view');

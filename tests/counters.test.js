@@ -85,7 +85,7 @@ test('detail integration: counter link navigation, absent hero data and favorite
     const model=createHeroModel();model.state.heroes=heroes;
     router=createRoutingController({model,detailView:createHeroDetailView(),detailService:{async getHero(key){return{detail:normalizeHeroDetail({...raw,name:key},key),fetchedAt:'2026-11-03T00:00:00Z'};}}});
     router.start();await new Promise(r=>setImmediate(r));
-    assert(document.querySelector('.detail-summary [data-favorite="genji"]'));assert.equal(document.querySelectorAll('.counter-hero').length,3);
+    assert(document.querySelector('.detail-summary [data-favorite="genji"]'));assert.equal(document.querySelectorAll('.counter-panel .counter-hero').length,3);
     const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-summary-main'));assert(top.querySelector('.detail-summary-side > .counter-panel'));
     assert(document.querySelector('.detail-summary-main > #pick-history'));assert.equal(document.querySelectorAll('#pick-history').length,1);
     assert(document.querySelector('#pick-history').compareDocumentPosition(document.querySelector('.detail-tabs'))&4);

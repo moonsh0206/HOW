@@ -11,6 +11,17 @@
         "division": "all",
         "map": "all"
       }
+    },
+    {
+      "file": "2026-11-04T00-52-25.812Z.json",
+      "collectedAt": "2026-11-04T00:52:25.812Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      }
     }
   ]
 }

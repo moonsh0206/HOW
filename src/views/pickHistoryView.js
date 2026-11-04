@@ -43,7 +43,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     for (const tick of scale.ticks) { const yy = y({value:tick}); plot.append(svg('line',{x1:0,y1:yy,x2:600,y2:yy,class:'history-grid-line'})); }
     for (const [a,b] of data.segments) plot.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
     const selected = node('p', '', 'history-observation'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
-    function choose(index) { const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} (KST) · ${label} ${rate(p)}%${state.scope==='compare'&&p.patch ? ` · ${p.patch}` : ''}`; plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
+    function choose(index) { const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} (KST) · ${label} ${rate(p)}%${p.patch ? ` · ${p.patchLabel??p.patch} · 검증됨` : ' · 패치 미확인'}`; plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
     data.points.forEach((p,index)=>{
       const mark = svg('g',{class:'history-point',tabindex:0,role:'button','aria-label':`${stamp(p.collectedAt)} ${label} ${rate(p)}%`});
       const tooltip = svg('title',{}); tooltip.textContent = `${stamp(p.collectedAt)} · ${label} ${rate(p)}%${state.scope==='compare'&&p.patch ? ` · ${p.patch}` : ''}`;
@@ -55,6 +55,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     const labels = node('div', undefined, 'history-x'); labels.setAttribute('aria-hidden','true'); labels.append(node('span',axisLabel(data.points[0])));
     if (data.points.length > 1) labels.append(node('span',axisLabel(data.points.at(-1)))); else labels.classList.add('history-x-single');
     panel.append(graph,labels,selected);
+    if(data.points.some(p=>p.verificationStatus==='verified'))panel.append(node('p','패치 후 첫 관측이며, 안정된 메타를 뜻하지 않습니다.','history-observation'));
     const disclosure = node('div', undefined, 'history-records sr-only');
     const table = node('table',undefined,'history-table'); table.append(node('caption',`${label} 관측값`));
     const header = node('tr'); for(const text of ['관측 시각 (한국)',label]) {const th=node('th',text);th.scope='col';header.append(th);} const thead=node('thead');thead.append(header);table.append(thead);

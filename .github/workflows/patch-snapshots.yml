@@ -1,0 +1,34 @@
+name: Patch snapshot manual validation
+on:
+  workflow_dispatch:
+    inputs:
+      patch_id:
+        description: Reviewed HOW patch catalogue ID
+        required: true
+        default: ow-2026-11-03
+# Proposed schedule only; deliberately inactive: cron '17 * * * *' (UTC).
+# An hourly check attempts collection only after KST day-one AND >=24h.
+permissions:
+  contents: read
+concurrency:
+  group: how-patch-snapshot
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Collect reviewed patch (no commit or push)
+        env:
+          PATCH_ID: ${{ inputs.patch_id }}
+        run: node scripts/collect-patch-snapshot.js "$PATCH_ID"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reviewed-patch-snapshots
+          path: public/data/snapshots/

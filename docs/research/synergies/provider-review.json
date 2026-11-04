@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.counterwatch.gg/methodology",
+      "classification": "opt-in match statistics and kit rankings are distinct",
+      "reusePermission": "unconfirmed",
+      "importedRows": 0
+    },
+    {
+      "url": "https://www.counterwatch.gg/stats/overwatch/best-duos",
+      "classification": "all-rank kit-based and statistical ranking modes",
+      "reusePermission": "unconfirmed",
+      "importedRows": 0
+    },
+    {
+      "url": "https://www.overpicker.com/synergies",
+      "classification": "kit compatibility score, not directly a duo winrate",
+      "reusePermission": "unconfirmed",
+      "importedRows": 0
+    }
+  ],
+  "howPolicy": "Independent manual official-kit/tactical descriptions only; no scores, winrates or copied database."
+}

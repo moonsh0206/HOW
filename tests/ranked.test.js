@@ -91,7 +91,8 @@ test('classification: high win, popular and contested leaders are distinct metri
 });
 test('real published history: all-rank snapshots do not become diamond history when UI defaults change', async () => {
   const manifest = JSON.parse(await readFile(new URL('../public/data/snapshots/index.json', import.meta.url), 'utf8'));
-  assert(manifest.snapshots.every(entry => entry.filters.division === 'all'));
+  assert(manifest.snapshots.some(entry => entry.filters.division === 'all'));
+  assert(manifest.snapshots.every(entry=>['all','diamond'].includes(entry.filters.division)));
   let calls = 0;
   const service = createSnapshotService({ fetcher: async () => { calls++; return { ok: true, json: async () => manifest }; } });
   assert.equal(await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T12:00:00Z'), null);

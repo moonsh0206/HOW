@@ -1,0 +1,356 @@
+{
+  "aatlis": {
+    "nameKo": "아틀리스",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "antarctic-peninsula": {
+    "nameKo": "남극 반도",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "anubis": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "arena-victoriae": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "ayutthaya": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "black-forest": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "blizzard-world": {
+    "nameKo": "블리자드 월드",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "busan": {
+    "nameKo": "부산",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "castillo": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "chateau-guillard": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "circuit-royal": {
+    "nameKo": "서킷 로얄",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "colosseo": {
+    "nameKo": "콜로세오",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "dorado": {
+    "nameKo": "도라도",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "ecopoint-antarctica": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "eichenwalde": {
+    "nameKo": "아이헨발데",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "esperanca": {
+    "nameKo": "이스페란사",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "gogadoro": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "grimsvotn": {
+    "nameKo": "그림스뵈튼",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "hanamura": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "hanaoka": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "havana": {
+    "nameKo": "하바나",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "hollywood": {
+    "nameKo": "할리우드",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "horizon": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "ilios": {
+    "nameKo": "일리오스",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "junkertown": {
+    "nameKo": "쓰레기촌",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "lijiang-tower": {
+    "nameKo": "리장 타워",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "kanezaka": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "kings-row": {
+    "nameKo": "왕의 길",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "malevento": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "midtown": {
+    "nameKo": "미드타운",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "necropolis": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "nepal": {
+    "nameKo": "네팔",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "neon-junction": {
+    "nameKo": "네온 교차로",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "new-junk-city": {
+    "nameKo": "뉴 정크 시티",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "new-queen-street": {
+    "nameKo": "뉴 퀸 스트리트",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "numbani": {
+    "nameKo": "눔바니",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "oasis": {
+    "nameKo": "오아시스",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "paraiso": {
+    "nameKo": "파라이수",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "paris": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "petra": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "place-lacroix": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "powder-keg-mine": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "practice-range": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "redwood-dam": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "rialto": {
+    "nameKo": "리알토",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "route-66": {
+    "nameKo": "66번 국도",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "runasapi": {
+    "nameKo": "루나사피",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "samoa": {
+    "nameKo": "사모아",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "shambali-monastery": {
+    "nameKo": "샴발리 수도원",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "suravasa": {
+    "nameKo": "수라바사",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "thames-district": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "throne-of-anubis": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "volskaya": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "watchpoint-gibraltar": {
+    "nameKo": "감시 기지: 지브롤터",
+    "status": "verified",
+    "sourceUrl": "https://overwatch.blizzard.com/ko-kr/rates/",
+    "reviewedAt": "2026-11-04"
+  },
+  "workshop-chamber": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "workshop-expanse": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "workshop-green-screen": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "workshop-island": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  },
+  "wuxing-university": {
+    "nameKo": null,
+    "status": "needs-review",
+    "sourceUrl": null,
+    "reviewedAt": "2026-11-04"
+  }
+}

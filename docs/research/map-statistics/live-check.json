@@ -1,0 +1,139 @@
+{
+  "reviewedAt": "2026-11-04",
+  "standardCount": 31,
+  "mapSchema": {
+    "properties": {
+      "key": {
+        "$ref": "#/components/schemas/MapKey",
+        "description": "Key name of the map",
+        "examples": [
+          "aatlis"
+        ]
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "Name of the map",
+        "examples": [
+          "Aatlis"
+        ]
+      },
+      "screenshot": {
+        "type": "string",
+        "maxLength": 2083,
+        "minLength": 1,
+        "format": "uri",
+        "title": "Screenshot",
+        "description": "Screenshot of the map",
+        "examples": [
+          "https://overfast-api.tekrop.fr/static/maps/aatlis.jpg"
+        ]
+      },
+      "gamemodes": {
+        "items": {
+          "$ref": "#/components/schemas/MapGamemode"
+        },
+        "type": "array",
+        "title": "Gamemodes",
+        "description": "Main gamemodes on which the map is playable"
+      },
+      "uses": {
+        "items": {
+          "$ref": "#/components/schemas/MapUse"
+        },
+        "type": "array",
+        "maxItems": 5,
+        "minItems": 1,
+        "title": "Uses",
+        "description": "Uses of the map: standard play, Stadium, Workshop, Arcade, or training",
+        "examples": [
+          [
+            "standard"
+          ],
+          [
+            "stadium"
+          ],
+          [
+            "standard",
+            "stadium"
+          ],
+          [
+            "workshop"
+          ],
+          [
+            "arcade"
+          ],
+          [
+            "training"
+          ]
+        ]
+      },
+      "location": {
+        "type": "string",
+        "title": "Location",
+        "description": "Location of the map",
+        "examples": [
+          "Morocco"
+        ]
+      },
+      "country_code": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 2,
+            "minLength": 2
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "title": "Country Code",
+        "description": "Country Code of the location of the map. If not defined, it's null.",
+        "examples": [
+          "MA"
+        ]
+      }
+    },
+    "type": "object",
+    "required": [
+      "key",
+      "name",
+      "screenshot",
+      "gamemodes",
+      "uses",
+      "location",
+      "country_code"
+    ],
+    "title": "Map"
+  },
+  "probes": [
+    {
+      "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond&map=busan",
+      "status": 200,
+      "cors": "*",
+      "age": null,
+      "count": 54,
+      "torbjorn": {
+        "hero": "torbjorn",
+        "pickrate": 9.8,
+        "winrate": 58.2,
+        "banrate": 3.2
+      },
+      "error": null
+    },
+    {
+      "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond&map=kings-row",
+      "status": 200,
+      "cors": "*",
+      "age": null,
+      "count": 54,
+      "torbjorn": {
+        "hero": "torbjorn",
+        "pickrate": 9.1,
+        "winrate": 53.2,
+        "banrate": 2.8
+      },
+      "error": null
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import { tierButton } from './tierReasonView.js';
 import { renderCounters } from './counterView.js';
 import { renderPickHistory } from './pickHistoryView.js';
+import { renderMapStatistics } from './mapStatisticsView.js';
+import { renderSynergies } from './synergyView.js';
 import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
@@ -33,12 +35,13 @@ export function createHeroDetailView() {
     return wrapper;
   }
   return {
-    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }) {
+    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]}) {
       const { state } = model;
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
         contentKey = signature; root.replaceChildren();
         const back = node('a', '← 영웅 목록으로 돌아가기', 'detail-back'); back.href = state.favoritesOnly ? '#favorites' : '#heroes'; root.append(back);
+        const filterHost=node('div',undefined,'detail-filter-host');filterHost.id='detail-filter-host';root.append(filterHost);
         if (detailState.status !== 'ready') {
           const message = node('div', undefined, 'data-state'); message.setAttribute('role', 'status');
           message.append(node('h1', detailState.status === 'loading' ? '영웅 정보를 불러오는 중' : '영웅 정보를 표시할 수 없습니다'), node('p', detailState.error || 'OverFast API에서 기술과 특전을 확인하고 있습니다.'));
@@ -65,6 +68,7 @@ export function createHeroDetailView() {
         title.append(h1, badges);
         identity.append(title); header.append(identity, node('p', hero.description, 'detail-description')); root.append(header);
         const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약'); root.append(stats);
+        const mapStats = node('div');mapStats.id='detail-map-statistics';root.append(mapStats);
         const tabs = node('nav', undefined, 'detail-tabs'); tabs.setAttribute('aria-label', '영웅 상세 섹션');
         for (const [tab, label] of [['overview', '전체 정보'], ['abilities', '기술·패시브'], ['perks', '특전']]) { const link = node('a', label); link.href = `#/heroes/${hero.key}${tab === 'overview' ? '' : '/' + tab}`; link.dataset.detailTab = tab; tabs.append(link); }
         root.append(tabs, section('detail-abilities', '영웅 기술', hero.abilities));
@@ -113,6 +117,7 @@ export function createHeroDetailView() {
       const chart = renderPickHistory(withCurrentPickHistory(history, state.statistics, route.key, state.statsFilters, activeMetric), state.statsFilters);
       if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
       main.append(metrics, chart, information);
+      const basis=node('p',state.statsFilters.map==='all'?'전체 전장 기준':'선택 전장 기준','detail-stat-basis');main.prepend(basis);
       const detail = detailState.result.detail;
       const passive = section('detail-passives', '지속 능력', detail.subrole ? [{name:detail.subrole.subroleNameKo,description:detail.subrole.descriptionKo}] : []);
       const mark = detail.subrole?.mark;
@@ -122,8 +127,11 @@ export function createHeroDetailView() {
         icon.addEventListener('error',()=>icon.remove(),{once:true});
       }
       if (!detail.subrole) passive.querySelector('p').textContent = '확인된 하위 역할 정보가 없습니다.';
-      side.append(renderCounters(counters), passive);
+      side.append(renderCounters(counters),renderSynergies(synergies), passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
+      const mapRoot=root.querySelector('#detail-map-statistics'),mapFocused=mapRoot.contains(document.activeElement),mapPanel=renderMapStatistics(mapStatistics,model,route.key);
+      mapRoot.replaceChildren(mapPanel);mapRoot.hidden=route.tab!=='overview';
+      if(mapFocused)mapPanel.querySelector('button')?.focus({preventScroll:true});
       if (historyFocus) chart.querySelector(`[data-history-days="${historyFocus}"]`)?.focus({ preventScroll: true });
       if (scopeFocus) chart.querySelector(`[data-history-scope="${scopeFocus}"]`)?.focus({ preventScroll: true });
       if (metricFocus) stats.querySelector(`[data-history-metric="${metricFocus}"]`)?.focus({ preventScroll: true });

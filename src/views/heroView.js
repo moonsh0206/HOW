@@ -2,6 +2,7 @@ import { ROLES } from '../models/heroModel.js';
 import { MODES, REGIONS, DIVISIONS, DIVISION_GROUPS, filterLabel } from '../models/statisticsModel.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
+import { MAP_KEYS,MAP_NAMES } from '../models/mapModel.js';
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -63,6 +64,8 @@ export function createHeroView() {
     for (const [value, label] of Object.entries(choices)) { const option = element('option', label); option.value = value; select.append(option); }
   }
   const divisions = document.querySelector('#stats-division');
+  const mapSelect=document.querySelector('#stats-map');
+  for(const [key,name] of [['all','전체 전장'],...[...MAP_KEYS].map(key=>[key,MAP_NAMES[key]])]){const option=element('option',name);option.value=key;mapSelect.append(option);}
   for (const group of DIVISION_GROUPS) {
     const optgroup = element('optgroup'); optgroup.label = group.label;
     for (const key of group.keys) { const option = element('option', DIVISIONS[key]); option.value = key; optgroup.append(option); }
@@ -78,6 +81,12 @@ export function createHeroView() {
     if (state) summary.append(element('p', filterLabel(state.statsFilters)), element('p', state.statistics ? `${state.statistics.stale || state.statsStatus === 'error' ? '오래된 통계 · ' : ''}HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')} · 원본 집계 시각 미제공` : '이 조건의 통계가 없습니다.'));
   }
   return {
+    setMaps(maps,selected='all') {
+      mapSelect.replaceChildren();const all=element('option','전체 전장');all.value='all';mapSelect.append(all);
+      for(const map of maps){const option=element('option',MAP_NAMES[map.key]);option.value=map.key;mapSelect.append(option);}
+      if(selected!=='all'&&!maps.some(map=>map.key===selected)){const option=element('option',`${MAP_NAMES[selected]} · 목록 검토 중`);option.value=selected;mapSelect.append(option);}
+      mapSelect.value=selected;
+    },
     render(model) {
       const { state } = model;
       const heroes = model.visibleHeroes();
@@ -86,11 +95,12 @@ export function createHeroView() {
       document.querySelector('#stats-mode').value = state.statsFilters.gamemode;
       document.querySelector('#stats-region').value = state.statsFilters.region;
       document.querySelector('#stats-division').value = state.statsFilters.division;
+      document.querySelector('#stats-map').value = state.statsFilters.map;
       document.querySelector('#stats-division').disabled = state.statsFilters.gamemode !== 'competitive';
       const statsMessage = document.querySelector('#stats-status');
       const hasStats = state.statistics?.records.length > 0;
       const stale = state.statistics?.stale || state.statsStatus === 'error' && hasStats;
-      document.querySelector('#active-cohort').textContent = filterLabel(state.statsFilters);
+      document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?' · 선택 전장 기준':''}`;
       document.querySelector('#active-cohort-freshness').textContent = `출처: OverFast API · ${state.statsStatus === 'loading' ? '현재 조건 조회 중' : state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR')}${stale ? ' · 오래된 통계' : ''}` : '현재 조건의 성공한 통계 조회 없음'} · 원본 집계 시각 미제공`;
       document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전은 전체 등급으로 조회합니다.' : '선택한 개별 등급으로 조회합니다. 그랜드마스터는 챔피언을 포함합니다.';
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;

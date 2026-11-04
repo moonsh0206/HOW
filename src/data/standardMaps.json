@@ -1,0 +1,219 @@
+[
+  {
+    "key": "aatlis",
+    "name": "Aatlis",
+    "gamemodes": [
+      "flashpoint"
+    ]
+  },
+  {
+    "key": "antarctic-peninsula",
+    "name": "Antarctic Peninsula",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "blizzard-world",
+    "name": "Blizzard World",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "busan",
+    "name": "Busan",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "circuit-royal",
+    "name": "Circuit Royal",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "colosseo",
+    "name": "Colosseo",
+    "gamemodes": [
+      "push"
+    ]
+  },
+  {
+    "key": "dorado",
+    "name": "Dorado",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "eichenwalde",
+    "name": "Eichenwalde",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "esperanca",
+    "name": "Esperança",
+    "gamemodes": [
+      "push"
+    ]
+  },
+  {
+    "key": "grimsvotn",
+    "name": "Grímsvötn",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "havana",
+    "name": "Havana",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "hollywood",
+    "name": "Hollywood",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "ilios",
+    "name": "Ilios",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "junkertown",
+    "name": "Junkertown",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "lijiang-tower",
+    "name": "Lijiang Tower",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "kings-row",
+    "name": "King’s Row",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "midtown",
+    "name": "Midtown",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "nepal",
+    "name": "Nepal",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "neon-junction",
+    "name": "Neon Junction",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "new-junk-city",
+    "name": "New Junk City",
+    "gamemodes": [
+      "flashpoint"
+    ]
+  },
+  {
+    "key": "new-queen-street",
+    "name": "New Queen Street",
+    "gamemodes": [
+      "push"
+    ]
+  },
+  {
+    "key": "numbani",
+    "name": "Numbani",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "oasis",
+    "name": "Oasis",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "paraiso",
+    "name": "Paraíso",
+    "gamemodes": [
+      "hybrid"
+    ]
+  },
+  {
+    "key": "rialto",
+    "name": "Rialto",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "route-66",
+    "name": "Route 66",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "runasapi",
+    "name": "Runasapi",
+    "gamemodes": [
+      "push"
+    ]
+  },
+  {
+    "key": "samoa",
+    "name": "Samoa",
+    "gamemodes": [
+      "control"
+    ]
+  },
+  {
+    "key": "shambali-monastery",
+    "name": "Shambali Monastery",
+    "gamemodes": [
+      "escort"
+    ]
+  },
+  {
+    "key": "suravasa",
+    "name": "Suravasa",
+    "gamemodes": [
+      "flashpoint"
+    ]
+  },
+  {
+    "key": "watchpoint-gibraltar",
+    "name": "Watchpoint: Gibraltar",
+    "gamemodes": [
+      "escort"
+    ]
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "key": "All",
+    "name": "모든 역할"
+  },
+  {
+    "key": "damage",
+    "name": "공격"
+  },
+  {
+    "key": "flanker",
+    "name": " 측면 공격가"
+  },
+  {
+    "key": "sharpshooter",
+    "name": " 명사수"
+  },
+  {
+    "key": "specialist",
+    "name": " 전문가"
+  },
+  {
+    "key": "recon",
+    "name": " 수색가"
+  },
+  {
+    "key": "support",
+    "name": "지원"
+  },
+  {
+    "key": "medic",
+    "name": " 의무관"
+  },
+  {
+    "key": "tactician",
+    "name": " 전술가"
+  },
+  {
+    "key": "survivor",
+    "name": " 생존왕"
+  },
+  {
+    "key": "tank",
+    "name": "돌격"
+  },
+  {
+    "key": "stalwart",
+    "name": " 강건한 자"
+  },
+  {
+    "key": "initiator",
+    "name": " 개시자"
+  },
+  {
+    "key": "bruiser",
+    "name": " 투사"
+  },
+  {
+    "key": "PC",
+    "name": "마우스 및 키보드"
+  },
+  {
+    "key": "Console",
+    "name": "컨트롤러"
+  },
+  {
+    "key": "0",
+    "name": "빠른 대전 - 역할 고정"
+  },
+  {
+    "key": "1",
+    "name": "경쟁전 - 역할 고정"
+  },
+  {
+    "key": "All",
+    "name": "모든 등급 단계"
+  },
+  {
+    "key": "Bronze",
+    "name": "브론즈"
+  },
+  {
+    "key": "Silver",
+    "name": "실버"
+  },
+  {
+    "key": "Gold",
+    "name": "골드"
+  },
+  {
+    "key": "Platinum",
+    "name": "플래티넘"
+  },
+  {
+    "key": "Emerald",
+    "name": "에메랄드"
+  },
+  {
+    "key": "Diamond",
+    "name": "다이아몬드"
+  },
+  {
+    "key": "Master",
+    "name": "마스터"
+  },
+  {
+    "key": "Grandmaster",
+    "name": "그랜드마스터 및 챔피언"
+  },
+  {
+    "key": "all-maps",
+    "name": "모든 전장"
+  },
+  {
+    "key": "antarctic-peninsula",
+    "name": "남극 반도"
+  },
+  {
+    "key": "nepal",
+    "name": "네팔"
+  },
+  {
+    "key": "lijiang-tower",
+    "name": "리장 타워"
+  },
+  {
+    "key": "busan",
+    "name": "부산"
+  },
+  {
+    "key": "samoa",
+    "name": "사모아"
+  },
+  {
+    "key": "oasis",
+    "name": "오아시스"
+  },
+  {
+    "key": "ilios",
+    "name": "일리오스"
+  },
+  {
+    "key": "route-66",
+    "name": "66번 국도"
+  },
+  {
+    "key": "watchpoint-gibraltar",
+    "name": "감시 기지: 지브롤터"
+  },
+  {
+    "key": "grimsvotn",
+    "name": "그림스뵈튼"
+  },
+  {
+    "key": "dorado",
+    "name": "도라도"
+  },
+  {
+    "key": "rialto",
+    "name": "리알토"
+  },
+  {
+    "key": "shambali-monastery",
+    "name": "샴발리 수도원"
+  },
+  {
+    "key": "circuit-royal",
+    "name": "서킷 로얄"
+  },
+  {
+    "key": "junkertown",
+    "name": "쓰레기촌"
+  },
+  {
+    "key": "havana",
+    "name": "하바나"
+  },
+  {
+    "key": "new-junk-city",
+    "name": "뉴 정크 시티"
+  },
+  {
+    "key": "suravasa",
+    "name": "수라바사"
+  },
+  {
+    "key": "aatlis",
+    "name": "아틀리스"
+  },
+  {
+    "key": "neon-junction",
+    "name": "네온 교차로"
+  },
+  {
+    "key": "numbani",
+    "name": "눔바니"
+  },
+  {
+    "key": "midtown",
+    "name": "미드타운"
+  },
+  {
+    "key": "blizzard-world",
+    "name": "블리자드 월드"
+  },
+  {
+    "key": "eichenwalde",
+    "name": "아이헨발데"
+  },
+  {
+    "key": "kings-row",
+    "name": "왕의 길"
+  },
+  {
+    "key": "paraiso",
+    "name": "파라이수"
+  },
+  {
+    "key": "hollywood",
+    "name": "할리우드"
+  },
+  {
+    "key": "new-queen-street",
+    "name": "뉴 퀸 스트리트"
+  },
+  {
+    "key": "runasapi",
+    "name": "루나사피"
+  },
+  {
+    "key": "esperanca",
+    "name": "이스페란사"
+  },
+  {
+    "key": "colosseo",
+    "name": "콜로세오"
+  },
+  {
+    "key": "Americas",
+    "name": "아메리카"
+  },
+  {
+    "key": "Asia",
+    "name": "아시아"
+  },
+  {
+    "key": "Europe",
+    "name": "유럽"
+  }
+]

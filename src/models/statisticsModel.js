@@ -13,7 +13,7 @@ export const DIVISION_GROUPS = Object.freeze([
 
 export function validateFilters(input = DEFAULT_FILTERS) {
   const filters = { ...DEFAULT_FILTERS, ...input };
-  if (filters.platform !== 'pc' || filters.map !== 'all' || !Object.hasOwn(MODES, filters.gamemode) || !Object.hasOwn(REGIONS, filters.region) || !Object.hasOwn(DIVISIONS, filters.division)) throw new Error('지원하지 않는 통계 조회 조건입니다.');
+  if (filters.platform !== 'pc' || !(filters.map === 'all' || MAP_KEYS.has(filters.map)) || !Object.hasOwn(MODES, filters.gamemode) || !Object.hasOwn(REGIONS, filters.region) || !Object.hasOwn(DIVISIONS, filters.division)) throw new Error('지원하지 않는 통계 조회 조건입니다.');
   if (filters.gamemode === 'quickplay' && filters.division !== 'all') throw new Error('빠른 대전에서는 경쟁전 등급을 지정할 수 없습니다.');
   return filters;
 }
@@ -21,11 +21,12 @@ export function statisticsQuery(input) {
   const filters = validateFilters(input);
   const params = new URLSearchParams({ platform: filters.platform, gamemode: filters.gamemode, region: filters.region });
   if (filters.division !== 'all') params.set('competitive_division', filters.division);
+  if (filters.map !== 'all') params.set('map', filters.map);
   return params.toString();
 }
 export function filterLabel(input) {
   const f = validateFilters(input);
-  return `${REGIONS[f.region]} / PC / ${MODES[f.gamemode]} / ${DIVISIONS[f.division]} / 전체 전장`;
+  return `${REGIONS[f.region]} / PC / ${MODES[f.gamemode]} / ${DIVISIONS[f.division]} / ${f.map==='all'?'전체 전장':MAP_NAMES[f.map]}`;
 }
 export function normalizeStatistics(data) {
   if (!Array.isArray(data)) throw new Error('통계 응답이 목록 형식이 아닙니다.');
@@ -41,3 +42,4 @@ export function normalizeStatistics(data) {
     return Object.freeze({ hero: row.hero, winRate: percent(row.winrate), pickRate: percent(row.pickrate), banRate: percent(row.banrate) });
   });
 }
+import { MAP_KEYS, MAP_NAMES } from './mapModel.js';

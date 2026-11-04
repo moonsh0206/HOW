@@ -1,6 +1,6 @@
 import { validateFilters, statisticsQuery } from '../models/statisticsModel.js';
 
-export function createHeroController({ model, view, service, statisticsService, snapshotService, storage, autoRefresh = true, onStateChange, onHeroSelect }) {
+export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage, autoRefresh = true, onStateChange, onHeroSelect }) {
   let loading = false;
   let statsGeneration = 0;
   let statsTimer;
@@ -63,11 +63,12 @@ export function createHeroController({ model, view, service, statisticsService, 
   }
   return {
     start() {
+      mapService?.getMaps().then(maps=>view.setMaps?.(maps,model.state.statsFilters.map)).catch(()=>view.notify('전장 목록 갱신 실패 · 마지막으로 검증된 목록을 사용합니다.'));
       document.querySelector('#hero-search').addEventListener('input', event => { model.state.query = event.target.value; render(); });
       document.querySelector('#sort').addEventListener('change', event => { model.state.sort = event.target.value; render(); });
       document.querySelector('#statistics-filters')?.addEventListener('change', event => {
         const field = event.target.dataset.statsFilter;
-        if (!['gamemode', 'region', 'division'].includes(field)) return;
+        if (!['gamemode', 'region', 'division','map'].includes(field)) return;
         const next = { ...model.state.statsFilters, [field]: event.target.value };
         if (next.gamemode === 'quickplay') next.division = 'all';
         try { model.state.statsFilters = validateFilters(next); }

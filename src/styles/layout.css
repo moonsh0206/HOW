@@ -166,3 +166,8 @@
   #heroes .hero-card .hero-identity { gap: 10px; }
   #heroes .hero-card .hero-identity strong { font-size: 14px; }
 }
+
+#heroes .cohort-banner .statistics-filters,.detail-filter-host .statistics-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.detail-filter-host .statistics-filters{margin:0 0 18px;padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.statistics-filters label{min-width:0}.statistics-filters select{max-width:100%;width:100%}
+.patch-note-card{padding:16px;border:1px solid var(--line);border-top:2px solid var(--orange);border-radius:10px;background:var(--panel);margin-bottom:18px;min-width:0}.patch-note-card h2{font-size:16px;margin:0 0 8px}.patch-note-card p,.patch-note-card li{font-size:12px;line-height:1.6;color:#c5cedb;overflow-wrap:anywhere}.patch-note-card .patch-note-date{font-size:11px;color:var(--orange)}.patch-note-card summary,.patch-note-card>a{display:flex;align-items:center;min-height:44px;font-size:12px;color:var(--blue);cursor:pointer}.patch-note-card ul{padding-left:18px}.patch-note-card small{display:block;font-size:10px;color:var(--muted)}
+@media(max-width:600px){#heroes .cohort-banner .statistics-filters,.detail-filter-host .statistics-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.detail-filter-host select{font-size:16px;min-height:44px}.patch-note-card{padding:12px;margin-bottom:12px}}

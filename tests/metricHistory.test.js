@@ -58,7 +58,7 @@ test('dashboard: metric switching shares one archive request; passive appears on
       assert.equal(calls,1);
     }
     assert(document.querySelector('.detail-summary-main > .detail-metrics + #pick-history'));
-    assert(document.querySelector('.detail-summary-side > .counter-panel + #detail-passives'));
+    assert(document.querySelector('.detail-summary-side > .counter-panel + .synergy-panel + #detail-passives'));
     assert.equal(document.querySelectorAll('#detail-passives').length,1);
     assert.equal(document.querySelectorAll('#pick-history').length,1);
     assert(document.querySelector('.detail-summary [data-favorite="genji"]'));

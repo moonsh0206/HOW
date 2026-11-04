@@ -1,0 +1,929 @@
+{
+  "reviewedAt": "2026-11-04",
+  "heroes": [
+    {
+      "key": "ana",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ana/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Biotic Rifle",
+        "Sleep Dart",
+        "Biotic Grenade",
+        "Nano Boost",
+        "Local Anesthetic",
+        "Speed Serum",
+        "Biotic Bounce",
+        "Headhunter"
+      ]
+    },
+    {
+      "key": "anran",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/anran/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Zhuque Fans",
+        "Fan the Flames",
+        "Dancing Blaze",
+        "Inferno Rush",
+        "Vermillion Ascent",
+        "Vermillion Revival",
+        "Ignition",
+        "Smoulder",
+        "Heat Shield",
+        "Short Fuse",
+        "Hungering Blaze"
+      ]
+    },
+    {
+      "key": "ashe",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ashe/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "The Viper",
+        "Coach Gun",
+        "Dynamite",
+        "B.O.B.",
+        "Remote Detonator",
+        "Double-Barreled",
+        "Viper's Sting",
+        "Airburst"
+      ]
+    },
+    {
+      "key": "baptiste",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/baptiste/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Biotic Launcher",
+        "Regenerative Burst",
+        "Immortality Field",
+        "Amplification Matrix",
+        "Exo Boots",
+        "Expanded Field",
+        "Assault Burst",
+        "Automated Healing",
+        "Rocket Boots"
+      ]
+    },
+    {
+      "key": "bastion",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/bastion/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Configuration: Assault",
+        "Configuration: Recon",
+        "A-36 Tactical Grenade",
+        "Reconfigure",
+        "Configuration: Artillery",
+        "Smart Bomb",
+        "Configuration Reload",
+        "Lindholm Explosives",
+        "Self-Repair"
+      ]
+    },
+    {
+      "key": "brigitte",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/brigitte/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Rocket Flail",
+        "Repair Pack",
+        "Whip Shot",
+        "Barrier Shield",
+        "Shield Bash",
+        "Rally",
+        "Inspire",
+        "Combat Medic",
+        "Morale Boost",
+        "Inspiring Strike",
+        "Whiplash"
+      ]
+    },
+    {
+      "key": "cassidy",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/cassidy/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Peacekeeper",
+        "Combat Roll",
+        "Deadeye",
+        "Bang Bang",
+        "Giddy Up",
+        "Rollin' Round-Up",
+        "Silver Bullet"
+      ]
+    },
+    {
+      "key": "dmon",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/dmon/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Plasma Saber",
+        "Portable Fusion Repeater",
+        "Power Barrier",
+        "Surging Strike",
+        "Fusion Repeater",
+        "Propulsors",
+        "Eject!",
+        "Limit Break",
+        "Call Mech",
+        "Beast Within",
+        "MEKA Mobility",
+        "Overstrike",
+        "Focused Fusion"
+      ]
+    },
+    {
+      "key": "doctrine",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/doctrine/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Eternal Scepter",
+        "Infuse",
+        "Invigorating Drones",
+        "Shrouded Momentum",
+        "Deliverance",
+        "Saving Grace",
+        "Sanguine Siphon",
+        "Transfusion",
+        "Cost of Life"
+      ]
+    },
+    {
+      "key": "domina",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/domina/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Photon Magnum",
+        "Barrier Array",
+        "Sonic Repulsors",
+        "Crystal Charge",
+        "Panopticon",
+        "Efficient Design",
+        "Extended Power",
+        "Disruptive Detonation",
+        "Corporate Retreat"
+      ]
+    },
+    {
+      "key": "doomfist",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/doomfist/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Hand Cannon",
+        "Rocket Punch",
+        "Seismic Slam",
+        "Power Block",
+        "Meteor Strike",
+        "One-Two",
+        "Survival of the Fittest",
+        "Aftershock",
+        "Power Matrix"
+      ]
+    },
+    {
+      "key": "dva",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/dva/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Fusion Cannons",
+        "Light Gun",
+        "Boosters",
+        "Defense Matrix",
+        "Micro Missiles",
+        "Self-Destruct",
+        "Call Mech",
+        "Eject!",
+        "Bunny Power",
+        "Extended Boosters",
+        "Shield System",
+        "Precision Fusion"
+      ]
+    },
+    {
+      "key": "echo",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/echo/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Tri-Shot",
+        "Sticky Bombs",
+        "Flight",
+        "Focusing Beam",
+        "Duplicate",
+        "Glide",
+        "Aerial Munitions",
+        "Partial Scan",
+        "Full Salvo",
+        "Focused Rush"
+      ]
+    },
+    {
+      "key": "emre",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/emre/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Synthetic Burst Rifle",
+        "Cyber Frag",
+        "Override Protocol",
+        "Altered Vitals",
+        "Suppressive Security",
+        "Enhanced Agility",
+        "Heat Sink",
+        "Cyber Adhesion"
+      ]
+    },
+    {
+      "key": "freja",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/freja/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Bola Shot",
+        "Quick Dash",
+        "Take Aim",
+        "Updraft",
+        "Relentless Barrage",
+        "Momentum Boost",
+        "Aerial Recovery",
+        "Rising Winds"
+      ]
+    },
+    {
+      "key": "genji",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/genji/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Shuriken",
+        "Deflect",
+        "Swift Strike",
+        "Dragonblade",
+        "Cyber-Agility",
+        "Swift Cuts",
+        "Dragon's Thirst",
+        "Blade Twisting",
+        "Meditation"
+      ]
+    },
+    {
+      "key": "hanzo",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/hanzo/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Storm Bow",
+        "Storm Arrows",
+        "Sonic Arrow",
+        "Lunge",
+        "Dragonstrike",
+        "Wall Climb",
+        "Sonic Disruption",
+        "Dragon Fury",
+        "Frost Arrow",
+        "Scatter Arrows"
+      ]
+    },
+    {
+      "key": "hazard",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/hazard/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Bonespur",
+        "Spike Guard",
+        "Violent Leap",
+        "Jagged Wall",
+        "Downpour",
+        "Vault",
+        "Reconstitution",
+        "Anarchic Zeal",
+        "Deep Leap",
+        "Explosive Impalements"
+      ]
+    },
+    {
+      "key": "illari",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/illari/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Solar Rifle",
+        "Captive Sun",
+        "Healing Pylon",
+        "Outburst",
+        "Rapid Construction",
+        "Summer Solstice",
+        "Solar Flare",
+        "Sunburn"
+      ]
+    },
+    {
+      "key": "jetpack-cat",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/jetpack-cat/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Biotic Pawjectiles",
+        "Frenetic Flight",
+        "Lifeline",
+        "Purr",
+        "Catnapper",
+        "Ulterior Motive",
+        "Transport Shielding",
+        "Purrfect Form",
+        "Claws Out"
+      ]
+    },
+    {
+      "key": "junker-queen",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/junker-queen/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Scattergun",
+        "Commanding Shout",
+        "Carnage",
+        "Rampage",
+        "Adrenaline Rush",
+        "Rampant Charge",
+        "Battle Shout",
+        "Willy-Willy",
+        "Savage Satiation"
+      ]
+    },
+    {
+      "key": "junkrat",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/junkrat/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Frag Launcher",
+        "Concussion Mine",
+        "Steel Trap",
+        "RIP-Tire",
+        "Total Mayhem",
+        "Nitro Boost",
+        "Bomb Voyage",
+        "Mine Recycling",
+        "Frag Cannon"
+      ]
+    },
+    {
+      "key": "juno",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/juno/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Mediblaster",
+        "Pulsar Torpedoes",
+        "Orbital Ray",
+        "Hyper Ring",
+        "Glide Boost",
+        "Martian Overboots",
+        "Familiar Vitals",
+        "Locked On",
+        "Lift Off",
+        "Faster Blaster"
+      ]
+    },
+    {
+      "key": "kiriko",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/kiriko/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Healing Ofuda",
+        "Kunai",
+        "Swift Step",
+        "Protection Suzu",
+        "Kitsune Rush",
+        "Urgent Care",
+        "Fortune Teller",
+        "Ready Step",
+        "Foxtrot"
+      ]
+    },
+    {
+      "key": "lifeweaver",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/lifeweaver/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Healing Blossom",
+        "Thorn Volley",
+        "Petal Platform",
+        "Rejuvenating Dash",
+        "Life Grip",
+        "Tree of Life",
+        "Petal Protection",
+        "Dashing Escape",
+        "Sow the Seed",
+        "Superbloom"
+      ]
+    },
+    {
+      "key": "lucio",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/lucio/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Sonic Amplifier",
+        "Crossfade",
+        "Amp It Up",
+        "Soundwave",
+        "Sound Barrier",
+        "Wall Ride",
+        "Soundwave Rider",
+        "Beat Drop",
+        "Noise Violation",
+        "Accelerando"
+      ]
+    },
+    {
+      "key": "mauga",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mauga/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Overrun",
+        "Cardiac Overdrive",
+        "Berserker",
+        "Cage Fight",
+        "Kinetic Bandolier",
+        "Pyromaniac",
+        "Firewalker",
+        "Combat Fuel"
+      ]
+    },
+    {
+      "key": "mei",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mei/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Endothermic Blaster",
+        "Cryo-Freeze",
+        "Ice Wall",
+        "Blizzard",
+        "Skating Rink",
+        "Glacial Propulsion",
+        "Deep Freeze",
+        "Cryo-Storm"
+      ]
+    },
+    {
+      "key": "mercy",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mercy/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Caduceus Staff",
+        "Caduceus Blaster",
+        "Guardian Angel",
+        "Resurrect",
+        "Angelic Descent",
+        "Valkyrie",
+        "Angelic Resurrection",
+        "Winged Reach",
+        "Chain Boost",
+        "Double Dose"
+      ]
+    },
+    {
+      "key": "mizuki",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/mizuki/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Spirit Glaive",
+        "Healing Kasa",
+        "Binding Chain",
+        "Katashiro Return",
+        "Kekkai Sanctuary",
+        "Remedy Aura",
+        "Wellspring",
+        "Exposed Soul",
+        "Resonant Return",
+        "Quickstep"
+      ]
+    },
+    {
+      "key": "moira",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/moira/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Biotic Grasp",
+        "Biotic Orb",
+        "Fade",
+        "Coalescence",
+        "Destruction's Divide",
+        "Ethical Nourishment",
+        "Reversal",
+        "Phantom Step"
+      ]
+    },
+    {
+      "key": "orisa",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/orisa/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Augmented Fusion Driver",
+        "Energy Javelin",
+        "Fortify",
+        "Javelin Spin",
+        "Terra Surge",
+        "Defense Protocol",
+        "Mobile Fortification",
+        "Heavy Javelin",
+        "Protective Barrier"
+      ]
+    },
+    {
+      "key": "pharah",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/pharah/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Rocket Launcher",
+        "Jet Dash",
+        "Jump Jet",
+        "Concussive Blast",
+        "Barrage",
+        "Hover Jets",
+        "Concussive Force",
+        "Helix Shields",
+        "Fuel Stores",
+        "Rocket Salvo"
+      ]
+    },
+    {
+      "key": "ramattra",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/ramattra/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Void Accelerator (Omnic Form)",
+        "Void Barrier (Omnic Form)",
+        "Pummel (Nemesis Form)",
+        "Ravenous Vortex",
+        "Annihilation",
+        "Relentless Form",
+        "Prolonged Barrier",
+        "Void Surge",
+        "Nanite Repair"
+      ]
+    },
+    {
+      "key": "reaper",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/reaper/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Hellfire Shotguns",
+        "Shadow Step",
+        "Wraith Form",
+        "Death Blossom",
+        "The Reaping",
+        "Soul Reaving",
+        "Lingering Wraith",
+        "Shadow Blink",
+        "Trigger Finger"
+      ]
+    },
+    {
+      "key": "reinhardt",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/reinhardt/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Rocket Hammer",
+        "Charge",
+        "Fire Strike",
+        "Barrier Field",
+        "Earthshatter",
+        "Crusader's Fire",
+        "Crusader's Resolve",
+        "Shield Slam",
+        "Ignited Fury"
+      ]
+    },
+    {
+      "key": "roadhog",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/roadhog/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Scrap Gun",
+        "Trash Compactor",
+        "Chain Hook",
+        "Take a Breather",
+        "Whole Hog",
+        "Scrap Hook",
+        "Here, Piggy Piggy",
+        "Hogdrogen Exposure",
+        "Toxic Exhaust"
+      ]
+    },
+    {
+      "key": "shion",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/shion/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Kira Pistols",
+        "Execution",
+        "Joyride",
+        "Evade",
+        "Satsuriku Spree",
+        "Survival Instinct",
+        "X Machina",
+        "Refuel",
+        "Faces of Death"
+      ]
+    },
+    {
+      "key": "sierra",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sierra/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Helix Rifle",
+        "Tracking Shot",
+        "Tremor Charge",
+        "Anchor Drone",
+        "Trailblazer",
+        "Full Flight",
+        "Tight Grip",
+        "Medi-Drone",
+        "Locked In"
+      ]
+    },
+    {
+      "key": "sigma",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sigma/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Hyperspheres",
+        "Kinetic Grasp",
+        "Accretion",
+        "Experimental Barrier",
+        "Gravitic Flux",
+        "Kinetic Cycle",
+        "Hyper Regeneration",
+        "Hyper Strike",
+        "Levitation"
+      ]
+    },
+    {
+      "key": "sojourn",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sojourn/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Railgun",
+        "Power Slide",
+        "Disruptor Shot",
+        "Overclock",
+        "Overcharged",
+        "Deceleration Field",
+        "Friction Generators",
+        "Dual Thrusters"
+      ]
+    },
+    {
+      "key": "soldier-76",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/soldier-76/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Heavy Pulse Rifle",
+        "Sprint",
+        "Biotic Field",
+        "Helix Rockets",
+        "Tactical Visor",
+        "Helix Propulsion",
+        "Tactical Salvo",
+        "Full Stride",
+        "Stim Pack"
+      ]
+    },
+    {
+      "key": "sombra",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/sombra/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Machine Pistol",
+        "Hotfix",
+        "Cyberspace",
+        "Translocator",
+        "EMP",
+        "Life Hack",
+        "CTRL ALT ESC",
+        "Data Packet",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "key": "symmetra",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/symmetra/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Photon Projector",
+        "Sentry Turret",
+        "Teleporter",
+        "Photon Barrier",
+        "Sentry Capacity",
+        "Perfect Alignment",
+        "Hovering Barrier",
+        "Shield Battery"
+      ]
+    },
+    {
+      "key": "torbjorn",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/torbjorn/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Rivet Gun",
+        "Forge Hammer",
+        "Deploy Turret",
+        "Overload",
+        "Molten Core",
+        "Hammer Time",
+        "Pre-Heated",
+        "Anchor Bolts",
+        "Overloaded Turret"
+      ]
+    },
+    {
+      "key": "tracer",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/tracer/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Pulse Pistols",
+        "Blink",
+        "Recall",
+        "Pulse Bomb",
+        "Temporal Regen",
+        "Kinetic Reload",
+        "Blink Packs",
+        "Quantum Entanglement"
+      ]
+    },
+    {
+      "key": "vendetta",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/vendetta/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Palatine Fang",
+        "Warding Stance",
+        "Whirlwind Dash",
+        "Soaring Slice",
+        "Projected Edge",
+        "Sundering Blade",
+        "Extra Edge",
+        "Raging Storm",
+        "Siphoning Strike",
+        "Relentless"
+      ]
+    },
+    {
+      "key": "venture",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/venture/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "SMART Excavator",
+        "Drill Dash",
+        "Burrow",
+        "Tectonic Shock",
+        "Deep Burrow",
+        "Excavation Exhilaration",
+        "SMART Extender",
+        "Covered In Dirt"
+      ]
+    },
+    {
+      "key": "widowmaker",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/widowmaker/",
+      "status": 200,
+      "role": "Damage",
+      "abilityHeadings": [
+        "Widow's Kiss",
+        "Grappling Hook",
+        "Venom Mine",
+        "Infra-Sight",
+        "Scoped Efficiency",
+        "Sniper's Instinct",
+        "Seeker Mine",
+        "Widow's Bite"
+      ]
+    },
+    {
+      "key": "winston",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/winston/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Tesla Cannon",
+        "Jump Pack",
+        "Barrier Projector",
+        "Primal Rage",
+        "Electric Charge",
+        "Heavy Landing",
+        "Chain Lightning",
+        "Revitalizing Barrier"
+      ]
+    },
+    {
+      "key": "wrecking-ball",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/wrecking-ball/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Quad Cannons",
+        "Grappling Claw",
+        "Roll",
+        "Piledriver",
+        "Adaptive Shield",
+        "Minefield",
+        "Steamroller",
+        "Multi-Ball",
+        "Hang Time",
+        "Adaptive Barrier"
+      ]
+    },
+    {
+      "key": "wuyang",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/wuyang/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Xuanwu Staff",
+        "Restorative Stream",
+        "Rushing Torrent",
+        "Tidal Blast",
+        "Guardian Wave",
+        "Overflow",
+        "Balance",
+        "Ebb and Flow",
+        "Falling Rain"
+      ]
+    },
+    {
+      "key": "zarya",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/zarya/",
+      "status": 200,
+      "role": "Tank",
+      "abilityHeadings": [
+        "Particle Cannon",
+        "Particle Barrier",
+        "Projected Barrier",
+        "Graviton Surge",
+        "Energy",
+        "Jump-Ups",
+        "Spotter",
+        "Extra Oomph",
+        "Energy Lance"
+      ]
+    },
+    {
+      "key": "zenyatta",
+      "url": "https://overwatch.blizzard.com/en-us/heroes/zenyatta/",
+      "status": 200,
+      "role": "Support",
+      "abilityHeadings": [
+        "Orb of Destruction",
+        "Orb of Discord",
+        "Orb of Harmony",
+        "Transcendence",
+        "Snap Kick",
+        "Discordant Repair",
+        "Ascendance",
+        "Focused Destruction",
+        "Dual Harmony"
+      ]
+    }
+  ]
+}

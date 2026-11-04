@@ -1,6 +1,7 @@
 import { hiddenGems, hotHeroes, classifyMeta } from '../domain/insights.js';
 import { node, image } from './dom.js';
 import { filterLabel } from '../models/statisticsModel.js';
+import { renderPatchNote } from './patchNoteView.js';
 
 function recommendation(hero, hot = false, category = '', mobile = false) {
   const link = node('a', undefined, 'insight-hero'); link.href = `#/heroes/${hero.key}`;
@@ -12,6 +13,7 @@ function recommendation(hero, hot = false, category = '', mobile = false) {
 }
 export function createInsightView() {
   const root = document.querySelector('.meta-insights');
+  if(!document.querySelector('#current-patch-note'))root.closest('.sidebar')?.prepend(renderPatchNote());
   const home = document.createComment('Meta insights desktop position'); root.before(home);
   const media = window.matchMedia?.('(max-width: 600px)');
   let mobile = media?.matches ?? false, lastModel;

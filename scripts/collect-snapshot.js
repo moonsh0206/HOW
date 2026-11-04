@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { statisticsQuery } from '../src/models/statisticsModel.js';
 import { parseSnapshotFilters } from './snapshot-options.js';
 import { normalizeSnapshot } from '../src/models/snapshotModel.js';
+import roster from '../src/data/subroles.json' with {type:'json'};
 
 const DEFAULT_FILTERS = parseSnapshotFilters(process.argv.slice(2));
 const root = new URL('../public/data/snapshots/', import.meta.url);
@@ -22,7 +23,8 @@ if (last && Date.parse(collectedAt) - Date.parse(last.collectedAt) < 86400000) {
   const response = await fetch(endpoint, { signal: AbortSignal.timeout(25000) });
   if (!response.ok) throw new Error(`Snapshot API failed: ${response.status}; retry later, no snapshot written.`);
   const snapshot = { schemaVersion: 1, source: 'OverFast API', endpoint, filters: { ...DEFAULT_FILTERS }, collectedAt, aggregateAt: null, patch: null, patchVerification: null, retentionClass: 'detail', statisticsWindow: 'unverified-patch-window', cacheAgeSeconds: response.headers.get('age'), records: await response.json() };
-  if (!normalizeSnapshot(snapshot).records.length) throw new Error('Empty response: no snapshot written.');
+  const normalized=normalizeSnapshot(snapshot);
+  if(normalized.records.length!==54||Object.keys(roster.heroes).some(key=>!normalized.records.some(row=>row.hero===key)))throw new Error('Incomplete roster: no snapshot written.');
   const file = collectedAt.replaceAll(':', '-') + '.json';
   await writeFile(new URL(file, root), JSON.stringify(snapshot, null, 2) + '\n', { flag: 'wx' });
   index.snapshots.push({ file, collectedAt, filters: { ...DEFAULT_FILTERS } });

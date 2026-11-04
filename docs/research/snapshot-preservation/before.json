@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-11-04",
+  "originals": [
+    {
+      "entry": {
+        "file": "2026-11-02T05-36-24.500Z.json",
+        "collectedAt": "2026-11-02T05:36:24.500Z",
+        "filters": {
+          "platform": "pc",
+          "gamemode": "competitive",
+          "region": "asia",
+          "division": "all",
+          "map": "all"
+        }
+      },
+      "sha256": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816"
+    }
+  ]
+}

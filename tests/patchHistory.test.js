@@ -8,7 +8,7 @@ import { renderMetricHistory } from '../src/views/pickHistoryView.js';
 import { validateSubroles } from '../src/models/subroleModel.js';
 import subroles from '../src/data/subroles.json' with { type:'json' };
 import { JSDOM } from 'jsdom';
-const catalog=[{id:'p1',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'},{id:'p2',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'}];
+const catalog=[{id:'p1',type:'balance',effectiveAt:'2026-09-29T00:00:00Z',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'},{id:'p2',type:'balance',effectiveAt:'2026-10-29T00:00:00Z',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'}];
 const now=Date.parse('2026-11-03T00:00:00Z');
 const snap=(patch,collectedAt,value=5)=>({patch,collectedAt,filters:DEFAULT_FILTERS,patchVerification:{status:'verified',catalogId:patch,sourceUrl:catalog[0].sourceUrl,verifiedAt:'2026-11-03T00:00:00Z',statisticsWindow:'since-patch-start'},records:[{hero:'genji',pickRate:value}]});
 test('patch history: explicit evidence only, exact cohort, current patch and separate windows',()=>{
@@ -30,7 +30,7 @@ test('retention dry-run: keeps two real representatives, HOT seven-day window an
  const snapshots=[snap('p1','2026-10-01T00:00:00Z'),snap('p1','2026-10-02T00:00:00Z'),snap('p1','2026-10-03T00:00:00Z'),snap('p2','2026-11-01T00:00:00Z'),{...snap(null,'2026-01-01T00:00:00Z'),patchVerification:null}];
  const entries=snapshots.map((snapshot,i)=>({snapshot,file:`${i}.json`}));const before=JSON.stringify(entries);
  const plan=retentionPlan(entries,{now,catalog,currentPatch:'p2'});
- assert.deepEqual(plan.candidates,['0.json']);assert.deepEqual(plan.keep,['1.json','2.json','3.json','4.json']);assert.equal(plan.dryRun,true);assert.equal(JSON.stringify(entries),before);
+ assert.deepEqual(plan.candidates,['1.json']);assert.deepEqual(plan.keep,['0.json','2.json','3.json','4.json']);assert.equal(plan.dryRun,true);assert.equal(JSON.stringify(entries),before);
  assert.equal(retentionPlan(entries,{now,catalog,currentPatch:'p1'}).candidates.length,0);
  assert.equal(retentionPlan(entries,{now,catalog}).candidates.length,0);
 });
@@ -48,7 +48,7 @@ test('patch controls: accessible state and unknown data fallback; marks match al
 test('public patch timeline: one latest real value per patch, unknown excluded and current patch marked ongoing',()=>{
  const rows=[snap('p1','2026-10-01T00:00:00Z',5),snap('p1','2026-10-02T00:00:00Z',7),snap('p2','2026-11-01T00:00:00Z',9),{...snap(null,'2026-11-02T00:00:00Z',99),patchVerification:null}];
  const result=buildPatchTimeline(rows,'genji',DEFAULT_FILTERS,{now,catalog,currentPatch:'p2'});
- assert.deepEqual(result.points.map(p=>p.value),[7,9]);assert.equal(result.points[1].ongoing,true);assert.equal(result.points[0].ongoing,false);
- assert.equal(result.segments.length,0);assert.equal(result.representativePolicy,'latest-valid-observation-per-patch');
+ assert.deepEqual(result.points.map(p=>p.value),[5,9]);assert.equal(result.points[1].ongoing,true);assert.equal(result.points[0].ongoing,false);
+ assert.equal(result.segments.length,0);assert.equal(result.representativePolicy,'first-confirmed-after-day-one');
  assert.equal(buildPatchTimeline(rows.slice(0,2),'genji',DEFAULT_FILTERS,{now,catalog}).points.length,1);
 });
