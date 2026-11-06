@@ -41,8 +41,10 @@ export function createInsightView() {
       const current = state.statsStatus === 'loading' || state.statsStatus === 'error' ? null : state.statistics;
       const trend = hotHeroes(heroes, current, state.previousSnapshot);
       const hotNotes = ['같은 조회 조건의 이전 통계와 비교합니다.'];
+      if(trend.warning)hotNotes.push(trend.warning);
       if (trend.available) hotNotes.unshift(`HOW 수집/조회 ${new Date(trend.previousAt).toLocaleString('ko-KR')} → ${new Date(trend.currentAt).toLocaleString('ko-KR')}`);
       content(hot, trend.available ? trend.heroes : [], hotNotes, trend.available ? '비교 가능한 통계는 있으나 선정 기준을 충족한 영웅이 없습니다.' : state.snapshotStatus === 'loading' ? '이전 실제 통계 확인 중' : state.snapshotStatus === 'error' ? `추세 미제공 · ${state.snapshotError}` : trend.reason, true);
+      if(trend.available&&trend.warning)hot.prepend(node('small','집계창 미확인 · 관측 비교','insight-window-note'));
       const candidates = current && !current.stale ? hiddenGems(heroes) : [];
       content(gems, candidates, ['현재 통계에서 주목할 만한 영웅입니다.'], current && !current.stale ? '현재 조건에서 선정 기준을 충족한 영웅이 없습니다.' : '최신 통계를 확보하면 후보를 제공합니다.');
       const categories = current && !current.stale ? classifyMeta(heroes) : {};

@@ -1,6 +1,6 @@
 import { validateFilters, statisticsQuery } from '../models/statisticsModel.js';
 
-export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage, autoRefresh = true, onStateChange, onHeroSelect }) {
+export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage,filterStorage, autoRefresh = true, onStateChange, onHeroSelect }) {
   let loading = false;
   let statsGeneration = 0;
   let statsTimer;
@@ -73,6 +73,7 @@ export function createHeroController({ model, view, service, statisticsService, 
         if (next.gamemode === 'quickplay') next.division = 'all';
         try { model.state.statsFilters = validateFilters(next); }
         catch (error) { view.notify(error.message); render(); return; }
+        filterStorage?.save(model.state.statsFilters);
         model.state.statistics = null;
         model.state.previousSnapshot = null; model.state.snapshotStatus = 'idle'; model.state.snapshotError = '';
         view.closeDetail();

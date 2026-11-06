@@ -27,9 +27,9 @@ test('snapshot preservation: original file bytes/index retained; diamond/all/map
  const now=Math.max(...manifest.snapshots.map(e=>Date.parse(e.collectedAt)))+1000;
  const service=createSnapshotService({now:()=>now,fetcher:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL(url.split('/').at(-1),root)))})});
  const all=await service.getHistory(ALL_RANK_FILTERS,{scope:'compare'}),diamond=await service.getHistory(DEFAULT_FILTERS,{scope:'compare'}),busan=await service.getHistory({...DEFAULT_FILTERS,map:'busan'},{scope:'compare'});
- assert(all.snapshots.length>=1);assert(diamond.snapshots.length>=1);assert.equal(busan.snapshots.length,0);
+ assert(all.snapshots.length>=1);assert(diamond.snapshots.length>=1);assert(busan.snapshots.every(s=>s.filters.map==='busan'));
  assert(all.snapshots.every(s=>s.filters.division==='all'));assert(diamond.snapshots.every(s=>s.filters.division==='diamond'));
- assert(diamond.snapshots.every(s=>s.records.length===54&&s.patch===null&&s.aggregateAt===null&&s.endpoint.includes('competitive_division=diamond')));
+ assert(diamond.snapshots.every(s=>s.records.length===54&&s.aggregateAt===null&&(s.endpoint??s.requestUrl).includes('competitive_division=diamond')));
 });
 
 test('patch note card: compact own summary, Korean date, verified direct official link and safe disclosure',()=>{

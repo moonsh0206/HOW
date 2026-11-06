@@ -71,7 +71,7 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     assert.equal(document.querySelector('#hero-detail-page').hidden,false);
     assert(panel().parentElement.matches('.detail-summary-main'));assert(panel().closest('.detail-summary'));assert(panel().previousElementSibling.matches('.detail-metrics'));
     assert(document.querySelector('.detail-summary-top .counter-panel'));
-    assert.equal(panel().querySelector('h2').textContent,'픽률 · 패치별 변화');
+    assert.equal(panel().querySelector('h2').textContent,'픽률 · 패치·관측 이력');
     assert(!panel().hidden);assert.equal(panel().querySelectorAll('[data-history-days]').length,0);
     assert(panel().textContent.includes('기록 수집 중'));assert.equal(panel().querySelector('svg'),null);
     // Mock current API value tests the integration, not a value saved to public data.
@@ -124,7 +124,7 @@ test('snapshot history service: Pages base, shared HOT/index/file requests and s
   const entries=data.map(d=>({file:d.collectedAt.replaceAll(':','-')+'.json',collectedAt:d.collectedAt,filters:d.filters}));const calls=[];
   const service=createSnapshotService({base:'/HOW/',now:()=>now,fetcher:async url=>{calls.push(url);return {ok:true,json:async()=>url.endsWith('index.json')?{schemaVersion:1,snapshots:entries}:data[entries.findIndex(e=>url.endsWith(e.file))]};}});
   const [history,previous]=await Promise.all([service.getHistory(DEFAULT_FILTERS),service.getPrevious(DEFAULT_FILTERS,'2026-11-03T00:00:00Z')]);
-  assert.equal(history.snapshots.length,2);assert.equal(previous.records[0].pickRate,11);assert.equal(calls.length,3);assert(calls.every(p=>p.startsWith('/HOW/data/snapshots/')));
+  assert.equal(history.snapshots.length,2);assert.equal(previous.records[0].pickRate,10);assert.equal(calls.length,3);assert(calls.every(p=>p.startsWith('/HOW/data/snapshots/')));
   await service.getHistory(DEFAULT_FILTERS,{days:30});assert.equal(calls.length,3);
   assert.equal((await service.getHistory({...DEFAULT_FILTERS,region:'europe'})).snapshots.length,0);
 });

@@ -1,0 +1,23 @@
+{
+  "reviewedAt": "2026-11-05T00:54:01.172222+00:00",
+  "sources": [
+    {
+      "url": "https://overwatch.blizzard.com/en-us/rates/",
+      "status": 200,
+      "sha256": "2eec1d0222c56a11a782d39ce11d2c7099c47935ab79ef4b47fbe72abcf304fc"
+    },
+    {
+      "url": "https://overfast-api.tekrop.fr/openapi.json",
+      "status": 200,
+      "sha256": "5e37f666fa2aeb57c61c79e08a1d3bbcbbc29b6e0bc7e01be25ebe16c15014c8"
+    }
+  ],
+  "faq": {
+    "status": 200,
+    "sha256": "2eec1d0222c56a11a782d39ce11d2c7099c47935ab79ef4b47fbe72abcf304fc",
+    "aggregateAbsoluteTimeExposed": false,
+    "aggregateSampleCountExposed": false,
+    "pickRateBasis": "relative hero playtime across heroes; not an exposed absolute time denominator",
+    "freshPatchCaveat": "patch-to-date data; update lag and insufficient-data states exist"
+  }
+}

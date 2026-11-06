@@ -55,9 +55,12 @@ test('DOM/controller sorting: combo, table and cards stay in sync through filter
     controller.start(); const flush = () => new Promise(resolve => setImmediate(resolve)); await flush();
     const check = () => {
       assert.equal(document.querySelector('#sort').value, model.state.sort);
+      const combo=document.querySelector('#sort-trigger');assert.equal(combo.getAttribute('role'),'combobox');assert(combo.textContent.includes(document.querySelector('#sort option:checked').textContent));
       for (const container of ['#hero-rows', '#hero-cards']) assert.deepEqual([...document.querySelectorAll(`${container} [data-hero]`)].map(b => b.dataset.hero), model.visibleHeroes().map(h => h.key));
     };
     check(); assert.equal(document.querySelector('#sort option:checked').textContent, '기본 (HOW 티어순)');
+    document.querySelector('#sort-trigger').click();assert.equal(document.querySelector('#sort-trigger').getAttribute('aria-expanded'),'true');document.querySelector('#sort-listbox [data-value=banrate-desc]').click();check();assert.equal(model.state.sort,'banrate-desc');assert.equal(document.querySelector('#sort-trigger').getAttribute('aria-expanded'),'false');
+    document.querySelector('#sort-trigger').click();document.querySelector('#sort-listbox [data-value=tier-desc]').click();check();
     const change = (selector, value) => { const el = document.querySelector(selector); el.value = value; el.dispatchEvent(new dom.window.Event('change', { bubbles: true })); };
     change('#stats-division', 'diamond'); await flush(); check(); assert.equal(model.state.sort, 'tier-desc');
     change('#stats-region', 'americas'); await flush(); check(); assert.equal(model.state.sort, 'tier-desc');

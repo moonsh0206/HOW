@@ -22,6 +22,411 @@
         "division": "diamond",
         "map": "all"
       }
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:40.344Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "all",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:40.735Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "bronze",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:41.259Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "silver",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:41.591Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "gold",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:42.221Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "platinum",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:42.863Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "emerald",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:43.499Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:43.824Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "master",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:37:44.253Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "grandmaster",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:12.319Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "all",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:12.768Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "bronze",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:13.459Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "silver",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:13.898Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "gold",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:14.267Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "platinum",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:14.634Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "emerald",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:14.939Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "diamond",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:15.248Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "master",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:15.725Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "europe",
+        "division": "grandmaster",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:28.313Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "all",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:28.989Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "bronze",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:29.356Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "silver",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:29.902Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "gold",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:30.269Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "platinum",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:30.863Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "emerald",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:31.223Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "diamond",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:31.577Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "master",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-06T02:38:31.943Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "americas",
+        "division": "grandmaster",
+        "map": "all"
+      },
+      "observationDate": "2026-11-06",
+      "reviewStatus": "pending",
+      "preserveTags": []
     }
   ]
 }

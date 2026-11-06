@@ -49,7 +49,7 @@ test('dashboard: metric switching shares one archive request; passive appears on
     assert.equal(calls,1);assert.equal(document.querySelector('[data-history-metric="pickRate"]').getAttribute('aria-pressed'),'true');
     for(const [metric,label,current] of [['winRate','승률',53],['banRate','밴률',0],['pickRate','픽률',14]]){
       const button=document.querySelector(`[data-history-metric="${metric}"]`);button.focus();button.click();
-      assert.equal(document.querySelector('#pick-history-title').textContent,`${label} · 패치별 변화`);
+      assert.equal(document.querySelector('#pick-history-title').textContent,`${label} · 패치·관측 이력`);
       assert.equal(document.querySelector(`[data-history-metric="${metric}"]`).getAttribute('aria-pressed'),'true');
       assert.equal(document.activeElement.dataset.historyMetric,metric);
       assert(document.querySelector('.history-current').textContent.includes(`${current}%`));
@@ -68,8 +68,8 @@ test('dashboard: metric switching shares one archive request; passive appears on
     document.querySelector('[data-history-metric="winRate"]').click();
     assert.equal(document.querySelectorAll('[data-history-days],[data-history-scope]').length,0);
     model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();await flush();
-    assert.equal(document.querySelector('#pick-history-title').textContent,'승률 · 패치별 변화');assert.equal(document.querySelector('.history-current'),null);
+    assert.equal(document.querySelector('#pick-history-title').textContent,'승률 · 패치·관측 이력');assert.equal(document.querySelector('.history-current'),null);
     location.hash='#/heroes/ana';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();await flush();
-    assert.equal(document.querySelector('#pick-history-title').textContent,'픽률 · 패치별 변화');assert.equal(document.querySelectorAll('.history-point').length,0);
+    assert.equal(document.querySelector('#pick-history-title').textContent,'픽률 · 패치·관측 이력');assert.equal(document.querySelectorAll('.history-point').length,0);
   }finally{router?.stop();dom.window.close();Object.assign(globalThis,prior);}
 });

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { pagesBase } from './pages-base.js';
-import { normalizeSnapshot } from '../src/models/snapshotModel.js';
+import { expandSnapshotFile } from '../src/models/snapshotV2Model.js';
 import { statisticsQuery } from '../src/models/statisticsModel.js';
 
 const base = pagesBase(process.env.VITE_BASE_PATH);
@@ -39,7 +39,9 @@ local.add(`${base}data/snapshots/index.json`);
 for (const entry of manifest.snapshots) {
   assert(/^\d{4}-\d{2}-\d{2}T[\dZ.-]+\.json$/.test(entry.file), 'Invalid snapshot file path');
   assert((await stat(path.join(root, 'data/snapshots', entry.file))).isFile(), 'Snapshot file missing');
-  const snapshot = normalizeSnapshot(JSON.parse(await readFile(path.join(root, 'data/snapshots', entry.file), 'utf8')));
+  const snapshots = expandSnapshotFile(JSON.parse(await readFile(path.join(root, 'data/snapshots', entry.file), 'utf8')));
+  const snapshot=snapshots.find(row=>row.collectedAt===entry.collectedAt&&statisticsQuery(row.filters)===statisticsQuery(entry.filters));
+  assert(snapshot, 'Indexed cohort/time missing in snapshot file');
   assert.equal(snapshot.collectedAt, entry.collectedAt);
   assert.equal(statisticsQuery(snapshot.filters), statisticsQuery(entry.filters));
   snapshotFiles.add(entry.file); local.add(`${base}data/snapshots/${entry.file}`);

@@ -26,7 +26,8 @@ export function buildObservationTimeline(snapshots,heroKey,filters,options={}){
   });
   const segments=[],comparisonSegments=[];let previous=null;
   for(const observation of checked.observations){const point=points.find(p=>p.time===observation.time);if(!point){previous=null;continue;}if(previous){if(previous.patch&&previous.patch===point.patch&&point.time-previous.time<=86400000)segments.push([previous,point]);else comparisonSegments.push([previous,point]);}previous=point;}
-  return {...checked,points,segments,comparisonSegments,comparisonWindow:'potentially-different-aggregation-windows',representativePolicy:'first-confirmed-after-day-one'};
+  const storedChange=points.length>=2?{from:points.at(-2).collectedAt,to:points.at(-1).collectedAt,delta:points.at(-1).value-points.at(-2).value,unit:'percentage-points',aggregationWindowComparable:!!points.at(-1).patch&&points.at(-1).patch===points.at(-2).patch}:null;
+  return {...checked,points,segments,comparisonSegments,storedChange,comparisonWindow:'potentially-different-aggregation-windows',representativePolicy:'first-confirmed-after-day-one'};
 }
 // Preserve the first verified observation after day one, rather than replacing it later.
 export function buildPatchTimeline(snapshots, heroKey, filters, {metric='pickRate',currentPatch=null,catalog=PATCH_CATALOG,now=Date.now()}={}) {

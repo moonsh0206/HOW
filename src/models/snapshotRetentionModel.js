@@ -6,7 +6,7 @@ import { patchCollectionDue } from './patchCollectionModel.js';
 export function retentionPlan(entries, {now=Date.now(),currentPatch=null,catalog}={}) {
   const keep=new Set(),groups=new Map();
   for(const entry of entries){
-    if(!currentPatch||!verifiedPatch(entry.snapshot,catalog)||entry.snapshot.patch===currentPatch||now-Date.parse(entry.snapshot.collectedAt)<=7*86400000){keep.add(entry.file);continue;}
+    if(entry.snapshot.schemaVersion===1||entry.preserveTags?.length||entry.milestones?.length||!currentPatch||!verifiedPatch(entry.snapshot,catalog)||entry.snapshot.patch===currentPatch||now-Date.parse(entry.snapshot.collectedAt)<=14*86400000){keep.add(entry.file);continue;}
     const key=`${statisticsQuery(entry.snapshot.filters)}:${entry.snapshot.patch}`;
     if(!groups.has(key))groups.set(key,[]);groups.get(key).push(entry);
   }

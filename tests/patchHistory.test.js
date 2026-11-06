@@ -39,7 +39,7 @@ test('patch controls: accessible state and unknown data fallback; marks match al
  try {
   const panel=renderMetricHistory({scope:'compare',metric:'winRate',result:{points:[],segments:[]}});
   assert.equal(panel.querySelectorAll('[data-history-scope],[data-history-days]').length,0);
-  assert.equal(panel.querySelector('h2').textContent,'승률 · 패치별 변화');assert(panel.textContent.includes('기록 수집 중'));
+  assert.equal(panel.querySelector('h2').textContent,'승률 · 패치·관측 이력');assert(panel.textContent.includes('기록 수집 중'));
  }finally{globalThis.document=prior;dom.window.close();}
  validateSubroles();assert.equal(Object.keys(subroles.heroes).length,54);
  for(const row of Object.values(subroles.heroes)){const e=subroles.effects[row.subroleKey];assert.equal(e.mark.displayAllowed,false);assert.equal(e.mark.permission,'unverified');assert(e.mark.url.toLowerCase().endsWith(`/${row.subroleKey}.svg`));}

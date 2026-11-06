@@ -39,7 +39,7 @@ test('composite service: only individual API queries, concurrency <=3, pending a
 });
 test('composite history: verified matching patch/window/time only; partial, unknown, region, map or delayed rows excluded',()=>{
  const catalog=[{id:'test',sourceUrl:'https://example.org/patch'}];
- const parts=['diamond','master','grandmaster'].map((division,i)=>({...component(division,row(50+i,10+i,2+i)),collectedAt:`2026-11-02T00:0${i}:00Z`,patch:'test',statisticsWindow:'since-patch-start',patchVerification:{status:'verified',catalogId:'test',sourceUrl:catalog[0].sourceUrl,statisticsWindow:'since-patch-start',verifiedAt:'2026-11-02T00:00:00Z'}}));
+ const parts=['diamond','master','grandmaster'].map((division,i)=>({...component(division,row(50+i,10+i,2+i)),source:'OverFast API',batchId:'verified-test-batch',collectedAt:`2026-11-02T00:0${i}:00Z`,patch:'test',statisticsWindow:'since-patch-start',patchVerification:{status:'verified',catalogId:'test',sourceUrl:catalog[0].sourceUrl,statisticsWindow:'since-patch-start',verifiedAt:'2026-11-02T00:00:00Z'}}));
  const history=combineDivisionHistory(parts,f,{catalog});assert.equal(history.length,1);assert.equal(history[0].records[0].winRate,51);assert.equal(history[0].filters.division,'diamond_plus');
  for(const bad of [parts.slice(0,2),parts.map(p=>({...p,patch:null})),parts.map((p,i)=>i===1?{...p,filters:{...p.filters,region:'europe'}}:p),parts.map((p,i)=>i===1?{...p,collectedAt:'2026-11-02T00:10:00Z'}:p)])assert.equal(combineDivisionHistory(bad,f,{catalog}).length,0);
 });
@@ -60,7 +60,7 @@ test('v2 batch: nine originals per region, 27 conditions available, isolated err
  const queried=[];
  for(const region of ['asia','europe','americas']){
   const batch=await collectDivisionBatch({region,heroKeys:['genji'],now:()=>Date.parse('2026-11-04T00:00:00Z'),service:{async getStatistics(filters){queried.push(filters);if(filters.division==='silver')throw new Error('503');return {filters,records:[row(50.125,0,0)],fetchedAt:'2026-11-04T00:00:00Z',providerAgeSeconds:3};}}});
-  assert.equal(Object.keys(batch.divisions).length,9);assert.equal(batch.divisions.silver.status,'error');assert.equal(batch.divisions.silver.records,null);const snapshots=expandSnapshotFile(batch);assert.equal(snapshots.length,8);assert(snapshots.every(s=>s.filters.region===region&&s.records[0].winRate===50.125));assert(!JSON.stringify(batch).includes('_plus'));
+  assert.equal(Object.keys(batch.divisions).length,9);assert.equal(batch.divisions.silver.status,'error');assert.equal(batch.divisions.silver.records,null);const snapshots=expandSnapshotFile(batch);assert.equal(snapshots.length,8);assert(snapshots.every(s=>s.filters.region===region&&s.records[0].winRate===50.125));assert(!Object.keys(batch.divisions).some(k=>k.endsWith('_plus')));assert.equal(Object.keys(batch.derived).length,7);
  }
  assert.equal(queried.length,27);assert.equal(new Set(queried.map(statisticsQuery)).size,27);
 });

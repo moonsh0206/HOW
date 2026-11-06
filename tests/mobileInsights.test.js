@@ -68,7 +68,7 @@ test('mock history: HOT values and hero links are shared across desktop/mobile w
   const app=setup(1440);
   try{
     const current=app.model.state.statistics;
-    app.model.state.previousSnapshot={source:'OverFast API',filters:{...current.filters},collectedAt:new Date(Date.parse(current.fetchedAt)-7200000).toISOString(),records:current.records.map(r=>({...r,pickRate:Math.max(0,(r.pickRate??0)-2),winRate:r.winRate==null?null:r.winRate-1}))};
+    app.model.state.previousSnapshot={source:'OverFast API',filters:{...current.filters},collectedAt:new Date(Date.parse(current.fetchedAt)-86400000).toISOString(),records:current.records.map(r=>({...r,pickRate:Math.max(0,(r.pickRate??0)-2),winRate:r.winRate==null?null:r.winRate-1}))};
     const before=JSON.stringify(current);app.view.render(app.model);
     const desktop=[...document.querySelectorAll('#hot-content .insight-hero')].map(a=>({href:a.hash,metric:a.querySelector('small').textContent}));
     assert(desktop.length>0);

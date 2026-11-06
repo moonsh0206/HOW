@@ -1,0 +1,2711 @@
+{
+  "auditedAt": "2026-11-06T02:41:40.054Z",
+  "defaultDivision": "diamond_plus",
+  "indexItems": 29,
+  "files": 5,
+  "baseline": {
+    "originalFilesUnchanged": true,
+    "originalIndexEntriesPreserved": true,
+    "priorIndexItems": 2,
+    "addedIndexItems": 27
+  },
+  "batches": [
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "region": "asia",
+      "batchId": "asia:2026-11-06T02:37:38.363Z",
+      "status": "complete",
+      "originals": 9,
+      "derived": 7,
+      "heroes": 54,
+      "independentlyComparedValues": 1134,
+      "divisions": {
+        "all": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:40.344Z",
+          "cacheAgeSeconds": 695,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "bronze": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:40.735Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=bronze",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "silver": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:41.259Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=silver",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "gold": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:41.591Z",
+          "cacheAgeSeconds": 688,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=gold",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "platinum": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:42.221Z",
+          "cacheAgeSeconds": 689,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=platinum",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "emerald": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:42.863Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=emerald",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "diamond": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:43.499Z",
+          "cacheAgeSeconds": 692,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "master": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:43.824Z",
+          "cacheAgeSeconds": 694,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "grandmaster": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:37:44.253Z",
+          "cacheAgeSeconds": 695,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        }
+      },
+      "derivedQuality": {
+        "bronze_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "silver_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "gold_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "platinum_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "emerald_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "diamond_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "master_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        }
+      }
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "region": "europe",
+      "batchId": "europe:2026-11-06T02:38:11.070Z",
+      "status": "complete",
+      "originals": 9,
+      "derived": 7,
+      "heroes": 54,
+      "independentlyComparedValues": 1134,
+      "divisions": {
+        "all": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:12.319Z",
+          "cacheAgeSeconds": 3524,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "bronze": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:12.768Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=bronze",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "silver": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:13.459Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=silver",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "gold": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:13.898Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=gold",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "platinum": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:14.267Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=platinum",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "emerald": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:14.634Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=emerald",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "diamond": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:14.939Z",
+          "cacheAgeSeconds": 2293,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=diamond",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "master": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:15.248Z",
+          "cacheAgeSeconds": 2291,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=master",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "grandmaster": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:15.725Z",
+          "cacheAgeSeconds": 2292,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=europe&competitive_division=grandmaster",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        }
+      },
+      "derivedQuality": {
+        "bronze_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "silver_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "gold_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "platinum_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "emerald_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "diamond_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "master_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        }
+      }
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "region": "americas",
+      "batchId": "americas:2026-11-06T02:38:26.966Z",
+      "status": "complete",
+      "originals": 9,
+      "derived": 7,
+      "heroes": 54,
+      "independentlyComparedValues": 1134,
+      "divisions": {
+        "all": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:28.313Z",
+          "cacheAgeSeconds": 742,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "bronze": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:28.989Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=bronze",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "silver": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:29.356Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=silver",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "gold": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:29.902Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=gold",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "platinum": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:30.269Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=platinum",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "emerald": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:30.863Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=emerald",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "diamond": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:31.223Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=diamond",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "master": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:31.577Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=master",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        },
+        "grandmaster": {
+          "status": "ok",
+          "collectedAt": "2026-11-06T02:38:31.943Z",
+          "cacheAgeSeconds": null,
+          "requestUrl": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=americas&competitive_division=grandmaster",
+          "patch": null,
+          "patchVerification": {
+            "status": "unverified"
+          },
+          "quality": {
+            "total": 54,
+            "review": 0,
+            "missing": 0,
+            "confirmedMissing": 0
+          },
+          "nullValues": 0
+        }
+      },
+      "derivedQuality": {
+        "bronze_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "silver_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "gold_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "platinum_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "emerald_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "diamond_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        },
+        "master_plus": {
+          "total": 54,
+          "review": 0,
+          "missing": 0,
+          "confirmedMissing": 0
+        }
+      }
+    }
+  ],
+  "history": [
+    {
+      "region": "asia",
+      "division": "all",
+      "snapshots": 2,
+      "metricPoints": {
+        "winRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-02T05:36:24.500Z",
+              "value": 53.4
+            },
+            {
+              "at": "2026-11-06T02:37:40.344Z",
+              "value": 51.5
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-02T05:36:24.500Z",
+            "to": "2026-11-06T02:37:40.344Z",
+            "delta": -1.8999999999999986,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        },
+        "pickRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-02T05:36:24.500Z",
+              "value": 13.6
+            },
+            {
+              "at": "2026-11-06T02:37:40.344Z",
+              "value": 12.5
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-02T05:36:24.500Z",
+            "to": "2026-11-06T02:37:40.344Z",
+            "delta": -1.0999999999999996,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        },
+        "banRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-02T05:36:24.500Z",
+              "value": 1.9
+            },
+            {
+              "at": "2026-11-06T02:37:40.344Z",
+              "value": 1.8
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-02T05:36:24.500Z",
+            "to": "2026-11-06T02:37:40.344Z",
+            "delta": -0.09999999999999987,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        }
+      },
+      "previousAt": "2026-11-02T05:36:24.500Z",
+      "hotComparisonAvailable": true,
+      "hotReason": "HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.",
+      "hotHeroes": [
+        {
+          "key": "kiriko",
+          "pickDelta": 10.599999999999998,
+          "winDelta": 2.6999999999999957
+        },
+        {
+          "key": "junker-queen",
+          "pickDelta": 8.700000000000001,
+          "winDelta": 8.100000000000001
+        },
+        {
+          "key": "brigitte",
+          "pickDelta": 4.5,
+          "winDelta": 4.899999999999999
+        }
+      ]
+    },
+    {
+      "region": "asia",
+      "division": "bronze",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:40.735Z",
+              "value": 50.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:40.735Z",
+              "value": 7.5
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:40.735Z",
+              "value": 2.3
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "silver",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.259Z",
+              "value": 51.9
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.259Z",
+              "value": 9.1
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.259Z",
+              "value": 1.8
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "gold",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.591Z",
+              "value": 52.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.591Z",
+              "value": 10.8
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:41.591Z",
+              "value": 2.1
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "platinum",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.221Z",
+              "value": 50.7
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.221Z",
+              "value": 13.8
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.221Z",
+              "value": 1.9
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "emerald",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.863Z",
+              "value": 51.8
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.863Z",
+              "value": 15.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:42.863Z",
+              "value": 1.7
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "diamond",
+      "snapshots": 2,
+      "metricPoints": {
+        "winRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-04T00:52:25.812Z",
+              "value": 52.7
+            },
+            {
+              "at": "2026-11-06T02:37:43.499Z",
+              "value": 52.3
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-04T00:52:25.812Z",
+            "to": "2026-11-06T02:37:43.499Z",
+            "delta": -0.4000000000000057,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        },
+        "pickRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-04T00:52:25.812Z",
+              "value": 20.2
+            },
+            {
+              "at": "2026-11-06T02:37:43.499Z",
+              "value": 17
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-04T00:52:25.812Z",
+            "to": "2026-11-06T02:37:43.499Z",
+            "delta": -3.1999999999999993,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        },
+        "banRate": {
+          "points": 2,
+          "values": [
+            {
+              "at": "2026-11-04T00:52:25.812Z",
+              "value": 1.4
+            },
+            {
+              "at": "2026-11-06T02:37:43.499Z",
+              "value": 0.9
+            }
+          ],
+          "storedChange": {
+            "from": "2026-11-04T00:52:25.812Z",
+            "to": "2026-11-06T02:37:43.499Z",
+            "delta": -0.4999999999999999,
+            "unit": "percentage-points",
+            "aggregationWindowComparable": false
+          }
+        }
+      },
+      "previousAt": "2026-11-04T00:52:25.812Z",
+      "hotComparisonAvailable": true,
+      "hotReason": "HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.",
+      "hotHeroes": [
+        {
+          "key": "kiriko",
+          "pickDelta": 15.599999999999998,
+          "winDelta": 5.5
+        },
+        {
+          "key": "junker-queen",
+          "pickDelta": 12.6,
+          "winDelta": 13.799999999999997
+        },
+        {
+          "key": "illari",
+          "pickDelta": 6.7,
+          "winDelta": 6.5
+        }
+      ]
+    },
+    {
+      "region": "asia",
+      "division": "master",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:43.824Z",
+              "value": 49.8
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:43.824Z",
+              "value": 15.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:43.824Z",
+              "value": 1
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "grandmaster",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 46.9
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 18.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "bronze_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 50.825
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 13.55
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1.5875
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "silver_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 50.857142857142854
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 14.414285714285715
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1.4857142857142858
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "gold_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 50.68333333333334
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 15.300000000000002
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1.4333333333333336
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "platinum_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 50.300000000000004
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 16.2
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1.3
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "emerald_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 50.199999999999996
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 16.799999999999997
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1.15
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "diamond_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 49.666666666666664
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 17.099999999999998
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 0.9666666666666667
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "asia",
+      "division": "master_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 48.349999999999994
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 17.15
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:37:44.253Z",
+              "value": 1
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "all",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.319Z",
+              "value": 53.8
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.319Z",
+              "value": 14.1
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.319Z",
+              "value": 13.3
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "bronze",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.768Z",
+              "value": 52.3
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.768Z",
+              "value": 7.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:12.768Z",
+              "value": 12.2
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "silver",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.459Z",
+              "value": 55
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.459Z",
+              "value": 8.8
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.459Z",
+              "value": 12.4
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "gold",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.898Z",
+              "value": 54.2
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.898Z",
+              "value": 11.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:13.898Z",
+              "value": 14.3
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "platinum",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.267Z",
+              "value": 54.5
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.267Z",
+              "value": 14.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.267Z",
+              "value": 15.4
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "emerald",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.634Z",
+              "value": 53.1
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.634Z",
+              "value": 18.3
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.634Z",
+              "value": 14.2
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "diamond",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.939Z",
+              "value": 52.3
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.939Z",
+              "value": 21.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:14.939Z",
+              "value": 9.6
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "master",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.248Z",
+              "value": 52.5
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.248Z",
+              "value": 20.5
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.248Z",
+              "value": 5.4
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "grandmaster",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 17.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 2.2
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "bronze_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.43750000000001
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 15.0125
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 10.7125
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "silver_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 16.1
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 10.5
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "gold_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.366666666666674
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 17.316666666666666
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 10.183333333333335
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "platinum_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.2
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 18.5
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 9.360000000000001
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "emerald_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 52.875
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 19.4
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 7.849999999999999
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "diamond_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 52.800000000000004
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 19.766666666666666
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 5.733333333333333
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "europe",
+      "division": "master_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 53.05
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 18.95
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:15.725Z",
+              "value": 3.8000000000000003
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "all",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.313Z",
+              "value": 52.9
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.313Z",
+              "value": 14.2
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.313Z",
+              "value": 9.5
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "bronze",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.989Z",
+              "value": 56.4
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.989Z",
+              "value": 7.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:28.989Z",
+              "value": 6.6
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "silver",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.356Z",
+              "value": 54.3
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.356Z",
+              "value": 8.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.356Z",
+              "value": 7.9
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "gold",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.902Z",
+              "value": 52.9
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.902Z",
+              "value": 11.6
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:29.902Z",
+              "value": 9.2
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "platinum",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.269Z",
+              "value": 52.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.269Z",
+              "value": 14.9
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.269Z",
+              "value": 11.4
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "emerald",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.863Z",
+              "value": 53.3
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.863Z",
+              "value": 18.8
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:30.863Z",
+              "value": 11.2
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "diamond",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.223Z",
+              "value": 52.1
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.223Z",
+              "value": 22.5
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.223Z",
+              "value": 8.4
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "master",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.577Z",
+              "value": 50
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.577Z",
+              "value": 22.7
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.577Z",
+              "value": 6
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "grandmaster",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 45
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 17.7
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 2.5
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "bronze_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 52.075
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 15.625
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 7.8999999999999995
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "silver_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 51.457142857142856
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 16.72857142857143
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 8.085714285714285
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "gold_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 50.98333333333333
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 18.033333333333335
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 8.116666666666667
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "platinum_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 50.6
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 19.32
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 7.9
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "emerald_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 50.1
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 20.425
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 7.025
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "diamond_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 49.03333333333333
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 20.96666666666667
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 5.633333333333333
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    },
+    {
+      "region": "americas",
+      "division": "master_plus",
+      "snapshots": 1,
+      "metricPoints": {
+        "winRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 47.5
+            }
+          ],
+          "storedChange": null
+        },
+        "pickRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 20.2
+            }
+          ],
+          "storedChange": null
+        },
+        "banRate": {
+          "points": 1,
+          "values": [
+            {
+              "at": "2026-11-06T02:38:31.943Z",
+              "value": 4.25
+            }
+          ],
+          "storedChange": null
+        }
+      },
+      "previousAt": null,
+      "hotComparisonAvailable": false,
+      "hotReason": "해당 등급의 이전 관측 데이터 부족",
+      "hotHeroes": []
+    }
+  ],
+  "localFileReads": [
+    "index.json",
+    "2026-11-02T05-36-24.500Z.json",
+    "2026-11-06T02-37-44.293Z.json",
+    "2026-11-04T00-52-25.812Z.json",
+    "2026-11-06T02-38-15.758Z.json",
+    "2026-11-06T02-38-31.983Z.json"
+  ]
+}

@@ -30,6 +30,7 @@ npm.cmd run preview
 - 브라우저 localStorage 즐겨찾기 및 즐겨찾기 전용 목록
 - `#/heroes/genji` 해시 상세 페이지, 기술/특전 탭, 제공된 배경·아이콘·시연 영상
 - 현재 통계 기반 숨은 꿀영웅 후보, 실제 이전 관측이 있을 때만 HOT 변화량
+- 9개 원본·7개 누적 구간의 같은 조건 HOT/상세 이력, grouped v2 원본·파생 캐시 검증, 새로고침 시 공유 필터 유지
 - High Win Rate·Popular Picks·Contested Picks를 메타 티어와 구분해 표시
 - 12초 요청 타임아웃, 로딩/오류/빈 목록/재시도, 세션 내 캐시·요청 공유
 - 600px 이하 영웅 카드·601px 이상 데이터 표, 키보드 포커스, 네이티브 모달 Escape 닫기
@@ -159,6 +160,8 @@ npm.cmd run verify:pages
 
 ## 2차 고도화와 스냅샷
 
+현재 저장·HOT·상세 이력의 기준은 [전체 등급 통합 기록](docs/GROUPED-DATA-HOT-INTEGRATION.md)입니다. v2는 `divisions`에 9개 원본, `derived`에 7개 평균을 분리하며 읽을 때 무결성을 재검증합니다. 같은 배치의 패치 미확인 자료는 일반 관측으로만 표시합니다. 실제 공개 파일은 기존 v1 두 개이며 이번에 추가 수집하지 않았습니다. 수동 배치 복구는 `--retry-of <부분실패파일명> --apply`로 새 배치를 만들고 원본을 덮어쓰지 않습니다. 보관은 14일 rolling·영구 태그·미확인 보호의 dry-run만 지원합니다.
+
 영웅 상세는 `#/heroes/{key}`, 기술 탭은 `#/heroes/{key}/abilities`, 특전 탭은 `#/heroes/{key}/perks`입니다. Hash는 서버 경로를 바꾸지 않으므로 Pages의 `/HOW/` 아래 직접 접근·새로고침이 가능합니다. 상세 조회는 별도 Service의 24시간 세션 캐시·중복 요청 공유·12초 타임아웃을 사용합니다. 기술 이름/효과/아이콘/영상, Minor/Major 특전은 실제 응답에 있을 때만 제공합니다. 특전 선택률은 재사용 소스가 검증되지 않아 미제공입니다.
 
 ```powershell
@@ -167,7 +170,7 @@ npm.cmd run snapshots:collect  # 로컬에서 한 조건의 실제 통계를 JSO
 
 기존 실제 관측은 전체 등급과 다이아몬드 각 1개이며 서로 다른 조건입니다. 충분한 이전 관측이 없으면 HOT은 미제공입니다. 과거 날짜로 값을 만들지 않습니다. 로컬 수집 명령은 Git/Push/배포를 실행하지 않으며 같은 조건은 24시간 중복 수집을 제한합니다. 검토된 패치 이벤트의 추가 관측은 별도로 지정할 수 있습니다.
 
-자동 수집 제안은 [스냅샷 설계](docs/SNAPSHOT-DESIGN.md)와 `docs/proposals/snapshots.yml.example`에 있습니다. 실제 Actions 폴더 밖에 두었고 스케줄도 주석이므로 활성화되지 않았습니다. artifact 보관과 저장소 반영·공개 배포는 서로 다른 작업이며 별도 승인이 필요합니다.
+자동 수집 제안은 [스냅샷 설계](docs/SNAPSHOT-DESIGN.md)와 `docs/proposals/snapshots.yml.example`에 있습니다. 기존 수집 워크플로는 수동 실행용이며 이번에 예약 실행을 활성화하지 않았습니다. artifact 보관과 저장소 반영·공개 배포는 서로 다른 작업이며 별도 승인이 필요합니다.
 
 단계별 구현·검증 결과는 [2차 고도화 기록](docs/PHASE2.md), 선택률 조사 근거는 [특전 데이터 조사](docs/PERK-DATA-RESEARCH.md)를 참고하세요.
 

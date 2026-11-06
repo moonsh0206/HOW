@@ -20,13 +20,13 @@ test('snapshot service: same cohort/interval only, cached data, Pages base, no m
     ] } : snapshot };
   } });
   assert.equal(await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T00:30:00Z'), null);
-  assert.equal(await service.getPrevious({ ...DEFAULT_FILTERS, region: 'europe' }, '2026-11-02T06:00:00Z'), null);
-  const result = await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T06:00:00Z');
+  assert.equal(await service.getPrevious({ ...DEFAULT_FILTERS, region: 'europe' }, '2026-11-03T06:00:00Z'), null);
+  const result = await service.getPrevious(DEFAULT_FILTERS, '2026-11-03T06:00:00Z');
   assert.equal(result.records[0].winRate, 50);
-  await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T06:00:00Z'); assert.equal(paths.length, 2);
+  await service.getPrevious(DEFAULT_FILTERS, '2026-11-03T06:00:00Z'); assert.equal(paths.length, 2);
   assert(paths.every(path => path.startsWith('/HOW/data/snapshots/')));
 });
 test('snapshot service: missing or inconsistent files are errors, not fake trends', async () => {
   const service = createSnapshotService({ fetcher: async () => ({ ok: false, status: 404 }) });
-  await assert.rejects(service.getPrevious(DEFAULT_FILTERS, '2026-11-02T06:00:00Z'), /404/);
+  await assert.rejects(service.getPrevious(DEFAULT_FILTERS, '2026-11-03T06:00:00Z'), /404/);
 });

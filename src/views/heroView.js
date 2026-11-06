@@ -5,6 +5,9 @@ import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
 import { MAP_KEYS,MAP_NAMES } from '../models/mapModel.js';
 import {statisticsNeedsReview,qualitySummary} from '../models/statisticsQuality.js';
 import {cacheLabel} from './statisticsUI.js';
+import {createFilterCombobox} from './filterCombobox.js';
+import {RANK_OPTIONS,mapDropdownOptions} from './filterOptions.js';
+import {rankEmblem} from './rankEmblem.js';
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -63,9 +66,11 @@ export function createHeroView() {
   const dialog = document.querySelector('#hero-dialog');
   let detailKey;
   dialog.addEventListener('close', () => document.documentElement.classList.remove('detail-open'));
+  const basicCombos=[];
   for (const [id, choices] of [['#stats-mode', MODES], ['#stats-region', REGIONS]]) {
     const select = document.querySelector(id);
     for (const [value, label] of Object.entries(choices)) { const option = element('option', label); option.value = value; select.append(option); }
+    basicCombos.push(createFilterCombobox(select,{options:Object.entries(choices).map(([value,label])=>({value,label}))}));
   }
   const divisions = document.querySelector('#stats-division');
   const mapSelect=document.querySelector('#stats-map');
@@ -75,6 +80,10 @@ export function createHeroView() {
     for (const key of group.keys) { const option = element('option', divisionName(key)); option.value = key; optgroup.append(option); }
     divisions.append(optgroup);
   }
+  const divisionCombo=createFilterCombobox(divisions,{options:RANK_OPTIONS,icon:rankEmblem});
+  const mapCombo=createFilterCombobox(mapSelect,{options:mapDropdownOptions([...MAP_KEYS].map(key=>({key})))});
+  const sortSelect=document.querySelector('#sort');
+  const sortCombo=createFilterCombobox(sortSelect,{options:[...sortSelect.options].map(option=>({value:option.value,label:option.textContent}))});
   function renderDetailStatistics(hero, state) {
     let summary = document.querySelector('#detail-statistics');
     if (!summary) { summary = element('section'); summary.id = 'detail-statistics'; document.querySelector('#detail-content').append(summary); }
@@ -90,11 +99,13 @@ export function createHeroView() {
       for(const map of maps){const option=element('option',MAP_NAMES[map.key]);option.value=map.key;mapSelect.append(option);}
       if(selected!=='all'&&!maps.some(map=>map.key===selected)){const option=element('option',`${MAP_NAMES[selected]} · 목록 검토 중`);option.value=selected;mapSelect.append(option);}
       mapSelect.value=selected;
+      mapCombo.setOptions(mapDropdownOptions(maps,selected));
     },
     render(model) {
       const { state } = model;
       const heroes = model.visibleHeroes();
       document.querySelector('#sort').value = state.sort;
+      sortCombo.sync();
       document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 메타 티어';
       document.querySelector('#stats-mode').value = state.statsFilters.gamemode;
       document.querySelector('#stats-region').value = state.statsFilters.region;
@@ -107,6 +118,7 @@ export function createHeroView() {
       document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?' · 선택 전장 기준':''}${state.metaPolicy?.version==='local-60-27-13'?' · 로컬 실험 모델':''}`;
       document.querySelector('#active-cohort-freshness').textContent = `출처: OverFast API · ${state.statsStatus === 'loading' ? '현재 조건 조회 중' : state.statistics ? `HOW 조회 ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}${stale ? ' · 오래된 통계' : ''}` : '현재 조건의 성공한 통계 조회 없음'} · 원본 집계 시각 미제공`;
       document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? '빠른 대전은 전체 등급으로 조회합니다.' : '개별 등급 또는 HOW 등급 균등 평균을 선택합니다. 그랜드마스터는 챔피언을 포함합니다.';
+      basicCombos.forEach(combo=>combo.sync());divisionCombo.sync();mapCombo.sync();
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;
       statsMessage.setAttribute('aria-description',isCompositeDivision(state.statsFilters.division)?COMPOSITE_NOTICE:'');
       statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어' : '통계 연결 대기 중';

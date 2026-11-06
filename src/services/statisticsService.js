@@ -1,5 +1,6 @@
 import { normalizeStatistics, statisticsQuery, validateFilters,isCompositeDivision,divisionMembers } from '../models/statisticsModel.js';
 import {combineDivisionStatistics} from '../models/compositeStatisticsModel.js';
+import {originalProvenance,derivedProvenance} from '../models/statisticsProvenance.js';
 
 export const STATISTICS_TTL = 60 * 60 * 1000;
 export function createStatisticsService({ fetcher = globalThis.fetch, now = Date.now, timeoutMs = 12000, ttlMs = STATISTICS_TTL, baseUrl = 'https://overfast-api.tekrop.fr' } = {}) {
@@ -28,7 +29,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
             const components=await Promise.all(divisionMembers(filters.division).map(async division=>{try{return await service.getStatistics({...filters,division});}catch(error){return {filters:{...filters,division},records:[],error:error.message,failed:true};}}));
             const available=components.filter(c=>!c.failed), times=available.map(c=>Date.parse(c.fetchedAt));
             if(!available.length)throw new Error(`모든 구성 등급의 통계 조회에 실패했습니다. ${components.map(c=>`${c.filters.division}: ${c.error}`).join(' · ')}`);
-            return {filters,records:combineDivisionStatistics(filters,components),components,composite:true,source:'OverFast API · HOW 등급 균등 평균',fetchedAt:new Date(Math.max(...times)).toISOString(),observationStart:new Date(Math.min(...times)).toISOString(),expiresAt:Math.min(...available.map(c=>c.expiresAt)),retryAt:components.some(c=>c.error)?Math.min(...components.filter(c=>c.error).map(c=>c.retryAt??now()+60000)):undefined,cached:available.every(c=>c.cached),stale:available.some(c=>c.stale),error:components.filter(c=>c.error).map(c=>`${c.filters.division}: ${c.error}`).join(' · '),aggregateAt:null,patch:null,statisticsWindow:'composite-unverified-windows'};
+            return {provenance:derivedProvenance(filters),filters,records:combineDivisionStatistics(filters,components),components,composite:true,source:'OverFast API · HOW 등급 균등 평균',fetchedAt:new Date(Math.max(...times)).toISOString(),observationStart:new Date(Math.min(...times)).toISOString(),expiresAt:Math.min(...available.map(c=>c.expiresAt)),retryAt:components.some(c=>c.error)?Math.min(...components.filter(c=>c.error).map(c=>c.retryAt??now()+60000)):undefined,cached:available.every(c=>c.cached),stale:available.some(c=>c.stale),error:components.filter(c=>c.error).map(c=>`${c.filters.division}: ${c.error}`).join(' · '),aggregateAt:null,patch:null,statisticsWindow:'unverified-patch-window'};
           }finally{pending.delete(key);}
         }
         const controller = new AbortController();
@@ -48,7 +49,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
           const ageHeader = response.headers?.get('age');
           const age = ageHeader != null && /^\d+$/.test(ageHeader) ? Number(ageHeader) : 0;
           const timestamp = now();
-          const result = { records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, patch: null, statisticsWindow: 'unverified-patch-window', cached: false, providerAgeSeconds: ageHeader != null && /^\d+$/.test(ageHeader) ? age : null, stale: false, error: '' };
+          const result = { provenance:originalProvenance(filters),records, filters, fetchedAt: new Date(timestamp).toISOString(), expiresAt: timestamp + Math.max(60000, ttlMs - age * 1000), source: 'OverFast API', aggregateAt: null, patch: null, statisticsWindow: 'unverified-patch-window', cached: false, providerAgeSeconds: ageHeader != null && /^\d+$/.test(ageHeader) ? age : null, stale: false, error: '' };
           cache.set(key, result); failures.delete(key);
           return result;
         } catch (error) {

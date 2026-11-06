@@ -21,7 +21,7 @@ export function historyScale(points) {
 export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) {
   const label = HISTORY_LABELS[state.metric] ?? HISTORY_LABELS.pickRate;
   const panel = node('section', undefined, 'pick-history'); panel.id = 'pick-history'; panel.setAttribute('aria-labelledby', 'pick-history-title');
-  const head = node('div', undefined, 'history-heading'), title = node('h2', `${label} · 패치별 변화`); title.id = 'pick-history-title';
+  const head = node('div', undefined, 'history-heading'), title = node('h2', `${label} · 패치·관측 이력`); title.id = 'pick-history-title';
   head.append(title); panel.append(head);
   if (state.current) {
     panel.append(node('strong', `현재 ${label} ${rate(state.current)}%`, 'history-current'));
@@ -30,6 +30,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
   if (state.status === 'loading') { panel.setAttribute('aria-busy','true'); panel.append(node('p','불러오는 중')); if (!state.current) return panel; }
   if (state.status === 'error') { panel.append(node('p',`${label} 이력을 불러오지 못했습니다.`, 'history-warning')); const retry = node('button','다시 시도'); retry.dataset.action = 'history-retry'; panel.append(retry); if (!state.current) return panel; }
   const data = state.result ?? { points: [], segments: [], warnings: [] };
+  if(data.points.length&&data.points.filter(p=>p.stored).length<2)panel.append(node('p','저장 이력 부족 · 변화 비교를 위한 기록 수집 중','history-availability'));
   if (data.warnings?.length) { panel.append(node('p', '일부 기록이 누락되거나 조회에 실패했습니다. 표시된 관측값만 확인하세요.', 'history-warning')); const retry = node('button','이력 다시 확인'); retry.dataset.action = 'history-retry'; panel.append(retry); }
   if (!data.points.length) panel.append(node('p','기록 수집 중', 'history-empty'));
   else {

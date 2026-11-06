@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+ <title>HOW Platinum · unofficial rank artwork</title>
+ <defs><linearGradient id="metal" x1="24" y1="8" x2="70" y2="88" gradientUnits="userSpaceOnUse"><stop stop-color="#f1ffff"/><stop offset=".32" stop-color="#b8e9ea"/><stop offset=".64" stop-color="#5d9cae"/><stop offset="1" stop-color="#27475d"/></linearGradient></defs>
+ <path d="M19 54 48 75 77 54 76 70 48 88 20 70Z" fill="url(#metal)" stroke="#0c1720" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M23 59 48 79 73 59M23 70 48 85" stroke="#d6fcff" stroke-width="1.5"/>
+ <path d="M8 8 33 32 33 43 48 56 63 43 63 32 88 8 86 35 48 70 10 35Z" fill="url(#metal)" stroke="#0b1723" stroke-width="3" stroke-linejoin="round"/>
+ <path d="M12 14 29 33 29 45 48 62 48 67 14 34Z" fill="#d9f6f8"/>
+ <path d="M84 14 67 33 67 45 48 62 48 67 82 34Z" fill="#71aebe"/>
+ <path d="M35 31H61L58 44 48 52 38 44Z" fill="#729da9" stroke="#193c4e" stroke-width="2"/>
+ <path d="M38 34H58L48 47Z" fill="#d9ffff"/>
+ <path d="M12 14 30 33M84 14 66 33M13 36 48 67 83 36" stroke="#efffff" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

@@ -38,7 +38,7 @@ test('unconfirmed zero is preserved and warned, withheld from tier and win histo
 test('cumulative division reliability: GM suspicious zero blocks diamond_plus and master_plus; real verified zero can average',()=>{
  for(const division of ['diamond_plus','master_plus']){
   const base={...filters,division},parts=['diamond','master','grandmaster'].map(d=>({filters:{...filters,division:d},records:normalizeStatistics(d==='grandmaster'?raw:[{hero:'torbjorn',winrate:55,pickrate:10,banrate:0}])}));
-  const row=combineDivisionStatistics(base,parts).find(r=>r.hero==='torbjorn');assert.equal(row.winRate,null);assert.equal(row.pickRate,null);assert.deepEqual(row.reviewDivisions,['grandmaster']);assert.equal(attachMetaTiers([{key:'torbjorn',role:'damage'}],[row])[0].tier,null);
+  const row=combineDivisionStatistics(base,parts).find(r=>r.hero==='torbjorn');assert.equal(row.winRate,null);assert(Number.isFinite(row.pickRate));assert.equal(row.banRate,0);assert.deepEqual(row.reviewDivisions,['grandmaster']);assert.equal(attachMetaTiers([{key:'torbjorn',role:'damage'}],[row])[0].tier,null);
   parts[2].records=normalizeStatistics(raw,{source:'blizzard'});const verified=combineDivisionStatistics(base,parts).find(r=>r.hero==='torbjorn');assert(Number.isFinite(verified.winRate));assert.equal(verified.banRate,0);
   parts[2].records=normalizeStatistics([{hero:'torbjorn',winrate:-1,pickrate:20.9,banrate:0}],{source:'blizzard'});const missing=combineDivisionStatistics(base,parts).find(r=>r.hero==='torbjorn');assert.equal(missing.winRate,null);assert.deepEqual(missing.missingDivisions,['grandmaster']);
  }

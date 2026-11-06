@@ -1,0 +1,98 @@
+{
+  "bronze": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      22,
+      35,
+      202,
+      189
+    ],
+    "opticalScale": 1.143,
+    "sha256": "ff7f1df742fa4f6b7a5ee354e3dcafa25679dd774ebb9db5cf6558054190fd66"
+  },
+  "silver": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      35,
+      22,
+      188,
+      202
+    ],
+    "opticalScale": 0.978,
+    "sha256": "980c352c069a598e0be2b475f5faa25b393b41d7f179dea5160c5991c8519516"
+  },
+  "gold": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      27,
+      22,
+      196,
+      202
+    ],
+    "opticalScale": 0.978,
+    "sha256": "45c07e6ed394185ffa4224cf411c14f6ce103feea1f198b94872f0942db883db"
+  },
+  "platinum": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      28,
+      22,
+      196,
+      202
+    ],
+    "opticalScale": 0.978,
+    "sha256": "6bdc69e7531a1f45ed939ec0b6b35f3e38460a515104ccef348bbe1eee3c340d"
+  },
+  "emerald": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      29,
+      22,
+      194,
+      202
+    ],
+    "opticalScale": 0.978,
+    "sha256": "f6315c796490df30c65faa6d220e7415fe83654327a42878260183b7ae3ca7d4"
+  },
+  "diamond": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      22,
+      26,
+      202,
+      197
+    ],
+    "opticalScale": 1.029,
+    "sha256": "77b7f94fca82ea926a35d8f24e872f5b4ca5f8cd87588b6e58fb402c35b39b1b"
+  },
+  "master": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      22,
+      39,
+      202,
+      185
+    ],
+    "opticalScale": 1.205,
+    "sha256": "ed8223f033794c3dc860a4053f44211b0370bed60a8097d7846bbc520dbefd77"
+  },
+  "grandmaster": {
+    "width": 224,
+    "height": 224,
+    "alphaBounds": [
+      22,
+      54,
+      202,
+      170
+    ],
+    "opticalScale": 1.5,
+    "sha256": "56708cde770526b868b44cc7d81348f70338ac0f8911c34d214c30ddd611cf92"
+  }
+}

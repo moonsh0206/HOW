@@ -114,7 +114,7 @@ export function createHeroDetailView() {
       sourceInfo.append(node('p', filterLabel(state.statsFilters)), node('p', `OverFast API · HOW 조회 ${state.statistics?.fetchedAt ? new Date(state.statistics.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'}) : '미제공'}${state.statistics?.stale ? ' · 오래된 데이터' : ''}`)); information.append(sourceInfo);
       if (stats.querySelector('.detail-stat-info')?.open) sourceInfo.open = true;
       sourceInfo.append(node('p',`${cacheLabel(state.statistics)} · 원본 집계 시각 미제공`));
-      for(const component of state.statistics?.components??[])sourceInfo.append(node('p',`${divisionName(component.filters.division)} · HOW 조회 ${component.fetchedAt??'미제공'} · API 캐시 Age ${component.providerAgeSeconds??'미제공'}초`));
+      for(const component of state.statistics?.components??[])sourceInfo.append(node('p',`${divisionName(component.filters?.division??component.division)??'구성 등급'} · HOW 관측 ${component.fetchedAt??component.collectedAt??'미제공'} · API 캐시 Age ${component.providerAgeSeconds??component.cacheAgeSeconds??'미제공'}초`));
       const focused = document.activeElement === stats.querySelector('[data-favorite]');
       const oldHistory = stats.querySelector('.pick-history');
       const historyFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyDays : null;

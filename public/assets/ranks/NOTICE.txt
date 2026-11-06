@@ -1,0 +1,16 @@
+Current asset groups (2026-11-06):
+- bronze.png through grandmaster.png: user-supplied competitive rank images,
+  copied unchanged from public/assets. These are the active dropdown assets.
+- champion.png: user-supplied reference only; not a separate HOW filter.
+- bronze.svg through grandmaster.svg: earlier HOW-authored unofficial artwork,
+  preserved but no longer selected by the default registry.
+
+Overwatch imagery belongs to Blizzard Entertainment and its respective rights holders.
+HOW is an independent fan project, not affiliated with or endorsed by Blizzard Entertainment.
+User-supplied files are not relicensed under a project code license or an API license.
+No new claim of official asset certification is made for these supplied files.
+
+The previous PNGs, source notices and registry were backed up before replacement:
+backups/rank-png-switch-20261106-111435-699176/
+This backup is outside public and excluded from deployment.
+Current file hashes and measured sizes: src/data/rankPngMetadata.json.

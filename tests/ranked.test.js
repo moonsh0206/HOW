@@ -92,11 +92,12 @@ test('classification: high win, popular and contested leaders are distinct metri
 test('real published history: all-rank snapshots do not become diamond history when UI defaults change', async () => {
   const manifest = JSON.parse(await readFile(new URL('../public/data/snapshots/index.json', import.meta.url), 'utf8'));
   assert(manifest.snapshots.some(entry => entry.filters.division === 'all'));
-  assert(manifest.snapshots.every(entry=>['all','diamond'].includes(entry.filters.division)));
+  assert(manifest.snapshots.every(entry=>Object.hasOwn(DIVISIONS,entry.filters.division)));
   let calls = 0;
-  const service = createSnapshotService({ fetcher: async () => { calls++; return { ok: true, json: async () => manifest }; } });
+  // Freeze the historical query clock: newly collected future files must not be fetched.
+  const service = createSnapshotService({ now:()=>Date.parse('2026-11-02T12:00:00Z'),fetcher: async url => { assert(url.endsWith('index.json'));calls++; return { ok: true, json: async () => manifest }; } });
   assert.equal(await service.getPrevious(DEFAULT_FILTERS, '2026-11-02T12:00:00Z'), null);
-  assert.equal(calls, 2);
+  assert.equal(calls, 1);
 });
 test('DOM rank selection: accessible optgroups, diamond default, changed rank applies before slower all response', async () => {
   const dom = new JSDOM(await readFile(new URL('../index.html', import.meta.url), 'utf8'), { url: 'https://example.github.io/HOW/' });

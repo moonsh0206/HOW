@@ -1,6 +1,7 @@
 import './styles/main.css';
 import './styles/detail.css';
 import './styles/layout.css';
+import './styles/filters.css';
 import { createHeroModel } from './models/heroModel.js';
 import { createHeroView } from './views/heroView.js';
 import { createHeroController } from './controllers/heroController.js';
@@ -15,11 +16,13 @@ import { createSnapshotService } from './services/snapshotService.js';
 import { createMapService } from './services/mapService.js';
 import { createMapStatisticsController } from './controllers/mapStatisticsController.js';
 import { selectMetaPolicy } from './domain/metaPolicies.js';
+import {createFilterStorage} from './storage/filterStorage.js';
 
 const storage = createFavoritesStorage();
 const saved = storage.load();
 const view = createHeroView();
 const model = createHeroModel(saved.keys,{metaPolicy:selectMetaPolicy({development:import.meta.env.DEV,experiment:import.meta.env.VITE_META_EXPERIMENT})});
+const filterStorage=createFilterStorage(),savedFilters=filterStorage.load();if(savedFilters)model.state.statsFilters=savedFilters;
 const detailView = createHeroDetailView();
 const snapshots = createSnapshotService({ base: import.meta.env.BASE_URL });
 const statisticsService=createStatisticsService();
@@ -29,7 +32,7 @@ const router = createRoutingController({ model, detailService: createHeroDetailS
 const insights = createInsightView();
 if (!saved.available) view.notify('저장된 즐겨찾기를 읽지 못했습니다. 이번 방문에서 새로 선택할 수 있습니다.');
 router.start();
-createHeroController({ model, view, service: createOverfastService(), statisticsService, snapshotService: snapshots,mapService, storage,
+createHeroController({ model, view, service: createOverfastService(), statisticsService, snapshotService: snapshots,mapService, storage,filterStorage,
   onStateChange() { router.refresh(); insights.render(model); },
   onHeroSelect(key) { location.hash = `/heroes/${key}`; },
 }).start();

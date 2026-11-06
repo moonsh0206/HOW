@@ -57,7 +57,7 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
     },
     async getPrevious(filters, currentAt) {
       if(isCompositeDivision(filters.division)){
-        const data=await service.getHistory(filters,{days:7,scope:'compare'});
+        const data=await service.getHistory(filters,{days:7,scope:'range'});
         return data.snapshots.filter(s=>{const delta=Date.parse(currentAt)-Date.parse(s.collectedAt);return delta>=INSIGHT_POLICY.minComparisonMs&&delta<=INSIGHT_POLICY.maxComparisonMs;}).sort((a,b)=>Date.parse(b.collectedAt)-Date.parse(a.collectedAt))[0]??null;
       }
       const data = await index(); const time = Date.parse(currentAt);

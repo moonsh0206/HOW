@@ -1,0 +1,11 @@
+{
+  "excludedFromPerformanceBenchmark": true,
+  "reason": "Known provider/original discrepancies, no performance-ground-truth claim",
+  "quality": {
+    "total": 54,
+    "review": 16,
+    "missing": 0,
+    "confirmedMissing": 0
+  },
+  "classified": 38
+}

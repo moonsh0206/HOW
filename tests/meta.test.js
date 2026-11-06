@@ -34,8 +34,8 @@ test('insights: gems use current role-relative rules and exclude extremely low p
   assert.deepEqual(hiddenGems(valid.slice(0, 2)), []);
 });
 test('insights: HOT requires same cohort, real history, interval and non-decreasing winrate', () => {
-  const current = { source: 'OverFast API', filters: DEFAULT_FILTERS, fetchedAt: '2026-11-02T06:00:00Z' };
-  const previous = { source: 'OverFast API', filters: DEFAULT_FILTERS, collectedAt: '2026-11-02T00:00:00Z', records: records.map(record => ({ ...record, pickRate: record.pickRate - 2, winRate: record.winRate - 1 })) };
+  const current = { source: 'OverFast API', filters: {...DEFAULT_FILTERS,division:'diamond'}, fetchedAt: '2026-11-03T06:00:00Z' };
+  const previous = { source: 'OverFast API', filters: {...DEFAULT_FILTERS,division:'diamond'}, collectedAt: '2026-11-02T00:00:00Z', records: records.map(record => ({ ...record, pickRate: record.pickRate - 2, winRate: record.winRate - 1 })) };
   const joined = attachMetaTiers(heroes, records);
   const trend = hotHeroes(joined, current, previous);
   assert.equal(trend.available, true); assert.equal(trend.heroes[0].pickDelta, 2); assert.equal(trend.heroes[0].winDelta, 1);

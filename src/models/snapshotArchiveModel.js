@@ -14,7 +14,7 @@ export function preservationTags(observations,catalog){
    const patch=patches[i],start=Date.parse(patch.effectiveAt),end=i+1<patches.length?Date.parse(patches[i+1].effectiveAt):Infinity;
    const before=rows.filter(r=>Date.parse(r.snapshot.collectedAt)<start&&verifiedPatch(r.snapshot,catalog));
    if(before.length)tag(before.at(-1),`${patch.id}:pre-patch`);
-   for(const day of [1,3,7]){const candidate=rows.find(r=>Date.parse(r.snapshot.collectedAt)>=start+day*86400000&&Date.parse(r.snapshot.collectedAt)<end&&verifiedPatch(r.snapshot,catalog)?.id===patch.id);if(candidate)tag(candidate,`${patch.id}:D+${day}`);}
+   for(const day of [1,3,7,14]){const candidate=rows.find(r=>Date.parse(r.snapshot.collectedAt)>=start+day*86400000&&Date.parse(r.snapshot.collectedAt)<end&&verifiedPatch(r.snapshot,catalog)?.id===patch.id);if(candidate)tag(candidate,`${patch.id}:D+${day}`);}
   }
  }
  return Object.fromEntries([...result].map(([file,tags])=>[file,[...tags]]));
@@ -23,6 +23,6 @@ export function preservationTags(observations,catalog){
 export function archiveRetentionPlan(entries,{now=Date.now(),days=14}={}){
  if(!Number.isInteger(days)||days<1)throw new Error('Invalid retention period');
  const keep=[],candidates=[];
- for(const entry of entries){const age=now-Date.parse(entry.observationDate??entry.collectedAt);const protect=entry.schemaVersion!==2||!Number.isFinite(age)||age<0||age<=days*86400000||entry.reviewStatus!=='complete'||entry.preserveTags?.length||entry.milestones?.length;(protect?keep:candidates).push(entry.file);}
+ for(const entry of entries){const age=now-Date.parse(entry.observationDate??entry.collectedAt);const protect=entry.schemaVersion!==2||!Number.isFinite(age)||age<0||age<=days*86400000||entry.reviewStatus!=='complete'||entry.snapshot&&!verifiedPatch(entry.snapshot)||entry.preserveTags?.length||entry.milestones?.length;(protect?keep:candidates).push(entry.file);}
  return {dryRun:true,days,keep:[...new Set(keep)],candidates:[...new Set(candidates)].filter(f=>!keep.includes(f))};
 }
