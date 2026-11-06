@@ -4,8 +4,10 @@ function node(tag, text) { const el = document.createElement(tag); el.textConten
 export function tierButton(hero) {
   const button = node('button', hero.tier ?? '미분류'); button.type = 'button'; button.dataset.tier = hero.key;
   button.className = hero.tier ? `tier-badge tier-${hero.tier.toLowerCase()}` : 'unavailable';
-  button.title = TIER_HELP;
-  button.setAttribute('aria-label', `${hero.name} ${hero.tier ?? '미분류'} 티어 안내`);
+  const label = recommendationLabel(hero);
+  if (label) { const note = node('small',label); note.className='recommendation-label'; button.append(note); }
+  button.title = recommendationDescription(hero) || TIER_HELP;
+  button.setAttribute('aria-label', `${hero.name} ${hero.tier ?? '미분류'} ${label} 티어 안내`);
   return button;
 }
 export function closeTierHelp() {
@@ -15,7 +17,7 @@ export function closeTierHelp() {
   if (opener?.isConnected) opener.focus({ preventScroll: true });
 }
 // Existing tier clicks open only a short hint; the calculation remains in Domain.
-export function showTierReason() {
+export function showTierReason(hero) {
   opener = document.activeElement;
   let tip = document.querySelector('#tier-tooltip');
   if (!tip) {
@@ -26,6 +28,8 @@ export function showTierReason() {
     close.addEventListener('click', closeTierHelp); tip.append(close); document.body.append(tip);
     tip.addEventListener('keydown', event => { if (event.key === 'Escape') closeTierHelp(); });
   }
+  tip.querySelector('span').textContent = recommendationDescription(hero ?? {}) || TIER_HELP;
   if (tip.showPopover) tip.showPopover();
   else { tip.hidden = false; tip.querySelector('button').focus(); }
 }
+import {recommendationLabel,recommendationDescription} from '../domain/recommendationPolicy.js';

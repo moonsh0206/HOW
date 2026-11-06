@@ -132,3 +132,6 @@ html.detail-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .tier-badge[data-tier],button.unavailable[data-tier]{cursor:pointer;min-height:44px;min-width:44px;border:1px solid currentColor}.tier-reason-dialog{box-sizing:border-box;width:min(680px,calc(100% - 24px));max-height:85dvh;overflow:auto;background:#151e2d;color:#edf0f5;border:1px solid #64748b;border-radius:16px;padding:24px;line-height:1.7}.tier-reason-dialog::backdrop{background:#050912cc}.tier-reason-dialog button{min-height:44px;padding:8px 20px;background:#f99e1a;color:#111827;border:0;border-radius:8px}
+.tier-badge .recommendation-label{display:block;font-size:11px;font-weight:600;line-height:1.25;white-space:normal;overflow-wrap:anywhere;color:#e7cf9f}
+.tier-badge:has(.recommendation-label){padding:2px 5px}
+.recommendation-description{font-size:13px;line-height:1.5;color:var(--text-muted,#b7c2d1)}

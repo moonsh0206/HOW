@@ -1,0 +1,46 @@
+{
+  "source": "Existing saved November 6 grouped statistics; API intercepted, metadata-only detail fixture",
+  "results": [
+    {
+      "width": 320,
+      "overflow": 0,
+      "identicalTableCards": true,
+      "shionBeforeJunkrat": true,
+      "keyboardTierHelp": true,
+      "detailDescription": true
+    },
+    {
+      "width": 375,
+      "overflow": 0,
+      "identicalTableCards": true,
+      "shionBeforeJunkrat": true,
+      "keyboardTierHelp": true,
+      "detailDescription": true
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "identicalTableCards": true,
+      "shionBeforeJunkrat": true,
+      "keyboardTierHelp": true,
+      "detailDescription": true
+    },
+    {
+      "width": 430,
+      "overflow": 0,
+      "identicalTableCards": true,
+      "shionBeforeJunkrat": true,
+      "keyboardTierHelp": true,
+      "detailDescription": true
+    },
+    {
+      "width": 1440,
+      "overflow": 0,
+      "identicalTableCards": true,
+      "shionBeforeJunkrat": true,
+      "keyboardTierHelp": true,
+      "detailDescription": true
+    }
+  ],
+  "errors": []
+}

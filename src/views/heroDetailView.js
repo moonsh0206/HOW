@@ -1,4 +1,5 @@
 import { tierButton } from './tierReasonView.js';
+import {recommendationDescription} from '../domain/recommendationPolicy.js';
 import { renderCounters } from './counterView.js';
 import { renderPickHistory } from './pickHistoryView.js';
 import { renderMapStatistics } from './mapStatisticsView.js';
@@ -106,6 +107,7 @@ export function createHeroDetailView() {
       const main = node('div', undefined, 'detail-summary-main');
       summaryTop.append(main, side); summary.append(summaryTop);
       information.append(node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
+      if(recommendationDescription(hero))information.append(node('p',recommendationDescription(hero),'recommendation-description'));
       if(isCompositeDivision(state.statsFilters.division))information.append(node('p',COMPOSITE_NOTICE,'composite-notice'));
       if(hero.statistics?.missingDivisions?.length)information.append(node('p',`누락 등급: ${hero.statistics.missingDivisions.map(divisionName).join(', ')}`,'history-warning'));
       if(statisticsNeedsReview(hero.statistics))information.append(node('p',`통계 신뢰성 검토 중 · 티어 산정 보류${hero.statistics.reviewDivisions?.length?` · ${hero.statistics.reviewDivisions.map(divisionName).join(', ')}`:''}`,'history-warning'));

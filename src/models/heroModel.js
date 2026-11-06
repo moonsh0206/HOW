@@ -1,4 +1,5 @@
 import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
+import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommendationPolicy.js';
 import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
 export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
 
@@ -26,7 +27,7 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
     const matches = state.statistics?.filters && statisticsQuery(state.statistics.filters) === statisticsQuery(state.statsFilters);
     const records=matches?[...(state.statistics?.records??[])]:[];
     if(matches&&isCompositeDivision(state.statsFilters.division))for(const hero of state.heroes)if(!records.some(r=>r.hero===hero.key))records.push({hero:hero.key,winRate:null,pickRate:null,banRate:null,missingDivisions:divisionMembers(state.statsFilters.division)});
-    return attachMetaTiers(state.heroes,records,metaPolicy);
+    return attachMetaTiers(state.heroes,records,metaPolicy).map(applyRecommendationPolicy);
   };
   return {
     state,
@@ -37,9 +38,7 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
       return enriched().filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
         .sort((a, b) => {
           if (state.sort === 'tier-desc') {
-            const order = ['S', 'A', 'B', 'C', 'D'];
-            const tierOrder = hero => order.includes(hero.tier) ? order.indexOf(hero.tier) : order.length;
-            const difference = tierOrder(a) - tierOrder(b);
+            const difference = recommendationOrder(a) - recommendationOrder(b);
             if (difference) return difference;
           }
           if (state.sort === 'meta-desc' || state.sort === 'tier-desc') {

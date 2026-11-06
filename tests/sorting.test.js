@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
 import { createHeroModel } from '../src/models/heroModel.js';
+import {recommendationOrder} from '../src/domain/recommendationPolicy.js';
 import { createHeroView } from '../src/views/heroView.js';
 import { createHeroController } from '../src/controllers/heroController.js';
 const evidence = JSON.parse(fs.readFileSync(new URL('../docs/research/tier-design/evidence.json', import.meta.url)));
@@ -20,7 +21,8 @@ test('sorting: final tiers take precedence over higher capped scores; unclassifi
   assert.equal(rows.at(-1).key, 'missing');
   for (let i = 1; i < rows.length; i++) {
     const a = rows[i - 1], b = rows[i]; assert(order.indexOf(a.tier) <= order.indexOf(b.tier));
-    if (a.tier === b.tier) { assert(a.metaScore >= b.metaScore); if (a.metaScore === b.metaScore) assert(names(a, b) <= 0); }
+    assert(recommendationOrder(a) <= recommendationOrder(b));
+    if (recommendationOrder(a) === recommendationOrder(b)) { assert(a.metaScore >= b.metaScore); if (a.metaScore === b.metaScore) assert(names(a, b) <= 0); }
   }
   const capped = rows.find(h => h.capped);
   const lowerS = rows.find(h => h.tier === 'S' && h.metaScore < capped.metaScore);
