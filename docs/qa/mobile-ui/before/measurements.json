@@ -1,0 +1,117 @@
+{
+  "phase": "before",
+  "statisticsSource": "Local saved grouped v2 files; external statistics requests intercepted",
+  "results": [
+    {
+      "width": 390,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 360.75,
+        "width": 390,
+        "left": 0,
+        "right": 390
+      },
+      "insights": {
+        "top": 911.296875,
+        "height": 364.78125,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "patch": {
+        "top": 11034.390625,
+        "height": 225.78125,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "toolbar": {
+        "top": 1292.078125,
+        "height": 126.390625,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "firstHero": {
+        "top": 1654.546875,
+        "height": 161.59375,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "favorite": {
+        "top": 1667.546875,
+        "height": 44,
+        "width": 44,
+        "left": 321,
+        "right": 365
+      },
+      "panelHeights": [
+        143,
+        143,
+        167.78125,
+        167.78125,
+        167.78125
+      ],
+      "patchParent": "sidebar"
+    },
+    {
+      "width": 1440,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 88,
+        "height": 400.65625,
+        "width": 1440,
+        "left": 0,
+        "right": 1440
+      },
+      "insights": {
+        "top": 797.625,
+        "height": 1479.6875,
+        "width": 288,
+        "left": 1120,
+        "right": 1408
+      },
+      "patch": {
+        "top": 512.65625,
+        "height": 252.96875,
+        "width": 288,
+        "left": 1120,
+        "right": 1408
+      },
+      "toolbar": {
+        "top": 858.546875,
+        "height": 82,
+        "width": 1062,
+        "left": 33,
+        "right": 1095
+      },
+      "firstHero": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "favorite": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "panelHeights": [
+        134.6875,
+        298.75,
+        298.75,
+        298.75,
+        298.75
+      ],
+      "patchParent": "sidebar"
+    }
+  ],
+  "errors": []
+}

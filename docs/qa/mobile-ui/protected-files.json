@@ -1,0 +1,25 @@
+{
+  "unchanged": {
+    "public\\data\\snapshots\\2026-11-02T05-36-24.500Z.json": true,
+    "public\\data\\snapshots\\2026-11-04T00-52-25.812Z.json": true,
+    "public\\data\\snapshots\\2026-11-06T02-37-44.293Z.json": true,
+    "public\\data\\snapshots\\2026-11-06T02-38-15.758Z.json": true,
+    "public\\data\\snapshots\\2026-11-06T02-38-31.983Z.json": true,
+    "public\\data\\snapshots\\index.json": true,
+    "public\\assets\\ranks\\bronze.png": true,
+    "public\\assets\\ranks\\champion.png": true,
+    "public\\assets\\ranks\\diamond.png": true,
+    "public\\assets\\ranks\\emerald.png": true,
+    "public\\assets\\ranks\\gold.png": true,
+    "public\\assets\\ranks\\grandmaster.png": true,
+    "public\\assets\\ranks\\master.png": true,
+    "public\\assets\\ranks\\platinum.png": true,
+    "public\\assets\\ranks\\silver.png": true,
+    "src\\domain\\meta.js": true,
+    "src\\domain\\insights.js": true,
+    "src\\models\\statisticsModel.js": true,
+    "src\\data\\currentPatchNote.js": true,
+    "src\\views\\filterOptions.js": true,
+    "src\\views\\rankEmblem.js": true
+  }
+}

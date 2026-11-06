@@ -1,0 +1,580 @@
+{
+  "phase": "after",
+  "statisticsSource": "Local saved grouped v2 files; external statistics requests intercepted",
+  "results": [
+    {
+      "width": 320,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 125,
+        "height": 217.5625,
+        "width": 320,
+        "left": 0,
+        "right": 320
+      },
+      "insights": {
+        "top": 785.203125,
+        "height": 339.390625,
+        "width": 296,
+        "left": 12,
+        "right": 308
+      },
+      "patch": {
+        "top": 1134.59375,
+        "height": 138.734375,
+        "width": 288,
+        "left": 16,
+        "right": 304
+      },
+      "toolbar": {
+        "top": 1285.328125,
+        "height": 126.390625,
+        "width": 296,
+        "left": 12,
+        "right": 308
+      },
+      "firstHero": {
+        "top": 1647.796875,
+        "height": 141.390625,
+        "width": 296,
+        "left": 12,
+        "right": 308
+      },
+      "favorite": {
+        "top": 1658.796875,
+        "height": 44,
+        "width": 44,
+        "left": 253,
+        "right": 297
+      },
+      "panelHeights": [
+        83,
+        94.390625,
+        63,
+        63,
+        63
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 360,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 217.5625,
+        "width": 360,
+        "left": 0,
+        "right": 360
+      },
+      "insights": {
+        "top": 768.109375,
+        "height": 328,
+        "width": 336,
+        "left": 12,
+        "right": 348
+      },
+      "patch": {
+        "top": 1106.109375,
+        "height": 138.734375,
+        "width": 328,
+        "left": 16,
+        "right": 344
+      },
+      "toolbar": {
+        "top": 1256.84375,
+        "height": 126.390625,
+        "width": 336,
+        "left": 12,
+        "right": 348
+      },
+      "firstHero": {
+        "top": 1619.3125,
+        "height": 141.390625,
+        "width": 336,
+        "left": 12,
+        "right": 348
+      },
+      "favorite": {
+        "top": 1630.3125,
+        "height": 44,
+        "width": 44,
+        "left": 293,
+        "right": 337
+      },
+      "panelHeights": [
+        83,
+        83,
+        63,
+        63,
+        63
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 375,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 218.875,
+        "width": 375,
+        "left": 0,
+        "right": 375
+      },
+      "insights": {
+        "top": 769.421875,
+        "height": 254,
+        "width": 351,
+        "left": 12,
+        "right": 363
+      },
+      "patch": {
+        "top": 1033.421875,
+        "height": 120.734375,
+        "width": 343,
+        "left": 16,
+        "right": 359
+      },
+      "toolbar": {
+        "top": 1166.15625,
+        "height": 126.390625,
+        "width": 351,
+        "left": 12,
+        "right": 363
+      },
+      "firstHero": {
+        "top": 1528.625,
+        "height": 141.390625,
+        "width": 351,
+        "left": 12,
+        "right": 363
+      },
+      "favorite": {
+        "top": 1539.625,
+        "height": 44,
+        "width": 44,
+        "left": 308,
+        "right": 352
+      },
+      "panelHeights": [
+        83,
+        83,
+        127,
+        127,
+        127
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 221.21875,
+        "width": 390,
+        "left": 0,
+        "right": 390
+      },
+      "insights": {
+        "top": 771.765625,
+        "height": 254,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "patch": {
+        "top": 1035.765625,
+        "height": 120.734375,
+        "width": 358,
+        "left": 16,
+        "right": 374
+      },
+      "toolbar": {
+        "top": 1168.5,
+        "height": 126.390625,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "firstHero": {
+        "top": 1530.96875,
+        "height": 141.390625,
+        "width": 366,
+        "left": 12,
+        "right": 378
+      },
+      "favorite": {
+        "top": 1541.96875,
+        "height": 44,
+        "width": 44,
+        "left": 323,
+        "right": 367
+      },
+      "panelHeights": [
+        83,
+        83,
+        127,
+        127,
+        127
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 430,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 227.4375,
+        "width": 430,
+        "left": 0,
+        "right": 430
+      },
+      "insights": {
+        "top": 758.734375,
+        "height": 254,
+        "width": 406,
+        "left": 12,
+        "right": 418
+      },
+      "patch": {
+        "top": 1022.734375,
+        "height": 120.734375,
+        "width": 398,
+        "left": 16,
+        "right": 414
+      },
+      "toolbar": {
+        "top": 1155.46875,
+        "height": 126.390625,
+        "width": 406,
+        "left": 12,
+        "right": 418
+      },
+      "firstHero": {
+        "top": 1517.9375,
+        "height": 141.390625,
+        "width": 406,
+        "left": 12,
+        "right": 418
+      },
+      "favorite": {
+        "top": 1528.9375,
+        "height": 44,
+        "width": 44,
+        "left": 363,
+        "right": 407
+      },
+      "panelHeights": [
+        83,
+        83,
+        127,
+        127,
+        127
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 600,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 113,
+        "height": 233.15625,
+        "width": 600,
+        "left": 0,
+        "right": 600
+      },
+      "insights": {
+        "top": 764.453125,
+        "height": 254,
+        "width": 576,
+        "left": 12,
+        "right": 588
+      },
+      "patch": {
+        "top": 1028.453125,
+        "height": 120.734375,
+        "width": 568,
+        "left": 16,
+        "right": 584
+      },
+      "toolbar": {
+        "top": 1161.1875,
+        "height": 126.390625,
+        "width": 576,
+        "left": 12,
+        "right": 588
+      },
+      "firstHero": {
+        "top": 1503.859375,
+        "height": 141.390625,
+        "width": 576,
+        "left": 12,
+        "right": 588
+      },
+      "favorite": {
+        "top": 1514.859375,
+        "height": 44,
+        "width": 44,
+        "left": 533,
+        "right": 577
+      },
+      "panelHeights": [
+        83,
+        83,
+        127,
+        127,
+        127
+      ],
+      "patchParent": "heroes"
+    },
+    {
+      "width": 601,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 88,
+        "height": 357.96875,
+        "width": 601,
+        "left": 0,
+        "right": 601
+      },
+      "insights": {
+        "top": 5365.640625,
+        "height": 768.25,
+        "width": 553,
+        "left": 24,
+        "right": 577
+      },
+      "patch": {
+        "top": 5099.859375,
+        "height": 233.78125,
+        "width": 553,
+        "left": 24,
+        "right": 577
+      },
+      "toolbar": {
+        "top": 897.859375,
+        "height": 82,
+        "width": 551,
+        "left": 25,
+        "right": 576
+      },
+      "firstHero": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "favorite": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "panelHeights": [
+        298.75,
+        298.75,
+        373.5,
+        373.5,
+        373.5
+      ],
+      "patchParent": "sidebar"
+    },
+    {
+      "width": 768,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 88,
+        "height": 357.96875,
+        "width": 768,
+        "left": 0,
+        "right": 768
+      },
+      "insights": {
+        "top": 5674.640625,
+        "height": 693.5,
+        "width": 720,
+        "left": 24,
+        "right": 744
+      },
+      "patch": {
+        "top": 5408.859375,
+        "height": 233.78125,
+        "width": 720,
+        "left": 24,
+        "right": 744
+      },
+      "toolbar": {
+        "top": 897.859375,
+        "height": 82,
+        "width": 718,
+        "left": 25,
+        "right": 743
+      },
+      "firstHero": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "favorite": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "panelHeights": [
+        298.75,
+        298.75,
+        298.75,
+        298.75,
+        298.75
+      ],
+      "patchParent": "sidebar"
+    },
+    {
+      "width": 1024,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 88,
+        "height": 364.4375,
+        "width": 1024,
+        "left": 0,
+        "right": 1024
+      },
+      "insights": {
+        "top": 5681.109375,
+        "height": 693.5,
+        "width": 976,
+        "left": 24,
+        "right": 1000
+      },
+      "patch": {
+        "top": 5415.328125,
+        "height": 233.78125,
+        "width": 976,
+        "left": 24,
+        "right": 1000
+      },
+      "toolbar": {
+        "top": 904.328125,
+        "height": 82,
+        "width": 974,
+        "left": 25,
+        "right": 999
+      },
+      "firstHero": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "favorite": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "panelHeights": [
+        298.75,
+        298.75,
+        298.75,
+        298.75,
+        298.75
+      ],
+      "patchParent": "sidebar"
+    },
+    {
+      "width": 1440,
+      "overflow": 0,
+      "insightCards": 5,
+      "banner": {
+        "top": 88,
+        "height": 400.65625,
+        "width": 1440,
+        "left": 0,
+        "right": 1440
+      },
+      "insights": {
+        "top": 797.625,
+        "height": 1479.6875,
+        "width": 288,
+        "left": 1120,
+        "right": 1408
+      },
+      "patch": {
+        "top": 512.65625,
+        "height": 252.96875,
+        "width": 288,
+        "left": 1120,
+        "right": 1408
+      },
+      "toolbar": {
+        "top": 858.546875,
+        "height": 82,
+        "width": 1062,
+        "left": 33,
+        "right": 1095
+      },
+      "firstHero": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "favorite": {
+        "top": 0,
+        "height": 0,
+        "width": 0,
+        "left": 0,
+        "right": 0
+      },
+      "panelHeights": [
+        134.6875,
+        298.75,
+        298.75,
+        298.75,
+        298.75
+      ],
+      "patchParent": "sidebar"
+    },
+    {
+      "patchResize": {
+        "desktop": {
+          "open": true,
+          "focus": true,
+          "count": 1
+        },
+        "mobile": {
+          "open": true,
+          "focus": true,
+          "count": 1
+        }
+      }
+    },
+    {
+      "interactions": {
+        "search": true,
+        "favorite": true,
+        "heroDetail": true,
+        "patchKeyboard": true,
+        "dropdownsVisible": true
+      }
+    }
+  ],
+  "errors": []
+}
