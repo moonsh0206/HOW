@@ -1,0 +1,80 @@
+{
+  "origin": "http://127.0.0.1:5198/HOW/",
+  "collectedAt": "2026-11-06T16:38:44.705Z",
+  "sha256": "5213b0b59c614f99eba8edaf78185899103afb3b06ed4744fa719cf06325111e",
+  "dataSource": "Unintercepted same-origin production build JSON from real collector, no perk fixtures",
+  "unrelatedAPIs": "OverFast metadata/statistics fixtures; selected-map statistics return unavailable",
+  "results": [
+    {
+      "width": 320,
+      "overflow": 0,
+      "archiveRequests": 1,
+      "externalPerkRequests": 0,
+      "displayMatchesSavedJSON": true,
+      "interactions": [],
+      "jsErrors": []
+    },
+    {
+      "width": 375,
+      "overflow": 0,
+      "archiveRequests": 1,
+      "externalPerkRequests": 0,
+      "displayMatchesSavedJSON": true,
+      "interactions": [],
+      "jsErrors": []
+    },
+    {
+      "width": 390,
+      "overflow": 0,
+      "archiveRequests": 2,
+      "externalPerkRequests": 0,
+      "displayMatchesSavedJSON": true,
+      "interactions": [
+        "region:europe",
+        "division:gold",
+        "region:americas",
+        "division:master_plus",
+        "region:asia",
+        "division:diamond_plus",
+        "map:busan",
+        "map:all",
+        "tabs",
+        "hero:ana",
+        "back",
+        "reload"
+      ],
+      "jsErrors": []
+    },
+    {
+      "width": 430,
+      "overflow": 0,
+      "archiveRequests": 1,
+      "externalPerkRequests": 0,
+      "displayMatchesSavedJSON": true,
+      "interactions": [],
+      "jsErrors": []
+    },
+    {
+      "width": 1440,
+      "overflow": 0,
+      "archiveRequests": 2,
+      "externalPerkRequests": 0,
+      "displayMatchesSavedJSON": true,
+      "interactions": [
+        "region:europe",
+        "division:gold",
+        "region:americas",
+        "division:master_plus",
+        "region:asia",
+        "division:diamond_plus",
+        "map:busan",
+        "map:all",
+        "tabs",
+        "hero:ana",
+        "back",
+        "reload"
+      ],
+      "jsErrors": []
+    }
+  ]
+}

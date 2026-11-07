@@ -5,7 +5,8 @@ import { renderPickHistory } from './pickHistoryView.js';
 import { renderMapStatistics } from './mapStatisticsView.js';
 import { renderSynergies } from './synergyView.js';
 import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
-import { unavailablePerkSelection } from '../models/perkSelectionModel.js';
+import {renderPerkSelection,renderPerkStatisticsInfo} from './perkStatisticsView.js';
+import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
 import {statisticsNeedsReview} from '../models/statisticsQuality.js';
@@ -32,12 +33,12 @@ export function createHeroDetailView() {
   function section(id, title, items) {
     const wrapper = node('section', undefined, 'detail-section'); wrapper.id = id;
     wrapper.append(node('h2', title)); const grid = node('div', undefined, 'ability-grid');
-    for (const item of items) grid.append(itemCard(item));
+    for (const item of items) {const card=itemCard(item);card.dataset.itemName=item.name;grid.append(card);}
     wrapper.append(items.length ? grid : node('p', '현재 API에서 제공된 정보가 없습니다.', 'empty-note'));
     return wrapper;
   }
   return {
-    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]}) {
+    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null}) {
       const { state } = model;
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
@@ -77,13 +78,22 @@ export function createHeroDetailView() {
         // Hero-specific passives remain separate; never infer them from names or order.
         if (hero.uniquePassives?.length) root.append(section('detail-unique-passives', '고유 지속 능력', hero.uniquePassives));
         root.append(section('detail-minor', '일반 특전 · Minor', hero.minor), section('detail-major', '주요 특전 · Major', hero.major));
-        const rates = section('detail-perk-rates', '특전 선택률', []);
-        const perkRates = unavailablePerkSelection(hero.key);
-        rates.querySelector('p').textContent = '선택률 미제공 · 재사용 가능한 데이터 연결 준비 중입니다.';
-        const rateSource = node('a', '선택률 제공처 검토: OverLooker ↗', 'counter-source'); rateSource.href = perkRates.sourceUrl; rateSource.target = '_blank'; rateSource.rel = 'noreferrer'; rates.append(rateSource); root.append(rates);
+        root.append(renderPerkStatisticsInfo(perkStatistics));
         const source = node('p', `기술·특전 출처: OverFast API · HOW 상세 조회 ${new Date(detailState.result.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}`, 'detail-source'); root.append(source);
       }
       if (detailState.status !== 'ready') return;
+      const perkCards=perkStatistics.cards??perkCardsForDetail(route.key,detailState.result.detail,perkStatistics);
+      for(const tier of ['minor','major'])for(const card of root.querySelectorAll(`#detail-${tier} .ability-card`)){
+        const item=perkCards[tier].find(i=>i.name===card.dataset.itemName);
+        if(!item)continue;const selection=renderPerkSelection(item,perkStatistics),old=card.querySelector('.perk-selection');
+        if(old)old.replaceWith(selection);else card.append(selection);
+      }
+      const oldPerkInfo=root.querySelector('#detail-perk-rates');
+      const sourceSignature=JSON.stringify([perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.result?.fetchedAt,perkStatistics.result?.filters,perkStatistics.error]);
+      if(oldPerkInfo.dataset.signature!==sourceSignature){
+        const perkFocus=oldPerkInfo.contains(document.activeElement),perkInfo=renderPerkStatisticsInfo(perkStatistics);perkInfo.dataset.signature=sourceSignature;oldPerkInfo.replaceWith(perkInfo);
+        if(perkFocus)(perkInfo.querySelector('button')??perkInfo.querySelector('a')).focus({preventScroll:true});
+      }
       const hero = model.heroByKey(route.key) ?? { ...detailState.result.detail, tier: null, statistics: null, metaScore: null };
       const stats = root.querySelector('#detail-page-statistics');
       const summary = node('div', undefined, 'detail-summary');

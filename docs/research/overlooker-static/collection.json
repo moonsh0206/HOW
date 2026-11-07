@@ -1,0 +1,45 @@
+{
+  "file": "public/data/perks/overlooker-perks.json",
+  "collectedAt": "2026-11-06T16:38:44.705Z",
+  "source": "https://stats.overlooker.app/api/perks",
+  "responseDate": "Fri, 06 Nov 2026 16:38:44 GMT",
+  "bytes": 9964,
+  "sha256": "5213b0b59c614f99eba8edaf78185899103afb3b06ed4744fa719cf06325111e",
+  "heroCount": 54,
+  "perkCount": 216,
+  "counts": {
+    "minor": 108,
+    "major": 108,
+    "zeroFractions": 0,
+    "nullFractions": 0,
+    "nullCounts": 0
+  },
+  "protectedFiles": 16,
+  "examples": {
+    "providerSampleSize": 1753,
+    "minor": [
+      [
+        "swift_cuts",
+        0.3579,
+        355
+      ],
+      [
+        "dragon_s_thirst",
+        0.6421,
+        637
+      ]
+    ],
+    "major": [
+      [
+        "blade_twisting",
+        0.6334,
+        482
+      ],
+      [
+        "meditation",
+        0.3666,
+        279
+      ]
+    ]
+  }
+}

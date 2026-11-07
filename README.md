@@ -194,3 +194,15 @@ npm.cmd run audit:ranks -- --fetch
 `compareHeroCohorts`는 향후 등급 비교 화면을 위한 독립 행 계산 함수입니다. 현재 여러 등급을 자동으로 요청하는 비교 화면은 추가하지 않았습니다. 기존 스냅샷 수집은 명시적으로 전체 등급을 유지하며 다이아몬드 이력으로 바꾸지 않습니다.
 
 기존 설정 진단·설계·검증 한계는 [등급별 메타 개선 기록](docs/RANKED-META.md), 도미나·윈스턴·둠피스트·D.Mon의 실측값과 가중치별 순위는 [실제 API 비교 보고서](docs/RANKED-META-DATA.md)에 있습니다. 이 보고서의 수집 스냅샷은 테스트 전용이며 프로덕션 폴백으로 사용하지 않습니다.
+## OverLooker 특전 선택률 수동 갱신
+
+영웅 상세의 특전 선택률은 HOW 지역·경쟁전 등급·전장과 독립적인 OverLooker 집계입니다. 브라우저는 실제 수집한 동일 출처 `data/perks/overlooker-perks.json`을 읽으며 수집 시각을 표시합니다. 갱신하려면 프로젝트 루트에서 실행합니다.
+
+```powershell
+node scripts/collect-overlooker-perks.js
+npm.cmd test
+npm.cmd run build
+npm.cmd run verify:pages
+```
+
+수집 명령은 공개 API를 실제 호출해 54영웅/216특전을 검증하고 파일을 원자 교체합니다. 실패·매핑 누락 시 기존 파일을 보존하며 자동 재시도·Git 작업·배포는 하지 않습니다. [데이터 구조와 검증 결과](docs/OVERLOOKER-STATIC-PERKS.md).

@@ -4,16 +4,28 @@ import { statisticsQuery } from '../models/statisticsModel.js';
 import { buildObservationTimeline } from '../models/patchHistoryModel.js';
 import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 import { createSynergyService } from '../services/synergyService.js';
+import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 export function parseRoute(hash) {
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
   if (['', '#', '#heroes', '#favorites', '#/'].includes(hash)) return { page: 'list' };
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService() }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService }) {
   let generation = 0, currentKey, route = parseRoute(location.hash);
   const sharedFilters=document.querySelector('#statistics-filters'),filterHome=document.createComment('Shared statistics filters');sharedFilters?.before(filterHome);
   let detailState = { status: 'loading', result: null, error: '' };
+  let perkGeneration=0,perkKey=null,perkState={status:'unavailable',result:null};
+  function resetPerks(){++perkGeneration;perkKey=null;perkState={status:perkStatisticsService?'idle':'unavailable',result:null};}
+  function loadPerks(){
+    if(!perkStatisticsService||detailState.status!=='ready'||perkKey===route.key)return;
+    const key=route.key,token=++perkGeneration;perkKey=key;perkState={status:'loading',result:null};
+    Promise.resolve().then(()=>perkStatisticsService.getHeroPerks(key)).then(result=>{
+      if(token!==perkGeneration||route.page!=='detail'||route.key!==key)return;
+      perkState={status:'ready',result};
+    }).catch(error=>{if(token===perkGeneration)perkState={status:'error',result:null,error:error.message};})
+      .finally(()=>{if(token===perkGeneration)render();});
+  }
   let historyGeneration = 0, historyKey, historyDays = 7;
   let historyState = { status: 'idle', days: historyDays };
   let historyMetric = 'pickRate', historyArchive;
@@ -47,12 +59,15 @@ export function createRoutingController({ model, detailService, detailView, coun
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
     if (route.page === 'detail') {
       if(detailState.status==='ready')mapStatisticsController?.setContext(route.key,model.state.statsFilters);
-      loadHistory(); detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes));
+      loadHistory(); loadPerks();
+      const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
+      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
     } else {mapStatisticsController?.leave();if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
   }
   async function load() {
     resetHistory();
+    resetPerks();
     mapStatisticsController?.leave();
     const key = route.key; const token = ++generation;
     detailState = { status: 'loading', result: null, error: '' }; render();
@@ -68,7 +83,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   }
   function navigate() {
     route = parseRoute(location.hash);
-    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); render(); return; }
+    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render(); return; }
     if (route.key !== currentKey) { currentKey = route.key; load(); }
     else render();
   }
@@ -83,11 +98,12 @@ export function createRoutingController({ model, detailService, detailView, coun
       render();
     }
     if (event.target.closest('[data-action="history-retry"]')) { historyKey = null; render(); }
+    if (event.target.closest('[data-action="perk-stats-retry"]')) { perkKey=null; render(); }
   };
   const mapChange=()=>{};
   return {
     start() { window.addEventListener('hashchange', navigate); document.addEventListener('click', retry); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
-    stop() { ++generation; resetHistory();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate); document.removeEventListener('click', retry);document.removeEventListener('change',mapChange); },
+    stop() { ++generation; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate); document.removeEventListener('click', retry);document.removeEventListener('change',mapChange); },
   };
 }

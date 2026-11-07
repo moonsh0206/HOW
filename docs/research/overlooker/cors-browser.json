@@ -1,0 +1,10 @@
+{
+  "result": {
+    "origin": "https://moonsh0206.github.io",
+    "error": "Failed to fetch"
+  },
+  "errors": [
+    "Access to fetch at 'https://stats.overlooker.app/api/perks/genji' from origin 'https://moonsh0206.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ]
+}

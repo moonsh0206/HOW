@@ -1,0 +1,82 @@
+[
+  {
+    "file": "public/data/snapshots/2026-11-02T05-36-24.500Z.json",
+    "hash": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816",
+    "unchanged": true
+  },
+  {
+    "file": "public/data/snapshots/2026-11-04T00-52-25.812Z.json",
+    "hash": "e6dce1cd90d8f902ce0397c4f9f7b9797e96b72452427a6f7eac548ee89cba2c",
+    "unchanged": true
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-37-44.293Z.json",
+    "hash": "9616c40f1e7b402c97f84d45b1fba716fba5a079b8a812a94d10566049898457",
+    "unchanged": true
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-38-15.758Z.json",
+    "hash": "78734a5da6fe967ea8a5966098ed926030297a7865850dea1d67c031fa54a092",
+    "unchanged": true
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-38-31.983Z.json",
+    "hash": "6fc97329b12b38424bde9660820dd436ebfaa1b03d2808891d976cb31c2825a8",
+    "unchanged": true
+  },
+  {
+    "file": "public/data/snapshots/index.json",
+    "hash": "cfdb6b5148f3ae47ff2d128d713780a7f22aaeca948d91eb577132f29ab64344",
+    "unchanged": true
+  },
+  {
+    "file": "src/domain/meta.js",
+    "hash": "e6465b199ee37549132d499e37b8cb19dfd131622591242b2d4a176ad59a3e92",
+    "unchanged": true
+  },
+  {
+    "file": "src/domain/metaPolicies.js",
+    "hash": "1474280a11f9f5f19d21b40b014b82128315801d9762961d51c2c69d6cf87ace",
+    "unchanged": true
+  },
+  {
+    "file": "src/domain/recommendationPolicy.js",
+    "hash": "b177e78e77de5d59c9ae585ca1819b1a1fa25991b6af02ade186bf755c152ffa",
+    "unchanged": true
+  },
+  {
+    "file": "src/domain/insights.js",
+    "hash": "c6eed2e5f18d78f872959e29a8ddee20464b74a051a1fb936ba10880e5f5541e",
+    "unchanged": true
+  },
+  {
+    "file": "src/models/statisticsModel.js",
+    "hash": "55d518ff529199260304b3ceedd49498da793809cb5c7bcb42b460dd495b6c35",
+    "unchanged": true
+  },
+  {
+    "file": "src/models/compositeStatisticsModel.js",
+    "hash": "2770917f42320dcceef59121dc0a4116217daeddc82fac5c2204a0fdfb17eee6",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/currentPatchNote.js",
+    "hash": "033aaffb71434c58120f7550358c88596133c4870449d4d78623dd5376e818d5",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/perkMappings.json",
+    "hash": "b77b7518ec95041a985644ca3f5546753ef1928d650ed5d71c298c8ea6a871d7",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/counters.js",
+    "hash": "3976df675b9132788adf90ea253962b9531cef2aad22b0e1b98a1bdb64f40ba0",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/synergies.js",
+    "hash": "68499435c7e81ced5c2a25c0c8b52dcd2effce75fe1350190c42adc85a1cac1e",
+    "unchanged": true
+  }
+]

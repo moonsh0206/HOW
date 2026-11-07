@@ -1,0 +1,53 @@
+{
+  "capturedResponse": "Actual API capture from tests/fixtures, injected only in QA; not live production success",
+  "results": [
+    {
+      "mode": "captured-response",
+      "width": 320,
+      "overflow": 0,
+      "percentages": true,
+      "sourceVisible": true,
+      "jsErrors": []
+    },
+    {
+      "mode": "captured-response",
+      "width": 375,
+      "overflow": 0,
+      "percentages": true,
+      "sourceVisible": true,
+      "jsErrors": []
+    },
+    {
+      "mode": "captured-response",
+      "width": 390,
+      "overflow": 0,
+      "percentages": true,
+      "sourceVisible": true,
+      "jsErrors": []
+    },
+    {
+      "mode": "captured-response",
+      "width": 430,
+      "overflow": 0,
+      "percentages": true,
+      "sourceVisible": true,
+      "jsErrors": []
+    },
+    {
+      "mode": "captured-response",
+      "width": 1440,
+      "overflow": 0,
+      "percentages": true,
+      "sourceVisible": true,
+      "jsErrors": []
+    },
+    {
+      "mode": "live-cors",
+      "width": 390,
+      "overflow": 0,
+      "percentages": false,
+      "sourceVisible": true,
+      "jsErrors": []
+    }
+  ]
+}

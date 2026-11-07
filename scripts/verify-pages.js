@@ -4,6 +4,7 @@ import path from 'node:path';
 import { pagesBase } from './pages-base.js';
 import { expandSnapshotFile } from '../src/models/snapshotV2Model.js';
 import { statisticsQuery } from '../src/models/statisticsModel.js';
+import {normalizePerkArchive,PERK_ARCHIVE_FILE} from '../src/models/perkArchiveModel.js';
 
 const base = pagesBase(process.env.VITE_BASE_PATH);
 const root = path.resolve('dist');
@@ -33,7 +34,12 @@ const allowed = new Set(['index.html', 'assets', 'data']);
 assert((await readdir(root)).every(file => allowed.has(file)), 'Unexpected file in dist (possible private document)');
 const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));
 assert.equal(manifest.schemaVersion, 1);
-assert.deepEqual(await readdir(path.join(root, 'data')), ['snapshots']);
+assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['perks','snapshots']);
+const perkFiles=await readdir(path.join(root,'data/perks'));
+assert.deepEqual(perkFiles,[PERK_ARCHIVE_FILE],'Unexpected perk data file');
+const perkArchive=normalizePerkArchive(JSON.parse(await readFile(path.join(root,'data/perks',PERK_ARCHIVE_FILE),'utf8')));
+assert.equal(perkArchive.frames.size,54,'Perk archive missing heroes');
+local.add(`${base}data/perks/${PERK_ARCHIVE_FILE}`);
 const snapshotFiles = new Set(['index.json']);
 local.add(`${base}data/snapshots/index.json`);
 for (const entry of manifest.snapshots) {

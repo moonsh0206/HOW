@@ -63,7 +63,7 @@ test('required cases: contradictory evidence retained; current kit caveats repla
   assert.equal(evidence.heroes.length,54);assert(evidence.heroes.every(h=>h.status===200&&h.verified));
 });
 test('perk selection is unavailable with null denominators, no manufactured rates or enabled API',()=>{
-  const state=unavailablePerkSelection('genji');assert.equal(state.status,'unavailable');assert.equal(state.permission,'unverified');assert.equal(state.sample.minor,null);assert.equal(state.sample.major,null);assert.deepEqual(state.entries,[]);assert.equal(state.window,null);
+  const state=unavailablePerkSelection('genji');assert.equal(state.status,'unavailable');assert.equal(state.permission,'user-confirmed-provider-approval');assert.equal(state.sample.minor,null);assert.equal(state.sample.major,null);assert.deepEqual(state.entries,[]);assert.equal(state.window,null);
 });
 test('counter DOM: safe text, three-item maximum, fallbacks and hash links',()=>{
   const dom=new JSDOM('<body></body>'),old=globalThis.document;globalThis.document=dom.window.document;

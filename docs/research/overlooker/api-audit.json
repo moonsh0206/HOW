@@ -1,0 +1,178 @@
+[
+  {
+    "url": "https://stats.overlooker.app/api/perks",
+    "status": 200,
+    "responseDate": "Fri, 06 Nov 2026 16:12:05 GMT",
+    "topLevelKeys": [
+      "filters",
+      "heroes"
+    ],
+    "filters": {
+      "queue_type": null,
+      "since": null
+    },
+    "heroCount": 54,
+    "perkCount": 216,
+    "headers": {
+      "content-type": "application/json",
+      "access-control-allow-origin": null,
+      "cache-control": null,
+      "age": null,
+      "retry-after": null
+    },
+    "note": "Original initial request result; no new request for this summary"
+  },
+  {
+    "url": "https://stats.overlooker.app/api/perks/genji",
+    "status": 200,
+    "checkedAt": "2026-11-06T16:20:46.044Z",
+    "headers": {
+      "content-type": "application/json",
+      "date": "Fri, 06 Nov 2026 16:20:46 GMT",
+      "access-control-allow-origin": null,
+      "access-control-allow-methods": null,
+      "cache-control": null,
+      "age": null,
+      "retry-after": null,
+      "ratelimit-limit": null,
+      "x-ratelimit-limit": null
+    },
+    "topLevelKeys": [
+      "hero",
+      "hero_name",
+      "role",
+      "sample_size",
+      "perks",
+      "filters"
+    ],
+    "filters": {
+      "queue_type": null,
+      "since": null
+    },
+    "sample_size": 1753,
+    "perks": [
+      {
+        "slug": "swift_cuts",
+        "picks": 355,
+        "pick_rate": 0.3579
+      },
+      {
+        "slug": "dragon_s_thirst",
+        "picks": 637,
+        "pick_rate": 0.6421
+      },
+      {
+        "slug": "blade_twisting",
+        "picks": 482,
+        "pick_rate": 0.6334
+      },
+      {
+        "slug": "meditation",
+        "picks": 279,
+        "pick_rate": 0.3666
+      }
+    ]
+  },
+  {
+    "url": "https://stats.overlooker.app/api/perks/genji?queue_type=competitive",
+    "status": 200,
+    "checkedAt": "2026-11-06T16:20:46.399Z",
+    "headers": {
+      "content-type": "application/json",
+      "date": "Fri, 06 Nov 2026 16:20:46 GMT",
+      "access-control-allow-origin": null,
+      "access-control-allow-methods": null,
+      "cache-control": null,
+      "age": null,
+      "retry-after": null,
+      "ratelimit-limit": null,
+      "x-ratelimit-limit": null
+    },
+    "topLevelKeys": [
+      "hero",
+      "hero_name",
+      "role",
+      "sample_size",
+      "perks",
+      "filters"
+    ],
+    "filters": {
+      "queue_type": "COMPETITIVE",
+      "since": null
+    },
+    "sample_size": 724,
+    "perks": [
+      {
+        "slug": "swift_cuts",
+        "picks": 143,
+        "pick_rate": 0.3397
+      },
+      {
+        "slug": "dragon_s_thirst",
+        "picks": 278,
+        "pick_rate": 0.6603
+      },
+      {
+        "slug": "blade_twisting",
+        "picks": 207,
+        "pick_rate": 0.6832
+      },
+      {
+        "slug": "meditation",
+        "picks": 96,
+        "pick_rate": 0.3168
+      }
+    ]
+  },
+  {
+    "url": "https://stats.overlooker.app/api/perks/genji?queue_type=quickplay",
+    "status": 200,
+    "checkedAt": "2026-11-06T16:20:46.752Z",
+    "headers": {
+      "content-type": "application/json",
+      "date": "Fri, 06 Nov 2026 16:20:46 GMT",
+      "access-control-allow-origin": null,
+      "access-control-allow-methods": null,
+      "cache-control": null,
+      "age": null,
+      "retry-after": null,
+      "ratelimit-limit": null,
+      "x-ratelimit-limit": null
+    },
+    "topLevelKeys": [
+      "hero",
+      "hero_name",
+      "role",
+      "sample_size",
+      "perks",
+      "filters"
+    ],
+    "filters": {
+      "queue_type": "QUICKPLAY",
+      "since": null
+    },
+    "sample_size": 1029,
+    "perks": [
+      {
+        "slug": "swift_cuts",
+        "picks": 212,
+        "pick_rate": 0.3713
+      },
+      {
+        "slug": "dragon_s_thirst",
+        "picks": 359,
+        "pick_rate": 0.6287
+      },
+      {
+        "slug": "blade_twisting",
+        "picks": 275,
+        "pick_rate": 0.6004
+      },
+      {
+        "slug": "meditation",
+        "picks": 183,
+        "pick_rate": 0.3996
+      }
+    ]
+  }
+]
