@@ -1,0 +1,146 @@
+[
+  {
+    "viewport": 320,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false,
+    "banner": {
+      "height": 321.890625,
+      "imageLayerHeight": "133.328px",
+      "size": "contain",
+      "position": "50% 0%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 360,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false,
+    "banner": {
+      "height": 338.5625,
+      "imageLayerHeight": "150px",
+      "size": "contain",
+      "position": "50% 0%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 375,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false,
+    "banner": {
+      "height": 346.125,
+      "imageLayerHeight": "156.25px",
+      "size": "contain",
+      "position": "50% 0%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 390,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false,
+    "banner": {
+      "height": 354.71875,
+      "imageLayerHeight": "162.5px",
+      "size": "contain",
+      "position": "50% 0%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 430,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false,
+    "banner": {
+      "height": 377.59375,
+      "imageLayerHeight": "179.156px",
+      "size": "contain",
+      "position": "50% 0%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 768,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 108,
+    "height": 31.859375,
+    "ratio": 3.3898970083374205,
+    "overflow": false,
+    "banner": {
+      "height": 357.96875,
+      "imageLayerHeight": "357.969px",
+      "size": "contain",
+      "position": "100% 50%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 1024,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 108,
+    "height": 31.859375,
+    "ratio": 3.3898970083374205,
+    "overflow": false,
+    "banner": {
+      "height": 364.4375,
+      "imageLayerHeight": "364.438px",
+      "size": "contain",
+      "position": "100% 50%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 1440,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 108,
+    "height": 31.859375,
+    "ratio": 3.3898970083374205,
+    "overflow": false,
+    "banner": {
+      "height": 400.65625,
+      "imageLayerHeight": "400.656px",
+      "size": "contain",
+      "position": "100% 50%",
+      "repeat": "no-repeat"
+    }
+  },
+  {
+    "viewport": 1920,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 108,
+    "height": 31.859375,
+    "ratio": 3.3898970083374205,
+    "overflow": false,
+    "banner": {
+      "height": 402.96875,
+      "imageLayerHeight": "402.969px",
+      "size": "contain",
+      "position": "100% 50%",
+      "repeat": "no-repeat"
+    }
+  }
+]
