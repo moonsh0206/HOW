@@ -68,11 +68,12 @@ export function createHeroDetailView() {
         if (hero.subrole) badges.append(node('span', hero.subrole.subroleNameKo, 'subrole-tag'));
         title.append(h1, badges);
         identity.append(title); header.append(identity, compactText(hero.description, 'detail-description')); root.append(header);
-        const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약'); root.append(stats);
-        const mapStats = node('div');mapStats.id='detail-map-statistics';root.append(mapStats);
         const tabs = node('nav', undefined, 'detail-tabs'); tabs.setAttribute('aria-label', '영웅 상세 섹션');
-        for (const [tab, label] of [['overview', '전체 정보'], ['abilities', '기술·패시브'], ['perks', '특전']]) { const link = node('a', label); link.href = `#/heroes/${hero.key}${tab === 'overview' ? '' : '/' + tab}`; link.dataset.detailTab = tab; tabs.append(link); }
-        root.append(tabs, section('detail-abilities', '영웅 기술', hero.abilities));
+        for (const [tab, label] of [['overview', '영웅 통계'], ['abilities', '기술·패시브'], ['perks', '특전']]) { const link = node('a', label); link.href = `#/heroes/${hero.key}${tab === 'overview' ? '' : '/' + tab}`; link.dataset.detailTab = tab; tabs.append(link); }
+        const overview=node('section',undefined,'detail-overview');overview.id='detail-overview';overview.setAttribute('aria-label','전체 정보 · 영웅 통계');
+        const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약');overview.append(stats);
+        const mapStats = node('div');mapStats.id='detail-map-statistics';overview.append(mapStats);
+        root.append(tabs,overview, section('detail-abilities', '영웅 기술', hero.abilities));
         // Hero-specific passives remain separate; never infer them from names or order.
         if (hero.uniquePassives?.length) root.append(section('detail-unique-passives', '고유 지속 능력', hero.uniquePassives));
         root.append(section('detail-minor', '일반 특전 · Minor', hero.minor), section('detail-major', '주요 특전 · Major', hero.major));
@@ -109,11 +110,10 @@ export function createHeroDetailView() {
         }
         metrics.append(group);
       }
-      const summaryTop = node('div', undefined, 'detail-summary-top');
+      const summaryTop = node('div', undefined, 'detail-summary-top detail-overview-grid');
       const information = node('div', undefined, 'detail-summary-info');
-      const side = node('div', undefined, 'detail-summary-side');
       const main = node('div', undefined, 'detail-summary-main');
-      summaryTop.append(main, side); summary.append(summaryTop);
+      summaryTop.append(metrics); summary.append(summaryTop);
       information.append(node('p', `HOW 메타 점수 ${hero.metaScore == null ? '미분류' : hero.metaScore.toFixed(1)} / 100`));
       if(recommendationDescription(hero))information.append(node('p',recommendationDescription(hero),'recommendation-description'));
       if(isCompositeDivision(state.statsFilters.division))information.append(node('p',COMPOSITE_NOTICE,'composite-notice'));
@@ -132,9 +132,10 @@ export function createHeroDetailView() {
       const recordsOpen = oldHistory?.querySelector('.history-records')?.open;
       const chart = renderPickHistory(withCurrentPickHistory(history, state.statistics, route.key, state.statsFilters, activeMetric), state.statsFilters);
       if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
-      main.append(metrics, chart, information);
+      main.append(chart, information);
       const basis=node('p',`${state.statsFilters.map==='all'?'전체 전장 기준':'선택 전장 기준'}${state.metaPolicy?.version==='local-60-27-13'?' · 로컬 실험 모델':''}`,'detail-stat-basis');main.prepend(basis);
       const detail = detailState.result.detail;
+      root.querySelector('#detail-passives')?.remove();
       const passive = section('detail-passives', '지속 능력', detail.subrole ? [{name:detail.subrole.subroleNameKo,description:detail.subrole.descriptionKo}] : []);
       const mark = detail.subrole?.mark;
       if (mark?.displayAllowed === true && mark.permission === 'approved' && mark.url?.startsWith('https://')) {
@@ -153,9 +154,13 @@ export function createHeroDetailView() {
           next?.querySelector('.compact-text-toggle')?.click();
         }
         const oldDetails=previousPatch?.querySelectorAll('details')??[];
-        patchPanel.querySelectorAll('details').forEach((el,i)=>{el.open=oldDetails[i]?.open??false;});side.append(patchPanel);
+        patchPanel.querySelectorAll('details').forEach((el,i)=>{el.open=oldDetails[i]?.open??false;});patchPanel.classList.add('detail-secondary');summaryTop.append(patchPanel);
       }
-      side.append(renderCounters(counters),renderSynergies(synergies), passive);
+      const countersPanel=renderCounters(counters),synergyPanel=renderSynergies(synergies);
+      for(const panel of [countersPanel,synergyPanel,passive])panel.classList.add('detail-secondary');
+      summaryTop.append(main,countersPanel,synergyPanel);
+      if(route.tab!=='abilities')summaryTop.append(passive);
+      else root.querySelector('#detail-abilities').append(passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
       if(patchFocus){const item=[...stats.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===patchFocus);item?.querySelector('.compact-text-toggle')?.focus({preventScroll:true});}
       const mapRoot=root.querySelector('#detail-map-statistics'),mapFocused=mapRoot.contains(document.activeElement),mapPanel=renderMapStatistics(mapStatistics,model,route.key);
@@ -165,9 +170,11 @@ export function createHeroDetailView() {
       if (scopeFocus) chart.querySelector(`[data-history-scope="${scopeFocus}"]`)?.focus({ preventScroll: true });
       if (metricFocus) stats.querySelector(`[data-history-metric="${metricFocus}"]`)?.focus({ preventScroll: true });
       for (const link of root.querySelectorAll('[data-detail-tab]')) { if (link.dataset.detailTab === route.tab) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }
-      root.querySelector('#detail-abilities').hidden = route.tab === 'perks';
-      if (root.querySelector('#detail-unique-passives')) root.querySelector('#detail-unique-passives').hidden = route.tab === 'perks';
-      for (const id of ['detail-minor', 'detail-major', 'detail-perk-rates']) root.querySelector('#' + id).hidden = route.tab === 'abilities';
+      root.querySelector('#detail-overview').hidden=route.tab!=='overview';
+      root.querySelector('#detail-abilities').hidden = route.tab !== 'abilities';
+      if (root.querySelector('#detail-unique-passives')) root.querySelector('#detail-unique-passives').hidden = route.tab !== 'abilities';
+      for (const id of ['detail-minor', 'detail-major', 'detail-perk-rates']) root.querySelector('#' + id).hidden = route.tab !== 'perks';
+      root.querySelector('.detail-source').hidden=route.tab==='overview';
     },
     focusHeading() { root.querySelector('h1')?.focus({ preventScroll: true }); },
   };

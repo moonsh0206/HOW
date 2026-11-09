@@ -86,10 +86,10 @@ test('detail integration: counter link navigation, absent hero data and favorite
     router=createRoutingController({model,detailView:createHeroDetailView(),detailService:{async getHero(key){return{detail:normalizeHeroDetail({...raw,name:key},key),fetchedAt:'2026-11-03T00:00:00Z'};}}});
     router.start();await new Promise(r=>setImmediate(r));
     assert(document.querySelector('.detail-summary [data-favorite="genji"]'));assert.equal(document.querySelectorAll('.counter-panel .counter-hero').length,3);
-    const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-summary-main'));assert(top.querySelector('.detail-summary-side > .counter-panel'));
+    const top=document.querySelector('.detail-summary > .detail-summary-top');assert(top);assert(top.firstElementChild.matches('.detail-metrics'));assert(top.querySelector(':scope > .counter-panel'));
     assert(document.querySelector('.detail-summary-main > #pick-history'));assert.equal(document.querySelectorAll('#pick-history').length,1);
-    assert(document.querySelector('#pick-history').compareDocumentPosition(document.querySelector('.detail-tabs'))&4);
-    assert.equal(document.querySelector('.detail-overview'),null);assert.equal(top.querySelectorAll('.detail-metrics > div').length,4);
+    assert(document.querySelector('.detail-tabs').compareDocumentPosition(document.querySelector('#pick-history'))&4);
+    assert(document.querySelector('#detail-overview'));assert.equal(top.querySelectorAll('.detail-metrics > div').length,4);
     assert([...top.querySelectorAll('.counter-explanation')].every(el=>!el.open));
     assert(!/65:25:10|S 자격/.test(document.querySelector('#hero-detail-page').textContent));
     location.hash=document.querySelector('.counter-hero').getAttribute('href');window.dispatchEvent(new window.HashChangeEvent('hashchange'));await new Promise(r=>setImmediate(r));
@@ -99,11 +99,11 @@ test('detail integration: counter link navigation, absent hero data and favorite
     assert(document.querySelector('#detail-perk-rates').textContent.includes('미제공'));
   }finally{router?.stop();dom.window.close();Object.assign(globalThis,prior);}
 });
-test('responsive contract: dashboard stays two columns and narrow columns reflow portrait links',()=>{
+test('responsive contract: overview has a single-column mobile flow and portrait links stay readable',()=>{
   const css=fs.readFileSync(new URL('../src/styles/detail.css',import.meta.url),'utf8');
   assert(!css.includes('.detail-summary-top{display:flex;flex-direction:column'));
-  assert(css.includes('.detail-summary-top{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:12px}'));
-  assert(css.includes('.detail-summary-side .synergy-panel .counter-list{grid-template-columns:repeat(2,minmax(0,1fr))'));
+  assert(css.includes('.detail-overview-grid{grid-template-columns:minmax(0,1fr);gap:12px}'));
+  assert(css.includes('.detail-summary .synergy-panel .counter-list{grid-template-columns:repeat(2,minmax(0,1fr))'));
   assert(css.includes('.counter-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))'));
   assert(css.includes('.counter-hero>span:last-child{min-width:0;overflow-wrap:anywhere}'));
 });
