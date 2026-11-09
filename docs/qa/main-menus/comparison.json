@@ -1,0 +1,37 @@
+[
+  {
+    "width": 320,
+    "before": 1758.640625,
+    "after": 1011.15625,
+    "reduction": 747,
+    "banner": 160.78125
+  },
+  {
+    "width": 360,
+    "before": 1746.828125,
+    "after": 1006.0625,
+    "reduction": 741,
+    "banner": 160.78125
+  },
+  {
+    "width": 375,
+    "before": 1680.390625,
+    "after": 1006.0625,
+    "reduction": 674,
+    "banner": 160.78125
+  },
+  {
+    "width": 390,
+    "before": 1688.984375,
+    "after": 1006.0625,
+    "reduction": 683,
+    "banner": 160.78125
+  },
+  {
+    "width": 430,
+    "before": 1674.609375,
+    "after": 986.8125,
+    "reduction": 688,
+    "banner": 160.78125
+  }
+]

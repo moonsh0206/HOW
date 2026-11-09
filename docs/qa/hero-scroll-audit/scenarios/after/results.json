@@ -1,0 +1,72 @@
+[
+  {
+    "width": 320,
+    "listY": 3359,
+    "entryScroll": 0,
+    "tabsRetained": true,
+    "rerenderRetained": true,
+    "newHeroTop": true,
+    "listRestored": true,
+    "metaRestored": true,
+    "favoriteTop": true,
+    "counterTop": true,
+    "directReloadTop": true,
+    "overflow": 0
+  },
+  {
+    "width": 375,
+    "listY": 3353,
+    "entryScroll": 0,
+    "tabsRetained": true,
+    "rerenderRetained": true,
+    "newHeroTop": true,
+    "listRestored": true,
+    "metaRestored": true,
+    "favoriteTop": true,
+    "counterTop": true,
+    "directReloadTop": true,
+    "overflow": 0
+  },
+  {
+    "width": 390,
+    "listY": 3353,
+    "entryScroll": 0,
+    "tabsRetained": true,
+    "rerenderRetained": true,
+    "newHeroTop": true,
+    "listRestored": true,
+    "metaRestored": true,
+    "favoriteTop": true,
+    "counterTop": true,
+    "directReloadTop": true,
+    "overflow": 0
+  },
+  {
+    "width": 768,
+    "listY": 2176,
+    "entryScroll": 0,
+    "tabsRetained": true,
+    "rerenderRetained": true,
+    "newHeroTop": true,
+    "listRestored": true,
+    "metaRestored": true,
+    "favoriteTop": true,
+    "counterTop": true,
+    "directReloadTop": true,
+    "overflow": 0
+  },
+  {
+    "width": 1440,
+    "listY": 2137,
+    "entryScroll": 0,
+    "tabsRetained": true,
+    "rerenderRetained": true,
+    "newHeroTop": true,
+    "listRestored": true,
+    "metaRestored": true,
+    "favoriteTop": true,
+    "counterTop": true,
+    "directReloadTop": true,
+    "overflow": 0
+  }
+]

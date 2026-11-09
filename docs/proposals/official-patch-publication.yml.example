@@ -6,7 +6,8 @@ on:
       publish:
         type: boolean
         default: false
-# After approval only: schedule: [{cron: '23 */6 * * *'}]
+# Historical proposal. Current implementation: .github/workflows/official-patch-notes.yml
+# Current once-daily schedule: schedule: [{cron: '0 1 * * *'}] (10:00 KST).
 permissions:
   contents: read
 concurrency:

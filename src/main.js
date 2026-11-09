@@ -2,6 +2,7 @@ import './styles/main.css';
 import './styles/detail.css';
 import './styles/layout.css';
 import './styles/filters.css';
+import './styles/navigation.css';
 import { createHeroModel } from './models/heroModel.js';
 import { createHeroView } from './views/heroView.js';
 import { createHeroController } from './controllers/heroController.js';

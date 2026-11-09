@@ -1,0 +1,330 @@
+{
+  "rosterUrl": "https://overfast-api.tekrop.fr/heroes?locale=ko-kr",
+  "heroes": 54,
+  "results": [
+    {
+      "heroKey": "ana",
+      "source": "https://overfast-api.tekrop.fr/heroes/ana?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:49.589Z"
+    },
+    {
+      "heroKey": "ashe",
+      "source": "https://overfast-api.tekrop.fr/heroes/ashe?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:49.879Z"
+    },
+    {
+      "heroKey": "baptiste",
+      "source": "https://overfast-api.tekrop.fr/heroes/baptiste?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:50.223Z"
+    },
+    {
+      "heroKey": "anran",
+      "source": "https://overfast-api.tekrop.fr/heroes/anran?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:50.468Z"
+    },
+    {
+      "heroKey": "bastion",
+      "source": "https://overfast-api.tekrop.fr/heroes/bastion?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:50.501Z"
+    },
+    {
+      "heroKey": "brigitte",
+      "source": "https://overfast-api.tekrop.fr/heroes/brigitte?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:50.803Z"
+    },
+    {
+      "heroKey": "cassidy",
+      "source": "https://overfast-api.tekrop.fr/heroes/cassidy?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:50.807Z"
+    },
+    {
+      "heroKey": "dmon",
+      "source": "https://overfast-api.tekrop.fr/heroes/dmon?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.111Z"
+    },
+    {
+      "heroKey": "doctrine",
+      "source": "https://overfast-api.tekrop.fr/heroes/doctrine?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.112Z"
+    },
+    {
+      "heroKey": "domina",
+      "source": "https://overfast-api.tekrop.fr/heroes/domina?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.416Z"
+    },
+    {
+      "heroKey": "doomfist",
+      "source": "https://overfast-api.tekrop.fr/heroes/doomfist?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.417Z"
+    },
+    {
+      "heroKey": "echo",
+      "source": "https://overfast-api.tekrop.fr/heroes/echo?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.724Z"
+    },
+    {
+      "heroKey": "dva",
+      "source": "https://overfast-api.tekrop.fr/heroes/dva?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:51.726Z"
+    },
+    {
+      "heroKey": "emre",
+      "source": "https://overfast-api.tekrop.fr/heroes/emre?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.032Z"
+    },
+    {
+      "heroKey": "freja",
+      "source": "https://overfast-api.tekrop.fr/heroes/freja?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.033Z"
+    },
+    {
+      "heroKey": "hanzo",
+      "source": "https://overfast-api.tekrop.fr/heroes/hanzo?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.337Z"
+    },
+    {
+      "heroKey": "genji",
+      "source": "https://overfast-api.tekrop.fr/heroes/genji?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.338Z"
+    },
+    {
+      "heroKey": "illari",
+      "source": "https://overfast-api.tekrop.fr/heroes/illari?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.679Z"
+    },
+    {
+      "heroKey": "hazard",
+      "source": "https://overfast-api.tekrop.fr/heroes/hazard?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:52.680Z"
+    },
+    {
+      "heroKey": "jetpack-cat",
+      "source": "https://overfast-api.tekrop.fr/heroes/jetpack-cat?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.039Z"
+    },
+    {
+      "heroKey": "junker-queen",
+      "source": "https://overfast-api.tekrop.fr/heroes/junker-queen?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.042Z"
+    },
+    {
+      "heroKey": "juno",
+      "source": "https://overfast-api.tekrop.fr/heroes/juno?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.311Z"
+    },
+    {
+      "heroKey": "junkrat",
+      "source": "https://overfast-api.tekrop.fr/heroes/junkrat?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.322Z"
+    },
+    {
+      "heroKey": "kiriko",
+      "source": "https://overfast-api.tekrop.fr/heroes/kiriko?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.583Z"
+    },
+    {
+      "heroKey": "lifeweaver",
+      "source": "https://overfast-api.tekrop.fr/heroes/lifeweaver?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.596Z"
+    },
+    {
+      "heroKey": "mauga",
+      "source": "https://overfast-api.tekrop.fr/heroes/mauga?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.895Z"
+    },
+    {
+      "heroKey": "lucio",
+      "source": "https://overfast-api.tekrop.fr/heroes/lucio?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:53.898Z"
+    },
+    {
+      "heroKey": "mei",
+      "source": "https://overfast-api.tekrop.fr/heroes/mei?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.219Z"
+    },
+    {
+      "heroKey": "mercy",
+      "source": "https://overfast-api.tekrop.fr/heroes/mercy?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.221Z"
+    },
+    {
+      "heroKey": "moira",
+      "source": "https://overfast-api.tekrop.fr/heroes/moira?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.582Z"
+    },
+    {
+      "heroKey": "mizuki",
+      "source": "https://overfast-api.tekrop.fr/heroes/mizuki?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.591Z"
+    },
+    {
+      "heroKey": "orisa",
+      "source": "https://overfast-api.tekrop.fr/heroes/orisa?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.898Z"
+    },
+    {
+      "heroKey": "pharah",
+      "source": "https://overfast-api.tekrop.fr/heroes/pharah?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:54.899Z"
+    },
+    {
+      "heroKey": "reaper",
+      "source": "https://overfast-api.tekrop.fr/heroes/reaper?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.203Z"
+    },
+    {
+      "heroKey": "ramattra",
+      "source": "https://overfast-api.tekrop.fr/heroes/ramattra?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.205Z"
+    },
+    {
+      "heroKey": "roadhog",
+      "source": "https://overfast-api.tekrop.fr/heroes/roadhog?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.549Z"
+    },
+    {
+      "heroKey": "reinhardt",
+      "source": "https://overfast-api.tekrop.fr/heroes/reinhardt?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.551Z"
+    },
+    {
+      "heroKey": "sierra",
+      "source": "https://overfast-api.tekrop.fr/heroes/sierra?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.911Z"
+    },
+    {
+      "heroKey": "shion",
+      "source": "https://overfast-api.tekrop.fr/heroes/shion?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:55.912Z"
+    },
+    {
+      "heroKey": "sojourn",
+      "source": "https://overfast-api.tekrop.fr/heroes/sojourn?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.228Z"
+    },
+    {
+      "heroKey": "sigma",
+      "source": "https://overfast-api.tekrop.fr/heroes/sigma?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.229Z"
+    },
+    {
+      "heroKey": "sombra",
+      "source": "https://overfast-api.tekrop.fr/heroes/sombra?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.535Z"
+    },
+    {
+      "heroKey": "soldier-76",
+      "source": "https://overfast-api.tekrop.fr/heroes/soldier-76?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.536Z"
+    },
+    {
+      "heroKey": "symmetra",
+      "source": "https://overfast-api.tekrop.fr/heroes/symmetra?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.880Z"
+    },
+    {
+      "heroKey": "torbjorn",
+      "source": "https://overfast-api.tekrop.fr/heroes/torbjorn?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:56.881Z"
+    },
+    {
+      "heroKey": "vendetta",
+      "source": "https://overfast-api.tekrop.fr/heroes/vendetta?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.157Z"
+    },
+    {
+      "heroKey": "tracer",
+      "source": "https://overfast-api.tekrop.fr/heroes/tracer?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.218Z"
+    },
+    {
+      "heroKey": "venture",
+      "source": "https://overfast-api.tekrop.fr/heroes/venture?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.454Z"
+    },
+    {
+      "heroKey": "widowmaker",
+      "source": "https://overfast-api.tekrop.fr/heroes/widowmaker?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.518Z"
+    },
+    {
+      "heroKey": "winston",
+      "source": "https://overfast-api.tekrop.fr/heroes/winston?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.761Z"
+    },
+    {
+      "heroKey": "wrecking-ball",
+      "source": "https://overfast-api.tekrop.fr/heroes/wrecking-ball?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:57.844Z"
+    },
+    {
+      "heroKey": "wuyang",
+      "source": "https://overfast-api.tekrop.fr/heroes/wuyang?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:58.069Z"
+    },
+    {
+      "heroKey": "zarya",
+      "source": "https://overfast-api.tekrop.fr/heroes/zarya?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:58.168Z"
+    },
+    {
+      "heroKey": "zenyatta",
+      "source": "https://overfast-api.tekrop.fr/heroes/zenyatta?locale=ko-kr",
+      "status": 200,
+      "collectedAt": "2026-11-09T09:22:58.377Z"
+    }
+  ]
+}

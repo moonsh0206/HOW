@@ -1,0 +1,92 @@
+[
+  {
+    "width": 320,
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 360,
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 375,
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 390,
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 430,
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 768,
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1024,
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1280,
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1440,
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1920,
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  }
+]

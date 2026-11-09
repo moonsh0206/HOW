@@ -133,6 +133,7 @@ export function createHeroView() {
       document.querySelector('#favorite-count').textContent = state.favorites.size;
       for (const [id, current] of [['#nav-heroes', !state.favoritesOnly], ['#nav-favorites', state.favoritesOnly]]) {
         const link = document.querySelector(id);
+        if(link.dataset.mainMenu)continue;
         if (current) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
       }
       document.querySelectorAll('[data-role]').forEach(button => button.setAttribute('aria-pressed', button.dataset.role === state.role));

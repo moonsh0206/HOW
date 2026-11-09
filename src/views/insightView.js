@@ -16,12 +16,14 @@ export function createInsightView({patchModel}={}) {
   if(!document.querySelector('#current-patch-note'))root.closest('.sidebar')?.prepend(renderPatchNote(patchModel?.current()));
   const patch=document.querySelector('#current-patch-note'),patchHome=document.createComment('Patch note desktop position');patch.before(patchHome);
   const home = document.createComment('Meta insights desktop position'); root.before(home);
-  const media = window.matchMedia?.('(max-width: 600px)');
-  let mobile = media?.matches ?? false, lastModel,switching=false;
+  const media = window.matchMedia?.('(max-width: 767px)');
+  let mobile = media?.matches ?? (window.innerWidth<=767), lastModel,switching=false;
   const mobileExpanded=new Map();
   function place() {
     const focused=document.activeElement,restore=root.contains(focused)||patch.contains(focused);
-    if (mobile) {document.querySelector('#heroes > .cohort-banner').after(root);root.after(patch);}
+    const metaHost=document.querySelector('#meta-insights-host'),metaPatch=document.querySelector('#meta-patch-host');
+    if(metaHost){if(mobile){if(root.parentElement!==metaHost)metaHost.append(root);if(window.location.hash==='#/meta'&&metaPatch){if(patch.parentElement!==metaPatch)metaPatch.append(patch);}else document.querySelector('#heroes > .cohort-banner').after(patch);}else{patchHome.after(patch);home.after(root);}}
+    else if (mobile) {document.querySelector('#heroes > .cohort-banner').after(root);root.after(patch);}
     else {patchHome.after(patch);home.after(root);}
     setPatchNoteMobile(patch,mobile);
     if(restore&&focused.isConnected)focused.focus({preventScroll:true});
@@ -68,9 +70,9 @@ export function createInsightView({patchModel}={}) {
       }
       document.querySelector('#insight-cohort').textContent = `${filterLabel(state.statsFilters)} · 전체 역할 기준 · HOW 정책 추천`;
     },
-    destroy() { media?.removeEventListener?.('change', resize); media?.removeListener?.(resize);mobile=false;place();home.remove();patchHome.remove(); },
+    destroy() { media?.removeEventListener?.('change', resize); media?.removeListener?.(resize);window.removeEventListener('hashchange',place);mobile=false;home.after(root);patchHome.after(patch);home.remove();patchHome.remove(); },
   };
   function resize() { if(media.matches===mobile)return;if(mobile)root.querySelectorAll('.insight-details').forEach(el=>mobileExpanded.set(el.parentElement,el.open));mobile=media.matches;switching=true;place();if(lastModel)view.render(lastModel);switching=false; }
   if (media?.addEventListener) media.addEventListener('change', resize); else media?.addListener?.(resize);
-  place(); return view;
+  window.addEventListener('hashchange',place);place(); return view;
 }

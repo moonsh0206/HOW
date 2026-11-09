@@ -53,7 +53,7 @@ export function createHeroController({ model, view, service, statisticsService, 
     finally { loading = false; render(); }
   }
   function route() {
-    if (location.hash.startsWith('#/heroes/')) return;
+      if (location.hash.startsWith('#/heroes/')||['#/meta','#/player-search'].includes(location.hash)) return;
     const favorites = location.hash === '#favorites';
     if (model.state.favoritesOnly !== favorites) {
       Object.assign(model.state, { favoritesOnly: favorites, role: 'all', query: '' });

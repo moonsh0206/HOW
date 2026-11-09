@@ -1,0 +1,79 @@
+/* Three real routes share a single model, filter bar and insight DOM. */
+.site-header .header-favorites{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-left:auto;font-size:12px;color:var(--muted)}
+.site-header .header-favorites:hover,.site-header .header-favorites[aria-current]{color:var(--orange)}
+.site-header .header-tag{margin-left:0}
+.main-menu{display:grid;grid-template-columns:repeat(3,minmax(0,200px));justify-content:center;gap:0;padding:0 16px;background:#141b26;border-bottom:1px solid var(--line)}
+.main-menu>a{display:flex;align-items:center;justify-content:center;min-height:52px;padding:12px 8px;line-height:1.4;font-size:14px;text-align:center;white-space:normal}
+.main-menu>a[aria-current]{background:#f99e1a08;color:var(--orange)}
+.main-menu>a[aria-current]:after{bottom:0;height:3px}
+.desktop-header-link{display:inline-flex;align-items:center;min-height:44px;font-size:13px}
+@media(min-width:768px){.main-menu{display:none}}
+@media(min-width:1024px){
+ #list-page .workspace{grid-template-columns:minmax(0,1fr) 288px;gap:24px}
+ #list-page .sidebar .insight-grid,#list-page .sidebar .classification-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media(min-width:1024px) and (max-width:1100px){
+ #heroes table{table-layout:fixed;white-space:normal}
+ #heroes table th,#heroes table td{padding:8px 4px;font-size:11px}
+ #heroes table th:first-child,#heroes table td:first-child{padding-left:12px;width:32%}
+ #heroes .hero-identity{gap:6px}
+ #heroes .hero-identity strong{font-size:12px}
+ #heroes .portrait{width:36px;height:36px}
+}
+#meta-page,#player-search-page{max-width:1280px;min-height:55vh}
+#meta-page h1,#player-search-page h1{font-size:clamp(24px,3vw,34px);margin:0 0 18px}
+#meta-filter-host .statistics-filters{display:grid;grid-template-columns:1fr 1.4fr 1fr 1.4fr;margin:0 0 20px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+#meta-page .meta-insights{margin:0 0 20px}
+#meta-page .meta-insights h2{font-size:19px}
+#meta-page .insight-cohort{font-size:13px;line-height:1.7;margin-bottom:14px}
+#meta-page .insight-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#meta-page .classification-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#meta-page .insight-panel{padding:18px}
+#meta-page .insight-panel h3{font-size:17px;margin-bottom:10px}
+#meta-page .insight-panel p,#meta-page .insight-panel small{overflow-wrap:anywhere}
+#meta-page .patch-note-card{max-width:800px}
+#player-search-page .empty-note{max-width:650px}
+#heroes>.favorites-summary{padding:12px 24px;border-top:1px solid var(--line);margin:0}
+@media(max-width:850px){#meta-filter-host .statistics-filters{grid-template-columns:1fr 1.4fr}#meta-page .classification-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){
+ .desktop-header-link{display:none}
+ .desktop-future{display:none}
+ .site-header{display:flex;align-items:center;justify-content:space-between;min-height:64px;padding:10px 16px;gap:16px}
+ .main-menu{grid-template-columns:repeat(3,minmax(0,1fr));padding:0 8px}
+ .main-menu>a{min-height:48px;font-size:13px;padding:10px 4px}
+ #list-page .hero-banner{display:flex;align-items:center;min-height:0;background:var(--bg)}
+ #list-page .hero-banner:before{inset:0;width:100%;height:100%;aspect-ratio:auto;max-width:none;background-size:contain;background-position:right center;mask-image:none}
+ #list-page .hero-banner:after{background:linear-gradient(90deg,#10151ef5 0%,#10151ed9 38%,#10151e4d 100%),linear-gradient(0deg,#10151e,transparent 45%)}
+ #list-page .banner-content{padding:8px 12px}
+ #list-page .banner-content .eyebrow{font-size:8px;line-height:1.5;letter-spacing:1px;margin-bottom:2px}
+ #list-page .banner-content h1{font-size:20px;line-height:1.2;margin-bottom:4px;letter-spacing:-.8px}
+ #list-page .banner-copy{font-size:11px;line-height:1.4;margin-bottom:4px}
+ #list-page .banner-content .primary-button{min-height:44px;padding:8px 12px;font-size:11px}
+ #list-page .banner-content .primary-button>span{font-size:16px}
+ #list-page .roster-heading{margin-bottom:8px}
+ #heroes .roster-heading .eyebrow{display:none}
+ #heroes .roster-heading h2{font-size:20px}
+ #heroes>.cohort-banner{padding-bottom:10px;margin-bottom:8px}
+ #heroes .cohort-banner .statistics-filters{margin-top:8px}
+ #heroes>#current-patch-note{display:grid;grid-template-columns:minmax(0,1fr) 72px;gap:2px 6px;padding:6px 8px;margin-bottom:10px}
+ #heroes>#current-patch-note h2{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ #heroes>#current-patch-note .patch-note-date{grid-column:1;grid-row:1;margin:0}
+ #heroes>#current-patch-note .patch-note-summary{grid-column:1;grid-row:2;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+ #heroes>#current-patch-note details{grid-column:2;grid-row:1/span 2}
+ #heroes>#current-patch-note details[open]{grid-column:1/-1;grid-row:3}
+ #heroes>#current-patch-note summary{min-height:44px;font-size:11px;line-height:1.5}
+ #heroes>.favorites-summary{padding:10px 4px}
+ #meta-page,#player-search-page{padding:20px 12px 32px}
+ #meta-page .insight-grid,#meta-page .classification-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ #meta-page .insight-panel{padding:10px}
+ #meta-page .insight-panel h3{font-size:14px;line-height:1.5;margin-bottom:4px}
+ #meta-page .insight-panel .eyebrow{font-size:8px;letter-spacing:1px;margin-bottom:6px}
+ #meta-page .insight-hero{gap:6px;min-height:52px;padding:6px 0}
+ #meta-page .insight-hero img{width:32px;height:32px}
+ #meta-page .insight-hero strong{font-size:13px}
+ #meta-page .insight-hero small{font-size:12px;line-height:1.5;margin-top:2px}
+ #meta-page .insight-details>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;color:var(--blue);font-size:12px}
+ #meta-page .insight-empty{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+ #meta-page .insight-details>small{display:block;font-size:12px;line-height:1.6;margin-top:6px}
+}
+@media(max-width:360px){#meta-page .insight-grid,#meta-page .classification-grid{grid-template-columns:minmax(0,1fr)}}

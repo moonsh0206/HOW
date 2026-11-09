@@ -14,6 +14,7 @@ export function reviewOfficialPatches(detected,english,review,existing={schemaVe
   const r=review?.patches?.find(r=>r.patchId===p.patchId&&r.sourceHash===p.sourceHash&&r.sourceHashEn===en?.sourceHash);
   if(!en){pending.push({...p,reason:'영문 교차 검증 불가'});continue;}
   const manual=new Map();for(const c of r?.changes??[]){const evidence=p.candidates.find(e=>e.id===c.id),englishEvidence=en.candidates.find(e=>e.id===c.englishId);if(!evidence||!evidence.heroKey||c.before!==evidence.before||c.after!==evidence.after||c.gameMode!==evidence.gameMode||!englishEvidence||englishEvidence.heroKey!==evidence.heroKey||englishEvidence.gameMode!==evidence.gameMode||englishEvidence.before!==c.before||englishEvidence.after!==c.after)throw new Error('검토 내용과 한/영 공식 변경이 일치하지 않습니다.');manual.set(c.id,c);}
+  if(old?.normalizationVersion===PATCH_NORMALIZATION_VERSION&&old.coverage?.pending===0){skipped.push(p.patchId);continue;}
   const changes=[],waiting=[];
   for(const evidence of p.candidates){
    const c=manual.get(evidence.id),previous=(old?.changes??existing.patches.filter(x=>x.patchId===p.patchId).flatMap(x=>x.changes)).find(x=>x.id===evidence.id&&x.before===evidence.before&&x.after===evidence.after&&x.unit===evidence.unit&&en.candidates.some(e=>e.id===x.englishEvidenceId)),auto=automatic?pairAutomaticChange(evidence,en.candidates,abilityNames,p.candidates):null;
@@ -26,7 +27,7 @@ export function reviewOfficialPatches(detected,english,review,existing={schemaVe
   }
   if(waiting.length)pending.push({...p,candidates:waiting,reason:'식별·수치 또는 문맥 검토 필요'});
   if(!changes.length&&!r){continue;}
-  const row={patchId:p.patchId,publishedDate:p.publishedDate,localizedTitleDate:p.localizedTitleDate,officialTitle:p.officialTitle,sourceUrl:p.sourceUrl,sourceUrlEn:en.sourceUrl,sourceHash:p.sourceHash,sourceHashEn:en.sourceHash,type:p.type,effectiveAt:null,statisticsWindowStatus:'unverified',verificationStatus:'verified',reviewedAt:r?.reviewedAt??old?.reviewedAt??new Date().toISOString().slice(0,10),summaryKo:old?.summaryKo??r?.summaryKo??`공식 노트에서 영웅 ${new Set(changes.map(c=>c.heroKey)).size}명의 변경 ${changes.length}건을 확인했습니다. 모드별로 구분해 제공합니다.`,...((old?.highlightsKo??r?.highlightsKo)?{highlightsKo:old?.highlightsKo??r.highlightsKo}:{}),normalizationVersion:PATCH_NORMALIZATION_VERSION,coverage:{sourceCandidates:p.candidates.length,verified:changes.length,pending:waiting.length,excluded:p.excluded?.length??0},changes};
+  const row={patchId:p.patchId,publishedDate:p.publishedDate,localizedTitleDate:p.localizedTitleDate,officialTitle:p.officialTitle,sourceUrl:p.sourceUrl,sourceUrlEn:en.sourceUrl,sourceHash:p.sourceHash,sourceHashEn:en.sourceHash,type:p.type,effectiveAt:null,statisticsWindowStatus:'unverified',verificationStatus:'verified',reviewStatus:waiting.length?'partial':'complete',reviewedAt:r?.reviewedAt??old?.reviewedAt??new Date().toISOString().slice(0,10),summaryKo:old?.summaryKo??r?.summaryKo??`공식 노트에서 영웅 ${new Set(changes.map(c=>c.heroKey)).size}명의 변경 ${changes.length}건을 확인했습니다. 모드별로 구분해 제공합니다.`,...((old?.highlightsKo??r?.highlightsKo)?{highlightsKo:old?.highlightsKo??r.highlightsKo}:{}),normalizationVersion:PATCH_NORMALIZATION_VERSION,coverage:{sourceCandidates:p.candidates.length,verified:changes.length,pending:waiting.length,excluded:p.excluded?.length??0},changes};
   if(old){if(old.normalizationVersion===row.normalizationVersion&&JSON.stringify(old.changes)===JSON.stringify(changes)&&JSON.stringify(old.coverage)===JSON.stringify(row.coverage)){skipped.push(p.patchId);continue;}patches[patches.indexOf(old)]=row;updated.push(p.patchId);}else{patches.push(row);added.push(p.patchId);}
  }
  const archive={schemaVersion:1,patches};normalizeOfficialPatches(archive);return {archive,added,updated,skipped,pending};
@@ -35,17 +36,23 @@ async function atomicWrite(file,data,io){await io.mkdir(dirname(file),{recursive
 async function collectInternal({apply=false,review=null,report=null,target=resolve('public/data/patches/notes.json'),fetcher=globalThis.fetch,io=fs}={}){
  if(report&&resolve(report)===resolve(target))throw new Error('검토 보고서로 정상 JSON을 덮어쓸 수 없습니다.');
  const heroes=JSON.parse(await fs.readFile(new URL('../src/data/patchHeroNames.json',import.meta.url),'utf8'));
+ let existing={schemaVersion:1,patches:[]};try{existing=JSON.parse(await io.readFile(target,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
+ normalizeOfficialPatches(existing);
  const pages=[];
  for(const locale of ['ko-kr','en-us']){
   async function get(url){const r=await fetcher(url,{signal:AbortSignal.timeout(20000)});if(!r.ok)throw new Error(`공식 패치 요청 실패 (${r.status})`);const html=await r.text();if(html.length>2000000)throw new Error('공식 HTML 크기 제한 초과');return html;}
   const url=`https://overwatch.blizzard.com/${locale}/news/patch-notes/live/`,first=extractOfficialPatches(await get(url),{locale,sourceUrl:url,heroes});
-  const month=first.patches[0].publishedDate.slice(0,7).replace('-','/'),monthly=`${url}${month}/`;
-  const page=extractOfficialPatches(await get(monthly),{locale,sourceUrl:monthly,heroes});
-  if(!first.patches.every(p=>page.patches.some(e=>e.patchId===p.patchId)))throw new Error('공식 월별 고정 링크 검증 실패');pages.push(page);
+  // Check current notes plus the two most recent stored months. This handles a
+  // month boundary and recent corrections without crawling the entire archive.
+  const recent=[...new Set(existing.patches.map(p=>p.publishedDate.slice(0,7)))].sort().reverse().slice(0,2);
+  const months=[...new Set([...first.patches.map(p=>p.publishedDate.slice(0,7)),...recent])];
+  if(months.length>3)throw new Error('공식 월별 확인 범위 초과 · 검토 필요');
+  const combined=new Map();
+  for(const month of months){const monthly=`${url}${month.replace('-','/')}/`,page=extractOfficialPatches(await get(monthly),{locale,sourceUrl:monthly,heroes});for(const p of page.patches)combined.set(p.patchId,p);}
+  if(!first.patches.every(p=>combined.has(p.patchId)))throw new Error('공식 월별 고정 링크 검증 실패');pages.push({...first,patches:[...combined.values()]});
  }
- let existing={schemaVersion:1,patches:[]};try{existing=JSON.parse(await io.readFile(target,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
  const result=reviewOfficialPatches(pages[0],pages[1],review,existing,{automatic:true});
- if(report){await io.mkdir(dirname(report),{recursive:true});await io.writeFile(report,JSON.stringify({checkedAt:new Date().toISOString(),detected:pages[0],english:pages[1],added:result.added,skipped:result.skipped,pending:result.pending},null,2)+'\n');}
+ if(report){await io.mkdir(dirname(report),{recursive:true});await io.writeFile(report,JSON.stringify({checkedAt:new Date().toISOString(),detected:pages[0],english:pages[1],added:result.added,updated:result.updated,skipped:result.skipped,pending:result.pending,partial:result.archive.patches.filter(p=>p.coverage?.pending>0).map(p=>({patchId:p.patchId,verified:p.changes.length,pending:p.coverage.pending}))},null,2)+'\n');}
  const changed=result.added.length+result.updated.length;
  if(apply&&changed)await atomicWrite(target,result.archive,io);
  return {applied:!!(apply&&changed),detected:pages[0].patches.map(p=>p.patchId),added:result.added,updated:result.updated,skipped:result.skipped,pending:result.pending.map(p=>p.patchId),pendingChanges:result.pending.reduce((n,p)=>n+p.candidates.length,0),heroChanges:result.archive.patches.reduce((n,p)=>n+p.changes.length,0)};

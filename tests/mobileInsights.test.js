@@ -12,12 +12,12 @@ function setup(width=1440) {
   const dom=new JSDOM(html,{url:'https://example.github.io/HOW/'});
   const prior={window:globalThis.window,document:globalThis.document};
   Object.assign(globalThis,{window:dom.window,document:dom.window.document});
-  const listeners=new Set();const media={matches:width<=600,addEventListener:(_,f)=>listeners.add(f),removeEventListener:(_,f)=>listeners.delete(f)};
+  const listeners=new Set();const media={matches:width<=767,addEventListener:(_,f)=>listeners.add(f),removeEventListener:(_,f)=>listeners.delete(f)};
   dom.window.matchMedia=()=>media;
   const model=createHeroModel(),cohort=evidence.cases.find(c=>c.filters.region==='asia'&&c.filters.division==='diamond');
   Object.assign(model.state,{heroes:evidence.heroes.records,status:'ready',statsFilters:cohort.filters,statsStatus:'ready',statistics:{filters:cohort.filters,records:normalizeStatistics(cohort.api.records),fetchedAt:cohort.api.fetchedAt,source:'OverFast API'}});
   const view=createInsightView();view.render(model);
-  return {model,view,listenerCount:()=>listeners.size,resize(width){media.matches=width<=600;listeners.forEach(f=>f({matches:media.matches}));},close(){view.destroy();dom.window.close();Object.assign(globalThis,prior);}};
+  return {model,view,listenerCount:()=>listeners.size,resize(width){media.matches=width<=767;listeners.forEach(f=>f({matches:media.matches}));},close(){view.destroy();dom.window.close();Object.assign(globalThis,prior);}};
 }
 test('responsive insight DOM: one shared section moves between filter/roster and original desktop sidebar',()=>{
   const app=setup();
@@ -32,10 +32,10 @@ test('responsive insight DOM: one shared section moves between filter/roster and
       assert.equal(document.querySelector('.meta-insights'),section);
       const ids=[...document.querySelectorAll('[id]')].map(n=>n.id);assert.equal(new Set(ids).size,ids.length);
       assert.equal(app.model.state.statistics,originalStats);
-      if(width<=600){
-        assert.equal(section.previousElementSibling,document.querySelector('#heroes > .cohort-banner'));
-        assert.equal(section.nextElementSibling.id,'current-patch-note');assert(document.querySelector('#current-patch-note').compareDocumentPosition(document.querySelector('#heroes .toolbar'))&4);
-        assert(section.compareDocumentPosition(document.querySelector('#table-wrap'))&4);
+      if(width<=767){
+        assert.equal(section.parentElement.id,'meta-insights-host');
+        assert.equal(document.querySelector('#current-patch-note').previousElementSibling,document.querySelector('#heroes > .cohort-banner'));assert(document.querySelector('#current-patch-note').compareDocumentPosition(document.querySelector('#heroes .toolbar'))&4);
+        assert.equal(document.querySelector('#heroes > .meta-insights'),null);
         assert([...section.querySelectorAll('.insight-details')].every(d=>!d.open));
         for(const [category,field,label] of [['highWinRate','winRate','승률'],['popularPicks','pickRate','픽률'],['contestedPicks','banRate','밴률']]){
           const top=[...expected[category]].sort((a,b)=>b.statistics[field]-a.statistics[field]||a.key.localeCompare(b.key))[0];
@@ -57,7 +57,7 @@ test('patch resize: original single node/link, open state and focus survive mobi
   details.open=true;summary.focus();
   for(const width of [390,601,320,768,600,1440]){
    app.resize(width);assert.equal(document.querySelectorAll('#current-patch-note').length,1);assert.equal(document.querySelector('#current-patch-note'),patch);assert(details.open);assert.equal(document.activeElement,summary);assert.equal(link.href,href);assert.equal(patch.querySelector('a'),link);assert.equal(app.listenerCount(),1);
-   if(width<=600){assert.equal(patch.parentElement.id,'heroes');assert.equal(link.parentElement,details);assert.equal(patch.previousElementSibling.className,'meta-insights');assert(patch.compareDocumentPosition(document.querySelector('#heroes .toolbar'))&4);}
+   if(width<=767){assert.equal(patch.parentElement.id,'heroes');assert.equal(link.parentElement,details);assert.equal(patch.previousElementSibling.className,'cohort-banner');assert(patch.compareDocumentPosition(document.querySelector('#heroes .toolbar'))&4);}
    else{assert(patch.closest('.sidebar'));assert.equal(link.parentElement,patch);}
   }
   app.resize(390);const insight=document.querySelector('#gems-content details');insight.open=true;insight.querySelector('summary').focus();app.view.render(app.model);assert.equal(document.activeElement,document.querySelector('#gems-content summary'));assert(document.querySelector('#gems-content details').open);

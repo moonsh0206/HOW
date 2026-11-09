@@ -1,0 +1,290 @@
+[
+  {
+    "width": 390,
+    "mode": "normal",
+    "y": 0,
+    "bannerTop": 370.515625,
+    "trace": [
+      {
+        "kind": "scroll",
+        "y": 3353,
+        "time": 1625.800000000745,
+        "hash": "#/tiers"
+      },
+      {
+        "kind": "focus",
+        "y": 1265,
+        "time": 1740.6000000014901,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 1224,
+        "time": 1761.300000000745,
+        "hash": "#/heroes/genji"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 1224,
+        "time": 1761.300000000745,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 1765.5,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "mode": "slow-api",
+    "y": 0,
+    "bannerTop": 370.515625,
+    "trace": [
+      {
+        "kind": "focus",
+        "y": 1265,
+        "time": 4127.300000000745,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 1224,
+        "time": 4153.400000002235,
+        "hash": "#/heroes/genji"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 1224,
+        "time": 4153.5,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 4160.300000000745,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "mode": "slow-image",
+    "y": 0,
+    "bannerTop": 370.515625,
+    "trace": [
+      {
+        "kind": "focus",
+        "y": 1265,
+        "time": 6428.199999999255,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 1224,
+        "time": 6450.900000002235,
+        "hash": "#/heroes/genji"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 1224,
+        "time": 6451,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 6455.699999999255,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "mode": "normal",
+    "y": 0,
+    "bannerTop": 343,
+    "trace": [
+      {
+        "kind": "scroll",
+        "y": 2097,
+        "time": 1623.1000000014901,
+        "hash": "#/tiers"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 0,
+        "time": 1696.5,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "focus",
+        "y": 0,
+        "time": 1747.9000000022352,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 1770.4000000022352,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "mode": "slow-api",
+    "y": 0,
+    "bannerTop": 343,
+    "trace": [
+      {
+        "kind": "focus",
+        "y": 966,
+        "time": 4238.900000002235,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 966,
+        "time": 4256.300000000745,
+        "hash": "#/heroes/genji"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 966,
+        "time": 4256.300000000745,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 4259.900000002235,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "mode": "slow-image",
+    "y": 0,
+    "bannerTop": 343,
+    "trace": [
+      {
+        "kind": "focus",
+        "y": 966,
+        "time": 6731.900000002235,
+        "hash": "#/heroes/genji",
+        "element": "H1",
+        "id": "",
+        "class": "",
+        "args": [
+          {
+            "preventScroll": true
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 966,
+        "time": 6755,
+        "hash": "#/heroes/genji"
+      },
+      {
+        "kind": "scrollTo",
+        "y": 966,
+        "time": 6755.10000000149,
+        "hash": "#/heroes/genji",
+        "args": [
+          {
+            "top": 0,
+            "left": 0,
+            "behavior": "instant"
+          }
+        ]
+      },
+      {
+        "kind": "scroll",
+        "y": 0,
+        "time": 6761.60000000149,
+        "hash": "#/heroes/genji"
+      }
+    ]
+  }
+]

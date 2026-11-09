@@ -1,0 +1,82 @@
+[
+  {
+    "width": 320,
+    "firstHeroTop": 1011.15625,
+    "bannerHeight": 160.78125,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 360,
+    "firstHeroTop": 1006.0625,
+    "bannerHeight": 160.78125,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 375,
+    "firstHeroTop": 1006.0625,
+    "bannerHeight": 160.78125,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 390,
+    "firstHeroTop": 1006.0625,
+    "bannerHeight": 160.78125,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 430,
+    "firstHeroTop": 986.8125,
+    "bannerHeight": 160.78125,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 768,
+    "firstHeroTop": 1104.609375,
+    "bannerHeight": 357.96875,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 1024,
+    "firstHeroTop": 1111.078125,
+    "bannerHeight": 364.4375,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  },
+  {
+    "width": 1440,
+    "firstHeroTop": 1065.296875,
+    "bannerHeight": 400.65625,
+    "menuCallsUnchanged": true,
+    "overflow": 0,
+    "menus": true,
+    "reload": true,
+    "backForward": true
+  }
+]

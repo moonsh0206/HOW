@@ -1,0 +1,27 @@
+﻿// Actual official notes JSON is served by the production preview, never mocked.
+const {chromium}=require('../node_modules/.cache/how-mobile-qa/node_modules/playwright');
+const fs=require('fs'),assert=require('node:assert/strict');
+const json=p=>JSON.parse(fs.readFileSync(p)),url='http://127.0.0.1:5198/HOW/',phase=process.argv[2]??'after',dir='docs/qa/hero-scroll-audit/probe';fs.mkdirSync(dir,{recursive:true});
+const heroes=json('docs/qa/hero-scroll-audit/data/heroes.json'),details=Object.fromEntries(heroes.map(h=>[h.key,json('docs/qa/hero-scroll-audit/data/'+h.key+'.json')])),maps=json('src/data/standardMaps.json'),identities=json('tests/fixtures/overfast-perk-identities.json');
+const batches=fs.readdirSync('public/data/snapshots').filter(f=>f!=='index.json').map(f=>json('public/data/snapshots/'+f)).filter(b=>b.schemaVersion===2);
+(async()=>{const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});try{const results=[];
+for(const width of ([390,1440])){const context=await browser.newContext({locale:'ko-KR',reducedMotion:'reduce'}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));let patchRequests=0,statsRequests=0;page.on('request',r=>{if(r.url().includes('/heroes/stats?'))statsRequests++;});
+page.on('request',r=>{if(r.url()===url+'data/patches/notes.json')patchRequests++;});
+for(const asset of json('docs/qa/responsive-unified/background-check.json').filter(a=>a.status===200))await context.route(asset.url,r=>r.fulfill({status:200,contentType:'image/jpeg',body:fs.readFileSync(asset.file)}));
+await context.route(/https:\/\/fonts\.(googleapis|gstatic)\.com\//,r=>r.abort());
+await context.route('https://overfast-api.tekrop.fr/**',async r=>{const u=new URL(r.request().url());let data;
+ if(u.pathname==='/heroes')data=heroes;else if(details[u.pathname.split('/').at(-1)])data=details[u.pathname.split('/').at(-1)];
+ else if(u.pathname==='/maps')data=maps.map(m=>({...m,uses:['standard']}));else if(u.pathname==='/heroes/stats'&&!u.searchParams.has('map')){const b=batches.find(b=>b.region===(u.searchParams.get('region')??'asia')),d=b?.divisions[u.searchParams.get('competitive_division')??'all'];if(d?.status==='ok')data=b.heroes.map((hero,i)=>({hero,winrate:d.records[i][0],pickrate:d.records[i][1],banrate:d.records[i][2]}));}
+ else if(u.pathname.startsWith('/heroes/')){const h=heroes.find(h=>h.key===u.pathname.split('/').at(-1)),p=identities.find(h=>h.key===u.pathname.split('/').at(-1));data={...h,perks:{minor:p.minor.map(i=>({...i,description:''})),major:p.major.map(i=>({...i,description:''}))}};}
+ await r.fulfill({status:data?200:503,contentType:'application/json',body:JSON.stringify(data??{})});
+});
+await page.addInitScript(()=>{window.scrollTrace=[];const record=(kind,data)=>window.scrollTrace.push({kind,y:scrollY,time:performance.now(),hash:location.hash,...data});const scroll=window.scrollTo.bind(window);window.scrollTo=(...args)=>{record('scrollTo',{args});return scroll(...args);};for(const method of ['focus','scrollIntoView']){const proto=method==='focus'?HTMLElement.prototype:Element.prototype,original=proto[method];proto[method]=function(...args){record(method,{element:this.tagName,id:this.id,class:this.className,args});return original.apply(this,args);};}addEventListener('scroll',()=>record('scroll',{}));});
+await page.setViewportSize({width,height:900});await page.goto(url,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('#table-wrap')?.hidden===false);
+for(const mode of ['normal','slow-api','slow-image']){
+ await page.goto(url+'#/tiers',{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>document.querySelector('#table-wrap')?.hidden===false);
+ await context.route('https://overfast-api.tekrop.fr/heroes/genji?*',async route=>{if(mode==='slow-api')await new Promise(r=>setTimeout(r,1000));await route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(details.genji)});});
+ if(mode==='slow-image'){const asset=json('docs/qa/responsive-unified/background-check.json').find(a=>a.key==='genji');await context.route(asset.url,async route=>{await new Promise(r=>setTimeout(r,1500));await route.fulfill({status:200,contentType:'image/jpeg',body:fs.readFileSync(asset.file)});});}
+ await page.locator('[data-hero=genji]:visible').first().scrollIntoViewIfNeeded();await page.evaluate(()=>window.scrollTrace=[]);await page.locator('[data-hero=genji]:visible').first().click();await page.waitForFunction(()=>document.querySelector('#hero-detail-page h1')?.textContent===document.querySelector('[data-hero=genji]')?.textContent.trim()||document.querySelector('#hero-detail-page .detail-hero'));
+ await page.waitForTimeout(2000);const result=await page.evaluate(()=>({y:scrollY,bannerTop:document.querySelector('.detail-hero').getBoundingClientRect().top,trace:window.scrollTrace}));results.push({width,mode,...result});await page.screenshot({path:dir+'/'+width+'-'+mode+'.png'});
+}
+await context.close();}fs.writeFileSync(dir+'/results.json',JSON.stringify(results,null,2));console.log(results.map(r=>({width:r.width,mode:r.mode,y:r.y,bannerTop:r.bannerTop})));}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

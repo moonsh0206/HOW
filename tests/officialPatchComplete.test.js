@@ -11,7 +11,7 @@ import {normalizeOfficialPatches,latestHeroPatch,selectCurrentPatchNote} from '.
 import {renderHeroPatch} from '../src/views/heroPatchView.js';
 import {renderPatchNote} from '../src/views/patchNoteView.js';
 const json=async p=>JSON.parse(await fs.readFile(new URL(p,import.meta.url),'utf8'));
-const heroes=await json('../src/data/patchHeroNames.json'),actual=await json('../public/data/patches/notes.json'),baseline=await json('./fixtures/official-patch-baseline.json'),manual=await json('../docs/research/official-patches/review-complete.json');
+const heroes=await json('../src/data/patchHeroNames.json'),actual=await json('./fixtures/official-patch-november-complete.json'),baseline=await json('./fixtures/official-patch-baseline.json'),manual=await json('../docs/research/official-patches/review-complete.json');
 const originalDetection=await json('../docs/research/official-patches/detection.json');
 const html=Object.fromEntries(await Promise.all(['ko-kr','en-us'].map(async locale=>[locale,await fs.readFile(new URL(`./fixtures/official-2026-11.${locale}.html`,import.meta.url),'utf8')])));
 const parse=(locale,text=html[locale])=>extractOfficialPatches(text,{locale,sourceUrl:`https://overwatch.blizzard.com/${locale}/news/patch-notes/live/2026/11/`,heroes});

@@ -5,14 +5,28 @@ import { buildObservationTimeline } from '../models/patchHistoryModel.js';
 import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 import { createSynergyService } from '../services/synergyService.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
+import {createMainMenuView} from '../views/mainMenuView.js';
 export function parseRoute(hash) {
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
-  if (['', '#', '#heroes', '#favorites', '#/'].includes(hash)) return { page: 'list' };
+  if (['', '#', '#heroes', '#favorites', '#/', '#/tiers'].includes(hash)) return { page: 'list' };
+  if(hash==='#/meta')return {page:'meta'};
+  if(hash==='#/player-search')return {page:'player-search'};
   return { page: 'not-found' };
 }
 export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel }) {
   let generation = 0, currentKey, route = parseRoute(location.hash);
+  const menuView=createMainMenuView(),scrollPositions=new Map();
+  const menuMedia=window.matchMedia?.('(max-width: 767px)');
+  let currentHash=location.hash,lastMainHash='#/tiers';
+  let scrollFrame=null;
+  const previousScrollRestoration=window.history?.scrollRestoration;
+  function cancelScroll(){if(scrollFrame!==null){window.cancelAnimationFrame?.(scrollFrame);scrollFrame=null;}}
+  function scheduleScroll(accept,top){
+    cancelScroll();if(!window.requestAnimationFrame)return;
+    scrollFrame=window.requestAnimationFrame(()=>{scrollFrame=null;if(accept())window.scrollTo({top,left:0,behavior:'instant'});});
+  }
+  const rememberScroll=()=>{if(route.page==='list'||route.page==='meta')scrollPositions.set(currentHash,window.scrollY??0);};
   const sharedFilters=document.querySelector('#statistics-filters'),filterHome=document.createComment('Shared statistics filters');sharedFilters?.before(filterHome);
   let detailState = { status: 'loading', result: null, error: '' };
   let perkGeneration=0,perkKey=null,perkState={status:'unavailable',result:null};
@@ -54,7 +68,9 @@ export function createRoutingController({ model, detailService, detailView, coun
     }).finally(() => { if (token === historyGeneration) render(); });
   }
   function render() {
-    document.querySelector('#list-page').hidden = route.page !== 'list';
+    const mobile=menuMedia?.matches??(window.innerWidth<=767);
+    menuView.render(route,lastMainHash,mobile);
+    document.querySelector('#list-page').hidden = route.page !== 'list'&&!(route.page==='meta'&&!mobile);
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
     if (route.page === 'detail') {
@@ -63,7 +79,7 @@ export function createRoutingController({ model, detailService, detailView, coun
       const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
       detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
-    } else {mapStatisticsController?.leave();if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
+    } else {mapStatisticsController?.leave();const metaHost=route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
   }
   async function load() {
     resetHistory();
@@ -82,9 +98,11 @@ export function createRoutingController({ model, detailService, detailView, coun
     render(); detailView.focusHeading();
   }
   function navigate() {
-    route = parseRoute(location.hash);
-    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render(); return; }
-    if (route.key !== currentKey) { currentKey = route.key; load(); }
+    const next=parseRoute(location.hash);
+    if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta'].includes(route.page)?currentHash||'#/tiers':'#/tiers';
+    currentHash=location.hash;route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
+    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }
+    if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }
     else render();
   }
   const retry = event => {
@@ -102,8 +120,8 @@ export function createRoutingController({ model, detailService, detailView, coun
   };
   const mapChange=()=>{};
   return {
-    start() { window.addEventListener('hashchange', navigate); document.addEventListener('click', retry); document.addEventListener('change',mapChange); navigate(); },
+    start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
-    stop() { ++generation; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate); document.removeEventListener('click', retry);document.removeEventListener('change',mapChange); },
+    stop() { ++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('change',mapChange); },
   };
 }

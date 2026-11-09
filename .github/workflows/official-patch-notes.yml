@@ -1,35 +1,126 @@
-name: Official patch normalization and site validation (manual artifact only)
+name: Daily official patch notes and Pages
 on:
+  schedule:
+    - cron: '0 1 * * *' # 10:00 Asia/Seoul; GitHub may delay scheduled runs.
   workflow_dispatch:
-# Proposed only, NOT ACTIVE: schedule cron '23 */6 * * *' (UTC).
-# Detection and review artifacts are separate from repository publication.
 permissions:
   contents: read
+# Same lock as pages.yml: serialize all site publications.
 concurrency:
-  group: how-official-patch-detection
+  group: pages
   cancel-in-progress: false
 jobs:
-  detect:
+  prepare:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      changed: ${{ steps.patch.outputs.changed }}
+      candidate_digest: ${{ steps.patch.outputs.candidate_digest }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
+          ref: ${{ github.sha }}
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
         with:
-          node-version: 24
+          node-version: '24'
           cache: npm
       - run: npm ci
-      - name: Normalize verified facts in runner only; no commit, push or deployment
-        run: node scripts/collect-official-patch-notes.js --apply --review docs/research/official-patches/review-complete.json --report .artifacts/official-patches.json
-      - run: npm test
-      - run: npm run build
-      - run: npm run verify:pages
-      - uses: actions/upload-artifact@v4
+      - name: Detect and validate JSON atomically
+        id: patch
+        run: node scripts/prepare-official-patch-update.js
+      - name: Test changed candidate
+        if: steps.patch.outputs.changed == 'true'
+        run: npm test
+      - name: Resolve Pages base
+        id: pages
+        if: steps.patch.outputs.changed == 'true'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      - name: Build changed candidate
+        if: steps.patch.outputs.changed == 'true'
+        run: npm run build
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - name: Verify Pages paths
+        if: steps.patch.outputs.changed == 'true'
+        run: npm run verify:pages
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - name: Save exactly the validated JSON
+        if: steps.patch.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-patch-candidate
+          path: public/data/patches/notes.json
+          if-no-files-found: error
+          retention-days: 14
+      - name: Upload tested site from this same workflow
+        if: steps.patch.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: dist
+          retention-days: 7
+      - name: Retain review and failure reports without committing them
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: official-patch-review
-          path: |
-            .artifacts/official-patches.json
-            public/data/patches/notes.json
-            dist/
-          retention-days: 14
+          path: .artifacts/*.json
+          if-no-files-found: warn
+          include-hidden-files: true
+          retention-days: 30
+  publish:
+    needs: prepare
+    if: needs.prepare.outputs.changed == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: main
+          token: ${{ github.token }}
+          fetch-depth: 2
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+      - name: Validate main or resume the exact previous JSON-only publication
+        id: revision
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+          EXPECTED_PATCH_DIGEST: ${{ needs.prepare.outputs.candidate_digest }}
+        run: node scripts/check-patch-publication-revision.js
+      - uses: actions/download-artifact@v4
+        with:
+          name: official-patch-candidate
+          path: .artifacts/publication
+      - name: Check artifact hash and preserve prior verified records
+        env:
+          EXPECTED_PATCH_DIGEST: ${{ needs.prepare.outputs.candidate_digest }}
+        run: node scripts/install-official-patch-candidate.js
+      - name: Commit and push only official patch JSON
+        if: steps.revision.outputs.resume != 'true'
+        run: |
+          set -euo pipefail
+          test -z "$(git diff --name-only -- . ':(exclude)public/data/patches/notes.json')"
+          test -n "$(git diff --name-only -- public/data/patches/notes.json)"
+          git add -- public/data/patches/notes.json
+          test "$(git diff --cached --name-only)" = "public/data/patches/notes.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update verified official patch notes'
+          # Never force-push or bypass branch protection. Failure stops deployment.
+          git push origin HEAD:main
+      - name: Confirm main still matches the published candidate
+        run: test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)"
+      # GITHUB_TOKEN pushes do not trigger a second Pages push workflow.
+      - name: Deploy tested artifact in this same workflow
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

@@ -45,7 +45,7 @@ export function createHeroDetailView() {
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
         contentKey = signature; root.replaceChildren();
-        const back = node('a', '← 영웅 목록으로 돌아가기', 'detail-back'); back.href = state.favoritesOnly ? '#favorites' : '#heroes'; root.append(back);
+        const back = node('a', route.returnHash==='#/meta'?'← 현재 메타픽으로 돌아가기':'← 영웅 목록으로 돌아가기', 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);
         const filterHost=node('div',undefined,'detail-filter-host');filterHost.id='detail-filter-host';root.append(filterHost);
         if (detailState.status !== 'ready') {
           const message = node('div', undefined, 'data-state'); message.setAttribute('role', 'status');
@@ -81,6 +81,7 @@ export function createHeroDetailView() {
         const source = node('p', `기술·특전 출처: OverFast API · HOW 상세 조회 ${new Date(detailState.result.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}`, 'detail-source'); root.append(source);
       }
       if (detailState.status !== 'ready') return;
+      const back=root.querySelector('.detail-back');back.href=route.returnHash??(state.favoritesOnly?'#favorites':'#heroes');back.textContent=route.returnHash==='#/meta'?'← 현재 메타픽으로 돌아가기':'← 영웅 목록으로 돌아가기';
       const perkCards=perkStatistics.cards??perkCardsForDetail(route.key,detailState.result.detail,perkStatistics);
       for(const tier of ['minor','major'])for(const card of root.querySelectorAll(`#detail-${tier} .ability-card`)){
         const item=perkCards[tier].find(i=>i.name===card.dataset.itemName);

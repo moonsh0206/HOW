@@ -1,0 +1,8 @@
+import * as fs from 'node:fs/promises';
+const root='docs/qa/hero-scroll-audit',audit=JSON.parse(await fs.readFile(root+'/all-heroes.json','utf8')),heroes=JSON.parse(await fs.readFile(root+'/data/heroes.json','utf8'));
+const strictFailures=audit.results.filter(r=>!r.pass||r.bannerTop<0||r.bannerBottom>900||r.background&&!r.background.loaded);
+const lines=['# 전체 영웅 실제 Chrome 스크롤 검사','',`실제 API 목록 ${heroes.length}명. 기대 ${audit.expected}건 / 검사 ${audit.checked}건 / 실패 ${audit.results.filter(r=>!r.pass).length}건. 완료: ${audit.complete===true}.`,'',`빌드: ${audit.buildScripts?.join(', ')??'미기록'}`,'','영웅별 390px/1440px의 overview·abilities·perks 신규 진입 결과다. 값은 각 화면에서 이미지/API 로딩 후 측정했다.','', '|heroKey|이름|390px|1440px|scrollY 최대|배너 top 범위|','|---|---|---|---|---:|---|'];
+for(const h of heroes){const rows=audit.results.filter(r=>r.heroKey===h.key),status=width=>{const actual=rows.filter(r=>r.viewport===width);return `${actual.filter(r=>r.pass).length}/${actual.length} (${actual.length===3&&actual.every(r=>r.pass)?'통과':'미완료/실패'})`;};const settled=rows.filter(r=>Number.isFinite(r.settledScrollY)),tops=settled.map(r=>r.bannerTop);lines.push(`|${h.key}|${h.name}|${status(390)}|${status(1440)}|${settled.length?Math.max(...settled.map(r=>r.settledScrollY)):'미검증'}|${tops.length?Math.min(...tops).toFixed(1)+'~'+Math.max(...tops).toFixed(1)+'px':'미검증'}|`);}
+lines.push('','개별 경로·초기/완료 scrollY·배너 좌표·이미지 로딩·스크린샷은 [all-heroes.json](all-heroes.json)을 참고한다. 정상 네트워크 전수 검사이며 지연/실패 조건은 genji-lifecycle/results.json에 별도로 기록한다.','');
+lines.push(`배너 전체가 900px viewport 안에 있고 실제 배경이 로딩됐는지 추가 검사: 실패 ${strictFailures.length}건.`, '');
+await fs.writeFile(root+'/REPORT.md',lines.join('\n'));if(!audit.complete||strictFailures.length)process.exitCode=1;
