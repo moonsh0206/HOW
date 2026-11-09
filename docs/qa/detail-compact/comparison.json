@@ -1,0 +1,284 @@
+[
+  {
+    "width": 320,
+    "regions": {
+      ".detail-hero": {
+        "before": 255.75,
+        "after": 158.1875,
+        "reduction": 97.6,
+        "topBefore": 408.609375,
+        "topAfter": 398.609375
+      },
+      ".detail-metrics": {
+        "before": 136,
+        "after": 118,
+        "reduction": 18,
+        "topBefore": 730.15625,
+        "topAfter": 610.59375
+      },
+      ".hero-patch-panel": {
+        "before": 353.359375,
+        "after": 282.78125,
+        "reduction": 70.6,
+        "topBefore": 699.359375,
+        "topAfter": 579.796875
+      },
+      ".counter-panel": {
+        "before": 290.796875,
+        "after": 254.359375,
+        "reduction": 36.4,
+        "topBefore": 1052.71875,
+        "topAfter": 862.578125
+      },
+      ".synergy-panel": {
+        "before": 301.796875,
+        "after": 261.359375,
+        "reduction": 40.4,
+        "topBefore": 1353.515625,
+        "topAfter": 1122.9375
+      },
+      "#pick-history": {
+        "before": 412.921875,
+        "after": 339.6875,
+        "reduction": 73.2,
+        "topBefore": 876.15625,
+        "topAfter": 736.59375
+      }
+    }
+  },
+  {
+    "width": 360,
+    "regions": {
+      ".detail-hero": {
+        "before": 255.75,
+        "after": 158.1875,
+        "reduction": 97.6,
+        "topBefore": 391.515625,
+        "topAfter": 381.515625
+      },
+      ".detail-metrics": {
+        "before": 136,
+        "after": 118,
+        "reduction": 18,
+        "topBefore": 713.0625,
+        "topAfter": 593.5
+      },
+      ".hero-patch-panel": {
+        "before": 316.171875,
+        "after": 260.78125,
+        "reduction": 55.4,
+        "topBefore": 682.265625,
+        "topAfter": 562.703125
+      },
+      ".counter-panel": {
+        "before": 290.796875,
+        "after": 254.359375,
+        "reduction": 36.4,
+        "topBefore": 998.4375,
+        "topAfter": 823.484375
+      },
+      ".synergy-panel": {
+        "before": 301.796875,
+        "after": 261.359375,
+        "reduction": 40.4,
+        "topBefore": 1299.234375,
+        "topAfter": 1083.84375
+      },
+      "#pick-history": {
+        "before": 377.734375,
+        "after": 323.6875,
+        "reduction": 54,
+        "topBefore": 859.0625,
+        "topAfter": 719.5
+      }
+    }
+  },
+  {
+    "width": 375,
+    "regions": {
+      ".detail-hero": {
+        "before": 255.75,
+        "after": 158.1875,
+        "reduction": 97.6,
+        "topBefore": 391.515625,
+        "topAfter": 381.515625
+      },
+      ".detail-metrics": {
+        "before": 136,
+        "after": 118,
+        "reduction": 18,
+        "topBefore": 713.0625,
+        "topAfter": 593.5
+      },
+      ".hero-patch-panel": {
+        "before": 316.171875,
+        "after": 260.78125,
+        "reduction": 55.4,
+        "topBefore": 682.265625,
+        "topAfter": 562.703125
+      },
+      ".counter-panel": {
+        "before": 290.796875,
+        "after": 254.359375,
+        "reduction": 36.4,
+        "topBefore": 998.4375,
+        "topAfter": 823.484375
+      },
+      ".synergy-panel": {
+        "before": 301.796875,
+        "after": 261.359375,
+        "reduction": 40.4,
+        "topBefore": 1299.234375,
+        "topAfter": 1083.84375
+      },
+      "#pick-history": {
+        "before": 377.734375,
+        "after": 323.6875,
+        "reduction": 54,
+        "topBefore": 859.0625,
+        "topAfter": 719.5
+      }
+    }
+  },
+  {
+    "width": 390,
+    "regions": {
+      ".detail-hero": {
+        "before": 255.75,
+        "after": 158.1875,
+        "reduction": 97.6,
+        "topBefore": 391.515625,
+        "topAfter": 381.515625
+      },
+      ".detail-metrics": {
+        "before": 136,
+        "after": 118,
+        "reduction": 18,
+        "topBefore": 713.0625,
+        "topAfter": 593.5
+      },
+      ".hero-patch-panel": {
+        "before": 316.171875,
+        "after": 260.78125,
+        "reduction": 55.4,
+        "topBefore": 682.265625,
+        "topAfter": 562.703125
+      },
+      ".counter-panel": {
+        "before": 290.796875,
+        "after": 254.359375,
+        "reduction": 36.4,
+        "topBefore": 998.4375,
+        "topAfter": 823.484375
+      },
+      ".synergy-panel": {
+        "before": 301.796875,
+        "after": 261.359375,
+        "reduction": 40.4,
+        "topBefore": 1299.234375,
+        "topAfter": 1083.84375
+      },
+      "#pick-history": {
+        "before": 377.734375,
+        "after": 323.6875,
+        "reduction": 54,
+        "topBefore": 859.0625,
+        "topAfter": 719.5
+      }
+    }
+  },
+  {
+    "width": 430,
+    "regions": {
+      ".detail-hero": {
+        "before": 240,
+        "after": 158.1875,
+        "reduction": 81.8,
+        "topBefore": 391.515625,
+        "topAfter": 381.515625
+      },
+      ".detail-metrics": {
+        "before": 136,
+        "after": 118,
+        "reduction": 18,
+        "topBefore": 697.3125,
+        "topAfter": 593.5
+      },
+      ".hero-patch-panel": {
+        "before": 287.375,
+        "after": 260.78125,
+        "reduction": 26.6,
+        "topBefore": 666.515625,
+        "topAfter": 562.703125
+      },
+      ".counter-panel": {
+        "before": 290.796875,
+        "after": 238.96875,
+        "reduction": 51.8,
+        "topBefore": 953.890625,
+        "topAfter": 823.484375
+      },
+      ".synergy-panel": {
+        "before": 301.796875,
+        "after": 261.359375,
+        "reduction": 40.4,
+        "topBefore": 1254.6875,
+        "topAfter": 1068.453125
+      },
+      "#pick-history": {
+        "before": 377.734375,
+        "after": 323.6875,
+        "reduction": 54,
+        "topBefore": 843.3125,
+        "topAfter": 719.5
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "regions": {
+      ".detail-hero": {
+        "before": 320,
+        "after": 320,
+        "reduction": 0,
+        "topBefore": 290,
+        "topAfter": 290
+      },
+      ".detail-metrics": {
+        "before": 67,
+        "after": 67,
+        "reduction": 0,
+        "topBefore": 687.796875,
+        "topAfter": 687.796875
+      },
+      ".hero-patch-panel": {
+        "before": 229,
+        "after": 229,
+        "reduction": 0,
+        "topBefore": 657,
+        "topAfter": 657
+      },
+      ".counter-panel": {
+        "before": 142,
+        "after": 142,
+        "reduction": 0,
+        "topBefore": 886,
+        "topAfter": 886
+      },
+      ".synergy-panel": {
+        "before": 153,
+        "after": 153,
+        "reduction": 0,
+        "topBefore": 1038,
+        "topAfter": 1038
+      },
+      "#pick-history": {
+        "before": 354.59375,
+        "after": 354.59375,
+        "reduction": 0,
+        "topBefore": 764.796875,
+        "topAfter": 764.796875
+      }
+    }
+  }
+]

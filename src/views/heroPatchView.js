@@ -1,8 +1,9 @@
 import {node} from './dom.js';
 import {latestHeroPatch} from '../models/officialPatchModel.js';
+import {compactText} from './compactText.js';
 const labels={buff:'버프',nerf:'너프',mixed:'복합 조정',adjustment:'조정',bugfix:'버그 수정'};
 const modeLabels={'live-5v5':'일반 라이브 5v5','live-6v6':'6v6 전용','stadium':'스타디움 전용'};
-function item(c){const element=node('div',undefined,'hero-patch-change');element.dataset.changeId=c.id;element.append(node('h3',c.abilityName));if(c.before!==null&&c.after!==null)element.append(node('strong',`${c.before} → ${c.after}${c.unit??''}`));else if(c.after!==null)element.append(node('strong',`변경 후 ${c.after}${c.unit??''}`));element.append(node('p',c.summaryKo));return element;}
+function item(c){const element=node('div',undefined,'hero-patch-change');element.dataset.changeId=c.id;element.append(node('h3',c.abilityName));if(c.before!==null&&c.after!==null)element.append(node('strong',`${c.before} → ${c.after}${c.unit??''}`));else if(c.after!==null)element.append(node('strong',`변경 후 ${c.after}${c.unit??''}`));element.append(compactText(c.summaryKo,'patch-summary',35));return element;}
 function contents(result){const fragment=document.createDocumentFragment();
  const priority=c=>['quality-of-life','cosmetic'].includes(c.category)?3:c.changeType==='bugfix'?2:c.before!==null&&c.after!==null?0:1;
  const changes=[...result.changes].sort((a,b)=>priority(a)-priority(b));for(const c of changes.slice(0,3))fragment.append(item(c));

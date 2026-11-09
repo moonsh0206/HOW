@@ -194,3 +194,56 @@
  .hero-patch-panel>small{font-size:12px;line-height:1.6}
  .detail-summary-main,.detail-summary-side,.detail-summary-main>*{min-width:0;max-width:100%}
 }
+.compact-text-toggle{display:none}
+/* Mobile density: retain two columns; reduce components, never scale the page. */
+@media(max-width:600px){
+ .hero-detail-page{padding-top:10px}
+ .detail-back{margin-bottom:6px}
+ .detail-hero{min-height:0;padding:16px 14px;justify-content:center}
+ .detail-identity{gap:10px}
+ .detail-portrait{width:52px;height:52px;border-radius:8px}
+ .detail-identity .eyebrow{font-size:7px;letter-spacing:1px;margin-bottom:4px}
+ .detail-identity h1{font-size:24px;line-height:1.2;margin-bottom:6px}
+ .detail-role-badges{gap:4px}
+ .detail-role-badges .role-tag,.detail-role-badges .subrole-tag{font-size:11px;padding:2px 5px;line-height:1.4}
+ .detail-description{font-size:12px;line-height:1.55;margin:10px 0 0}
+ .compact-text:has(.compact-text-toggle){display:grid;grid-template-columns:minmax(0,1fr) 44px;gap:4px;align-items:start}
+ .detail-hero>.compact-text:has(.compact-text-toggle){margin-top:10px}
+ .detail-hero>.compact-text:has(.compact-text-toggle) .detail-description{margin:0}
+ .compact-text.text-expanded{grid-template-columns:minmax(0,1fr)}
+ .compact-text:has(.compact-text-toggle):not(.text-expanded)>p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+ .compact-text-toggle{display:flex;align-items:center;min-height:44px;min-width:44px;padding:0;background:none;border:0;color:var(--blue);font-size:12px;line-height:1.4}
+ .detail-summary{margin:12px 0;padding:10px 8px}
+ .detail-summary-top{gap:8px}
+ .detail-summary-side{padding-left:8px}
+ .detail-summary-main .detail-metrics{gap:4px;align-items:stretch}
+ .detail-summary .detail-metrics>div{padding:0}
+ .detail-summary-main .detail-metrics dd{font-size:16px}
+ .detail-metric-button{min-height:52px;padding:5px;gap:2px}
+ .detail-metric-button .metric-label,.detail-summary dt{font-size:11px}
+ .detail-summary-main>.pick-history{margin:8px 0;padding-top:8px}
+ .detail-summary .history-heading h2{font-size:13px;line-height:1.4}
+ .detail-summary .history-current{font-size:15px;line-height:1.5;margin-top:4px}
+ .detail-summary .history-availability{font-size:11px;line-height:1.5;margin:6px 0}
+ .detail-summary .history-graph svg,.detail-summary .history-y{height:100px}
+ .detail-summary .history-observation{font-size:11px;line-height:1.5}
+ .detail-summary-side .hero-patch-panel{padding-bottom:6px}
+ .detail-summary-side .hero-patch-heading{gap:4px}
+ .detail-summary-side .hero-patch-heading h2{font-size:12px;line-height:1.5}
+ .detail-summary-side .patch-change-tag{font-size:10px;padding:1px 4px}
+ .detail-summary-side .hero-patch-panel>small{font-size:11px;line-height:1.4;margin:3px 0}
+ .hero-patch-change{padding-top:4px}
+ .hero-patch-change h3{font-size:12px;line-height:1.5;margin-bottom:1px}
+ .hero-patch-change strong{font-size:14px}
+ .detail-summary .hero-patch-change p{font-size:12px;line-height:1.5;margin:2px 0}
+ .hero-patch-more>summary,.hero-patch-mode>summary{font-size:11px;line-height:1.4}
+ .detail-summary-side .counter-list,.detail-summary-side .synergy-panel .counter-list{gap:2px 4px}
+ .detail-summary-side .counter-portrait{width:32px;height:32px;border-radius:6px}
+ .detail-summary-side .counter-hero{gap:2px}
+ .detail-summary-side .counter-hero strong{font-size:11px;line-height:1.4}
+ .detail-summary-side .counter-caption{font-size:11px;line-height:1.4;margin:3px 0}
+ .detail-summary-side .counter-explanation summary{font-size:11px;padding:6px 0;min-height:44px}
+ .detail-summary-side .synergy-panel,.detail-summary-side #detail-passives{margin-top:6px;padding-top:6px}
+ .detail-summary-side #detail-passives .ability-card{padding:6px}
+ .detail-summary-side #detail-passives p{font-size:12px;line-height:1.5;margin-top:4px}
+}

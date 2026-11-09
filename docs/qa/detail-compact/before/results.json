@@ -1,0 +1,1085 @@
+{
+  "source": "Unintercepted production notes.json and real perk JSON; OverFast captured details/statistics",
+  "results": [
+    {
+      "width": 320,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 408.609375
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 730.15625
+        },
+        ".hero-patch-panel": {
+          "height": 290.359375,
+          "top": 699.359375
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 989.71875
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1174.515625
+        },
+        "#pick-history": {
+          "height": 412.921875,
+          "top": 876.15625
+        }
+      },
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": 699.359375
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": 699.359375
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 320,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 408.609375
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 730.15625
+        },
+        ".hero-patch-panel": {
+          "height": 353.359375,
+          "top": 699.359375
+        },
+        ".counter-panel": {
+          "height": 290.796875,
+          "top": 1052.71875
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1353.515625
+        },
+        "#pick-history": {
+          "height": 412.921875,
+          "top": 876.15625
+        }
+      },
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": 699.359375
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": 699.359375
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 320,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 408.609375
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 730.15625
+        },
+        ".hero-patch-panel": {
+          "height": 369.359375,
+          "top": 699.359375
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 1068.71875
+        },
+        ".synergy-panel": {
+          "height": 185.796875,
+          "top": 1253.515625
+        },
+        "#pick-history": {
+          "height": 393.734375,
+          "top": 876.15625
+        }
+      },
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": 699.359375
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": 699.359375
+        }
+      ],
+      "background": {
+        "src": "",
+        "loaded": false
+      }
+    },
+    {
+      "width": 320,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 271.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 953.4375
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1138.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 360,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 316.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 290.796875,
+          "top": 998.4375
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1299.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 360,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 332.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 1014.4375
+        },
+        ".synergy-panel": {
+          "height": 185.796875,
+          "top": 1199.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "",
+        "loaded": false
+      }
+    },
+    {
+      "width": 360,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 240,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 697.3125
+        },
+        ".hero-patch-panel": {
+          "height": 271.171875,
+          "top": 666.515625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 937.6875
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1122.484375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 843.3125
+        }
+      },
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 666.515625
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 666.515625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 375,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 316.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 290.796875,
+          "top": 998.4375
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1299.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 375,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 314.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 996.4375
+        },
+        ".synergy-panel": {
+          "height": 185.796875,
+          "top": 1181.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "",
+        "loaded": false
+      }
+    },
+    {
+      "width": 375,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 240,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 697.3125
+        },
+        ".hero-patch-panel": {
+          "height": 271.171875,
+          "top": 666.515625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 937.6875
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1122.484375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 843.3125
+        }
+      },
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 666.515625
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 666.515625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 390,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 316.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 290.796875,
+          "top": 998.4375
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1299.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 390,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 255.75,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 713.0625
+        },
+        ".hero-patch-panel": {
+          "height": 314.171875,
+          "top": 682.265625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 996.4375
+        },
+        ".synergy-panel": {
+          "height": 185.796875,
+          "top": 1181.234375
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 859.0625
+        }
+      },
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 682.265625
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 682.265625
+        }
+      ],
+      "background": {
+        "src": "",
+        "loaded": false
+      }
+    },
+    {
+      "width": 390,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 430,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 240,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 697.3125
+        },
+        ".hero-patch-panel": {
+          "height": 224.375,
+          "top": 666.515625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 890.890625
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1075.6875
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 843.3125
+        }
+      },
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 666.515625
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 666.515625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 430,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 240,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 697.3125
+        },
+        ".hero-patch-panel": {
+          "height": 287.375,
+          "top": 666.515625
+        },
+        ".counter-panel": {
+          "height": 290.796875,
+          "top": 953.890625
+        },
+        ".synergy-panel": {
+          "height": 301.796875,
+          "top": 1254.6875
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 843.3125
+        }
+      },
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 666.515625
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 666.515625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 430,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 240,
+          "top": 391.515625
+        },
+        ".detail-metrics": {
+          "height": 136,
+          "top": 697.3125
+        },
+        ".hero-patch-panel": {
+          "height": 285.375,
+          "top": 666.515625
+        },
+        ".counter-panel": {
+          "height": 174.796875,
+          "top": 951.890625
+        },
+        ".synergy-panel": {
+          "height": 185.796875,
+          "top": 1136.6875
+        },
+        "#pick-history": {
+          "height": 377.734375,
+          "top": 843.3125
+        }
+      },
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 666.515625
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 666.515625
+        }
+      ],
+      "background": {
+        "src": "",
+        "loaded": false
+      }
+    },
+    {
+      "width": 430,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 430,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 320,
+          "top": 290
+        },
+        ".detail-metrics": {
+          "height": 67,
+          "top": 687.796875
+        },
+        ".hero-patch-panel": {
+          "height": 184,
+          "top": 657
+        },
+        ".counter-panel": {
+          "height": 142,
+          "top": 841
+        },
+        ".synergy-panel": {
+          "height": 153,
+          "top": 993
+        },
+        "#pick-history": {
+          "height": 354.59375,
+          "top": 764.796875
+        }
+      },
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": 657
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": 657
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 320,
+          "top": 290
+        },
+        ".detail-metrics": {
+          "height": 67,
+          "top": 687.796875
+        },
+        ".hero-patch-panel": {
+          "height": 229,
+          "top": 657
+        },
+        ".counter-panel": {
+          "height": 142,
+          "top": 886
+        },
+        ".synergy-panel": {
+          "height": 153,
+          "top": 1038
+        },
+        "#pick-history": {
+          "height": 354.59375,
+          "top": 764.796875
+        }
+      },
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": 657
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": 657
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "heights": {
+        ".detail-hero": {
+          "height": 320,
+          "top": 290
+        },
+        ".detail-metrics": {
+          "height": 67,
+          "top": 687.796875
+        },
+        ".hero-patch-panel": {
+          "height": 209,
+          "top": 657
+        },
+        ".counter-panel": {
+          "height": 142,
+          "top": 866
+        },
+        ".synergy-panel": {
+          "height": 153,
+          "top": 1018
+        },
+        "#pick-history": {
+          "height": 354.59375,
+          "top": 764.796875
+        }
+      },
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": 657
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": 657
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import {renderPerkSelection,renderPerkStatisticsInfo} from './perkStatisticsView.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {renderHeroPatch} from './heroPatchView.js';
+import {compactText} from './compactText.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
 import {statisticsNeedsReview} from '../models/statisticsQuality.js';
@@ -66,7 +67,7 @@ export function createHeroDetailView() {
         badges.append(node('span', ROLES[hero.role], `role-tag ${hero.role}`));
         if (hero.subrole) badges.append(node('span', hero.subrole.subroleNameKo, 'subrole-tag'));
         title.append(h1, badges);
-        identity.append(title); header.append(identity, node('p', hero.description, 'detail-description')); root.append(header);
+        identity.append(title); header.append(identity, compactText(hero.description, 'detail-description')); root.append(header);
         const stats = node('section'); stats.id = 'detail-page-statistics'; stats.setAttribute('aria-label', '영웅 통계 요약'); root.append(stats);
         const mapStats = node('div');mapStats.id='detail-map-statistics';root.append(mapStats);
         const tabs = node('nav', undefined, 'detail-tabs'); tabs.setAttribute('aria-label', '영웅 상세 섹션');
@@ -142,9 +143,21 @@ export function createHeroDetailView() {
         icon.addEventListener('error',()=>icon.remove(),{once:true});
       }
       if (!detail.subrole) passive.querySelector('p').textContent = '확인된 하위 역할 정보가 없습니다.';
-      const patchPanel=renderHeroPatch(patchArchive,route.key);if(patchPanel)side.append(patchPanel);
+      const patchPanel=renderHeroPatch(patchArchive,route.key);
+      const previousPatch=stats.querySelector('.hero-patch-panel');
+      const patchFocus=previousPatch?.contains(document.activeElement)?document.activeElement.closest('[data-change-id]')?.dataset.changeId:null;
+      if(patchPanel){
+        for(const old of previousPatch?.querySelectorAll('[data-change-id] .compact-text.text-expanded')??[]){
+          const id=old.closest('[data-change-id]').dataset.changeId;
+          const next=[...patchPanel.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===id);
+          next?.querySelector('.compact-text-toggle')?.click();
+        }
+        const oldDetails=previousPatch?.querySelectorAll('details')??[];
+        patchPanel.querySelectorAll('details').forEach((el,i)=>{el.open=oldDetails[i]?.open??false;});side.append(patchPanel);
+      }
       side.append(renderCounters(counters),renderSynergies(synergies), passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
+      if(patchFocus){const item=[...stats.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===patchFocus);item?.querySelector('.compact-text-toggle')?.focus({preventScroll:true});}
       const mapRoot=root.querySelector('#detail-map-statistics'),mapFocused=mapRoot.contains(document.activeElement),mapPanel=renderMapStatistics(mapStatistics,model,route.key);
       mapRoot.replaceChildren(mapPanel);mapRoot.hidden=route.tab!=='overview';
       if(mapFocused)mapPanel.querySelector('button')?.focus({preventScroll:true});
