@@ -1,0 +1,272 @@
+[
+  {
+    "key": "ana",
+    "name": "아나",
+    "nameEn": "Ana"
+  },
+  {
+    "key": "anran",
+    "name": "안란",
+    "nameEn": "Anran"
+  },
+  {
+    "key": "ashe",
+    "name": "애쉬",
+    "nameEn": "Ashe"
+  },
+  {
+    "key": "baptiste",
+    "name": "바티스트",
+    "nameEn": "Baptiste"
+  },
+  {
+    "key": "bastion",
+    "name": "바스티온",
+    "nameEn": "Bastion"
+  },
+  {
+    "key": "brigitte",
+    "name": "브리기테",
+    "nameEn": "Brigitte"
+  },
+  {
+    "key": "cassidy",
+    "name": "캐서디",
+    "nameEn": "Cassidy"
+  },
+  {
+    "key": "dmon",
+    "name": "D.Mon",
+    "nameEn": "D.Mon"
+  },
+  {
+    "key": "doctrine",
+    "name": "독트린",
+    "nameEn": "Doctrine"
+  },
+  {
+    "key": "domina",
+    "name": "도미나",
+    "nameEn": "Domina"
+  },
+  {
+    "key": "doomfist",
+    "name": "둠피스트",
+    "nameEn": "Doomfist"
+  },
+  {
+    "key": "dva",
+    "name": "D.Va",
+    "nameEn": "D.Va"
+  },
+  {
+    "key": "echo",
+    "name": "에코",
+    "nameEn": "Echo"
+  },
+  {
+    "key": "emre",
+    "name": "엠레",
+    "nameEn": "Emre"
+  },
+  {
+    "key": "freja",
+    "name": "프레야",
+    "nameEn": "Freja"
+  },
+  {
+    "key": "genji",
+    "name": "겐지",
+    "nameEn": "Genji"
+  },
+  {
+    "key": "hanzo",
+    "name": "한조",
+    "nameEn": "Hanzo"
+  },
+  {
+    "key": "hazard",
+    "name": "해저드",
+    "nameEn": "Hazard"
+  },
+  {
+    "key": "illari",
+    "name": "일리아리",
+    "nameEn": "Illari"
+  },
+  {
+    "key": "jetpack-cat",
+    "name": "제트팩 캣",
+    "nameEn": "Jetpack Cat"
+  },
+  {
+    "key": "junker-queen",
+    "name": "정커퀸",
+    "nameEn": "Junker Queen"
+  },
+  {
+    "key": "junkrat",
+    "name": "정크랫",
+    "nameEn": "Junkrat"
+  },
+  {
+    "key": "juno",
+    "name": "주노",
+    "nameEn": "Juno"
+  },
+  {
+    "key": "kiriko",
+    "name": "키리코",
+    "nameEn": "Kiriko"
+  },
+  {
+    "key": "lifeweaver",
+    "name": "라이프위버",
+    "nameEn": "Lifeweaver"
+  },
+  {
+    "key": "lucio",
+    "name": "루시우",
+    "nameEn": "Lúcio"
+  },
+  {
+    "key": "mauga",
+    "name": "마우가",
+    "nameEn": "Mauga"
+  },
+  {
+    "key": "mei",
+    "name": "메이",
+    "nameEn": "Mei"
+  },
+  {
+    "key": "mercy",
+    "name": "메르시",
+    "nameEn": "Mercy"
+  },
+  {
+    "key": "mizuki",
+    "name": "미즈키",
+    "nameEn": "Mizuki"
+  },
+  {
+    "key": "moira",
+    "name": "모이라",
+    "nameEn": "Moira"
+  },
+  {
+    "key": "orisa",
+    "name": "오리사",
+    "nameEn": "Orisa"
+  },
+  {
+    "key": "pharah",
+    "name": "파라",
+    "nameEn": "Pharah"
+  },
+  {
+    "key": "ramattra",
+    "name": "라마트라",
+    "nameEn": "Ramattra"
+  },
+  {
+    "key": "reaper",
+    "name": "리퍼",
+    "nameEn": "Reaper"
+  },
+  {
+    "key": "reinhardt",
+    "name": "라인하르트",
+    "nameEn": "Reinhardt"
+  },
+  {
+    "key": "roadhog",
+    "name": "로드호그",
+    "nameEn": "Roadhog"
+  },
+  {
+    "key": "shion",
+    "name": "시온",
+    "nameEn": "Shion"
+  },
+  {
+    "key": "sierra",
+    "name": "시에라",
+    "nameEn": "Sierra"
+  },
+  {
+    "key": "sigma",
+    "name": "시그마",
+    "nameEn": "Sigma"
+  },
+  {
+    "key": "sojourn",
+    "name": "소전",
+    "nameEn": "Sojourn"
+  },
+  {
+    "key": "soldier-76",
+    "name": "솔저: 76",
+    "nameEn": "Soldier: 76"
+  },
+  {
+    "key": "sombra",
+    "name": "솜브라",
+    "nameEn": "Sombra"
+  },
+  {
+    "key": "symmetra",
+    "name": "시메트라",
+    "nameEn": "Symmetra"
+  },
+  {
+    "key": "torbjorn",
+    "name": "토르비욘",
+    "nameEn": "Torbjörn"
+  },
+  {
+    "key": "tracer",
+    "name": "트레이서",
+    "nameEn": "Tracer"
+  },
+  {
+    "key": "vendetta",
+    "name": "벤데타",
+    "nameEn": "Vendetta"
+  },
+  {
+    "key": "venture",
+    "name": "벤처",
+    "nameEn": "Venture"
+  },
+  {
+    "key": "widowmaker",
+    "name": "위도우메이커",
+    "nameEn": "Widowmaker"
+  },
+  {
+    "key": "winston",
+    "name": "윈스턴",
+    "nameEn": "Winston"
+  },
+  {
+    "key": "wrecking-ball",
+    "name": "레킹볼",
+    "nameEn": "Wrecking Ball"
+  },
+  {
+    "key": "wuyang",
+    "name": "우양",
+    "nameEn": "Wuyang"
+  },
+  {
+    "key": "zarya",
+    "name": "자리야",
+    "nameEn": "Zarya"
+  },
+  {
+    "key": "zenyatta",
+    "name": "젠야타",
+    "nameEn": "Zenyatta"
+  }
+]

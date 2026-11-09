@@ -1,0 +1,1025 @@
+{
+  "source": "Unintercepted production notes.json and real perk JSON; OverFast captured details/statistics",
+  "results": [
+    {
+      "width": 320,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": 74.84375
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": 74.84375
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 320,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": -4.15625
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": -4.15625
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 320,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 140.125,
+          "x": 23,
+          "y": 73.84375
+        },
+        {
+          "width": 121.859375,
+          "x": 175.125,
+          "y": 73.84375
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 320,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 14.75
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 14.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 360,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 32.75
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 32.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 360,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 161.53125,
+          "x": 23,
+          "y": 129.75
+        },
+        {
+          "width": 140.453125,
+          "x": 196.53125,
+          "y": 129.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 360,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 360,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 94
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 94
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 375,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 32.75
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 32.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 375,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 169.546875,
+          "x": 23,
+          "y": 147.75
+        },
+        {
+          "width": 147.4375,
+          "x": 204.546875,
+          "y": 147.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 375,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 375,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 94
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 94
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 390,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 14.75
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 14.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 390,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 177.578125,
+          "x": 23,
+          "y": 147.75
+        },
+        {
+          "width": 154.40625,
+          "x": 212.578125,
+          "y": 147.75
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 390,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 430,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 141
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 141
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 430,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 62
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 62
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 430,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 198.96875,
+          "x": 23,
+          "y": 177
+        },
+        {
+          "width": 173.03125,
+          "x": 233.96875,
+          "y": 177
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 430,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 430,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 600,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 289.90625,
+          "x": 23,
+          "y": 215
+        },
+        {
+          "width": 252.078125,
+          "x": 324.90625,
+          "y": 215
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 600,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 289.90625,
+          "x": 23,
+          "y": 117
+        },
+        {
+          "width": 252.078125,
+          "x": 324.90625,
+          "y": 117
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 600,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 289.90625,
+          "x": 23,
+          "y": 269
+        },
+        {
+          "width": 252.078125,
+          "x": 324.90625,
+          "y": 269
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 600,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 600,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 700,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 322,
+          "x": 43,
+          "y": 215
+        },
+        {
+          "width": 280,
+          "x": 377,
+          "y": 215
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 700,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 322,
+          "x": 43,
+          "y": 117
+        },
+        {
+          "width": 280,
+          "x": 377,
+          "y": 117
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 700,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 322,
+          "x": 43,
+          "y": 287
+        },
+        {
+          "width": 280,
+          "x": 377,
+          "y": 287
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 700,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 700,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 768,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 358.359375,
+          "x": 43,
+          "y": 233
+        },
+        {
+          "width": 311.625,
+          "x": 413.359375,
+          "y": 233
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 768,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 358.359375,
+          "x": 43,
+          "y": 117
+        },
+        {
+          "width": 311.625,
+          "x": 413.359375,
+          "y": 117
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 768,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 358.359375,
+          "x": 43,
+          "y": 287
+        },
+        {
+          "width": 311.625,
+          "x": 413.359375,
+          "y": 287
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 768,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 768,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 1024,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 551.65625,
+          "x": 59,
+          "y": 347
+        },
+        {
+          "width": 334.328125,
+          "x": 630.65625,
+          "y": 347
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1024,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 551.65625,
+          "x": 59,
+          "y": 183
+        },
+        {
+          "width": 334.328125,
+          "x": 630.65625,
+          "y": 183
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1024,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 551.65625,
+          "x": 59,
+          "y": 304
+        },
+        {
+          "width": 334.328125,
+          "x": 630.65625,
+          "y": 304
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1024,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1024,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": 366
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": 366
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": -295
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": -295
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0,
+      "columns": [
+        {
+          "width": 711.046875,
+          "x": 139,
+          "y": 341
+        },
+        {
+          "width": 430.9375,
+          "x": 870.046875,
+          "y": 341
+        }
+      ],
+      "background": {
+        "src": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt3ca77f61db745988/631a8a691613910e6926bfc4/2600_Wrecking_Ball.jpg",
+        "loaded": true
+      }
+    },
+    {
+      "width": 1440,
+      "key": "reaper",
+      "changes": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "dmon",
+      "changes": 5,
+      "overflow": 0
+    }
+  ]
+}

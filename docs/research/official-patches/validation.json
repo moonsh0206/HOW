@@ -1,0 +1,10 @@
+{
+  "tests": 192,
+  "failures": 0,
+  "build": "passed",
+  "pages": "HTTP and MIME passed, /HOW/, 11 assets",
+  "protectedFiles": 14,
+  "scheduled": false,
+  "publication": false,
+  "notesBytes": 5475
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "src/domain/meta.js",
+    "hash": "e6465b199ee37549132d499e37b8cb19dfd131622591242b2d4a176ad59a3e92"
+  },
+  {
+    "file": "src/domain/metaPolicies.js",
+    "hash": "1474280a11f9f5f19d21b40b014b82128315801d9762961d51c2c69d6cf87ace"
+  },
+  {
+    "file": "src/domain/recommendationPolicy.js",
+    "hash": "b177e78e77de5d59c9ae585ca1819b1a1fa25991b6af02ade186bf755c152ffa"
+  },
+  {
+    "file": "public/data/snapshots/2026-11-02T05-36-24.500Z.json",
+    "hash": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816"
+  },
+  {
+    "file": "public/data/snapshots/2026-11-04T00-52-25.812Z.json",
+    "hash": "e6dce1cd90d8f902ce0397c4f9f7b9797e96b72452427a6f7eac548ee89cba2c"
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-37-44.293Z.json",
+    "hash": "9616c40f1e7b402c97f84d45b1fba716fba5a079b8a812a94d10566049898457"
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-38-15.758Z.json",
+    "hash": "78734a5da6fe967ea8a5966098ed926030297a7865850dea1d67c031fa54a092"
+  },
+  {
+    "file": "public/data/snapshots/2026-11-06T02-38-31.983Z.json",
+    "hash": "6fc97329b12b38424bde9660820dd436ebfaa1b03d2808891d976cb31c2825a8"
+  },
+  {
+    "file": "public/data/snapshots/index.json",
+    "hash": "cfdb6b5148f3ae47ff2d128d713780a7f22aaeca948d91eb577132f29ab64344"
+  },
+  {
+    "file": "public/data/perks/overlooker-perks.json",
+    "hash": "5213b0b59c614f99eba8edaf78185899103afb3b06ed4744fa719cf06325111e"
+  },
+  {
+    "file": "public/data/patches/notes.json",
+    "hash": "c8222d342e3d28ba14cdedc5afc2b1899dc232160006dc7d36c9755de47514b0"
+  }
+]

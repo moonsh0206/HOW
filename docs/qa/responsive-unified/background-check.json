@@ -1,0 +1,20 @@
+[
+  {
+    "key": "genji",
+    "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltb6d5cb702c3e2476/631a8b57e7bdcf0dd996c8dd/2600_Genji.jpg",
+    "file": "docs/qa/responsive-unified/genji-background.jpg",
+    "status": 200
+  },
+  {
+    "key": "ana",
+    "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt76ab9c7b4d291756/631a8bab636d390da7825df5/2600_Ana.jpg",
+    "file": "docs/qa/responsive-unified/ana-background.jpg",
+    "status": 200
+  },
+  {
+    "key": "reaper",
+    "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt205f5d2e64729af4/631a8af90e1b4f0e7b89a528/2600_Reaper.jpg",
+    "file": "docs/qa/responsive-unified/reaper-background.jpg",
+    "status": 200
+  }
+]

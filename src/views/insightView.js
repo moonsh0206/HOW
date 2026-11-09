@@ -1,7 +1,7 @@
 import { hiddenGems, hotHeroes, classifyMeta } from '../domain/insights.js';
 import { node, image } from './dom.js';
 import { filterLabel } from '../models/statisticsModel.js';
-import { renderPatchNote,setPatchNoteMobile } from './patchNoteView.js';
+import { renderPatchNote,setPatchNoteMobile,updatePatchNote } from './patchNoteView.js';
 
 function recommendation(hero, hot = false, category = '', mobile = false) {
   const link = node('a', undefined, 'insight-hero'); link.href = `#/heroes/${hero.key}`;
@@ -11,9 +11,9 @@ function recommendation(hero, hot = false, category = '', mobile = false) {
   text.append(node('small', mobile && field ? `${field[1]} ${hero.statistics[field[0]] == null ? '미제공' : hero.statistics[field[0]].toFixed(1) + '%'}` : mobile&&hot ? `픽률 +${hero.pickDelta.toFixed(1)}%p` : mobile ? `승률 ${hero.statistics.winRate == null ? '미제공' : hero.statistics.winRate.toFixed(1)+'%'}` : hot ? `픽률 +${hero.pickDelta.toFixed(1)}%p · 승률 ${hero.winDelta >= 0 ? '+' : ''}${hero.winDelta.toFixed(1)}%p` : category === 'contestedPicks' ? `밴률 ${hero.statistics.banRate.toFixed(1)}% · 역할 내 밴률 1위` : `승률 ${hero.statistics.winRate == null ? '미제공' : hero.statistics.winRate.toFixed(1) + '%'} · 픽률 ${hero.statistics.pickRate == null ? '미제공' : hero.statistics.pickRate.toFixed(1) + '%'}`));
   link.append(text); return link;
 }
-export function createInsightView() {
+export function createInsightView({patchModel}={}) {
   const root = document.querySelector('.meta-insights');
-  if(!document.querySelector('#current-patch-note'))root.closest('.sidebar')?.prepend(renderPatchNote());
+  if(!document.querySelector('#current-patch-note'))root.closest('.sidebar')?.prepend(renderPatchNote(patchModel?.current()));
   const patch=document.querySelector('#current-patch-note'),patchHome=document.createComment('Patch note desktop position');patch.before(patchHome);
   const home = document.createComment('Meta insights desktop position'); root.before(home);
   const media = window.matchMedia?.('(max-width: 600px)');
@@ -44,6 +44,7 @@ export function createInsightView() {
   }
   const view = {
     render(model) {
+      updatePatchNote(patch,patchModel?.current());
       lastModel = model;
       const { state } = model; const heroes = model.enrichedHeroes();
       const hot = document.querySelector('#hot-content'), gems = document.querySelector('#gems-content');

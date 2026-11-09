@@ -18,6 +18,8 @@ import { createMapService } from './services/mapService.js';
 import { createMapStatisticsController } from './controllers/mapStatisticsController.js';
 import { selectMetaPolicy } from './domain/metaPolicies.js';
 import {createFilterStorage} from './storage/filterStorage.js';
+import {createOfficialPatchModel} from './models/officialPatchModel.js';
+import {createOfficialPatchService} from './services/officialPatchService.js';
 
 const storage = createFavoritesStorage();
 const saved = storage.load();
@@ -25,12 +27,14 @@ const view = createHeroView();
 const model = createHeroModel(saved.keys,{metaPolicy:selectMetaPolicy({development:import.meta.env.DEV,experiment:import.meta.env.VITE_META_EXPERIMENT})});
 const filterStorage=createFilterStorage(),savedFilters=filterStorage.load();if(savedFilters)model.state.statsFilters=savedFilters;
 const detailView = createHeroDetailView();
+const patchModel=createOfficialPatchModel();
 const snapshots = createSnapshotService({ base: import.meta.env.BASE_URL });
 const statisticsService=createStatisticsService();
 const mapService=createMapService();
 const mapStatisticsController=createMapStatisticsController({statisticsService,onChange:()=>router.refresh()});
-const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots, mapStatisticsController,perkStatisticsService:createPerkStatisticsService({base:import.meta.env.BASE_URL}) });
-const insights = createInsightView();
+const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots, mapStatisticsController,perkStatisticsService:createPerkStatisticsService({base:import.meta.env.BASE_URL}),patchModel });
+const insights = createInsightView({patchModel});
+createOfficialPatchService({base:import.meta.env.BASE_URL}).getNotes().then(data=>{patchModel.set(data);router.refresh();insights.render(model);}).catch(error=>{patchModel.fail(error);insights.render(model);});
 if (!saved.available) view.notify('저장된 즐겨찾기를 읽지 못했습니다. 이번 방문에서 새로 선택할 수 있습니다.');
 router.start();
 createHeroController({ model, view, service: createOverfastService(), statisticsService, snapshotService: snapshots,mapService, storage,filterStorage,

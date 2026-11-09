@@ -1,0 +1,59 @@
+{
+  "patches": [
+    {
+      "patchId": "patch-2026-11-05",
+      "sourceHash": "8a27fac2932cc9550f33d19892315d1806d5ed5add66cf5821a62818514606b7",
+      "sourceHashEn": "02b88c8f8b685be0a61fd80603fe3479dc770c4068c18822a9008ec040481a46",
+      "reviewedAt": "2026-11-09",
+      "summaryKo": "레킹볼의 갈고리 회수 중 이동 제한과 아군 가속 적용이 개선됐습니다.",
+      "changes": [
+        {
+          "id": "8926c8fb7f635b4b8813a4481be3714c8d78e2e0a48454dde1539989d2722133",
+          "englishId": "efb0659dd20272598e6e74e58ffb52cf68825ccfff7b929c411703c26b9f6225",
+          "before": null,
+          "after": null,
+          "gameMode": "live-5v5",
+          "changeType": "buff",
+          "summaryKo": "갈고리 회수 중 기본 속도 제한이 15% 높아졌습니다."
+        },
+        {
+          "id": "5129eceed5b24c8deb4e16bf1eb2c08fa77005f6f43b4231121c18ded207c8df",
+          "englishId": "435f991308582aa13fdc9aa91f715fb301e6c6da4ef974543cf7a807bc3d5675",
+          "before": null,
+          "after": null,
+          "gameMode": "live-5v5",
+          "changeType": "buff",
+          "summaryKo": "갈고리를 회수하는 동안 아군 가속 효과가 제한 속도에도 반영됩니다."
+        }
+      ]
+    },
+    {
+      "patchId": "patch-2026-11-03",
+      "sourceHash": "432beaa4c308d6d7b1cea0a16a47ca57eedadb00ea590a1367580130af9a8840",
+      "sourceHashEn": "dbcfc9892637c439f20b49bc1575b981a6b4a412f3080c3219873f2132ae8bad",
+      "reviewedAt": "2026-11-09",
+      "summaryKo": "돌격·공격·지원 영웅의 교전 성능과 생존 능력이 조정됐습니다.",
+      "highlightsKo": ["D.Mon의 방벽 운용과 순간 화력 조정", "아나의 생체 수류탄 공격력 하향", "일리아리의 공격 충전과 치유 성능 상향"],
+      "changes": [
+        {
+          "id": "fc34f4b7e21ea6dd95526f63fef9eeaedebcac79051a8889501ab67f0dc55986",
+          "englishId": "27736b9e894264ac428c40745fe5e269138a1cb2c7e4c4c9298160dcfc81633f",
+          "before": 90,
+          "after": 60,
+          "gameMode": "live-5v5",
+          "changeType": "nerf",
+          "summaryKo": "폭발 피해가 줄어 적에게 주는 순간 피해가 감소했습니다."
+        },
+        {
+          "id": "8b477e2c34a4d7cfa5ebefeb2700f56c8bab717dd817774c296fd7f99fa7fb8a",
+          "englishId": "16d8aed9eb17028d3e7f87462c47705a4db976d28650eaa053940c6ee952c9aa",
+          "before": 2,
+          "after": 1.5,
+          "gameMode": "live-5v5",
+          "changeType": "nerf",
+          "summaryKo": "튕겨내기의 유지 시간이 짧아져 방어 가능한 시간이 감소했습니다."
+        }
+      ]
+    }
+  ]
+}

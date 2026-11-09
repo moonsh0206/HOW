@@ -6,10 +6,11 @@ import {JSDOM} from 'jsdom';
 import names from '../src/data/mapNamesKo.json' with {type:'json'};
 import {MAP_KEYS,MAP_NAMES} from '../src/models/mapModel.js';
 import {renderPatchNote} from '../src/views/patchNoteView.js';
-import {CURRENT_PATCH_NOTE} from '../src/data/currentPatchNote.js';
+import {selectCurrentPatchNote} from '../src/data/currentPatchNote.js';
 import {createSnapshotService} from '../src/services/snapshotService.js';
 import {DEFAULT_FILTERS as UI_DEFAULT_FILTERS,ALL_RANK_FILTERS} from '../src/models/statisticsModel.js';
 const DEFAULT_FILTERS={...UI_DEFAULT_FILTERS,division:'diamond'}; // Explicit original-cohort regression fixture.
+const CURRENT_PATCH_NOTE=selectCurrentPatchNote(JSON.parse(fs.readFileSync(new URL('../public/data/patches/notes.json',import.meta.url))));
 
 test('official localization: entire API catalogue tracked; all selectable maps match official Korean labels',()=>{
  const raw=JSON.parse(fs.readFileSync(new URL('../docs/research/map-localization/maps-response.json',import.meta.url)));
@@ -34,7 +35,7 @@ test('snapshot preservation: original file bytes/index retained; diamond/all/map
 
 test('patch note card: compact own summary, Korean date, verified direct official link and safe disclosure',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
- try{const card=renderPatchNote();assert.equal(card.querySelector('h2').textContent,'이번 패치 노트');assert(card.textContent.includes('2026.11.04'));assert.equal(card.querySelector('details').open,false);
- const link=card.querySelector('a');assert.equal(link.href,CURRENT_PATCH_NOTE.sourceUrl);assert.equal(link.target,'_blank');assert(link.rel.includes('noopener'));assert(link.rel.includes('noreferrer'));assert.equal(new URL(link.href).hash,'#patch-2026-11-03');assert.equal(CURRENT_PATCH_NOTE.statisticsWindowStatus,'unverified');
+ try{const card=renderPatchNote(CURRENT_PATCH_NOTE);assert.equal(card.querySelector('h2').textContent,'이번 패치 노트');assert(card.textContent.includes(CURRENT_PATCH_NOTE.dateKo.replaceAll('-','.')));assert.equal(card.querySelector('details').open,false);
+ const link=card.querySelector('a');assert.equal(link.href,CURRENT_PATCH_NOTE.sourceUrl);assert.equal(link.target,'_blank');assert(link.rel.includes('noopener'));assert(link.rel.includes('noreferrer'));assert.equal(new URL(link.href).hash,'#'+CURRENT_PATCH_NOTE.sourceId);assert.equal(CURRENT_PATCH_NOTE.statisticsWindowStatus,'unverified');
  }finally{globalThis.document=prior;dom.window.close();}
 });

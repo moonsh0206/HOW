@@ -1,0 +1,75 @@
+# INERT PROPOSAL. Not under .github/workflows. Requires separate publication approval.
+name: Approved official patch publication
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        type: boolean
+        default: false
+# After approval only: schedule: [{cron: '23 */6 * * *'}]
+permissions:
+  contents: read
+concurrency:
+  group: how-official-patch-publication
+  cancel-in-progress: false
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: node scripts/collect-official-patch-notes.js --apply --review docs/research/official-patches/review-complete.json --report .artifacts/review.json
+      - run: npm test
+      - run: npm run build
+      - run: npm run verify:pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-patch-data
+          path: |
+            public/data/patches/notes.json
+            .artifacts/review.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  publish:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
+    needs: normalize
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Reject an outdated publication candidate
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - uses: actions/download-artifact@v4
+        with:
+          name: verified-patch-data
+          path: candidate
+      - name: Persist only the validated canonical JSON
+        run: |
+          cp candidate/public/data/patches/notes.json public/data/patches/notes.json
+          git add public/data/patches/notes.json
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update verified official patch facts'
+            git push origin HEAD:main
+          fi
+      # GITHUB_TOKEN pushes do not trigger a second Pages build. Deploy the already
+      # tested artifact in THIS workflow; never rely on a downstream push trigger.
+      - uses: actions/deploy-pages@v4
+        id: deployment

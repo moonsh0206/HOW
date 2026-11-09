@@ -1,0 +1,35 @@
+name: Official patch normalization and site validation (manual artifact only)
+on:
+  workflow_dispatch:
+# Proposed only, NOT ACTIVE: schedule cron '23 */6 * * *' (UTC).
+# Detection and review artifacts are separate from repository publication.
+permissions:
+  contents: read
+concurrency:
+  group: how-official-patch-detection
+  cancel-in-progress: false
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Normalize verified facts in runner only; no commit, push or deployment
+        run: node scripts/collect-official-patch-notes.js --apply --review docs/research/official-patches/review-complete.json --report .artifacts/official-patches.json
+      - run: npm test
+      - run: npm run build
+      - run: npm run verify:pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-patch-review
+          path: |
+            .artifacts/official-patches.json
+            public/data/patches/notes.json
+            dist/
+          retention-days: 14

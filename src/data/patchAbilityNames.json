@@ -1,0 +1,108 @@
+{
+  "wrecking-ball": {
+    "갈고리 고정": "Grappling Claw",
+    "버그 수정": "Bug Fixes"
+  },
+  "dmon": {
+    "버그 수정": "Bug Fixes",
+    "추가 강타 - 주요 특전": "Overstrike - Major Perk",
+    "파워 배리어": "Power Barrier",
+    "추진기": "Propulsors"
+  },
+  "junker-queen": {
+    "기본 능력": "기본 능력",
+    "지휘의 외침": "Commanding Shout",
+    "도륙": "Carnage"
+  },
+  "mauga": {
+    "기본 능력": "기본 능력",
+    "화염 기관포": "Incendiary Chainguns"
+  },
+  "ramattra": {
+    "공허 가속기": "Void Accelerator"
+  },
+  "winston": {
+    "활력 충전 방벽 - 주요 특전": "Revitalizing Barrier – Major Perk",
+    "테슬라장 - 파워": "Tesla Field – Power"
+  },
+  "anran": {
+    "주작의 부채": "Zhuque Fans",
+    "맹염 질주": "Inferno Rush",
+    "주작 승천": "Vermillion Ascent"
+  },
+  "echo": {
+    "공중 탄약 - 보조 특전": "Aerial Munitions – Minor Perk"
+  },
+  "emre": {
+    "기본 능력": "기본 능력",
+    "사이버 파편 수류탄": "Cyber Frag"
+  },
+  "genji": {
+    "튕겨내기": "Deflect",
+    "용의 아가리 - 파워": "Wyrm's Maw – Power"
+  },
+  "hanzo": {
+    "음파 분열 - 주요 특전": "Sonic Disruption – Major Perk"
+  },
+  "reaper": {
+    "기본 능력": "기본 능력"
+  },
+  "shion": {
+    "처형": "Execution",
+    "광란의 살육": "Satsuriku Spree"
+  },
+  "vendetta": {
+    "팔라틴 팽": "Palatine Fang",
+    "소용돌이 질주": "Whirlwind Dash",
+    "정점의 핏빛 욕망 - 파워": "Apex Bloodlust – Power",
+    "마구잡이 맹공격 - 파워": "Rampant Onslaught – Power",
+    "버그 수정": "Bug Fixes"
+  },
+  "ana": {
+    "생체 수류탄": "Biotic Grenade"
+  },
+  "baptiste": {
+    "치유 파동": "Regenerative Burst"
+  },
+  "brigitte": {
+    "격려": "Inspire"
+  },
+  "doctrine": {
+    "영겁의 홀": "Eternal Scepter",
+    "추진형 장막": "Shrouded Momentum",
+    "주입": "Infuse"
+  },
+  "illari": {
+    "태양 소총": "Solar Rifle",
+    "치유의 태양석": "Healing Pylon"
+  },
+  "jetpack-cat": {
+    "기본 능력": "기본 능력",
+    "정신 없는 비행": "Frenetic Flight"
+  },
+  "sombra": {
+    "긴급 패치": "Hotfix",
+    "사이버 스페이스": "Cyberspace",
+    "EMP": "EMP",
+    "버그 수정": "Bug Fixes"
+  },
+  "cassidy": {
+    "터지는 포화 - 파워": "Barrage Blastin' – Power",
+    "은탄환 - 파워": "Silver Bullet – Power"
+  },
+  "sojourn": {
+    "강력 부착 - 파워": "Hard Stuck – Power"
+  },
+  "sierra": {
+    "버그 수정": "Bug Fixes"
+  },
+  "juno": {
+    "버그 수정": "Bug Fixes"
+  },
+  "mizuki": {
+    "버그 수정": "Bug Fixes"
+  },
+  "dva": {
+    "버그 수정": "Bug Fixes"
+  }
+}

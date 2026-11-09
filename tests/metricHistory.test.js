@@ -52,7 +52,7 @@ test('dashboard: metric switching shares one archive request; passive appears on
       assert.equal(document.querySelector('#pick-history-title').textContent,`${label} · 패치·관측 이력`);
       assert.equal(document.querySelector(`[data-history-metric="${metric}"]`).getAttribute('aria-pressed'),'true');
       assert.equal(document.activeElement.dataset.historyMetric,metric);
-      assert(document.querySelector('.history-current').textContent.includes(`${current}%`));
+      assert(document.querySelector('.history-current').textContent.includes(`${current.toFixed(1)}%`));
       assert.equal(document.querySelectorAll('.history-point').length,2);
       assert.equal(document.querySelectorAll('.history-point[data-storage="browser"]').length,1);
       assert.equal(document.querySelectorAll('.history-point[data-storage="stored"]').length,1);

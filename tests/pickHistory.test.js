@@ -157,8 +157,8 @@ test('history DOM: precise points, touch/click/keyboard, accessible table, no da
     const panel=renderPickHistory({status:'ready',days:7,result:series},DEFAULT_FILTERS);document.body.append(panel);
     assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-segment').length,1);
     assert.equal(panel.querySelector('select'),null);assert.equal(panel.querySelector('.history-source'),null);assert.equal(panel.querySelectorAll('.history-table tbody tr').length,2);
-    panel.querySelector('.history-point').dispatchEvent(new dom.window.MouseEvent('click',{bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('픽률 0%'));
-    panel.querySelectorAll('.history-point')[1].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('12.34%'));
+    panel.querySelector('.history-point').dispatchEvent(new dom.window.MouseEvent('click',{bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('픽률 0.0%'));
+    panel.querySelectorAll('.history-point')[1].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes('12.3%'));
     assert(renderPickHistory({status:'ready',result:build([])},DEFAULT_FILTERS).textContent.includes('기록 수집 중'));
     assert.equal(renderPickHistory({status:'ready',result:build([snap('2026-11-02T00:00:00Z',1)])},DEFAULT_FILTERS).querySelectorAll('.history-point').length,1);
     assert(renderPickHistory({status:'error',error:'503'},DEFAULT_FILTERS).querySelector('[data-action="history-retry"]'));

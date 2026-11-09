@@ -7,6 +7,7 @@ import { renderSynergies } from './synergyView.js';
 import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import {renderPerkSelection,renderPerkStatisticsInfo} from './perkStatisticsView.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
+import {renderHeroPatch} from './heroPatchView.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
 import {statisticsNeedsReview} from '../models/statisticsQuality.js';
@@ -38,7 +39,7 @@ export function createHeroDetailView() {
     return wrapper;
   }
   return {
-    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null}) {
+    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null) {
       const { state } = model;
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
@@ -55,10 +56,6 @@ export function createHeroDetailView() {
         const header = node('header', undefined, 'detail-hero');
         if (hero.backgrounds.length) {
           const picture = node('picture', undefined, 'detail-background');
-          for (const [size, media] of [['sm', '(max-width: 600px)'], ['lg', '(max-width: 1400px)']]) {
-            const background = hero.backgrounds.find(item => item.sizes.includes(size));
-            if (background) { const source = node('source'); source.media = media; source.srcset = background.url; picture.append(source); }
-          }
           const fallback = hero.backgrounds.find(item => item.sizes.includes('xl+')) ?? hero.backgrounds[0]; picture.append(image(fallback.url)); header.append(picture);
         }
         const identity = node('div', undefined, 'detail-identity');
@@ -145,6 +142,7 @@ export function createHeroDetailView() {
         icon.addEventListener('error',()=>icon.remove(),{once:true});
       }
       if (!detail.subrole) passive.querySelector('p').textContent = '확인된 하위 역할 정보가 없습니다.';
+      const patchPanel=renderHeroPatch(patchArchive,route.key);if(patchPanel)side.append(patchPanel);
       side.append(renderCounters(counters),renderSynergies(synergies), passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
       const mapRoot=root.querySelector('#detail-map-statistics'),mapFocused=mapRoot.contains(document.activeElement),mapPanel=renderMapStatistics(mapStatistics,model,route.key);

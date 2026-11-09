@@ -11,7 +11,7 @@ export function parseRoute(hash) {
   if (['', '#', '#heroes', '#favorites', '#/'].includes(hash)) return { page: 'list' };
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel }) {
   let generation = 0, currentKey, route = parseRoute(location.hash);
   const sharedFilters=document.querySelector('#statistics-filters'),filterHome=document.createComment('Shared statistics filters');sharedFilters?.before(filterHome);
   let detailState = { status: 'loading', result: null, error: '' };
@@ -61,7 +61,7 @@ export function createRoutingController({ model, detailService, detailView, coun
       if(detailState.status==='ready')mapStatisticsController?.setContext(route.key,model.state.statsFilters);
       loadHistory(); loadPerks();
       const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
-      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation);
+      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
     } else {mapStatisticsController?.leave();if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
   }

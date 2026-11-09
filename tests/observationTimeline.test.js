@@ -20,8 +20,8 @@ test('observation fixture: two dated points for all three metrics; actual values
   for(const [metric,values,label] of [['winRate',[50,52],'승률'],['pickRate',[10,12],'픽률'],['banRate',[1,3],'밴률']]){
    const result=build(data(),metric);assert.deepEqual(result.points.map(p=>p.value),values);assert.equal(result.comparisonSegments.length,1);assert(result.points.every(p=>p.verificationStatus==='unverified'&&p.patch===null&&p.stored));
    const panel=renderMetricHistory({metric,status:'ready',result},filters);assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-comparison').length,1);
-   const marks=panel.querySelectorAll('.history-point');assert(marks[0].getAttribute('aria-label').includes(`${values[0]}%`));assert(marks[1].getAttribute('aria-label').includes(`${values[1]}%`));
-   marks[0].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes(`${label} ${values[0]}%`));
+   const marks=panel.querySelectorAll('.history-point');assert(marks[0].getAttribute('aria-label').includes(`${values[0].toFixed(1)}%`));assert(marks[1].getAttribute('aria-label').includes(`${values[1].toFixed(1)}%`));
+   marks[0].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes(`${label} ${values[0].toFixed(1)}%`));
    assert.equal(result.points[0].collectedAt,'2026-11-01T00:00:00Z');assert.equal(result.points[1].collectedAt,'2026-11-02T00:00:00Z');assert.equal(panel.querySelectorAll('.history-table tbody tr').length,2);
    assert(panel.textContent.includes('원본 집계 기간이 다를 수 있습니다'));
   }

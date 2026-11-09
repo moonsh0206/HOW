@@ -1,0 +1,131 @@
+{
+  "source": "Unintercepted production notes.json and real perk JSON; OverFast captured details/statistics",
+  "results": [
+    {
+      "width": 320,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "ana",
+      "expected": "90 → 60",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "genji",
+      "expected": "2 → 1.5초",
+      "date": "2026.11.03",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "key": "wrecking-ball",
+      "expected": "15%",
+      "date": "2026.11.05",
+      "order": [
+        "hero-patch-panel",
+        "counter-panel",
+        "synergy-panel",
+        "detail-section"
+      ],
+      "perkBars": 4,
+      "overflow": 0
+    }
+  ]
+}
