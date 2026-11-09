@@ -1,0 +1,47 @@
+[
+  {
+    "viewport": 320,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false
+  },
+  {
+    "viewport": 375,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false
+  },
+  {
+    "viewport": 390,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false
+  },
+  {
+    "viewport": 430,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 96,
+    "height": 28.328125,
+    "ratio": 3.388858246001103,
+    "overflow": false
+  },
+  {
+    "viewport": 1440,
+    "src": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "width": 108,
+    "height": 31.859375,
+    "ratio": 3.3898970083374205,
+    "overflow": false
+  }
+]

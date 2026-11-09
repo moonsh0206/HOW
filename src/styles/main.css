@@ -129,6 +129,10 @@ html.detail-open{overflow:hidden}
   .banner-content{padding-inline:16px}
   .site-header nav{font-size:11px}
 }
+.site-header .header-brand{display:inline-flex;flex-direction:column;align-items:center;gap:6px;max-width:100%;min-height:44px}
+.site-header .header-logo{display:block;width:108px;max-width:100%;height:auto;object-fit:contain}
+.site-header .header-brand i{display:block;margin:0;font-size:8px;letter-spacing:2px;line-height:1.4}
+@media(max-width:600px){.site-header .header-logo{width:96px}.site-header .header-brand{gap:5px}.site-header .header-brand i{font-size:8px;letter-spacing:1.5px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .tier-badge[data-tier],button.unavailable[data-tier]{cursor:pointer;min-height:44px;min-width:44px;border:1px solid currentColor}.tier-reason-dialog{box-sizing:border-box;width:min(680px,calc(100% - 24px));max-height:85dvh;overflow:auto;background:#151e2d;color:#edf0f5;border:1px solid #64748b;border-radius:16px;padding:24px;line-height:1.7}.tier-reason-dialog::backdrop{background:#050912cc}.tier-reason-dialog button{min-height:44px;padding:8px 20px;background:#f99e1a;color:#111827;border:0;border-radius:8px}
