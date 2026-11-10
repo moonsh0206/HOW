@@ -1,0 +1,131 @@
+{
+  "imageUnchanged": true,
+  "results": [
+    {
+      "width": 320,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 240,
+        "height": 135.0625,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 375,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 240,
+        "height": 135.0625,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 390,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 240,
+        "height": 135.0625,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 430,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 240,
+        "height": 135.0625,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 768,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 320,
+        "height": 180.09375,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 1024,
+      "mode": "captured public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 320,
+        "height": 180.09375,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    },
+    {
+      "width": 1440,
+      "mode": "live public/empty API; mocked error/delay",
+      "favoritePersists": true,
+      "noNavigationOnStar": true,
+      "resetMenu": true,
+      "lateResponseIgnored": true,
+      "focusRestored": true,
+      "removed": true,
+      "overflow": 0,
+      "image": {
+        "width": 320,
+        "height": 180.09375,
+        "naturalWidth": 1672,
+        "naturalHeight": 941,
+        "src": "http://127.0.0.1:5198/HOW/assets/illustrations/HOW_kinetic_grasp_clean.png"
+      }
+    }
+  ]
+}

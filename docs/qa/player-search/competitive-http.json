@@ -1,0 +1,20 @@
+{
+  "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+  "status": 200,
+  "at": "2026-11-10T04:31:10.575Z",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "1",
+    "cache-control": "public, max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Tue, 10 Nov 2026 04:31:10 GMT",
+    "server": "nginx",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-cache-status": "hit",
+    "x-cache-ttl": "600"
+  }
+}

@@ -10,8 +10,8 @@ export function createMainMenuView(){
    else if(!mobile&&favorites.previousSibling!==favoriteHome)favoriteHome.after(favorites);
    if(focused?.isConnected)focused.focus({preventScroll:true});
   }
-  if(meta)meta.hidden=route.page!=='meta'||!mobile;if(player)player.hidden=route.page!=='player-search';
-  const page=route.page==='detail'?(origin==='#/meta'?'meta':'list'):route.page;
+  if(meta)meta.hidden=route.page!=='meta'||!mobile;if(player)player.hidden=!['player-search','player'].includes(route.page);
+  const page=route.page==='detail'?(origin==='#/meta'?'meta':'list'):route.page==='player'?'player-search':route.page;
   for(const link of document.querySelectorAll('[data-main-menu]')){
    if(link.dataset.mainMenu===page)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
   }

@@ -1,0 +1,19 @@
+{
+  "url": "https://overfast-api.tekrop.fr/players?name=TeKrop-2217&limit=20&offset=0",
+  "status": 200,
+  "at": "2026-11-10T04:36:49.620Z",
+  "headers": {
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=600",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Tue, 10 Nov 2026 04:36:49 GMT",
+    "server": "nginx",
+    "strict-transport-security": "max-age=63072000",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-cache-status": "hit",
+    "x-cache-ttl": "600"
+  }
+}

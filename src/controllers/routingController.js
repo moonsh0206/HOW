@@ -1,4 +1,7 @@
 import {syncCompactMain} from '../views/compactMainView.js';
+import {createPlayerSearchController} from './playerSearchController.js';
+import {createOverfastPlayerProvider} from '../services/overfastPlayerProvider.js';
+import {playerPath} from '../models/playerModel.js';
 import { createCounterService } from '../services/counterService.js';
 import { HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
@@ -8,6 +11,8 @@ import { createSynergyService } from '../services/synergyService.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {createMainMenuView} from '../views/mainMenuView.js';
 export function parseRoute(hash) {
+  const player=/^#\/players\/([^/?#]+)$/.exec(hash);
+  if(player){try{const id=decodeURIComponent(player[1]);playerPath(id);return {page:'player',id};}catch{return {page:'not-found'};}}
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
   if (['', '#', '#heroes', '#favorites', '#/', '#/tiers'].includes(hash)) return { page: 'list' };
@@ -15,9 +20,10 @@ export function parseRoute(hash) {
   if(hash==='#/player-search')return {page:'player-search'};
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider }) {
   let generation = 0, currentKey, route = parseRoute(location.hash);
   const menuView=createMainMenuView(),scrollPositions=new Map();
+  const playerSearch=createPlayerSearchController({root:document.querySelector('#player-search-page'),provider:playerProvider??createOverfastPlayerProvider(),heroes:()=>model.state.heroes,heroDetails:detailService,onNavigate:id=>{location.hash=`/players/${encodeURIComponent(id)}`;}});
   const menuMedia=window.matchMedia?.('(max-width: 767px)');
   let currentHash=location.hash,lastMainHash='#/tiers';
   let scrollFrame=null;
@@ -71,6 +77,8 @@ export function createRoutingController({ model, detailService, detailView, coun
   function render() {
     const mobile=menuMedia?.matches??(window.innerWidth<=767);
     menuView.render(route,lastMainHash,mobile);
+    playerSearch.setActive(route.page==='player-search'||route.page==='player');
+    if(route.page==='player-search'||route.page==='player')playerSearch.setRoute(route.page==='player'?route.id:null);
     document.querySelector('#list-page').hidden = route.page !== 'list'&&!(route.page==='meta'&&!mobile);
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
@@ -121,9 +129,12 @@ export function createRoutingController({ model, detailService, detailView, coun
     if (event.target.closest('[data-action="perk-stats-retry"]')) { perkKey=null; render(); }
   };
   const mapChange=()=>{};
+  const resetPlayerMenu=event=>{if(event.button>0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+    if(event.target.closest('.main-menu a[data-main-menu="player-search"],.site-header a[href="#/player-search"]'))playerSearch.reset();
+  };
   return {
-    start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry); document.addEventListener('change',mapChange); navigate(); },
+    start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
-    stop() { ++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('change',mapChange); },
+    stop() { playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

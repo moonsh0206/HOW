@@ -1,0 +1,408 @@
+[
+  {
+    "width": 320,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:27 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:27 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 375,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:29 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:29 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 390,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:32 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:32 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 430,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:34 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:35 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 768,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:37 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:37 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 1024,
+    "mode": "captured actual responses",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:40 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:40 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  },
+  {
+    "width": 1440,
+    "mode": "live API",
+    "overflow": 0,
+    "name": "TeKrop",
+    "text": "TeKropData Broker경쟁전 등급 · API 제공 마지막 플레이 시즌PC · 돌격등급 정보 없음PC · 공격등급 정보 없음PC · 지원실버 4PC · 시즌 22추천 레벨 2Blizzard 프로필 갱신: 2026. 5. 6. 오전 1:34:41PC 경쟁전 전적플레이 3시간 22분 44초 · 19경기 · 6승 / 13패 · 승률 31.58%TOP HEROES · 경쟁전 플레이 시간바티스트플레이 1시간 40분 56초 · 10경기 · 2승 / 8패승률 20% · KDA 1.25아나플레이 1시간 29분 23초 · 8경기 · 3승 / 5패승률 37.5% · KDA 2.38캐서디플레이 0시간 8분 21초 · 1경기 · 1승 / 0패승률 100% · KDA 3.17루시우플레이 0시간 3분 18초 · 0경기 · 0승 / 0패승률 0% · KDA 0.33키리코플레이 0시간 0분 46초 · 0경기 · 0승 / 0패승률 0% · KDA 0프로필 HOW 조회 2026. 11. 10. 오후 2:03:45 · 브라우저 캐시 재사용 · 제공처 Age 정보 없음전적 HOW 조회 2026. 11. 10. 오후 2:03:46 · API 조회 · 제공처 Age 정보 없음출처: OverFast APIAPI 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다.",
+    "heroes": 5,
+    "barColors": [
+      "rgb(103, 185, 207)",
+      "rgb(156, 180, 217)",
+      "rgb(207, 124, 114)",
+      "rgb(154, 215, 94)",
+      "rgb(230, 137, 133)"
+    ],
+    "mostBackground": "https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt5ef4dacade9780da/631a8b99e337fa0dc7263be7/2600_Baptiste.jpg",
+    "order": [
+      "baptiste",
+      "ana",
+      "cassidy",
+      "lucio",
+      "kiriko"
+    ],
+    "bars": [
+      100,
+      88.55680317040951,
+      8.272787318361956,
+      3.269484808454425,
+      0.7595772787318362
+    ],
+    "rankImage": "http://127.0.0.1:5198/HOW/assets/ranks/silver.png",
+    "inputFont": "16px",
+    "http": [
+      {
+        "url": "https://overfast-api.tekrop.fr/players?name=TeKrop&limit=20&offset=0",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+        "status": 200
+      },
+      {
+        "url": "https://overfast-api.tekrop.fr/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+        "status": 200
+      }
+    ],
+    "requests": 5,
+    "cacheReuse": true,
+    "backNavigation": true,
+    "reloadForm": true
+  }
+]
