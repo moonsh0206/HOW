@@ -17,5 +17,5 @@ export function updatePatchNote(card,note){
 // Move the same links, never duplicate them or reset the disclosure's open state.
 export function setPatchNoteMobile(card,mobile){
  const target=mobile?card.querySelector('details'):card;
- for(const selector of ['.patch-note-link','.patch-note-info']){const element=card.querySelector(selector);if(element&&element.parentElement!==target)target.append(element);}
+ for(const selector of ['.patch-note-summary','.patch-note-link','.patch-note-info']){const element=card.querySelector(selector);if(element&&element.parentElement!==target){if(selector==='.patch-note-summary'&&!mobile)card.querySelector('details').before(element);else target.append(element);}}
 }

@@ -15,10 +15,10 @@ import {statisticsNeedsReview} from '../models/statisticsQuality.js';
 import { ROLES } from '../models/heroModel.js';
 import { filterLabel,isCompositeDivision,COMPOSITE_NOTICE,divisionName } from '../models/statisticsModel.js';
 
-function itemCard(item) {
+function itemCard(item, compact = false) {
   const card = node('article', undefined, 'ability-card'); const header = node('div', undefined, 'ability-heading');
   if (item.icon) header.append(image(item.icon));
-  header.append(node('h3', item.name)); card.append(header, node('p', item.description));
+  header.append(node('h3', item.name)); card.append(header, compact ? compactText(item.description, 'ability-description', 18) : node('p',item.description));
   if (item.video?.mp4 || item.video?.webm) {
     const disclosure = node('details', undefined, 'ability-video'); disclosure.append(node('summary', '시연 영상 보기'));
     const video = node('video'); video.controls = true; video.preload = 'none'; video.playsInline = true;
@@ -35,7 +35,8 @@ export function createHeroDetailView() {
   function section(id, title, items) {
     const wrapper = node('section', undefined, 'detail-section'); wrapper.id = id;
     wrapper.append(node('h2', title)); const grid = node('div', undefined, 'ability-grid');
-    for (const item of items) {const card=itemCard(item);card.dataset.itemName=item.name;grid.append(card);}
+    const compact=['detail-minor','detail-major','detail-abilities','detail-unique-passives'].includes(id);
+    for (const item of items) {const card=itemCard(item,compact);card.dataset.itemName=item.name;grid.append(card);}
     wrapper.append(items.length ? grid : node('p', '현재 API에서 제공된 정보가 없습니다.', 'empty-note'));
     return wrapper;
   }

@@ -1,3 +1,4 @@
+import {syncCompactMain} from '../views/compactMainView.js';
 import { createCounterService } from '../services/counterService.js';
 import { HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
@@ -80,6 +81,7 @@ export function createRoutingController({ model, detailService, detailView, coun
       detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
     } else {mapStatisticsController?.leave();const metaHost=route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
+    syncCompactMain(sharedFilters);
   }
   async function load() {
     resetHistory();

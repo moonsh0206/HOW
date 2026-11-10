@@ -14,6 +14,20 @@ const raw=await json('../public/data/perks/overlooker-perks.json'),archive=norma
 const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
 const tick=()=>new Promise(r=>setImmediate(r));
 async function domRun(run){const dom=new JSDOM(html,{url:'https://moonsh0206.github.io/HOW/#/heroes/genji'});const old={document:globalThis.document,window:globalThis.window,location:globalThis.location};Object.assign(globalThis,{document:dom.window.document,window:dom.window,location:dom.window.location});try{await run(dom.window);}finally{dom.window.close();Object.assign(globalThis,old);}}
+
+test('mobile card description disclosure preserves original text and rate values through rerenders and tab changes',()=>domRun(()=>{
+ const model=createHeroModel(),view=createHeroDetailView(),state={status:'ready',result:archive.frames.get('genji')};
+ const detailState={status:'ready',result:{detail:genji,fetchedAt:'2026-11-07T00:00:00Z'}};
+ view.render(detailState,model,{key:'genji',tab:'perks'},undefined,undefined,undefined,undefined,state);
+ const card=document.querySelector('#detail-minor .ability-card'),description=card.querySelector('.ability-description'),toggle=card.querySelector('.compact-text-toggle');
+ assert.equal(description.textContent,genji.minor[0].description);assert.equal(toggle.getAttribute('aria-expanded'),'false');
+ const rate=card.querySelector('.perk-selection-heading').textContent;toggle.click();assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(toggle.textContent,'접기');
+ view.render(detailState,model,{key:'genji',tab:'abilities'},undefined,undefined,undefined,undefined,state);
+ view.render(detailState,model,{key:'genji',tab:'perks'},undefined,undefined,undefined,undefined,state);
+ assert.equal(document.querySelector('#detail-minor .ability-card'),card);assert.equal(description.textContent,genji.minor[0].description);assert.equal(toggle.getAttribute('aria-expanded'),'true');assert.equal(card.querySelector('.perk-selection-heading').textContent,rate);
+ toggle.click();assert.equal(toggle.getAttribute('aria-expanded'),'false');
+ const video=document.querySelector('#detail-abilities .ability-video');assert(video);assert.equal(video.open,false);assert.equal(video.querySelector('video').preload,'none');assert(video.querySelector('source').src);
+}));
 test('stored JSON -> Model -> existing cards: all 54 heroes and 216 perks match exact rates/counts without standalone statistics cards',()=>domRun(()=>{
  const model=createHeroModel(),view=createHeroDetailView();let total=0;
  for(const identity of identities){const detail={...genji,...identity,name:identity.key,minor:identity.minor.map(p=>({...p,description:'기존 설명'})),major:identity.major.map(p=>({...p,description:'기존 설명'}))};

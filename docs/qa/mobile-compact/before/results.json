@@ -1,0 +1,418 @@
+[
+  {
+    "width": 320,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 65.515625,
+        "bottom": 65.515625
+      },
+      "menu": {
+        "y": 65.515625,
+        "height": 49,
+        "bottom": 114.515625
+      },
+      "banner": {
+        "y": 114.515625,
+        "height": 160.78125,
+        "bottom": 275.296875
+      },
+      "heading": {
+        "y": 291.296875,
+        "height": 29,
+        "bottom": 320.296875
+      },
+      "cohort": {
+        "y": 328.296875,
+        "height": 243.390625,
+        "bottom": 571.6875
+      },
+      "filters": {
+        "y": 401.59375,
+        "height": 159.09375,
+        "bottom": 560.6875
+      },
+      "patch": {
+        "y": 579.6875,
+        "height": 59,
+        "bottom": 638.6875
+      },
+      "card": {
+        "y": 1011.15625,
+        "height": 139.390625,
+        "bottom": 1150.546875
+      },
+      "overflow": 0
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 360,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 65.515625,
+        "bottom": 65.515625
+      },
+      "menu": {
+        "y": 65.515625,
+        "height": 49,
+        "bottom": 114.515625
+      },
+      "banner": {
+        "y": 114.515625,
+        "height": 160.78125,
+        "bottom": 275.296875
+      },
+      "heading": {
+        "y": 291.296875,
+        "height": 29,
+        "bottom": 320.296875
+      },
+      "cohort": {
+        "y": 328.296875,
+        "height": 238.296875,
+        "bottom": 566.59375
+      },
+      "filters": {
+        "y": 401.59375,
+        "height": 154,
+        "bottom": 555.59375
+      },
+      "patch": {
+        "y": 574.59375,
+        "height": 59,
+        "bottom": 633.59375
+      },
+      "card": {
+        "y": 1006.0625,
+        "height": 139.390625,
+        "bottom": 1145.453125
+      },
+      "overflow": 0
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 375,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 65.515625,
+        "bottom": 65.515625
+      },
+      "menu": {
+        "y": 65.515625,
+        "height": 49,
+        "bottom": 114.515625
+      },
+      "banner": {
+        "y": 114.515625,
+        "height": 160.78125,
+        "bottom": 275.296875
+      },
+      "heading": {
+        "y": 291.296875,
+        "height": 29,
+        "bottom": 320.296875
+      },
+      "cohort": {
+        "y": 328.296875,
+        "height": 238.296875,
+        "bottom": 566.59375
+      },
+      "filters": {
+        "y": 401.59375,
+        "height": 154,
+        "bottom": 555.59375
+      },
+      "patch": {
+        "y": 574.59375,
+        "height": 59,
+        "bottom": 633.59375
+      },
+      "card": {
+        "y": 1006.0625,
+        "height": 139.390625,
+        "bottom": 1145.453125
+      },
+      "overflow": 0
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 390,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 65.515625,
+        "bottom": 65.515625
+      },
+      "menu": {
+        "y": 65.515625,
+        "height": 49,
+        "bottom": 114.515625
+      },
+      "banner": {
+        "y": 114.515625,
+        "height": 160.78125,
+        "bottom": 275.296875
+      },
+      "heading": {
+        "y": 291.296875,
+        "height": 29,
+        "bottom": 320.296875
+      },
+      "cohort": {
+        "y": 328.296875,
+        "height": 238.296875,
+        "bottom": 566.59375
+      },
+      "filters": {
+        "y": 401.59375,
+        "height": 154,
+        "bottom": 555.59375
+      },
+      "patch": {
+        "y": 574.59375,
+        "height": 59,
+        "bottom": 633.59375
+      },
+      "card": {
+        "y": 1006.0625,
+        "height": 139.390625,
+        "bottom": 1145.453125
+      },
+      "overflow": 0
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 430,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 65.515625,
+        "bottom": 65.515625
+      },
+      "menu": {
+        "y": 65.515625,
+        "height": 49,
+        "bottom": 114.515625
+      },
+      "banner": {
+        "y": 114.515625,
+        "height": 160.78125,
+        "bottom": 275.296875
+      },
+      "heading": {
+        "y": 291.296875,
+        "height": 29,
+        "bottom": 320.296875
+      },
+      "cohort": {
+        "y": 328.296875,
+        "height": 219.046875,
+        "bottom": 547.34375
+      },
+      "filters": {
+        "y": 382.34375,
+        "height": 154,
+        "bottom": 536.34375
+      },
+      "patch": {
+        "y": 555.34375,
+        "height": 59,
+        "bottom": 614.34375
+      },
+      "card": {
+        "y": 986.8125,
+        "height": 139.390625,
+        "bottom": 1126.203125
+      },
+      "overflow": 0
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1024,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 364.4375,
+        "bottom": 452.4375
+      },
+      "heading": {
+        "y": 477.4375,
+        "height": 81,
+        "bottom": 558.4375
+      },
+      "cohort": {
+        "y": 578.4375,
+        "height": 325.890625,
+        "bottom": 904.328125
+      },
+      "filters": {
+        "y": 733.328125,
+        "height": 154,
+        "bottom": 887.328125
+      },
+      "patch": {
+        "y": 476.4375,
+        "height": 252.96875,
+        "bottom": 729.40625
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "overflow": 0
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1440,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 400.65625,
+        "bottom": 488.65625
+      },
+      "heading": {
+        "y": 513.65625,
+        "height": 81,
+        "bottom": 594.65625
+      },
+      "cohort": {
+        "y": 614.65625,
+        "height": 243.890625,
+        "bottom": 858.546875
+      },
+      "filters": {
+        "y": 769.546875,
+        "height": 72,
+        "bottom": 841.546875
+      },
+      "patch": {
+        "y": 512.65625,
+        "height": 252.96875,
+        "bottom": 765.625
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "overflow": 0
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1920,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 402.96875,
+        "bottom": 490.96875
+      },
+      "heading": {
+        "y": 515.96875,
+        "height": 81,
+        "bottom": 596.96875
+      },
+      "cohort": {
+        "y": 616.96875,
+        "height": 243.890625,
+        "bottom": 860.859375
+      },
+      "filters": {
+        "y": 771.859375,
+        "height": 72,
+        "bottom": 843.859375
+      },
+      "patch": {
+        "y": 514.96875,
+        "height": 252.96875,
+        "bottom": 767.9375
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "bottom": 0
+      },
+      "overflow": 0
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  }
+]

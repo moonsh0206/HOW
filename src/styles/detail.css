@@ -252,3 +252,25 @@
  .detail-summary #detail-passives .ability-card{padding:6px}
  .detail-summary #detail-passives p{font-size:12px;line-height:1.5;margin-top:4px}
 }
+/* Two-column mobile ability/perk cards; overview passives stay independent. */
+@media(max-width:768px){
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-items:start}
+ #hero-detail-page #detail-unique-passives .ability-grid:has(>.ability-card:only-child){grid-template-columns:minmax(0,1fr)}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives){margin:14px 0 18px}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives)>h2{font-size:17px;margin-bottom:8px;line-height:1.5}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-card{padding:10px;border-radius:9px;min-width:0}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-heading{gap:7px;align-items:flex-start;flex-wrap:wrap}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-heading img{width:32px;height:32px;padding:3px;border-radius:6px}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-heading h3{flex:1 1 65px;min-width:0;font-size:13px;line-height:1.45;overflow-wrap:anywhere}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .compact-text{display:block;margin-top:7px}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-description{font-size:12px;line-height:1.6;margin:0;overflow-wrap:anywhere}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .compact-text:not(.text-expanded):has(.compact-text-toggle)>p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .compact-text-toggle{display:flex;min-width:44px;min-height:44px;align-items:center;font-size:12px;padding:0;border:0;background:none;color:var(--blue)}
+ #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .perk-selection{margin-top:7px;padding-top:7px}
+ #hero-detail-page :is(#detail-minor,#detail-major) .perk-selection-heading{gap:2px 6px;margin-bottom:6px}
+ #hero-detail-page :is(#detail-minor,#detail-major) .perk-selection-heading strong{font-size:19px;line-height:1.3}
+ #hero-detail-page :is(#detail-minor,#detail-major) .perk-selection-heading span{font-size:11px;line-height:1.5}
+ #hero-detail-page :is(#detail-minor,#detail-major) .perk-selection-bar{height:6px}
+ #detail-abilities .ability-video summary,#detail-unique-passives .ability-video summary{font-size:12px;min-height:44px;padding:10px 0;line-height:1.5}
+ #detail-abilities .ability-video video,#detail-unique-passives .ability-video video{max-width:100%;margin-top:4px}
+}

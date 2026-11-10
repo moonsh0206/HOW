@@ -1,4 +1,5 @@
 /* Three real routes share a single model, filter bar and insight DOM. */
+.banner-copy-mobile{display:none}
 .site-header .header-favorites{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-left:auto;font-size:12px;color:var(--muted)}
 .site-header .header-favorites:hover,.site-header .header-favorites[aria-current]{color:var(--orange)}
 .site-header .header-tag{margin-left:0}
@@ -77,3 +78,50 @@
  #meta-page .insight-details>small{display:block;font-size:12px;line-height:1.6;margin-top:6px}
 }
 @media(max-width:360px){#meta-page .insight-grid,#meta-page .classification-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Main roster only: detail pages and desktop retain their existing sizing. */
+@media(max-width:767px){
+ body:has(#list-page:not([hidden])) .site-header{min-height:54px;padding:5px 12px;gap:10px}
+ body:has(#list-page:not([hidden])) .site-header .header-logo{height:30px;width:auto}
+ body:has(#list-page:not([hidden])) .header-brand i{font-size:8px}
+ body:has(#list-page:not([hidden])) .main-menu>a{min-height:44px;padding:8px 4px}
+ #list-page .hero-banner{height:165px;min-height:165px}
+ #list-page .banner-content{padding:8px 12px;width:100%}
+ #list-page .banner-content h1{font-size:22px;line-height:1.22;letter-spacing:-.9px}
+ #list-page .banner-copy-desktop{display:none}
+ #list-page .banner-copy-mobile{display:block;font-size:12px;line-height:1.5;margin:4px 0}
+ #list-page .banner-content .primary-button{font-size:12px;min-height:44px;padding:7px 11px}
+ #list-page .page-shell{padding-top:12px}
+ #heroes .roster-heading{margin-bottom:4px}
+ #heroes .roster-heading h2{font-size:22px}
+ #heroes .roster-heading .directory-label{display:none}
+ #heroes>.cohort-banner{margin-bottom:6px;padding-bottom:6px}
+ #heroes .cohort-banner h2{font-size:12px;line-height:1.5;margin-bottom:0}
+ #heroes .cohort-banner .statistics-filters{gap:6px 8px;margin-top:4px;align-items:start}
+ #heroes .statistics-filters label{font-size:11px;gap:3px}
+ #heroes .filter-combobox-trigger{min-height:44px;font-size:16px;padding:6px 8px;gap:5px}
+ #heroes .compact-advanced{grid-column:1/-1;min-width:0}
+ #heroes .compact-advanced>summary,#heroes .compact-source>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;color:#bac8db;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+ #heroes .compact-advanced>summary::after,#heroes .compact-source>summary::after{content:'⌄';margin-left:auto;padding-left:8px}
+ #heroes .compact-advanced[open]>summary::after,#heroes .compact-source[open]>summary::after{content:'⌃'}
+ #heroes .compact-advanced-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.18fr);gap:8px}
+ #heroes .compact-source>summary{min-height:30px;font-size:11px}
+ #heroes .compact-source p{font-size:12px;line-height:1.5}
+ #heroes .compact-source .statistics-notice{margin:4px 0;padding:8px}
+ #heroes>#current-patch-note{margin-bottom:6px;padding:0 8px;grid-template-columns:minmax(0,1fr) 72px;min-height:44px}
+ #heroes>#current-patch-note .patch-note-date{grid-row:1;align-self:center;font-size:12px;line-height:1.5}
+ #heroes>#current-patch-note .patch-note-summary{display:none}
+ #heroes>#current-patch-note details{grid-row:1}
+ #heroes>#current-patch-note details[open]{grid-row:2}
+ #heroes>#current-patch-note details[open] .patch-note-summary{display:block}
+ #heroes .toolbar{padding:0 4px 6px;gap:6px;display:flex;flex-wrap:wrap}
+ #heroes .role-filters{padding:0;gap:0;flex:1}
+ #heroes .role-filters button{min-height:44px;padding:6px 10px;flex:1;font-size:12px}
+ #heroes .search-field{flex-basis:100%;min-height:44px;padding:4px 9px;order:-1}
+ #heroes .search-field input{font-size:16px;padding:2px}
+ #heroes .list-meta{display:flex;padding:0 4px 6px;gap:6px;flex-wrap:nowrap}
+ #heroes .list-meta>p{font-size:11px;min-width:0}
+ #heroes .list-meta>label{flex:1;gap:4px;justify-content:flex-end;font-size:11px}
+ #heroes .list-meta .filter-combobox{width:190px}
+ #heroes .hero-cards{gap:8px}
+}

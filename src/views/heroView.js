@@ -1,4 +1,5 @@
 import { ROLES } from '../models/heroModel.js';
+import {syncCompactMain} from './compactMainView.js';
 import { MODES, REGIONS, DIVISION_GROUPS, filterLabel,divisionName,isCompositeDivision,COMPOSITE_NOTICE } from '../models/statisticsModel.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
@@ -124,6 +125,7 @@ export function createHeroView() {
       statsMessage.textContent = state.statsStatus === 'loading' ? `통계 조회 중${hasStats ? ' · 이전 조회값을 표시합니다' : ' · 도착 전까지 미제공'}` : stale ? `오래된 통계 사용 중 · ${state.statsError}` : state.statsStatus === 'error' ? `통계 미제공 · ${state.statsError}` : state.statsStatus === 'empty' ? '이 조회 조건의 통계가 없습니다.' : state.statsStatus === 'ready' ? '실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어' : '통계 연결 대기 중';
       document.querySelector('[data-action="stats-refresh"]').disabled = state.statsStatus === 'loading';
       if(isCompositeDivision(state.statsFilters.division))statsMessage.textContent+=` · ${COMPOSITE_NOTICE}${state.statistics?.error?` · ${state.statistics.error}`:''}`;
+      syncCompactMain();
       const quality=qualitySummary(state.statistics?.records??[]);if(quality.review)statsMessage.textContent+=` · 신뢰성 검토 ${quality.review}명 · 해당 영웅 티어 산정 보류`;
       document.querySelector('#stats-cohort').textContent = `통계 출처: OverFast API · ${filterLabel(state.statsFilters)}`;
       document.querySelector('#stats-timestamp').textContent = state.statistics ? `HOW 통계 조회: ${new Date(state.statistics.fetchedAt).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'})}${stale ? ' (오래됨)' : ''} · 최대 1시간 캐시` : 'HOW 통계 조회: 아직 성공한 조회 없음';
