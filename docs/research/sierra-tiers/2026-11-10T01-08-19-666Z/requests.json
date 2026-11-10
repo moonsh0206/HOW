@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://overfast-api.tekrop.fr/heroes?locale=ko-kr",
+    "startedAt": "2026-11-10T01:08:19.669Z",
+    "receivedAt": "2026-11-10T01:08:21.230Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "53283",
+      "cache-control": "public, max-age=86400",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json",
+      "date": "Tue, 10 Nov 2026 01:08:23 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "hit",
+      "x-cache-ttl": "33117"
+    },
+    "file": "response-0.json"
+  },
+  {
+    "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+    "startedAt": "2026-11-10T01:08:21.237Z",
+    "receivedAt": "2026-11-10T01:08:21.524Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "551",
+      "cache-control": "public, max-age=3600",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json",
+      "date": "Tue, 10 Nov 2026 01:08:23 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "hit",
+      "x-cache-ttl": "3048"
+    },
+    "file": "response-1.json"
+  },
+  {
+    "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+    "startedAt": "2026-11-10T01:08:21.240Z",
+    "receivedAt": "2026-11-10T01:08:22.056Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "558",
+      "cache-control": "public, max-age=3600",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json",
+      "date": "Tue, 10 Nov 2026 01:08:24 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "hit",
+      "x-cache-ttl": "3042"
+    },
+    "file": "response-2.json"
+  },
+  {
+    "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+    "startedAt": "2026-11-10T01:08:21.238Z",
+    "receivedAt": "2026-11-10T01:08:22.059Z",
+    "status": 200,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "554",
+      "cache-control": "public, max-age=3600",
+      "connection": "keep-alive",
+      "content-encoding": "gzip",
+      "content-type": "application/json",
+      "date": "Tue, 10 Nov 2026 01:08:24 GMT",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "x-cache-status": "hit",
+      "x-cache-ttl": "3046"
+    },
+    "file": "response-3.json"
+  }
+]

@@ -98,11 +98,37 @@ test('mock: table/card/modal show identical actual-shaped metrics, including zer
   Object.assign(model.state, { heroes, status: 'ready', statsStatus: 'ready', statistics: { filters: { ...DEFAULT_FILTERS }, records: normalizeStatistics([{ hero: 'ana', winrate: 52.3, pickrate: 0, banrate: null }]), fetchedAt: '2026-11-02T00:00:00Z' } });
   const view = createHeroView(); view.render(model);
   const cells = document.querySelector('#hero-rows [data-hero="ana"]').closest('tr').querySelectorAll('td');
-  assert.equal(cells[2].textContent, '미분류'); assert.equal(cells[3].textContent, '52.3%'); assert.equal(cells[4].textContent, '0.0%'); assert.equal(cells[5].textContent, '미제공');
+  assert.equal(cells[0].textContent, '—');assert.equal(cells[3].textContent, '미분류'); assert.equal(cells[4].textContent, '52.3%'); assert.equal(cells[5].textContent, '0.0%'); assert.equal(cells[6].textContent, '미제공');
   assert.deepEqual([...document.querySelector('#hero-cards [data-hero="ana"]').closest('.hero-card').querySelectorAll('dd')].map(node => node.textContent), ['미분류', '52.3%', '0.0%', '미제공']);
   const dialog = document.querySelector('#hero-dialog'); dialog.showModal = () => dialog.setAttribute('open', '');
   view.showDetail(model.heroByKey('ana'), model.state);
   assert.deepEqual([...document.querySelectorAll('#detail-statistics dd')].map(node => node.textContent), ['미분류', '52.3%', '0.0%', '미제공']);
+}));
+
+test('cohort ordinals follow every existing sort and survive search/favorites without mutating source or filter state',()=>{
+ const model=createHeroModel(['ana']);
+ Object.assign(model.state,{heroes,status:'ready',statistics:{filters:{...DEFAULT_FILTERS},records:normalizeStatistics(heroes.map((h,i)=>({hero:h.key,winrate:51+i,pickrate:6+i,banrate:2+i})))}});
+ const original=JSON.stringify(model.state.heroes);
+ for(const sort of ['tier-desc','meta-desc','winrate-desc','pickrate-desc','banrate-desc','name-asc','name-desc']){
+  Object.assign(model.state,{sort,query:'',favoritesOnly:false,role:'all'});
+  const base=model.listSelection(),ana=base.ordinals.get('ana');assert.deepEqual(base.heroes.map(h=>h.key),model.visibleHeroes().map(h=>h.key));
+  base.heroes.forEach((h,i)=>assert.equal(base.ordinals.get(h.key),i+1));
+  model.state.query='ana';const search=model.listSelection();assert.equal(search.heroes.length,1);assert.equal(search.ordinals.get('ana'),ana);assert.equal(model.state.query,'ana');
+  model.state.query='';model.state.favoritesOnly=true;const fav=model.listSelection();assert.equal(fav.heroes.length,1);assert.equal(fav.ordinals.get('ana'),ana);assert.equal(model.state.favoritesOnly,true);
+ }
+ assert.equal(JSON.stringify(model.state.heroes),original);
+ Object.assign(model.state,{query:'',favoritesOnly:false,role:'support',sort:'tier-desc'});assert.equal(model.listSelection().ordinals.get('ana'),1);
+ model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};assert(model.listSelection().heroes.every(h=>model.listSelection().ordinals.get(h.key)===null));
+ model.state.statsFilters={...DEFAULT_FILTERS,division:'master'};assert.equal(model.listSelection().ordinals.get('ana'),null);
+ model.state.sort='name-asc';assert.equal(model.listSelection().ordinals.get('ana'),1);assert.match(model.listSelection().label,/표시 순서/);
+});
+
+test('table and mobile cards share the same stable ordinal and accessible meaning',()=>withDOM(()=>{
+ const model=createHeroModel(),view=createHeroView();Object.assign(model.state,{heroes,status:'ready',sort:'name-asc'});view.render(model);
+ const expected=new Map([...document.querySelectorAll('#hero-rows tr')].map(row=>[row.querySelector('[data-hero]').dataset.hero,row.querySelector('.hero-ordinal').textContent]));
+ for(const card of document.querySelectorAll('.hero-card')){const key=card.querySelector('[data-hero]').dataset.hero;assert.equal(card.querySelector('.hero-ordinal').textContent,expected.get(key));assert.match(card.querySelector('.hero-ordinal').getAttribute('aria-label'),/표시 순서/);}
+ model.state.query='ana';view.render(model);assert.equal(document.querySelector('.hero-card .hero-ordinal').textContent,expected.get('ana'));
+ model.state.sort='tier-desc';view.render(model);assert.equal(document.querySelector('.hero-card .hero-ordinal').textContent,'—');
 }));
 
 test('mock: changing cohort clears old values and ignores slow previous responses', async () => withDOM(async window => {

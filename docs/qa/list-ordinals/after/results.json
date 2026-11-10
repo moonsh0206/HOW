@@ -1,0 +1,1951 @@
+[
+  {
+    "width": 320,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 57.1875,
+        "width": 320,
+        "bottom": 57.1875
+      },
+      "menu": {
+        "y": 57.1875,
+        "height": 45,
+        "width": 320,
+        "bottom": 102.1875
+      },
+      "banner": {
+        "y": 102.1875,
+        "height": 165,
+        "width": 320,
+        "bottom": 267.1875
+      },
+      "heading": {
+        "y": 279.1875,
+        "height": 32,
+        "width": 296,
+        "bottom": 311.1875
+      },
+      "cohort": {
+        "y": 315.1875,
+        "height": 185.1875,
+        "width": 296,
+        "bottom": 500.375
+      },
+      "filters": {
+        "y": 337.1875,
+        "height": 126.1875,
+        "width": 288,
+        "bottom": 463.375
+      },
+      "patch": {
+        "y": 506.375,
+        "height": 47,
+        "width": 288,
+        "bottom": 553.375
+      },
+      "card": {
+        "y": 713.75,
+        "height": 139.390625,
+        "width": 296,
+        "bottom": 853.140625
+      },
+      "overflow": 0,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 375,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 57.1875,
+        "width": 375,
+        "bottom": 57.1875
+      },
+      "menu": {
+        "y": 57.1875,
+        "height": 45,
+        "width": 375,
+        "bottom": 102.1875
+      },
+      "banner": {
+        "y": 102.1875,
+        "height": 165,
+        "width": 375,
+        "bottom": 267.1875
+      },
+      "heading": {
+        "y": 279.1875,
+        "height": 32,
+        "width": 351,
+        "bottom": 311.1875
+      },
+      "cohort": {
+        "y": 315.1875,
+        "height": 172,
+        "width": 351,
+        "bottom": 487.1875
+      },
+      "filters": {
+        "y": 337.1875,
+        "height": 113,
+        "width": 343,
+        "bottom": 450.1875
+      },
+      "patch": {
+        "y": 493.1875,
+        "height": 47,
+        "width": 343,
+        "bottom": 540.1875
+      },
+      "card": {
+        "y": 698.1875,
+        "height": 139.390625,
+        "width": 351,
+        "bottom": 837.578125
+      },
+      "overflow": 0,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 390,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 57.1875,
+        "width": 390,
+        "bottom": 57.1875
+      },
+      "menu": {
+        "y": 57.1875,
+        "height": 45,
+        "width": 390,
+        "bottom": 102.1875
+      },
+      "banner": {
+        "y": 102.1875,
+        "height": 165,
+        "width": 390,
+        "bottom": 267.1875
+      },
+      "heading": {
+        "y": 279.1875,
+        "height": 32,
+        "width": 366,
+        "bottom": 311.1875
+      },
+      "cohort": {
+        "y": 315.1875,
+        "height": 172,
+        "width": 366,
+        "bottom": 487.1875
+      },
+      "filters": {
+        "y": 337.1875,
+        "height": 113,
+        "width": 358,
+        "bottom": 450.1875
+      },
+      "patch": {
+        "y": 493.1875,
+        "height": 47,
+        "width": 358,
+        "bottom": 540.1875
+      },
+      "card": {
+        "y": 698.1875,
+        "height": 139.390625,
+        "width": 366,
+        "bottom": 837.578125
+      },
+      "overflow": 0,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 430,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 57.1875,
+        "width": 430,
+        "bottom": 57.1875
+      },
+      "menu": {
+        "y": 57.1875,
+        "height": 45,
+        "width": 430,
+        "bottom": 102.1875
+      },
+      "banner": {
+        "y": 102.1875,
+        "height": 165,
+        "width": 430,
+        "bottom": 267.1875
+      },
+      "heading": {
+        "y": 279.1875,
+        "height": 32,
+        "width": 406,
+        "bottom": 311.1875
+      },
+      "cohort": {
+        "y": 315.1875,
+        "height": 172,
+        "width": 406,
+        "bottom": 487.1875
+      },
+      "filters": {
+        "y": 337.1875,
+        "height": 113,
+        "width": 398,
+        "bottom": 450.1875
+      },
+      "patch": {
+        "y": 493.1875,
+        "height": 47,
+        "width": 398,
+        "bottom": 540.1875
+      },
+      "card": {
+        "y": 698.1875,
+        "height": 139.390625,
+        "width": 406,
+        "bottom": 837.578125
+      },
+      "overflow": 0,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": true,
+    "menuVisible": true,
+    "insightPanels": 5,
+    "dashboard": false,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 768,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "width": 768,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 357.96875,
+        "width": 768,
+        "bottom": 445.96875
+      },
+      "heading": {
+        "y": 470.96875,
+        "height": 81,
+        "width": 718,
+        "bottom": 551.96875
+      },
+      "cohort": {
+        "y": 571.96875,
+        "height": 325.890625,
+        "width": 718,
+        "bottom": 897.859375
+      },
+      "filters": {
+        "y": 726.859375,
+        "height": 154,
+        "width": 670,
+        "bottom": 880.859375
+      },
+      "patch": {
+        "y": 5408.859375,
+        "height": 233.78125,
+        "width": 720,
+        "bottom": 5642.640625
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "overflow": 0,
+      "ordinalWidth": 32,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1024,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "width": 1024,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 364.4375,
+        "width": 1024,
+        "bottom": 452.4375
+      },
+      "heading": {
+        "y": 477.4375,
+        "height": 81,
+        "width": 662,
+        "bottom": 558.4375
+      },
+      "cohort": {
+        "y": 578.4375,
+        "height": 325.890625,
+        "width": 662,
+        "bottom": 904.328125
+      },
+      "filters": {
+        "y": 733.328125,
+        "height": 154,
+        "width": 614,
+        "bottom": 887.328125
+      },
+      "patch": {
+        "y": 476.4375,
+        "height": 252.96875,
+        "width": 288,
+        "bottom": 729.40625
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "overflow": 0,
+      "ordinalWidth": 32,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  },
+  {
+    "width": 1440,
+    "geometry": {
+      "header": {
+        "y": 0,
+        "height": 88,
+        "width": 1440,
+        "bottom": 88
+      },
+      "menu": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "banner": {
+        "y": 88,
+        "height": 400.65625,
+        "width": 1440,
+        "bottom": 488.65625
+      },
+      "heading": {
+        "y": 513.65625,
+        "height": 81,
+        "width": 1062,
+        "bottom": 594.65625
+      },
+      "cohort": {
+        "y": 614.65625,
+        "height": 243.890625,
+        "width": 1062,
+        "bottom": 858.546875
+      },
+      "filters": {
+        "y": 769.546875,
+        "height": 72,
+        "width": 1014,
+        "bottom": 841.546875
+      },
+      "patch": {
+        "y": 512.65625,
+        "height": 252.96875,
+        "width": 288,
+        "bottom": 765.625
+      },
+      "card": {
+        "y": 0,
+        "height": 0,
+        "width": 0,
+        "bottom": 0
+      },
+      "overflow": 0,
+      "ordinalWidth": 32,
+      "ordinals": [
+        {
+          "key": "zenyatta",
+          "n": "1"
+        },
+        {
+          "key": "winston",
+          "n": "2"
+        },
+        {
+          "key": "pharah",
+          "n": "3"
+        },
+        {
+          "key": "junker-queen",
+          "n": "4"
+        },
+        {
+          "key": "reaper",
+          "n": "5"
+        },
+        {
+          "key": "doctrine",
+          "n": "6"
+        },
+        {
+          "key": "brigitte",
+          "n": "7"
+        },
+        {
+          "key": "echo",
+          "n": "8"
+        },
+        {
+          "key": "orisa",
+          "n": "9"
+        },
+        {
+          "key": "shion",
+          "n": "10"
+        },
+        {
+          "key": "hazard",
+          "n": "11"
+        },
+        {
+          "key": "moira",
+          "n": "12"
+        },
+        {
+          "key": "illari",
+          "n": "13"
+        },
+        {
+          "key": "cassidy",
+          "n": "14"
+        },
+        {
+          "key": "vendetta",
+          "n": "15"
+        },
+        {
+          "key": "junkrat",
+          "n": "16"
+        },
+        {
+          "key": "domina",
+          "n": "17"
+        },
+        {
+          "key": "lucio",
+          "n": "18"
+        },
+        {
+          "key": "zarya",
+          "n": "19"
+        },
+        {
+          "key": "genji",
+          "n": "20"
+        },
+        {
+          "key": "anran",
+          "n": "21"
+        },
+        {
+          "key": "kiriko",
+          "n": "22"
+        },
+        {
+          "key": "symmetra",
+          "n": "23"
+        },
+        {
+          "key": "venture",
+          "n": "24"
+        },
+        {
+          "key": "mizuki",
+          "n": "25"
+        },
+        {
+          "key": "sigma",
+          "n": "26"
+        },
+        {
+          "key": "sojourn",
+          "n": "27"
+        },
+        {
+          "key": "dmon",
+          "n": "28"
+        },
+        {
+          "key": "soldier-76",
+          "n": "29"
+        },
+        {
+          "key": "tracer",
+          "n": "30"
+        },
+        {
+          "key": "wuyang",
+          "n": "31"
+        },
+        {
+          "key": "ana",
+          "n": "32"
+        },
+        {
+          "key": "torbjorn",
+          "n": "33"
+        },
+        {
+          "key": "sierra",
+          "n": "34"
+        },
+        {
+          "key": "reinhardt",
+          "n": "35"
+        },
+        {
+          "key": "juno",
+          "n": "36"
+        },
+        {
+          "key": "doomfist",
+          "n": "37"
+        },
+        {
+          "key": "wrecking-ball",
+          "n": "38"
+        },
+        {
+          "key": "mauga",
+          "n": "39"
+        },
+        {
+          "key": "ashe",
+          "n": "40"
+        },
+        {
+          "key": "lifeweaver",
+          "n": "41"
+        },
+        {
+          "key": "jetpack-cat",
+          "n": "42"
+        },
+        {
+          "key": "mei",
+          "n": "43"
+        },
+        {
+          "key": "dva",
+          "n": "44"
+        },
+        {
+          "key": "widowmaker",
+          "n": "45"
+        },
+        {
+          "key": "sombra",
+          "n": "46"
+        },
+        {
+          "key": "hanzo",
+          "n": "47"
+        },
+        {
+          "key": "bastion",
+          "n": "48"
+        },
+        {
+          "key": "baptiste",
+          "n": "49"
+        },
+        {
+          "key": "roadhog",
+          "n": "50"
+        },
+        {
+          "key": "emre",
+          "n": "51"
+        },
+        {
+          "key": "freja",
+          "n": "52"
+        },
+        {
+          "key": "ramattra",
+          "n": "53"
+        },
+        {
+          "key": "mercy",
+          "n": "54"
+        }
+      ]
+    },
+    "mobile": false,
+    "menuVisible": false,
+    "insightPanels": 5,
+    "dashboard": true,
+    "overflow": 0,
+    "noDuplicateCalls": true
+  }
+]

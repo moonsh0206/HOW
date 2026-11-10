@@ -49,7 +49,7 @@
           <div class="list-meta"><p id="result-summary" role="status" aria-live="polite">영웅 정보를 불러옵니다.</p><label>정렬 <select id="sort"><option value="tier-desc">기본 (HOW 티어순)</option><option value="meta-desc">Meta Score 높은순</option><option value="winrate-desc">승률 높은순</option><option value="pickrate-desc">픽률 높은순</option><option value="banrate-desc">밴률 높은순</option><option value="name-asc">이름 오름차순</option><option value="name-desc">이름 내림차순</option></select></label></div><div class="statistics-notice"><p id="stats-status" role="status" aria-live="polite">통계 연결 준비 중</p><button data-action="stats-refresh">통계 확인</button></div>
           <div id="data-state" class="data-state" role="status" aria-live="polite"></div>
           <div id="table-wrap" class="table-wrap" hidden="">
-            <table><caption class="sr-only">영웅별 실제 승률·픽률·밴률과 HOW 메타 티어. 결측값은 미제공.</caption><thead><tr><th scope="col">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
+            <table><caption class="sr-only">영웅별 실제 승률·픽률·밴률과 HOW 메타 티어. 결측값은 미제공.</caption><thead><tr><th scope="col" id="ordinal-heading" class="ordinal-heading">순위</th><th scope="col" class="hero-column">영웅</th><th scope="col">역할</th><th scope="col">티어</th><th scope="col">승률</th><th scope="col">픽률</th><th scope="col">밴률</th><th scope="col"><span class="sr-only">즐겨찾기</span>☆</th></tr></thead><tbody id="hero-rows"></tbody></table>
             <ul id="hero-cards" class="hero-cards" aria-label="영웅 목록"></ul>
           </div>
           <div class="source-bar"><span><span class="source-dot"></span> 영웅 정보 · <a href="https://overfast-api.tekrop.fr/" target="_blank" rel="noreferrer">OverFast API ↗</a></span><span id="updated-at">마지막 조회 —</span></div>
@@ -67,7 +67,11 @@
     <section id="hero-detail-page" class="page-shell hero-detail-page" aria-label="영웅 상세" hidden=""></section>
     <section id="route-not-found" class="page-shell data-state" hidden=""><h1>페이지를 찾을 수 없습니다</h1><a class="primary-button" href="#heroes">영웅 목록으로</a></section>
   </main>
-  <footer><a class="brand" href="#">H<span>O</span>W</a><p>HUB OVERWATCH · 독립 팬 프로젝트<br>Overwatch 및 관련 이미지의 권리는 Blizzard Entertainment에 있습니다.</p><span>PLAY WITH INSIGHT.</span></footer>
+  <footer class="site-footer">
+    <a class="footer-brand" href="#" aria-label="HOW 홈"><img src="%BASE_URL%assets/branding/how-header-logo.svg" alt="HOW" width="1518" height="448"></a>
+    <div class="footer-copy"><h2>HUB OVERWATCH · 비공식 팬 프로젝트</h2><p>HOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.</p><p>Overwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.</p></div>
+    <span>PLAY WITH INSIGHT.</span>
+  </footer>
   <dialog id="hero-dialog" aria-labelledby="detail-name"><div class="dialog-top"><span class="eyebrow">HERO PROFILE</span><button id="close-detail" aria-label="영웅 정보 닫기">✕</button></div><div id="detail-content"></div><p class="dialog-note">HOW 자체 종합 메타 티어입니다. 영웅 이름을 누르면 기술·특전 상세 페이지로 이동합니다.</p></dialog>
   <p id="storage-notice" class="toast" role="status" hidden=""></p>
   <script type="module" src="/src/main.js"></script>

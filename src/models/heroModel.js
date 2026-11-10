@@ -3,6 +3,15 @@ import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommend
 import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
 export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
 
+// Ordinals describe this sorted cohort, never the API or a separate strength score.
+export function buildListSelection(sorted, state) {
+  const query=state.query.trim().normalize('NFKC').toLocaleLowerCase('ko');
+  const alphabetical=state.sort.startsWith('name-');
+  const label=alphabetical?'현재 이름 정렬의 표시 순서':'현재 조회 조건 및 정렬 기준의 HOW 순번';
+  const ordinals=new Map(sorted.map((hero,index)=>[hero.key,alphabetical||hero.tier&&hero.metaScore!=null?index+1:null]));
+  return {heroes:sorted.filter(hero=>(!state.favoritesOnly||state.favorites.has(hero.key))&&`${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query)),ordinals,label};
+}
+
 export function safeImage(value) {
   try { const url = new URL(value); return url.protocol === 'https:' ? url.href : ''; } catch { return ''; }
 }
@@ -33,9 +42,10 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
     state,
     enrichedHeroes: enriched,
     heroByKey(key) { return enriched().find(hero => hero.key === key); },
-    visibleHeroes() {
-      const query = state.query.trim().normalize('NFKC').toLocaleLowerCase('ko');
-      return enriched().filter(hero => (state.role === 'all' || hero.role === state.role) && (!state.favoritesOnly || state.favorites.has(hero.key)) && `${hero.name} ${hero.key}`.normalize('NFKC').toLocaleLowerCase('ko').includes(query))
+    visibleHeroes() { return this.listSelection().heroes; },
+    listSelection() { return buildListSelection(this.sortedHeroes(),state); },
+    sortedHeroes() {
+      return enriched().filter(hero => state.role === 'all' || hero.role === state.role)
         .sort((a, b) => {
           if (state.sort === 'tier-desc') {
             const difference = recommendationOrder(a) - recommendationOrder(b);

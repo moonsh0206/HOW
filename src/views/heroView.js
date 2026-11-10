@@ -48,10 +48,18 @@ function heroIdentity(hero, { card = false } = {}) {
 }
 
 // Both layouts consume the same filtered Model selection and event attributes.
-export function createHeroCard(hero, favorites) {
+function ordinalNode(tag, ordinal, label) {
+  const number=element(tag,ordinal==null?'—':String(ordinal),'hero-ordinal');
+  number.dataset.ordinal=ordinal==null?'':String(ordinal);
+  number.title=ordinal==null?'미분류 · HOW 순번 미제공':label;
+  number.setAttribute('aria-label',ordinal==null?'미분류 · 순번 미제공':`${label} ${ordinal}`);
+  if(ordinal===1)number.classList.add('hero-ordinal-first');
+  return number;
+}
+export function createHeroCard(hero, favorites, ordinal=null, ordinalLabel='현재 조회 조건 및 정렬 기준의 HOW 순번') {
   const card = element('li', undefined, 'hero-card');
   const header = element('div', undefined, 'hero-card-header');
-  header.append(heroIdentity(hero, { card: true }), favoriteButton(hero, favorites));
+  header.append(ordinalNode('span',ordinal,ordinalLabel),heroIdentity(hero, { card: true }), favoriteButton(hero, favorites));
   const stats = element('dl', undefined, 'hero-card-stats');
   for (const [field, label] of METRICS) {
     const metric = element('div');
@@ -104,7 +112,10 @@ export function createHeroView() {
     },
     render(model) {
       const { state } = model;
-      const heroes = model.visibleHeroes();
+      const selection=model.listSelection();
+      const heroes = selection.heroes;
+      document.querySelector('#ordinal-heading').title=selection.label;
+      document.querySelector('#ordinal-heading').setAttribute('aria-label',`순위 · ${selection.label}`);
       document.querySelector('#sort').value = state.sort;
       sortCombo.sync();
       document.querySelector('#list-title').firstChild.textContent = state.favoritesOnly ? '내 즐겨찾기' : '영웅 메타 티어';
@@ -158,11 +169,11 @@ export function createHeroView() {
         const identity = element('td');
         identity.append(heroIdentity(hero));
         const role = element('td'); role.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
-        row.append(identity, role);
+        row.append(ordinalNode('td',selection.ordinals.get(hero.key),selection.label),identity, role);
         for (const [field, label] of METRICS) { const cell = element('td'); const value = metricValue(hero, field); cell.append(field === 'tier' ? tierButton(hero) : element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
         const favoriteCell = element('td');
         favoriteCell.append(favoriteButton(hero, state.favorites)); row.append(favoriteCell); fragment.append(row);
-        cardFragment.append(createHeroCard(hero, state.favorites));
+        cardFragment.append(createHeroCard(hero, state.favorites,selection.ordinals.get(hero.key),selection.label));
       }
       const focused = document.activeElement;
       const active = rows.contains(focused) || cards.contains(focused) ? focused?.dataset.favorite : undefined;

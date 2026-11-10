@@ -1,4 +1,15 @@
 /* Three real routes share a single model, filter bar and insight DOM. */
+/* Compact cohort ordinals; identity column keeps its existing share of the table. */
+#heroes table th.ordinal-heading:first-child,#heroes table td.hero-ordinal:first-child{width:32px;min-width:32px;max-width:32px;padding:8px 3px;text-align:center;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:400}
+#heroes table .hero-column{width:35%;padding-left:8px}
+#heroes table td:nth-child(2){padding-left:8px}
+#heroes .hero-ordinal-first{color:var(--orange)}
+#heroes table td.hero-ordinal-first:first-child{color:var(--orange)}
+#heroes .hero-card-header>.hero-ordinal{display:inline-flex;align-items:center;justify-content:center;flex:0 0 18px;width:18px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+#heroes .hero-card-header>.hero-ordinal-first{color:var(--orange)}
+#heroes .hero-card-header{gap:6px}
+#heroes .hero-card-header>.hero-identity{flex:1;min-width:0}
+@media(min-width:1024px) and (max-width:1100px){#heroes table .hero-column{width:30%}}
 .banner-copy-mobile{display:none}
 .site-header .header-favorites{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-left:auto;font-size:12px;color:var(--muted)}
 .site-header .header-favorites:hover,.site-header .header-favorites[aria-current]{color:var(--orange)}

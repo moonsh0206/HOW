@@ -1,0 +1,89 @@
+[
+  {
+    "file": "2026-11-04T00-52-25.812Z.json",
+    "date": "2026-11-04T00:52:25.812Z",
+    "division": "diamond",
+    "statistics": {
+      "hero": "sierra",
+      "winRate": 49.3,
+      "pickRate": 6.1,
+      "banRate": 0.7
+    },
+    "score": 41.25,
+    "rank": 15,
+    "size": 23,
+    "tier": "C"
+  },
+  {
+    "file": "2026-11-06T02-37-44.293Z.json",
+    "date": "2026-11-06T02:37:43.499Z",
+    "division": "diamond",
+    "statistics": {
+      "hero": "sierra",
+      "winRate": 52.1,
+      "pickRate": 6.8,
+      "banRate": 1.1
+    },
+    "score": 54.7727272727,
+    "rank": 11,
+    "size": 23,
+    "tier": "B"
+  },
+  {
+    "file": "2026-11-06T02-37-44.293Z.json",
+    "date": "2026-11-06T02:37:43.824Z",
+    "division": "master",
+    "statistics": {
+      "hero": "sierra",
+      "winRate": 50.5,
+      "pickRate": 4.8,
+      "banRate": 0.1
+    },
+    "score": 53.1818181818,
+    "rank": 12,
+    "size": 23,
+    "tier": "B"
+  },
+  {
+    "file": "2026-11-06T02-37-44.293Z.json",
+    "date": "2026-11-06T02:37:44.253Z",
+    "division": "grandmaster",
+    "statistics": {
+      "hero": "sierra",
+      "winRate": 41.5,
+      "pickRate": 4.4,
+      "banRate": 0
+    },
+    "score": 16.9318181818,
+    "rank": 23,
+    "size": 23,
+    "tier": "D"
+  },
+  {
+    "file": "2026-11-06T02-37-44.293Z.json",
+    "date": "2026-11-06T02:37:44.253Z",
+    "division": "diamond_plus",
+    "statistics": {
+      "hero": "sierra",
+      "winRate": 48.03333333333333,
+      "pickRate": 5.333333333333333,
+      "banRate": 0.4000000000000001,
+      "missingDivisions": [],
+      "reviewDivisions": [],
+      "missingByMetric": {
+        "winRate": [],
+        "pickRate": [],
+        "banRate": []
+      },
+      "reviewByMetric": {
+        "winRate": [],
+        "pickRate": [],
+        "banRate": []
+      }
+    },
+    "score": 42.0454545455,
+    "rank": 16,
+    "size": 23,
+    "tier": "C"
+  }
+]

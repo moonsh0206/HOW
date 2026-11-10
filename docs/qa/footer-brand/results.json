@@ -1,0 +1,86 @@
+[
+  {
+    "width": 320,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 112,
+    "imageHeight": 33.046875,
+    "ratio": 3.3891252955082742,
+    "footerWidth": 320,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 375,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 112,
+    "imageHeight": 33.046875,
+    "ratio": 3.3891252955082742,
+    "footerWidth": 375,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 390,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 112,
+    "imageHeight": 33.046875,
+    "ratio": 3.3891252955082742,
+    "footerWidth": 390,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 430,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 112,
+    "imageHeight": 33.046875,
+    "ratio": 3.3891252955082742,
+    "footerWidth": 430,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 768,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 112,
+    "imageHeight": 33.046875,
+    "ratio": 3.3891252955082742,
+    "footerWidth": 768,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 1024,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 132,
+    "imageHeight": 38.953125,
+    "ratio": 3.388688327316486,
+    "footerWidth": 1024,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  },
+  {
+    "width": 1440,
+    "imageUrl": "http://127.0.0.1:5198/HOW/assets/branding/how-header-logo.svg",
+    "loaded": true,
+    "imageWidth": 132,
+    "imageHeight": 38.953125,
+    "ratio": 3.388688327316486,
+    "footerWidth": 1440,
+    "overflow": 0,
+    "text": "HUB OVERWATCH · 비공식 팬 프로젝트\n\nHOW는 Overwatch 기반의 비영리 데이터 팬사이트입니다.\n\nOverwatch 및 관련 이미지·상표의 권리는 Blizzard Entertainment에 있습니다.",
+    "childrenFit": true
+  }
+]
