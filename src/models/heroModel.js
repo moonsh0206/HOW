@@ -1,7 +1,8 @@
+import {label} from '../i18n/i18n.js';
 import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
 import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommendationPolicy.js';
 import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
-export const ROLES = Object.freeze({ tank: '돌격', damage: '공격', support: '지원' });
+export const ROLES = Object.freeze(Object.fromEntries(Object.entries({ tank: '돌격', damage: '공격', support: '지원' }).map(([key,value])=>[key,label(value)])));
 
 // Ordinals describe this sorted cohort, never the API or a separate strength score.
 export function buildListSelection(sorted, state) {

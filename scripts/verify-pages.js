@@ -31,8 +31,21 @@ for (const ref of references) {
   local.add(ref);
 }
 assert([...local].some(ref => ref.endsWith('/hero-banner.jpg')), 'Banner URL not found in built CSS');
-const allowed = new Set(['index.html', 'assets', 'data']);
+const allowed = new Set(['index.html', 'assets', 'data','ko','en','sitemap.xml','robots.txt','route-manifest.json']);
 assert((await readdir(root)).every(file => allowed.has(file)), 'Unexpected file in dist (possible private document)');
+const routes=JSON.parse(await readFile(path.join(root,'route-manifest.json'),'utf8'));
+assert.equal(routes.base,base);
+const publicPages=new Set();
+for(const entry of routes.entries){
+ assert(entry.startsWith(base)&&!entry.includes('..'),'Unsafe localized route');
+ const relative=entry.slice(base.length),file=path.join(root,relative,'index.html');
+ assert(!publicPages.has(file),'Duplicate localized route');publicPages.add(file);
+ const page=await readFile(file,'utf8');
+ assert(page.includes(`lang="${relative.split('/')[0]}"`),'Localized HTML lang mismatch');
+ assert(page.includes('rel="canonical"')&&page.includes('hreflang="ko"')&&page.includes('hreflang="en"'),'Localized SEO links missing');
+}
+async function verifyLocalizedTree(directory){for(const entry of await readdir(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);assert(!entry.isSymbolicLink(),'Unexpected localized symlink');if(entry.isDirectory())await verifyLocalizedTree(file);else assert(publicPages.has(file),'Unexpected private file in localized output');}}
+for(const language of ['ko','en'])await verifyLocalizedTree(path.join(root,language));
 const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));
 assert.equal(manifest.schemaVersion, 1);
 assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['patches','perks','snapshots']);

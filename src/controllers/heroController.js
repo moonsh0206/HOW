@@ -1,3 +1,4 @@
+import {routeHash} from '../i18n/routes.js';
 import { validateFilters, statisticsQuery } from '../models/statisticsModel.js';
 
 export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage,filterStorage, autoRefresh = true, onStateChange, onHeroSelect }) {
@@ -53,8 +54,8 @@ export function createHeroController({ model, view, service, statisticsService, 
     finally { loading = false; render(); }
   }
   function route() {
-      if (location.hash.startsWith('#/heroes/')||['#/meta','#/player-search'].includes(location.hash)) return;
-    const favorites = location.hash === '#favorites';
+      if (routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/players/')||routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/heroes/')||['#/meta','#/player-search'].includes(routeHash(location,import.meta.env?.BASE_URL??'/'))) return;
+    const favorites = routeHash(location,import.meta.env?.BASE_URL??'/') === '#favorites';
     if (model.state.favoritesOnly !== favorites) {
       Object.assign(model.state, { favoritesOnly: favorites, role: 'all', query: '' });
       document.querySelector('#hero-search').value = '';
@@ -97,7 +98,7 @@ export function createHeroController({ model, view, service, statisticsService, 
       });
       document.querySelector('#close-detail').addEventListener('click', view.closeDetail);
       window.addEventListener('hashchange', route);
-      route(); load(); loadStatistics();
+      route(); load(); if(model.state.statistics?.expiresAt>Date.now()&&statisticsQuery(model.state.statistics.filters)===statisticsQuery(model.state.statsFilters)){if(autoRefresh)statsTimer=setTimeout(loadStatistics,Math.max(60000,model.state.statistics.expiresAt-Date.now()));}else loadStatistics();
     },
     stop() { ++statsGeneration; clearTimeout(statsTimer); },
   };

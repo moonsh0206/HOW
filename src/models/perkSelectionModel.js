@@ -27,7 +27,7 @@ export function normalizeAllPerkStatistics(raw,options){
 // Exact versioned identity; no runtime order or fuzzy-text joins.
 export function perkSelectionForItem(heroKey,tier,item,result,{date=new Date().toISOString().slice(0,10)}={}){
  const mapping=perkHeroMapping(heroKey);
- const refs=mapping?.perks.filter(r=>r.tier===tier&&r.nameKo===item.name&&r.icon===item.icon)??[];
+ const refs=mapping?.perks.filter(r=>r.tier===tier&&(r.nameKo===item.name||r.providerName===item.name)&&r.icon===item.icon)??[];
  if(refs.length!==1)return {status:'mapping-review',selectionRate:null,selectionCount:null};
  const ref=refs[0];
  if(ref.addedOn&&date<ref.addedOn||ref.removedOn&&date>=ref.removedOn)return {status:'inactive',selectionRate:null,selectionCount:null};

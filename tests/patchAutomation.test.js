@@ -97,5 +97,6 @@ test('isolated new-patch production build includes actual validated candidate an
  const publicDir=join(paths.root,'public');await fs.cp(resolve('public'),publicDir,{recursive:true});await fs.copyFile(paths.target,join(publicDir,'data/patches/notes.json'));
  await build({configFile:false,root:resolve('.'),base:'/HOW/',publicDir,logLevel:'silent',build:{outDir:join(paths.root,'dist'),emptyOutDir:true}});
  const built=JSON.parse(await fs.readFile(join(paths.root,'dist/data/patches/notes.json')));assert.equal(selectCurrentPatchNote(built).sourceId,'patch-2026-11-07');
+ await promisify(execFile)(process.execPath,[resolve('scripts/render-localized-pages.js')],{cwd:paths.root,env:{...process.env,VITE_BASE_PATH:'/HOW/'}});
  const result=await promisify(execFile)(process.execPath,[resolve('scripts/verify-pages.js')],{cwd:paths.root,env:{...process.env,VITE_BASE_PATH:'/HOW/'}});assert.match(result.stdout,/Pages assets verified/);
 }));

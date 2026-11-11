@@ -8,6 +8,20 @@ import {createRoutingController} from '../src/controllers/routingController.js';
 import {createHeroModel} from '../src/models/heroModel.js';
 const tick=()=>new Promise(r=>setImmediate(r));
 const player={id:'abc%7Cdef',name:'Same',avatar:'https://example.com/avatar.png',isPublic:true};
+test('empty and whitespace submissions reset without API or required popup and invalidate pending results',()=>withDOM('<section></section>',async window=>{
+ const root=document.querySelector('section'),storage=createPlayerFavoritesStorage(()=>window.localStorage);storage.save([player]);let calls=0,finish;
+ const c=createPlayerSearchController({root,favoritesStorage:storage,provider:{search:()=>{calls++;return new Promise(resolve=>finish=resolve);}}});c.setActive(true);
+ const input=root.querySelector('#player-query'),form=root.querySelector('form');assert.equal(input.required,false);assert.equal(form.checkValidity(),true);
+ for(const text of ['', '   ', '\t\t', ' \t ']){input.value=text;form.dispatchEvent(new window.Event('submit',{bubbles:true,cancelable:true}));assert.equal(calls,0);assert.equal(input.value,'');assert.equal(document.activeElement,input);assert.equal(c.state.searchStatus,'idle');assert.equal(root.querySelectorAll('[data-player-id]').length,1);}
+ const pending=c.search('Same');assert.equal(calls,1);await c.search(' \t ');finish({data:{total:1,players:[{...player,id:'Late-1234'}]}});await pending;
+ assert.equal(c.state.searchStatus,'idle');assert.equal(c.state.total,0);assert.deepEqual(c.state.results,[]);assert.equal(c.state.favorites.size,1);assert.equal(c.state.selected,null);assert.equal(c.state.searchError,'');assert.equal(root.querySelector('[data-player-id]').dataset.playerId,player.id);c.stop();
+}));
+test('direct profile favorite uses resolved name, synchronizes initial cards and keeps same-name IDs distinct',()=>withDOM('<section></section>',async window=>{
+ const storage=createPlayerFavoritesStorage(()=>window.localStorage),root=document.querySelector('section');
+ const c=createPlayerSearchController({root,favoritesStorage:storage,provider:{summary:async()=>({data:{name:'Same',ranks:[]}}),competitive:async()=>({data:{general:null,heroes:[]}})}});c.setActive(true);
+ await c.select('First-1234');root.querySelector('.player-profile-favorite').click();assert.equal(root.querySelector('.player-profile-favorite').textContent,'★');assert.equal(storage.load().players[0].name,'Same');
+ await c.select('Second-1234');root.querySelector('.player-profile-favorite').click();assert.equal(storage.load().players.length,2);c.reset();assert.equal(root.querySelectorAll('[data-player-id]').length,2);assert.match(root.querySelector('.player-favorites-title').textContent,/2/);assert.equal(root.querySelector('.player-search-hero').hidden,false);c.stop();
+}));
 async function withDOM(html,run){const dom=new JSDOM(html,{url:'https://example.com/HOW/#/player-search'}),old={document:globalThis.document,window:globalThis.window,location:globalThis.location};Object.assign(globalThis,{document:dom.window.document,window:dom.window,location:dom.window.location});try{await run(dom.window);}finally{dom.window.close();Object.assign(globalThis,old);}}
 test('player favorite storage preserves IDs, deduplicates, validates safely and leaves hero favorites untouched',()=>withDOM('<section></section>',window=>{
  window.localStorage.setItem('how:favorites:v1','["ana"]');const storage=createPlayerFavoritesStorage(()=>window.localStorage);

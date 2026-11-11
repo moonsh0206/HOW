@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "dev:meta": "node scripts/dev-meta-experiment.js",
-    "build": "vite build",
+    "build": "vite build && node scripts/render-localized-pages.js",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
     "test:live": "node --test tests/live/overfast.integration.js",

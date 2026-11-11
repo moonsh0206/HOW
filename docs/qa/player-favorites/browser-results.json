@@ -111,7 +111,7 @@
     },
     {
       "width": 1440,
-      "mode": "live public/empty API; mocked error/delay",
+      "mode": "captured public/empty API; mocked error/delay",
       "favoritePersists": true,
       "noNavigationOnStar": true,
       "resetMenu": true,

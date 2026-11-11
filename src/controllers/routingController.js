@@ -1,3 +1,5 @@
+import {updateSEO} from '../i18n/seo.js';
+import {routeHash} from '../i18n/routes.js';
 import {syncCompactMain} from '../views/compactMainView.js';
 import {createPlayerSearchController} from './playerSearchController.js';
 import {createOverfastPlayerProvider} from '../services/overfastPlayerProvider.js';
@@ -21,11 +23,11 @@ export function parseRoute(hash) {
   return { page: 'not-found' };
 }
 export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider }) {
-  let generation = 0, currentKey, route = parseRoute(location.hash);
+  let generation = 0, currentKey, route = parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
   const menuView=createMainMenuView(),scrollPositions=new Map();
   const playerSearch=createPlayerSearchController({root:document.querySelector('#player-search-page'),provider:playerProvider??createOverfastPlayerProvider(),heroes:()=>model.state.heroes,heroDetails:detailService,onNavigate:id=>{location.hash=`/players/${encodeURIComponent(id)}`;}});
   const menuMedia=window.matchMedia?.('(max-width: 767px)');
-  let currentHash=location.hash,lastMainHash='#/tiers';
+  let currentHash=routeHash(location,import.meta.env?.BASE_URL??'/'),lastMainHash='#/tiers';
   let scrollFrame=null;
   const previousScrollRestoration=window.history?.scrollRestoration;
   function cancelScroll(){if(scrollFrame!==null){window.cancelAnimationFrame?.(scrollFrame);scrollFrame=null;}}
@@ -75,6 +77,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     }).finally(() => { if (token === historyGeneration) render(); });
   }
   function render() {
+    updateSEO(route,model);
     const mobile=menuMedia?.matches??(window.innerWidth<=767);
     menuView.render(route,lastMainHash,mobile);
     playerSearch.setActive(route.page==='player-search'||route.page==='player');
@@ -108,9 +111,9 @@ export function createRoutingController({ model, detailService, detailView, coun
     render(); detailView.focusHeading();
   }
   function navigate() {
-    const next=parseRoute(location.hash);
+    const next=parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
     if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta'].includes(route.page)?currentHash||'#/tiers':'#/tiers';
-    currentHash=location.hash;route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
+    currentHash=routeHash(location,import.meta.env?.BASE_URL??'/');route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
     if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }
     if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }
     else render();

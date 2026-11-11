@@ -136,3 +136,12 @@
  #heroes .list-meta .filter-combobox{width:190px}
  #heroes .hero-cards{gap:8px}
 }
+.header-language{width:112px;flex:0 0 112px;min-width:0}
+.header-language .filter-combobox-popup{left:auto;min-width:112px}
+.site-header .desktop-header-link{position:relative}
+.site-header .desktop-header-link:hover,.main-menu>a:hover{color:#f4f7fb}
+.site-header .desktop-header-link[aria-current=page],.main-menu>a[aria-current=page]{color:#fff;background:#f99e1a08}
+.site-header .desktop-header-link[aria-current=page]::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--orange)}
+.main-menu>a[aria-current=page]::after{height:2px}
+@media(max-width:767px){.header-language .filter-combobox-trigger{min-height:44px}}
+@media(max-width:600px){.site-header .header-tag{display:none}.header-language{width:94px;flex-basis:94px;margin-left:0}.header-language .filter-combobox-trigger{padding-inline:8px;gap:5px}.site-header{gap:10px}.site-header .header-favorites{margin-left:auto}}

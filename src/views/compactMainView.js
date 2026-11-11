@@ -1,3 +1,4 @@
+import {t} from '../i18n/i18n.js';
 // Only relocate existing controls; their select/change bridge remains untouched.
 const states=new WeakMap();
 export function syncCompactMain(root=document.querySelector('#statistics-filters')){
@@ -30,7 +31,7 @@ export function syncCompactMain(root=document.querySelector('#statistics-filters
  }
  const mode=root.ownerDocument.querySelector('#stats-mode'),map=root.ownerDocument.querySelector('#stats-map');
  const applied=[mode?.value!=='competitive'?mode?.selectedOptions[0]?.textContent:null,map?.value!=='all'?map?.selectedOptions[0]?.textContent:null].filter(Boolean);
- state.summary.textContent=`상세 필터${applied.length?' · '+applied.join(' / '):''}`;
+ state.summary.textContent=t("message.69ac7baff6bd",{"0":(applied.length?' · '+applied.join(' / '):'')});
  const status=root.ownerDocument.querySelector('#stats-status');
- state.infoSummary.textContent=['error','stale'].includes(status?.dataset.state)?'통계 상태 확인 필요 · 상세 보기':'OverFast API · 조회 정보';
+ state.infoSummary.textContent=['error','stale'].includes(status?.dataset.state)?t("통계 상태 확인 필요 · 상세 보기"):t("OverFast API · 조회 정보");
 }

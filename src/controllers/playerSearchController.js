@@ -1,12 +1,13 @@
+import {t} from '../i18n/i18n.js';
 import {playerQuery,playerPath,topPlayerHeroes} from '../models/playerModel.js';
 import {createPlayerSearchView} from '../views/playerSearchView.js';
-import {createPlayerFavoritesStorage} from '../storage/playerFavoritesStorage.js';
+import {createPlayerFavoritesStorage,favoriteProfile} from '../storage/playerFavoritesStorage.js';
 export function createPlayerSearchController({root,provider,heroes=()=>[],heroDetails,onNavigate,favoritesStorage=createPlayerFavoritesStorage(),view=createPlayerSearchView(root)}){
  const saved=favoritesStorage.load();
- const state={favorites:new Map(saved.players.map(p=>[p.id,p])),favoritesNotice:saved.available?'':'즐겨찾기 저장소를 읽을 수 없습니다. 이번 화면에서만 사용할 수 있습니다.',cardProfiles:new Map(),mode:'search',background:null,searchStatus:'idle',searchError:'',results:[],total:0,selected:null,profileStatus:'idle',profileError:'',summary:null,competitive:null,private:false};
+ const state={favorites:new Map(saved.players.map(p=>[p.id,p])),favoritesNotice:saved.available?'':t("즐겨찾기 저장소를 읽을 수 없습니다. 이번 화면에서만 사용할 수 있습니다."),cardProfiles:new Map(),mode:'search',background:null,searchStatus:'idle',searchError:'',results:[],total:0,selected:null,profileStatus:'idle',profileError:'',summary:null,competitive:null,private:false};
  let active=false,searchGeneration=0,profileGeneration=0,query='',backgroundKey=null;
  let rankActive=0,rankQueue=[],rankBudget=20,rankBlocked=false;
- const candidates=()=>[...state.results,...state.favorites.values()];
+ const candidates=()=>[...state.results,...state.favorites.values(),...(state.selected?[{...state.selected,name:state.summary?.data?.name??state.selected.name,avatar:state.summary?.data?.avatar??state.selected.avatar}]:[])];
  const render=()=>{if(active){state.showFavorites=state.searchStatus==='idle';state.displayPlayers=state.showFavorites?[...state.favorites.values()]:state.results;view.render(state,heroes());view.observeRanks?.(state.mode==='search'?loadCard:null);}};
  function updateCard(id,entry){state.cardProfiles.set(id,entry);if(active&&state.mode==='search')view.updateRanks?.(id,entry,candidates().find(p=>p.id===id)?.isPublic);}
  function pumpRanks(){
@@ -27,6 +28,7 @@ export function createPlayerSearchController({root,provider,heroes=()=>[],heroDe
   Promise.resolve().then(()=>heroDetails.getHero(most.key)).then(result=>{if(!active||token!==profileGeneration)return;const backgrounds=result.detail?.backgrounds??[];state.background=(backgrounds.find(b=>b.sizes?.includes('xl+'))??backgrounds[0])?.url??null;render();}).catch(()=>{});
  }
  async function search(value,more=false){
+  if(typeof value==='string'&&!value.trim()){reset({focus:true});return;}
   let normalized;try{normalized=playerQuery(value);}catch(error){++searchGeneration;++profileGeneration;state.searchStatus='error';state.searchError=error.message;render();return;}
   if(!active)return;query=normalized;const token=++searchGeneration;
   rankQueue=[];rankBudget=20;rankBlocked=false;
@@ -40,16 +42,19 @@ export function createPlayerSearchController({root,provider,heroes=()=>[],heroDe
  }
  async function select(id){
   let canonical;try{canonical=playerPath(id);}catch{return;}const player=candidates().find(p=>playerPath(p.id)===canonical)??{id,name:id,isPublic:null};if(!active)return;const token=++profileGeneration;
-  Object.assign(state,{mode:'profile',background:null,selected:player,profileStatus:'loading',profileError:'',summary:null,competitive:null,private:player.isPublic===false});render();
-  try{const summary=await provider.summary(id);if(!active||token!==profileGeneration)return;state.summary=summary;
-   if(!state.private){render();const competitive=await provider.competitive(id);if(!active||token!==profileGeneration)return;state.competitive=competitive;}
-   state.profileStatus='ready';
-   loadMostBackground(token);
-  }catch(error){if(!active||token!==profileGeneration)return;if(error.code==='private'){state.private=true;state.profileStatus='ready';}else{state.profileStatus='error';state.profileError=error.message;}}
-  render();
+  const previous=(state.selected?.id===id?state.summary:state.cardProfiles.get(id)?.frame)??state.favorites.get(id)?.profile;
+  Object.assign(state,{mode:'profile',background:null,selected:player,profileStatus:'loading',profileError:'',summary:previous??null,competitive:null,summaryStatus:'loading',competitiveStatus:player.isPublic===false?'unavailable':'loading',summaryError:'',competitiveError:'',previousSummary:!!previous,private:player.isPublic===false});render();
+  const valid=()=>active&&token===profileGeneration;
+  async function part(kind,method){
+   try{const frame=await provider[method](id,{retry:true});if(!valid()||state.private&&kind==='competitive')return;state[kind]=frame;state[kind+'Status']='ready';if(kind==='summary'){state.previousSummary=false;state.cardProfiles.set(id,{status:'ready',frame});if(state.favorites.has(id)){state.favorites.set(id,{...state.favorites.get(id),name:frame.data.name,avatar:frame.data.avatar,profile:favoriteProfile(frame)});if(!favoritesStorage.save(state.favorites.values()))state.favoritesNotice=t("저장된 프로필 정보를 갱신하지 못했습니다.");}}loadMostBackground(token);
+   }catch(error){if(!valid())return;if(error.code==='private'){state[kind+'Status']='unavailable';state.private=true;state.competitive=null;state.competitiveStatus='unavailable';}else{state[kind+'Status']='error';state[kind+'Error']=error.message;}}
+   if(valid()){state.profileStatus=[state.summaryStatus,state.competitiveStatus].includes('loading')?'loading':state.summaryStatus==='error'||state.competitiveStatus==='error'?'error':'ready';state.profileError=[state.summaryError,state.competitiveError].filter(Boolean).join(' / ');render();}
+  }
+  await Promise.allSettled([part('summary','summary'),...(!state.private?[part('competitive','competitive')]:[])]);
  }
+
  const submit=event=>{event.preventDefault();search(root.querySelector('#player-query').value);};
- function toggleFavorite(id){const player=candidates().find(p=>p.id===id);if(!player)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.set(id,{id:player.id,name:player.name,avatar:player.avatar,isPublic:player.isPublic});state.favoritesNotice=favoritesStorage.save(state.favorites.values())?'':'즐겨찾기를 저장하지 못했습니다. 현재 화면의 선택은 유지됩니다.';render();}
+ function toggleFavorite(id){const player=candidates().find(p=>p.id===id);if(!player)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.set(id,{id:player.id,name:player.name,avatar:player.avatar,isPublic:player.isPublic,profile:favoriteProfile(state.selected?.id===id?state.summary:state.cardProfiles.get(id)?.frame)});state.favoritesNotice=favoritesStorage.save(state.favorites.values())?'':t("즐겨찾기를 저장하지 못했습니다. 현재 화면의 선택은 유지됩니다.");render();}
  function reset({focus=false}={}){++searchGeneration;++profileGeneration;query='';backgroundKey=null;rankQueue=[];rankBudget=20;rankBlocked=false;Object.assign(state,{cardProfiles:new Map(),mode:'search',background:null,searchStatus:'idle',searchError:'',results:[],total:0,selected:null,profileStatus:'idle',profileError:'',summary:null,competitive:null,private:false});const input=root.querySelector('#player-query');input.value='';render();if(focus)input.focus();}
  const click=event=>{const favorite=event.target.closest('[data-player-favorite]');if(favorite){event.preventDefault();event.stopPropagation();toggleFavorite(favorite.dataset.playerFavorite);return;}const id=event.target.closest('[data-player-id]')?.dataset.playerId;if(id){if(onNavigate){event.preventDefault();onNavigate(id);}else{event.preventDefault();select(id);}}else if(event.target.closest('[data-player-more]'))search(query,true);else if(event.target.closest('[data-player-retry]'))select(state.selected?.id);else if(event.target.closest('[data-player-search-again]'))reset({focus:true});};
  root.querySelector('form').addEventListener('submit',submit);root.addEventListener('click',click);

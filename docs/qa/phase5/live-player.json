@@ -1,0 +1,26 @@
+{
+  "account": "TeKrop-2217",
+  "calls": 2,
+  "results": [
+    {
+      "kind": "summary",
+      "ok": true,
+      "elapsedMs": 986,
+      "observedAt": "2026-11-11T01:41:25.937Z",
+      "providerAgeSeconds": 1777,
+      "providerStale": true,
+      "cachedOnRepeat": true,
+      "records": 1
+    },
+    {
+      "kind": "competitive",
+      "ok": true,
+      "elapsedMs": 1084,
+      "observedAt": "2026-11-11T01:41:26.035Z",
+      "providerAgeSeconds": 1777,
+      "providerStale": true,
+      "cachedOnRepeat": true,
+      "records": 5
+    }
+  ]
+}

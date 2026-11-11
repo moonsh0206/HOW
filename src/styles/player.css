@@ -71,7 +71,8 @@
 #player-results .player-result-card>a{grid-template-columns:44px minmax(0,1fr) 44px}
 #player-results .player-favorite{position:absolute;right:6px;top:6px;z-index:1;width:44px;min-height:44px;height:44px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--muted);font-size:25px;cursor:pointer}
 #player-results .player-favorite[aria-pressed=true]{color:var(--orange)}
-#player-results .player-favorite:hover{background:#f99e1a0a}
+#player-results .player-favorite:is(:hover,:focus,:active,[aria-pressed=true]){background:transparent;border:0;box-shadow:none;filter:none;transform:none}
+#player-results .player-favorite:focus-visible{outline:1px solid var(--blue);outline-offset:-7px;border-radius:50%}
 #player-results .player-result-arrow{position:absolute;right:14px;bottom:12px}
 #player-results .player-card-ranks{padding-right:20px}
 #player-search-page .player-favorites-title{font-size:18px;margin:18px 0 10px}
@@ -83,3 +84,21 @@
 #player-search-page .player-search-empty p{font-size:13px;line-height:1.7;color:#b9c5d5;margin:5px 0}
 #player-search-page .player-search-empty .primary-button{margin-top:16px;min-height:44px}
 @media(max-width:600px){#player-search-page .player-search-empty>img{width:240px}#player-search-page .player-search-empty h2{font-size:22px}#player-search-page .player-search-empty{padding-inline:0}}
+/* Search-only atmosphere; profile, site header and footer retain their designs. */
+#player-search-page:not(.player-profile-page){background:linear-gradient(90deg,var(--bg),transparent 12%,transparent 88%,var(--bg)),radial-gradient(ellipse at 8% 12%,#f99e1a18,transparent 48%),radial-gradient(ellipse at 100% 24%,#428bd02b,transparent 62%),linear-gradient(145deg,#1c293b,#10151e 85%);border-radius:0}
+.player-search-hero{position:relative;isolation:isolate;padding:28px 24px 22px;background:linear-gradient(90deg,transparent,#ffffff03 20%,#ffffff03 80%,transparent);border-radius:0;box-shadow:inset 0 1px #b7d9f50a,inset 0 -1px #b7d9f508}
+/* Decorative layers stay behind content and are confined to the search hero. */
+.player-search-hero::before,.player-search-hero::after{content:'';position:absolute;z-index:-1;pointer-events:none}
+.player-search-hero::before{inset:12% 2% 10% auto;width:28%;background:repeating-linear-gradient(125deg,transparent 0 27px,#81bffc0c 28px 29px,transparent 30px 58px);clip-path:polygon(22% 0,100% 0,100% 78%,80% 100%,0 100%,0 25%)}
+.player-search-hero::after{right:4%;top:20%;width:19%;height:58%;border-top:1px solid #86c3fa30;border-bottom:1px solid #86c3fa25;background:linear-gradient(90deg,#86c3fa30 1px,transparent 1px) left top/1px 24px no-repeat,linear-gradient(90deg,#f99e1a55 1px,transparent 1px) right bottom/1px 30px no-repeat;clip-path:polygon(16% 0,100% 0,100% 80%,84% 100%,0 100%,0 20%)}
+@media(max-width:1100px){.player-search-hero::before,.player-search-hero::after{display:none}}
+@media(max-width:600px){#player-search-page:not(.player-profile-page){background:linear-gradient(90deg,var(--bg),transparent 7%,transparent 93%,var(--bg)),radial-gradient(ellipse at 0 0,#f99e1a12,transparent 52%),radial-gradient(ellipse at 100% 22%,#428bd01a,transparent 65%),linear-gradient(145deg,#182336,#10151e 85%)}}
+.player-search-hero h1{margin:8px 0 22px;font-size:clamp(25px,4vw,36px);line-height:1.3}
+.player-search-hero .eyebrow{margin:0;color:var(--orange)}
+.player-search-hero .player-guide{margin:12px 0 0;max-width:720px}
+#player-profile .player-profile-favorite{position:absolute;top:12px;right:12px;width:44px;height:44px;border:1px solid #ffffff22;border-radius:8px;background:#10151e99;color:var(--muted);font-size:26px;cursor:pointer}
+#player-profile .player-profile-favorite[aria-pressed=true]{color:var(--orange)}
+#player-profile .player-profile-heading>div{padding-right:40px}
+#player-profile .player-profile-title{grid-column:2;min-width:0}
+.player-favorite:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(max-width:600px){.player-search-hero{padding:18px 12px}.player-search-hero h1{margin-bottom:16px}#player-search-form .primary-button{padding-inline:14px}}
