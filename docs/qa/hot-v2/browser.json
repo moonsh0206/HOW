@@ -1,0 +1,65 @@
+{
+  "source": "actual stored Asia diamond observations; empty-state check uses test-only equal-values condition",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "lang": "ko",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "pass": true,
+      "errors": []
+    }
+  ]
+}

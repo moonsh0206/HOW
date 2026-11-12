@@ -1,3 +1,4 @@
+import {dailyRankChanges} from './dailyRankModel.js';
 import {label} from '../i18n/i18n.js';
 import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
 import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommendationPolicy.js';
@@ -44,7 +45,13 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
     enrichedHeroes: enriched,
     heroByKey(key) { return enriched().find(hero => hero.key === key); },
     visibleHeroes() { return this.listSelection().heroes; },
-    listSelection() { return buildListSelection(this.sortedHeroes(),state); },
+    listSelection() {
+      const selection=buildListSelection(this.sortedHeroes(),state);
+      const changes=metaPolicy.version===META_POLICY.version&&state.sort==='tier-desc'&&state.role!=='all'?dailyRankChanges({snapshots:state.dailyRankSnapshots??[],heroes:state.heroes,filters:state.statsFilters,role:state.role}):new Map();
+      // Daily stored rank must match the displayed live rank; never attach a stale ordinal delta.
+      selection.changes=[...changes].every(([key,value])=>selection.ordinals.get(key)===value.currentRank)?changes:new Map();
+      return selection;
+    },
     sortedHeroes() {
       return enriched().filter(hero => state.role === 'all' || hero.role === state.role)
         .sort((a, b) => {

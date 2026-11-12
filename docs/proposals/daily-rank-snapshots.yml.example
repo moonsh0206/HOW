@@ -1,0 +1,31 @@
+# Inactive template: deliberately outside .github/workflows.
+name: Daily 10 KST rank observations
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: how-snapshot-collection
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: node scripts/collect-division-batch.js --region asia --apply
+      - run: node scripts/collect-division-batch.js --region europe --apply
+      - run: node scripts/collect-division-batch.js --region americas --apply
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-rank-observations
+          path: public/data/snapshots/
+          retention-days: 30

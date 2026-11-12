@@ -139,3 +139,7 @@ html.detail-open{overflow:hidden}
 .tier-badge .recommendation-label{display:block;font-size:11px;font-weight:600;line-height:1.25;white-space:normal;overflow-wrap:anywhere;color:#e7cf9f}
 .tier-badge:has(.recommendation-label){padding:2px 5px}
 .recommendation-description{font-size:13px;line-height:1.5;color:var(--text-muted,#b7c2d1)}
+
+/* Inline daily movement: no extra card row or column. */
+.rank-change{display:inline-block;font-size:9px;line-height:1;margin-left:2px;white-space:nowrap}
+.rank-up{color:#75cf9c}.rank-down{color:#ed8592}.rank-equal{color:var(--muted)}

@@ -7,6 +7,7 @@ import {topPlayerHeroes,formatPlayerTime} from '../models/playerModel.js';
 import {renderPlayerRank} from './playerRankView.js';
 import {renderPlayerCardRanks} from './playerCardRanksView.js';
 import {playerHeroColor} from '../data/playerHeroColors.js';
+import {revealResults} from './contentMotion.js';
 const value=v=>v==null?t("player.noInfo"):String(v);
 const time=formatPlayerTime;
 export const PLAYER_EMPTY_IMAGE=`${import.meta.env?.BASE_URL??'/'}assets/illustrations/HOW_kinetic_grasp_clean.png`;
@@ -18,6 +19,7 @@ export function renderPlayerSearch(root){
  const input=node('input');input.id='player-query';input.type='search';input.placeholder=t("player.placeholder");input.maxLength=80;input.autocomplete='off';
  const button=node('button',t("player.search"),'primary-button');button.type='submit';form.append(label,input,button);root.append(form);
  root.append(node('p',t("player.guide"),'player-guide'));
+ root.append(node('p',t('player.caseNote'),'player-guide'));
  const hero=node('div',undefined,'player-search-hero');for(const child of [...root.children])if(!child.classList.contains('player-back'))hero.append(child);root.append(hero);
  const status=node('p');status.id='player-search-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const results=node('ul');results.id='player-results';results.setAttribute('aria-label',t("플레이어 검색 결과"));
@@ -51,6 +53,7 @@ export function createPlayerSearchView(root){
   for(const player of players){const li=node('li');li.className='player-result-card';const button=node('a');button.href=`#/players/${encodeURIComponent(player.id)}`;button.dataset.playerId=player.id;if(player.id===state.selected?.id)button.setAttribute('aria-current','page');
    const avatar=node('span',undefined,'player-result-avatar');if(player.avatar)avatar.append(image(player.avatar));button.append(avatar);const text=node('span',undefined,'player-result-heading');text.append(node('strong',player.name),node('small',player.isPublic===false?t("player.private"):player.isPublic===true?t("player.public"):t("player.unknownPrivacy")));const arrow=node('span','→','player-result-arrow');arrow.setAttribute('aria-hidden','true');button.append(text,arrow,renderPlayerCardRanks(state.cardProfiles?.get(player.id),player.isPublic));const selected=state.favorites?.has(player.id),favorite=node('button',selected?'★':'☆','player-favorite');favorite.type='button';favorite.dataset.playerFavorite=player.id;favorite.setAttribute('aria-pressed',String(!!selected));favorite.setAttribute('aria-label',t("message.4b29f8562447",{"0":(player.name)}));li.append(button,favorite);results.append(li);
   }
+  revealResults(results,dedicated||!players.length?'':JSON.stringify(players.map(player=>player.id)));
   if(focus)[...results.querySelectorAll('[data-player-id]')].find(b=>b.dataset.playerId===focus)?.focus({preventScroll:true});
   if(favoriteFocus)([...results.querySelectorAll('[data-player-favorite]')].find(b=>b.dataset.playerFavorite===favoriteFocus)??root.querySelector('#player-query')).focus({preventScroll:true});
   const more=root.querySelector('[data-player-more]');more.hidden=dedicated||state.results.length>=state.total||!state.results.length;more.disabled=state.searchStatus==='loading';

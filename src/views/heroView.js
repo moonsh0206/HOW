@@ -51,19 +51,27 @@ function heroIdentity(hero, { card = false } = {}) {
 }
 
 // Both layouts consume the same filtered Model selection and event attributes.
-function ordinalNode(tag, ordinal, label) {
+function ordinalNode(tag, ordinal, label, change) {
   label=translateLabel(label);
   const number=element(tag,ordinal==null?'—':String(ordinal),'hero-ordinal');
   number.dataset.ordinal=ordinal==null?'':String(ordinal);
   number.title=ordinal==null?t("미분류 · HOW 순번 미제공"):label;
   number.setAttribute('aria-label',ordinal==null?t("미분류 · 순번 미제공"):`${label} ${ordinal}`);
   if(ordinal===1)number.classList.add('hero-ordinal-first');
+  if(change){
+    const delta=change.delta;
+    const marker=element('small',delta>0?`▲${delta}`:delta<0?`▼${-delta}`:'=',`rank-change ${delta>0?'rank-up':delta<0?'rank-down':'rank-equal'}`);
+    marker.title=t('rank.daily',{previous:change.previousAt,current:change.currentAt});
+    marker.setAttribute('aria-label',`${marker.title}: ${delta>0?'+':''}${delta}`);
+    number.setAttribute('aria-label',`${number.getAttribute('aria-label')}. ${marker.getAttribute('aria-label')}`);
+    number.append(marker);
+  }
   return number;
 }
-export function createHeroCard(hero, favorites, ordinal=null, ordinalLabel=t("현재 조회 조건 및 정렬 기준의 HOW 순번")) {
+export function createHeroCard(hero, favorites, ordinal=null, ordinalLabel=t("현재 조회 조건 및 정렬 기준의 HOW 순번"),change) {
   const card = element('li', undefined, 'hero-card');
   const header = element('div', undefined, 'hero-card-header');
-  header.append(ordinalNode('span',ordinal,ordinalLabel),heroIdentity(hero, { card: true }), favoriteButton(hero, favorites));
+  header.append(ordinalNode('span',ordinal,ordinalLabel,change),heroIdentity(hero, { card: true }), favoriteButton(hero, favorites));
   const stats = element('dl', undefined, 'hero-card-stats');
   for (const [field, label] of METRICS) {
     const metric = element('div');
@@ -173,11 +181,11 @@ export function createHeroView() {
         const identity = element('td');
         identity.append(heroIdentity(hero));
         const role = element('td'); role.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
-        row.append(ordinalNode('td',selection.ordinals.get(hero.key),selection.label),identity, role);
+        row.append(ordinalNode('td',selection.ordinals.get(hero.key),selection.label,selection.changes?.get(hero.key)),identity, role);
         for (const [field, label] of METRICS) { const cell = element('td'); const value = metricValue(hero, field); cell.append(field === 'tier' ? tierButton(hero) : element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
         const favoriteCell = element('td');
         favoriteCell.append(favoriteButton(hero, state.favorites)); row.append(favoriteCell); fragment.append(row);
-        cardFragment.append(createHeroCard(hero, state.favorites,selection.ordinals.get(hero.key),selection.label));
+        cardFragment.append(createHeroCard(hero, state.favorites,selection.ordinals.get(hero.key),selection.label,selection.changes?.get(hero.key)));
       }
       const focused = document.activeElement;
       const active = rows.contains(focused) || cards.contains(focused) ? focused?.dataset.favorite : undefined;

@@ -1,3 +1,5 @@
+import roster from '../../src/data/subroles.json' with {type:'json'};
+import {RANK_POLICY_ID} from '../../src/models/dailyRankModel.js';
 import {DIVISIONS,REGIONS,statisticsQuery} from '../../src/models/statisticsModel.js';
 import {SNAPSHOT_FIELDS,expandSnapshotFile,buildV2Derived} from '../../src/models/snapshotV2Model.js';
 import {qualitySummary} from '../../src/models/statisticsQuality.js';
@@ -15,7 +17,7 @@ export async function collectDivisionBatch({service,region='asia',heroKeys,now=D
    divisions[division]={status:'ok',collectedAt:result.fetchedAt,cacheAgeSeconds:result.providerAgeSeconds??null,browserCached:result.cached===true,requestUrl:`https://overfast-api.tekrop.fr/heroes/stats?${statisticsQuery(filters)}`,patch:null,patchVerification:{status:'unverified'},statisticsWindow:'unverified-patch-window',records,dataQuality:heroKeys.map(key=>result.records.find(r=>r.hero===key).quality??null),qualitySummary:qualitySummary(result.records)};
   }catch(error){divisions[division]={status:'error',attemptedAt:new Date(now()).toISOString(),records:null,error:error.message};}
  }
- const raw={schemaVersion:2,source:'OverFast API',platform:'pc',gamemode:'competitive',region,map:'all',observationDate:started.slice(0,10),batchId:`${region}:${started}`,fields:SNAPSHOT_FIELDS,heroes:heroKeys,divisions};
+ const raw={rankPolicyId:RANK_POLICY_ID,rankRoster:Object.fromEntries(heroKeys.map(key=>[key,roster.heroes[key]?.parentRole])),schemaVersion:2,source:'OverFast API',platform:'pc',gamemode:'competitive',region,map:'all',observationDate:started.slice(0,10),batchId:`${region}:${started}`,fields:SNAPSHOT_FIELDS,heroes:heroKeys,divisions};
  raw.derivationVersion=DERIVATION_VERSION;
  const failedDivisions=Object.keys(divisions).filter(d=>divisions[d].status!=='ok');
  raw.collection={status:failedDivisions.length===9?'failed':failedDivisions.length?'partial':'complete',succeeded:9-failedDivisions.length,expected:9,failedDivisions};

@@ -3,6 +3,11 @@ import matchups from './matchups.js';
 import {ko as templates} from './templates.js';
 import common from './common.js';
 export default {
+ 'hot.empty':'현재 승률과 픽률이 함께 상승한 HOT 영웅이 없습니다.',
+ 'hot.criteria':'HOT 기준: 픽률 +{pick}%p 이상 · 승률 +{win}%p 이상 · 최대 {limit}명 · 승률 상승폭 우선',
+ 'hot.thresholdNote':'상승폭은 HOW가 정한 최소 변화 기준이며 통계적 유의성을 뜻하지 않습니다.',
+ 'player.caseNote':'제공처 검색은 대소문자를 구분할 수 있습니다. 처음 검색하는 계정은 정확한 표기를 입력해 주세요.',
+ 'rank.daily':'10:00 KST 기준 저장 순위 비교 · 이전 {previous} / 현재 {current}',
  ...Object.fromEntries(Object.keys(patches).map(key=>[key,key])),
  ...Object.fromEntries(Object.keys(matchups).map(key=>[key,key])),
  ...templates,

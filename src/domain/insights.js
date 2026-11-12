@@ -4,7 +4,8 @@ import {statisticsNeedsReview,rateStatus} from '../models/statisticsQuality.js';
 import {validatedProvenance,OBSERVATION_TOLERANCE_MS} from '../models/statisticsProvenance.js';
 import {verifiedPatch} from '../models/patchHistoryModel.js';
 
-export const INSIGHT_POLICY = Object.freeze({ minPickRate: 1, hotPickDelta: 1, minComparisonMs: 86400000, maxComparisonMs: 7 * 86400000, highWinPercentile: 75, maxPickPercentile: 50 });
+// Operational minimum changes in percentage points, not statistical significance.
+export const INSIGHT_POLICY = Object.freeze({ hotVersion:'hot-v2', minPickRate: 1, hotPickDelta: 1, hotWinDelta: .5, maxHotHeroes:3, minComparisonMs: 86400000, maxComparisonMs: 7 * 86400000, highWinPercentile: 75, maxPickPercentile: 50 });
 export function hiddenGems(heroes, policy = INSIGHT_POLICY) {
   return heroes.filter(hero => {
     if (statisticsNeedsReview(hero.statistics)||!Number.isFinite(hero.statistics?.winRate) || !Number.isFinite(hero.statistics?.pickRate) || hero.statistics.pickRate < policy.minPickRate) return false;
@@ -42,8 +43,8 @@ export function hotHeroes(heroes, current, previous, policy = INSIGHT_POLICY) {
     if(['winRate','pickRate'].some(f=>rateStatus(old,f)!=='available'||rateStatus(now,f)!=='available'))continue;
     if (![old?.winRate, old?.pickRate, now?.winRate, now?.pickRate].every(Number.isFinite)) continue;
     const pickDelta = now.pickRate - old.pickRate, winDelta = now.winRate - old.winRate;
-    if (pickDelta >= policy.hotPickDelta && winDelta >= 0 && now.pickRate >= policy.minPickRate) selected.push({ ...hero, pickDelta, winDelta });
+    if (pickDelta + 1e-9 >= policy.hotPickDelta && winDelta + 1e-9 >= policy.hotWinDelta && now.pickRate >= policy.minPickRate) selected.push({ ...hero, pickDelta, winDelta });
   }
-  selected.sort((a, b) => b.pickDelta - a.pickDelta || b.winDelta - a.winDelta || a.key.localeCompare(b.key, 'en'));
-  return { available: true, reason: 'HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.',warning:a?'':'패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.', heroes: selected.slice(0, 3), previousAt: previous.collectedAt, currentAt: current.fetchedAt };
+  selected.sort((a, b) => b.winDelta - a.winDelta || b.pickDelta - a.pickDelta || a.key.localeCompare(b.key, 'en'));
+  return { available: true, reason: 'HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.',warning:a?'':'패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.', heroes: selected.slice(0, policy.maxHotHeroes), previousAt: previous.collectedAt, currentAt: current.fetchedAt };
 }

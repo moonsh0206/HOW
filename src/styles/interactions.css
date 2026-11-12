@@ -1,0 +1,28 @@
+/* Motion only: no layout dimensions, route state or data dependencies. */
+.site-header .desktop-header-link,.main-menu>a{transition:color 180ms,background-color 180ms}
+.site-header .desktop-header-link::after,.main-menu>a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:center;opacity:0;transition:transform 180ms ease-out,opacity 180ms}
+.main-menu>a{position:relative}
+.site-header .desktop-header-link[aria-current=page]::after,.main-menu>a[aria-current=page]::after{transform:scaleX(1);opacity:1}
+button{transition:background-color 160ms,color 160ms,border-color 160ms,filter 160ms,transform 140ms}
+@media(prefers-reduced-motion:no-preference){button:not(:disabled):not([aria-disabled=true]):not(.filter-combobox-trigger):not(.filter-option):not(.player-favorite):not(.player-profile-favorite):not(.favorite-button):active{transform:scale(.98)}}
+button:disabled,button[aria-disabled=true]{cursor:not-allowed;filter:none}
+.filter-combobox-trigger,.filter-option{transition:background-color 160ms,border-color 160ms,color 160ms}
+.filter-combobox-popup:not([hidden]){animation:how-popup-in 160ms ease-out}
+@keyframes how-popup-in{from{opacity:.65;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+#player-results .player-result-card,.hero-card{transition:transform 200ms ease-out}
+#player-results .player-result-card>a,.hero-card{transition:transform 200ms ease-out,border-color 200ms,background-color 200ms}
+#hero-rows tr{transition:background-color 180ms}
+/* Stars stay transparent, including pressed/hover. Focus outlines stay visible. */
+#player-results .player-favorite,#player-profile .player-profile-favorite,.favorite-button,.hero-card .favorite-button{transition:color 160ms;background:transparent;border-color:transparent;box-shadow:none}
+#player-results .player-favorite:is(:hover,:focus,:active,[aria-pressed=true]),#player-profile .player-profile-favorite:is(:hover,:focus,:active,[aria-pressed=true]),.favorite-button:is(:hover,:focus,:active,[aria-pressed=true]),.hero-card .favorite-button:is(:hover,:focus,:active,[aria-pressed=true]){background:transparent;border-color:transparent;box-shadow:none;filter:none;transform:none}
+@media(hover:hover) and (pointer:fine){
+ .site-header .desktop-header-link:not([aria-current=page]):hover,.main-menu>a:not([aria-current=page]):hover{color:#f3dcc0;background:#f99e1a04}
+ #player-results .player-result-card:hover,.hero-card:hover{transform:translateY(-2px)}
+ #player-results .player-result-card:hover>a,.hero-card:hover{border-color:#657389;background-color:#1d2532}
+ #hero-rows tr:hover{background-color:#f99e1a07}
+}
+@media(prefers-reduced-motion:reduce){
+ button,a,.site-header .desktop-header-link,.main-menu>a,.site-header .desktop-header-link::after,.main-menu>a::after,.filter-combobox-trigger,.filter-option,#player-results .player-result-card,#player-results .player-result-card>a,.hero-card,#hero-rows tr,#player-results .player-favorite,#player-profile .player-profile-favorite,.favorite-button{transition:none}
+ .filter-combobox-popup:not([hidden]){animation:none}
+ #player-results .player-result-card:hover,.hero-card:hover,button:active{transform:none}
+}

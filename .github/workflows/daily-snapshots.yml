@@ -1,7 +1,9 @@
 name: Daily diamond snapshot manual validation
 on:
   workflow_dispatch:
-# Proposed only, NOT enabled: schedule cron '15 0 * * *' (09:15 Asia/Seoul).
+# Daily 10:00 KST replacement proposal (inactive):
+# docs/proposals/daily-rank-snapshots.yml.example; cron '0 1 * * *'.
+# Replace this workflow when approved; do not install a second daily collector.
 permissions:
   contents: read
 concurrency:

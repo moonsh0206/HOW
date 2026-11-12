@@ -6,6 +6,16 @@ export function createHeroController({ model, view, service, statisticsService, 
   let statsGeneration = 0;
   let statsTimer;
   function render() { view.render(model); onStateChange?.(); }
+  async function loadDailyRanks(result, generation) {
+    model.state.dailyRankSnapshots=[];
+    if(!snapshotService||result.stale)return;
+    try {
+      const history=await snapshotService.getHistory(result.filters,{days:7,scope:'range'});
+      if(generation!==statsGeneration)return;
+      model.state.dailyRankSnapshots=history.snapshots;
+      render();
+    } catch { /* Optional history must never block the list. */ }
+  }
   async function loadPrevious(result, generation) {
     if (!snapshotService || result.stale) return;
     model.state.snapshotStatus = 'loading';
@@ -24,6 +34,7 @@ export function createHeroController({ model, view, service, statisticsService, 
     clearTimeout(statsTimer);
     const generation = ++statsGeneration;
     const filters = { ...model.state.statsFilters };
+    model.state.dailyRankSnapshots=[];
     model.state.statsStatus = 'loading'; model.state.statsError = ''; render();
     try {
       const result = await statisticsService.getStatistics(filters);
@@ -33,6 +44,7 @@ export function createHeroController({ model, view, service, statisticsService, 
       model.state.statsStatus = result.stale ? 'stale' : result.records.length ? 'ready' : 'empty';
       model.state.statsError = result.error || '';
       loadPrevious(result, generation);
+      loadDailyRanks(result, generation);
     } catch (error) {
       if (generation !== statsGeneration) return;
       model.state.statsStatus = 'error'; model.state.statsError = error.message;
@@ -98,7 +110,7 @@ export function createHeroController({ model, view, service, statisticsService, 
       });
       document.querySelector('#close-detail').addEventListener('click', view.closeDetail);
       window.addEventListener('hashchange', route);
-      route(); load(); if(model.state.statistics?.expiresAt>Date.now()&&statisticsQuery(model.state.statistics.filters)===statisticsQuery(model.state.statsFilters)){if(autoRefresh)statsTimer=setTimeout(loadStatistics,Math.max(60000,model.state.statistics.expiresAt-Date.now()));}else loadStatistics();
+      route(); load(); if(model.state.statistics?.expiresAt>Date.now()&&statisticsQuery(model.state.statistics.filters)===statisticsQuery(model.state.statsFilters)){loadDailyRanks(model.state.statistics,statsGeneration);if(autoRefresh)statsTimer=setTimeout(loadStatistics,Math.max(60000,model.state.statistics.expiresAt-Date.now()));}else loadStatistics();
     },
     stop() { ++statsGeneration; clearTimeout(statsTimer); },
   };

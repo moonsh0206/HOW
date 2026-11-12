@@ -1,0 +1,122 @@
+{
+  "policy": {
+    "hotVersion": "hot-v2",
+    "minPickRate": 1,
+    "hotPickDelta": 1,
+    "hotWinDelta": 0.5,
+    "maxHotHeroes": 3,
+    "minComparisonMs": 86400000,
+    "maxComparisonMs": 604800000,
+    "highWinPercentile": 75,
+    "maxPickPercentile": 50
+  },
+  "observationCount": 50,
+  "comparablePairs": 2,
+  "archiveUnchanged": true,
+  "hashes": {
+    "index.json": "cfdb6b5148f3ae47ff2d128d713780a7f22aaeca948d91eb577132f29ab64344",
+    "2026-11-02T05-36-24.500Z.json": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816",
+    "2026-11-04T00-52-25.812Z.json": "e6dce1cd90d8f902ce0397c4f9f7b9797e96b72452427a6f7eac548ee89cba2c",
+    "2026-11-06T02-37-44.293Z.json": "9616c40f1e7b402c97f84d45b1fba716fba5a079b8a812a94d10566049898457",
+    "2026-11-06T02-38-15.758Z.json": "78734a5da6fe967ea8a5966098ed926030297a7865850dea1d67c031fa54a092",
+    "2026-11-06T02-38-31.983Z.json": "6fc97329b12b38424bde9660820dd436ebfaa1b03d2808891d976cb31c2825a8"
+  },
+  "results": [
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "all",
+        "map": "all"
+      },
+      "currentAt": "2026-11-06T02:37:40.344Z",
+      "previousAt": "2026-11-02T05:36:24.500Z",
+      "available": true,
+      "reason": "HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.",
+      "warning": "패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.",
+      "before": [
+        {
+          "key": "kiriko",
+          "pickDelta": 10.599999999999998,
+          "winDelta": 2.6999999999999957
+        },
+        {
+          "key": "junker-queen",
+          "pickDelta": 8.700000000000001,
+          "winDelta": 8.100000000000001
+        },
+        {
+          "key": "brigitte",
+          "pickDelta": 4.5,
+          "winDelta": 4.899999999999999
+        }
+      ],
+      "after": [
+        {
+          "key": "junker-queen",
+          "pickDelta": 8.700000000000001,
+          "winDelta": 8.100000000000001
+        },
+        {
+          "key": "illari",
+          "pickDelta": 4.300000000000001,
+          "winDelta": 6.5
+        },
+        {
+          "key": "mauga",
+          "pickDelta": 1.4,
+          "winDelta": 5.699999999999996
+        }
+      ]
+    },
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      },
+      "currentAt": "2026-11-06T02:37:43.499Z",
+      "previousAt": "2026-11-04T00:52:25.812Z",
+      "available": true,
+      "reason": "HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.",
+      "warning": "패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.",
+      "before": [
+        {
+          "key": "kiriko",
+          "pickDelta": 15.599999999999998,
+          "winDelta": 5.5
+        },
+        {
+          "key": "junker-queen",
+          "pickDelta": 12.6,
+          "winDelta": 13.799999999999997
+        },
+        {
+          "key": "illari",
+          "pickDelta": 6.7,
+          "winDelta": 6.5
+        }
+      ],
+      "after": [
+        {
+          "key": "junker-queen",
+          "pickDelta": 12.6,
+          "winDelta": 13.799999999999997
+        },
+        {
+          "key": "lifeweaver",
+          "pickDelta": 1.8999999999999995,
+          "winDelta": 9.799999999999997
+        },
+        {
+          "key": "illari",
+          "pickDelta": 6.7,
+          "winDelta": 6.5
+        }
+      ]
+    }
+  ]
+}

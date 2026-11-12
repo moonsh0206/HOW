@@ -1,0 +1,35 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

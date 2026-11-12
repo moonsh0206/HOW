@@ -7,6 +7,8 @@
 #heroes table td.hero-ordinal-first:first-child{color:var(--orange)}
 #heroes .hero-card-header>.hero-ordinal{display:inline-flex;align-items:center;justify-content:center;flex:0 0 18px;width:18px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
 #heroes .hero-card-header>.hero-ordinal-first{color:var(--orange)}
+#heroes .hero-card-header>.hero-ordinal:has(.rank-change){flex-basis:38px;width:38px}
+#heroes table td.hero-ordinal:has(.rank-change){white-space:nowrap}
 #heroes .hero-card-header{gap:6px}
 #heroes .hero-card-header>.hero-identity{flex:1;min-width:0}
 @media(min-width:1024px) and (max-width:1100px){#heroes table .hero-column{width:30%}}

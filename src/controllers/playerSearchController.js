@@ -4,6 +4,7 @@ import {createPlayerSearchView} from '../views/playerSearchView.js';
 import {createPlayerFavoritesStorage,favoriteProfile} from '../storage/playerFavoritesStorage.js';
 export function createPlayerSearchController({root,provider,heroes=()=>[],heroDetails,onNavigate,favoritesStorage=createPlayerFavoritesStorage(),view=createPlayerSearchView(root)}){
  const saved=favoritesStorage.load();
+ provider.rememberPlayers?.(saved.players);
  const state={favorites:new Map(saved.players.map(p=>[p.id,p])),favoritesNotice:saved.available?'':t("즐겨찾기 저장소를 읽을 수 없습니다. 이번 화면에서만 사용할 수 있습니다."),cardProfiles:new Map(),mode:'search',background:null,searchStatus:'idle',searchError:'',results:[],total:0,selected:null,profileStatus:'idle',profileError:'',summary:null,competitive:null,private:false};
  let active=false,searchGeneration=0,profileGeneration=0,query='',backgroundKey=null;
  let rankActive=0,rankQueue=[],rankBudget=20,rankBlocked=false;

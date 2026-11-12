@@ -3,6 +3,11 @@ import matchups from './matchups.js';
 import {en as templates} from './templates.js';
 import common from './common.js';
 export default {
+ 'hot.empty':'No heroes currently meet the HOT criteria for both win rate and pick rate increases.',
+ 'hot.criteria':'HOT criteria: pick rate +{pick} pp or more · win rate +{win} pp or more · up to {limit} heroes · win rate increase first',
+ 'hot.thresholdNote':'These are HOW minimum-change thresholds, not evidence of statistical significance.',
+ 'player.caseNote':'Provider search may be case-sensitive. Use the exact spelling when searching for an account for the first time.',
+ 'rank.daily':'Stored ranks at the 10:00 KST cutoff · Previous {previous} / Current {current}',
  ...patches,
  ...matchups,
  ...templates,
