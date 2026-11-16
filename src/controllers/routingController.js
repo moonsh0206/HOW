@@ -68,7 +68,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     historyKey = signature; const token = ++historyGeneration, days = historyDays;
     historyArchive = null; historyState = { status: 'loading', days };
     const scope = historyScope;
-    Promise.resolve().then(() => historyService.getHistory(filters, { days, scope })).then(result => {
+    Promise.resolve().then(() => historyService.getHistory(filters, { days, scope,refresh:true })).then(result => {
       if (token !== historyGeneration || route.page !== 'detail' || route.key !== key) return;
       if (!result.snapshots.length && result.warnings?.length) throw new Error('저장된 이력 파일을 읽지 못했습니다. 다시 시도해 주세요.');
       historyArchive = result; historyState = historyResult(result, key, filters, days);

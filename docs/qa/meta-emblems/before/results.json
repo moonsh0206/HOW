@@ -1,0 +1,79 @@
+{
+  "source": "captured real roster and statistics; synthetic movement history and grade gallery only for presentation QA; before uses tracked UI source without modifying workspace",
+  "baselineSha": "bb33d098306d93db50a5de5efed2600d2c164937",
+  "phase": "before",
+  "results": [
+    {
+      "width": 1440,
+      "lang": "ko",
+      "centers": [
+        {
+          "column": 3,
+          "offset": 16.7265625
+        },
+        {
+          "column": 4,
+          "offset": 42.0234375
+        }
+      ],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "centers": [
+        {
+          "column": 3,
+          "offset": 12.546875
+        },
+        {
+          "column": 4,
+          "offset": 59.3984375
+        }
+      ],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "centers": [],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "centers": [],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ko",
+      "centers": [],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "centers": [],
+      "iconResponses": [],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

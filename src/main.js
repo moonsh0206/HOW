@@ -9,6 +9,7 @@ import './styles/filters.css';
 import './styles/navigation.css';
 import './styles/player.css';
 import './styles/interactions.css';
+import './styles/metaEmblems.css';
 import { createHeroModel } from './models/heroModel.js';
 import { createHeroView } from './views/heroView.js';
 import { createHeroController } from './controllers/heroController.js';

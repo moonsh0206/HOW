@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-16T06:20:31.429Z",
+  "source": "real OverFast API; automatic collection orchestrator, temporary production build and HTTP publication",
+  "region": "asia",
+  "heroes": 54,
+  "statisticsRequests": 9,
+  "newOriginalDivisions": 9,
+  "derivedComponents": 3,
+  "metricHero": "ana",
+  "metrics": [
+    "winRate",
+    "pickRate",
+    "banRate"
+  ],
+  "protectedFiles": 5,
+  "protectedFilesUnchanged": true,
+  "remoteDurabilityTested": false,
+  "remoteDeploymentTested": false,
+  "temporaryArchive": "C:\\Users\\Sunghoon\\AppData\\Local\\Temp\\how-graph-live-DBGjC7",
+  "collection": {
+    "dryRun": false,
+    "updated": 1,
+    "failures": 0,
+    "status": "collected",
+    "results": [
+      {
+        "region": "asia",
+        "decision": {
+          "collect": true,
+          "reason": "ordinary-observation",
+          "milestone": "ordinary-weekly",
+          "targetPatch": null,
+          "patchVerified": false
+        },
+        "plannedRequests": 9,
+        "collection": {
+          "status": "complete",
+          "succeeded": 9,
+          "expected": 9,
+          "failedDivisions": []
+        },
+        "errors": [],
+        "persistence": "2026-11-16T06-20-30.004Z.json"
+      }
+    ],
+    "maxStatisticsRequests": 27
+  },
+  "sourceDigest": "e471dbc7ca49574394a4596cc328fa4a5fb2fd324d8b89407f4fc2ba52129f0e"
+}

@@ -1,0 +1,72 @@
+/* HOW Meta Tier presentation only: restrained shield, no scoring dependency. */
+.tier-s{--tier-ink:#cbbb8d;--tier-edge:#92835c;--tier-fill:#24231f}
+.tier-a{--tier-ink:#c0afd6;--tier-edge:#847098;--tier-fill:#24202c}
+.tier-b{--tier-ink:#9bbbd9;--tier-edge:#6083a1;--tier-fill:#1d2732}
+.tier-c{--tier-ink:#90c2ba;--tier-edge:#56877f;--tier-fill:#1c2b28}
+.tier-d{--tier-ink:#b0b8c3;--tier-edge:#697584;--tier-fill:#252a32}
+span.meta-tier-emblem{display:inline-grid;place-items:center;flex:none;width:36px;height:40px;line-height:1;background:none;border:0!important;border-radius:0;padding:0;color:var(--tier-ink);vertical-align:middle}
+.meta-tier-emblem>svg{display:block;width:100%;height:100%;overflow:visible}
+.meta-tier-shield{fill:var(--tier-fill);stroke:var(--tier-edge);stroke-width:1.25;stroke-linejoin:round}
+.meta-tier-letter{fill:var(--tier-ink);font-family:inherit;font-size:20px;font-weight:850;letter-spacing:0}
+.tier-badge[data-tier]{position:relative;display:inline-grid;place-items:center;box-sizing:border-box;width:64px;height:44px;min-height:44px;min-width:44px;padding:0;border:0;background:none;border-radius:5px;line-height:1;vertical-align:middle}
+.tier-badge[data-tier]:has(.recommendation-label){padding:0}
+.tier-badge .recommendation-label{position:absolute;top:calc(100% - 1px);left:50%;transform:translateX(-50%);display:block;max-width:78px;white-space:nowrap;overflow-wrap:normal;font-size:9px;font-weight:500;line-height:11px;color:var(--tier-ink)}
+.tier-badge[data-tier]:focus-visible{outline:2px solid var(--tier-ink);outline-offset:2px}
+#favorite-preview .favorite-tier{display:inline-flex;align-items:center;justify-content:center;flex:none;padding:0;border:0;background:none}
+#favorite-preview .favorite-tier .meta-tier-emblem{width:25px;height:28px}
+.tier-legend{align-items:center;gap:8px}
+.tier-legend>span.meta-tier-emblem{width:29px;height:32px;font-size:inherit}
+
+/* Original Blizzard role artwork, recolored only through its alpha mask. */
+.role-symbol{display:inline-block;flex:none;width:32px;height:32px;background-color:currentColor;mask:var(--role-icon) center/contain no-repeat;vertical-align:middle}
+.role-symbol-tank{--role-icon:url('/assets/roles/tank.svg')}
+.role-symbol-damage{--role-icon:url('/assets/roles/damage.svg')}
+.role-symbol-support{--role-icon:url('/assets/roles/support.svg')}
+.role-tag.role-icon-badge{display:inline-flex;align-items:center;justify-content:center;flex:none;box-sizing:border-box;width:36px;height:40px;padding:0!important;border:0!important;border-radius:0;background:none;line-height:1;vertical-align:middle}
+.role-icon-badge.tank{color:#a6bed2}.role-icon-badge.damage{color:#c7b0a4}.role-icon-badge.support{color:#a5c3b7}
+.role-tag.role-with-label{width:auto;gap:5px;font-size:11px;height:32px}
+.role-with-label .role-symbol{width:24px;height:24px}
+.role-filters button{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;padding-inline:12px;line-height:1.2}
+.role-filters button .role-symbol{width:21px;height:21px;color:inherit}
+
+/* One colgroup owns the header and every data row. */
+/* Override legacy first-child widths; distribute space instead of letting the
+   identity column absorb the entire remainder. Keep the table at full width. */
+#heroes .hero-tier-table{--ordinal-width:44px;--identity-width:30%;--role-width:92px;--tier-width:12%;--favorite-width:48px;--rate-width:calc((58% - var(--role-width) - var(--ordinal-width) - var(--favorite-width)) / 3);table-layout:fixed;width:100%}
+.hero-tier-table .ordinal-col{width:var(--ordinal-width)}
+.hero-tier-table .identity-col{width:var(--identity-width)}
+.hero-tier-table .role-col{width:var(--role-width)}
+.hero-tier-table .tier-col{width:var(--tier-width)}
+.hero-tier-table .rate-col{width:var(--rate-width)}
+.hero-tier-table .favorite-col{width:var(--favorite-width)}
+#heroes .hero-tier-table .hero-column{width:auto}
+#heroes .hero-tier-table th,#heroes .hero-tier-table td{padding:12px 6px;vertical-align:middle;line-height:1.3}
+#heroes .hero-tier-table th.ordinal-heading:first-child,#heroes .hero-tier-table td.hero-ordinal:first-child{width:var(--ordinal-width);min-width:0;max-width:none;padding:12px 4px;white-space:nowrap}
+#heroes .hero-tier-table th.ordinal-heading:first-child{font-size:10px;padding-inline:2px}
+#heroes .hero-tier-table :is(.role-heading,.tier-heading,.role-cell,.tier-cell){text-align:center}
+#heroes .hero-tier-table th:nth-child(n+3),#heroes .hero-tier-table td:nth-child(n+3){text-align:center}
+#heroes .hero-tier-table th:last-child,#heroes .hero-tier-table td:last-child{text-align:center;padding-inline:2px}
+#heroes .hero-tier-table td:nth-child(n+5){white-space:normal;overflow-wrap:anywhere}
+#heroes .hero-tier-table .hero-identity{min-width:0;width:100%}
+#heroes .hero-tier-table .hero-name{min-width:0;white-space:normal;overflow-wrap:anywhere}
+#heroes .hero-tier-table tr{height:72px}
+#heroes .role-tag.role-with-label{width:auto;height:40px;gap:6px;font-size:12px;white-space:nowrap}
+#heroes .role-with-label .role-label{color:#c5cbd4;line-height:1.2}
+#heroes .hero-card .role-icon-badge{width:30px;height:30px;margin:0;padding:0}
+#heroes .hero-card .role-with-label{width:auto;gap:4px;font-size:11px}
+#heroes .hero-card .role-symbol{width:26px;height:26px}
+#heroes .hero-card-stats dd{min-height:66px;padding-bottom:18px;display:flex;align-items:center;justify-content:center}
+#heroes .hero-card .meta-tier-emblem{width:29px;height:33px}
+#heroes .hero-card .recommendation-label{width:60px;max-width:60px;white-space:normal;line-height:10px}
+@media(min-width:601px) and (max-width:767px){
+ #heroes .hero-tier-table{--identity-width:auto;--role-width:80px;--tier-width:80px;--rate-width:62px}
+ #heroes .hero-tier-table .role-with-label{font-size:11px}
+ #heroes .hero-tier-table .role-with-label .role-symbol{width:22px;height:22px}
+ #heroes .hero-tier-table th,#heroes .hero-tier-table td{padding-inline:4px}
+}
+@media(max-width:600px){
+ .role-filters button{flex-direction:column;gap:3px;padding:5px 2px;font-size:11px;min-height:48px}
+ .role-filters button .role-symbol{width:20px;height:20px}
+ .role-filters .role-filter-label{line-height:1.1}
+ .tier-badge .recommendation-label{font-size:8px;line-height:10px}
+}

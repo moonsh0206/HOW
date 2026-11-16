@@ -1,0 +1,155 @@
+{
+  "source": "real old/new graph observations; captured current API fixtures",
+  "results": [
+    {
+      "width": 1440,
+      "lang": "ko",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 승률 48.1% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 승률 45.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "pickRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 픽률 26.4% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 픽률 25.6% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "banRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 밴률 5.2% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 밴률 6.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "11/6/2026, 11:37:44 (KST) · Win rate 48.1% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Win rate 45.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "pickRate": [
+          "11/6/2026, 11:37:44 (KST) · Pick rate 26.4% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Pick rate 25.6% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "banRate": [
+          "11/6/2026, 11:37:44 (KST) · Ban rate 5.2% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Ban rate 6.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 승률 48.1% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 승률 45.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "pickRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 픽률 26.4% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 픽률 25.6% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "banRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 밴률 5.2% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 밴률 6.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "11/6/2026, 11:37:44 (KST) · Win rate 48.1% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Win rate 45.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "pickRate": [
+          "11/6/2026, 11:37:44 (KST) · Pick rate 26.4% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Pick rate 25.6% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "banRate": [
+          "11/6/2026, 11:37:44 (KST) · Ban rate 5.2% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Ban rate 6.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "lang": "ko",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 승률 48.1% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 승률 45.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "pickRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 픽률 26.4% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 픽률 25.6% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ],
+        "banRate": [
+          "2026. 11. 6. 11시 37분 44초 (KST) · 밴률 5.2% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인",
+          "2026. 11. 16. 15시 20분 29초 (KST) · 밴률 6.5% · 저장 이력 · HOW 등급 균등 평균 · 패치 미확인"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "beforeStored": 1,
+      "afterStored": 2,
+      "indexRequests": 5,
+      "metrics": {
+        "winRate": [
+          "11/6/2026, 11:37:44 (KST) · Win rate 48.1% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Win rate 45.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "pickRate": [
+          "11/6/2026, 11:37:44 (KST) · Pick rate 26.4% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Pick rate 25.6% · Saved history · HOW equal-rank average · Patch unverified"
+        ],
+        "banRate": [
+          "11/6/2026, 11:37:44 (KST) · Ban rate 5.2% · Saved history · HOW equal-rank average · Patch unverified",
+          "11/16/2026, 15:20:29 (KST) · Ban rate 6.5% · Saved history · HOW equal-rank average · Patch unverified"
+        ]
+      },
+      "regionIsolation": true,
+      "originalAndComposite": true,
+      "insufficientHint": true,
+      "overflow": 0
+    }
+  ]
+}

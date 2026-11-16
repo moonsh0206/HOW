@@ -1,0 +1,688 @@
+{
+  "source": "actual local stored archive; historical comparisons at each observed timestamp, not current HOT candidates",
+  "generatedAt": "2026-11-16T04:26:08.623Z",
+  "observationCount": 50,
+  "comparablePairs": 2,
+  "operatingPolicyUnchanged": true,
+  "hashes": {
+    "2026-11-02T05-36-24.500Z.json": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816",
+    "2026-11-04T00-52-25.812Z.json": "e6dce1cd90d8f902ce0397c4f9f7b9797e96b72452427a6f7eac548ee89cba2c",
+    "2026-11-06T02-37-44.293Z.json": "9616c40f1e7b402c97f84d45b1fba716fba5a079b8a812a94d10566049898457",
+    "2026-11-06T02-38-15.758Z.json": "78734a5da6fe967ea8a5966098ed926030297a7865850dea1d67c031fa54a092",
+    "2026-11-06T02-38-31.983Z.json": "6fc97329b12b38424bde9660820dd436ebfaa1b03d2808891d976cb31c2825a8"
+  },
+  "rows": [
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "all",
+        "map": "all"
+      },
+      "previousAt": "2026-11-02T05:36:24.500Z",
+      "currentAt": "2026-11-06T02:37:40.344Z",
+      "patchWindow": "unverified-patch-window",
+      "policies": [
+        {
+          "name": "existing",
+          "pickThreshold": 1,
+          "winThreshold": 0.5,
+          "count": 11,
+          "displayed": [
+            "junker-queen",
+            "illari",
+            "mauga"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 8.700000000000001,
+              "winDelta": 8.100000000000001
+            },
+            {
+              "key": "illari",
+              "pickDelta": 4.300000000000001,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.4,
+              "winDelta": 5.699999999999996
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 4.5,
+              "winDelta": 4.899999999999999
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 3.4000000000000004,
+              "winDelta": 4.799999999999997
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 10.599999999999998,
+              "winDelta": 2.6999999999999957
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1,
+              "winDelta": 2.5
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1,
+              "winDelta": 2.200000000000003
+            },
+            {
+              "key": "zenyatta",
+              "pickDelta": 3.8000000000000007,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "moira",
+              "pickDelta": 2.599999999999998,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "juno",
+              "pickDelta": 1,
+              "winDelta": 1.5
+            }
+          ]
+        },
+        {
+          "name": "A",
+          "pickThreshold": 0.7,
+          "winThreshold": 0.3,
+          "count": 12,
+          "displayed": [
+            "junker-queen",
+            "illari",
+            "mauga"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 8.700000000000001,
+              "winDelta": 8.100000000000001
+            },
+            {
+              "key": "illari",
+              "pickDelta": 4.300000000000001,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.4,
+              "winDelta": 5.699999999999996
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 4.5,
+              "winDelta": 4.899999999999999
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 3.4000000000000004,
+              "winDelta": 4.799999999999997
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 10.599999999999998,
+              "winDelta": 2.6999999999999957
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1,
+              "winDelta": 2.5
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1,
+              "winDelta": 2.200000000000003
+            },
+            {
+              "key": "zenyatta",
+              "pickDelta": 3.8000000000000007,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "moira",
+              "pickDelta": 2.599999999999998,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "juno",
+              "pickDelta": 1,
+              "winDelta": 1.5
+            },
+            {
+              "key": "echo",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 0.29999999999999716
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "pickThreshold": 0.5,
+          "winThreshold": 0.3,
+          "count": 14,
+          "displayed": [
+            "junker-queen",
+            "illari",
+            "mauga"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 8.700000000000001,
+              "winDelta": 8.100000000000001
+            },
+            {
+              "key": "illari",
+              "pickDelta": 4.300000000000001,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.4,
+              "winDelta": 5.699999999999996
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 4.5,
+              "winDelta": 4.899999999999999
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 3.4000000000000004,
+              "winDelta": 4.799999999999997
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 10.599999999999998,
+              "winDelta": 2.6999999999999957
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1,
+              "winDelta": 2.5
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1,
+              "winDelta": 2.200000000000003
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 0.5999999999999996,
+              "winDelta": 2
+            },
+            {
+              "key": "zenyatta",
+              "pickDelta": 3.8000000000000007,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "moira",
+              "pickDelta": 2.599999999999998,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "juno",
+              "pickDelta": 1,
+              "winDelta": 1.5
+            },
+            {
+              "key": "mizuki",
+              "pickDelta": 0.5,
+              "winDelta": 1.2000000000000028
+            },
+            {
+              "key": "echo",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 0.29999999999999716
+            }
+          ]
+        },
+        {
+          "name": "C",
+          "pickThreshold": 0.5,
+          "winThreshold": 0.2,
+          "count": 14,
+          "displayed": [
+            "junker-queen",
+            "illari",
+            "mauga"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 8.700000000000001,
+              "winDelta": 8.100000000000001
+            },
+            {
+              "key": "illari",
+              "pickDelta": 4.300000000000001,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.4,
+              "winDelta": 5.699999999999996
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 4.5,
+              "winDelta": 4.899999999999999
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 3.4000000000000004,
+              "winDelta": 4.799999999999997
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 10.599999999999998,
+              "winDelta": 2.6999999999999957
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1,
+              "winDelta": 2.5
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1,
+              "winDelta": 2.200000000000003
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 0.5999999999999996,
+              "winDelta": 2
+            },
+            {
+              "key": "zenyatta",
+              "pickDelta": 3.8000000000000007,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "moira",
+              "pickDelta": 2.599999999999998,
+              "winDelta": 1.6000000000000014
+            },
+            {
+              "key": "juno",
+              "pickDelta": 1,
+              "winDelta": 1.5
+            },
+            {
+              "key": "mizuki",
+              "pickDelta": 0.5,
+              "winDelta": 1.2000000000000028
+            },
+            {
+              "key": "echo",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 0.29999999999999716
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      },
+      "previousAt": "2026-11-04T00:52:25.812Z",
+      "currentAt": "2026-11-06T02:37:43.499Z",
+      "patchWindow": "unverified-patch-window",
+      "policies": [
+        {
+          "name": "existing",
+          "pickThreshold": 1,
+          "winThreshold": 0.5,
+          "count": 12,
+          "displayed": [
+            "junker-queen",
+            "lifeweaver",
+            "illari"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 12.6,
+              "winDelta": 13.799999999999997
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 1.8999999999999995,
+              "winDelta": 9.799999999999997
+            },
+            {
+              "key": "illari",
+              "pickDelta": 6.7,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.7000000000000002,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1.4000000000000004,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 6.4,
+              "winDelta": 5.700000000000003
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 15.599999999999998,
+              "winDelta": 5.5
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 5.700000000000001,
+              "winDelta": 5.299999999999997
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1.1000000000000014,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "echo",
+              "pickDelta": 1.0999999999999996,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "moira",
+              "pickDelta": 1.6000000000000014,
+              "winDelta": 1.2999999999999972
+            },
+            {
+              "key": "sojourn",
+              "pickDelta": 1.5,
+              "winDelta": 0.5
+            }
+          ]
+        },
+        {
+          "name": "A",
+          "pickThreshold": 0.7,
+          "winThreshold": 0.3,
+          "count": 15,
+          "displayed": [
+            "junker-queen",
+            "lifeweaver",
+            "illari"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 12.6,
+              "winDelta": 13.799999999999997
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 1.8999999999999995,
+              "winDelta": 9.799999999999997
+            },
+            {
+              "key": "illari",
+              "pickDelta": 6.7,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.7000000000000002,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1.4000000000000004,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 6.4,
+              "winDelta": 5.700000000000003
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 15.599999999999998,
+              "winDelta": 5.5
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 5.700000000000001,
+              "winDelta": 5.299999999999997
+            },
+            {
+              "key": "juno",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 4.800000000000004
+            },
+            {
+              "key": "mizuki",
+              "pickDelta": 0.8999999999999995,
+              "winDelta": 3.200000000000003
+            },
+            {
+              "key": "sierra",
+              "pickDelta": 0.7000000000000002,
+              "winDelta": 2.8000000000000043
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1.1000000000000014,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "echo",
+              "pickDelta": 1.0999999999999996,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "moira",
+              "pickDelta": 1.6000000000000014,
+              "winDelta": 1.2999999999999972
+            },
+            {
+              "key": "sojourn",
+              "pickDelta": 1.5,
+              "winDelta": 0.5
+            }
+          ]
+        },
+        {
+          "name": "B",
+          "pickThreshold": 0.5,
+          "winThreshold": 0.3,
+          "count": 15,
+          "displayed": [
+            "junker-queen",
+            "lifeweaver",
+            "illari"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 12.6,
+              "winDelta": 13.799999999999997
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 1.8999999999999995,
+              "winDelta": 9.799999999999997
+            },
+            {
+              "key": "illari",
+              "pickDelta": 6.7,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.7000000000000002,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1.4000000000000004,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 6.4,
+              "winDelta": 5.700000000000003
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 15.599999999999998,
+              "winDelta": 5.5
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 5.700000000000001,
+              "winDelta": 5.299999999999997
+            },
+            {
+              "key": "juno",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 4.800000000000004
+            },
+            {
+              "key": "mizuki",
+              "pickDelta": 0.8999999999999995,
+              "winDelta": 3.200000000000003
+            },
+            {
+              "key": "sierra",
+              "pickDelta": 0.7000000000000002,
+              "winDelta": 2.8000000000000043
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1.1000000000000014,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "echo",
+              "pickDelta": 1.0999999999999996,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "moira",
+              "pickDelta": 1.6000000000000014,
+              "winDelta": 1.2999999999999972
+            },
+            {
+              "key": "sojourn",
+              "pickDelta": 1.5,
+              "winDelta": 0.5
+            }
+          ]
+        },
+        {
+          "name": "C",
+          "pickThreshold": 0.5,
+          "winThreshold": 0.2,
+          "count": 15,
+          "displayed": [
+            "junker-queen",
+            "lifeweaver",
+            "illari"
+          ],
+          "candidates": [
+            {
+              "key": "junker-queen",
+              "pickDelta": 12.6,
+              "winDelta": 13.799999999999997
+            },
+            {
+              "key": "lifeweaver",
+              "pickDelta": 1.8999999999999995,
+              "winDelta": 9.799999999999997
+            },
+            {
+              "key": "illari",
+              "pickDelta": 6.7,
+              "winDelta": 6.5
+            },
+            {
+              "key": "mauga",
+              "pickDelta": 1.7000000000000002,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "lucio",
+              "pickDelta": 1.4000000000000004,
+              "winDelta": 6.399999999999999
+            },
+            {
+              "key": "brigitte",
+              "pickDelta": 6.4,
+              "winDelta": 5.700000000000003
+            },
+            {
+              "key": "kiriko",
+              "pickDelta": 15.599999999999998,
+              "winDelta": 5.5
+            },
+            {
+              "key": "reaper",
+              "pickDelta": 5.700000000000001,
+              "winDelta": 5.299999999999997
+            },
+            {
+              "key": "juno",
+              "pickDelta": 0.7999999999999998,
+              "winDelta": 4.800000000000004
+            },
+            {
+              "key": "mizuki",
+              "pickDelta": 0.8999999999999995,
+              "winDelta": 3.200000000000003
+            },
+            {
+              "key": "sierra",
+              "pickDelta": 0.7000000000000002,
+              "winDelta": 2.8000000000000043
+            },
+            {
+              "key": "shion",
+              "pickDelta": 1.1000000000000014,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "echo",
+              "pickDelta": 1.0999999999999996,
+              "winDelta": 2.799999999999997
+            },
+            {
+              "key": "moira",
+              "pickDelta": 1.6000000000000014,
+              "winDelta": 1.2999999999999972
+            },
+            {
+              "key": "sojourn",
+              "pickDelta": 1.5,
+              "winDelta": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-16T04:31:24.938Z",
+  "indexStatus": 200,
+  "indexEntries": 29,
+  "indexMatches": true,
+  "latestAt": "2026-11-06T02:38:31.943Z",
+  "files": [
+    {
+      "file": "2026-11-02T05-36-24.500Z.json",
+      "status": 200,
+      "byteMatch": true,
+      "semanticMatch": true,
+      "originals": 1,
+      "derived": 0,
+      "heroCounts": [
+        54
+      ]
+    },
+    {
+      "file": "2026-11-04T00-52-25.812Z.json",
+      "status": 200,
+      "byteMatch": true,
+      "semanticMatch": true,
+      "originals": 1,
+      "derived": 0,
+      "heroCounts": [
+        54
+      ]
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "status": 200,
+      "byteMatch": true,
+      "semanticMatch": true,
+      "originals": 9,
+      "derived": 7,
+      "heroCounts": [
+        54
+      ]
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "status": 200,
+      "byteMatch": true,
+      "semanticMatch": true,
+      "originals": 9,
+      "derived": 7,
+      "heroCounts": [
+        54
+      ]
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "status": 200,
+      "byteMatch": true,
+      "semanticMatch": true,
+      "originals": 9,
+      "derived": 7,
+      "heroCounts": [
+        54
+      ]
+    }
+  ],
+  "durableBranchStatus": 404,
+  "rankJsonStatus": 200,
+  "rankCohorts": 0,
+  "rankGeneratedAt": null
+}

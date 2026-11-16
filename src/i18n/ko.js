@@ -3,6 +3,7 @@ import matchups from './matchups.js';
 import {ko as templates} from './templates.js';
 import common from './common.js';
 export default {
+ 'hot.quality-unavailable':'비교 가능한 승률·픽률이 부족하거나 품질 검토 중입니다.',
  'hot.no-history':'현재 조회 조건과 같은 이전 관측이 없습니다.',
  'hot.outside-window':'이전 관측이 1~7일 비교 범위를 벗어났습니다.',
  'hot.incompatible':'출처·계산 정책 또는 패치 집계 기간이 호환되는 이전 관측이 없습니다.',

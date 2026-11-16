@@ -37,14 +37,16 @@ export function hotHeroes(heroes, current, previous, policy = INSIGHT_POLICY) {
   if (!Number.isFinite(elapsed) || elapsed < policy.minComparisonMs || elapsed > policy.maxComparisonMs) return { available: false, reason: '비교 간격은 1일 이상, 7일 이내여야 합니다.', heroes: [] };
   const before = new Map(previous.records.map(record => [record.hero, record]));
   const selected = [];
+  let usableHeroes=0,qualityExcluded=0;
   for (const hero of heroes) {
     const old = before.get(hero.key), now = hero.statistics;
-    if(statisticsNeedsReview(old)||statisticsNeedsReview(now))continue;
-    if(['winRate','pickRate'].some(f=>rateStatus(old,f)!=='available'||rateStatus(now,f)!=='available'))continue;
-    if (![old?.winRate, old?.pickRate, now?.winRate, now?.pickRate].every(Number.isFinite)) continue;
+    if(statisticsNeedsReview(old)||statisticsNeedsReview(now)){qualityExcluded++;continue;}
+    if(['winRate','pickRate'].some(f=>rateStatus(old,f)!=='available'||rateStatus(now,f)!=='available')){qualityExcluded++;continue;}
+    if (![old?.winRate, old?.pickRate, now?.winRate, now?.pickRate].every(Number.isFinite)){qualityExcluded++;continue;}
+    usableHeroes++;
     const pickDelta = now.pickRate - old.pickRate, winDelta = now.winRate - old.winRate;
     if (pickDelta + 1e-9 >= policy.hotPickDelta && winDelta + 1e-9 >= policy.hotWinDelta && now.pickRate >= policy.minPickRate) selected.push({ ...hero, pickDelta, winDelta });
   }
   selected.sort((a, b) => b.winDelta - a.winDelta || b.pickDelta - a.pickDelta || a.key.localeCompare(b.key, 'en'));
-  return { available: true, reason: 'HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.',warning:a?'':'패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.', heroes: selected.slice(0, policy.maxHotHeroes), previousAt: previous.collectedAt, currentAt: current.fetchedAt };
+  return { available: true, reason: 'HOW 수집 시점 간 비교 · 패치 변화 또는 인과관계를 뜻하지 않습니다.',warning:a?'':'패치 집계창 미확인 · 일반 관측값 비교이며 패치 효과를 뜻하지 않습니다.', heroes: selected.slice(0, policy.maxHotHeroes), usableHeroes, qualityExcluded, previousAt: previous.collectedAt, currentAt: current.fetchedAt };
 }

@@ -1,0 +1,76 @@
+{
+  "server": "strict static; no fallback",
+  "source": "saved real hero statistics and captured API metadata/profile responses; no new live browser API requests",
+  "results": [
+    {
+      "width": 320,
+      "publicDirectStatus": 200,
+      "localeURLPriority": true,
+      "legacyHash": true,
+      "refresh": true,
+      "privateHashIdPreserved": true,
+      "backForward": true,
+      "noindex": true,
+      "favoritesPreserved": true,
+      "statisticsNotRefetchedOnLanguageChange": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "publicDirectStatus": 200,
+      "localeURLPriority": true,
+      "legacyHash": true,
+      "refresh": true,
+      "privateHashIdPreserved": true,
+      "backForward": true,
+      "noindex": true,
+      "favoritesPreserved": true,
+      "statisticsNotRefetchedOnLanguageChange": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "publicDirectStatus": 200,
+      "localeURLPriority": true,
+      "legacyHash": true,
+      "refresh": true,
+      "privateHashIdPreserved": true,
+      "backForward": true,
+      "noindex": true,
+      "favoritesPreserved": true,
+      "statisticsNotRefetchedOnLanguageChange": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "publicDirectStatus": 200,
+      "localeURLPriority": true,
+      "legacyHash": true,
+      "refresh": true,
+      "privateHashIdPreserved": true,
+      "backForward": true,
+      "noindex": true,
+      "favoritesPreserved": true,
+      "statisticsNotRefetchedOnLanguageChange": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "publicDirectStatus": 200,
+      "localeURLPriority": true,
+      "legacyHash": true,
+      "refresh": true,
+      "privateHashIdPreserved": true,
+      "backForward": true,
+      "noindex": true,
+      "favoritesPreserved": true,
+      "statisticsNotRefetchedOnLanguageChange": true,
+      "overflow": 0,
+      "errors": []
+    }
+  ]
+}

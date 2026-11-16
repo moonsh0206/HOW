@@ -6,7 +6,7 @@ export const STATISTICS_TTL = 60 * 60 * 1000;
 export function createStatisticsService({ fetcher = globalThis.fetch, now = Date.now, timeoutMs = 12000, ttlMs = STATISTICS_TTL, baseUrl = 'https://overfast-api.tekrop.fr' } = {}) {
   const cache = new Map(), pending = new Map(), failures = new Map();
   const fallback = (cached, failure) => {
-    if (!cached) throw new Error(failure.message);
+    if (!cached) {const error=new Error(failure.message);error.retryAt=failure.retryAt;throw error;}
     return { ...cached, cached: true, stale: true, error: failure.message, retryAt: failure.retryAt };
   };
   let active=0;const queue=[];

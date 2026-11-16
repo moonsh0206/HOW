@@ -1,0 +1,791 @@
+{
+  "source": "current local UI and captured real roster/statistics; memory-only movement fixtures; before uses frozen CSS from the start of this spacing task",
+  "baselineSha": "bb33d098306d93db50a5de5efed2600d2c164937",
+  "phase": "after",
+  "results": [
+    {
+      "width": 1440,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 1062,
+        "columnWidths": [
+          44,
+          318.59,
+          106.19,
+          127.44,
+          139.25,
+          139.25,
+          139.28,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 211.609375,
+        "identityToRole": 246.703125,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0
+          },
+          {
+            "column": 6,
+            "offset": 0.0078125
+          },
+          {
+            "column": 7,
+            "offset": 0
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 1062,
+        "columnWidths": [
+          44,
+          318.59,
+          106.19,
+          127.44,
+          139.25,
+          139.25,
+          139.28,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 206.703125,
+        "identityToRole": 241.796875,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0.0078125
+          },
+          {
+            "column": 6,
+            "offset": 0
+          },
+          {
+            "column": 7,
+            "offset": 0.0078125
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 902,
+        "columnWidths": [
+          44,
+          270.59,
+          90.19,
+          108.23,
+          113.66,
+          113.66,
+          113.67,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 163.609375,
+        "identityToRole": 190.703125,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0.0078125
+          },
+          {
+            "column": 5,
+            "offset": 0
+          },
+          {
+            "column": 6,
+            "offset": 0.0078125
+          },
+          {
+            "column": 7,
+            "offset": 0.0078125
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0.0078125
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 902,
+        "columnWidths": [
+          44,
+          270.59,
+          90.19,
+          108.23,
+          113.66,
+          113.66,
+          113.67,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 158.703125,
+        "identityToRole": 185.796875,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0.0078125
+          },
+          {
+            "column": 5,
+            "offset": 0.0078125
+          },
+          {
+            "column": 6,
+            "offset": 0
+          },
+          {
+            "column": 7,
+            "offset": 0
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0.0078125
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 662,
+        "columnWidths": [
+          44,
+          198.59,
+          66.19,
+          79.44,
+          75.25,
+          75.25,
+          75.28,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 36,
+        "identityUnused": 107.609375,
+        "identityToRole": 122.703125,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0
+          },
+          {
+            "column": 6,
+            "offset": 0.0078125
+          },
+          {
+            "column": 7,
+            "offset": 0
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 662,
+        "columnWidths": [
+          44,
+          198.59,
+          66.19,
+          79.44,
+          75.25,
+          75.25,
+          75.28,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 36,
+        "identityUnused": 106.21875,
+        "identityToRole": 121.3125,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0.0078125
+          },
+          {
+            "column": 6,
+            "offset": 0
+          },
+          {
+            "column": 7,
+            "offset": 0.0078125
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 718,
+        "columnWidths": [
+          44,
+          215.39,
+          71.8,
+          86.16,
+          84.22,
+          84.22,
+          84.22,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 108.40625,
+        "identityToRole": 126.296875,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0.0078125
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0
+          },
+          {
+            "column": 6,
+            "offset": 0.0078125
+          },
+          {
+            "column": 7,
+            "offset": 0
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0.0078125
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "table",
+        "tableWidth": 718,
+        "columnWidths": [
+          44,
+          215.39,
+          71.8,
+          86.16,
+          84.22,
+          84.22,
+          84.22,
+          48
+        ],
+        "computedFirstWidth": "44px",
+        "layout": "fixed",
+        "portraitWidth": 46,
+        "identityUnused": 103.5,
+        "identityToRole": 121.390625,
+        "axes": [
+          {
+            "column": 1,
+            "offset": 0.0078125
+          },
+          {
+            "column": 3,
+            "offset": 0.0078125
+          },
+          {
+            "column": 4,
+            "offset": 0
+          },
+          {
+            "column": 5,
+            "offset": 0.0078125
+          },
+          {
+            "column": 6,
+            "offset": 0
+          },
+          {
+            "column": 7,
+            "offset": 0.0078125
+          },
+          {
+            "column": 8,
+            "offset": 0
+          }
+        ]
+      },
+      "centers": [
+        {
+          "column": 3,
+          "offset": 0.0078125
+        },
+        {
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "cards",
+        "tableWidth": 0,
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "cards",
+        "tableWidth": 0,
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ko",
+      "tableMetrics": {
+        "mode": "cards",
+        "tableWidth": 0,
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "tableMetrics": {
+        "mode": "cards",
+        "tableWidth": 0,
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Overwatch role icons: original Blizzard SVG files.
+Reused from roleIcon URLs already recorded in docs/research/zero-rate-audit/blizzard-data.json.
+Artwork is not redrawn or modified. CSS uses its alpha channel as a monochrome mask.
+
+support: https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg
+SHA-256: 10194a478b42f3018fb14adfb7ba4bfaa86705d17eca86a0be12251ac348e593
+
+damage: https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg
+SHA-256: 9ae309d3277ccc2526789037aa6eeca10bbb2f443543f46820ec43edf510e408
+
+tank: https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg
+SHA-256: 9c607fa0c42ab1a5a96f79dea83ac8f896b47b57c9f7f24e23e869da90e82ef3
+

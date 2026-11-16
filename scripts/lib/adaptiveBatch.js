@@ -7,7 +7,7 @@ export async function collectAdaptiveRegions({service,heroKeys,patch,regions=['a
  for(const region of regions){
   const decision=adaptiveCollectionDecision({patch,observations:observations.filter(o=>o.region===region),attempts:attempts.filter(a=>a.region===region),now:now(),extraRequested});
   const result={region,decision,plannedRequests:decision.collect?9:0};
-  if(!dryRun&&decision.collect){const raw=await collectDivisionBatch({service,region,heroKeys,now});raw.observationPlan={...decision,policyVersion:'patch-adaptive-v1'};result.batch=raw;}
+  if(!dryRun&&decision.collect){const raw=await collectDivisionBatch({service,region,heroKeys,now});raw.observationPlan={...decision,policyVersion:'graph-observations-v2'};result.batch=raw;}
   results.push(result);
  }
  return {dryRun,results,maxRequests:27};

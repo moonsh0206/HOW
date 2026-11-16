@@ -3,6 +3,7 @@ import matchups from './matchups.js';
 import {en as templates} from './templates.js';
 import common from './common.js';
 export default {
+ 'hot.quality-unavailable':'Comparable win/pick rates are missing or under quality review.',
  'hot.no-history':'No previous observation matches the current filters.',
  'hot.outside-window':'Previous observations are outside the 1–7 day comparison window.',
  'hot.incompatible':'No previous observation has compatible provenance, calculation policy and patch window.',

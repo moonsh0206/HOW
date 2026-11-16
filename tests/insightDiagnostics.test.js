@@ -81,6 +81,7 @@ test('PC/mobile KO/EN HOT states distinguish empty selection, old history, missi
    for(const reason of ['no-history','outside-window','incompatible']){model.state.hotDiagnostic={reason,latestAt:previous('06').collectedAt};view.render(model);const hot=document.querySelector('#hot-content');assert.equal(hot.dataset.hotStatus,reason);assert.equal(hot.querySelector('.insight-empty').textContent,t(`hot.${reason}`));assert.match(hot.textContent,/KST/);}
    Object.assign(model.state,{snapshotStatus:'error',snapshotError:'HTTP 503'});view.render(model);assert.equal(document.querySelector('#hot-content').dataset.hotStatus,'history-error');
    Object.assign(model.state,{snapshotStatus:'ready',previousSnapshot:previous('14'),hotDiagnostic:null});view.render(model);assert.equal(document.querySelector('#hot-content').dataset.hotStatus,'no-matches');assert.equal(document.querySelector('#hot-content > p').textContent,t('hot.empty'));
+   Object.assign(model.state,{heroes:[{key:'ana',name:'Ana',role:'support'}],previousSnapshot:{...previous('14'),records:[{hero:'ana',winRate:50,pickRate:5,banRate:0}]},statistics:{...current,records:[{hero:'ana',winRate:51,pickRate:6,banRate:1,quality:{fields:{winRate:'review'}}}]}});view.render(model);assert.equal(document.querySelector('#hot-content').dataset.hotStatus,'quality-unavailable');assert.equal(document.querySelector('#hot-content > p').textContent,t('hot.quality-unavailable'));
   }finally{view.destroy();dom.window.close();Object.assign(globalThis,saved);setLanguage('ko');}
  }
 });

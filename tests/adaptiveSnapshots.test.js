@@ -12,7 +12,7 @@ const DAY=86400000,start=Date.parse('2026-10-01T00:00:00Z');
 const patch={id:'fixture',effectiveAt:new Date(start).toISOString(),type:'balance'};
 test('adaptive milestones, unknown attribution, budgets and no retrospective milestone fabrication',()=>{
  for(const day of [1,3,7,14,21,28]){const d=adaptiveCollectionDecision({patch,now:start+day*DAY});assert.equal(d.milestone,`D+${day}`);assert.equal(d.patchVerified,false);}
- assert.equal(adaptiveCollectionDecision({patch:{...patch,effectiveAt:null},now:start+DAY}).collect,false);
+ assert.equal(adaptiveCollectionDecision({patch:{...patch,effectiveAt:null},now:start+DAY}).reason,'ordinary-observation');
  assert.equal(adaptiveCollectionDecision({patch,now:start+DAY-1}).collect,false);
  const o={targetPatch:patch.id,milestone:'D+1',collectedAt:new Date(start+DAY).toISOString()};
  assert.equal(adaptiveCollectionDecision({patch,observations:[o],now:start+2*DAY}).collect,false);

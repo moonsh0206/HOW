@@ -1,0 +1,717 @@
+{
+  "source": "captured real roster and statistics; synthetic movement history and grade gallery only for presentation QA; before uses tracked UI source without modifying workspace",
+  "baselineSha": "bb33d098306d93db50a5de5efed2600d2c164937",
+  "phase": "after",
+  "results": [
+    {
+      "width": 1440,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          318.59375,
+          92,
+          127.4375,
+          143.984375,
+          143.984375,
+          144,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 52.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 127.4375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          318.59375,
+          92,
+          127.4375,
+          143.984375,
+          143.984375,
+          144,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 76.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 127.4375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          270.59375,
+          92,
+          108.234375,
+          113.046875,
+          113.046875,
+          113.078125,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 52.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 108.234375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0.0078125
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          270.59375,
+          92,
+          108.234375,
+          113.046875,
+          113.046875,
+          113.078125,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 76.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 108.234375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0.0078125
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          198.59375,
+          92,
+          79.4375,
+          66.65625,
+          66.65625,
+          66.65625,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 52.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 79.4375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          198.59375,
+          92,
+          79.4375,
+          66.65625,
+          66.65625,
+          66.65625,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 76.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 79.4375,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          215.390625,
+          92,
+          86.15625,
+          77.484375,
+          77.484375,
+          77.484375,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 52.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 86.15625,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          215.390625,
+          92,
+          86.15625,
+          77.484375,
+          77.484375,
+          77.484375,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 92,
+          "markWidth": 76.09375,
+          "padding": "12px 6px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 86.15625,
+          "markWidth": 36,
+          "padding": "12px 6px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 640,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          152,
+          80,
+          80,
+          62,
+          62,
+          62,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 80,
+          "markWidth": 48.25,
+          "padding": "12px 4px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 80,
+          "markWidth": 36,
+          "padding": "12px 4px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 640,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          44,
+          152,
+          80,
+          80,
+          62,
+          62,
+          62,
+          48
+        ]
+      },
+      "centers": [
+        {
+          "cellWidth": 80,
+          "markWidth": 70.25,
+          "padding": "12px 4px",
+          "column": 3,
+          "offset": 0
+        },
+        {
+          "cellWidth": 80,
+          "markWidth": 36,
+          "padding": "12px 4px",
+          "column": 4,
+          "offset": 0
+        }
+      ],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ko",
+      "roleLayouts": {
+        "roles": [
+          "돌격",
+          "공격",
+          "지원"
+        ],
+        "failures": [],
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "roleLayouts": {
+        "roles": [
+          "Tank",
+          "Damage",
+          "Support"
+        ],
+        "failures": [],
+        "columnWidths": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "centers": [],
+      "iconResponses": [
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/tank.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/damage.svg",
+          "status": 200
+        },
+        {
+          "url": "http://127.0.0.1:5201/assets/roles/support.svg",
+          "status": 200
+        }
+      ],
+      "movementFixtures": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

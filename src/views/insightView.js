@@ -56,6 +56,7 @@ export function createInsightView({patchModel}={}) {
       const hot = document.querySelector('#hot-content'), gems = document.querySelector('#gems-content');
       const current = state.statsStatus === 'loading' || state.statsStatus === 'error' ? null : state.statistics;
       const trend = hotHeroes(heroes, current, state.previousSnapshot);
+      const qualityUnavailable=trend.available&&heroes.length>0&&trend.usableHeroes===0;
       const hotNotes = [t("같은 조회 조건의 이전 통계와 비교합니다."),t('hot.criteria',{pick:INSIGHT_POLICY.hotPickDelta.toFixed(1),win:INSIGHT_POLICY.hotWinDelta.toFixed(1),limit:INSIGHT_POLICY.maxHotHeroes}),t('hot.thresholdNote')];
       if(trend.warning)hotNotes.push(trend.warning);
       const diagnostic=state.hotDiagnostic;
@@ -71,6 +72,7 @@ export function createInsightView({patchModel}={}) {
         hot.querySelectorAll('.insight-empty,.insight-details > p').forEach(p=>{p.textContent=reason;});
       }
       hot.querySelector('.insight-empty')?.setAttribute('role','status');
+      if(qualityUnavailable){hot.dataset.hotStatus='quality-unavailable';hot.querySelectorAll('.insight-empty,.insight-details > p').forEach(p=>{p.textContent=t('hot.quality-unavailable');});}
       content(gems, candidates, [t("현재 통계에서 주목할 만한 영웅입니다.")], current && !current.stale ? t("현재 조건에서 선정 기준을 충족한 영웅이 없습니다.") : t("최신 통계를 확보하면 후보를 제공합니다."),false,'',current&&!current.stale?t("후보 없음"):waiting);
       const categories = current && !current.stale ? classifyMeta(heroes) : {};
       for (const category of ['highWinRate', 'popularPicks', 'contestedPicks']) {

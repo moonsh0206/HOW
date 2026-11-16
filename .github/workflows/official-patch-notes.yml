@@ -42,7 +42,13 @@ jobs:
         env:
           RANKS_URL: ${{ vars.HOW_RANKS_URL }}
         run: node scripts/collect-daily-ranks.js --apply --restore-only --restore-url "$RANKS_URL"
+      - name: Restore durable graph observations when enabled
+        if: vars.HOW_GRAPH_ARCHIVE_ENABLED == 'true' && steps.patch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/graph-archive.js restore
       - name: Build changed candidate
+        # Graph history is restored in prepare, never modified by the notes-only commit.
         if: steps.patch.outputs.changed == 'true'
         run: npm run build
         env:

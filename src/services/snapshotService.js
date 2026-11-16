@@ -9,7 +9,7 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
   const cache = new Map();
   const filePending = new Map();
   async function json(path) {
-    const response = await fetcher(`${base}data/snapshots/${path}`, { signal: AbortSignal.timeout(12000) });
+    const response = await fetcher(`${base}data/snapshots/${path}`, { signal: AbortSignal.timeout(12000),cache:'no-cache' });
     if (!response.ok) throw new Error(`이전 통계 파일 연결 실패 (${response.status})`);
     return response.json();
   }
@@ -38,10 +38,17 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
     return snapshot;
   }
   const service = {
-    async getHistory(filters, { days = 7, scope = 'range' } = {}) {
+    async getHistory(filters, { days = 7, scope = 'range',refresh=false } = {}) {
+      if(refresh)expires=0;
       if(isCompositeDivision(filters.division)){
         const parts=await Promise.all(divisionMembers(filters.division).map(division=>service.getHistory({...filters,division},{days,scope})));
-        return {snapshots:combineDivisionHistory(parts.flatMap(p=>p.snapshots),filters),warnings:parts.flatMap(p=>p.warnings),gaps:[],observedUntil:new Date(now()).toISOString()};
+        const originals=parts.flatMap(p=>p.snapshots),snapshots=combineDivisionHistory(originals,filters);
+        // Preserve evidence of missing observations instead of drawing across a
+        // failed component file or an incomplete batch. These contain no values.
+        const gaps=parts.flatMap(p=>p.gaps??[]).map(entry=>({...entry,filters:{...filters},reason:'unavailable-component'}));
+        const batches=new Map();for(const row of originals)if(row.batchId){if(!batches.has(row.batchId))batches.set(row.batchId,[]);batches.get(row.batchId).push(row);}
+        for(const [batchId,rows] of batches)if(!snapshots.some(s=>s.batchId===batchId))gaps.push({batchId,collectedAt:rows.map(s=>s.collectedAt).sort().at(-1),filters:{...filters},reason:'incomplete-or-incompatible-batch'});
+        return {snapshots,warnings:parts.flatMap(p=>p.warnings),gaps,observedUntil:new Date(now()).toISOString()};
       }
       if (![7,30].includes(days)) throw new Error('지원하지 않는 이력 기간입니다.');
       if (!['range','patch','compare'].includes(scope)) throw new Error('지원하지 않는 이력 보기입니다.');

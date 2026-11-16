@@ -1,7 +1,8 @@
 import {errorText} from '../i18n/i18n.js';
+import {roleIcon,roleBadge,roleName} from './roleIcon.js';
+import {metaTierEmblem} from './metaTierEmblem.js';
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
-import { ROLES } from '../models/heroModel.js';
 import {syncCompactMain} from './compactMainView.js';
 import { MODES, REGIONS, DIVISION_GROUPS, filterLabel,divisionName,isCompositeDivision,COMPOSITE_NOTICE } from '../models/statisticsModel.js';
 import { METRICS, metricValue, metricClass } from './statisticsUI.js';
@@ -44,7 +45,7 @@ function heroIdentity(hero, { card = false } = {}) {
   if (hero.metaScore != null) text.append(element('small', `META ${hero.metaScore.toFixed(1)}`, 'meta-hint'));
   if(hero.statistics?.missingDivisions?.length)text.append(element('small',t("message.8cf3f5d2acc2",{"0":(hero.statistics.missingDivisions.map(divisionName).join(', '))}),'meta-hint'));
   if(statisticsNeedsReview(hero.statistics))text.append(element('small',t("message.12be922782a8",{"0":(hero.statistics.reviewDivisions?.length?` · ${hero.statistics.reviewDivisions.map(divisionName).join(', ')}`:'')}),'quality-note'));
-  if (card) text.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
+  if (card) text.append(roleBadge(hero.role,{showLabel:true}));
   button.append(portrait(hero), text);
   button.setAttribute('aria-label', t("message.5ee0a003d28c",{"0":(hero.name)}));
   return button;
@@ -85,6 +86,11 @@ export function createHeroView() {
   const rows = document.querySelector('#hero-rows');
   const cards = document.querySelector('#hero-cards');
   const dialog = document.querySelector('#hero-dialog');
+  for(const button of document.querySelectorAll('.role-filters [data-role]')){
+    const role=button.dataset.role;if(role==='all')continue;
+    const caption=element('span',roleName(role),'role-filter-label');button.replaceChildren(roleIcon(role),caption);button.title=roleName(role);button.setAttribute('aria-label',roleName(role));
+  }
+  for(const legend of document.querySelectorAll('.tier-legend'))legend.replaceChildren(...['S','A','B','C','D'].map(tier=>metaTierEmblem(tier,{decorative:false})));
   let detailKey;
   dialog.addEventListener('close', () => document.documentElement.classList.remove('detail-open'));
   const basicCombos=[];
@@ -110,7 +116,7 @@ export function createHeroView() {
     if (!summary) { summary = element('section'); summary.id = 'detail-statistics'; document.querySelector('#detail-content').append(summary); }
     summary.replaceChildren(element('h3', t("실제 통계 · HOW 자체 티어")));
     const metrics = element('dl', undefined, 'hero-card-stats detail-metrics');
-    for (const [field, label] of METRICS) { const group = element('div'); group.append(element('dt', label), element('dd', metricValue(hero, field), metricClass(hero, field))); metrics.append(group); }
+    for (const [field, label] of METRICS) { const group = element('div'),value=element('dd');if(field==='tier')value.append(tierButton(hero));else{value.textContent=metricValue(hero,field);value.className=metricClass(hero,field);} group.append(element('dt', label),value); metrics.append(group); }
     summary.append(metrics);
     if (state) summary.append(element('p', filterLabel(state.statsFilters)), element('p', state.statistics ? t("message.503de67ec071",{"0":(state.statistics.stale || state.statsStatus === 'error' ? t("오래된 통계 · ") : ''),"1":(new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))}) : t("이 조건의 통계가 없습니다.")));
   }
@@ -181,9 +187,9 @@ export function createHeroView() {
         const row = element('tr');
         const identity = element('td');
         identity.append(heroIdentity(hero));
-        const role = element('td'); role.append(element('span', ROLES[hero.role], `role-tag ${hero.role}`));
+        const role = element('td'); role.className='role-cell';role.append(roleBadge(hero.role,{showLabel:true}));
         row.append(ordinalNode('td',selection.ordinals.get(hero.key),selection.label,selection.changes?.get(hero.key)),identity, role);
-        for (const [field, label] of METRICS) { const cell = element('td'); const value = metricValue(hero, field); cell.append(field === 'tier' ? tierButton(hero) : element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
+        for (const [field, label] of METRICS) { const cell = element('td');if(field==='tier')cell.className='tier-cell'; const value = metricValue(hero, field); cell.append(field === 'tier' ? tierButton(hero) : element('span', value, metricClass(hero, field))); cell.setAttribute('aria-label', `${label} ${value}`); row.append(cell); }
         const favoriteCell = element('td');
         favoriteCell.append(favoriteButton(hero, state.favorites)); row.append(favoriteCell); fragment.append(row);
         cardFragment.append(createHeroCard(hero, state.favorites,selection.ordinals.get(hero.key),selection.label,selection.changes?.get(hero.key)));
@@ -206,7 +212,8 @@ export function createHeroView() {
       for (const hero of favorites) {
         const button = element('button', undefined, 'preview-hero'); button.dataset.hero = hero.key;
         button.setAttribute('aria-label', t("message.56f4c1cebe49",{"0":(hero.name),"1":(hero.tier ?? t("미분류"))}));
-        button.append(portrait(hero), element('span', hero.name), element('span', hero.tier ?? t("미분류"), hero.tier ? `favorite-tier tier-${hero.tier.toLowerCase()}` : 'favorite-tier unavailable')); preview.append(button);
+        const tier=element('span',hero.tier?undefined:t("미분류"),hero.tier?`favorite-tier tier-${hero.tier.toLowerCase()}`:'favorite-tier unavailable');if(hero.tier)tier.append(metaTierEmblem(hero.tier));
+        button.append(portrait(hero), element('span', hero.name),tier); preview.append(button);
       }
       if (!favorites.length) preview.append(element('p', state.status === 'loading' ? t("목록을 불러오는 중입니다.") : t("즐겨찾기한 영웅이 여기에 표시됩니다."), 'favorite-empty'));
       if (focusedPreview) [...preview.querySelectorAll('[data-hero]')].find(button => button.dataset.hero === focusedPreview)?.focus({ preventScroll: true });
@@ -217,7 +224,7 @@ export function createHeroView() {
       detailKey = hero.key;
       const content = document.querySelector('#detail-content'); content.replaceChildren(portrait(hero));
       const title = element('h2', hero.name); title.id = 'detail-name';
-      content.append(title, element('span', ROLES[hero.role], `role-tag ${hero.role}`), element('p', hero.description || t("현재 제공된 소개 정보가 없습니다.")));
+      content.append(title,roleBadge(hero.role,{showLabel:true}), element('p', hero.description || t("현재 제공된 소개 정보가 없습니다.")));
       renderDetailStatistics(hero, state);
       dialog.showModal();
       document.documentElement.classList.add('detail-open');

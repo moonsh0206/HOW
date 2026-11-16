@@ -253,6 +253,17 @@
  .detail-summary #detail-passives p{font-size:12px;line-height:1.5;margin-top:4px}
 }
 /* Two-column mobile ability/perk cards; overview passives stay independent. */
+/* Reserve loading space without changing the existing hero or card palette. */
+.detail-loading-layout{display:grid;gap:16px;min-width:0}
+.detail-loading-hero{min-height:320px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+.detail-loading-tabs{height:48px;border-bottom:1px solid var(--line)}
+.detail-loading-summary{min-height:360px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.detail-background-image{opacity:0;transition:opacity 200ms ease-out}
+.detail-background-image.is-loaded{opacity:1}
+#detail-page-statistics .history-graph{min-height:150px}
+#detail-minor .perk-selection,#detail-major .perk-selection{min-height:76px}
+@media(max-width:600px){.detail-loading-hero{min-height:180px}.detail-loading-summary{min-height:300px}#detail-page-statistics .history-graph{min-height:100px}}
+@media(prefers-reduced-motion:reduce){.detail-background-image{transition:none}}
 @media(max-width:768px){
  #hero-detail-page :is(#detail-minor,#detail-major,#detail-abilities,#detail-unique-passives) .ability-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-items:start}
  #hero-detail-page #detail-unique-passives .ability-grid:has(>.ability-card:only-child){grid-template-columns:minmax(0,1fr)}

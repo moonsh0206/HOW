@@ -1,4 +1,5 @@
 import {errorText} from '../i18n/i18n.js';
+import {roleBadge} from './roleIcon.js';
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
 import { tierButton } from './tierReasonView.js';
@@ -15,7 +16,6 @@ import {compactText} from './compactText.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
 import {statisticsNeedsReview} from '../models/statisticsQuality.js';
-import { ROLES } from '../models/heroModel.js';
 import { filterLabel,isCompositeDivision,COMPOSITE_NOTICE,divisionName } from '../models/statisticsModel.js';
 
 function itemCard(item, compact = false) {
@@ -35,6 +35,11 @@ function itemCard(item, compact = false) {
 export function createHeroDetailView() {
   const root = document.querySelector('#hero-detail-page');
   let contentKey;
+  let overviewKey,perkKey,lastTab;
+  function enter(elements){
+    if(root.ownerDocument.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;
+    for(const element of elements)element?.animate?.([{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'});
+  }
   function section(id, title, items) {
     const wrapper = node('section', undefined, 'detail-section'); wrapper.id = id;
     wrapper.append(node('h2', title)); const grid = node('div', undefined, 'ability-grid');
@@ -46,29 +51,38 @@ export function createHeroDetailView() {
   return {
     render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null) {
       const { state } = model;
+      root.setAttribute('aria-busy',String(detailState.status==='loading'));
       const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
-        contentKey = signature; root.replaceChildren();
+        contentKey = signature; overviewKey=null;perkKey=null;lastTab=null;root.replaceChildren();
         const back = node('a', route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기"), 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);
         const filterHost=node('div',undefined,'detail-filter-host');filterHost.id='detail-filter-host';root.append(filterHost);
         if (detailState.status !== 'ready') {
           const message = node('div', undefined, 'data-state'); message.setAttribute('role', 'status');
           message.append(node('h1', detailState.status === 'loading' ? t("영웅 정보를 불러오는 중") : t("영웅 정보를 표시할 수 없습니다")), node('p', errorText(detailState.error) || t("OverFast API에서 기술과 특전을 확인하고 있습니다.")));
           if (detailState.status === 'error') { const retry = node('button', t("다시 시도"), 'primary-button'); retry.dataset.action = 'detail-retry'; message.append(retry); }
-          root.append(message); return;
+          if(detailState.status==='loading'){
+            const skeleton=node('div',undefined,'detail-loading-layout');
+            for(const name of ['hero','tabs','summary']){const slot=node('div',undefined,`detail-loading-${name}`);if(name==='hero')slot.append(message);else slot.setAttribute('aria-hidden','true');skeleton.append(slot);}
+            root.append(skeleton);
+          }else root.append(message);
+          return;
         }
         const hero = detailState.result.detail;
         const header = node('header', undefined, 'detail-hero');
         if (hero.backgrounds.length) {
           const picture = node('picture', undefined, 'detail-background');
-          const fallback = hero.backgrounds.find(item => item.sizes.includes('xl+')) ?? hero.backgrounds[0]; picture.append(image(fallback.url)); header.append(picture);
+          const fallback = hero.backgrounds.find(item => item.sizes.includes('xl+')) ?? hero.backgrounds[0];
+          const background=image(fallback.url);background.classList.add('detail-background-image');
+          const reveal=()=>background.classList.add('is-loaded');background.addEventListener('load',reveal,{once:true});if(background.complete&&background.naturalWidth)reveal();
+          picture.append(background); header.append(picture);
         }
         const identity = node('div', undefined, 'detail-identity');
         if (hero.portrait) identity.append(image(hero.portrait, 'detail-portrait'));
         const title = node('div'); title.append(node('p', 'HERO INTELLIGENCE', 'eyebrow'));
         const h1 = node('h1', hero.name); h1.tabIndex = -1;
         const badges = node('div', undefined, 'detail-role-badges');
-        badges.append(node('span', ROLES[hero.role], `role-tag ${hero.role}`));
+        badges.append(roleBadge(hero.role,{showLabel:true}));
         if (hero.subrole) badges.append(node('span', translateLabel(hero.subrole.subroleNameKo), 'subrole-tag'));
         title.append(h1, badges);
         identity.append(title); header.append(identity, compactText(hero.description, 'detail-description')); root.append(header);
@@ -83,14 +97,18 @@ export function createHeroDetailView() {
         root.append(section('detail-minor', t("일반 특전 · Minor"), hero.minor), section('detail-major', t("주요 특전 · Major"), hero.major));
         root.append(renderPerkStatisticsInfo(perkStatistics));
         const source = node('p', t("message.d8f3b95d12fc",{"0":(new Date(detailState.result.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))}), 'detail-source'); root.append(source);
+        enter([header]);
       }
       if (detailState.status !== 'ready') return;
       const back=root.querySelector('.detail-back');back.href=route.returnHash??(state.favoritesOnly?'#favorites':'#heroes');back.textContent=route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기");
       const perkCards=perkStatistics.cards??perkCardsForDetail(route.key,detailState.result.detail,perkStatistics);
+      const nextPerkKey=JSON.stringify([perkCards,perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.error]);
+      if(nextPerkKey!==perkKey){perkKey=nextPerkKey;
       for(const tier of ['minor','major'])for(const card of root.querySelectorAll(`#detail-${tier} .ability-card`)){
         const item=perkCards[tier].find(i=>i.name===card.dataset.itemName);
         if(!item)continue;const selection=renderPerkSelection(item,perkStatistics),old=card.querySelector('.perk-selection');
         if(old)old.replaceWith(selection);else card.append(selection);
+      }
       }
       const oldPerkInfo=root.querySelector('#detail-perk-rates');
       const sourceSignature=JSON.stringify([perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.result?.fetchedAt,perkStatistics.result?.filters,errorText(perkStatistics.error)]);
@@ -99,6 +117,8 @@ export function createHeroDetailView() {
         if(perkFocus)(perkInfo.querySelector('button')??perkInfo.querySelector('a')).focus({preventScroll:true});
       }
       const hero = model.heroByKey(route.key) ?? { ...detailState.result.detail, tier: null, statistics: null, metaScore: null };
+      const nextOverviewKey=JSON.stringify([hero,state.statsFilters,state.statistics,state.metaPolicy,state.favorites.has(route.key),history,counters,synergies,patchArchive,mapStatistics]);
+      if(nextOverviewKey!==overviewKey){overviewKey=nextOverviewKey;
       const stats = root.querySelector('#detail-page-statistics');
       const summary = node('div', undefined, 'detail-summary');
       const metrics = node('dl', undefined, 'detail-metrics');
@@ -174,12 +194,19 @@ export function createHeroDetailView() {
       if (historyFocus) chart.querySelector(`[data-history-days="${historyFocus}"]`)?.focus({ preventScroll: true });
       if (scopeFocus) chart.querySelector(`[data-history-scope="${scopeFocus}"]`)?.focus({ preventScroll: true });
       if (metricFocus) stats.querySelector(`[data-history-metric="${metricFocus}"]`)?.focus({ preventScroll: true });
+      }
+      // Keep the same passive/chart/card nodes on a tab-only transition.
+      const passive=root.querySelector('#detail-passives');
+      const passiveHost=route.tab==='abilities'?root.querySelector('#detail-abilities'):root.querySelector('.detail-overview-grid');
+      if(passive&&passive.parentElement!==passiveHost)passiveHost.append(passive);
+      root.querySelector('#detail-map-statistics').hidden=route.tab!=='overview';
       for (const link of root.querySelectorAll('[data-detail-tab]')) { if (link.dataset.detailTab === route.tab) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }
       root.querySelector('#detail-overview').hidden=route.tab!=='overview';
       root.querySelector('#detail-abilities').hidden = route.tab !== 'abilities';
       if (root.querySelector('#detail-unique-passives')) root.querySelector('#detail-unique-passives').hidden = route.tab !== 'abilities';
       for (const id of ['detail-minor', 'detail-major', 'detail-perk-rates']) root.querySelector('#' + id).hidden = route.tab !== 'perks';
       root.querySelector('.detail-source').hidden=route.tab==='overview';
+      if(lastTab!==route.tab){lastTab=route.tab;enter([...root.querySelectorAll('#detail-overview,#detail-abilities,#detail-unique-passives,#detail-minor,#detail-major,#detail-perk-rates')].filter(el=>!el.hidden));}
     },
     focusHeading() { root.querySelector('h1')?.focus({ preventScroll: true }); },
   };

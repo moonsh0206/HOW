@@ -1,0 +1,113 @@
+# Disabled until reviewed activation; data branch writes occur only after that approval.
+name: Preserve and publish graph observations
+on:
+  schedule:
+    - cron: '17 * * * *' # Policy decides D+1/3/7/14, then weekly; no backfill.
+  workflow_dispatch:
+    inputs:
+      bootstrap:
+        description: Create the durable archive branch on the first approved run only
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: vars.HOW_GRAPH_ARCHIVE_ENABLED == 'true' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write # Dedicated data branch only; main is never committed here.
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HOW_GRAPH_ARCHIVE_ENABLED: ${{ vars.HOW_GRAPH_ARCHIVE_ENABLED }}
+      HOW_GRAPH_PUBLIC_URL: ${{ vars.HOW_GRAPH_PUBLIC_URL }}
+      BOOTSTRAP: ${{ inputs.bootstrap }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Restore durable history and attempt ledger
+        id: restore
+        run: |
+          if [ "$BOOTSTRAP" = 'true' ]; then
+            node scripts/graph-archive.js restore --bootstrap
+          else
+            node scripts/graph-archive.js restore
+          fi
+      - name: Use optional reviewed patch or ordinary observations
+        env:
+          PATCH_ID: ${{ vars.HOW_GRAPH_PATCH_ID }}
+        run: |
+          mkdir -p .artifacts
+          node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {PATCH_CATALOG} from './src/data/patchCatalog.js'; const url=new URL(process.env.HOW_GRAPH_PUBLIC_URL); if(url.protocol!=='https:'||!url.pathname.endsWith('/'))throw Error('HOW_GRAPH_PUBLIC_URL must be an HTTPS directory ending in /'); const patchId=process.env.PATCH_ID||null; if(patchId&&!PATCH_CATALOG.some(p=>p.id===patchId))throw Error('Unknown reviewed HOW_GRAPH_PATCH_ID'); writeFileSync('.artifacts/graph-plan.json',JSON.stringify({patchId,regions:['asia','europe','americas']}));"
+      - name: Existing policy and original batch collector
+        id: collection
+        continue-on-error: true # Only to preserve completed regions and retry ledger below.
+        run: node scripts/collect-adaptive-snapshots.js .artifacts/graph-plan.json --apply
+      - name: Preserve source observations permanently before deployment
+        if: always() && !cancelled() && steps.restore.outcome == 'success' && (steps.collection.outcome == 'success' || steps.collection.outcome == 'failure')
+        run: |
+          if [ "$BOOTSTRAP" = 'true' ]; then
+            node scripts/graph-archive.js persist --apply --bootstrap
+          else
+            node scripts/graph-archive.js persist --apply
+          fi
+      - name: Fail the run after preserving any completed regions and retry budget
+        if: steps.collection.outcome == 'failure'
+        run: exit 1
+      - name: Skip unchanged publication or recover an earlier failed deployment
+        id: publication
+        run: node scripts/graph-archive.js publication-needed
+      - run: npm test
+        if: steps.publication.outputs.needed == 'true'
+      - name: Refuse stale application revision
+        run: test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)"
+      - name: Preserve independent daily-rank publication
+        if: steps.publication.outputs.needed == 'true' && vars.HOW_RANKS_ENABLED == 'true'
+        env:
+          RANKS_URL: ${{ vars.HOW_RANKS_URL }}
+        run: node scripts/collect-daily-ranks.js --apply --restore-only --restore-url "$RANKS_URL"
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
+        id: pages
+        if: steps.publication.outputs.needed == 'true'
+      - run: npm run build
+        if: steps.publication.outputs.needed == 'true'
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - run: npm run verify:pages
+        if: steps.publication.outputs.needed == 'true'
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        if: steps.publication.outputs.needed == 'true'
+        with:
+          path: dist
+      - name: Recheck main immediately before Pages publication
+        if: steps.publication.outputs.needed == 'true'
+        run: test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$(git rev-parse HEAD)"
+      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
+        id: deployment
+        if: steps.publication.outputs.needed == 'true'
+      - name: Confirm exact graph index and original bytes via public HTTP
+        if: steps.publication.outputs.needed == 'true'
+        run: node scripts/graph-archive.js verify-public
+      - name: Keep collection diagnostics only (not the durable source)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: graph-collection-diagnostics
+          path: .artifacts/graph-collection.json
+          if-no-files-found: ignore
+          retention-days: 7

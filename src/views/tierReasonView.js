@@ -1,10 +1,12 @@
 import {t,label as translateLabel} from '../i18n/i18n.js';
+import {metaTierEmblem} from './metaTierEmblem.js';
 export const TIER_HELP = t("HOW 메타 티어는 실제 통계를 바탕으로 종합 평가한 결과입니다.");
 let opener;
 function node(tag, text) { const el = document.createElement(tag); el.textContent = text; return el; }
 export function tierButton(hero) {
   const button = node('button', hero.tier ?? t("미분류")); button.type = 'button'; button.dataset.tier = hero.key;
   button.className = hero.tier ? `tier-badge tier-${hero.tier.toLowerCase()}` : 'unavailable';
+  if(hero.tier)button.replaceChildren(metaTierEmblem(hero.tier));
   const label = translateLabel(recommendationLabel(hero));
   if (label) { const note = node('small',label); note.className='recommendation-label'; button.append(note); }
   button.title = translateLabel(recommendationDescription(hero)) || TIER_HELP;

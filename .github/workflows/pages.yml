@@ -30,6 +30,11 @@ jobs:
         run: npm ci
       - name: Test
         run: npm test
+      - name: Restore durable graph observations when enabled
+        if: vars.HOW_GRAPH_ARCHIVE_ENABLED == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/graph-archive.js restore
       - name: Restore published lightweight ranks when enabled
         if: vars.HOW_RANKS_ENABLED == 'true'
         env:

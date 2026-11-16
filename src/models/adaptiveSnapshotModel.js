@@ -7,11 +7,17 @@ const time=x=>isObservationTime(x)?Date.parse(x):NaN;
 // Scheduling labels never constitute proof of the provider's aggregation window.
 export function adaptiveCollectionDecision({patch,observations=[],attempts=[],now=Date.now(),extraRequested=false,policy=ADAPTIVE_POLICY}){
  if(!Number.isFinite(now))throw new Error('Invalid clock');
- const start=time(patch?.effectiveAt);
- if(!Number.isFinite(start)||!['balance','hotfix','hero-hotfix'].includes(patch.type))return {collect:false,reason:'unverified-effective-time',patchVerified:false};
- if(now<start)return {collect:false,reason:'before-effective-time',patchVerified:false};
  const recent=attempts.filter(a=>Number.isFinite(time(a.at))&&now-time(a.at)>=0&&now-time(a.at)<DAY);
  if(recent.length>=policy.maxAttemptsPerDay)return {collect:false,reason:'attempt-budget',patchVerified:false};
+ const retryAt=Math.max(-Infinity,...attempts.map(a=>time(a.retryAt)).filter(Number.isFinite));
+ if(retryAt>now)return {collect:false,reason:'provider-cooldown',retryAt:new Date(retryAt).toISOString(),patchVerified:false};
+ const start=time(patch?.effectiveAt);
+ if(!Number.isFinite(start)||!['balance','hotfix','hero-hotfix'].includes(patch.type)){
+  const latest=Math.max(-Infinity,...observations.map(o=>time(o.collectedAt)).filter(at=>Number.isFinite(at)&&at<=now));
+  const due=latest+policy.weeklyDays*DAY;
+  return now<due?{collect:false,reason:'ordinary-weekly-not-due',dueAt:new Date(due).toISOString(),patchVerified:false}:{collect:true,reason:'ordinary-observation',milestone:'ordinary-weekly',targetPatch:null,patchVerified:false};
+ }
+ if(now<start)return {collect:false,reason:'before-effective-time',patchVerified:false};
  const same=observations.filter(o=>o.targetPatch===patch.id&&Number.isFinite(time(o.collectedAt))&&time(o.collectedAt)<=now);
  const latest=Math.max(-Infinity,...same.map(o=>time(o.collectedAt)));
  if(now-latest<policy.minIntervalMs)return {collect:false,reason:'observation-cooldown',patchVerified:false};

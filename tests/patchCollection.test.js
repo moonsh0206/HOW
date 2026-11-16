@@ -18,7 +18,7 @@ test('patch timing: publication is not application; 24h and KST next day both re
  assert.equal(collectionDecision(patch,[],DEFAULT_FILTERS,statisticsQuery,due).collect,true);
  assert.equal(patchCollectionDue({...patch,effectiveAt:'2026-11-03T14:59:00Z'}),Date.parse('2026-11-04T14:59:00Z'));
  assert.equal(patchCollectionDue({...patch,type:'bugfix'}),null);
- assert.deepEqual(patchMilestones(patch).map(row=>row.day),[1,3,7]);
+ assert.deepEqual(patchMilestones(patch).map(row=>row.day),[1,3,7,14,21,28]);
  assert.deepEqual(patchMilestones({...patch,effectiveAt:null}),[]);
 });
 test('patch collector: skip unknown timing without API, save unverified 54 diamond rows, daily retry and atomic index',async t=>{

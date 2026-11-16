@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-16T04:28:29.347Z",
+  "source": "real OverFast API; temporary production build and HTTP publication",
+  "region": "asia",
+  "heroes": 54,
+  "statisticsRequests": 9,
+  "newOriginalDivisions": 9,
+  "derivedComponents": 3,
+  "metricHero": "ana",
+  "metrics": [
+    "winRate",
+    "pickRate",
+    "banRate"
+  ],
+  "protectedFiles": 5,
+  "protectedFilesUnchanged": true,
+  "remoteDurabilityTested": false,
+  "remoteDeploymentTested": false,
+  "temporaryArchive": "C:\\Users\\Sunghoon\\AppData\\Local\\Temp\\how-graph-live-2qAZzE",
+  "sourceDigest": "e471dbc7ca49574394a4596cc328fa4a5fb2fd324d8b89407f4fc2ba52129f0e"
+}
