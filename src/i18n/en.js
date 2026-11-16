@@ -2,7 +2,9 @@ import patches from './patches.js';
 import matchups from './matchups.js';
 import {en as templates} from './templates.js';
 import common from './common.js';
+import {en as extras} from './extras.js';
 export default {
+ ...extras,
  'hot.quality-unavailable':'Comparable win/pick rates are missing or under quality review.',
  'hot.no-history':'No previous observation matches the current filters.',
  'hot.outside-window':'Previous observations are outside the 1–7 day comparison window.',

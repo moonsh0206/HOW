@@ -1,0 +1,276 @@
+{
+  "checkedAt": "2026-11-16T07:03:21.556Z",
+  "heroes": [
+    {
+      "hero": "ana",
+      "name": "アナ",
+      "perks": 4
+    },
+    {
+      "hero": "anran",
+      "name": "アンラン",
+      "perks": 4
+    },
+    {
+      "hero": "ashe",
+      "name": "アッシュ",
+      "perks": 4
+    },
+    {
+      "hero": "baptiste",
+      "name": "バティスト",
+      "perks": 4
+    },
+    {
+      "hero": "bastion",
+      "name": "バスティオン",
+      "perks": 4
+    },
+    {
+      "hero": "brigitte",
+      "name": "ブリギッテ",
+      "perks": 4
+    },
+    {
+      "hero": "cassidy",
+      "name": "キャスディ",
+      "perks": 4
+    },
+    {
+      "hero": "dmon",
+      "name": "D.Mon",
+      "perks": 4
+    },
+    {
+      "hero": "doctrine",
+      "name": "ドクトリン",
+      "perks": 4
+    },
+    {
+      "hero": "domina",
+      "name": "ドミナ",
+      "perks": 4
+    },
+    {
+      "hero": "doomfist",
+      "name": "ドゥームフィスト",
+      "perks": 4
+    },
+    {
+      "hero": "dva",
+      "name": "D.Va",
+      "perks": 4
+    },
+    {
+      "hero": "echo",
+      "name": "エコー",
+      "perks": 4
+    },
+    {
+      "hero": "emre",
+      "name": "エムレ",
+      "perks": 4
+    },
+    {
+      "hero": "freja",
+      "name": "フレイヤ",
+      "perks": 4
+    },
+    {
+      "hero": "genji",
+      "name": "ゲンジ",
+      "perks": 4
+    },
+    {
+      "hero": "hanzo",
+      "name": "ハンゾー",
+      "perks": 4
+    },
+    {
+      "hero": "hazard",
+      "name": "ハザード",
+      "perks": 4
+    },
+    {
+      "hero": "illari",
+      "name": "イラリー",
+      "perks": 4
+    },
+    {
+      "hero": "jetpack-cat",
+      "name": "ジェットパック・キャット",
+      "perks": 4
+    },
+    {
+      "hero": "junker-queen",
+      "name": "ジャンカー・クイーン",
+      "perks": 4
+    },
+    {
+      "hero": "junkrat",
+      "name": "ジャンクラット",
+      "perks": 4
+    },
+    {
+      "hero": "juno",
+      "name": "ジュノ",
+      "perks": 4
+    },
+    {
+      "hero": "kiriko",
+      "name": "キリコ",
+      "perks": 4
+    },
+    {
+      "hero": "lifeweaver",
+      "name": "ライフウィーバー",
+      "perks": 4
+    },
+    {
+      "hero": "lucio",
+      "name": "ルシオ",
+      "perks": 4
+    },
+    {
+      "hero": "mauga",
+      "name": "マウガ",
+      "perks": 4
+    },
+    {
+      "hero": "mei",
+      "name": "メイ",
+      "perks": 4
+    },
+    {
+      "hero": "mercy",
+      "name": "マーシー",
+      "perks": 4
+    },
+    {
+      "hero": "mizuki",
+      "name": "ミズキ",
+      "perks": 4
+    },
+    {
+      "hero": "moira",
+      "name": "モイラ",
+      "perks": 4
+    },
+    {
+      "hero": "orisa",
+      "name": "オリーサ",
+      "perks": 4
+    },
+    {
+      "hero": "pharah",
+      "name": "ファラ",
+      "perks": 4
+    },
+    {
+      "hero": "ramattra",
+      "name": "ラマットラ",
+      "perks": 4
+    },
+    {
+      "hero": "reaper",
+      "name": "リーパー",
+      "perks": 4
+    },
+    {
+      "hero": "reinhardt",
+      "name": "ラインハルト",
+      "perks": 4
+    },
+    {
+      "hero": "roadhog",
+      "name": "ロードホッグ",
+      "perks": 4
+    },
+    {
+      "hero": "shion",
+      "name": "シオン",
+      "perks": 4
+    },
+    {
+      "hero": "sierra",
+      "name": "シエラ",
+      "perks": 4
+    },
+    {
+      "hero": "sigma",
+      "name": "シグマ",
+      "perks": 4
+    },
+    {
+      "hero": "sojourn",
+      "name": "ソジョーン",
+      "perks": 4
+    },
+    {
+      "hero": "soldier-76",
+      "name": "ソルジャー76",
+      "perks": 4
+    },
+    {
+      "hero": "sombra",
+      "name": "ソンブラ",
+      "perks": 4
+    },
+    {
+      "hero": "symmetra",
+      "name": "シンメトラ",
+      "perks": 4
+    },
+    {
+      "hero": "torbjorn",
+      "name": "トールビョーン",
+      "perks": 4
+    },
+    {
+      "hero": "tracer",
+      "name": "トレーサー",
+      "perks": 4
+    },
+    {
+      "hero": "vendetta",
+      "name": "ヴェンデッタ",
+      "perks": 4
+    },
+    {
+      "hero": "venture",
+      "name": "ベンチャー",
+      "perks": 4
+    },
+    {
+      "hero": "widowmaker",
+      "name": "ウィドウメイカー",
+      "perks": 4
+    },
+    {
+      "hero": "winston",
+      "name": "ウィンストン",
+      "perks": 4
+    },
+    {
+      "hero": "wrecking-ball",
+      "name": "レッキング・ボール",
+      "perks": 4
+    },
+    {
+      "hero": "wuyang",
+      "name": "ウーヤン",
+      "perks": 4
+    },
+    {
+      "hero": "zarya",
+      "name": "ザリア",
+      "perks": 4
+    },
+    {
+      "hero": "zenyatta",
+      "name": "ゼニヤッタ",
+      "perks": 4
+    }
+  ],
+  "perkIdentities": 216
+}

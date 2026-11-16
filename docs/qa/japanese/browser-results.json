@@ -1,0 +1,87 @@
+{
+  "source": "real ja-jp metadata captures; existing statistics/player fixtures; strict production static server",
+  "results": [
+    {
+      "width": 1440,
+      "liveSwitch": true,
+      "noReload": true,
+      "statsNotRefetched": true,
+      "filtersRoleSortQueryFavorites": true,
+      "graphMetrics": 3,
+      "japanesePerkRates": 4,
+      "noKorean": true,
+      "overflow": 0
+    },
+    {
+      "width": 768,
+      "liveSwitch": true,
+      "noReload": true,
+      "statsNotRefetched": true,
+      "filtersRoleSortQueryFavorites": true,
+      "graphMetrics": 3,
+      "japanesePerkRates": 4,
+      "noKorean": true,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "liveSwitch": true,
+      "noReload": true,
+      "statsNotRefetched": true,
+      "filtersRoleSortQueryFavorites": true,
+      "graphMetrics": 3,
+      "japanesePerkRates": 4,
+      "noKorean": true,
+      "overflow": 0
+    },
+    {
+      "width": 320,
+      "liveSwitch": true,
+      "noReload": true,
+      "statsNotRefetched": true,
+      "filtersRoleSortQueryFavorites": true,
+      "graphMetrics": 3,
+      "japanesePerkRates": 4,
+      "noKorean": true,
+      "overflow": 0
+    }
+  ],
+  "priorities": [
+    {
+      "locale": "ko-KR",
+      "path": "",
+      "saved": null,
+      "expected": "ko"
+    },
+    {
+      "locale": "en-US",
+      "path": "",
+      "saved": null,
+      "expected": "en"
+    },
+    {
+      "locale": "ja-JP",
+      "path": "",
+      "saved": null,
+      "expected": "ja"
+    },
+    {
+      "locale": "fr-FR",
+      "path": "",
+      "saved": null,
+      "expected": "en"
+    },
+    {
+      "locale": "ja-JP",
+      "path": "en/tiers",
+      "saved": "ja",
+      "expected": "en"
+    },
+    {
+      "locale": "ja-JP",
+      "path": "",
+      "saved": "ko",
+      "expected": "ko"
+    }
+  ]
+}

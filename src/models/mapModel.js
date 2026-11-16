@@ -1,8 +1,9 @@
 import {getLanguage} from '../i18n/i18n.js';
 import standardMaps from '../data/standardMaps.json' with { type: 'json' };
 import names from '../data/mapNamesKo.json' with {type:'json'};
+import jaNames from '../data/jaMapNames.json' with {type:'json'};
 export const MAP_KEYS = new Set(standardMaps.map(map=>map.key));
-export const MAP_NAMES = Object.freeze(Object.fromEntries(Object.entries(names).map(([key,row])=>[key,(getLanguage()==='en'?standardMaps.find(map=>map.key===key)?.name:null)??row.nameKo??`명칭 검토 중 (${key})`])));
+export const MAP_NAMES = Object.freeze(Object.defineProperties({},Object.fromEntries(Object.entries(names).map(([key,row])=>[key,{enumerable:true,get:()=>getLanguage()==='ja'?(jaNames[key]??standardMaps.find(map=>map.key===key)?.name??key):getLanguage()==='en'?(standardMaps.find(map=>map.key===key)?.name??key):(row.nameKo??key)}]))));
 const modes = new Set(['control','escort','hybrid','push','flashpoint']);
 export function normalizeMaps(raw) {
   if(!Array.isArray(raw))throw new Error('맵 목록 형식이 올바르지 않습니다.');

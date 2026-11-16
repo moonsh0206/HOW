@@ -1,7 +1,7 @@
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
 import { node } from './dom.js';
-export const HISTORY_LABELS = Object.freeze({ winRate: t("승률"), pickRate: t("픽률"), banRate: t("밴률") });
+export const HISTORY_LABELS = Object.freeze({get winRate(){return t('승률');},get pickRate(){return t('픽률');},get banRate(){return t('밴률');}});
 const rate = point => point.value ?? point.pickRate;
 export const formatHistoryRate = value => Number.isFinite(value) ? value.toFixed(1) : '—';
 const stamp = value => new Date(value).toLocaleString(formatLocale(), { timeZone: 'Asia/Seoul', hour12: false });

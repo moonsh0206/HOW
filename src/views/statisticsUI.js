@@ -1,5 +1,5 @@
 import {t} from '../i18n/i18n.js';
-export const METRICS = [['tier', t("티어")], ['winRate', t("승률")], ['pickRate', t("픽률")], ['banRate', t("밴률")]];
+export const METRICS = [['tier',()=>t('티어')],['winRate',()=>t('승률')],['pickRate',()=>t('픽률')],['banRate',()=>t('밴률')]].map(([field,translate])=>Object.defineProperty([field,''],1,{get:translate}));
 import {rateStatus} from '../models/statisticsQuality.js';
 export function metricValue(hero, field) {
   if(field!=='tier'&&rateStatus(hero.statistics,field)==='review')return hero.statistics?.[field]!=null?t("message.758a1eda1679",{"0":(hero.statistics[field].toFixed(1))}):t("검토 중");

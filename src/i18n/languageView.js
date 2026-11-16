@@ -1,26 +1,25 @@
-import ko from './ko.js';
-import {getLanguage,t,label,LANGUAGE_KEY} from './i18n.js';
+import {getLanguage,setLanguage,t,label,LANGUAGE_KEY,LANGUAGES,LANGUAGE_NAMES} from './i18n.js';
 import {localizedURL,routeHash} from './routes.js';
 import {createFilterCombobox} from '../views/filterCombobox.js';
 const STATE_KEY='how:language-transfer:v1';
-const reverse=new Map(Object.entries(ko).filter(([,text])=>!text.includes('{')).map(([key,text])=>[text,key]));
 export function translateStatic(root=document){
  const walker=root.createTreeWalker?root.createTreeWalker(root.body,4):root.ownerDocument.createTreeWalker(root,4);
- let text;while((text=walker.nextNode())){const source=text.textContent.trim();if(reverse.has(source))text.textContent=text.textContent.replace(source,t(reverse.get(source)));}
- for(const element of root.querySelectorAll('[aria-label],[title],[placeholder]'))for(const attr of ['aria-label','title','placeholder']){const source=element.getAttribute(attr);if(reverse.has(source))element.setAttribute(attr,t(reverse.get(source)));}
+ let text;while((text=walker.nextNode())){if(text.parentElement?.closest('script,style,.header-language'))continue;const source=text.textContent.trim();text.textContent=text.textContent.replace(source,label(source));}
+ for(const element of root.querySelectorAll('[aria-label],[title],[placeholder]'))for(const attr of ['aria-label','title','placeholder']){const source=element.getAttribute(attr);if(source)element.setAttribute(attr,label(source));}
 }
 export function languagePicker({model,base='/',window:win=window}){
- const container=win.document.createElement('div');container.className='header-language';const name=win.document.createElement('span');name.className='sr-only';name.textContent=t('language.label');container.append(name);
+ const container=win.document.createElement('div');container.className='header-language';const name=win.document.createElement('span');name.className='sr-only';name.textContent='Language';container.append(name);
  const select=win.document.createElement('select');select.id='header-language';select.className='language-picker';select.setAttribute('aria-label',t('language.label'));container.append(select);
- for(const [value,text]of [['ko','한국어'],['en','English']]){const option=win.document.createElement('option');option.value=value;option.textContent=text;select.append(option);}select.value=getLanguage();
+ for(const value of LANGUAGES){const option=win.document.createElement('option');option.value=value;option.textContent=LANGUAGE_NAMES[value];select.append(option);}select.value=getLanguage();
  select.addEventListener('change',()=>{
   try{win.localStorage.setItem(LANGUAGE_KEY,select.value);}catch{}
-  const {statsFilters,query,role,sort,favoritesOnly,statistics,statsStatus,previousSnapshot,snapshotStatus}=model.state;
-  try{win.sessionStorage.setItem(STATE_KEY,JSON.stringify({createdAt:Date.now(),statsFilters,query,role,sort,favoritesOnly,statistics,statsStatus,previousSnapshot,snapshotStatus}));}catch{}
-  win.location.assign(localizedURL(routeHash(win.location,base),select.value,base));
+  setLanguage(select.value);const target=new URL(localizedURL(routeHash(win.location,base),select.value,base),win.location.href);target.search=win.location.search;
+  win.history.pushState(win.history.state,'',target.pathname+target.search+target.hash);
+  win.document.documentElement.lang=getLanguage();win.document.dispatchEvent(new win.Event('how:languagechange'));
  });
  win.document.querySelector('.site-header').append(container);
- createFilterCombobox(select,{options:[...select.options].map(option=>({value:option.value,label:option.textContent}))});
+ const combo=createFilterCombobox(select,{options:[...select.options].map(option=>({value:option.value,label:option.textContent})),displayLabel:()=> 'Language',icon:()=>{const svg=win.document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('class','language-globe');svg.setAttribute('aria-hidden','true');svg.innerHTML='<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/>';return svg;}});
+ win.document.addEventListener('how:languagechange',()=>{select.value=getLanguage();select.setAttribute('aria-label',t('language.label'));combo.sync();});
 }
 export function readLanguageTransfer(storage){
  try{storage??=globalThis.sessionStorage;const raw=storage.getItem(STATE_KEY);storage.removeItem(STATE_KEY);const state=JSON.parse(raw);if(!state||Date.now()-state.createdAt>120000||Date.now()<state.createdAt)return null;return state;}catch{return null;}

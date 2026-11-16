@@ -206,6 +206,7 @@
 .site-footer .footer-copy{min-width:0}
 .site-footer .footer-copy h2{font-size:13px;line-height:1.6;color:#edf1f6;margin:0 0 5px;font-weight:600;overflow-wrap:anywhere}
 .site-footer .footer-copy p{font-size:12px;line-height:1.7;margin:0;color:var(--muted);word-break:keep-all;overflow-wrap:anywhere}
+.site-footer .footer-credit{flex:none;margin-left:auto;color:#99a5b5;font-size:11px;line-height:1.5;white-space:nowrap}
 @media(max-width:768px){
  .site-footer{flex-wrap:wrap;gap:12px;padding:22px 16px}
  .site-footer .footer-brand{flex-basis:112px}
@@ -214,4 +215,5 @@
  .site-footer .footer-copy h2{font-size:12px}
  .site-footer .footer-copy p{font-size:12px}
  .site-footer>span{display:none}
+ .site-footer .footer-credit{flex-basis:100%;margin:4px 0 0;text-align:center}
 }

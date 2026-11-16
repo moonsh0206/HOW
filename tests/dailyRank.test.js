@@ -56,7 +56,7 @@ test('PC and mobile share movement, translated tooltip, and other sorts hide it'
   const day=new Date().toISOString();const start=rankDay(day);
   model.state.dailyRankSnapshots=[{...previous,collectedAt:new Date(Date.parse(start+'T01:00:00Z')-86400000).toISOString()},{...current,collectedAt:start+'T01:00:00.000Z'}];
   const view=createHeroView();
-  for(const lang of ['ko','en']){setLanguage(lang);view.render(model);const pc=[...document.querySelectorAll('#hero-rows .rank-change')],mobile=[...document.querySelectorAll('#hero-cards .rank-change')];assert.deepEqual(pc.map(n=>n.textContent),['▲2','=','▼2']);assert.deepEqual(mobile.map(n=>n.textContent),pc.map(n=>n.textContent));assert.match(pc[0].title,/10:00 KST/);}
+  for(const lang of ['ko','en','ja']){setLanguage(lang);view.render(model);const pc=[...document.querySelectorAll('#hero-rows .rank-change')],mobile=[...document.querySelectorAll('#hero-cards .rank-change')];assert.deepEqual(pc.map(n=>n.textContent),['▲2','=','▼2']);assert.deepEqual(mobile.map(n=>n.textContent),pc.map(n=>n.textContent));assert.match(pc[0].title,/10:00 KST/);}
   model.state.sort='meta-desc';view.render(model);assert.equal(document.querySelectorAll('.rank-change').length,0);
  }finally{setLanguage('ko');dom.window.close();Object.assign(globalThis,saved);}
 });

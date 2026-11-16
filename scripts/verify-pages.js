@@ -1,4 +1,5 @@
 import {validateRankArchive} from '../src/models/rankArchiveModel.js';
+import {LANGUAGES} from '../src/i18n/i18n.js';
 import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -32,7 +33,7 @@ for (const ref of references) {
   local.add(ref);
 }
 assert([...local].some(ref => ref.endsWith('/hero-banner.jpg')), 'Banner URL not found in built CSS');
-const allowed = new Set(['index.html', 'assets', 'data','ko','en','sitemap.xml','robots.txt','route-manifest.json']);
+const allowed = new Set(['index.html', 'assets', 'data',...LANGUAGES,'sitemap.xml','robots.txt','route-manifest.json']);
 assert((await readdir(root)).every(file => allowed.has(file)), 'Unexpected file in dist (possible private document)');
 const routes=JSON.parse(await readFile(path.join(root,'route-manifest.json'),'utf8'));
 assert.equal(routes.base,base);
@@ -43,10 +44,16 @@ for(const entry of routes.entries){
  assert(!publicPages.has(file),'Duplicate localized route');publicPages.add(file);
  const page=await readFile(file,'utf8');
  assert(page.includes(`lang="${relative.split('/')[0]}"`),'Localized HTML lang mismatch');
- assert(page.includes('rel="canonical"')&&page.includes('hreflang="ko"')&&page.includes('hreflang="en"'),'Localized SEO links missing');
+ assert(page.includes('rel="canonical"')&&LANGUAGES.every(lang=>page.includes(`hreflang="${lang}"`)),'Localized SEO links missing');
+ const [language,...segments]=relative.split('/'),route=(segments.join('/')||'tiers').replace(/\/overview$/,'');
+ const canonical=new URL(page.match(/<link rel="canonical" href="([^"]+)"/)[1]);
+ assert.equal(canonical.pathname,`${base}${language}/${route}`,'Canonical route mismatch');
+ for(const alternate of LANGUAGES){const href=page.match(new RegExp(`<link rel="alternate" href="([^"]+)" hreflang="${alternate}"`));assert(href,'Alternate missing');assert.equal(new URL(href[1]).pathname,`${base}${alternate}/${route}`,'Alternate route mismatch');}
+ if(language==='ja'){assert(!/[가-힣]/.test(page.match(/<meta name="description" content="([^"]*)"/)[1]),'Korean in Japanese description');}
 }
 async function verifyLocalizedTree(directory){for(const entry of await readdir(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);assert(!entry.isSymbolicLink(),'Unexpected localized symlink');if(entry.isDirectory())await verifyLocalizedTree(file);else assert(publicPages.has(file),'Unexpected private file in localized output');}}
-for(const language of ['ko','en'])await verifyLocalizedTree(path.join(root,language));
+for(const language of LANGUAGES)await verifyLocalizedTree(path.join(root,language));
+const sitemap=await readFile(path.join(root,'sitemap.xml'),'utf8'),sitemapURLs=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);assert.equal(new Set(sitemapURLs).size,sitemapURLs.length,'Duplicate sitemap URL');for(const language of LANGUAGES)assert(sitemapURLs.includes(routes.origin+base+language+'/heroes/ana/perks'),'Localized detail subpage missing from sitemap');
 assert.deepEqual(await readdir(path.join(root,'data/ranks')),['current.json']);
 validateRankArchive(JSON.parse(await readFile(path.join(root,'data/ranks/current.json'),'utf8')));
 const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));

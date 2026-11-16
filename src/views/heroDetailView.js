@@ -1,6 +1,6 @@
 import {errorText} from '../i18n/i18n.js';
 import {roleBadge} from './roleIcon.js';
-import {formatLocale} from '../i18n/i18n.js';
+import {formatLocale,getLanguage} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
 import { tierButton } from './tierReasonView.js';
 import {recommendationDescription} from '../domain/recommendationPolicy.js';
@@ -52,7 +52,7 @@ export function createHeroDetailView() {
     render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null) {
       const { state } = model;
       root.setAttribute('aria-busy',String(detailState.status==='loading'));
-      const signature = `${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
+      const signature = `${getLanguage()}:${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
         contentKey = signature; overviewKey=null;perkKey=null;lastTab=null;root.replaceChildren();
         const back = node('a', route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기"), 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);

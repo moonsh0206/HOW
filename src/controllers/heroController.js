@@ -4,7 +4,7 @@ import { validateFilters, statisticsQuery } from '../models/statisticsModel.js';
 
 export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage,filterStorage, autoRefresh = true, onStateChange, onHeroSelect }) {
   const dailyRanks=createDailyRankService({base:import.meta.env?.BASE_URL??'/'});
-  let loading = false;
+  let loading = false,heroGeneration=0;
   let statsGeneration = 0;
   let statsTimer;
   let rankTimer;
@@ -72,12 +72,13 @@ export function createHeroController({ model, view, service, statisticsService, 
       }
     }
   }
-  async function load() {
-    if (loading) return;
+  async function load(force=false) {
+    if (loading&&!force) return;
+    const token=++heroGeneration;
     loading = true; model.state.status = 'loading'; render();
-    try { const result = await service.getHeroes(); Object.assign(model.state, result, { status: 'ready', error: '' }); }
-    catch (error) { Object.assign(model.state, { status: 'error', error: error.message }); }
-    finally { loading = false; render(); }
+    try { const result = await service.getHeroes();if(token===heroGeneration)Object.assign(model.state, result, { status: 'ready', error: '' }); }
+    catch (error) { if(token===heroGeneration)Object.assign(model.state, { status: 'error', error: error.message }); }
+    finally { if(token===heroGeneration){loading = false; render();} }
   }
   function route() {
       if (routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/players/')||routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/heroes/')||['#/meta','#/player-search'].includes(routeHash(location,import.meta.env?.BASE_URL??'/'))) return;
@@ -89,6 +90,7 @@ export function createHeroController({ model, view, service, statisticsService, 
     render();
   }
   return {
+    refreshLanguage(){load(true);mapService?.getMaps().then(maps=>view.setMaps?.(maps,model.state.statsFilters.map)).catch(()=>{});},
     start() {
       mapService?.getMaps().then(maps=>view.setMaps?.(maps,model.state.statsFilters.map)).catch(()=>view.notify('전장 목록 갱신 실패 · 마지막으로 검증된 목록을 사용합니다.'));
       document.querySelector('#hero-search').addEventListener('input', event => { model.state.query = event.target.value; render(); });

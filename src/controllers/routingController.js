@@ -138,6 +138,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   return {
     start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
+    refreshLanguage(){if(route.page==='detail')load();else render();},
     stop() { playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

@@ -1,4 +1,5 @@
 ﻿import mappings from '../data/perkMappings.json' with {type:'json'};
+import japaneseNames from '../data/perkNamesJa.json' with {type:'json'};
 export const PERK_SOURCE_URL='https://overlooker.app/stats/perks';
 export const PERK_MAPPING_VERSION=mappings.version;
 export function perkHeroMapping(key){return Object.hasOwn(mappings.heroes,key)?mappings.heroes[key]:null;}
@@ -27,7 +28,7 @@ export function normalizeAllPerkStatistics(raw,options){
 // Exact versioned identity; no runtime order or fuzzy-text joins.
 export function perkSelectionForItem(heroKey,tier,item,result,{date=new Date().toISOString().slice(0,10)}={}){
  const mapping=perkHeroMapping(heroKey);
- const refs=mapping?.perks.filter(r=>r.tier===tier&&(r.nameKo===item.name||r.providerName===item.name)&&r.icon===item.icon)??[];
+ const refs=mapping?.perks.filter(r=>{const ja=japaneseNames.entries[r.perkKey];return r.tier===tier&&(r.nameKo===item.name||r.providerName===item.name||ja?.heroKey===heroKey&&ja.tier===tier&&ja.icon===r.icon&&ja.name===item.name)&&r.icon===item.icon;})??[];
  if(refs.length!==1)return {status:'mapping-review',selectionRate:null,selectionCount:null};
  const ref=refs[0];
  if(ref.addedOn&&date<ref.addedOn||ref.removedOn&&date>=ref.removedOn)return {status:'inactive',selectionRate:null,selectionCount:null};

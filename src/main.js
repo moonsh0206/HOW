@@ -50,7 +50,9 @@ const insights = createInsightView({patchModel});
 createOfficialPatchService({base:import.meta.env.BASE_URL}).getNotes().then(data=>{patchModel.set(data);router.refresh();insights.render(model);}).catch(error=>{patchModel.fail(error);insights.render(model);});
 if (!saved.available) view.notify('저장된 즐겨찾기를 읽지 못했습니다. 이번 방문에서 새로 선택할 수 있습니다.');
 router.start();
-createHeroController({ model, view, service: createOverfastService(), statisticsService, snapshotService: snapshots,mapService, storage,filterStorage,
+const controller=createHeroController({ model, view, service: createOverfastService(), statisticsService, snapshotService: snapshots,mapService, storage,filterStorage,
   onStateChange() { router.refresh(); insights.render(model); },
   onHeroSelect(key) { location.hash = `/heroes/${key}`; },
-}).start();
+});
+document.addEventListener('how:languagechange',()=>{translateStatic();controller.refreshLanguage();router.refreshLanguage();insights.render(model);});
+controller.start();

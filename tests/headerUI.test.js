@@ -7,12 +7,12 @@ import {setLanguage} from '../src/i18n/i18n.js';
 import {createMainMenuView} from '../src/views/mainMenuView.js';
 test('header language uses shared combobox, preserves selection, keyboard navigation, storage and profile route',()=>{
  const dom=new JSDOM('<header class="site-header"></header>',{url:'https://example.com/HOW/en/player-search#/players/ID-1234'}),win=dom.window;let target;
- try{setLanguage('en');languagePicker({base:'/HOW/',model:{state:{}},window:{document:win.document,localStorage:win.localStorage,sessionStorage:win.sessionStorage,location:{...{pathname:win.location.pathname,hash:win.location.hash},assign:url=>target=url}}});
+ try{setLanguage('en');languagePicker({base:'/HOW/',model:{state:{}},window:win});
   const select=win.document.querySelector('select'),trigger=win.document.querySelector('[role=combobox]'),popup=win.document.querySelector('[role=listbox]');
-  assert.equal(select.value,'en');assert(select.hidden);assert.equal(popup.querySelector('[aria-selected=true]').dataset.value,'en');assert.match(trigger.textContent,/English/);
+  assert.equal(select.value,'en');assert(select.hidden);assert.equal(popup.querySelector('[aria-selected=true]').dataset.value,'en');assert.match(trigger.textContent,/Language/);assert.equal(popup.querySelectorAll('[role=option]').length,3);assert(trigger.querySelector('.language-globe'));
   const key=value=>trigger.dispatchEvent(new win.KeyboardEvent('keydown',{key:value,bubbles:true,cancelable:true}));
   key('Enter');assert.equal(trigger.getAttribute('aria-expanded'),'true');key('Escape');assert(popup.hidden);key(' ');key('Tab');assert(popup.hidden);
-  key('ArrowUp');key('ArrowUp');key('Enter');assert.equal(select.value,'ko');assert.equal(win.localStorage.getItem('how:language:v1'),'ko');assert.equal(target,'/HOW/ko/player-search#/players/ID-1234');
+  key('ArrowUp');key('ArrowUp');key('Enter');assert.equal(select.value,'ko');assert.equal(win.localStorage.getItem('how:language:v1'),'ko');assert.equal(win.location.pathname+win.location.hash,'/HOW/ko/player-search#/players/ID-1234');
  }finally{setLanguage('ko');win.close();}
 });
 test('desktop and mobile menu aria-current follows all routes, including hero details opened from meta',async()=>{

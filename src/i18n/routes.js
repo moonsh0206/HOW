@@ -1,12 +1,12 @@
-import {getLanguage} from './i18n.js';
+import {getLanguage,setLanguage,LANGUAGES} from './i18n.js';
 export function routeHash(location,base='/'){
  if(location.hash&&location.hash!=='#')return location.hash;
  const path=(location.pathname.startsWith(base)?location.pathname.slice(base.length):'').replace(/\/index\.html$/,'/').replace(/\/$/,'');
- const match=/^(ko|en)(?:\/(.*))?$/.exec(path);
+ const match=/^(ko|en|ja)(?:\/(.*))?$/.exec(path);
  return match&&match[2]?'#/'+match[2]:'#/tiers';
 }
 export function localizedURL(hash,language,base='/'){
- if(!['ko','en'].includes(language)||!base.startsWith('/')||!base.endsWith('/')||base.startsWith('//'))throw Error('Invalid localized route');
+ if(!LANGUAGES.includes(language)||!base.startsWith('/')||!base.endsWith('/')||base.startsWith('//'))throw Error('Invalid localized route');
  const route=hash.replace(/^#\/?/,'');
  if(/^players\//.test(route))return `${base}${language}/player-search#/${route}`;
  if(['heroes','favorites'].includes(route))return `${base}${language}/tiers#${route}`;
@@ -25,7 +25,7 @@ export function installLocalizedNavigation({base='/',window:win=window}={}){
   const hash=anchor.getAttribute('href');if(!['#','#heroes','#favorites'].includes(hash)&&!hash.startsWith('#/'))return;
   event.preventDefault();win.queueMicrotask(()=>{win.history.pushState(null,'',localizedURL(hash,getLanguage(),base));win.dispatchEvent(new win.HashChangeEvent('hashchange'));});
  };
- const pop=()=>win.dispatchEvent(new win.HashChangeEvent('hashchange'));
+ const pop=()=>{const explicit=win.location.pathname.slice(base.length).split('/')[0];if(LANGUAGES.includes(explicit)&&explicit!==getLanguage()){setLanguage(explicit);win.document.dispatchEvent(new win.Event('how:languagechange'));}win.dispatchEvent(new win.HashChangeEvent('hashchange'));};
  normalize();win.addEventListener('hashchange',normalize);win.addEventListener('popstate',pop);win.document.addEventListener('click',click);
  return ()=>{win.removeEventListener('hashchange',normalize);win.removeEventListener('popstate',pop);win.document.removeEventListener('click',click);};
 }

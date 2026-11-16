@@ -9,7 +9,7 @@ export function tierButton(hero) {
   if(hero.tier)button.replaceChildren(metaTierEmblem(hero.tier));
   const label = translateLabel(recommendationLabel(hero));
   if (label) { const note = node('small',label); note.className='recommendation-label'; button.append(note); }
-  button.title = translateLabel(recommendationDescription(hero)) || TIER_HELP;
+  button.title = translateLabel(recommendationDescription(hero)) || translateLabel(TIER_HELP);
   button.setAttribute('aria-label', t("message.a5e25b264cf9",{"0":(hero.name),"1":(hero.tier ?? t("미분류")),"2":(label)}));
   return button;
 }
@@ -26,12 +26,12 @@ export function showTierReason(hero) {
   if (!tip) {
     tip = node('div', ''); tip.id = 'tier-tooltip'; tip.className = 'tier-tooltip';
     tip.setAttribute('popover', 'auto'); tip.setAttribute('role', 'note');
-    tip.append(node('span', TIER_HELP));
+    tip.append(node('span', translateLabel(TIER_HELP)));
     const close = node('button', '×'); close.type = 'button'; close.setAttribute('aria-label', t("티어 안내 닫기"));
     close.addEventListener('click', closeTierHelp); tip.append(close); document.body.append(tip);
     tip.addEventListener('keydown', event => { if (event.key === 'Escape') closeTierHelp(); });
   }
-  tip.querySelector('span').textContent = translateLabel(recommendationDescription(hero ?? {})) || TIER_HELP;
+  tip.querySelector('span').textContent = translateLabel(recommendationDescription(hero ?? {})) || translateLabel(TIER_HELP);
   if (tip.showPopover) tip.showPopover();
   else { tip.hidden = false; tip.querySelector('button').focus(); }
 }

@@ -2,9 +2,15 @@ import {readFile,readdir} from 'node:fs/promises';
 import {parseAst} from 'rollup/parseAst';
 import ko from '../src/i18n/ko.js';
 import en from '../src/i18n/en.js';
+import {CATALOGS} from '../src/i18n/i18n.js';
 import {pathToFileURL} from 'node:url';
 export async function auditI18n(){
  const issues=[];let calls=0;
+ const keys=Object.keys(ko).sort(),tokens=text=>[...String(text).matchAll(/\{\w+\}/g)].map(m=>m[0]).sort().join(',');
+ for(const [language,catalog] of Object.entries(CATALOGS)){
+  if(JSON.stringify(Object.keys(catalog).sort())!==JSON.stringify(keys))issues.push({language,kind:'catalog-keys'});
+  for(const key of keys){const text=catalog[key];if(typeof text!=='string'||!text.trim())issues.push({language,key,kind:'empty-translation'});else{if(tokens(text)!==tokens(ko[key]))issues.push({language,key,kind:'placeholder-mismatch'});if(language!=='ko'&&/[가-힣]/.test(text))issues.push({language,key,kind:'untranslated-korean'});}}
+ }
  for(const file of (await readdir(new URL('../src/views/',import.meta.url))).filter(f=>f.endsWith('.js'))){
   const source=await readFile(new URL('../src/views/'+file,import.meta.url),'utf8');
   function walk(node,parent){if(!node||typeof node!=='object')return;
