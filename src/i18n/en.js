@@ -3,6 +3,10 @@ import matchups from './matchups.js';
 import {en as templates} from './templates.js';
 import common from './common.js';
 export default {
+ 'hot.no-history':'No previous observation matches the current filters.',
+ 'hot.outside-window':'Previous observations are outside the 1–7 day comparison window.',
+ 'hot.incompatible':'No previous observation has compatible provenance, calculation policy and patch window.',
+ 'hot.latest':'Latest previous observation: {time}',
  'hot.empty':'No heroes currently meet the HOT criteria for both win rate and pick rate increases.',
  'hot.criteria':'HOT criteria: pick rate +{pick} pp or more · win rate +{win} pp or more · up to {limit} heroes · win rate increase first',
  'hot.thresholdNote':'These are HOW minimum-change thresholds, not evidence of statistical significance.',

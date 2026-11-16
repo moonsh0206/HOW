@@ -25,7 +25,7 @@ test('missing, old, mismatched, quality-review and changed policy/role records s
  for(const snapshots of [[current],[{...previous,collectedAt:'2026-11-10T01:02:00.000Z'},current],[{...previous,rankPolicyId:'old'},current],[{...previous,filters:{...filters,region:'europe'}},current],[{...previous,records:previous.records.slice(1)},current],[{...previous,rankRoster:{a:'tank',b:'damage',c:'damage'}},current],[{...previous,records:previous.records.map(r=>({...r,winRate:0}))},current]])assert.equal(dailyRankChanges({...args,snapshots}).size,0);
 });
 test('list eligibility: role and tier sort only; search preserves movement ordinal',()=>{
- const model=createHeroModel();Object.assign(model.state,{heroes,statistics:{filters,records:current.records},statsFilters:filters,dailyRankSnapshots:args.snapshots});
+ const model=createHeroModel();Object.assign(model.state,{heroes,statistics:{filters,records:current.records},statsFilters:filters,dailyRankSnapshots:[{...previous,collectedAt:new Date(Date.parse(rankDay(new Date().toISOString())+'T01:00:00Z')-86400000).toISOString()},{...current,collectedAt:rankDay(new Date().toISOString())+'T01:00:00.000Z'}]});
  assert.equal(model.listSelection().changes.size,0);model.state.role='damage';assert.equal(model.listSelection().changes.size,3);
  for(const sort of ['meta-desc','winrate-desc','pickrate-desc','banrate-desc','name-asc']){model.state.sort=sort;assert.equal(model.listSelection().changes.size,0);}
  model.state.sort='tier-desc';model.state.query='a';assert.equal(model.listSelection().ordinals.get('a'),1);assert.equal(model.listSelection().changes.get('a').delta,2);

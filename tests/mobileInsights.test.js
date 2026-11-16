@@ -6,6 +6,7 @@ import { createInsightView } from '../src/views/insightView.js';
 import { createHeroModel } from '../src/models/heroModel.js';
 import { normalizeStatistics } from '../src/models/statisticsModel.js';
 import { classifyMeta } from '../src/domain/insights.js';
+import {t} from '../src/i18n/i18n.js';
 const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
 const evidence=JSON.parse(fs.readFileSync(new URL('../docs/research/tier-design/evidence.json',import.meta.url),'utf8'));
 function setup(width=1440) {
@@ -67,7 +68,7 @@ test('patch resize: original single node/link, open state and focus survive mobi
 test('mobile insights: absent history/data stay unavailable; disclosure state survives statistics rerender',()=>{
   const app=setup(390);
   try{
-    assert.equal(document.querySelector('#hot-content > p').textContent,'이전 기록 부족');
+    assert.equal(document.querySelector('#hot-content > p').textContent,t('hot.no-history'));
     assert.equal(document.querySelectorAll('#hot-content .insight-hero').length,0);
     const details=document.querySelector('[data-category="highWinRate"] details');details.open=true;app.view.render(app.model);
     assert(document.querySelector('[data-category="highWinRate"] details').open);

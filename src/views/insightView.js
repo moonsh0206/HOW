@@ -58,11 +58,19 @@ export function createInsightView({patchModel}={}) {
       const trend = hotHeroes(heroes, current, state.previousSnapshot);
       const hotNotes = [t("같은 조회 조건의 이전 통계와 비교합니다."),t('hot.criteria',{pick:INSIGHT_POLICY.hotPickDelta.toFixed(1),win:INSIGHT_POLICY.hotWinDelta.toFixed(1),limit:INSIGHT_POLICY.maxHotHeroes}),t('hot.thresholdNote')];
       if(trend.warning)hotNotes.push(trend.warning);
+      const diagnostic=state.hotDiagnostic;
+      if(!trend.available&&diagnostic?.latestAt)hotNotes.push(t('hot.latest',{time:new Date(diagnostic.latestAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})+' KST'}));
       if (trend.available) hotNotes.unshift(t("message.f654fd40da59",{"0":(new Date(trend.previousAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})+' KST'),"1":(new Date(trend.currentAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})+' KST')}));
       const waiting=state.statsStatus==='loading'?t("통계 확인 중"):state.statsStatus==='error'?t("통계 연결 오류"):current?.stale?t("통계 갱신 필요"):t("통계 미제공");
       content(hot, trend.available ? trend.heroes : [], hotNotes, trend.available ? t('hot.empty') : state.snapshotStatus === 'loading' ? t("이전 실제 통계 확인 중") : state.snapshotStatus === 'error' ? t("message.9681ebfba32c",{"0":(errorText(state.snapshotError))}) : translateLabel(trend.reason), true,'',!current?waiting:state.snapshotStatus==='loading'?t("기록 확인 중"):state.snapshotStatus==='error'?t("기록 연결 오류"):trend.available?t('hot.empty'):t("이전 기록 부족"));
       if(trend.available&&trend.warning&&!mobile)hot.prepend(node('small',t("집계창 미확인 · 관측 비교"),'insight-window-note'));
       const candidates = current && !current.stale ? hiddenGems(heroes) : [];
+      hot.dataset.hotStatus=state.statsStatus==='loading'?'statistics-loading':state.statsStatus==='error'?'statistics-error':current?.stale?'stale-statistics':state.snapshotStatus==='loading'?'history-loading':state.snapshotStatus==='error'?'history-error':trend.available?(trend.heroes.length?'ready':'no-matches'):diagnostic?.reason??'unavailable';
+      if(!trend.available&&current&&!['loading','error'].includes(state.snapshotStatus)){
+        const reason=['no-history','outside-window','incompatible'].includes(diagnostic?.reason)?t(`hot.${diagnostic.reason}`):!state.previousSnapshot?t('hot.no-history'):translateLabel(trend.reason);
+        hot.querySelectorAll('.insight-empty,.insight-details > p').forEach(p=>{p.textContent=reason;});
+      }
+      hot.querySelector('.insight-empty')?.setAttribute('role','status');
       content(gems, candidates, [t("현재 통계에서 주목할 만한 영웅입니다.")], current && !current.stale ? t("현재 조건에서 선정 기준을 충족한 영웅이 없습니다.") : t("최신 통계를 확보하면 후보를 제공합니다."),false,'',current&&!current.stale?t("후보 없음"):waiting);
       const categories = current && !current.stale ? classifyMeta(heroes) : {};
       for (const category of ['highWinRate', 'popularPicks', 'contestedPicks']) {

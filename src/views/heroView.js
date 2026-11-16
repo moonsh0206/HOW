@@ -125,6 +125,7 @@ export function createHeroView() {
     render(model) {
       const { state } = model;
       const selection=model.listSelection();
+      for(const container of [rows,cards]){container.dataset.rankStatus=selection.rankDiagnostic??'unknown';container.dataset.rankError=state.dailyRankError??'';}
       const heroes = selection.heroes;
       document.querySelector('#ordinal-heading').title=selection.label;
       document.querySelector('#ordinal-heading').setAttribute('aria-label',t("message.e0a12a7fe593",{"0":(selection.label)}));

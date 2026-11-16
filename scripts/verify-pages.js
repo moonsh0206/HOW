@@ -1,3 +1,4 @@
+import {validateRankArchive} from '../src/models/rankArchiveModel.js';
 import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
@@ -46,9 +47,11 @@ for(const entry of routes.entries){
 }
 async function verifyLocalizedTree(directory){for(const entry of await readdir(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);assert(!entry.isSymbolicLink(),'Unexpected localized symlink');if(entry.isDirectory())await verifyLocalizedTree(file);else assert(publicPages.has(file),'Unexpected private file in localized output');}}
 for(const language of ['ko','en'])await verifyLocalizedTree(path.join(root,language));
+assert.deepEqual(await readdir(path.join(root,'data/ranks')),['current.json']);
+validateRankArchive(JSON.parse(await readFile(path.join(root,'data/ranks/current.json'),'utf8')));
 const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));
 assert.equal(manifest.schemaVersion, 1);
-assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['patches','perks','snapshots']);
+assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['patches','perks','ranks','snapshots']);
 assert.deepEqual(await readdir(path.join(root,'data/patches')),['notes.json']);
 normalizeOfficialPatches(JSON.parse(await readFile(path.join(root,'data/patches/notes.json'),'utf8')));
 local.add(`${base}data/patches/notes.json`);

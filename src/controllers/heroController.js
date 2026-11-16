@@ -1,28 +1,42 @@
+import {createDailyRankService} from '../services/dailyRankService.js';
 import {routeHash} from '../i18n/routes.js';
 import { validateFilters, statisticsQuery } from '../models/statisticsModel.js';
 
 export function createHeroController({ model, view, service, statisticsService, snapshotService, mapService,storage,filterStorage, autoRefresh = true, onStateChange, onHeroSelect }) {
+  const dailyRanks=createDailyRankService({base:import.meta.env?.BASE_URL??'/'});
   let loading = false;
   let statsGeneration = 0;
   let statsTimer;
+  let rankTimer;
   function render() { view.render(model); onStateChange?.(); }
   async function loadDailyRanks(result, generation) {
-    model.state.dailyRankSnapshots=[];
-    if(!snapshotService||result.stale)return;
+    clearTimeout(rankTimer);
+    model.state.dailyRankArchive=null;model.state.dailyRankSnapshots=[];
+    model.state.dailyRankStatus=result.stale?'stale-statistics':'loading';model.state.dailyRankError='';
+    if(result.stale)return;
     try {
-      const history=await snapshotService.getHistory(result.filters,{days:7,scope:'range'});
+      const archive=await dailyRanks.get();
       if(generation!==statsGeneration)return;
-      model.state.dailyRankSnapshots=history.snapshots;
+      model.state.dailyRankArchive=archive;
+      model.state.dailyRankStatus='ready';
       render();
-    } catch { /* Optional history must never block the list. */ }
+    } catch(error) {
+      if(generation!==statsGeneration)return;
+      model.state.dailyRankStatus='archive-error';model.state.dailyRankError=error.message;render();
+    } finally {
+      if(autoRefresh&&generation===statsGeneration)rankTimer=setTimeout(()=>loadDailyRanks(result,generation),300000);
+    }
   }
   async function loadPrevious(result, generation) {
     if (!snapshotService || result.stale) return;
     model.state.snapshotStatus = 'loading';
+    model.state.hotDiagnostic=null;
     try {
-      const previous = await snapshotService.getPrevious(result.filters, result.fetchedAt);
+      const diagnostic=snapshotService.getPreviousResult?await snapshotService.getPreviousResult(result.filters,result.fetchedAt,result):null;
+      const previous = diagnostic?diagnostic.snapshot:await snapshotService.getPrevious(result.filters, result.fetchedAt,result);
       if (generation !== statsGeneration) return;
       model.state.previousSnapshot = previous; model.state.snapshotStatus = previous ? 'ready' : 'empty'; model.state.snapshotError = '';
+      model.state.hotDiagnostic=diagnostic;
     } catch (error) {
       if (generation !== statsGeneration) return;
       model.state.previousSnapshot = null; model.state.snapshotStatus = 'error'; model.state.snapshotError = error.message;
@@ -34,7 +48,7 @@ export function createHeroController({ model, view, service, statisticsService, 
     clearTimeout(statsTimer);
     const generation = ++statsGeneration;
     const filters = { ...model.state.statsFilters };
-    model.state.dailyRankSnapshots=[];
+    model.state.dailyRankArchive=null;model.state.dailyRankSnapshots=[];
     model.state.statsStatus = 'loading'; model.state.statsError = ''; render();
     try {
       const result = await statisticsService.getStatistics(filters);
@@ -110,8 +124,8 @@ export function createHeroController({ model, view, service, statisticsService, 
       });
       document.querySelector('#close-detail').addEventListener('click', view.closeDetail);
       window.addEventListener('hashchange', route);
-      route(); load(); if(model.state.statistics?.expiresAt>Date.now()&&statisticsQuery(model.state.statistics.filters)===statisticsQuery(model.state.statsFilters)){loadDailyRanks(model.state.statistics,statsGeneration);if(autoRefresh)statsTimer=setTimeout(loadStatistics,Math.max(60000,model.state.statistics.expiresAt-Date.now()));}else loadStatistics();
+      route(); load(); if(model.state.statistics?.expiresAt>Date.now()&&statisticsQuery(model.state.statistics.filters)===statisticsQuery(model.state.statsFilters)){loadPrevious(model.state.statistics,statsGeneration);loadDailyRanks(model.state.statistics,statsGeneration);if(autoRefresh)statsTimer=setTimeout(loadStatistics,Math.max(60000,model.state.statistics.expiresAt-Date.now()));}else loadStatistics();
     },
-    stop() { ++statsGeneration; clearTimeout(statsTimer); },
+    stop() { ++statsGeneration; clearTimeout(statsTimer); clearTimeout(rankTimer); },
   };
 }

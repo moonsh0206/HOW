@@ -1,0 +1,54 @@
+{
+  "source": "local production build; live OverFast API; unchanged stored HOT archive; empty local daily-rank bootstrap",
+  "remoteDeployment": false,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "hot": "outside-window",
+      "ranks": "archive-empty",
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}

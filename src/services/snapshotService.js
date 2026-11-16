@@ -2,7 +2,7 @@ import { statisticsQuery,isCompositeDivision,divisionMembers } from '../models/s
 import {combineDivisionHistory} from '../models/compositeHistoryModel.js';
 import { normalizeSnapshot, isObservationTime } from '../models/snapshotModel.js';
 import {expandSnapshotFile} from '../models/snapshotV2Model.js';
-import { INSIGHT_POLICY } from '../domain/insights.js';
+import { INSIGHT_POLICY,hotHeroes } from '../domain/insights.js';
 
 export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, now = Date.now } = {}) {
   let manifest, expires = 0, pending;
@@ -55,21 +55,23 @@ export function createSnapshotService({ base = '/', fetcher = globalThis.fetch, 
       }
       return { snapshots, warnings, gaps, observedUntil: new Date(end).toISOString() };
     },
-    async getPrevious(filters, currentAt) {
-      if(isCompositeDivision(filters.division)){
-        const data=await service.getHistory(filters,{days:7,scope:'range'});
-        return data.snapshots.filter(s=>{const delta=Date.parse(currentAt)-Date.parse(s.collectedAt);return delta>=INSIGHT_POLICY.minComparisonMs&&delta<=INSIGHT_POLICY.maxComparisonMs;}).sort((a,b)=>Date.parse(b.collectedAt)-Date.parse(a.collectedAt))[0]??null;
+    async getPreviousResult(filters,currentAt,current) {
+      // Compare against the current observation, never the wall clock. In particular,
+      // a cached composite observation can still have a valid seven-day baseline.
+      const history=await service.getHistory(filters,{days:7,scope:'compare'});
+      const past=history.snapshots.filter(s=>Date.parse(s.collectedAt)<Date.parse(currentAt)).sort((a,b)=>Date.parse(b.collectedAt)-Date.parse(a.collectedAt));
+      const eligible=past.filter(s=>{const delta=Date.parse(currentAt)-Date.parse(s.collectedAt);return delta>=INSIGHT_POLICY.minComparisonMs&&delta<=INSIGHT_POLICY.maxComparisonMs;});
+      const rejected=[];
+      for(const snapshot of eligible){
+        const check=current?hotHeroes([],current,snapshot):{available:true};
+        if(check.available)return {snapshot,status:'ready',reason:'ready',latestAt:past[0]?.collectedAt,warnings:history.warnings,rejected};
+        rejected.push({collectedAt:snapshot.collectedAt,reason:check.reason});
       }
-      const data = await index(); const time = Date.parse(currentAt);
-      const matches = data.snapshots.filter(entry => {
-        try {
-          const delta = time - Date.parse(entry.collectedAt);
-          return /^\d{4}-\d{2}-\d{2}T[\dZ.-]+\.json$/.test(entry.file) && statisticsQuery(entry.filters) === statisticsQuery(filters) && delta >= INSIGHT_POLICY.minComparisonMs && delta <= INSIGHT_POLICY.maxComparisonMs;
-        } catch { return false; }
-      }).sort((a, b) => Date.parse(b.collectedAt) - Date.parse(a.collectedAt));
-      if (!matches.length) return null;
-      const entry = matches[0];
-      return read(entry, filters);
+      if(history.warnings.length)throw Error(history.warnings.join('; '));
+      return {snapshot:null,status:'empty',reason:eligible.length?'incompatible':past.length?'outside-window':'no-history',latestAt:past[0]?.collectedAt,warnings:[],rejected};
+    },
+    async getPrevious(filters,currentAt,current) {
+      return (await service.getPreviousResult(filters,currentAt,current)).snapshot;
     },
   };
   return service;

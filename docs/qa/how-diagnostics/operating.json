@@ -1,0 +1,503 @@
+{
+  "checkedAt": "2026-11-16T02:58:05.073Z",
+  "base": "https://moonsh0206.github.io/HOW/",
+  "remoteChanges": false,
+  "snapshots": {
+    "entries": 29,
+    "latestByCohort": {
+      "platform=pc&gamemode=competitive&region=asia": "2026-11-06T02:37:40.344Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=diamond": "2026-11-06T02:37:43.499Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=bronze": "2026-11-06T02:37:40.735Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=silver": "2026-11-06T02:37:41.259Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=gold": "2026-11-06T02:37:41.591Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=platinum": "2026-11-06T02:37:42.221Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=emerald": "2026-11-06T02:37:42.863Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=master": "2026-11-06T02:37:43.824Z",
+      "platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster": "2026-11-06T02:37:44.253Z",
+      "platform=pc&gamemode=competitive&region=europe": "2026-11-06T02:38:12.319Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=bronze": "2026-11-06T02:38:12.768Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=silver": "2026-11-06T02:38:13.459Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=gold": "2026-11-06T02:38:13.898Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=platinum": "2026-11-06T02:38:14.267Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=emerald": "2026-11-06T02:38:14.634Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=diamond": "2026-11-06T02:38:14.939Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=master": "2026-11-06T02:38:15.248Z",
+      "platform=pc&gamemode=competitive&region=europe&competitive_division=grandmaster": "2026-11-06T02:38:15.725Z",
+      "platform=pc&gamemode=competitive&region=americas": "2026-11-06T02:38:28.313Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=bronze": "2026-11-06T02:38:28.989Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=silver": "2026-11-06T02:38:29.356Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=gold": "2026-11-06T02:38:29.902Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=platinum": "2026-11-06T02:38:30.269Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=emerald": "2026-11-06T02:38:30.863Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=diamond": "2026-11-06T02:38:31.223Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=master": "2026-11-06T02:38:31.577Z",
+      "platform=pc&gamemode=competitive&region=americas&competitive_division=grandmaster": "2026-11-06T02:38:31.943Z"
+    },
+    "latestAt": "2026-11-06T02:38:31.943Z"
+  },
+  "ranks": {
+    "ordinary": {
+      "status": 404,
+      "age": "328",
+      "cacheControl": null
+    },
+    "cacheBusted": {
+      "status": 404,
+      "age": "328",
+      "cacheControl": null
+    }
+  },
+  "main": {
+    "status": 200,
+    "sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677",
+    "date": "2026-11-12T04:18:04Z"
+  },
+  "workflowFiles": {
+    "status": 200,
+    "names": [
+      "daily-snapshots.yml",
+      "official-patch-notes.yml",
+      "pages.yml",
+      "patch-snapshots.yml"
+    ]
+  },
+  "runs": {
+    "status": 200,
+    "total": 39,
+    "items": [
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-15T07:36:15Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43690685826",
+        "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+      },
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-14T07:23:47Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43570902879",
+        "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+      },
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-13T07:37:40Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43387102642",
+        "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+      },
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-12T07:58:49Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43179249285",
+        "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-12T04:18:13Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43153902412",
+        "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+      },
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-11T07:30:24Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42979974148",
+        "head_sha": "ad88fe38a5ef81a87a53224c0f429fda3021cf53"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-11T04:08:50Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42957310277",
+        "head_sha": "ad88fe38a5ef81a87a53224c0f429fda3021cf53"
+      },
+      {
+        "name": "Daily official patch notes and Pages",
+        "path": ".github/workflows/official-patch-notes.yml",
+        "event": "schedule",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-10T08:01:53Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42779480006",
+        "head_sha": "0a5f67e78ff6bb7eae54d680473382bf7afad017"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-10T07:53:46Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42778500066",
+        "head_sha": "0a5f67e78ff6bb7eae54d680473382bf7afad017"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-10T01:48:00Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42738319396",
+        "head_sha": "d9a41aacc2014b38e2fc7d27e70f5b3a8944b8d1"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-10T00:39:25Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42729953026",
+        "head_sha": "bed11d44a4214b3ea0a4d5c9692deb2a28c20d64"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T09:55:01Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42597004883",
+        "head_sha": "32e566420a33f8eb37b851e4ef9725698080ff78"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T04:41:22Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42563186943",
+        "head_sha": "73b1d3bd3b6c6e6c80b83d1ff55b17de516d9b4d"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T04:07:02Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42559990823",
+        "head_sha": "b7ae13985950f054359babb98d3dc0562e94b13c"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T03:57:15Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42559126669",
+        "head_sha": "91d30ddfa2100bfea651d11aebc8c36923592326"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T03:46:09Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42558181525",
+        "head_sha": "a2112947f9c1f722319cf1920d9b6ce110aa06c3"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-09T02:13:53Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42549762741",
+        "head_sha": "9beafab1fd7a6d06d266370ff08d9fb7b67abaa1"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-07T01:29:36Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42324343680",
+        "head_sha": "279c8a88682708300057b4248559f89ea00ccf71"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-06T07:23:20Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42180538367",
+        "head_sha": "f725ef738fe8a8fac8cc4a7df8b213e766b5be1e"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-06T04:25:26Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42162420319",
+        "head_sha": "c34f5eeb494f841934a07d826bf5678479252eb8"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-06T02:57:09Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/42153518501",
+        "head_sha": "418df7d61345facb42c23c52475dd34f637232ea"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-04T13:30:56Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41838787296",
+        "head_sha": "cf58642d3bd6e51796a5549b2cbbea0cb049da95"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-04T13:16:43Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41836635109",
+        "head_sha": "2ab8fb9e44f7131215d8ac7ed1aeaa3db0924776"
+      },
+      {
+        "name": "Verify HOW changes",
+        "path": ".github/workflows/ci.yml",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-04T13:15:35Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41836464186",
+        "head_sha": "defe3199ff6109c1783354e462a769eede33ac49"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-04T11:01:10Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41818043405",
+        "head_sha": "cb8270d71074426f766ba2f7d02d4b547e8f70fe"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-04T02:29:20Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41761067087",
+        "head_sha": "de348efb79fb5a187bd82654ca21b538e572b5a5"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T05:39:42Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41585200294",
+        "head_sha": "c2f6ad20ec2e33ed573c2b28c5a1a9acbbabd323"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T04:00:40Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41575543898",
+        "head_sha": "dfe53658b694e6ad318ee6a98c245dca4c30a769"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T02:56:39Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41569181585",
+        "head_sha": "528a91c50244de4b5b1afbcbe34a40c8f4d19bab"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T02:13:54Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41564806653",
+        "head_sha": "d8bd0cbc10ff85d90203bf5a2241a93c9b9c45a9"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T01:53:09Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41562611964",
+        "head_sha": "096bd8d9cbc73396afef4fd7dfc9cd3f5683659f"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T01:04:22Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41557269538",
+        "head_sha": "d0d09ebb03ec28269acb533be0c5c5415b09c08b"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-03T00:41:12Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41554609151",
+        "head_sha": "81716f04304962fb588e2d29fed29520682662e6"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T11:59:32Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41441083862",
+        "head_sha": "d3bf27410ac2594aaa6a3167e1d334e2e447baf7"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T11:08:03Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41434323855",
+        "head_sha": "206fccdd60735da3fb5603a0b0ae0dcd81bc5be3"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T10:54:31Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41432518568",
+        "head_sha": "c31940cb0cb80bc26aa6d36520e94e42acde5fc4"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T10:03:49Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41425706692",
+        "head_sha": "01577060537c74b654a37145e1b473cc2c196c91"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T05:18:51Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41393281848",
+        "head_sha": "fd0e3f7236cdfc22261e073f821dd1e1280ea765"
+      },
+      {
+        "name": "Build and deploy HOW to Pages",
+        "path": ".github/workflows/pages.yml",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-02T04:53:42Z",
+        "html_url": "https://github.com/moonsh0206/HOW/actions/runs/41390934791",
+        "head_sha": "c7ca5d351def514c985ca087a0a12b54d96affe2"
+      }
+    ]
+  },
+  "variables": {
+    "HOW_RANKS_URL": "not-readable-with-available-connector",
+    "HOW_RANKS_ENABLED": "not-readable-with-available-connector"
+  },
+  "hot": [
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond_plus",
+        "map": "all"
+      },
+      "currentAt": "2026-11-16T02:58:08.794Z",
+      "latestAt": "2026-11-06T02:37:44.253Z",
+      "status": "outside-window",
+      "rejected": [],
+      "warnings": [],
+      "comparisonAvailable": false,
+      "selected": [],
+      "currentStale": false,
+      "error": ""
+    },
+    {
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      },
+      "currentAt": "2026-11-16T02:58:08.242Z",
+      "latestAt": "2026-11-06T02:37:43.499Z",
+      "status": "outside-window",
+      "rejected": [],
+      "warnings": [],
+      "comparisonAvailable": false,
+      "selected": [],
+      "currentStale": false,
+      "error": ""
+    }
+  ],
+  "protectedSnapshotsUnchanged": true
+}

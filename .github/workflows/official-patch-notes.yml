@@ -37,6 +37,11 @@ jobs:
         id: pages
         if: steps.patch.outputs.changed == 'true'
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      - name: Restore published lightweight ranks when enabled
+        if: vars.HOW_RANKS_ENABLED == 'true' && steps.patch.outputs.changed == 'true'
+        env:
+          RANKS_URL: ${{ vars.HOW_RANKS_URL }}
+        run: node scripts/collect-daily-ranks.js --apply --restore-only --restore-url "$RANKS_URL"
       - name: Build changed candidate
         if: steps.patch.outputs.changed == 'true'
         run: npm run build

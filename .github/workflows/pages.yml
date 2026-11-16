@@ -30,6 +30,11 @@ jobs:
         run: npm ci
       - name: Test
         run: npm test
+      - name: Restore published lightweight ranks when enabled
+        if: vars.HOW_RANKS_ENABLED == 'true'
+        env:
+          RANKS_URL: ${{ vars.HOW_RANKS_URL }}
+        run: node scripts/collect-daily-ranks.js --apply --restore-only --restore-url "$RANKS_URL"
       - name: Build
         run: npm run build
         env:

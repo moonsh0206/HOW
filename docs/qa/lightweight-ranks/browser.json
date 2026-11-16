@@ -1,0 +1,75 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "lang": "ko",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 375,
+      "lang": "en",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "pass": true,
+      "overflow": false,
+      "errors": []
+    }
+  ]
+}
