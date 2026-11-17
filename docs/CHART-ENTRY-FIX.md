@@ -39,3 +39,5 @@
 - 브라우저 검사는 캡처된 메타데이터·저장 통계와 명시적인 테스트 전용 전장 수치를 사용했다. 실제 API 재수집·운영 데이터 변경은 하지 않았다.
 
 빌드의 기존 500kB 번들 경고는 남아 있다. Commit/Push/배포 없음. 기존 미커밋 작업 보존.
+
+최종 명령 결과: `npm.cmd test` **319/319 통과**, `npm.cmd run build` 통과(지역화 공개 HTML 660개), `npm.cmd run verify:pages` 통과(`/HOW/`, 자산 15개), `git diff --check` 통과(줄바꿈 경고만). `git status --short`로 기존 변경과 이번 변경을 확인했다.

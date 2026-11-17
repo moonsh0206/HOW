@@ -21,19 +21,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.868999998862265,
-            "opacity": "0.437743",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.59503)"
+            "time": 17.27000000055412,
+            "opacity": "0.439755",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.58575)"
           },
           {
             "state": "running",
-            "time": 16.868999998862265,
+            "time": 17.27000000055412,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.868999998862265,
+            "time": 17.27000000055412,
             "opacity": "0",
             "transform": "none"
           }
@@ -59,26 +59,26 @@
             "animations": [
               {
                 "state": "running",
-                "time": 100.04799999904846,
+                "time": 67.23799999962753,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.717845, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.552425, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 100.04799999904846,
+                "time": 67.23799999962753,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.438352, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.167108, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 100.04799999904846,
-                "opacity": "0.958716",
+                "time": 67.23799999962753,
+                "opacity": "0.878907",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 100.04799999904846,
-                "opacity": "0.958716",
+                "time": 67.23799999962753,
+                "opacity": "0.878907",
                 "transform": "none"
               }
             ],
@@ -95,15 +95,15 @@
             "animations": [
               {
                 "state": "running",
-                "time": 283.64799999904864,
+                "time": 250.17199999962747,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.987789, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.975765, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 283.64799999904864,
+                "time": 250.17199999962747,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.966967, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.940628, 0, 0)"
               },
               {
                 "state": "finished",
@@ -145,26 +145,26 @@
             "animations": [
               {
                 "state": "running",
-                "time": 83.41499999943692,
+                "time": 100.34099999980705,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.642101, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.719042, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 83.41499999943692,
+                "time": 100.34099999980705,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.309266, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.440463, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 83.41499999943692,
-                "opacity": "0.927736",
+                "time": 100.34099999980705,
+                "opacity": "0.959135",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 83.41499999943692,
-                "opacity": "0.927736",
+                "time": 100.34099999980705,
+                "opacity": "0.959135",
                 "transform": "none"
               }
             ],
@@ -181,15 +181,15 @@
             "animations": [
               {
                 "state": "running",
-                "time": 283.41499999943665,
+                "time": 267.1089999998073,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.987727, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.982676, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 283.41499999943665,
+                "time": 267.1089999998073,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.966826, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.955603, 0, 0)"
               },
               {
                 "state": "finished",
@@ -231,33 +231,24 @@
             "animations": [
               {
                 "state": "running",
-                "time": 66.66900000051434,
-                "opacity": "0.444425",
-                "transform": "none"
+                "time": 49.96499999951354,
+                "opacity": "0.590137",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.89167)"
               },
               {
                 "state": "running",
-                "time": 66.66900000051434,
-                "opacity": "0.35",
-                "transform": "matrix(1, 0, 0, 1, 0, 3)"
-              },
-              {
-                "state": "running",
-                "time": 66.66900000051434,
+                "time": 49.96499999951354,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 66.66900000051434,
+                "time": 49.96499999951354,
                 "opacity": "0",
                 "transform": "none"
               }
             ],
-            "values": [
-              "8.57%",
-              "8.12%"
-            ]
+            "values": []
           },
           "mid": {
             "kind": "history",
@@ -267,19 +258,19 @@
             "animations": [
               {
                 "state": "running",
-                "time": 233.471000000514,
-                "opacity": "0.796515",
-                "transform": "matrix(1, 0, 0, 1, 0, 0.939161)"
+                "time": 233.86499999951303,
+                "opacity": "0.955279",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.206404)"
               },
               {
                 "state": "running",
-                "time": 233.471000000514,
+                "time": 233.86499999951303,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 233.471000000514,
+                "time": 233.86499999951303,
                 "opacity": "0",
                 "transform": "none"
               }
@@ -307,19 +298,19 @@
             "animations": [
               {
                 "state": "running",
-                "time": 16.267999999335814,
-                "opacity": "0.434723",
-                "transform": "matrix(1, 0, 0, 1, 0, 2.60897)"
+                "time": 16.84300000041805,
+                "opacity": "0.437613",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.59563)"
               },
               {
                 "state": "running",
-                "time": 16.267999999335814,
+                "time": 16.84300000041805,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 16.267999999335814,
+                "time": 16.84300000041805,
                 "opacity": "0",
                 "transform": "none"
               }
@@ -383,19 +374,19 @@
             "animations": [
               {
                 "state": "running",
-                "time": 16.58599999967514,
-                "opacity": "0.436322",
-                "transform": "matrix(1, 0, 0, 1, 0, 2.60159)"
+                "time": 16.538000000826614,
+                "opacity": "0.436081",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.6027)"
               },
               {
                 "state": "running",
-                "time": 16.58599999967514,
+                "time": 16.538000000826614,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 16.58599999967514,
+                "time": 16.538000000826614,
                 "opacity": "0",
                 "transform": "none"
               }
@@ -428,19 +419,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.666999999512377,
-            "opacity": "0.436729",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.59971)"
+            "time": 16.4550000004966,
+            "opacity": "0.435663",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60463)"
           },
           {
             "state": "running",
-            "time": 16.666999999512377,
+            "time": 16.4550000004966,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.666999999512377,
+            "time": 16.4550000004966,
             "opacity": "0",
             "transform": "none"
           }
@@ -455,19 +446,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.282000000335415,
-            "opacity": "0.434793",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.60865)"
+            "time": 16.692999999987634,
+            "opacity": "0.43686",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59911)"
           },
           {
             "state": "running",
-            "time": 16.282000000335415,
+            "time": 16.692999999987634,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.282000000335415,
+            "time": 16.692999999987634,
             "opacity": "0",
             "transform": "none"
           }
@@ -482,19 +473,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.661999999662,
-            "opacity": "0.436704",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.59983)"
+            "time": 17.14900000018238,
+            "opacity": "0.439148",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.58855)"
           },
           {
             "state": "running",
-            "time": 16.661999999662,
+            "time": 17.14900000018238,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.661999999662,
+            "time": 17.14900000018238,
             "opacity": "0",
             "transform": "none"
           }
@@ -741,19 +732,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.765999999924787,
-            "opacity": "0.437226",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.59742)"
+            "time": 16.638000000448237,
+            "opacity": "0.436583",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60038)"
           },
           {
             "state": "running",
-            "time": 16.765999999924787,
+            "time": 16.638000000448237,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.765999999924787,
+            "time": 16.638000000448237,
             "opacity": "0",
             "transform": "none"
           }
@@ -779,26 +770,26 @@
             "animations": [
               {
                 "state": "running",
-                "time": 100.0469999999698,
+                "time": 83.69600000009837,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.717841, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.643514, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 100.0469999999698,
+                "time": 83.69600000009837,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.438345, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.311596, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 100.0469999999698,
-                "opacity": "0.958715",
+                "time": 83.69600000009837,
+                "opacity": "0.928397",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 100.0469999999698,
-                "opacity": "0.958715",
+                "time": 83.69600000009837,
+                "opacity": "0.928397",
                 "transform": "none"
               }
             ],
@@ -815,15 +806,15 @@
             "animations": [
               {
                 "state": "running",
-                "time": 267.11499999996977,
+                "time": 250.39600000009798,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.982678, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.97587, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 267.11499999996977,
+                "time": 250.39600000009798,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.955608, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.940851, 0, 0)"
               },
               {
                 "state": "finished",
@@ -865,26 +856,26 @@
             "animations": [
               {
                 "state": "running",
-                "time": 83.82999999888652,
+                "time": 83.7929999998095,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.644186, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.644, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 83.82999999888652,
+                "time": 83.7929999998095,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.312705, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.312399, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 83.82999999888652,
-                "opacity": "0.92871",
+                "time": 83.7929999998095,
+                "opacity": "0.928623",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 83.82999999888652,
-                "opacity": "0.92871",
+                "time": 83.7929999998095,
+                "opacity": "0.928623",
                 "transform": "none"
               }
             ],
@@ -901,15 +892,15 @@
             "animations": [
               {
                 "state": "running",
-                "time": 250.39799999888635,
+                "time": 250.46099999980953,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.97587, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.9759, 0, 0)"
               },
               {
                 "state": "running",
-                "time": 250.39799999888635,
+                "time": 250.46099999980953,
                 "opacity": "1",
-                "transform": "matrix(1, 0, 0, 0.940853, 0, 0)"
+                "transform": "matrix(1, 0, 0, 0.940916, 0, 0)"
               },
               {
                 "state": "finished",
@@ -951,33 +942,24 @@
             "animations": [
               {
                 "state": "running",
-                "time": 32.939999998709446,
-                "opacity": "0.7255",
-                "transform": "none"
+                "time": 49.97700000041494,
+                "opacity": "0.590187",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.89144)"
               },
               {
                 "state": "running",
-                "time": 32.939999998709446,
-                "opacity": "0.35",
-                "transform": "matrix(1, 0, 0, 1, 0, 3)"
-              },
-              {
-                "state": "running",
-                "time": 32.939999998709446,
+                "time": 49.97700000041494,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 32.939999998709446,
+                "time": 49.97700000041494,
                 "opacity": "0",
                 "transform": "none"
               }
             ],
-            "values": [
-              "8.57%",
-              "8.12%"
-            ]
+            "values": []
           },
           "mid": {
             "kind": "history",
@@ -987,19 +969,19 @@
             "animations": [
               {
                 "state": "running",
-                "time": 216.67399999870975,
-                "opacity": "0.752856",
-                "transform": "matrix(1, 0, 0, 1, 0, 1.14066)"
+                "time": 233.67700000041492,
+                "opacity": "0.955165",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.20693)"
               },
               {
                 "state": "running",
-                "time": 216.67399999870975,
+                "time": 233.67700000041492,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 216.67399999870975,
+                "time": 233.67700000041492,
                 "opacity": "0",
                 "transform": "none"
               }
@@ -1103,19 +1085,19 @@
             "animations": [
               {
                 "state": "running",
-                "time": 49.96799999863111,
-                "opacity": "0.59015",
-                "transform": "matrix(1, 0, 0, 1, 0, 1.89162)"
+                "time": 0,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
               },
               {
                 "state": "running",
-                "time": 49.96799999863111,
+                "time": 0,
                 "opacity": "0",
                 "transform": "none"
               },
               {
                 "state": "running",
-                "time": 49.96799999863111,
+                "time": 0,
                 "opacity": "0",
                 "transform": "none"
               }
@@ -1148,19 +1130,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.606999999209116,
-            "opacity": "0.436428",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.6011)"
+            "time": 16.723000000562706,
+            "opacity": "0.43701",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59841)"
           },
           {
             "state": "running",
-            "time": 16.606999999209116,
+            "time": 16.723000000562706,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.606999999209116,
+            "time": 16.723000000562706,
             "opacity": "0",
             "transform": "none"
           }
@@ -1175,19 +1157,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.59199999875849,
-            "opacity": "0.436352",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.60145)"
+            "time": 16.35199999952741,
+            "opacity": "0.435145",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60702)"
           },
           {
             "state": "running",
-            "time": 16.59199999875849,
+            "time": 16.35199999952741,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.59199999875849,
+            "time": 16.35199999952741,
             "opacity": "0",
             "transform": "none"
           }
@@ -1202,19 +1184,19 @@
         "animations": [
           {
             "state": "running",
-            "time": 16.660000000387587,
-            "opacity": "0.436694",
-            "transform": "matrix(1, 0, 0, 1, 0, 2.59987)"
+            "time": 16.653999999025615,
+            "opacity": "0.436664",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60001)"
           },
           {
             "state": "running",
-            "time": 16.660000000387587,
+            "time": 16.653999999025615,
             "opacity": "0",
             "transform": "none"
           },
           {
             "state": "running",
-            "time": 16.660000000387587,
+            "time": 16.653999999025615,
             "opacity": "0",
             "transform": "none"
           }
