@@ -27,6 +27,7 @@ export function createFilterCombobox(select,{options,icon,displayLabel}={}){
   else if(event.key==='Tab')close();
   else if(event.key.length===1&&!event.ctrlKey&&!event.metaKey&&!event.altKey){const now=Date.now();typeahead=now-lastKey>700?event.key:typeahead+event.key;lastKey=now;const index=choices.findIndex(o=>o.label.startsWith(typeahead));if(index>=0){if(!open)show();activate(index);}}
  });
- select.addEventListener('change',()=>{close();sync();});doc.addEventListener('how:languagechange',()=>{popup.setAttribute('aria-label',translateLabel(label));setOptions(sourceOptions);});setOptions(options);
- return {sync,setOptions,close};
+ const changed=()=>{close();sync();},languageChanged=()=>{popup.setAttribute('aria-label',translateLabel(label));setOptions(sourceOptions);};
+ select.addEventListener('change',changed);doc.addEventListener('how:languagechange',languageChanged);setOptions(options);
+ return {sync,setOptions,close,destroy(){close();select.removeEventListener('change',changed);doc.removeEventListener('how:languagechange',languageChanged);root.remove();}};
 }

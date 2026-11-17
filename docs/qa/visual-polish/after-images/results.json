@@ -1,0 +1,765 @@
+{
+  "phase": "after",
+  "fixtureOnly": true,
+  "source": "captured metadata and actual saved statistics; Genji map precision values are test-only",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "contrast": {
+        "text": "rgb(170, 184, 202)",
+        "background": "rgb(24, 34, 47)",
+        "ratio": 7.960792606867147
+      },
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 702.375,
+            "height": 164.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "hero",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": {
+            "y": 601.3125,
+            "height": 1080,
+            "width": 366
+          },
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "map",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": {
+            "y": 601.3125,
+            "height": 1112.09375,
+            "width": 366
+          },
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "abilities",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "perks",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "meta",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "search",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "results",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "player",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": {
+            "y": 188.515625,
+            "height": 245.8125,
+            "width": 366
+          },
+          "playerKpis": {
+            "y": 479.328125,
+            "height": 160.171875,
+            "width": 358
+          },
+          "firstPlayerHero": {
+            "y": 730.1875,
+            "height": 99.578125,
+            "width": 358
+          },
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "player-analysis",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": {
+            "y": 188.515625,
+            "height": 245.8125,
+            "width": 366
+          },
+          "playerKpis": {
+            "y": 479.328125,
+            "height": 160.171875,
+            "width": 358
+          },
+          "firstPlayerHero": {
+            "y": 732.1875,
+            "height": 596.4375,
+            "width": 358
+          },
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ],
+      "fingerprint": [
+        {
+          "hero": "zenyatta",
+          "text": "1젠젠야타ZENYATTAMETA 92.0지원S54.1%14.3%7.7%☆"
+        },
+        {
+          "hero": "winston",
+          "text": "2윈윈스턴WINSTONMETA 91.8돌격S56.6%14.7%8.9%☆"
+        },
+        {
+          "hero": "pharah",
+          "text": "3파파라PHARAHMETA 89.1공격S54.8%8.0%32.7%☆"
+        },
+        {
+          "hero": "junker-queen",
+          "text": "4정정커퀸JUNKER-QUEENMETA 86.1돌격S56.5%14.3%15.3%☆"
+        },
+        {
+          "hero": "reaper",
+          "text": "5리리퍼REAPERMETA 85.8공격S54.3%15.9%13.0%☆"
+        },
+        {
+          "hero": "doctrine",
+          "text": "6독독트린DOCTRINEMETA 83.3지원S51.3%37.2%6.3%☆"
+        },
+        {
+          "hero": "brigitte",
+          "text": "7브브리기테BRIGITTEMETA 81.3지원S52.4%13.5%1.2%☆"
+        },
+        {
+          "hero": "echo",
+          "text": "8에에코ECHOMETA 79.5공격S54.3%6.1%1.1%☆"
+        },
+        {
+          "hero": "orisa",
+          "text": "9오오리사ORISAMETA 77.1돌격S50.3%12.9%27.7%☆"
+        },
+        {
+          "hero": "hazard",
+          "text": "10해해저드HAZARDMETA 71.8돌격A53.3%7.8%2.5%☆"
+        },
+        {
+          "hero": "shion",
+          "text": "11시시온SHIONMETA 71.1공격A52.0%17.0%0.8%☆"
+        },
+        {
+          "hero": "moira",
+          "text": "12모모이라MOIRAMETA 68.0지원A50.9%14.9%1.8%☆"
+        },
+        {
+          "hero": "illari",
+          "text": "13일일리아리ILLARIMETA 68.0지원A51.2%12.7%2.8%☆"
+        },
+        {
+          "hero": "cassidy",
+          "text": "14캐캐서디CASSIDYMETA 66.1공격A48.6%31.1%11.3%☆"
+        },
+        {
+          "hero": "genji",
+          "text": "15겐겐지GENJIMETA 65.5공격A52.1%8.6%0.0%☆"
+        },
+        {
+          "hero": "junkrat",
+          "text": "16정정크랫JUNKRATMETA 81.6공격A조건부55.5%4.9%2.5%☆"
+        },
+        {
+          "hero": "domina",
+          "text": "17도도미나DOMINAMETA 67.5돌격A조건부56.9%3.1%1.3%☆"
+        },
+        {
+          "hero": "lucio",
+          "text": "18루루시우LUCIOMETA 66.3지원B51.9%4.9%0.5%☆"
+        },
+        {
+          "hero": "zarya",
+          "text": "19자자리야ZARYAMETA 64.6돌격B49.4%5.8%27.5%☆"
+        },
+        {
+          "hero": "vendetta",
+          "text": "20벤벤데타VENDETTAMETA 60.9공격B51.3%5.2%9.3%☆"
+        },
+        {
+          "hero": "anran",
+          "text": "21안안란ANRANMETA 59.1공격B51.0%5.7%2.3%☆"
+        },
+        {
+          "hero": "kiriko",
+          "text": "22키키리코KIRIKOMETA 58.3지원B49.2%39.2%5.6%☆"
+        },
+        {
+          "hero": "symmetra",
+          "text": "23시시메트라SYMMETRAMETA 55.7공격B52.7%3.8%0.5%☆"
+        },
+        {
+          "hero": "venture",
+          "text": "24벤벤처VENTUREMETA 55.6공격B54.3%2.7%0.2%☆"
+        },
+        {
+          "hero": "mizuki",
+          "text": "25미미즈키MIZUKIMETA 55.0지원B50.6%6.3%5.1%☆"
+        },
+        {
+          "hero": "sojourn",
+          "text": "26소소전SOJOURNMETA 51.6공격B48.5%14.5%0.2%☆"
+        },
+        {
+          "hero": "sigma",
+          "text": "27시시그마SIGMAMETA 50.7돌격B47.5%7.6%2.2%☆"
+        },
+        {
+          "hero": "dmon",
+          "text": "28DD.MonDMONMETA 48.6돌격B48.9%3.6%16.7%☆"
+        },
+        {
+          "hero": "soldier-76",
+          "text": "29솔솔저: 76SOLDIER-76META 47.0공격C50.7%4.7%0.5%☆"
+        },
+        {
+          "hero": "tracer",
+          "text": "30트트레이서TRACERMETA 46.4공격C46.9%24.3%9.3%☆"
+        },
+        {
+          "hero": "wuyang",
+          "text": "31우우양WUYANGMETA 46.3지원C49.2%9.1%0.2%☆"
+        },
+        {
+          "hero": "ana",
+          "text": "32아아나ANAMETA 45.7지원C48.1%26.4%5.2%☆"
+        },
+        {
+          "hero": "torbjorn",
+          "text": "33토토르비욘TORBJORNMETA 44.3공격C47.5%9.2%4.2%☆"
+        },
+        {
+          "hero": "sierra",
+          "text": "34시시에라SIERRAMETA 42.5공격C48.0%5.3%0.4%☆"
+        },
+        {
+          "hero": "reinhardt",
+          "text": "35라라인하르트REINHARDTMETA 41.8돌격C46.8%5.2%2.0%☆"
+        },
+        {
+          "hero": "juno",
+          "text": "36주주노JUNOMETA 40.7지원C49.6%3.6%0.0%☆"
+        },
+        {
+          "hero": "doomfist",
+          "text": "37둠둠피스트DOOMFISTMETA 38.9돌격C43.8%9.7%35.7%☆"
+        },
+        {
+          "hero": "wrecking-ball",
+          "text": "38레레킹볼WRECKING-BALLMETA 33.6돌격C46.1%4.0%3.6%☆"
+        },
+        {
+          "hero": "mauga",
+          "text": "39마마우가MAUGAMETA 31.4돌격C46.0%4.0%7.1%☆"
+        },
+        {
+          "hero": "ashe",
+          "text": "40애애쉬ASHEMETA 29.8공격C48.0%4.4%0.2%☆"
+        },
+        {
+          "hero": "lifeweaver",
+          "text": "41라라이프위버LIFEWEAVERMETA 27.0지원C48.7%3.5%0.2%☆"
+        },
+        {
+          "hero": "jetpack-cat",
+          "text": "42제제트팩 캣JETPACK-CATMETA 27.0지원C43.9%5.1%49.6%☆"
+        },
+        {
+          "hero": "mei",
+          "text": "43메메이MEIMETA 26.8공격C46.2%5.3%1.4%☆"
+        },
+        {
+          "hero": "dva",
+          "text": "44DD.VaDVAMETA 28.2돌격D44.1%5.1%2.8%☆"
+        },
+        {
+          "hero": "widowmaker",
+          "text": "45위위도우메이커WIDOWMAKERMETA 25.5공격D46.8%4.7%3.3%☆"
+        },
+        {
+          "hero": "sombra",
+          "text": "46솜솜브라SOMBRAMETA 25.3지원D42.8%8.3%14.2%☆"
+        },
+        {
+          "hero": "hanzo",
+          "text": "47한한조HANZOMETA 24.5공격D47.9%3.2%0.4%☆"
+        },
+        {
+          "hero": "bastion",
+          "text": "48바바스티온BASTIONMETA 15.5공격D45.7%4.1%1.2%☆"
+        },
+        {
+          "hero": "baptiste",
+          "text": "49바바티스트BAPTISTEMETA 14.7지원D45.8%3.1%0.0%☆"
+        },
+        {
+          "hero": "emre",
+          "text": "50엠엠레EMREMETA 13.6공격D45.4%4.9%0.2%☆"
+        },
+        {
+          "hero": "roadhog",
+          "text": "51로로드호그ROADHOGMETA 13.2돌격D39.6%4.6%3.0%☆"
+        },
+        {
+          "hero": "freja",
+          "text": "52프프레야FREJAMETA 12.5공격D42.8%4.0%12.0%☆"
+        },
+        {
+          "hero": "ramattra",
+          "text": "53라라마트라RAMATTRAMETA 4.6돌격D40.2%3.0%0.5%☆"
+        },
+        {
+          "hero": "mercy",
+          "text": "54메메르시MERCYMETA 1.0지원D18.8%1.4%0.0%☆"
+        }
+      ],
+      "playerRequests": 3,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "contrast": {
+        "text": "rgb(170, 184, 202)",
+        "background": "rgb(24, 34, 47)",
+        "ratio": 7.960792606867147
+      },
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 1138.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "hero",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": {
+            "y": 616.78125,
+            "height": 626.578125,
+            "width": 1216
+          },
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "map",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": {
+            "y": 616.78125,
+            "height": 626.578125,
+            "width": 1216
+          },
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "abilities",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "perks",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "meta",
+          "overflow": 0,
+          "firstHero": {
+            "y": 1138.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "search",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "results",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "player",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": {
+            "y": 168,
+            "height": 174.6875,
+            "width": 1216
+          },
+          "playerKpis": {
+            "y": 396.6875,
+            "height": 99.28125,
+            "width": 1208
+          },
+          "firstPlayerHero": {
+            "y": 594.65625,
+            "height": 100.46875,
+            "width": 1208
+          },
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "player-analysis",
+          "overflow": 0,
+          "firstHero": null,
+          "detail": null,
+          "playerHeader": {
+            "y": 168,
+            "height": 174.6875,
+            "width": 1216
+          },
+          "playerKpis": {
+            "y": 396.6875,
+            "height": 99.28125,
+            "width": 1208
+          },
+          "firstPlayerHero": {
+            "y": 596.65625,
+            "height": 435.9375,
+            "width": 1208
+          },
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ],
+      "fingerprint": [
+        {
+          "hero": "zenyatta",
+          "text": "1젠젠야타ZENYATTAMETA 92.0지원S54.1%14.3%7.7%☆"
+        },
+        {
+          "hero": "winston",
+          "text": "2윈윈스턴WINSTONMETA 91.8돌격S56.6%14.7%8.9%☆"
+        },
+        {
+          "hero": "pharah",
+          "text": "3파파라PHARAHMETA 89.1공격S54.8%8.0%32.7%☆"
+        },
+        {
+          "hero": "junker-queen",
+          "text": "4정정커퀸JUNKER-QUEENMETA 86.1돌격S56.5%14.3%15.3%☆"
+        },
+        {
+          "hero": "reaper",
+          "text": "5리리퍼REAPERMETA 85.8공격S54.3%15.9%13.0%☆"
+        },
+        {
+          "hero": "doctrine",
+          "text": "6독독트린DOCTRINEMETA 83.3지원S51.3%37.2%6.3%☆"
+        },
+        {
+          "hero": "brigitte",
+          "text": "7브브리기테BRIGITTEMETA 81.3지원S52.4%13.5%1.2%☆"
+        },
+        {
+          "hero": "echo",
+          "text": "8에에코ECHOMETA 79.5공격S54.3%6.1%1.1%☆"
+        },
+        {
+          "hero": "orisa",
+          "text": "9오오리사ORISAMETA 77.1돌격S50.3%12.9%27.7%☆"
+        },
+        {
+          "hero": "hazard",
+          "text": "10해해저드HAZARDMETA 71.8돌격A53.3%7.8%2.5%☆"
+        },
+        {
+          "hero": "shion",
+          "text": "11시시온SHIONMETA 71.1공격A52.0%17.0%0.8%☆"
+        },
+        {
+          "hero": "moira",
+          "text": "12모모이라MOIRAMETA 68.0지원A50.9%14.9%1.8%☆"
+        },
+        {
+          "hero": "illari",
+          "text": "13일일리아리ILLARIMETA 68.0지원A51.2%12.7%2.8%☆"
+        },
+        {
+          "hero": "cassidy",
+          "text": "14캐캐서디CASSIDYMETA 66.1공격A48.6%31.1%11.3%☆"
+        },
+        {
+          "hero": "genji",
+          "text": "15겐겐지GENJIMETA 65.5공격A52.1%8.6%0.0%☆"
+        },
+        {
+          "hero": "junkrat",
+          "text": "16정정크랫JUNKRATMETA 81.6공격A조건부55.5%4.9%2.5%☆"
+        },
+        {
+          "hero": "domina",
+          "text": "17도도미나DOMINAMETA 67.5돌격A조건부56.9%3.1%1.3%☆"
+        },
+        {
+          "hero": "lucio",
+          "text": "18루루시우LUCIOMETA 66.3지원B51.9%4.9%0.5%☆"
+        },
+        {
+          "hero": "zarya",
+          "text": "19자자리야ZARYAMETA 64.6돌격B49.4%5.8%27.5%☆"
+        },
+        {
+          "hero": "vendetta",
+          "text": "20벤벤데타VENDETTAMETA 60.9공격B51.3%5.2%9.3%☆"
+        },
+        {
+          "hero": "anran",
+          "text": "21안안란ANRANMETA 59.1공격B51.0%5.7%2.3%☆"
+        },
+        {
+          "hero": "kiriko",
+          "text": "22키키리코KIRIKOMETA 58.3지원B49.2%39.2%5.6%☆"
+        },
+        {
+          "hero": "symmetra",
+          "text": "23시시메트라SYMMETRAMETA 55.7공격B52.7%3.8%0.5%☆"
+        },
+        {
+          "hero": "venture",
+          "text": "24벤벤처VENTUREMETA 55.6공격B54.3%2.7%0.2%☆"
+        },
+        {
+          "hero": "mizuki",
+          "text": "25미미즈키MIZUKIMETA 55.0지원B50.6%6.3%5.1%☆"
+        },
+        {
+          "hero": "sojourn",
+          "text": "26소소전SOJOURNMETA 51.6공격B48.5%14.5%0.2%☆"
+        },
+        {
+          "hero": "sigma",
+          "text": "27시시그마SIGMAMETA 50.7돌격B47.5%7.6%2.2%☆"
+        },
+        {
+          "hero": "dmon",
+          "text": "28DD.MonDMONMETA 48.6돌격B48.9%3.6%16.7%☆"
+        },
+        {
+          "hero": "soldier-76",
+          "text": "29솔솔저: 76SOLDIER-76META 47.0공격C50.7%4.7%0.5%☆"
+        },
+        {
+          "hero": "tracer",
+          "text": "30트트레이서TRACERMETA 46.4공격C46.9%24.3%9.3%☆"
+        },
+        {
+          "hero": "wuyang",
+          "text": "31우우양WUYANGMETA 46.3지원C49.2%9.1%0.2%☆"
+        },
+        {
+          "hero": "ana",
+          "text": "32아아나ANAMETA 45.7지원C48.1%26.4%5.2%☆"
+        },
+        {
+          "hero": "torbjorn",
+          "text": "33토토르비욘TORBJORNMETA 44.3공격C47.5%9.2%4.2%☆"
+        },
+        {
+          "hero": "sierra",
+          "text": "34시시에라SIERRAMETA 42.5공격C48.0%5.3%0.4%☆"
+        },
+        {
+          "hero": "reinhardt",
+          "text": "35라라인하르트REINHARDTMETA 41.8돌격C46.8%5.2%2.0%☆"
+        },
+        {
+          "hero": "juno",
+          "text": "36주주노JUNOMETA 40.7지원C49.6%3.6%0.0%☆"
+        },
+        {
+          "hero": "doomfist",
+          "text": "37둠둠피스트DOOMFISTMETA 38.9돌격C43.8%9.7%35.7%☆"
+        },
+        {
+          "hero": "wrecking-ball",
+          "text": "38레레킹볼WRECKING-BALLMETA 33.6돌격C46.1%4.0%3.6%☆"
+        },
+        {
+          "hero": "mauga",
+          "text": "39마마우가MAUGAMETA 31.4돌격C46.0%4.0%7.1%☆"
+        },
+        {
+          "hero": "ashe",
+          "text": "40애애쉬ASHEMETA 29.8공격C48.0%4.4%0.2%☆"
+        },
+        {
+          "hero": "lifeweaver",
+          "text": "41라라이프위버LIFEWEAVERMETA 27.0지원C48.7%3.5%0.2%☆"
+        },
+        {
+          "hero": "jetpack-cat",
+          "text": "42제제트팩 캣JETPACK-CATMETA 27.0지원C43.9%5.1%49.6%☆"
+        },
+        {
+          "hero": "mei",
+          "text": "43메메이MEIMETA 26.8공격C46.2%5.3%1.4%☆"
+        },
+        {
+          "hero": "dva",
+          "text": "44DD.VaDVAMETA 28.2돌격D44.1%5.1%2.8%☆"
+        },
+        {
+          "hero": "widowmaker",
+          "text": "45위위도우메이커WIDOWMAKERMETA 25.5공격D46.8%4.7%3.3%☆"
+        },
+        {
+          "hero": "sombra",
+          "text": "46솜솜브라SOMBRAMETA 25.3지원D42.8%8.3%14.2%☆"
+        },
+        {
+          "hero": "hanzo",
+          "text": "47한한조HANZOMETA 24.5공격D47.9%3.2%0.4%☆"
+        },
+        {
+          "hero": "bastion",
+          "text": "48바바스티온BASTIONMETA 15.5공격D45.7%4.1%1.2%☆"
+        },
+        {
+          "hero": "baptiste",
+          "text": "49바바티스트BAPTISTEMETA 14.7지원D45.8%3.1%0.0%☆"
+        },
+        {
+          "hero": "emre",
+          "text": "50엠엠레EMREMETA 13.6공격D45.4%4.9%0.2%☆"
+        },
+        {
+          "hero": "roadhog",
+          "text": "51로로드호그ROADHOGMETA 13.2돌격D39.6%4.6%3.0%☆"
+        },
+        {
+          "hero": "freja",
+          "text": "52프프레야FREJAMETA 12.5공격D42.8%4.0%12.0%☆"
+        },
+        {
+          "hero": "ramattra",
+          "text": "53라라마트라RAMATTRAMETA 4.6돌격D40.2%3.0%0.5%☆"
+        },
+        {
+          "hero": "mercy",
+          "text": "54메메르시MERCYMETA 1.0지원D18.8%1.4%0.0%☆"
+        }
+      ],
+      "playerRequests": 3,
+      "errors": []
+    }
+  ]
+}

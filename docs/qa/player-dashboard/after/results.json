@@ -1,0 +1,534 @@
+{
+  "phase": "after",
+  "source": "actual captured public TeKrop responses; browser network mocked",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 285.34375,
+          "bottom": 473.859375
+        },
+        "kpis": {
+          "y": 518.859375,
+          "height": 154.75,
+          "bottom": 673.609375
+        },
+        "firstHero": {
+          "y": 745.296875,
+          "height": 99.578125,
+          "bottom": 844.875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 319.1875,
+          "bottom": 507.703125
+        },
+        "kpis": {
+          "y": 552.703125,
+          "height": 154.75,
+          "bottom": 707.453125
+        },
+        "firstHero": {
+          "y": 800.140625,
+          "height": 119.96875,
+          "bottom": 920.109375
+        },
+        "rowHeights": [
+          119.96875,
+          119.96875,
+          119.96875,
+          119.96875,
+          119.96875
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 335.375,
+          "bottom": 523.890625
+        },
+        "kpis": {
+          "y": 568.890625,
+          "height": 154.75,
+          "bottom": 723.640625
+        },
+        "firstHero": {
+          "y": 795.328125,
+          "height": 99.578125,
+          "bottom": 894.90625
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 154.75,
+          "bottom": 634.078125
+        },
+        "firstHero": {
+          "y": 705.765625,
+          "height": 99.578125,
+          "bottom": 805.34375
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 304.34375,
+          "bottom": 492.859375
+        },
+        "kpis": {
+          "y": 537.859375,
+          "height": 154.75,
+          "bottom": 692.609375
+        },
+        "firstHero": {
+          "y": 764.296875,
+          "height": 99.578125,
+          "bottom": 863.875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 279.65625,
+          "bottom": 468.171875
+        },
+        "kpis": {
+          "y": 513.171875,
+          "height": 154.75,
+          "bottom": 667.921875
+        },
+        "firstHero": {
+          "y": 739.609375,
+          "height": 99.578125,
+          "bottom": 839.1875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 154.75,
+          "bottom": 634.078125
+        },
+        "firstHero": {
+          "y": 705.765625,
+          "height": 99.578125,
+          "bottom": 805.34375
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 154.75,
+          "bottom": 634.078125
+        },
+        "firstHero": {
+          "y": 705.765625,
+          "height": 99.578125,
+          "bottom": 805.34375
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 260.65625,
+          "bottom": 449.171875
+        },
+        "kpis": {
+          "y": 494.171875,
+          "height": 154.75,
+          "bottom": 648.921875
+        },
+        "firstHero": {
+          "y": 720.609375,
+          "height": 99.578125,
+          "bottom": 820.1875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 578.65625,
+          "height": 100.46875,
+          "bottom": 679.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 578.65625,
+          "height": 100.46875,
+          "bottom": 679.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 578.65625,
+          "height": 100.46875,
+          "bottom": 679.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true
+      },
+      "errors": []
+    }
+  ]
+}

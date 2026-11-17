@@ -1,0 +1,1392 @@
+{
+  "phase": "after",
+  "source": "actual captured public TeKrop responses; browser network mocked",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 285.34375,
+          "bottom": 473.859375
+        },
+        "kpis": {
+          "y": 518.859375,
+          "height": 160.171875,
+          "bottom": 679.03125
+        },
+        "firstHero": {
+          "y": 769.71875,
+          "height": 99.578125,
+          "bottom": 869.296875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 319.1875,
+          "bottom": 507.703125
+        },
+        "kpis": {
+          "y": 552.703125,
+          "height": 160.171875,
+          "bottom": 712.875
+        },
+        "firstHero": {
+          "y": 803.5625,
+          "height": 119.96875,
+          "bottom": 923.53125
+        },
+        "rowHeights": [
+          119.96875,
+          119.96875,
+          119.96875,
+          119.96875,
+          119.96875
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 335.375,
+          "bottom": 523.890625
+        },
+        "kpis": {
+          "y": 568.890625,
+          "height": 160.171875,
+          "bottom": 729.0625
+        },
+        "firstHero": {
+          "y": 819.75,
+          "height": 99.578125,
+          "bottom": 919.328125
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 160.171875,
+          "bottom": 639.5
+        },
+        "firstHero": {
+          "y": 730.1875,
+          "height": 99.578125,
+          "bottom": 829.765625
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 304.34375,
+          "bottom": 492.859375
+        },
+        "kpis": {
+          "y": 537.859375,
+          "height": 160.171875,
+          "bottom": 698.03125
+        },
+        "firstHero": {
+          "y": 788.71875,
+          "height": 99.578125,
+          "bottom": 888.296875
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 279.65625,
+          "bottom": 468.171875
+        },
+        "kpis": {
+          "y": 513.171875,
+          "height": 160.171875,
+          "bottom": 673.34375
+        },
+        "firstHero": {
+          "y": 764.03125,
+          "height": 99.578125,
+          "bottom": 863.609375
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 160.171875,
+          "bottom": 639.5
+        },
+        "firstHero": {
+          "y": 730.1875,
+          "height": 99.578125,
+          "bottom": 829.765625
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 160.171875,
+          "bottom": 639.5
+        },
+        "firstHero": {
+          "y": 730.1875,
+          "height": 99.578125,
+          "bottom": 829.765625
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 260.65625,
+          "bottom": 449.171875
+        },
+        "kpis": {
+          "y": 494.171875,
+          "height": 160.171875,
+          "bottom": 654.34375
+        },
+        "firstHero": {
+          "y": 745.03125,
+          "height": 99.578125,
+          "bottom": 844.609375
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "14px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 277.78125,
+          "bottom": 445.78125
+        },
+        "kpis": {
+          "y": 499.78125,
+          "height": 99.28125,
+          "bottom": 599.0625
+        },
+        "firstHero": {
+          "y": 697.75,
+          "height": 100.46875,
+          "bottom": 798.21875
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 277.78125,
+          "bottom": 445.78125
+        },
+        "kpis": {
+          "y": 499.78125,
+          "height": 99.28125,
+          "bottom": 599.0625
+        },
+        "firstHero": {
+          "y": 697.75,
+          "height": 100.46875,
+          "bottom": 798.21875
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 277.78125,
+          "bottom": 445.78125
+        },
+        "kpis": {
+          "y": 499.78125,
+          "height": 99.28125,
+          "bottom": 599.0625
+        },
+        "firstHero": {
+          "y": 697.75,
+          "height": 100.46875,
+          "bottom": 798.21875
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    }
+  ]
+}

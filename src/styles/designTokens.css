@@ -1,0 +1,42 @@
+/* Visual foundation only. Entity colors, chart data and layout breakpoints stay local. */
+:root{
+ --surface-page:#10151e;
+ --surface-card:#18222f;
+ --surface-inset:#131b27;
+ --surface-raised:#213044;
+ --surface-hover:#223145;
+ --surface-selected:#f99e1a0c;
+ --border-subtle:#2b394b;
+ --border-control:#3b4b61;
+ --text-primary:#edf2f8;
+ --text-secondary:#aab8ca;
+ --accent-primary:#f99e1a;
+ --accent-hover:#ffb23e;
+ --focus-ring:#72b9f5;
+ --status-success:#7ff5b6;
+ --status-warning:#e7c77e;
+ --status-error:#ff9db0;
+ --space-1:4px;
+ --space-2:8px;
+ --space-compact:10px;
+ --space-3:12px;
+ --space-4:16px;
+ --space-5:20px;
+ --space-6:24px;
+ --space-section:32px;
+ --radius-control:8px;
+ --radius-card:12px;
+ --radius-panel:14px;
+ --type-page:32px;
+ --type-section:18px;
+ --type-card:14px;
+ --type-body:13px;
+ --type-label:12px;
+ --type-meta:11px;
+ --type-value:22px;
+ --leading-body:1.65;
+ --surface-edge:inset 0 1px 0 #ffffff03;
+ --shadow-popup:0 10px 24px #0005;
+ --motion-fast:160ms;
+ --motion-card:200ms;
+}

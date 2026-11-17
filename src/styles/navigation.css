@@ -112,7 +112,7 @@
  #heroes .cohort-banner h2{font-size:12px;line-height:1.5;margin-bottom:0}
  #heroes .cohort-banner .statistics-filters{gap:6px 8px;margin-top:4px;align-items:start}
  #heroes .statistics-filters label{font-size:11px;gap:3px}
- #heroes .filter-combobox-trigger{min-height:44px;font-size:16px;padding:6px 8px;gap:5px}
+ #heroes .filter-combobox-trigger,.player-role-filter .filter-combobox-trigger{min-height:44px;font-size:16px;padding:6px 8px;gap:5px}
  #heroes .compact-advanced{grid-column:1/-1;min-width:0}
  #heroes .compact-advanced>summary,#heroes .compact-source>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;color:#bac8db;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
  #heroes .compact-advanced>summary::after,#heroes .compact-source>summary::after{content:'⌄';margin-left:auto;padding-left:8px}
@@ -150,4 +150,4 @@
 @media(max-width:600px){.site-header .header-tag{display:none}.header-language{width:120px;flex-basis:120px;margin-left:0}.header-language .filter-combobox-trigger{padding-inline:8px;gap:5px}.site-header{gap:8px;padding-inline:12px}.site-header .header-favorites{margin-left:auto}}
 @media(max-width:360px){.site-header,body:has(#list-page:not([hidden])) .site-header{gap:5px}}
 /* Japanese filter labels need slightly denser type in the compact roster. */
-@media(max-width:767px){html[lang=ja] #heroes .statistics-filters .filter-combobox-trigger{font-size:14px}}
+@media(max-width:767px){html[lang=ja] #heroes .statistics-filters .filter-combobox-trigger,html[lang=ja] .player-role-filter .filter-combobox-trigger{font-size:14px}}

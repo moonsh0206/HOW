@@ -1,0 +1,186 @@
+{
+  "phase": "after",
+  "source": "actual captured public TeKrop responses; browser network mocked",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 245.8125,
+          "bottom": 434.328125
+        },
+        "kpis": {
+          "y": 479.328125,
+          "height": 160.171875,
+          "bottom": 639.5
+        },
+        "firstHero": {
+          "y": 730.1875,
+          "height": 99.578125,
+          "bottom": 829.765625
+        },
+        "rowHeights": [
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125,
+          99.578125
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30e37a0d096d92c18f7c6f9519d483e75d1d8ab5280d672f2553f650f4c050e5.png",
+            "width": 128
+          },
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/985b06beae46b7ba3ca87d1512d0fc62ca7f206ceca58ef16fc44d43a1cc84ed.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9240cd64cc8ef58df9acbf55204ab1b5d8578f743fda5931f0dbccbd75ab841b.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/408603fe037e8576078eaac5eab2fb251489ced4003b11f5f522776d43d0b83d.png",
+            "width": 256
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "16px",
+          "minHeight": "44px",
+          "paddingLeft": "8px",
+          "paddingRight": "8px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 174.6875,
+          "bottom": 342.6875
+        },
+        "kpis": {
+          "y": 396.6875,
+          "height": 99.28125,
+          "bottom": 495.96875
+        },
+        "firstHero": {
+          "y": 594.65625,
+          "height": 100.46875,
+          "bottom": 695.125
+        },
+        "rowHeights": [
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875,
+          100.46875
+        ],
+        "visible": 3,
+        "fullyVisible": 2,
+        "overflow": 0,
+        "loadedImages": [
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30e37a0d096d92c18f7c6f9519d483e75d1d8ab5280d672f2553f650f4c050e5.png",
+            "width": 128
+          },
+          {
+            "src": "http://127.0.0.1:5210/HOW/assets/ranks/silver.png",
+            "width": 224
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/d4e6f1ca45d9f88fa89260787397f141a6f007b14e5b26698883b6a17bab9680.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/985b06beae46b7ba3ca87d1512d0fc62ca7f206ceca58ef16fc44d43a1cc84ed.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/9240cd64cc8ef58df9acbf55204ab1b5d8578f743fda5931f0dbccbd75ab841b.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/040bb13f5123ab93faad2f95627ba184608aef4b2469a4d3003859c7087df044.png",
+            "width": 256
+          },
+          {
+            "src": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/408603fe037e8576078eaac5eab2fb251489ced4003b11f5f522776d43d0b83d.png",
+            "width": 256
+          }
+        ]
+      },
+      "data": {
+        "mainCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleCombo": {
+          "backgroundColor": "rgb(16, 21, 30)",
+          "borderColor": "rgb(53, 65, 84)",
+          "borderRadius": "8px",
+          "color": "rgb(237, 241, 246)",
+          "fontSize": "13px",
+          "minHeight": "48px",
+          "paddingLeft": "12px",
+          "paddingRight": "12px"
+        },
+        "roleFilterNoRequests": true,
+        "playerRequests": 3,
+        "detailAdditionalRequests": 0,
+        "favorite": true,
+        "languageKeptPlayer": true,
+        "emptyAndErrorSeparate": true
+      },
+      "errors": []
+    }
+  ]
+}

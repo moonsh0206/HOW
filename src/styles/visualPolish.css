@@ -1,0 +1,71 @@
+/* Final component skin. No display/order/height rules: keep the existing information density. */
+.roster-panel,.detail-summary,.detail-hero,.cohort-banner,.meta-method,#player-profile .player-profile-heading{border-radius:var(--radius-panel)}
+.roster-panel,.detail-summary,.meta-method{border-color:var(--border-subtle)}
+.cohort-banner{background:var(--surface-card);border-color:var(--border-subtle);border-left-color:#b98035}
+.info-card,.ability-card,.patch-note-card,.sidebar .insight-panel,#meta-page .insight-panel,.classification-grid .insight-panel{background:var(--surface-card);border-color:var(--border-subtle);border-radius:var(--radius-card);box-shadow:var(--surface-edge)}
+.sidebar .insight-panel,#meta-page .insight-panel,.classification-grid .insight-panel{border-top-width:1px}
+#heroes .hero-card,#player-results .player-result-card>a,#player-profile .player-hero-card{background:var(--surface-card);border-color:var(--border-subtle);border-radius:var(--radius-card);box-shadow:var(--surface-edge)}
+#player-profile .player-overview>.player-stat-cell{border-radius:var(--radius-card);border-color:var(--border-subtle);background:var(--surface-card);box-shadow:var(--surface-edge)}
+#player-profile .player-rank-slot{border-radius:var(--radius-control)}
+#player-profile .player-hero-analysis{background:var(--surface-inset);border-color:var(--border-subtle);border-radius:0 0 var(--radius-card) var(--radius-card)}
+.detail-tabs{border-radius:var(--radius-card);background:var(--surface-inset);border-color:var(--border-subtle)}
+.detail-tabs a,.role-filters,.role-filters button,.detail-favorite,.chart-mode-toggle{border-radius:var(--radius-control)}
+.detail-tabs a{font-weight:600;letter-spacing:0}
+.primary-button,#player-search-page .primary-button{border-radius:var(--radius-control);font-weight:700}
+.primary-button:hover{background:var(--accent-hover)}
+.detail-favorite{background:var(--surface-selected);border-color:#8d682e}
+.detail-metric-button:not([aria-pressed=true]){background:var(--surface-inset);border-color:var(--border-subtle)}
+.empty-note,.player-role-empty{background:var(--surface-inset);border-color:var(--border-control);border-radius:var(--radius-card)}
+.empty-note{border-style:solid}
+.data-state{border-radius:var(--radius-panel)}
+.portrait,.counter-portrait,.ability-heading img,.insight-hero img{border-radius:var(--radius-control)}
+.portrait,.counter-portrait{background:var(--surface-raised)}
+.ability-heading img{background:var(--surface-raised)}
+.history-y,.history-x,.map-compare-axis{color:var(--text-secondary)}
+.history-grid-line{stroke:var(--border-subtle)}
+.player-time-bar,.perk-selection-bar{background-color:var(--surface-inset)}
+
+/* Semantic typography: hierarchy and digit alignment without shrinking body copy. */
+.section-heading h2,.detail-section h2,.meta-insights h2{font-weight:700;letter-spacing:-.025em}
+.hero-detail-page .detail-section h2{font-size:var(--type-section);margin-bottom:var(--space-3)}
+.ability-heading h3,.insight-panel h3,.info-card h3,.hero-patch-heading h2,.history-heading h2,#player-profile h3{font-weight:700;letter-spacing:-.015em}
+#hero-rows td,.hero-card-stats dd,.hero-ordinal,.rank-change,.metric-value,.metric-review,.history-current,.map-value,.map-difference,.player-stat-cell strong,.player-analysis-grid dd,.perk-selection-rate{font-variant-numeric:tabular-nums lining-nums}
+#hero-rows td,.hero-card-stats dd,.metric-value,.map-value,.player-stat-cell strong{letter-spacing:-.015em}
+#heroes .hero-identity strong,.player-hero-identity strong,.insight-hero strong{font-size:var(--type-card);font-weight:600}
+.ability-heading h3{font-size:var(--type-card)}
+.ability-card p,.insight-panel p,.meta-method p{line-height:var(--leading-body)}
+.meta-method p{font-size:var(--type-body)}
+.player-dashboard>.player-overview>.player-stat-cell:not(.player-time-value):not(.player-winrate)>strong{font-size:var(--type-value)}
+.hero-patch-meta>small,#player-profile .player-source{font-size:var(--type-meta)}
+.ability-card p,.insight-panel p,.meta-method p,.detail-description{color:var(--text-secondary)}
+.hero-patch-meta>small,.player-profile-privacy,#player-profile .player-source,.rank-help,.insight-cohort{color:var(--text-secondary)}
+.rank-up{color:var(--status-success)}
+.rank-down{color:var(--status-error)}
+.rank-equal{color:var(--text-secondary)}
+.site-footer .footer-credit{color:var(--text-secondary)}
+
+/* Calm controls: existing sizes, hover motion, reduced-motion and star rules remain intact. */
+button:hover{filter:none}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
+.favorite-button:focus-visible{outline-width:1px;outline-offset:-6px;border-radius:50%}
+.filter-combobox-trigger:focus-visible{outline-color:var(--focus-ring)}
+.filter-combobox-popup{box-shadow:var(--shadow-popup)}
+#player-query::placeholder,#hero-search::placeholder{color:var(--text-secondary);opacity:.85}
+.detail-back,.player-back,.text-link{text-underline-offset:3px}
+@media(hover:hover) and (pointer:fine){
+ #heroes .hero-card:hover,#player-results .player-result-card:hover>a{background:var(--surface-hover);border-color:var(--border-control)}
+ #hero-rows tr:hover,.player-hero-card>details>summary:hover{background:var(--surface-hover)}
+ .detail-favorite:hover,.chart-mode-toggle:hover,#player-search-page .player-more:hover{background:var(--surface-raised);border-color:var(--border-control)}
+ .detail-back:hover,.player-back:hover{color:var(--text-primary)}
+}
+@media(min-width:1024px){
+ .sidebar .insight-panel,.sidebar .info-card{padding:var(--space-4)}
+ .toolbar{padding:var(--space-5)}
+ #hero-rows td{font-size:13px}
+ #heroes thead th{font-size:var(--type-meta)}
+ .player-search-hero h1{font-size:var(--type-page)}
+}
+@media(max-width:600px){
+ .ability-card,.patch-note-card,#heroes .hero-card,#player-profile .player-hero-card{border-radius:var(--radius-card)}
+ .hero-detail-page .detail-section h2{letter-spacing:-.02em}
+}

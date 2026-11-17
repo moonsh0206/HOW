@@ -1,0 +1,354 @@
+{
+  "phase": "before",
+  "source": "actual captured public TeKrop responses; browser network mocked",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 256.09375,
+          "bottom": 444.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 655.578125,
+          "height": 118.1875,
+          "bottom": 773.765625
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 291.09375,
+          "bottom": 479.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 714.578125,
+          "height": 140.28125,
+          "bottom": 854.859375
+        },
+        "rowHeights": [
+          140.28125,
+          140.28125,
+          140.28125,
+          140.28125,
+          140.28125
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 291.09375,
+          "bottom": 479.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 714.578125,
+          "height": 140.28125,
+          "bottom": 854.859375
+        },
+        "rowHeights": [
+          140.28125,
+          140.28125,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 1,
+        "fullyVisible": 0,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 256.09375,
+          "bottom": 444.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 633.484375,
+          "height": 118.1875,
+          "bottom": 751.671875
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 275.09375,
+          "bottom": 463.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 674.578125,
+          "height": 118.1875,
+          "bottom": 792.765625
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 275.09375,
+          "bottom": 463.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 674.578125,
+          "height": 118.1875,
+          "bottom": 792.765625
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 256.09375,
+          "bottom": 444.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 633.484375,
+          "height": 118.1875,
+          "bottom": 751.671875
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 256.09375,
+          "bottom": 444.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 655.578125,
+          "height": 118.1875,
+          "bottom": 773.765625
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 188.515625,
+          "height": 256.09375,
+          "bottom": 444.609375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 633.484375,
+          "height": 118.1875,
+          "bottom": 751.671875
+        },
+        "rowHeights": [
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875,
+          118.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 259.09375,
+          "bottom": 427.09375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 615.96875,
+          "height": 122.1875,
+          "bottom": 738.15625
+        },
+        "rowHeights": [
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 259.09375,
+          "bottom": 427.09375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 615.96875,
+          "height": 122.1875,
+          "bottom": 738.15625
+        },
+        "rowHeights": [
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "metrics": {
+        "header": {
+          "y": 168,
+          "height": 259.09375,
+          "bottom": 427.09375
+        },
+        "kpis": null,
+        "firstHero": {
+          "y": 615.96875,
+          "height": 122.1875,
+          "bottom": 738.15625
+        },
+        "rowHeights": [
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875,
+          122.1875
+        ],
+        "visible": 2,
+        "fullyVisible": 1,
+        "overflow": 0
+      },
+      "data": null,
+      "errors": []
+    }
+  ]
+}

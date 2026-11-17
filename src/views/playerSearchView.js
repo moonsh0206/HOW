@@ -3,13 +3,14 @@ import {formatLocale} from '../i18n/i18n.js';
 import {t} from '../i18n/i18n.js';
 import {node,image} from './dom.js';
 import {ROLES} from '../models/heroModel.js';
-import {topPlayerHeroes,formatPlayerTime} from '../models/playerModel.js';
 import {renderPlayerRank} from './playerRankView.js';
 import {renderPlayerCardRanks} from './playerCardRanksView.js';
-import {playerHeroColor} from '../data/playerHeroColors.js';
+import {renderPlayerOverview,renderPlayerHeroList} from './playerDashboardView.js';
 import {revealResults} from './contentMotion.js';
+import {createFilterCombobox} from './filterCombobox.js';
+import {roleIcon} from './roleIcon.js';
+import {PLAYER_ROLE_KEYS} from '../models/playerModel.js';
 const value=v=>v==null?t("player.noInfo"):String(v);
-const time=formatPlayerTime;
 export const PLAYER_EMPTY_IMAGE=`${import.meta.env?.BASE_URL??'/'}assets/illustrations/HOW_kinetic_grasp_clean.png`;
 export function renderPlayerSearch(root){
  if(!root||root.childElementCount)return;
@@ -32,8 +33,16 @@ export function renderPlayerSearch(root){
 }
 export function createPlayerSearchView(root){
  renderPlayerSearch(root);
- let observer;
- return {observeRanks(callback){observer?.disconnect();observer=null;if(!callback||!root.ownerDocument.defaultView.IntersectionObserver)return;
+ let observer,roleCombo,roleHost,roleSelect;
+ function roleFilter(selected='all'){
+  const options=PLAYER_ROLE_KEYS.map(value=>({value,label:value==='all'?t('player.roleAll'):ROLES[value]}));
+  if(!roleHost){roleHost=node('label',undefined,'player-role-filter');roleHost.append(node('span',t('player.roleLabel'),'sr-only'));roleSelect=node('select');roleSelect.id='player-hero-role';roleHost.htmlFor=roleSelect.id;roleHost.append(roleSelect);}
+  roleHost.querySelector('.sr-only').textContent=t('player.roleLabel');
+  roleSelect.replaceChildren(...options.map(choice=>{const option=node('option',choice.label);option.value=choice.value;return option;}));roleSelect.value=PLAYER_ROLE_KEYS.includes(selected)?selected:'all';
+  if(!roleCombo)roleCombo=createFilterCombobox(roleSelect,{options,icon:value=>value==='all'?node('span',undefined,'player-role-placeholder'):roleIcon(value)});else roleCombo.setOptions(options);
+  return roleHost;
+ }
+ return {destroy(){observer?.disconnect();roleCombo?.destroy();},observeRanks(callback){observer?.disconnect();observer=null;if(!callback||!root.ownerDocument.defaultView.IntersectionObserver)return;
   observer=new root.ownerDocument.defaultView.IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){observer.unobserve(entry.target);callback(entry.target.dataset.playerId);}},{rootMargin:'80px'});
   for(const card of root.querySelectorAll('#player-results [data-player-id]'))observer.observe(card);
  },updateRanks(id,entry,isPublic){const card=[...root.querySelectorAll('#player-results [data-player-id]')].find(c=>c.dataset.playerId===id);card?.querySelector('.player-card-ranks')?.replaceWith(renderPlayerCardRanks(entry,isPublic));},render(state,heroes=[]){
@@ -57,7 +66,7 @@ export function createPlayerSearchView(root){
   if(focus)[...results.querySelectorAll('[data-player-id]')].find(b=>b.dataset.playerId===focus)?.focus({preventScroll:true});
   if(favoriteFocus)([...results.querySelectorAll('[data-player-favorite]')].find(b=>b.dataset.playerFavorite===favoriteFocus)??root.querySelector('#player-query')).focus({preventScroll:true});
   const more=root.querySelector('[data-player-more]');more.hidden=dedicated||state.results.length>=state.total||!state.results.length;more.disabled=state.searchStatus==='loading';
-  const profile=root.querySelector('#player-profile');profile.replaceChildren();profile.hidden=!dedicated;profile.setAttribute('aria-busy',String(state.profileStatus==='loading'));
+  const profile=root.querySelector('#player-profile');const roleFocused=roleHost?.contains(document.activeElement);const samePlayer=profile.dataset.profilePlayerId===state.selected?.id;const openHeroes=new Set(samePlayer?[...profile.querySelectorAll('details[data-player-hero][open]')].map(el=>el.dataset.playerHero):[]);const heroFocus=samePlayer&&document.activeElement?.matches('[data-player-hero]>summary')?document.activeElement.parentElement.dataset.playerHero:null;profile.dataset.profilePlayerId=state.selected?.id??'';roleCombo?.close();profile.replaceChildren();profile.hidden=!dedicated;profile.setAttribute('aria-busy',String(state.profileStatus==='loading'));
   if(!state.selected)return;
   const summary=state.summary?.data;const heading=node('div',undefined,'player-profile-heading');if(summary?.avatar||state.selected.avatar)heading.append(image(summary?.avatar||state.selected.avatar));
   if(state.background){const background=image(state.background,'player-most-background');background.loading='eager';heading.prepend(background);}
@@ -67,20 +76,25 @@ export function createPlayerSearchView(root){
   if(state.previousSummary||!summary&&state.favorites?.has(state.selected.id))profile.append(node('p',t("player.previous"),'player-source'));
   if(state.private)profile.append(node('p',t("비공개 프로필입니다. 공개되지 않은 전적은 표시하지 않습니다."),'empty-note'));
   if(errorText(state.profileError)){profile.append(node('p',errorText(state.profileError),'player-error'));const retry=node('button',t("player.retry"),'player-more');retry.type='button';retry.dataset.playerRetry='';profile.append(retry);}
+  title.append(node('small',state.private?t('player.private'):state.selected.isPublic===true||state.competitiveStatus==='ready'?t('player.public'):t('player.unknownPrivacy'),'player-profile-privacy'));
   if(summary){
    const ranks=node('section',undefined,'player-ranks');ranks.append(node('h3',t("경쟁전 등급 · API 제공 마지막 플레이 시즌")));
    if(!summary.ranks.length)ranks.append(node('p',state.private?t("player.private"):t("등급 정보 없음")));
-   for(const platform of ['pc','console']){const platformRanks=summary.ranks.filter(r=>r.platform===platform);if(!platformRanks.length)continue;const group=node('div',undefined,'player-rank-grid');for(const role of ['tank','damage','support','open']){const rank=platformRanks.find(r=>r.role===role);if(role==='open'&&!rank)continue;const slot=node('div',undefined,'player-rank-slot');slot.append(node('small',`${platform==='pc'?'PC':t("콘솔")} · ${ROLES[role]??t("자유 역할")}`));slot.append(rank?renderPlayerRank(rank):node('p',t("등급 정보 없음")));group.append(slot);}ranks.append(group);}heading.append(ranks);
-   if(summary.endorsement!=null)profile.append(node('p',t("message.a12b1c45561d",{"0":(summary.endorsement)})));
-   if(summary.updatedAt!=null)profile.append(node('p',t("message.677ec3ca516e",{"0":(new Date(summary.updatedAt*1000).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))}),'player-source'));
+   for(const platform of ['pc','console']){const platformRanks=summary.ranks.filter(r=>r.platform===platform);if(!platformRanks.length&&platform!=='pc')continue;const group=node('div',undefined,'player-rank-grid');for(const role of ['tank','damage','support','open']){const rank=platformRanks.find(r=>r.role===role);if(role==='open'&&!rank)continue;const slot=node('div',undefined,'player-rank-slot');slot.append(node('small',`${platform==='pc'?'PC':t("콘솔")} · ${ROLES[role]??t("자유 역할")}`));slot.append(rank?renderPlayerRank(rank):node('p',t("등급 정보 없음")));group.append(slot);}ranks.append(group);}heading.append(ranks);
+   const meta=node('div',undefined,'player-profile-meta');
+   if(summary.endorsement!=null)meta.append(node('p',t("message.a12b1c45561d",{"0":(summary.endorsement)})));
+   if(summary.updatedAt!=null)meta.append(node('p',t("message.677ec3ca516e",{"0":(new Date(summary.updatedAt*1000).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))}),'player-source'));heading.append(meta);
   }
   const stats=state.competitive?.data;
-  if(stats&&!state.private){const section=node('section');section.append(node('h3',t("PC 경쟁전 전적")));
-   const general=stats.general;section.append(node('p',general?t("message.45aa70886072",{"0":(time(general.seconds)),"1":(value(general.played)),"2":(value(general.won)),"3":(value(general.lost)),"4":(general.winRate==null?t("player.noInfo"):general.winRate+'%')}):t("경쟁전 요약 정보 없음")));
-   section.append(node('h3',t("TOP HEROES · 경쟁전 플레이 시간")));
-   const top=topPlayerHeroes(stats,heroes),list=node('ul',undefined,'player-hero-stats');for(const hero of top.heroes){const li=node('li');li.dataset.role=hero.role??'unknown';li.dataset.heroKey=hero.key;li.style.setProperty('--player-hero-color',playerHeroColor(hero.key));if(hero.portrait)li.append(image(hero.portrait));const content=node('div');content.append(node('strong',hero.name),node('p',t("message.5a8e45dd77d9",{"0":(time(hero.seconds)),"1":(value(hero.played)),"2":(value(hero.won)),"3":(value(hero.lost))})),node('p',t("message.1db16c5e9551",{"0":(hero.winRate==null?t("player.noInfo"):hero.winRate+'%'),"1":(value(hero.kda))})));if(hero.barPercent!=null){const bar=node('div',undefined,'player-time-bar');bar.setAttribute('role','meter');bar.setAttribute('aria-label',t("message.17ae345528ee",{"0":(hero.name),"1":(time(hero.seconds))}));bar.setAttribute('aria-valuemin','0');bar.setAttribute('aria-valuemax','100');bar.setAttribute('aria-valuenow',String(hero.barPercent));const fill=node('span');fill.style.width=`${hero.barPercent}%`;bar.append(fill);content.append(bar);}li.append(content);list.append(li);}section.append(stats.heroes.length?list:node('p',t("영웅별 경쟁전 정보 없음")));profile.append(section);
+  if(stats&&!state.private){const section=node('section',undefined,'player-dashboard');
+   section.append(node('h3',t('player.competitiveHeading')),renderPlayerOverview(stats.general));
+   const toolbar=node('div',undefined,'player-heroes-toolbar');toolbar.append(node('h3',t('player.heroRecords')),roleFilter(state.heroRole));section.append(toolbar,node('p',t('player.timeBarNote'),'player-source'));
+   const list=renderPlayerHeroList(stats,heroes,openHeroes,state.heroRole??'all');
+   section.append(list.children.length?list:node('p',t(stats.heroes.length?'player.noRoleRecords':'player.noHeroRecords'),'player-role-empty'));profile.append(section);
   }
   const frames=[['summary',state.summary],['competitive',state.competitive]].filter(([,frame])=>frame);for(const [kind,frame]of frames)profile.append(node('p',t("message.e0ca39b014eb",{"0":(kind==='summary'?t("프로필"):t("전적")),"1":(new Date(frame.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})),"2":(frame.cached?t("브라우저 캐시 재사용"):t("API 조회")),"3":(frame.providerAgeSeconds==null?t("player.noInfo"):frame.providerAgeSeconds+t("초")),"4":(frame.providerStale?t(" · 제공처 오래된 캐시"):'')}),'player-source'));
+  if(heroFocus)[...profile.querySelectorAll('[data-player-hero]')].find(el=>el.dataset.playerHero===heroFocus)?.querySelector('summary')?.focus({preventScroll:true});
+  if(roleFocused)roleHost?.querySelector('[role=combobox]')?.focus({preventScroll:true});
   const source=node('a',t("출처: OverFast API"));source.href='https://overfast-api.tekrop.fr/docs';source.target='_blank';source.rel='noopener noreferrer';profile.append(source,node('p',t("API 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다."),'player-source'));
  }};
 }

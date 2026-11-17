@@ -1,9 +1,10 @@
 import {t} from '../i18n/i18n.js';
 import {safeImage} from './heroModel.js';
-export function topPlayerHeroes(stats,heroes=[]){
+export const PLAYER_ROLE_KEYS=Object.freeze(['all','tank','damage','support']);
+export function topPlayerHeroes(stats,heroes=[],role='all'){
  const rows=(stats?.heroes??[]).map(row=>{const hero=heroes.find(h=>h.key===row.key);return {...row,name:hero?.name??row.key,portrait:safeImage(hero?.portrait),role:hero?.role??null};}).sort((a,b)=>(b.seconds??-1)-(a.seconds??-1)||a.key.localeCompare(b.key));
- const maximum=Math.max(0,...rows.map(h=>h.seconds??0));
- return {most:maximum>0?rows.find(h=>h.seconds===maximum):null,heroes:rows.map(h=>({...h,barPercent:maximum>0&&Number.isFinite(h.seconds)?h.seconds/maximum*100:null}))};
+ const filtered=rows.filter(hero=>role==='all'||hero.role===role),maximum=Math.max(0,...filtered.map(h=>h.seconds??0));
+ return {most:maximum>0?filtered.find(h=>h.seconds===maximum):null,heroes:filtered.map(h=>({...h,barPercent:maximum>0&&Number.isFinite(h.seconds)?h.seconds/maximum*100:null}))};
 }
 export function formatPlayerTime(seconds){if(!Number.isFinite(seconds)||seconds<0)return t("정보 없음");const value=Math.floor(seconds);return t('player.seconds',{hours:Math.floor(value/3600),minutes:Math.floor(value%3600/60),seconds:value%60});}
 export function playerQuery(value){
@@ -25,7 +26,8 @@ export function normalizePlayerSearch(raw){
  })};
 }
 const number=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0?v:null;
-function stat(row){if(!row||typeof row!=='object'||Array.isArray(row))return null;return {played:number(row.games_played),won:number(row.games_won),lost:number(row.games_lost),seconds:number(row.time_played),winRate:number(row.winrate)<=100?number(row.winrate):null,kda:number(row.kda)};}
+const statGroup=row=>row&&typeof row==='object'&&!Array.isArray(row)?Object.fromEntries(['eliminations','assists','deaths','damage','healing'].map(key=>[key,number(row[key])])):null;
+function stat(row){if(!row||typeof row!=='object'||Array.isArray(row))return null;return {played:number(row.games_played),won:number(row.games_won),lost:number(row.games_lost),seconds:number(row.time_played),winRate:number(row.winrate)<=100?number(row.winrate):null,kda:number(row.kda),total:statGroup(row.total),average:statGroup(row.average)};}
 export function normalizePlayerSummary(raw){
  if(!raw||typeof raw.username!=='string'||!raw.username.trim())throw Error(t("플레이어 프로필 응답 형식이 올바르지 않습니다."));
  const ranks=[];for(const platform of ['pc','console']){const frame=raw.competitive?.[platform];if(!frame)continue;for(const role of ['tank','damage','support','open']){const rank=frame[role];if(rank&&typeof rank.division==='string')ranks.push({platform,role,season:number(frame.season),division:rank.division,tier:number(rank.tier)});}}
