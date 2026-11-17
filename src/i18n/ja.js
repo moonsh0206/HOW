@@ -730,5 +730,8 @@ export default {
   "player.unknownPrivacy": "公開設定は未確認",
   "player.retry": "再試行",
   "player.more": "さらに表示",
-  "player.seconds": "{hours}時間{minutes}分{seconds}秒"
+  "player.seconds": "{hours}時間{minutes}分{seconds}秒",
+  "patch.viewDetails": "詳細を見る",
+  "patch.primaryCount": "{mode} · 変更{count}件",
+  "patch.otherCount": " / 他モード{count}件"
 };

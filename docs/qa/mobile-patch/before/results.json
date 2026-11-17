@@ -1,0 +1,471 @@
+{
+  "phase": "before",
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 750.09375,
+          "height": 208.390625,
+          "bottom": 958.484375
+        },
+        "graph": {
+          "y": 997.28125,
+          "height": 242.59375,
+          "bottom": 1239.875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 750.09375,
+          "height": 208.390625,
+          "bottom": 958.484375
+        },
+        "graph": {
+          "y": 997.28125,
+          "height": 242.59375,
+          "bottom": 1239.875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 765.09375,
+          "height": 214.390625,
+          "bottom": 979.484375
+        },
+        "graph": {
+          "y": 1018.28125,
+          "height": 303.1875,
+          "bottom": 1321.46875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 765.09375,
+          "height": 214.390625,
+          "bottom": 979.484375
+        },
+        "graph": {
+          "y": 1018.28125,
+          "height": 303.1875,
+          "bottom": 1321.46875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 782.6875,
+          "height": 208.390625,
+          "bottom": 991.078125
+        },
+        "graph": {
+          "y": 1029.875,
+          "height": 283.59375,
+          "bottom": 1313.46875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 782.6875,
+          "height": 208.390625,
+          "bottom": 991.078125
+        },
+        "graph": {
+          "y": 1029.875,
+          "height": 283.59375,
+          "bottom": 1313.46875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 745,
+          "height": 190.390625,
+          "bottom": 935.390625
+        },
+        "graph": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 745,
+          "height": 190.390625,
+          "bottom": 935.390625
+        },
+        "graph": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 765.09375,
+          "height": 214.390625,
+          "bottom": 979.484375
+        },
+        "graph": {
+          "y": 1018.28125,
+          "height": 267.59375,
+          "bottom": 1285.875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 765.09375,
+          "height": 214.390625,
+          "bottom": 979.484375
+        },
+        "graph": {
+          "y": 1018.28125,
+          "height": 267.59375,
+          "bottom": 1285.875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 753,
+          "height": 208.390625,
+          "bottom": 961.390625
+        },
+        "graph": {
+          "y": 1000.1875,
+          "height": 242.59375,
+          "bottom": 1242.78125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 753,
+          "height": 208.390625,
+          "bottom": 961.390625
+        },
+        "graph": {
+          "y": 1000.1875,
+          "height": 242.59375,
+          "bottom": 1242.78125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 745,
+          "height": 190.390625,
+          "bottom": 935.390625
+        },
+        "graph": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 745,
+          "height": 190.390625,
+          "bottom": 935.390625
+        },
+        "graph": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 760,
+          "height": 214.390625,
+          "bottom": 974.390625
+        },
+        "graph": {
+          "y": 1013.1875,
+          "height": 267.59375,
+          "bottom": 1280.78125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 760,
+          "height": 214.390625,
+          "bottom": 974.390625
+        },
+        "graph": {
+          "y": 1013.1875,
+          "height": 267.59375,
+          "bottom": 1280.78125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 753,
+          "height": 190.390625,
+          "bottom": 943.390625
+        },
+        "graph": {
+          "y": 982.1875,
+          "height": 242.59375,
+          "bottom": 1224.78125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 753,
+          "height": 190.390625,
+          "bottom": 943.390625
+        },
+        "graph": {
+          "y": 982.1875,
+          "height": 242.59375,
+          "bottom": 1224.78125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    }
+  ]
+}

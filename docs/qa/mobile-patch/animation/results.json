@@ -1,0 +1,971 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "reduced": false,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 147.578125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 302,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 126.109375,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 252,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 68.90625,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 166,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 34.40625,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 72.953125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 182,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 320,
+      "reduced": true,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 302,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 302,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 252,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 252,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 166,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 166,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 182,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 182,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 99.328125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 81.671875,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 54.5,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 34.515625,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 50.53125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 430,
+      "reduced": false,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 76.453125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 63.171875,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 42.015625,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 34.609375,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 65.8125,
+            "hidden": false,
+            "inert": false,
+            "animations": 1
+          },
+          "expanded": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 430,
+      "reduced": true,
+      "cases": [
+        {
+          "count": 5,
+          "type": "buff",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 248,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 3,
+          "type": "nerf",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 198,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 2,
+          "type": "mixed",
+          "long": false,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 130,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": true,
+          "modes": false,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 86,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        },
+        {
+          "count": 1,
+          "type": "buff",
+          "long": false,
+          "modes": true,
+          "initial": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          },
+          "middle": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "expanded": {
+            "height": 164,
+            "hidden": false,
+            "inert": false,
+            "animations": 0
+          },
+          "end": {
+            "height": 0,
+            "hidden": true,
+            "inert": true,
+            "animations": 0
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "reduced": false,
+      "cases": [],
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "reduced": true,
+      "cases": [],
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "cases": [],
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "cases": [],
+      "pass": true
+    }
+  ]
+}

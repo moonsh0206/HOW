@@ -68,4 +68,7 @@ export default {
  'player.retry':'Retry',
  'player.more':'Show more results',
  'player.seconds':'{hours}h {minutes}m {seconds}s',
+ 'patch.viewDetails':'View details',
+ 'patch.primaryCount':'{mode} · {count} changes',
+ 'patch.otherCount':' / {count} in other modes',
 };

@@ -1,0 +1,471 @@
+{
+  "phase": "after",
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 750.09375,
+          "height": 121.796875,
+          "bottom": 871.890625
+        },
+        "graph": {
+          "y": 910.6875,
+          "height": 242.59375,
+          "bottom": 1153.28125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 750.09375,
+          "height": 257.796875,
+          "bottom": 1007.890625
+        },
+        "graph": {
+          "y": 1046.6875,
+          "height": 242.59375,
+          "bottom": 1289.28125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 765.09375,
+          "height": 121.796875,
+          "bottom": 886.890625
+        },
+        "graph": {
+          "y": 925.6875,
+          "height": 303.1875,
+          "bottom": 1228.875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 765.09375,
+          "height": 263.796875,
+          "bottom": 1028.890625
+        },
+        "graph": {
+          "y": 1067.6875,
+          "height": 303.1875,
+          "bottom": 1370.875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 782.6875,
+          "height": 121.796875,
+          "bottom": 904.484375
+        },
+        "graph": {
+          "y": 943.28125,
+          "height": 283.59375,
+          "bottom": 1226.875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 782.6875,
+          "height": 257.796875,
+          "bottom": 1040.484375
+        },
+        "graph": {
+          "y": 1079.28125,
+          "height": 283.59375,
+          "bottom": 1362.875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 745,
+          "height": 121.796875,
+          "bottom": 866.796875
+        },
+        "graph": {
+          "y": 905.59375,
+          "height": 242.59375,
+          "bottom": 1148.1875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 745,
+          "height": 239.796875,
+          "bottom": 984.796875
+        },
+        "graph": {
+          "y": 1023.59375,
+          "height": 242.59375,
+          "bottom": 1266.1875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 765.09375,
+          "height": 121.796875,
+          "bottom": 886.890625
+        },
+        "graph": {
+          "y": 925.6875,
+          "height": 267.59375,
+          "bottom": 1193.28125
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 765.09375,
+          "height": 263.796875,
+          "bottom": 1028.890625
+        },
+        "graph": {
+          "y": 1067.6875,
+          "height": 267.59375,
+          "bottom": 1335.28125
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 753,
+          "height": 121.796875,
+          "bottom": 874.796875
+        },
+        "graph": {
+          "y": 913.59375,
+          "height": 242.59375,
+          "bottom": 1156.1875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 753,
+          "height": 257.796875,
+          "bottom": 1010.796875
+        },
+        "graph": {
+          "y": 1049.59375,
+          "height": 242.59375,
+          "bottom": 1292.1875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 745,
+          "height": 121.796875,
+          "bottom": 866.796875
+        },
+        "graph": {
+          "y": 905.59375,
+          "height": 242.59375,
+          "bottom": 1148.1875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 745,
+          "height": 239.796875,
+          "bottom": 984.796875
+        },
+        "graph": {
+          "y": 1023.59375,
+          "height": 242.59375,
+          "bottom": 1266.1875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 760,
+          "height": 121.796875,
+          "bottom": 881.796875
+        },
+        "graph": {
+          "y": 920.59375,
+          "height": 267.59375,
+          "bottom": 1188.1875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 760,
+          "height": 263.796875,
+          "bottom": 1023.796875
+        },
+        "graph": {
+          "y": 1062.59375,
+          "height": 267.59375,
+          "bottom": 1330.1875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 753,
+          "height": 121.796875,
+          "bottom": 874.796875
+        },
+        "graph": {
+          "y": 913.59375,
+          "height": 242.59375,
+          "bottom": 1156.1875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 753,
+          "height": 239.796875,
+          "bottom": 992.796875
+        },
+        "graph": {
+          "y": 1031.59375,
+          "height": 242.59375,
+          "bottom": 1274.1875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "collapsed": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "expanded": {
+        "patch": {
+          "y": 737.78125,
+          "height": 202.390625,
+          "bottom": 940.171875
+        },
+        "graph": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "overflow": 0
+      },
+      "errors": []
+    }
+  ]
+}

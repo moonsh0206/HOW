@@ -13,6 +13,7 @@ import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
 import {renderPerkSelection,renderPerkStatisticsInfo} from './perkStatisticsView.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {renderHeroPatch} from './heroPatchView.js';
+import {restorePatchDisclosure} from './patchDisclosure.js';
 import {compactText} from './compactText.js';
 import { node, image } from './dom.js';
 import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
@@ -37,6 +38,7 @@ export function createHeroDetailView() {
   const root = document.querySelector('#hero-detail-page');
   let contentKey;
   let overviewKey,perkKey,lastTab;
+  let patchCarry=null,patchHero;
   function enter(elements){
     if(root.ownerDocument.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;
     for(const element of elements)element?.animate?.(element.id==='detail-overview'?[{opacity:0},{opacity:1}]:[{opacity:0,transform:'translateY(5px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'ease-out'});
@@ -55,7 +57,9 @@ export function createHeroDetailView() {
       root.setAttribute('aria-busy',String(detailState.status==='loading'));
       const signature = `${getLanguage()}:${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
       if (signature !== contentKey) {
-        contentKey = signature; overviewKey=null;perkKey=null;lastTab=null;root.replaceChildren();
+        if(patchHero!==route.key){patchCarry=null;patchHero=route.key;}
+        else patchCarry=root.querySelector('.hero-patch-panel')??patchCarry;
+        contentKey = signature; overviewKey=null;perkKey=null;lastTab=null;root.querySelector('.hero-patch-panel')?.patchDisclosure?.dispose();root.replaceChildren();
         const back = node('a', route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기"), 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);
         const filterHost=node('div',undefined,'detail-filter-host');filterHost.id='detail-filter-host';root.append(filterHost);
         if (detailState.status !== 'ready') {
@@ -179,7 +183,10 @@ export function createHeroDetailView() {
       }
       if (!detail.subrole) passive.querySelector('p').textContent = t("확인된 하위 역할 정보가 없습니다.");
       const patchPanel=renderHeroPatch(patchArchive,route.key);
-      const previousPatch=stats.querySelector('.hero-patch-panel');
+      const previousPatch=stats.querySelector('.hero-patch-panel')??patchCarry;patchCarry=null;
+      const patchToggleFocus=previousPatch?.querySelector('.hero-patch-toggle')===document.activeElement;
+      const patchDetailFocus=document.activeElement?.matches('.hero-patch-panel summary')?document.activeElement.parentElement.dataset.patchDetail:null;
+      restorePatchDisclosure(previousPatch,patchPanel);
       const patchFocus=previousPatch?.contains(document.activeElement)?document.activeElement.closest('[data-change-id]')?.dataset.changeId:null;
       if(patchPanel){
         for(const old of previousPatch?.querySelectorAll('[data-change-id] .compact-text.text-expanded')??[]){
@@ -187,8 +194,8 @@ export function createHeroDetailView() {
           const next=[...patchPanel.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===id);
           next?.querySelector('.compact-text-toggle')?.click();
         }
-        const oldDetails=previousPatch?.querySelectorAll('details')??[];
-        patchPanel.querySelectorAll('details').forEach((el,i)=>{el.open=oldDetails[i]?.open??false;});patchPanel.classList.add('detail-secondary');summaryTop.append(patchPanel);
+        const oldDetails=new Map([...(previousPatch?.querySelectorAll('details')??[])].map(el=>[el.dataset.patchDetail,el.open]));
+        patchPanel.querySelectorAll('details').forEach(el=>{el.open=oldDetails.get(el.dataset.patchDetail)??false;});patchPanel.classList.add('detail-secondary');summaryTop.append(patchPanel);
       }
       const countersPanel=renderCounters(counters),synergyPanel=renderSynergies(synergies);
       for(const panel of [countersPanel,synergyPanel,passive])panel.classList.add('detail-secondary');
@@ -196,6 +203,8 @@ export function createHeroDetailView() {
       if(route.tab!=='abilities')summaryTop.append(passive);
       else root.querySelector('#detail-abilities').append(passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
+      if(patchToggleFocus)patchPanel?.querySelector('.hero-patch-toggle')?.focus({preventScroll:true});
+      if(patchDetailFocus)[...(patchPanel?.querySelectorAll('details')??[])].find(el=>el.dataset.patchDetail===patchDetailFocus)?.querySelector('summary')?.focus({preventScroll:true});
       if(patchFocus){const item=[...stats.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===patchFocus);item?.querySelector('.compact-text-toggle')?.focus({preventScroll:true});}
       if(modeFocused)chart.querySelector('[data-chart-mode]')?.focus({preventScroll:true});
       if(mapRetryFocused)(chart.querySelector('[data-map-stats-retry]')??chart.querySelector('[data-chart-mode]'))?.focus({preventScroll:true});

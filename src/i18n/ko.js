@@ -68,4 +68,7 @@ export default {
  'player.retry':'다시 시도',
  'player.more':'결과 더 보기',
  'player.seconds':'{hours}시간 {minutes}분 {seconds}초',
+ 'patch.viewDetails':'자세히 보기',
+ 'patch.primaryCount':'{mode} · 변경 {count}개',
+ 'patch.otherCount':' / 다른 모드 {count}개',
 };
