@@ -1,0 +1,10 @@
+{
+  "status": 401,
+  "url": "https://api.github.com/repos/moonsh0206/HOW/actions/variables",
+  "observedAt": "2026-11-17T01:36:46.185Z",
+  "data": {
+    "message": "Requires authentication",
+    "documentation_url": "https://docs.github.com/rest",
+    "status": "401"
+  }
+}

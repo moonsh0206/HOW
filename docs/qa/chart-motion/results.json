@@ -1,0 +1,381 @@
+{
+  "testData": true,
+  "results": [
+    {
+      "width": 320,
+      "reduced": false,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.3419999996603
+              },
+              {
+                "time": 83.3419999996603
+              },
+              {
+                "time": 83.3419999996603
+              },
+              {
+                "time": 83.3419999996603
+              }
+            ],
+            "height": 299
+          },
+          "final": {
+            "height": 299,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [
+              {
+                "time": 99.96999999936307
+              },
+              {
+                "time": 99.96999999936307
+              },
+              {
+                "time": 99.96999999936307
+              },
+              {
+                "time": 99.96999999936307
+              }
+            ],
+            "height": 420.296875
+          },
+          "final": {
+            "height": 420.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 320,
+      "reduced": true,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [],
+            "height": 299
+          },
+          "final": {
+            "height": 299,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [],
+            "height": 420.296875
+          },
+          "final": {
+            "height": 420.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 390,
+      "reduced": false,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.33400000013319
+              },
+              {
+                "time": 83.33400000013319
+              },
+              {
+                "time": 83.33400000013319
+              },
+              {
+                "time": 83.33400000013319
+              }
+            ],
+            "height": 299
+          },
+          "final": {
+            "height": 299,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.31899999990866
+              },
+              {
+                "time": 83.31899999990866
+              },
+              {
+                "time": 83.31899999990866
+              },
+              {
+                "time": 83.31899999990866
+              }
+            ],
+            "height": 420.296875
+          },
+          "final": {
+            "height": 420.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [],
+            "height": 299
+          },
+          "final": {
+            "height": 299,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [],
+            "height": 420.296875
+          },
+          "final": {
+            "height": 420.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "reduced": false,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.2979999989093
+              },
+              {
+                "time": 83.2979999989093
+              },
+              {
+                "time": 83.2979999989093
+              },
+              {
+                "time": 83.2979999989093
+              }
+            ],
+            "height": 314
+          },
+          "final": {
+            "height": 314,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [
+              {
+                "time": 49.98499999915307
+              },
+              {
+                "time": 49.98499999915307
+              },
+              {
+                "time": 49.98499999915307
+              },
+              {
+                "time": 49.98499999915307
+              }
+            ],
+            "height": 455.296875
+          },
+          "final": {
+            "height": 455.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1280,
+      "reduced": true,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [],
+            "height": 314
+          },
+          "final": {
+            "height": 314,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [],
+            "height": 455.296875
+          },
+          "final": {
+            "height": 455.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.4090000007906
+              },
+              {
+                "time": 83.4090000007906
+              },
+              {
+                "time": 83.4090000007906
+              },
+              {
+                "time": 83.4090000007906
+              }
+            ],
+            "height": 314
+          },
+          "final": {
+            "height": 314,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [
+              {
+                "time": 83.2360000003436
+              },
+              {
+                "time": 83.2360000003436
+              },
+              {
+                "time": 83.2360000003436
+              },
+              {
+                "time": 83.2360000003436
+              }
+            ],
+            "height": 455.296875
+          },
+          "final": {
+            "height": 455.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "modes": [
+        {
+          "kind": "map",
+          "middle": {
+            "animations": [],
+            "height": 314
+          },
+          "final": {
+            "height": 314,
+            "overflow": 0,
+            "transforms": [
+              "none",
+              "none"
+            ]
+          }
+        },
+        {
+          "kind": "history",
+          "middle": {
+            "animations": [],
+            "height": 455.296875
+          },
+          "final": {
+            "height": 455.296875,
+            "overflow": 0,
+            "transforms": []
+          }
+        }
+      ],
+      "pass": true
+    }
+  ]
+}

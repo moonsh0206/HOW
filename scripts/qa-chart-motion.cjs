@@ -1,0 +1,31 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const {chromium}=require('../node_modules/.cache/how-mobile-qa/node_modules/playwright');
+const out='docs/qa/chart-motion';fs.mkdirSync(out,{recursive:true});
+const html=`<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{--orange:#f99e1a;--blue:#8ab9e9;--line:#303a49;--text:#eee;--muted:#aab4c3}body{margin:12px;background:#10151e;color:#eee;font:14px sans-serif}#ranks{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.player-rank{display:flex;align-items:center;gap:4px;font-size:11px}.player-rank img{width:24px;height:24px;object-fit:contain}.player-rank small{display:none}#host{max-width:680px}.pick-history{padding:12px}button{min-height:44px}</style></head><body><div id="ranks"></div><select id="maps"></select><div id="host"></div><script type="module">
+import '/src/styles/detail.css';
+import {renderMapStatistics} from '/src/views/mapStatisticsView.js';
+import {renderPickHistory} from '/src/views/pickHistoryView.js';
+import {renderPlayerRank} from '/src/views/playerRankView.js';
+import {setLanguage} from '/src/i18n/i18n.js';
+import {mapDropdownOptions} from '/src/views/filterOptions.js';
+import {preserveChartMotion,syncChartMotion} from '/src/views/chartMotion.js';
+const filters={platform:'pc',gamemode:'competitive',region:'asia',division:'diamond',map:'busan'};
+const frame=(map,winRate)=>({source:'OverFast API',fetchedAt:'2026-11-17T01:00:00Z',patch:null,filters:{...filters,map},records:[{hero:'genji',winRate,pickRate:8,banRate:0}]});
+window.show=(kind='map',metric='winRate',count=2)=>{let chart;
+ if(kind==='map')chart=renderMapStatistics({status:'ready',baseline:frame('all',52.123456)},{state:{statsFilters:filters,statsStatus:'ready',statistics:frame('busan',52.456789)}},'genji',{metric});
+ else {const points=Array.from({length:count},(_,i)=>({time:100000+i*100000,value:50+i,collectedAt:new Date(100000+i*100000).toISOString(),stored:true}));chart=renderPickHistory({status:'ready',metric,result:{points,segments:count>1?[[points[0],points[1]]]:[],comparisonSegments:count>1?[[points[0],points[1]]]:[],warnings:[]}},filters);}
+ document.querySelector('#host').replaceChildren(chart);syncChartMotion(document.querySelector('#host'));return chart;};
+window.same=()=>{const old=document.querySelector('#host>section');const next=show();preserveChartMotion(old,next);};
+window.lang=language=>{setLanguage(language);document.querySelector('#ranks').replaceChildren(...['bronze','silver','gold','platinum','emerald','diamond','master','grandmaster','champion'].map(division=>renderPlayerRank({division,tier:3,platform:'pc'})));const select=document.querySelector('#maps'),value=select.value||'busan';select.replaceChildren(...mapDropdownOptions([{key:'busan'},{key:'esperanca'}],value).map(x=>Object.assign(document.createElement('option'),{value:x.value,textContent:x.label})));select.value=value;};
+lang('ja');show();window.ready=true;
+</script></body></html>`;
+(async()=>{const {createServer}=await import('vite');const server=await createServer({server:{host:'127.0.0.1',port:5211,strictPort:true}});await server.listen();const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const results=[];
+try{for(const width of [320,390,1280,1440])for(const reduced of [false,true]){
+ const context=await browser.newContext({viewport:{width,height:900},reducedMotion:reduced?'reduce':'no-preference'}),page=await context.newPage();await page.route('**/motion-qa',r=>r.fulfill({contentType:'text/html',body:html}));await page.route('https://**/*',r=>r.abort());await page.goto('http://127.0.0.1:5211/motion-qa');await page.waitForFunction(()=>window.ready);
+ for(const lang of ['ko','en','ja']){await page.evaluate(l=>window.lang(l),lang);const labels=await page.locator('#ranks strong').allTextContents();if(lang==='en')assert.equal(labels[0],'Bronze 3');if(lang==='ja')assert.equal(labels[0],'ブロンズ 3');assert.equal(await page.locator('#maps').inputValue(),'busan');}
+ const modes=[];for(const kind of ['map','history']){await page.evaluate(k=>window.show(k,k==='map'?'pickRate':'winRate'),kind);if(!reduced)await page.waitForFunction(()=>document.querySelector('#host>section')?.dataset.chartMotion==='running');await page.waitForTimeout(65);const middle=await page.evaluate(()=>({animations:document.getAnimations().map(a=>({name:a.animationName,time:a.currentTime})),height:document.querySelector('#host').getBoundingClientRect().height}));
+ if(reduced)assert.equal(middle.animations.length,0);else assert(middle.animations.length>0,JSON.stringify({width,kind,middle,debug:await page.locator('#host').evaluate(e=>({html:e.innerHTML.slice(0,250),top:e.getBoundingClientRect().top,bottom:e.getBoundingClientRect().bottom}))}));await page.screenshot({path:out+'/'+width+'-'+reduced+'-'+kind+'-middle.png'});await page.waitForTimeout(600);const final=await page.evaluate(()=>({height:document.querySelector('#host').getBoundingClientRect().height,overflow:document.documentElement.scrollWidth-innerWidth,transforms:[...document.querySelectorAll('.map-bar')].map(e=>getComputedStyle(e).transform)}));assert.equal(final.height,middle.height);assert.equal(final.overflow,0);await page.screenshot({path:out+'/'+width+'-'+reduced+'-'+kind+'-final.png'});modes.push({kind,middle,final});}
+ await page.evaluate(()=>{for(const metric of ['pickRate','banRate','winRate'])window.show('map',metric);});assert.deepEqual(await page.locator('.map-value').allTextContents(),['52.12%','52.46%']);await page.evaluate(()=>window.same());assert.equal(await page.locator('#host>section').getAttribute('data-chart-enter'),'false');
+ for(const n of [0,1,2]){await page.evaluate(n=>window.show('history','pickRate',n),n);assert.equal(await page.locator('.history-point').count(),n);if(!n)assert.equal(await page.locator('.history-trace').count(),0);}
+ results.push({width,reduced,modes,pass:true});await context.close();
+}fs.writeFileSync(out+'/results.json',JSON.stringify({testData:true,results},null,2));console.log('Motion browser checks passed:',results.length);}finally{await browser.close();await server.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

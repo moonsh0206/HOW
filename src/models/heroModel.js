@@ -51,8 +51,9 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
       const eligible=metaPolicy.version===META_POLICY.version&&state.sort==='tier-desc'&&state.role!=='all';
       selection.rankDiagnostic=state.role==='all'?'role-all':state.sort!=='tier-desc'?'sort-ineligible':metaPolicy.version!==META_POLICY.version?'policy-mismatch':state.statsStatus==='loading'?'statistics-loading':['stale','error'].includes(state.statsStatus)?'statistics-unavailable':state.dailyRankStatus&&state.dailyRankStatus!=='ready'?state.dailyRankStatus:rankChangeDiagnostic({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role:state.role,sorted:this.sortedHeroes()});
       const changes=eligible&&state.dailyRankArchive?storedRankChanges({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role:state.role,sorted:this.sortedHeroes()}):eligible?dailyRankChanges({snapshots:state.dailyRankSnapshots??[],heroes:state.heroes,filters:state.statsFilters,role:state.role}):new Map();
-      // Daily stored rank must match the displayed live rank; never attach a stale ordinal delta.
-      selection.changes=[...changes].every(([key,value])=>selection.ordinals.get(key)===value.currentRank)?changes:new Map();
+      // Daily deltas compare the two stored observations, never today's live ordinal.
+      // Legacy snapshot markers retain their original ordinal guard.
+      selection.changes=[...changes].every(([key,value])=>value.basis==='daily-observation'||selection.ordinals.get(key)===value.currentRank)?changes:new Map();
       if(['stale','error','loading'].includes(state.statsStatus))selection.changes=new Map();
       return selection;
     },

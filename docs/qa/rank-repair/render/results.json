@@ -1,0 +1,133 @@
+{
+  "fixtureOnly": true,
+  "originalRequests": 54,
+  "cohorts": 48,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "pass": true,
+      "overflow": 0,
+      "errors": []
+    }
+  ]
+}

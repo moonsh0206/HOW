@@ -1,6 +1,7 @@
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
 import { node } from './dom.js';
+import {prepareChartMotion} from './chartMotion.js';
 export const HISTORY_LABELS = Object.freeze({get winRate(){return t('승률');},get pickRate(){return t('픽률');},get banRate(){return t('밴률');}});
 const rate = point => point.value ?? point.pickRate;
 export const formatHistoryRate = value => Number.isFinite(value) ? value.toFixed(1) : '—';
@@ -35,7 +36,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
   const head = node('div', undefined, 'history-heading'), title = node('h2', t("message.5fc55bb7d36d",{"0":(label)})); title.id = 'pick-history-title';
   head.append(title); panel.append(head);
   if (state.current) {
-    panel.append(node('strong', t("message.825cd15bfedc",{"0":(label),"1":(formatHistoryRate(rate(state.current)))}), 'history-current'));
+    head.append(node('strong', t("message.825cd15bfedc",{"0":(label),"1":(formatHistoryRate(rate(state.current)))}), 'history-current'));
     if (state.current.stale) panel.append(node('p',t("오래된 데이터"), 'history-warning'));
   }
   if (state.status === 'loading') { panel.setAttribute('aria-busy','true'); panel.append(node('p',t("불러오는 중"))); if (!state.current) return panel; }
@@ -53,9 +54,12 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     let plotMargin=20;
     const x = p => first === last ? 300 : plotMargin + (p.time-first)/(last-first)*(600-2*plotMargin);
     const y = p => 12 + (scale.max-rate(p))/(scale.max-scale.min)*156;
+    prepareChartMotion(panel,['history',filters,state.metric,state.days,data.points.map(p=>[p.time,rate(p),p.stored,p.current]),data.segments,data.comparisonSegments]);
     for (const tick of scale.ticks) { const yy = y({value:tick}); plot.append(svg('line',{x1:0,y1:yy,x2:600,y2:yy,class:'history-grid-line'})); }
-    for (const [a,b] of data.segments) plot.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
-    for (const [a,b] of data.comparisonSegments??[]) plot.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','vector-effect':'non-scaling-stroke'}));
+    const trace=svg('g',{class:'history-trace'});
+    for (const [a,b] of data.segments) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
+    for (const [a,b] of data.comparisonSegments??[]) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','vector-effect':'non-scaling-stroke'}));
+    plot.append(trace);
     const selected = node('p', '', 'history-observation'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
     const provenance=p=>(p.current?(p.stored?t("저장 이력 + 현재 조회"):t("현재 조회 · 저장 안 됨")):t("저장 이력"))+(p.composite?t(" · HOW 등급 균등 평균"):'');
     const description=p=>`${stamp(p.collectedAt)} (KST) · ${label} ${formatHistoryRate(rate(p))}% · ${provenance(p)}${p.patch&&p.verificationStatus==='verified' ? t("message.37981ca724d6",{"0":(translateLabel(p.patchLabel??p.patch)),"1":(p.representative?t(" · 패치 대표값"):'')}) : t(" · 패치 미확인")}`;

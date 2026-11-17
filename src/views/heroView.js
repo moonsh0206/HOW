@@ -62,7 +62,7 @@ function ordinalNode(tag, ordinal, label, change) {
   if(change){
     const delta=change.delta;
     const marker=element('small',delta>0?`▲${delta}`:delta<0?`▼${-delta}`:'=',`rank-change ${delta>0?'rank-up':delta<0?'rank-down':'rank-equal'}`);
-    marker.title=t('rank.daily',{previous:change.previousAt,current:change.currentAt});
+    marker.title=change.basis==='daily-observation'?t('rank.dailyPositions',{previousRank:change.previousRank,currentRank:change.currentRank,previous:new Date(change.previousAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}),current:new Date(change.currentAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})}):t('rank.daily',{previous:change.previousAt,current:change.currentAt});
     marker.setAttribute('aria-label',`${marker.title}: ${delta>0?'+':''}${delta}`);
     number.setAttribute('aria-label',`${number.getAttribute('aria-label')}. ${marker.getAttribute('aria-label')}`);
     number.append(marker);
@@ -131,6 +131,10 @@ export function createHeroView() {
     render(model) {
       const { state } = model;
       const selection=model.listSelection();
+      let rankNote=document.querySelector('#rank-comparison-note');
+      if(!rankNote){rankNote=element('p',undefined,'rank-comparison-note');rankNote.id='rank-comparison-note';rankNote.setAttribute('role','status');document.querySelector('#heroes .list-meta').after(rankNote);}
+      rankNote.hidden=state.role==='all'||state.sort!=='tier-desc';
+      rankNote.textContent=selection.changes.size?t('rank.dailyBasis'):['no-consecutive-baseline','incomplete-role-baseline'].includes(selection.rankDiagnostic)?t('rank.noBaseline'):selection.rankDiagnostic==='reporting-day-mismatch'?t('rank.todayPending'):t('rank.pending');
       for(const container of [rows,cards]){container.dataset.rankStatus=selection.rankDiagnostic??'unknown';container.dataset.rankError=state.dailyRankError??'';}
       const heroes = selection.heroes;
       document.querySelector('#ordinal-heading').title=selection.label;

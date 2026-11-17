@@ -5,7 +5,7 @@ import {MAP_NAMES} from '../models/mapModel.js';
 // UI order only. Unsupported divisions are never invented as API filters.
 const order=['all','challenger','grandmaster','master_plus','master','diamond_plus','diamond','emerald_plus','emerald','platinum_plus','platinum','gold_plus','gold','silver_plus','silver','bronze_plus','bronze'];
 export const RANK_OPTIONS=Object.freeze(order.filter(key=>DIVISION_GROUPS.some(g=>g.keys.includes(key))).map(value=>Object.freeze({value,get label(){return divisionName(value);}})));
-export const MAP_MODE_LABELS=Object.freeze({push:t("밀기"),control:t("쟁탈"),escort:t("호위"),hybrid:t("하이브리드"),flashpoint:t("플래시포인트")});
+export const MAP_MODE_LABELS=Object.freeze({get push(){return t("밀기");},get control(){return t("쟁탈");},get escort(){return t("호위");},get hybrid(){return t("하이브리드");},get flashpoint(){return t("플래시포인트");}});
 export function mapDropdownOptions(available,selected='all'){
  const result=[{value:'all',label:t("전체 전장")}];
  for(const [mode,group] of Object.entries(MAP_MODE_LABELS)){

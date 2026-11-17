@@ -102,7 +102,7 @@ test('detail integration: counter link navigation, absent hero data and favorite
 test('responsive contract: overview has a single-column mobile flow and portrait links stay readable',()=>{
   const css=fs.readFileSync(new URL('../src/styles/detail.css',import.meta.url),'utf8');
   assert(!css.includes('.detail-summary-top{display:flex;flex-direction:column'));
-  assert(css.includes('.detail-overview-grid{grid-template-columns:minmax(0,1fr);gap:12px}'));
+  assert(css.includes('.detail-overview-grid{grid-template-columns:minmax(0,1fr);gap:10px}'));
   assert(css.includes('.detail-summary .synergy-panel .counter-list{grid-template-columns:repeat(2,minmax(0,1fr))'));
   assert(css.includes('.counter-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))'));
   assert(css.includes('.counter-hero>span:last-child{min-width:0;overflow-wrap:anywhere}'));

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "published",
+    "url": "https://moonsh0206.github.io/HOW/data/ranks/current.json",
+    "observedAt": "2026-11-17T01:51:30.014Z",
+    "status": 200,
+    "data": {
+      "schemaVersion": 1,
+      "generatedAt": null,
+      "cohorts": []
+    }
+  },
+  {
+    "name": "runs",
+    "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/daily-ranks.yml/runs?per_page=8",
+    "observedAt": "2026-11-17T01:51:30.329Z",
+    "status": 200,
+    "data": {
+      "total_count": 0,
+      "workflow_runs": []
+    }
+  }
+]

@@ -1,0 +1,185 @@
+{
+  "phase": "after",
+  "fixtureOnly": true,
+  "source": "captured metadata and stored stats with explicitly test-only high-precision Genji map values; no live API requests",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 370.515625,
+          "height": 160.796875,
+          "bottom": 531.3125
+        },
+        "summary": {
+          "y": 601.3125,
+          "height": 1148.59375,
+          "bottom": 1749.90625
+        },
+        "chart": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "counters": {
+          "y": 1299.96875,
+          "height": 150.125,
+          "bottom": 1450.09375
+        },
+        "synergy": {
+          "y": 1464.09375,
+          "height": 156.125,
+          "bottom": 1620.21875
+        },
+        "passive": {
+          "y": 1634.21875,
+          "height": 106.6875,
+          "bottom": 1740.90625
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": true
+      },
+      "map": {
+        "banner": {
+          "y": 370.515625,
+          "height": 160.796875,
+          "bottom": 531.3125
+        },
+        "summary": {
+          "y": 601.3125,
+          "height": 1180.6875,
+          "bottom": 1782
+        },
+        "chart": {
+          "y": 974.1875,
+          "height": 274.6875,
+          "bottom": 1248.875
+        },
+        "counters": {
+          "y": 1332.0625,
+          "height": 150.125,
+          "bottom": 1482.1875
+        },
+        "synergy": {
+          "y": 1496.1875,
+          "height": 156.125,
+          "bottom": 1652.3125
+        },
+        "passive": {
+          "y": 1666.3125,
+          "height": 106.6875,
+          "bottom": 1773
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": true
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    }
+  ]
+}

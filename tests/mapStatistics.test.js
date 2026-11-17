@@ -57,15 +57,15 @@ test('map controller: lazy queries, late map/hero/cohort responses cannot overwr
 test('map view: zero/null, exact cohort comparison, empty state and stale source',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try{
-  const model=createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS};model.state.statistics={filters:DEFAULT_FILTERS,records:[{hero:'torbjorn',winRate:50}]};
-  const state={maps:normalizeMaps(rawMaps),listStatus:'ready',selectedMap:'busan',status:'ready',result:{filters:{...DEFAULT_FILTERS,map:'busan'},records:[{hero:'torbjorn',winRate:0,pickRate:0,banRate:null,quality:{fields:{winRate:'verified'}}}],fetchedAt:'2026-11-04T00:00:00Z',stale:true}};
+  const model=createHeroModel();model.state.statsFilters={...DEFAULT_FILTERS};model.state.statistics={source:'OverFast API',filters:DEFAULT_FILTERS,records:[{hero:'torbjorn',winRate:50}],fetchedAt:'2026-11-04T00:00:00Z'};
+  const state={maps:normalizeMaps(rawMaps),listStatus:'ready',selectedMap:'busan',status:'ready',result:{source:'OverFast API',filters:{...DEFAULT_FILTERS,map:'busan'},records:[{hero:'torbjorn',winRate:0,pickRate:0,banRate:null,quality:{fields:{winRate:'verified'}}}],fetchedAt:'2026-11-04T00:00:00Z',stale:true}};
   state.baseline=model.state.statistics;model.state.statsFilters={...DEFAULT_FILTERS,map:'busan'};model.state.statistics=state.result;
-  const panel=renderMapStatistics(state,model,'torbjorn');
-  assert.deepEqual([...panel.querySelectorAll('dd')].map(el=>el.textContent),['50%','0%','-50.0%p','0%','미제공']);
+  const panel=renderMapStatistics(state,model,'torbjorn',{metric:'winRate'});
+  assert.deepEqual([...panel.querySelectorAll('.map-value')].map(el=>el.textContent),['50.00%','0.00%']);assert(panel.querySelector('.map-difference').textContent.includes('-50.00%p'));
   assert.equal(panel.querySelector('select'),null);assert(panel.textContent.includes('오래된 데이터'));
-  model.state.statistics={...state.result,records:[]};assert(renderMapStatistics(state,model,'torbjorn').textContent.includes('해당 맵 통계 미제공'));
+  model.state.statistics={...state.result,records:[]};assert(renderMapStatistics(state,model,'torbjorn',{metric:'winRate'}).textContent.includes('해당 맵 통계 미제공'));
   state.baseline={...state.baseline,filters:{...DEFAULT_FILTERS,region:'americas'}};
-  assert.equal(renderMapStatistics(state,model,'torbjorn').querySelector('dd').textContent,'미제공');
+  assert.equal(renderMapStatistics(state,model,'torbjorn',{metric:'winRate'}).querySelectorAll('.map-bar').length,0);
  }finally{globalThis.document=prior;dom.window.close();}
 });
 
@@ -81,14 +81,17 @@ test('detail map integration: only overview, selection event, favorite and all-m
   controller=createHeroController({model,view:createHeroView(),service:{async getHeroes(){return{heroes:[{key:'genji',name:'겐지',role:'damage'}]};}},statisticsService,storage:{save(){return true;}},autoRefresh:false,onStateChange:()=>router.refresh()});
   router.start();controller.start();await flush();await flush();assert.equal(calls.length,1);
   const select=document.querySelector('#stats-map');select.focus();select.value='busan';select.dispatchEvent(new window.Event('change',{bubbles:true}));await flush();await flush();
-  assert.equal(calls.length,2);assert.equal(document.activeElement.id,'stats-map');assert.equal(document.querySelectorAll('#map-statistics').length,1);
+  assert.equal(calls.length,2);assert.equal(document.activeElement.id,'stats-map');assert.equal(document.querySelectorAll('#pick-history.map-comparison').length,1);
   assert.equal(document.querySelectorAll('#stats-map').length,1);assert.equal(document.querySelector('#hero-map-select'),null);
   assert.deepEqual([...document.querySelectorAll('#statistics-filters select')].map(el=>el.id),['stats-region','stats-division','stats-mode','stats-map']);
   assert.equal(model.state.statsFilters.map,'busan');assert.equal(model.heroByKey('genji').statistics.winRate,40);
-  assert.deepEqual([...document.querySelectorAll('#map-statistics dd')].map(x=>x.textContent),['55%','40%','-15.0%p','2%','0%']);
+  assert.deepEqual([...document.querySelectorAll('#pick-history .map-value')].map(x=>x.textContent),['2.00%','2.00%']);assert.equal(document.querySelectorAll('#detail-map-statistics').length,0);
+  document.querySelector('[data-history-metric=winRate]').click();await flush();assert.deepEqual([...document.querySelectorAll('#pick-history .map-value')].map(x=>x.textContent),['55.00%','40.00%']);
+  document.querySelector('[data-chart-mode=history]').focus();document.querySelector('[data-chart-mode=history]').click();await flush();assert.equal(document.querySelector('#pick-history.map-comparison'),null);assert(document.activeElement.hasAttribute('data-chart-mode'));
+  document.querySelector('[data-chart-mode=comparison]').click();await flush();assert(document.querySelector('#pick-history.map-comparison'));assert.equal(calls.length,2);
   assert(document.querySelector('.detail-stat-basis').textContent.includes('선택 전장 기준'));
   assert(document.querySelector('[data-favorite="genji"]'));
-  location.hash='#/heroes/genji/perks';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();assert(document.querySelector('#detail-map-statistics').hidden);
+  location.hash='#/heroes/genji/perks';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();assert(document.querySelector('#detail-overview').hidden);
   location.hash='#heroes';window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();
   assert(document.querySelector('#stats-map').closest('#heroes'));assert.equal(document.querySelector('#stats-map').value,'busan');assert.equal(document.querySelector('#stats-map'),select);
  }finally{controller?.stop();router?.stop();dom.window.close();Object.assign(globalThis,prior);}

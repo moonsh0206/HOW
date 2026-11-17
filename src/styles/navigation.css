@@ -148,5 +148,6 @@
 .main-menu>a[aria-current=page]::after{height:2px}
 @media(max-width:767px){.header-language .filter-combobox-trigger{min-height:44px}}
 @media(max-width:600px){.site-header .header-tag{display:none}.header-language{width:120px;flex-basis:120px;margin-left:0}.header-language .filter-combobox-trigger{padding-inline:8px;gap:5px}.site-header{gap:8px;padding-inline:12px}.site-header .header-favorites{margin-left:auto}}
+@media(max-width:360px){.site-header,body:has(#list-page:not([hidden])) .site-header{gap:5px}}
 /* Japanese filter labels need slightly denser type in the compact roster. */
 @media(max-width:767px){html[lang=ja] #heroes .statistics-filters .filter-combobox-trigger{font-size:14px}}

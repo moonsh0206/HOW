@@ -1,0 +1,1501 @@
+{
+  "phase": "before",
+  "fixtureOnly": true,
+  "source": "captured metadata and stored stats with explicitly test-only high-precision Genji map values; no live API requests",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 622.40625,
+          "height": 1305.203125,
+          "bottom": 1927.609375
+        },
+        "chart": {
+          "y": 1042.984375,
+          "height": 267.6875,
+          "bottom": 1310.671875
+        },
+        "counters": {
+          "y": 1477.859375,
+          "height": 150.578125,
+          "bottom": 1628.4375
+        },
+        "synergy": {
+          "y": 1642.4375,
+          "height": 156.578125,
+          "bottom": 1799.015625
+        },
+        "passive": {
+          "y": 1813.015625,
+          "height": 103.59375,
+          "bottom": 1916.609375
+        },
+        "mapPanel": {
+          "y": 1943.609375,
+          "height": 102.375,
+          "bottom": 2045.984375
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 622.40625,
+          "height": 1305.203125,
+          "bottom": 1927.609375
+        },
+        "chart": {
+          "y": 1042.984375,
+          "height": 267.6875,
+          "bottom": 1310.671875
+        },
+        "counters": {
+          "y": 1477.859375,
+          "height": 150.578125,
+          "bottom": 1628.4375
+        },
+        "synergy": {
+          "y": 1642.4375,
+          "height": 156.578125,
+          "bottom": 1799.015625
+        },
+        "passive": {
+          "y": 1813.015625,
+          "height": 103.59375,
+          "bottom": 1916.609375
+        },
+        "mapPanel": {
+          "y": 1943.609375,
+          "height": 244.375,
+          "bottom": 2187.984375
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 637.40625,
+          "height": 1342.59375,
+          "bottom": 1980
+        },
+        "chart": {
+          "y": 1063.984375,
+          "height": 283.6875,
+          "bottom": 1347.671875
+        },
+        "counters": {
+          "y": 1514.859375,
+          "height": 150.578125,
+          "bottom": 1665.4375
+        },
+        "synergy": {
+          "y": 1679.4375,
+          "height": 171.96875,
+          "bottom": 1851.40625
+        },
+        "passive": {
+          "y": 1865.40625,
+          "height": 103.59375,
+          "bottom": 1969
+        },
+        "mapPanel": {
+          "y": 1996,
+          "height": 102.375,
+          "bottom": 2098.375
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 637.40625,
+          "height": 1343.09375,
+          "bottom": 1980.5
+        },
+        "chart": {
+          "y": 1063.984375,
+          "height": 284.1875,
+          "bottom": 1348.171875
+        },
+        "counters": {
+          "y": 1515.359375,
+          "height": 150.578125,
+          "bottom": 1665.9375
+        },
+        "synergy": {
+          "y": 1679.9375,
+          "height": 171.96875,
+          "bottom": 1851.90625
+        },
+        "passive": {
+          "y": 1865.90625,
+          "height": 103.59375,
+          "bottom": 1969.5
+        },
+        "mapPanel": {
+          "y": 1996.5,
+          "height": 295.0625,
+          "bottom": 2291.5625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 380.703125,
+          "height": 161.984375,
+          "bottom": 542.6875
+        },
+        "summary": {
+          "y": 635.6875,
+          "height": 1336.59375,
+          "bottom": 1972.28125
+        },
+        "chart": {
+          "y": 1056.265625,
+          "height": 283.6875,
+          "bottom": 1339.953125
+        },
+        "counters": {
+          "y": 1507.140625,
+          "height": 150.578125,
+          "bottom": 1657.71875
+        },
+        "synergy": {
+          "y": 1671.71875,
+          "height": 171.96875,
+          "bottom": 1843.6875
+        },
+        "passive": {
+          "y": 1857.6875,
+          "height": 103.59375,
+          "bottom": 1961.28125
+        },
+        "mapPanel": {
+          "y": 1988.28125,
+          "height": 102.375,
+          "bottom": 2090.65625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 380.703125,
+          "height": 161.984375,
+          "bottom": 542.6875
+        },
+        "summary": {
+          "y": 635.6875,
+          "height": 1320.59375,
+          "bottom": 1956.28125
+        },
+        "chart": {
+          "y": 1056.265625,
+          "height": 267.6875,
+          "bottom": 1323.953125
+        },
+        "counters": {
+          "y": 1491.140625,
+          "height": 150.578125,
+          "bottom": 1641.71875
+        },
+        "synergy": {
+          "y": 1655.71875,
+          "height": 171.96875,
+          "bottom": 1827.6875
+        },
+        "passive": {
+          "y": 1841.6875,
+          "height": 103.59375,
+          "bottom": 1945.28125
+        },
+        "mapPanel": {
+          "y": 1972.28125,
+          "height": 280.375,
+          "bottom": 2252.65625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 370.515625,
+          "height": 168.796875,
+          "bottom": 539.3125
+        },
+        "summary": {
+          "y": 617.3125,
+          "height": 1264.40625,
+          "bottom": 1881.71875
+        },
+        "chart": {
+          "y": 1019.890625,
+          "height": 267.6875,
+          "bottom": 1287.578125
+        },
+        "counters": {
+          "y": 1431.96875,
+          "height": 150.578125,
+          "bottom": 1582.546875
+        },
+        "synergy": {
+          "y": 1596.546875,
+          "height": 156.578125,
+          "bottom": 1753.125
+        },
+        "passive": {
+          "y": 1767.125,
+          "height": 103.59375,
+          "bottom": 1870.71875
+        },
+        "mapPanel": {
+          "y": 1897.71875,
+          "height": 83.6875,
+          "bottom": 1981.40625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 370.515625,
+          "height": 168.796875,
+          "bottom": 539.3125
+        },
+        "summary": {
+          "y": 617.3125,
+          "height": 1264.40625,
+          "bottom": 1881.71875
+        },
+        "chart": {
+          "y": 1019.890625,
+          "height": 267.6875,
+          "bottom": 1287.578125
+        },
+        "counters": {
+          "y": 1431.96875,
+          "height": 150.578125,
+          "bottom": 1582.546875
+        },
+        "synergy": {
+          "y": 1596.546875,
+          "height": 156.578125,
+          "bottom": 1753.125
+        },
+        "passive": {
+          "y": 1767.125,
+          "height": 103.59375,
+          "bottom": 1870.71875
+        },
+        "mapPanel": {
+          "y": 1897.71875,
+          "height": 244.375,
+          "bottom": 2142.09375
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 637.40625,
+          "height": 1288.40625,
+          "bottom": 1925.8125
+        },
+        "chart": {
+          "y": 1063.984375,
+          "height": 267.6875,
+          "bottom": 1331.671875
+        },
+        "counters": {
+          "y": 1476.0625,
+          "height": 150.578125,
+          "bottom": 1626.640625
+        },
+        "synergy": {
+          "y": 1640.640625,
+          "height": 156.578125,
+          "bottom": 1797.21875
+        },
+        "passive": {
+          "y": 1811.21875,
+          "height": 103.59375,
+          "bottom": 1914.8125
+        },
+        "mapPanel": {
+          "y": 1941.8125,
+          "height": 83.6875,
+          "bottom": 2025.5
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 168.796875,
+          "bottom": 544.40625
+        },
+        "summary": {
+          "y": 637.40625,
+          "height": 1288.40625,
+          "bottom": 1925.8125
+        },
+        "chart": {
+          "y": 1063.984375,
+          "height": 267.6875,
+          "bottom": 1331.671875
+        },
+        "counters": {
+          "y": 1476.0625,
+          "height": 150.578125,
+          "bottom": 1626.640625
+        },
+        "synergy": {
+          "y": 1640.640625,
+          "height": 156.578125,
+          "bottom": 1797.21875
+        },
+        "passive": {
+          "y": 1811.21875,
+          "height": 103.59375,
+          "bottom": 1914.8125
+        },
+        "mapPanel": {
+          "y": 1941.8125,
+          "height": 276.375,
+          "bottom": 2218.1875
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 370.515625,
+          "height": 161.984375,
+          "bottom": 532.5
+        },
+        "summary": {
+          "y": 625.5,
+          "height": 1282.40625,
+          "bottom": 1907.90625
+        },
+        "chart": {
+          "y": 1046.078125,
+          "height": 267.6875,
+          "bottom": 1313.765625
+        },
+        "counters": {
+          "y": 1458.15625,
+          "height": 150.578125,
+          "bottom": 1608.734375
+        },
+        "synergy": {
+          "y": 1622.734375,
+          "height": 156.578125,
+          "bottom": 1779.3125
+        },
+        "passive": {
+          "y": 1793.3125,
+          "height": 103.59375,
+          "bottom": 1896.90625
+        },
+        "mapPanel": {
+          "y": 1923.90625,
+          "height": 83.6875,
+          "bottom": 2007.59375
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 370.515625,
+          "height": 161.984375,
+          "bottom": 532.5
+        },
+        "summary": {
+          "y": 625.5,
+          "height": 1282.40625,
+          "bottom": 1907.90625
+        },
+        "chart": {
+          "y": 1046.078125,
+          "height": 267.6875,
+          "bottom": 1313.765625
+        },
+        "counters": {
+          "y": 1458.15625,
+          "height": 150.578125,
+          "bottom": 1608.734375
+        },
+        "synergy": {
+          "y": 1622.734375,
+          "height": 156.578125,
+          "bottom": 1779.3125
+        },
+        "passive": {
+          "y": 1793.3125,
+          "height": 103.59375,
+          "bottom": 1896.90625
+        },
+        "mapPanel": {
+          "y": 1923.90625,
+          "height": 264.375,
+          "bottom": 2188.28125
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1132.328125,
+          "bottom": 1906.328125
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1175.765625,
+          "height": 283.796875,
+          "bottom": 1459.5625
+        },
+        "synergy": {
+          "y": 1471.5625,
+          "height": 283.796875,
+          "bottom": 1755.359375
+        },
+        "passive": {
+          "y": 1767.359375,
+          "height": 123.96875,
+          "bottom": 1891.328125
+        },
+        "mapPanel": {
+          "y": 1926.328125,
+          "height": 87.6875,
+          "bottom": 2014.015625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1132.328125,
+          "bottom": 1906.328125
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1175.765625,
+          "height": 283.796875,
+          "bottom": 1459.5625
+        },
+        "synergy": {
+          "y": 1471.5625,
+          "height": 283.796875,
+          "bottom": 1755.359375
+        },
+        "passive": {
+          "y": 1767.359375,
+          "height": 123.96875,
+          "bottom": 1891.328125
+        },
+        "mapPanel": {
+          "y": 1926.328125,
+          "height": 175.6875,
+          "bottom": 2102.015625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1149.140625,
+          "bottom": 1923.140625
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1156.578125,
+          "height": 301.796875,
+          "bottom": 1458.375
+        },
+        "synergy": {
+          "y": 1470.375,
+          "height": 301.796875,
+          "bottom": 1772.171875
+        },
+        "passive": {
+          "y": 1784.171875,
+          "height": 123.96875,
+          "bottom": 1908.140625
+        },
+        "mapPanel": {
+          "y": 1943.140625,
+          "height": 87.6875,
+          "bottom": 2030.828125
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1149.140625,
+          "bottom": 1923.140625
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1156.578125,
+          "height": 301.796875,
+          "bottom": 1458.375
+        },
+        "synergy": {
+          "y": 1470.375,
+          "height": 301.796875,
+          "bottom": 1772.171875
+        },
+        "passive": {
+          "y": 1784.171875,
+          "height": 123.96875,
+          "bottom": 1908.140625
+        },
+        "mapPanel": {
+          "y": 1943.140625,
+          "height": 175.6875,
+          "bottom": 2118.828125
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1149.140625,
+          "bottom": 1923.140625
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1156.578125,
+          "height": 301.796875,
+          "bottom": 1458.375
+        },
+        "synergy": {
+          "y": 1470.375,
+          "height": 301.796875,
+          "bottom": 1772.171875
+        },
+        "passive": {
+          "y": 1784.171875,
+          "height": 123.96875,
+          "bottom": 1908.140625
+        },
+        "mapPanel": {
+          "y": 1943.140625,
+          "height": 87.6875,
+          "bottom": 2030.828125
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 1149.140625,
+          "bottom": 1923.140625
+        },
+        "chart": {
+          "y": 925.796875,
+          "height": 344.359375,
+          "bottom": 1270.15625
+        },
+        "counters": {
+          "y": 1156.578125,
+          "height": 301.796875,
+          "bottom": 1458.375
+        },
+        "synergy": {
+          "y": 1470.375,
+          "height": 301.796875,
+          "bottom": 1772.171875
+        },
+        "passive": {
+          "y": 1784.171875,
+          "height": 123.96875,
+          "bottom": 1908.140625
+        },
+        "mapPanel": {
+          "y": 1943.140625,
+          "height": 177.6875,
+          "bottom": 2120.828125
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 855.375,
+          "bottom": 1629.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 353.59375,
+          "bottom": 1289.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 153,
+          "bottom": 1481.390625
+        },
+        "passive": {
+          "y": 1493.390625,
+          "height": 108.984375,
+          "bottom": 1602.375
+        },
+        "mapPanel": {
+          "y": 1649.375,
+          "height": 87.6875,
+          "bottom": 1737.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 855.375,
+          "bottom": 1629.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 353.59375,
+          "bottom": 1289.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 153,
+          "bottom": 1481.390625
+        },
+        "passive": {
+          "y": 1493.390625,
+          "height": 108.984375,
+          "bottom": 1602.375
+        },
+        "mapPanel": {
+          "y": 1649.375,
+          "height": 175.6875,
+          "bottom": 1825.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 873.375,
+          "bottom": 1647.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 353.59375,
+          "bottom": 1289.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 171,
+          "bottom": 1499.390625
+        },
+        "passive": {
+          "y": 1511.390625,
+          "height": 108.984375,
+          "bottom": 1620.375
+        },
+        "mapPanel": {
+          "y": 1667.375,
+          "height": 87.6875,
+          "bottom": 1755.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 873.375,
+          "bottom": 1647.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 353.59375,
+          "bottom": 1289.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 171,
+          "bottom": 1499.390625
+        },
+        "passive": {
+          "y": 1511.390625,
+          "height": 108.984375,
+          "bottom": 1620.375
+        },
+        "mapPanel": {
+          "y": 1667.375,
+          "height": 175.6875,
+          "bottom": 1843.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 873.375,
+          "bottom": 1647.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 356.59375,
+          "bottom": 1292.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 171,
+          "bottom": 1499.390625
+        },
+        "passive": {
+          "y": 1511.390625,
+          "height": 108.984375,
+          "bottom": 1620.375
+        },
+        "mapPanel": {
+          "y": 1667.375,
+          "height": 87.6875,
+          "bottom": 1755.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 320,
+          "bottom": 692
+        },
+        "summary": {
+          "y": 774,
+          "height": 873.375,
+          "bottom": 1647.375
+        },
+        "chart": {
+          "y": 935.796875,
+          "height": 356.59375,
+          "bottom": 1292.390625
+        },
+        "counters": {
+          "y": 1163.390625,
+          "height": 153,
+          "bottom": 1316.390625
+        },
+        "synergy": {
+          "y": 1328.390625,
+          "height": 171,
+          "bottom": 1499.390625
+        },
+        "passive": {
+          "y": 1511.390625,
+          "height": 108.984375,
+          "bottom": 1620.375
+        },
+        "mapPanel": {
+          "y": 1667.375,
+          "height": 177.6875,
+          "bottom": 1845.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 149.6875,
+          "bottom": 1699.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 149.6875,
+          "bottom": 1699.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 356.59375,
+          "bottom": 1210.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 356.59375,
+          "bottom": 1210.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 151.6875,
+          "bottom": 1701.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 149.6875,
+          "bottom": 1699.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 353.59375,
+          "bottom": 1207.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 149.6875,
+          "bottom": 1699.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 356.59375,
+          "bottom": 1210.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 87.6875,
+          "bottom": 1637.0625
+        },
+        "overflow": 0
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 320,
+          "bottom": 610
+        },
+        "summary": {
+          "y": 692,
+          "height": 837.375,
+          "bottom": 1529.375
+        },
+        "chart": {
+          "y": 853.796875,
+          "height": 356.59375,
+          "bottom": 1210.390625
+        },
+        "counters": {
+          "y": 1063.390625,
+          "height": 153,
+          "bottom": 1216.390625
+        },
+        "synergy": {
+          "y": 1228.390625,
+          "height": 153,
+          "bottom": 1381.390625
+        },
+        "passive": {
+          "y": 1393.390625,
+          "height": 108.984375,
+          "bottom": 1502.375
+        },
+        "mapPanel": {
+          "y": 1549.375,
+          "height": 151.6875,
+          "bottom": 1701.0625
+        },
+        "overflow": 0
+      },
+      "values": {},
+      "requests": 9,
+      "errors": []
+    }
+  ]
+}

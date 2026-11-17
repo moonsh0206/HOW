@@ -1,0 +1,1609 @@
+{
+  "phase": "after",
+  "fixtureOnly": true,
+  "source": "captured metadata and stored stats with explicitly test-only high-precision Genji map values; no live API requests",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 606.40625,
+          "height": 1186.09375,
+          "bottom": 1792.5
+        },
+        "chart": {
+          "y": 997.28125,
+          "height": 242.59375,
+          "bottom": 1239.875
+        },
+        "counters": {
+          "y": 1323.0625,
+          "height": 150.125,
+          "bottom": 1473.1875
+        },
+        "synergy": {
+          "y": 1487.1875,
+          "height": 156.125,
+          "bottom": 1643.3125
+        },
+        "passive": {
+          "y": 1657.3125,
+          "height": 126.1875,
+          "bottom": 1783.5
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 606.40625,
+          "height": 1218.1875,
+          "bottom": 1824.59375
+        },
+        "chart": {
+          "y": 997.28125,
+          "height": 274.6875,
+          "bottom": 1271.96875
+        },
+        "counters": {
+          "y": 1355.15625,
+          "height": 150.125,
+          "bottom": 1505.28125
+        },
+        "synergy": {
+          "y": 1519.28125,
+          "height": 156.125,
+          "bottom": 1675.40625
+        },
+        "passive": {
+          "y": 1689.40625,
+          "height": 126.1875,
+          "bottom": 1815.59375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 621.40625,
+          "height": 1268.625,
+          "bottom": 1890.03125
+        },
+        "chart": {
+          "y": 1018.28125,
+          "height": 303.1875,
+          "bottom": 1321.46875
+        },
+        "counters": {
+          "y": 1404.65625,
+          "height": 150.125,
+          "bottom": 1554.78125
+        },
+        "synergy": {
+          "y": 1568.78125,
+          "height": 172.0625,
+          "bottom": 1740.84375
+        },
+        "passive": {
+          "y": 1754.84375,
+          "height": 126.1875,
+          "bottom": 1881.03125
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 621.40625,
+          "height": 1265.71875,
+          "bottom": 1887.125
+        },
+        "chart": {
+          "y": 1018.28125,
+          "height": 300.28125,
+          "bottom": 1318.5625
+        },
+        "counters": {
+          "y": 1401.75,
+          "height": 150.125,
+          "bottom": 1551.875
+        },
+        "synergy": {
+          "y": 1565.875,
+          "height": 172.0625,
+          "bottom": 1737.9375
+        },
+        "passive": {
+          "y": 1751.9375,
+          "height": 126.1875,
+          "bottom": 1878.125
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 380.703125,
+          "height": 173.296875,
+          "bottom": 554
+        },
+        "summary": {
+          "y": 639,
+          "height": 1223.53125,
+          "bottom": 1862.53125
+        },
+        "chart": {
+          "y": 1029.875,
+          "height": 283.59375,
+          "bottom": 1313.46875
+        },
+        "counters": {
+          "y": 1396.65625,
+          "height": 150.125,
+          "bottom": 1546.78125
+        },
+        "synergy": {
+          "y": 1560.78125,
+          "height": 172.0625,
+          "bottom": 1732.84375
+        },
+        "passive": {
+          "y": 1746.84375,
+          "height": 106.6875,
+          "bottom": 1853.53125
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 380.703125,
+          "height": 173.296875,
+          "bottom": 554
+        },
+        "summary": {
+          "y": 639,
+          "height": 1214.625,
+          "bottom": 1853.625
+        },
+        "chart": {
+          "y": 1029.875,
+          "height": 274.6875,
+          "bottom": 1304.5625
+        },
+        "counters": {
+          "y": 1387.75,
+          "height": 150.125,
+          "bottom": 1537.875
+        },
+        "synergy": {
+          "y": 1551.875,
+          "height": 172.0625,
+          "bottom": 1723.9375
+        },
+        "passive": {
+          "y": 1737.9375,
+          "height": 106.6875,
+          "bottom": 1844.625
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 370.515625,
+          "height": 160.796875,
+          "bottom": 531.3125
+        },
+        "summary": {
+          "y": 601.3125,
+          "height": 1148.59375,
+          "bottom": 1749.90625
+        },
+        "chart": {
+          "y": 974.1875,
+          "height": 242.59375,
+          "bottom": 1216.78125
+        },
+        "counters": {
+          "y": 1299.96875,
+          "height": 150.125,
+          "bottom": 1450.09375
+        },
+        "synergy": {
+          "y": 1464.09375,
+          "height": 156.125,
+          "bottom": 1620.21875
+        },
+        "passive": {
+          "y": 1634.21875,
+          "height": 106.6875,
+          "bottom": 1740.90625
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 370.515625,
+          "height": 160.796875,
+          "bottom": 531.3125
+        },
+        "summary": {
+          "y": 601.3125,
+          "height": 1180.6875,
+          "bottom": 1782
+        },
+        "chart": {
+          "y": 974.1875,
+          "height": 274.6875,
+          "bottom": 1248.875
+        },
+        "counters": {
+          "y": 1332.0625,
+          "height": 150.125,
+          "bottom": 1482.1875
+        },
+        "synergy": {
+          "y": 1496.1875,
+          "height": 156.125,
+          "bottom": 1652.3125
+        },
+        "passive": {
+          "y": 1666.3125,
+          "height": 106.6875,
+          "bottom": 1773
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 621.40625,
+          "height": 1197.59375,
+          "bottom": 1819
+        },
+        "chart": {
+          "y": 1018.28125,
+          "height": 267.59375,
+          "bottom": 1285.875
+        },
+        "counters": {
+          "y": 1369.0625,
+          "height": 150.125,
+          "bottom": 1519.1875
+        },
+        "synergy": {
+          "y": 1533.1875,
+          "height": 156.125,
+          "bottom": 1689.3125
+        },
+        "passive": {
+          "y": 1703.3125,
+          "height": 106.6875,
+          "bottom": 1810
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 375.609375,
+          "height": 160.796875,
+          "bottom": 536.40625
+        },
+        "summary": {
+          "y": 621.40625,
+          "height": 1204.6875,
+          "bottom": 1826.09375
+        },
+        "chart": {
+          "y": 1018.28125,
+          "height": 274.6875,
+          "bottom": 1292.96875
+        },
+        "counters": {
+          "y": 1376.15625,
+          "height": 150.125,
+          "bottom": 1526.28125
+        },
+        "synergy": {
+          "y": 1540.28125,
+          "height": 156.125,
+          "bottom": 1696.40625
+        },
+        "passive": {
+          "y": 1710.40625,
+          "height": 106.6875,
+          "bottom": 1817.09375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 370.515625,
+          "height": 153.796875,
+          "bottom": 524.3125
+        },
+        "summary": {
+          "y": 609.3125,
+          "height": 1166.59375,
+          "bottom": 1775.90625
+        },
+        "chart": {
+          "y": 1000.1875,
+          "height": 242.59375,
+          "bottom": 1242.78125
+        },
+        "counters": {
+          "y": 1325.96875,
+          "height": 150.125,
+          "bottom": 1476.09375
+        },
+        "synergy": {
+          "y": 1490.09375,
+          "height": 156.125,
+          "bottom": 1646.21875
+        },
+        "passive": {
+          "y": 1660.21875,
+          "height": 106.6875,
+          "bottom": 1766.90625
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 370.515625,
+          "height": 153.796875,
+          "bottom": 524.3125
+        },
+        "summary": {
+          "y": 609.3125,
+          "height": 1198.6875,
+          "bottom": 1808
+        },
+        "chart": {
+          "y": 1000.1875,
+          "height": 274.6875,
+          "bottom": 1274.875
+        },
+        "counters": {
+          "y": 1358.0625,
+          "height": 150.125,
+          "bottom": 1508.1875
+        },
+        "synergy": {
+          "y": 1522.1875,
+          "height": 156.125,
+          "bottom": 1678.3125
+        },
+        "passive": {
+          "y": 1692.3125,
+          "height": 106.6875,
+          "bottom": 1799
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1103.953125,
+          "bottom": 1802.734375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 303.96875,
+          "bottom": 1158.546875
+        },
+        "counters": {
+          "y": 1056.171875,
+          "height": 287.390625,
+          "bottom": 1343.5625
+        },
+        "synergy": {
+          "y": 1355.5625,
+          "height": 287.390625,
+          "bottom": 1642.953125
+        },
+        "passive": {
+          "y": 1654.953125,
+          "height": 128.78125,
+          "bottom": 1783.734375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1103.953125,
+          "bottom": 1802.734375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 274.6875,
+          "bottom": 1129.265625
+        },
+        "counters": {
+          "y": 1056.171875,
+          "height": 287.390625,
+          "bottom": 1343.5625
+        },
+        "synergy": {
+          "y": 1355.5625,
+          "height": 287.390625,
+          "bottom": 1642.953125
+        },
+        "passive": {
+          "y": 1654.953125,
+          "height": 128.78125,
+          "bottom": 1783.734375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1145.453125,
+          "bottom": 1844.234375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 332.359375,
+          "bottom": 1186.9375
+        },
+        "counters": {
+          "y": 1061.671875,
+          "height": 305.390625,
+          "bottom": 1367.0625
+        },
+        "synergy": {
+          "y": 1379.0625,
+          "height": 305.390625,
+          "bottom": 1684.453125
+        },
+        "passive": {
+          "y": 1696.453125,
+          "height": 128.78125,
+          "bottom": 1825.234375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1145.453125,
+          "bottom": 1844.234375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 274.6875,
+          "bottom": 1129.265625
+        },
+        "counters": {
+          "y": 1061.671875,
+          "height": 305.390625,
+          "bottom": 1367.0625
+        },
+        "synergy": {
+          "y": 1379.0625,
+          "height": 305.390625,
+          "bottom": 1684.453125
+        },
+        "passive": {
+          "y": 1696.453125,
+          "height": 128.78125,
+          "bottom": 1825.234375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1139.953125,
+          "bottom": 1838.734375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 303.96875,
+          "bottom": 1158.546875
+        },
+        "counters": {
+          "y": 1056.171875,
+          "height": 305.390625,
+          "bottom": 1361.5625
+        },
+        "synergy": {
+          "y": 1373.5625,
+          "height": 305.390625,
+          "bottom": 1678.953125
+        },
+        "passive": {
+          "y": 1690.953125,
+          "height": 128.78125,
+          "bottom": 1819.734375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 1139.953125,
+          "bottom": 1838.734375
+        },
+        "chart": {
+          "y": 854.578125,
+          "height": 274.6875,
+          "bottom": 1129.265625
+        },
+        "counters": {
+          "y": 1056.171875,
+          "height": 305.390625,
+          "bottom": 1361.5625
+        },
+        "synergy": {
+          "y": 1373.5625,
+          "height": 305.390625,
+          "bottom": 1678.953125
+        },
+        "passive": {
+          "y": 1690.953125,
+          "height": 128.78125,
+          "bottom": 1819.734375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 815.578125,
+          "bottom": 1514.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 311.59375,
+          "bottom": 1164.171875
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 153,
+          "bottom": 1372.171875
+        },
+        "passive": {
+          "y": 1384.171875,
+          "height": 111.1875,
+          "bottom": 1495.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 815.578125,
+          "bottom": 1514.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 274.6875,
+          "bottom": 1127.265625
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 153,
+          "bottom": 1372.171875
+        },
+        "passive": {
+          "y": 1384.171875,
+          "height": 111.1875,
+          "bottom": 1495.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 833.578125,
+          "bottom": 1532.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 311.59375,
+          "bottom": 1164.171875
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 171,
+          "bottom": 1390.171875
+        },
+        "passive": {
+          "y": 1402.171875,
+          "height": 111.1875,
+          "bottom": 1513.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 833.578125,
+          "bottom": 1532.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 274.6875,
+          "bottom": 1127.265625
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 171,
+          "bottom": 1390.171875
+        },
+        "passive": {
+          "y": 1402.171875,
+          "height": 111.1875,
+          "bottom": 1513.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 833.578125,
+          "bottom": 1532.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 314.59375,
+          "bottom": 1167.171875
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 171,
+          "bottom": 1390.171875
+        },
+        "passive": {
+          "y": 1402.171875,
+          "height": 111.1875,
+          "bottom": 1513.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 372,
+          "height": 244.78125,
+          "bottom": 616.78125
+        },
+        "summary": {
+          "y": 698.78125,
+          "height": 833.578125,
+          "bottom": 1532.359375
+        },
+        "chart": {
+          "y": 852.578125,
+          "height": 274.6875,
+          "bottom": 1127.265625
+        },
+        "counters": {
+          "y": 1054.171875,
+          "height": 153,
+          "bottom": 1207.171875
+        },
+        "synergy": {
+          "y": 1219.171875,
+          "height": 171,
+          "bottom": 1390.171875
+        },
+        "passive": {
+          "y": 1402.171875,
+          "height": 111.1875,
+          "bottom": 1513.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 644.578125,
+          "bottom": 1261.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "passive": {
+          "y": 1131.171875,
+          "height": 111.1875,
+          "bottom": 1242.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 644.578125,
+          "bottom": 1261.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "passive": {
+          "y": 1131.171875,
+          "height": 111.1875,
+          "bottom": 1242.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 662.578125,
+          "bottom": 1279.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "passive": {
+          "y": 1149.171875,
+          "height": 111.1875,
+          "bottom": 1260.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 662.578125,
+          "bottom": 1279.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "passive": {
+          "y": 1149.171875,
+          "height": 111.1875,
+          "bottom": 1260.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 626.578125,
+          "bottom": 1243.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 153,
+          "bottom": 1103.171875
+        },
+        "passive": {
+          "y": 1113.171875,
+          "height": 111.1875,
+          "bottom": 1224.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 644.578125,
+          "bottom": 1261.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 311.59375,
+          "bottom": 1080.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "passive": {
+          "y": 1131.171875,
+          "height": 111.1875,
+          "bottom": 1242.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 644.578125,
+          "bottom": 1261.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 171,
+          "bottom": 1121.171875
+        },
+        "passive": {
+          "y": 1131.171875,
+          "height": 111.1875,
+          "bottom": 1242.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "all": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 662.578125,
+          "bottom": 1279.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 314.59375,
+          "bottom": 1083.171875
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "passive": {
+          "y": 1149.171875,
+          "height": 111.1875,
+          "bottom": 1260.359375
+        },
+        "mapPanel": null,
+        "overflow": 0,
+        "loadedBackground": false
+      },
+      "map": {
+        "banner": {
+          "y": 290,
+          "height": 244.78125,
+          "bottom": 534.78125
+        },
+        "summary": {
+          "y": 616.78125,
+          "height": 662.578125,
+          "bottom": 1279.359375
+        },
+        "chart": {
+          "y": 768.578125,
+          "height": 274.6875,
+          "bottom": 1043.265625
+        },
+        "counters": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "synergy": {
+          "y": 950.171875,
+          "height": 189,
+          "bottom": 1139.171875
+        },
+        "passive": {
+          "y": 1149.171875,
+          "height": 111.1875,
+          "bottom": 1260.359375
+        },
+        "mapPanel": null,
+        "overflow": 0
+      },
+      "values": {
+        "winRate": [
+          "52.12%",
+          "52.46%"
+        ],
+        "pickRate": [
+          "8.57%",
+          "8.12%"
+        ],
+        "banRate": [
+          "0.00%",
+          "0.00%"
+        ]
+      },
+      "requests": 9,
+      "errors": []
+    }
+  ]
+}

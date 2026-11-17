@@ -4,6 +4,23 @@ import {ko as templates} from './templates.js';
 import common from './common.js';
 import {ko as extras} from './extras.js';
 export default {
+ 'map.chartTitle':'{metric} · 전장 비교',
+ 'map.baselineMissing':'전체 전장 기준의 해당 지표가 제공되지 않습니다.',
+ 'map.history':'관측 이력 보기',
+ 'map.comparison':'전장 비교 보기',
+ 'map.delta':'전체 전장 대비 {difference}',
+ 'map.raw':'원본: {value}%',
+ 'map.review':'신뢰성 검토 중 · 해당 지표의 비교 보류',
+ 'map.incompatible':'조회 조건·출처 또는 통계 집계 구간이 달라 비교를 보류합니다.',
+ 'map.timeWarning':'두 전장의 관측 시각이 다르거나 미확인입니다. 통계 정보에서 확인하세요.',
+ 'map.scale':'두 막대는 0~{max}%의 동일 축을 사용합니다.',
+ 'map.observed':'{map}: HOW {time} (KST) · {cache}',
+ 'map.sourceNote':'OverFast API · 시각은 HOW 관측 기준이며 원본 경기 집계 시각은 미확인입니다.',
+ 'rank.dailyPositions':'10시 기준 저장 순위 {previousRank}위 → {currentRank}위 · 이전 {previous} KST / 현재 {current} KST · 실시간 표시 순위와 별도',
+ 'rank.dailyBasis':'등락은 어제·오늘 10시 기준 수집 순위 비교입니다. 현재 표시 순위와 다를 수 있습니다.',
+ 'rank.noBaseline':'유효한 전일 순위가 없어 일일 등락을 표시하지 않습니다.',
+ 'rank.todayPending':'오늘 기준 순위가 아직 준비되지 않았습니다.',
+ 'rank.pending':'일일 순위 비교 기록을 준비 중입니다.',
  ...extras,
  'hot.quality-unavailable':'비교 가능한 승률·픽률이 부족하거나 품질 검토 중입니다.',
  'hot.no-history':'현재 조회 조건과 같은 이전 관측이 없습니다.',

@@ -52,6 +52,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   let historyGeneration = 0, historyKey, historyDays = 7;
   let historyState = { status: 'idle', days: historyDays };
   let historyMetric = 'pickRate', historyArchive;
+  let chartMode='comparison',chartContext='';
   const historyScope = 'compare';
   function resetHistory() { ++historyGeneration; historyKey = null; historyMetric = 'pickRate'; historyArchive = null; historyState = { status: 'idle', days: historyDays }; }
   function historyResult(result, key, filters, days) {
@@ -86,10 +87,11 @@ export function createRoutingController({ model, detailService, detailView, coun
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
     if (route.page === 'detail') {
+      const nextChartContext=route.key+':'+statisticsQuery(model.state.statsFilters);if(chartContext!==nextChartContext){chartContext=nextChartContext;chartMode='comparison';}
       if(detailState.status==='ready')mapStatisticsController?.setContext(route.key,model.state.statsFilters);
       loadHistory(); loadPerks();
       const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
-      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
+      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope,chartMode }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
     } else {mapStatisticsController?.leave();const metaHost=route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
     syncCompactMain(sharedFilters);
@@ -121,7 +123,8 @@ export function createRoutingController({ model, detailService, detailView, coun
   const retry = event => {
     if (route.page !== 'detail') return;
     if (event.target.closest('[data-action="detail-retry"]')) load();
-    if (event.target.closest('[data-action="map-stats-retry"]')) mapStatisticsController?.retry();
+    if (event.target.closest('[data-action="map-stats-retry"],[data-map-stats-retry]')) mapStatisticsController?.retry();
+    const mode=event.target.closest('[data-chart-mode]');if(mode&&['comparison','history'].includes(mode.dataset.chartMode)){chartMode=mode.dataset.chartMode;render();}
     const metric = event.target.closest('[data-history-metric]');
     if (metric && HISTORY_METRICS.includes(metric.dataset.historyMetric)) {
       historyMetric = metric.dataset.historyMetric;

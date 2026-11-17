@@ -46,7 +46,8 @@ test('stored ranks drive existing UI eligibility, exact live order guard, stale 
  const old=buildRankFrame({heroes,current:frame(12)}),current=buildRankFrame({heroes,current:frame(13,true),previous:old}),archive={schemaVersion:1,cohorts:[current]};
  const model=createHeroModel();Object.assign(model.state,{heroes,statsFilters:filters,statistics:frame(13,true),role:'tank'});const sorted=model.sortedHeroes();
  const input={archive,heroes,filters,role:'tank',sorted,now:time(13)};assert.equal(storedRankChanges(input).get('tank-2').delta,2);
- for(const extra of [{role:'all'},{now:time(14)},{filters:{...filters,region:'europe'}},{sorted:[...sorted].reverse()}])assert.equal(storedRankChanges({...input,...extra}).size,0);
+ for(const extra of [{role:'all'},{now:time(14)},{filters:{...filters,region:'europe'}}])assert.equal(storedRankChanges({...input,...extra}).size,0);
+ const moved=storedRankChanges({...input,sorted:[...sorted].reverse()});assert.equal(moved.get('tank-2').delta,2);assert.equal(moved.get('tank-2').currentRank,1);assert.equal(moved.get('tank-2').previousRank,3);assert.equal(moved.get('tank-2').liveRank,3);assert.equal(storedRankChanges({...input,sorted:sorted.slice(1)}).size,0);
  // Eligibility in Model is tested at the actual wall clock without inventing source history.
  Object.assign(model.state,{dailyRankArchive:{schemaVersion:1,cohorts:[]},role:'all'});assert.equal(model.listSelection().changes.size,0);model.state.role='tank';model.state.sort='meta-desc';assert.equal(model.listSelection().changes.size,0);
 });

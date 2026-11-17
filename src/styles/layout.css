@@ -206,7 +206,9 @@
 .site-footer .footer-copy{min-width:0}
 .site-footer .footer-copy h2{font-size:13px;line-height:1.6;color:#edf1f6;margin:0 0 5px;font-weight:600;overflow-wrap:anywhere}
 .site-footer .footer-copy p{font-size:12px;line-height:1.7;margin:0;color:var(--muted);word-break:keep-all;overflow-wrap:anywhere}
-.site-footer .footer-credit{flex:none;margin-left:auto;color:#99a5b5;font-size:11px;line-height:1.5;white-space:nowrap}
+.site-footer .footer-credit{display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:none;margin-left:auto;padding-block:4px;color:#aab4c3;font-size:13px;font-weight:400;line-height:1.4;white-space:nowrap}
+.site-footer .footer-credit strong{position:relative;display:inline-block;color:#f1f4f8;font-family:Arial,'Segoe UI',sans-serif;font-size:20px;font-weight:800;font-style:italic;line-height:1.15;letter-spacing:-.02em}
+.site-footer .footer-credit strong::after{content:'';position:absolute;left:50%;bottom:-4px;transform:translateX(-50%);width:26px;height:2px;background:var(--orange)}
 @media(max-width:768px){
  .site-footer{flex-wrap:wrap;gap:12px;padding:22px 16px}
  .site-footer .footer-brand{flex-basis:112px}

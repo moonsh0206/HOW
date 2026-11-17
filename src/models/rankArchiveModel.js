@@ -22,7 +22,9 @@ export function validateRankArchive(raw){
   if(!Number.isFinite(Date.parse(row.collectedAt))||rankDay(row.collectedAt)!==row.date||typeof row.policyId!=='string'||!row.metaPolicyId||!row.recommendationPolicyId)throw Error('Invalid rank metadata');
   const keys=RANK_ROLES.flatMap(role=>row.roster?.[role]??[]);if(!keys.length||new Set(keys).size!==keys.length||keys.some(k=>typeof k!=='string'||!/^[-a-z0-9]+$/.test(k)))throw Error('Invalid rank roster');
   for(const role of RANK_ROLES){const expected=row.roster[role],rank=row.ranks?.[role];if(!Array.isArray(expected)||!expected.length||rank!==null&&(!Array.isArray(rank)||!same([...rank].sort(),[...expected].sort())))throw Error('Invalid role ranks');
-   if(row.comparison){const d=row.comparison.deltas?.[role];if(d!==null&&(!rank||!d||!same(Object.keys(d).sort(),[...rank].sort())||Object.values(d).some(v=>!Number.isInteger(v)||Math.abs(v)>=rank.length)))throw Error('Invalid rank delta');}
+   if(row.comparison){const d=row.comparison.deltas?.[role];if(d!==null){if(!rank||!d||!same(Object.keys(d).sort(),[...rank].sort())||Object.values(d).some(v=>!Number.isInteger(v)||Math.abs(v)>=rank.length))throw Error('Invalid rank delta');
+    const previousPositions=rank.map((key,i)=>i+1+d[key]).sort((a,b)=>a-b);if(!same(previousPositions,rank.map((_,i)=>i+1)))throw Error('Invalid previous rank positions');
+   }}
   }
   if(row.comparison&&(rankDay(new Date(Date.parse(row.collectedAt)-86400000).toISOString())!==row.comparison.date||!Number.isFinite(Date.parse(row.comparison.collectedAt))||rankDay(row.comparison.collectedAt)!==row.comparison.date))throw Error('Invalid previous rank day');
  }
@@ -53,12 +55,13 @@ export function rankChangeDiagnostic({archive,heroes,filters,role,sorted,now=new
  if(!row.comparison)return 'no-consecutive-baseline';
  if(!row.comparison.deltas[role])return 'incomplete-role-baseline';
  if(sorted.some(h=>!h.tier||h.metaScore==null))return 'unclassified-role';
- if(!same(sorted.map(h=>h.key),row.ranks[role]))return 'live-order-mismatch';
+ if(!same(sorted.map(h=>h.key).sort(),[...row.ranks[role]].sort()))return 'live-roster-mismatch';
+ if(!same(sorted.map(h=>h.key),row.ranks[role]))return 'ready-stored-order';
  return 'ready';
 }
 export function storedRankChanges(input){
- if(rankChangeDiagnostic(input)!=='ready')return new Map();
+ if(!['ready','ready-stored-order'].includes(rankChangeDiagnostic(input)))return new Map();
  const {archive,filters,role,sorted}=input;
  const row=archive.cohorts.find(r=>statisticsQuery(r.filters)===statisticsQuery(filters));
- return new Map(sorted.map((h,i)=>[h.key,{delta:row.comparison.deltas[role][h.key],currentRank:i+1,currentAt:row.collectedAt,previousAt:row.comparison.collectedAt}]));
+ return new Map(sorted.map((h,i)=>{const currentRank=row.ranks[role].indexOf(h.key)+1,delta=row.comparison.deltas[role][h.key];return [h.key,{delta,currentRank,previousRank:currentRank+delta,liveRank:i+1,basis:'daily-observation',currentAt:row.collectedAt,previousAt:row.comparison.collectedAt}];}));
 }

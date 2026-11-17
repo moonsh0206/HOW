@@ -1,0 +1,866 @@
+{
+  "phase": "before",
+  "source": "actual stored official patch data with captured hero/statistics API responses; no live API requests",
+  "examples": {
+    "buff": "wrecking-ball",
+    "nerf": "dmon",
+    "mixed": "anran"
+  },
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 239.25,
+        "creditWidth": 288,
+        "creditCenter": 160,
+        "footerCenter": 160,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "버프",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 28.40625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "너프",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 28.40625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "복합 조정",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 49.609375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 218.859375,
+        "creditWidth": 288,
+        "creditCenter": 160,
+        "footerCenter": 160,
+        "italic": null,
+        "weight": null,
+        "overflow": 8,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "Buff",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 29.078125,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "Nerf",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 29.90625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "Mixed",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 37.375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 239.25,
+        "creditWidth": 288,
+        "creditCenter": 160,
+        "footerCenter": 160,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "強化",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 30,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "弱体化",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 40,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "両方",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 21,
+          "width": 30,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 218.859375,
+        "creditWidth": 358,
+        "creditCenter": 195,
+        "footerCenter": 195,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "버프",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 28.40625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "너프",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 28.40625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "복합 조정",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 49.609375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 218.859375,
+        "creditWidth": 358,
+        "creditCenter": 195,
+        "footerCenter": 195,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "Buff",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 29.078125,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "Nerf",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 29.90625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "Mixed",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 37.375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 218.859375,
+        "creditWidth": 358,
+        "creditCenter": 195,
+        "footerCenter": 195,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "強化",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 30,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "弱体化",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "10px",
+          "height": 19,
+          "width": 40,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "両方",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "10px",
+          "height": 21,
+          "width": 30,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ko",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 142.46875,
+        "creditWidth": 736,
+        "creditCenter": 384,
+        "footerCenter": 384,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "버프",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "너프",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "복합 조정",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 57.5625,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 142.46875,
+        "creditWidth": 736,
+        "creditCenter": 384,
+        "footerCenter": 384,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "Buff",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.984375,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "Nerf",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 35.890625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "Mixed",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 44.109375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "ja",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 142.46875,
+        "creditWidth": 736,
+        "creditCenter": 384,
+        "footerCenter": 384,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "強化",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "弱体化",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 47,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "両方",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 24,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ko",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 81.984375,
+        "creditCenter": 1207.0078125,
+        "footerCenter": 640,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "버프",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "너프",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "복합 조정",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 57.5625,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "en",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 80.75,
+        "creditCenter": 1207.625,
+        "footerCenter": 640,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "Buff",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.984375,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "Nerf",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 35.890625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "Mixed",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 44.109375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "lang": "ja",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 80.75,
+        "creditCenter": 1207.625,
+        "footerCenter": 640,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "強化",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "弱体化",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 47,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "両方",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 24,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 81.984375,
+        "creditCenter": 1287.0078125,
+        "footerCenter": 720,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "버프",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "너프",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.25,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "복합 조정",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 57.5625,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 80.75,
+        "creditCenter": 1287.625,
+        "footerCenter": 720,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "Buff",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 34.984375,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "Nerf",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 35.890625,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "Mixed",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 44.109375,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "credit": {
+        "text": "Created by MSH",
+        "height": 127.578125,
+        "creditWidth": 80.75,
+        "creditCenter": 1287.625,
+        "footerCenter": 720,
+        "italic": null,
+        "weight": null,
+        "overflow": 0,
+        "fit": true
+      },
+      "badges": [
+        {
+          "type": "buff",
+          "key": "wrecking-ball",
+          "text": "強化",
+          "color": "rgb(146, 218, 177)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(68, 122, 96)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "nerf",
+          "key": "dmon",
+          "text": "弱体化",
+          "color": "rgb(255, 173, 179)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(128, 81, 92)",
+          "fontSize": "11px",
+          "height": 22,
+          "width": 47,
+          "fit": true,
+          "clipped": false
+        },
+        {
+          "type": "mixed",
+          "key": "anran",
+          "text": "両方",
+          "color": "rgb(231, 207, 159)",
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(136, 116, 77)",
+          "fontSize": "11px",
+          "height": 24,
+          "width": 36,
+          "fit": true,
+          "clipped": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

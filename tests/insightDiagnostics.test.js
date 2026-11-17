@@ -66,7 +66,7 @@ test('rank suppression reason separates absent baseline, old day, wrong policy a
  const model=createHeroModel();Object.assign(model.state,{heroes,role:'tank',statistics:frame(at),statsFilters:filters});
  const input={archive:{schemaVersion:1,cohorts:[b]},heroes,filters,role:'tank',sorted:model.sortedHeroes(),now:at};
  assert.equal(rankChangeDiagnostic(input),'ready');
- assert.equal(rankChangeDiagnostic({...input,sorted:[...input.sorted].reverse()}),'live-order-mismatch');
+ assert.equal(rankChangeDiagnostic({...input,sorted:[...input.sorted].reverse()}),'ready-stored-order');
  for(const [extra,reason] of [[{comparison:null},'no-consecutive-baseline'],[{date:'2026-11-15'},'reporting-day-mismatch'],[{policyId:'old'},'policy-mismatch']])assert.equal(rankChangeDiagnostic({...input,archive:{schemaVersion:1,cohorts:[{...b,...extra}]}}),reason);
 });
 

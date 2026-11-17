@@ -1,0 +1,10 @@
+{
+  "status": 200,
+  "url": "https://raw.githubusercontent.com/moonsh0206/HOW/main/public/data/ranks/current.json",
+  "observedAt": "2026-11-17T01:36:45.978Z",
+  "data": {
+    "schemaVersion": 1,
+    "generatedAt": null,
+    "cohorts": []
+  }
+}

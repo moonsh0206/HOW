@@ -1,0 +1,1446 @@
+{
+  "phase": "after",
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 390,
+      "reduced": false,
+      "offscreen": {
+        "kind": "history",
+        "state": "pending",
+        "enter": "true",
+        "top": 1024.28125,
+        "animations": [],
+        "values": []
+      },
+      "middle": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.868999998862265,
+            "opacity": "0.437743",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59503)"
+          },
+          {
+            "state": "running",
+            "time": 16.868999998862265,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.868999998862265,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "final": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      },
+      "transitions": [
+        {
+          "map": "busan",
+          "start": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [
+              {
+                "state": "running",
+                "time": 100.04799999904846,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.717845, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 100.04799999904846,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.438352, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 100.04799999904846,
+                "opacity": "0.958716",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 100.04799999904846,
+                "opacity": "0.958716",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [
+              {
+                "state": "running",
+                "time": 283.64799999904864,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.987789, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 283.64799999904864,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.966967, 0, 0)"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "kings-row",
+          "start": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [
+              {
+                "state": "running",
+                "time": 83.41499999943692,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.642101, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 83.41499999943692,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.309266, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 83.41499999943692,
+                "opacity": "0.927736",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 83.41499999943692,
+                "opacity": "0.927736",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [
+              {
+                "state": "running",
+                "time": 283.41499999943665,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.987727, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 283.41499999943665,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.966826, 0, 0)"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "all",
+          "start": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 66.66900000051434,
+                "opacity": "0.444425",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 66.66900000051434,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
+              },
+              {
+                "state": "running",
+                "time": 66.66900000051434,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 66.66900000051434,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 233.471000000514,
+                "opacity": "0.796515",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.939161)"
+              },
+              {
+                "state": "running",
+                "time": 233.471000000514,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 233.471000000514,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "end": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "winRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 16.267999999335814,
+                "opacity": "0.434723",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.60897)"
+              },
+              {
+                "state": "running",
+                "time": 16.267999999335814,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 16.267999999335814,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "pickRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "banRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 16.58599999967514,
+                "opacity": "0.436322",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.60159)"
+              },
+              {
+                "state": "running",
+                "time": 16.58599999967514,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 16.58599999967514,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "hidden": {
+        "kind": "history",
+        "state": "pending",
+        "enter": "true",
+        "top": 0,
+        "animations": [],
+        "values": []
+      },
+      "revealed": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.666999999512377,
+            "opacity": "0.436729",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59971)"
+          },
+          {
+            "state": "running",
+            "time": 16.666999999512377,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.666999999512377,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "fromList": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.282000000335415,
+            "opacity": "0.434793",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60865)"
+          },
+          {
+            "state": "running",
+            "time": 16.282000000335415,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.282000000335415,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "otherHero": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.661999999662,
+            "opacity": "0.436704",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59983)"
+          },
+          {
+            "state": "running",
+            "time": 16.661999999662,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.661999999662,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      }
+    },
+    {
+      "width": 390,
+      "reduced": true,
+      "offscreen": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 1024.28125,
+        "animations": [],
+        "values": []
+      },
+      "middle": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      },
+      "final": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      },
+      "transitions": [
+        {
+          "map": "busan",
+          "start": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "kings-row",
+          "start": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.1875,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "all",
+          "start": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [],
+            "values": []
+          },
+          "mid": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [],
+            "values": []
+          },
+          "end": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 279.28125,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "winRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "pickRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "banRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 507.28125,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "hidden": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 0,
+        "animations": [],
+        "values": []
+      },
+      "revealed": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      },
+      "fromList": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      },
+      "otherHero": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 279.28125,
+        "animations": [],
+        "values": []
+      }
+    },
+    {
+      "width": 1440,
+      "reduced": false,
+      "offscreen": {
+        "kind": "history",
+        "state": "pending",
+        "enter": "true",
+        "top": 841.375,
+        "animations": [],
+        "values": []
+      },
+      "middle": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.765999999924787,
+            "opacity": "0.437226",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59742)"
+          },
+          {
+            "state": "running",
+            "time": 16.765999999924787,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.765999999924787,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "final": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      },
+      "transitions": [
+        {
+          "map": "busan",
+          "start": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 100.0469999999698,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.717841, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 100.0469999999698,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.438345, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 100.0469999999698,
+                "opacity": "0.958715",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 100.0469999999698,
+                "opacity": "0.958715",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 267.11499999996977,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.982678, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 267.11499999996977,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.955608, 0, 0)"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "kings-row",
+          "start": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 83.82999999888652,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.644186, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 83.82999999888652,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.312705, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 83.82999999888652,
+                "opacity": "0.92871",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 83.82999999888652,
+                "opacity": "0.92871",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "running",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [
+              {
+                "state": "running",
+                "time": 250.39799999888635,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.97587, 0, 0)"
+              },
+              {
+                "state": "running",
+                "time": 250.39799999888635,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 0.940853, 0, 0)"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              },
+              {
+                "state": "finished",
+                "time": 220,
+                "opacity": "1",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "all",
+          "start": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [
+              {
+                "state": "running",
+                "time": 32.939999998709446,
+                "opacity": "0.7255",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 32.939999998709446,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
+              },
+              {
+                "state": "running",
+                "time": 32.939999998709446,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 32.939999998709446,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [
+              {
+                "state": "running",
+                "time": 216.67399999870975,
+                "opacity": "0.752856",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14066)"
+              },
+              {
+                "state": "running",
+                "time": 216.67399999870975,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 216.67399999870975,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "end": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "winRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "pickRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0.35",
+                "transform": "matrix(1, 0, 0, 1, 0, 3)"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 0,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "banRate",
+          "started": {
+            "kind": "history",
+            "state": "running",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [
+              {
+                "state": "running",
+                "time": 49.96799999863111,
+                "opacity": "0.59015",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.89162)"
+              },
+              {
+                "state": "running",
+                "time": 49.96799999863111,
+                "opacity": "0",
+                "transform": "none"
+              },
+              {
+                "state": "running",
+                "time": 49.96799999863111,
+                "opacity": "0",
+                "transform": "none"
+              }
+            ],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "hidden": {
+        "kind": "history",
+        "state": "pending",
+        "enter": "true",
+        "top": 0,
+        "animations": [],
+        "values": []
+      },
+      "revealed": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.606999999209116,
+            "opacity": "0.436428",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.6011)"
+          },
+          {
+            "state": "running",
+            "time": 16.606999999209116,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.606999999209116,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "fromList": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.59199999875849,
+            "opacity": "0.436352",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.60145)"
+          },
+          {
+            "state": "running",
+            "time": 16.59199999875849,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.59199999875849,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      },
+      "otherHero": {
+        "kind": "history",
+        "state": "running",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [
+          {
+            "state": "running",
+            "time": 16.660000000387587,
+            "opacity": "0.436694",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59987)"
+          },
+          {
+            "state": "running",
+            "time": 16.660000000387587,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "state": "running",
+            "time": 16.660000000387587,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ],
+        "values": []
+      }
+    },
+    {
+      "width": 1440,
+      "reduced": true,
+      "offscreen": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 841.375,
+        "animations": [],
+        "values": []
+      },
+      "middle": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      },
+      "final": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      },
+      "transitions": [
+        {
+          "map": "busan",
+          "start": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "kings-row",
+          "start": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "mid": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          },
+          "end": {
+            "kind": "map",
+            "state": "complete",
+            "enter": "true",
+            "top": 244.578125,
+            "animations": [],
+            "values": [
+              "8.57%",
+              "8.12%"
+            ]
+          }
+        },
+        {
+          "map": "all",
+          "start": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          },
+          "mid": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          },
+          "end": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "metric": "winRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "pickRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        },
+        {
+          "metric": "banRate",
+          "started": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          },
+          "final": {
+            "kind": "history",
+            "state": "complete",
+            "enter": "true",
+            "top": 267.375,
+            "animations": [],
+            "values": []
+          }
+        }
+      ],
+      "hidden": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 0,
+        "animations": [],
+        "values": []
+      },
+      "revealed": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      },
+      "fromList": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      },
+      "otherHero": {
+        "kind": "history",
+        "state": "complete",
+        "enter": "true",
+        "top": 267.375,
+        "animations": [],
+        "values": []
+      }
+    }
+  ]
+}

@@ -1,6 +1,23 @@
 // HOW interface translations; hero names and descriptions use OverFast ja-jp.
 import {ja as extras} from './extras.js';
 export default {
+  'map.chartTitle':'{metric}・マップ比較',
+  'map.baselineMissing':'全マップ基準のこの指標は提供されていません。',
+  'map.history':'観測履歴を見る',
+  'map.comparison':'マップを比較',
+  'map.delta':'全マップとの差: {difference}',
+  'map.raw':'元の値: {value}%',
+  'map.review':'信頼性を確認中・この指標の比較は保留中です',
+  'map.incompatible':'条件・出典または集計期間が異なるため比較を保留します。',
+  'map.timeWarning':'両マップの観測時刻が異なるか未確認です。統計情報をご確認ください。',
+  'map.scale':'両方の棒は0から始まる0～{max}%の共通軸を使用します。',
+  'map.observed':'{map}: HOW {time} (KST)・{cache}',
+  'map.sourceNote':'OverFast API・時刻はHOWの観測時刻で、元の試合集計時刻は未確認です。',
+  'rank.dailyPositions':'10時基準の保存順位 {previousRank}位 → {currentRank}位・前回 {previous} KST / 今回 {current} KST・現在の表示順位とは別です',
+  'rank.dailyBasis':'変動は昨日と今日の10時基準の収集順位を比較しています。現在の表示順位とは異なる場合があります。',
+  'rank.noBaseline':'有効な前日の順位がないため、日次変動は表示しません。',
+  'rank.todayPending':'本日の基準順位はまだ準備できていません。',
+  'rank.pending':'日次順位の比較記録を準備中です。',
   ...extras,
   "hot.quality-unavailable": "比較できる勝率・ピック率が不足しているか、データ品質を確認中です。",
   "hot.no-history": "現在のフィルター条件に一致する過去の観測がありません。",

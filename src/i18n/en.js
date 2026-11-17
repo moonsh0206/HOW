@@ -4,6 +4,23 @@ import {en as templates} from './templates.js';
 import common from './common.js';
 import {en as extras} from './extras.js';
 export default {
+ 'map.chartTitle':'{metric} · Map comparison',
+ 'map.baselineMissing':'This metric is unavailable for the all-maps baseline.',
+ 'map.history':'View observations',
+ 'map.comparison':'Compare maps',
+ 'map.delta':'Compared with all maps: {difference}',
+ 'map.raw':'Original: {value}%',
+ 'map.review':'Reliability under review · comparison withheld for this metric',
+ 'map.incompatible':'Comparison withheld: filters, sources or aggregation windows differ.',
+ 'map.timeWarning':'The maps have different or unknown observation times. See statistics information.',
+ 'map.scale':'Both bars share a zero-based 0–{max}% axis.',
+ 'map.observed':'{map}: HOW {time} (KST) · {cache}',
+ 'map.sourceNote':'OverFast API · Times are HOW observations; source match aggregation time is unknown.',
+ 'rank.dailyPositions':'Stored 10:00 KST ranks: {previousRank} → {currentRank} · Previous {previous} KST / Current {current} KST · Separate from the live displayed rank',
+ 'rank.dailyBasis':'Changes compare yesterday’s and today’s 10:00 KST collection ranks. The live displayed order may differ.',
+ 'rank.noBaseline':'No valid previous-day ranks are available for daily changes.',
+ 'rank.todayPending':'Today’s reference ranks are not ready yet.',
+ 'rank.pending':'Daily rank comparison records are being prepared.',
  ...extras,
  'hot.quality-unavailable':'Comparable win/pick rates are missing or under quality review.',
  'hot.no-history':'No previous observation matches the current filters.',
