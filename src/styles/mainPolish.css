@@ -1,0 +1,52 @@
+/* Main-only finish: role controls, tier emblems and rank/HOT labels stay intact. */
+body:has(#list-page:not([hidden])),body:has(#meta-page:not([hidden])){--main-edge:#314052}
+body:has(#list-page:not([hidden])) .site-header,
+body:has(#meta-page:not([hidden])) .site-header{background:linear-gradient(180deg,#141c28,var(--surface-page));border-bottom-color:var(--border-subtle);box-shadow:none}
+body:has(#list-page:not([hidden])) .site-header .desktop-header-link{font-weight:600;letter-spacing:.01em}
+body:has(#list-page:not([hidden])) .header-brand{align-self:center}
+body:has(#list-page:not([hidden])) .main-menu{background:var(--surface-inset);border-bottom-color:var(--border-subtle)}
+body:has(#list-page:not([hidden])) :is(.desktop-header-link,.main-menu>a){transition:color 180ms ease-out,background-color 180ms ease-out}
+body:has(#list-page:not([hidden])) :is(.desktop-header-link,.main-menu>a)[aria-current=page]{color:var(--text-primary);background:#f99e1a06}
+#list-page .banner-title-first,#list-page .banner-content h1 em{display:inline-block}
+#list-page .filter-combobox-trigger{min-height:46px;padding:8px 11px;border-color:var(--main-edge);background:var(--surface-inset);font-weight:500;line-height:1.4;transition:background-color 180ms ease-out,border-color 180ms ease-out}
+#list-page .filter-combobox-trigger[aria-expanded=true]{border-color:#b87e33;background:var(--surface-raised)}
+#list-page .filter-chevron{width:6px;height:6px;transition:transform 180ms ease-out}
+#list-page .filter-combobox-popup{padding:6px;border-color:var(--main-edge);box-shadow:var(--shadow-popup)}
+#list-page .filter-option{font-weight:500;transition:background-color 180ms ease-out,border-color 180ms ease-out,color 180ms ease-out}
+#list-page .filter-option[aria-selected=true]{background:#f99e1a12;color:#ffca81}
+#heroes .hero-card{background:linear-gradient(110deg,#1c2837,var(--surface-card));border-color:#2c3a4b;box-shadow:none;transition:background-color 200ms ease-out,border-color 200ms ease-out}
+#heroes .hero-card .portrait{border-color:#465569}
+#heroes .hero-card-stats{border-top-color:var(--border-subtle)}
+#heroes .hero-card-stats dd{font-weight:700;font-variant-numeric:tabular-nums lining-nums;letter-spacing:-.015em}
+#heroes .hero-card-stats dt{font-weight:500;color:var(--text-secondary)}
+#hero-rows td{font-variant-numeric:tabular-nums lining-nums}
+#hero-rows .metric-value{font-weight:600}
+#list-page .sidebar .insight-panel,#meta-page .insight-panel{background:var(--surface-card);border-color:var(--border-subtle);box-shadow:none}
+#list-page .sidebar .insight-panel h3,#meta-page .insight-panel h3{font-weight:700;letter-spacing:-.02em}
+#list-page .insight-hero,#meta-page .insight-hero{align-items:center;transition:background-color 180ms ease-out,color 180ms ease-out}
+#list-page .insight-hero img,#meta-page .insight-hero img{object-fit:cover;flex-shrink:0;border:1px solid var(--border-subtle)}
+#list-page .insight-hero small,#meta-page .insight-hero small{line-height:1.55;font-variant-numeric:tabular-nums}
+#list-page .insight-panel p,#meta-page .insight-panel p{line-height:1.6}
+@media(hover:hover) and (pointer:fine){
+ #heroes .hero-card:hover{transform:none;background:var(--surface-hover);border-color:#4a5d75}
+ #hero-rows tr:hover{background:var(--surface-hover)}
+ #list-page .filter-combobox-trigger:hover{border-color:#596b82;background:var(--surface-raised)}
+ #list-page .insight-hero:hover,#meta-page .insight-hero:hover{background:#ffffff03}
+}
+@media(min-width:1024px){
+ body:has(#list-page:not([hidden])) .site-header{gap:40px}
+ #list-page .sidebar .insight-panel{padding:14px 16px}
+ #hero-rows td{padding-top:11px;padding-bottom:11px}
+}
+@media(max-width:767px){
+ #list-page .filter-combobox-trigger{min-height:44px;padding:7px 9px;font-size:16px;line-height:1.25}
+ #heroes .hero-card{padding:8px 9px}
+ #heroes .hero-card-header{gap:6px}
+ #heroes .hero-card-stats dd{font-size:14px;line-height:1.4}
+ #heroes .hero-card .portrait{width:48px;height:48px}
+ #list-page .sidebar .insight-panel,#meta-page .insight-panel{padding:10px}
+}
+@media(prefers-reduced-motion:reduce){
+ #list-page .filter-chevron,#list-page .filter-combobox-trigger,#list-page .filter-option,#heroes .hero-card,#list-page .insight-hero,#meta-page .insight-hero,
+ body:has(#list-page:not([hidden])) :is(.desktop-header-link,.main-menu>a){transition:none}
+}

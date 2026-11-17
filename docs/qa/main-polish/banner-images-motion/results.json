@@ -1,0 +1,3733 @@
+{
+  "phase": "banner",
+  "fixtureOnly": true,
+  "source": "captured metadata and actual saved statistics; Genji map precision values are test-only",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963615",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.363847)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.866843",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.33157)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.579403",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.20597)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "나에게 맞는 영웅과 메타를 확인하세요.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963804",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.36196)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.867438",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32562)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.581064",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.18936)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "나에게 맞는 영웅과 메타를 확인하세요.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 721.9375,
+            "height": 177.375,
+            "width": 296
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973073",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.269269)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.896925",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.03075)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.66516",
+              "transform": "matrix(1, 0, 0, 1, 0, 3.3484)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Find your hero and explore the meta.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.0974183",
+              "transform": "matrix(1, 0, 0, 1, 0, 9.02582)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963662",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.363379)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.866991",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.33009)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.579814",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.20186)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Find your hero and explore the meta.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 739.9375,
+            "height": 177.375,
+            "width": 296
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963602",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.363982)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.866801",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.33199)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.579284",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.20716)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローとメタをチェック。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.980423",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.19577)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.920834",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.791662)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.735697",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.64303)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローとメタをチェック。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.248463",
+              "transform": "matrix(1, 0, 0, 1, 0, 7.51537)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 766.90625,
+            "height": 177.375,
+            "width": 296
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973129",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.268713)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.897104",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.02896)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.665681",
+              "transform": "matrix(1, 0, 0, 1, 0, 3.34319)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "나에게 맞는 영웅과 메타를 확인하세요.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.0984743",
+              "transform": "matrix(1, 0, 0, 1, 0, 9.01526)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.980482",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.195181)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.921028",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.789721)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.736278",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.63722)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "나에게 맞는 영웅과 메타를 확인하세요.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.249778",
+              "transform": "matrix(1, 0, 0, 1, 0, 7.50222)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 702.375,
+            "height": 162.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963707",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.362931)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.867132",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32868)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.580209",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.19791)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Find your hero and explore the meta.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963788",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.36212)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.867388",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32612)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.580923",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.19076)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Find your hero and explore the meta.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 717.5625,
+            "height": 162.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963597",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.364027)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.866787",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.33213)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.579245",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.20755)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローとメタをチェック。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973284",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.267161)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.897603",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.02397)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.667133",
+              "transform": "matrix(1, 0, 0, 1, 0, 3.32867)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローとメタをチェック。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.101422",
+              "transform": "matrix(1, 0, 0, 1, 0, 8.98578)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(10px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 10)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 706.75,
+            "height": 162.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973043",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.377403)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.896827",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.44442)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.664876",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.69173)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅을 이해하고, 나만의 선택을 만드세요.오버워치의 모든 영웅을 한곳에서 만나는 HOW.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.0968429",
+              "transform": "matrix(1, 0, 0, 1, 0, 12.6442)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973099",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.376608)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "다음 플레이의 시작,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.89701",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.44186)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "당신의 영웅을 찾으세요.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.665407",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.68431)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅을 이해하고, 나만의 선택을 만드세요.오버워치의 모든 영웅을 한곳에서 만나는 HOW.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.0979181",
+              "transform": "matrix(1, 0, 0, 1, 0, 12.6291)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "영웅 살펴보기 ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 1134.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.980389",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.27455)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.920723",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.10988)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.735364",
+              "transform": "matrix(1, 0, 0, 1, 0, 3.7049)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Understand heroes. Make your own choices.Explore every Overwatch hero in one place.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.24771",
+              "transform": "matrix(1, 0, 0, 1, 0, 10.5321)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.980423",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.274078)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Your next play starts here,",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.920834",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.10833)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "find your hero.",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.735697",
+              "transform": "matrix(1, 0, 0, 1, 0, 3.70025)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Understand heroes. Make your own choices.Explore every Overwatch hero in one place.",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.248463",
+              "transform": "matrix(1, 0, 0, 1, 0, 10.5215)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "Explore heroes ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 1134.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "bannerEvidence": [
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.963654",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.508848)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.866965",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.8625)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.579741",
+              "transform": "matrix(1, 0, 0, 1, 0, 5.88362)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを理解して、自分の選択を。オーバーウォッチのすべてのヒーローを、ひとつの場所で。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": " KNOW YOUR HERO. FIND YOUR EDGE.",
+          "options": {
+            "duration": 460,
+            "delay": 0,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.973232",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.374753)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "次のプレイは、ここから。",
+          "options": {
+            "duration": 460,
+            "delay": 80,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.897436",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.43589)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "自分に合うヒーローを見つけよう。",
+          "options": {
+            "duration": 460,
+            "delay": 160,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.666646",
+              "transform": "matrix(1, 0, 0, 1, 0, 4.66695)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを理解して、自分の選択を。オーバーウォッチのすべてのヒーローを、ひとつの場所で。",
+          "options": {
+            "duration": 460,
+            "delay": 240,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0.100434",
+              "transform": "matrix(1, 0, 0, 1, 0, 12.5939)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        },
+        {
+          "text": "ヒーローを見る ↗",
+          "options": {
+            "duration": 460,
+            "delay": 320,
+            "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+            "fill": "backwards"
+          },
+          "keys": [
+            {
+              "opacity": 0,
+              "transform": "translateY(14px)"
+            },
+            {
+              "opacity": 1,
+              "transform": "translateY(0)"
+            }
+          ],
+          "samples": [
+            {
+              "delay": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 250,
+              "state": "running",
+              "opacity": "0",
+              "transform": "matrix(1, 0, 0, 1, 0, 14)"
+            },
+            {
+              "delay": 850,
+              "state": "finished",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "captures": [
+        {
+          "name": "tiers",
+          "overflow": 0,
+          "firstHero": {
+            "y": 1134.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ]
+    }
+  ]
+}

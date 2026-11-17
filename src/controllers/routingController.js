@@ -12,6 +12,7 @@ import { CURRENT_STATISTICS_PATCH } from '../data/patchCatalog.js';
 import { createSynergyService } from '../services/synergyService.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {createMainMenuView} from '../views/mainMenuView.js';
+import {createBannerEntrance} from '../views/bannerEntrance.js';
 export function parseRoute(hash) {
   const player=/^#\/players\/([^/?#]+)$/.exec(hash);
   if(player){try{const id=decodeURIComponent(player[1]);playerPath(id);return {page:'player',id};}catch{return {page:'not-found'};}}
@@ -25,6 +26,7 @@ export function parseRoute(hash) {
 export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider }) {
   let generation = 0, currentKey, route = parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
   const menuView=createMainMenuView(),scrollPositions=new Map();
+  const bannerEntrance=createBannerEntrance(document.querySelector('#list-page .hero-banner'));
   const playerSearch=createPlayerSearchController({root:document.querySelector('#player-search-page'),provider:playerProvider??createOverfastPlayerProvider(),heroes:()=>model.state.heroes,heroDetails:detailService,onNavigate:id=>{location.hash=`/players/${encodeURIComponent(id)}`;}});
   const menuMedia=window.matchMedia?.('(max-width: 767px)');
   let currentHash=routeHash(location,import.meta.env?.BASE_URL??'/'),lastMainHash='#/tiers';
@@ -84,6 +86,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     playerSearch.setActive(route.page==='player-search'||route.page==='player');
     if(route.page==='player-search'||route.page==='player')playerSearch.setRoute(route.page==='player'?route.id:null);
     document.querySelector('#list-page').hidden = route.page !== 'list'&&!(route.page==='meta'&&!mobile);
+    bannerEntrance.setVisible(!document.querySelector('#list-page').hidden);
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
     if (route.page === 'detail') {
@@ -142,6 +145,6 @@ export function createRoutingController({ model, detailService, detailView, coun
     start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

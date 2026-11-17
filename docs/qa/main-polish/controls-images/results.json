@@ -1,0 +1,133 @@
+{
+  "phase": "controls",
+  "fixtureOnly": true,
+  "source": "captured metadata and actual saved statistics; Genji map precision values are test-only",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "captures": [
+        {
+          "name": "tiers",
+          "header": {
+            "y": 0,
+            "height": 57.1875,
+            "width": 390
+          },
+          "menu": {
+            "y": 57.1875,
+            "height": 45,
+            "width": 390
+          },
+          "banner": {
+            "y": 102.1875,
+            "height": 165,
+            "width": 390
+          },
+          "overflow": 0,
+          "firstHero": {
+            "y": 702.375,
+            "height": 162.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "controls",
+          "header": {
+            "y": 0,
+            "height": 57.1875,
+            "width": 390
+          },
+          "menu": {
+            "y": 57.1875,
+            "height": 45,
+            "width": 390
+          },
+          "banner": {
+            "y": 102.1875,
+            "height": 165,
+            "width": 390
+          },
+          "overflow": 0,
+          "firstHero": {
+            "y": 765.375,
+            "height": 162.390625,
+            "width": 366
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "captures": [
+        {
+          "name": "tiers",
+          "header": {
+            "y": 0,
+            "height": 88,
+            "width": 1440
+          },
+          "menu": null,
+          "banner": {
+            "y": 88,
+            "height": 400.65625,
+            "width": 1440
+          },
+          "overflow": 0,
+          "firstHero": {
+            "y": 1134.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        },
+        {
+          "name": "controls",
+          "header": {
+            "y": 0,
+            "height": 88,
+            "width": 1440
+          },
+          "menu": null,
+          "banner": {
+            "y": 88,
+            "height": 400.65625,
+            "width": 1440
+          },
+          "overflow": 0,
+          "firstHero": {
+            "y": 1134.546875,
+            "height": 74.171875,
+            "width": 1062
+          },
+          "detail": null,
+          "playerHeader": null,
+          "playerKpis": null,
+          "firstPlayerHero": null,
+          "tableOverflow": 0,
+          "fonts": "loaded"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

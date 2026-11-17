@@ -12,6 +12,7 @@ import './styles/player.css';
 import './styles/interactions.css';
 import './styles/metaEmblems.css';
 import './styles/visualPolish.css';
+import './styles/mainPolish.css';
 import { createHeroModel } from './models/heroModel.js';
 import { createHeroView } from './views/heroView.js';
 import { createHeroController } from './controllers/heroController.js';
