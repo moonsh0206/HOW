@@ -34,7 +34,7 @@ function featureCard(item,model,local,data){
 export function createMetaDashboardView(root){
  if(!root)return {render(){},destroy(){}};
  const heading=node('header',undefined,'dashboard-heading'),eyebrow=node('p','META / OVERVIEW','eyebrow'),title=node('h1'),intro=node('p');heading.append(eyebrow,title,intro);
- const metricControls=node('div',undefined,'dashboard-kpi-controls'),brandTarget=node('span',undefined,'dashboard-brand-target');brandTarget.dataset.dashboardBrandTarget='';brandTarget.setAttribute('aria-hidden','true');const play=node('button');play.type='button';play.dataset.dashboardCycle='toggle';metricControls.append(brandTarget,play);heading.append(metricControls);
+ const metricControls=node('div',undefined,'dashboard-kpi-controls');const play=node('button');play.type='button';play.dataset.dashboardCycle='toggle';metricControls.append(play);heading.append(metricControls);
  const filterHost=node('div',undefined,'dashboard-filter-host');filterHost.id='dashboard-filter-host';
  const scope=node('p',undefined,'dashboard-scope'),source=node('p',undefined,'dashboard-source');source.setAttribute('role','status');
  const stateNote=node('div',undefined,'dashboard-state');stateNote.setAttribute('role','status');

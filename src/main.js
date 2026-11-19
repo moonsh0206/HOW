@@ -57,7 +57,7 @@ const statisticsService=createStatisticsService();
 const counterService=createCounterService();
 const mapService=createMapService();
 const dashboardController=createMetaDashboardController({model,snapshotService:snapshots,statisticsService,counterService,mapService,roleMeanService:createRoleMeanService({base:import.meta.env.BASE_URL})});
-brandIntro.mount(document.querySelector('[data-dashboard-brand-target]'));
+brandIntro.mount(document.querySelector('.site-header .header-brand'));
 const mapStatisticsController=createMapStatisticsController({statisticsService,onChange:()=>router.refresh()});
 const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots, mapStatisticsController,perkStatisticsService:createPerkStatisticsService({base:import.meta.env.BASE_URL}),patchModel,counterService,dashboardController });
 const insights = createInsightView({patchModel});
