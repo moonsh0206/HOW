@@ -1,0 +1,319 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1416
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1280,
+          "right": 1416
+        },
+        "credit": {
+          "left": 1298.265625,
+          "right": 1416
+        },
+        "height": 933,
+        "bottom": 1005,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "cycleEvidence": {
+        "elapsed": 7507,
+        "transitionStart": {
+          "animations": [
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            },
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            },
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            }
+          ],
+          "values": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "transitionMiddle": {
+          "animations": [
+            {
+              "state": "running",
+              "time": 66.67699999950827,
+              "opacity": "0.257693"
+            },
+            {
+              "state": "running",
+              "time": 66.67699999950827,
+              "opacity": "0.257693"
+            },
+            {
+              "state": "running",
+              "time": 66.67699999950827,
+              "opacity": "0.257693"
+            }
+          ],
+          "values": [
+            "0.257693",
+            "0.257693",
+            "0.257693"
+          ]
+        },
+        "transitionEnd": {
+          "animations": [],
+          "values": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "hoverPause": true,
+        "focusPause": true,
+        "reducedMotion": true
+      },
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 378
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 258,
+          "right": 378
+        },
+        "credit": {
+          "left": 12,
+          "right": 378
+        },
+        "height": 2492.96875,
+        "bottom": 2575.484375,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "cycleEvidence": {
+        "elapsed": 7519,
+        "transitionStart": {
+          "animations": [
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            },
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            },
+            {
+              "state": "running",
+              "time": 0,
+              "opacity": "1"
+            }
+          ],
+          "values": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "transitionMiddle": {
+          "animations": [
+            {
+              "state": "running",
+              "time": 66.71700000129022,
+              "opacity": "0.257361"
+            },
+            {
+              "state": "running",
+              "time": 66.71700000129022,
+              "opacity": "0.257361"
+            },
+            {
+              "state": "running",
+              "time": 66.71700000129022,
+              "opacity": "0.257361"
+            }
+          ],
+          "values": [
+            "0.257361",
+            "0.257361",
+            "0.257361"
+          ]
+        },
+        "transitionEnd": {
+          "animations": [],
+          "values": [
+            "1",
+            "1",
+            "1"
+          ]
+        },
+        "hoverPause": true,
+        "focusPause": true,
+        "reducedMotion": true
+      },
+      "statsRequests": 6,
+      "errors": []
+    }
+  ]
+}

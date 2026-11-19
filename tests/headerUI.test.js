@@ -17,8 +17,8 @@ test('header language uses shared combobox, preserves selection, keyboard naviga
 });
 test('desktop and mobile menu aria-current follows all routes, including hero details opened from meta',async()=>{
  const html=await readFile(new URL('../index.html',import.meta.url),'utf8'),dom=new JSDOM(html),prior=globalThis.document;globalThis.document=dom.window.document;
- try{const view=createMainMenuView();for(const [route,expected]of [[{page:'list'},'list'],[{page:'detail',key:'genji'},'list'],[{page:'meta'},'meta'],[{page:'player-search'},'player-search'],[{page:'player',id:'ID-1234'},'player-search']]){
+ try{const view=createMainMenuView();for(const [route,expected]of [[{page:'dashboard'},'dashboard'],[{page:'list'},'list'],[{page:'detail',key:'genji'},'list'],[{page:'meta'},'dashboard'],[{page:'player-search'},'player-search'],[{page:'player',id:'ID-1234'},'player-search']]){
   view.render(route,'#/meta',true);assert.equal(document.querySelector('.main-menu [aria-current=page]').dataset.mainMenu,expected);
-  const active=[...document.querySelectorAll('.site-header .desktop-header-link[aria-current=page]')];assert.equal(active.length,expected==='meta'?0:1);if(active.length)assert.equal(active[0].getAttribute('href'),expected==='list'?'#heroes':'#/player-search');
+  const active=[...document.querySelectorAll('.site-header .desktop-header-link[aria-current=page]')];assert.equal(active.length,1);assert.equal(active[0].getAttribute('href'),expected==='dashboard'?'#/dashboard':expected==='list'?'#heroes':'#/player-search');
  }}finally{globalThis.document=prior;dom.window.close();}
 });

@@ -1,0 +1,36 @@
+import {node} from './dom.js';
+import {t,formatLocale} from '../i18n/i18n.js';
+import {roleName} from './roleIcon.js';
+const ns='http://www.w3.org/2000/svg';
+const svgNode=(tag,attrs={})=>{const e=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,String(v));return e;};
+const dayIndex=day=>Date.parse(day+'T00:00:00Z')/86400000;
+export function dashboardHistoryChart(data){
+ const root=node('div',undefined,'dashboard-history-chart');
+ if(!data?.available){root.append(node('p',t('dashboard.historyEmpty'),'dashboard-empty'));return root;}
+ const points=data.series.flatMap(s=>s.points.filter(p=>p.value!==null));
+ const minDay=Math.min(...points.map(p=>dayIndex(p.day))),maxDay=Math.max(...points.map(p=>dayIndex(p.day)));
+ const min=Math.max(0,Math.floor((Math.min(...points.map(p=>p.value))-2)/5)*5),max=Math.min(100,Math.ceil((Math.max(...points.map(p=>p.value))+2)/5)*5);
+ const x=p=>50+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*430,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;
+ const svg=svgNode('svg',{viewBox:'0 0 510 220',role:'img','aria-label':t('dashboard.graphLabel')});
+ const title=svgNode('title');title.textContent=t('dashboard.graphLabel');svg.append(title);
+ for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:50,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:43,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}
+ for(const day of [...new Set(points.map(p=>p.day))].filter((_,i,all)=>i===0||i===all.length-1||i===Math.floor(all.length/2))){const text=svgNode('text',{x:x({day}),y:202,'text-anchor':'middle'});text.textContent=new Date(day+'T00:00:00Z').toLocaleDateString(formatLocale(),{month:'numeric',day:'numeric',timeZone:'UTC'});svg.append(text);}
+ const defs=svgNode('defs'),clip=svgNode('clipPath',{id:'dashboard-history-reveal'}),rect=svgNode('rect',{x:49,y:20,width:435,height:165});rect.dataset.dashboardReveal='';clip.append(rect);defs.append(clip);svg.append(defs);
+ const traces=svgNode('g',{'clip-path':'url(#dashboard-history-reveal)'});
+ const table=node('table',undefined,'sr-only');table.append(node('caption',t('dashboard.graphLabel')));
+ for(const series of data.series){let last=null,d='';for(const p of series.points){if(p.value===null){last=null;continue;}const contiguous=last&&dayIndex(p.day)-dayIndex(last.day)===1;d+=`${contiguous?'L':'M'}${x(p).toFixed(2)},${y(p).toFixed(2)} `;last=p;
+   const dot=svgNode('circle',{cx:x(p),cy:y(p),r:3,class:'dashboard-dot dashboard-'+series.role});const hint=svgNode('title');hint.textContent=`${roleName(series.role)} · ${p.day} · ${p.value.toFixed(2)}% · ${t('dashboard.meanCoverage',{count:p.count,total:p.targetCount??p.count})}`;dot.append(hint);traces.append(dot);
+   const row=node('tr');row.append(node('th',roleName(series.role)+' · '+p.day),node('td',p.value.toFixed(2)+'% · '+t('dashboard.meanCoverage',{count:p.count,total:p.targetCount??p.count})));table.append(row);
+  }const path=svgNode('path',{d,fill:'none',class:'dashboard-line dashboard-'+series.role});traces.prepend(path);
+ }
+ svg.append(traces);root.append(svg,table);
+ const legend=node('div',undefined,'dashboard-legend');for(const s of data.series)legend.append(node('span',roleName(s.role),'dashboard-'+s.role));root.append(legend);
+ root.append(node('small',t('dashboard.lastObservation',{time:new Date(Math.max(...points.map(p=>p.time))).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})})));
+ return root;
+}
+export function animateDashboardHistory(root){
+ if(!root?.isConnected||root.closest('[hidden]')||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return ()=>{};
+ const animations=[];
+ try{const reveal=root.querySelector('[data-dashboard-reveal]');if(reveal?.animate)animations.push(reveal.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:520,easing:'cubic-bezier(0.22, 1, 0.36, 1)'}));for(const dot of root.querySelectorAll('.dashboard-dot'))if(dot.animate)animations.push(dot.animate([{opacity:0},{opacity:1}],{duration:240,delay:220,fill:'backwards'}));}catch{}
+ return ()=>animations.forEach(a=>a.cancel());
+}

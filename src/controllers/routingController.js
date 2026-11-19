@@ -18,12 +18,13 @@ export function parseRoute(hash) {
   if(player){try{const id=decodeURIComponent(player[1]);playerPath(id);return {page:'player',id};}catch{return {page:'not-found'};}}
   const match = /^#\/heroes\/([a-z0-9-]+)(?:\/(overview|abilities|perks))?$/.exec(hash);
   if (match) return { page: 'detail', key: match[1], tab: match[2] || 'overview' };
-  if (['', '#', '#heroes', '#favorites', '#/', '#/tiers'].includes(hash)) return { page: 'list' };
+  if (['', '#', '#/', '#/dashboard'].includes(hash)) return { page: 'dashboard' };
+  if (['#heroes', '#favorites', '#/tiers'].includes(hash)) return { page: 'list' };
   if(hash==='#/meta')return {page:'meta'};
   if(hash==='#/player-search')return {page:'player-search'};
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider,dashboardController }) {
   let generation = 0, currentKey, route = parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
   const menuView=createMainMenuView(),scrollPositions=new Map();
   const bannerEntrance=createBannerEntrance(document.querySelector('#list-page .hero-banner'));
@@ -37,7 +38,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     cancelScroll();if(!window.requestAnimationFrame)return;
     scrollFrame=window.requestAnimationFrame(()=>{scrollFrame=null;if(accept())window.scrollTo({top,left:0,behavior:'instant'});});
   }
-  const rememberScroll=()=>{if(route.page==='list'||route.page==='meta')scrollPositions.set(currentHash,window.scrollY??0);};
+  const rememberScroll=()=>{if(['list','meta','dashboard'].includes(route.page))scrollPositions.set(currentHash,window.scrollY??0);};
   const sharedFilters=document.querySelector('#statistics-filters'),filterHome=document.createComment('Shared statistics filters');sharedFilters?.before(filterHome);
   let detailState = { status: 'loading', result: null, error: '' };
   let perkGeneration=0,perkKey=null,perkState={status:'unavailable',result:null};
@@ -86,6 +87,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     playerSearch.setActive(route.page==='player-search'||route.page==='player');
     if(route.page==='player-search'||route.page==='player')playerSearch.setRoute(route.page==='player'?route.id:null);
     document.querySelector('#list-page').hidden = route.page !== 'list'&&!(route.page==='meta'&&!mobile);
+    const dashboardRoot=document.querySelector('#dashboard-page');if(dashboardRoot)dashboardRoot.hidden=route.page!=='dashboard';
     bannerEntrance.setVisible(!document.querySelector('#list-page').hidden);
     document.querySelector('#hero-detail-page').hidden = route.page !== 'detail';
     document.querySelector('#route-not-found').hidden = route.page !== 'not-found';
@@ -96,8 +98,9 @@ export function createRoutingController({ model, detailService, detailView, coun
       const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
       detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope,chartMode }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
-    } else {mapStatisticsController?.leave();const metaHost=route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
+    } else {mapStatisticsController?.leave();const metaHost=route.page==='dashboard'?document.querySelector('#dashboard-filter-host'):route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
     syncCompactMain(sharedFilters);
+    dashboardController?.setActive(route.page==='dashboard');
   }
   async function load() {
     resetHistory();
@@ -117,7 +120,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   }
   function navigate() {
     const next=parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
-    if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta'].includes(route.page)?currentHash||'#/tiers':'#/tiers';
+    if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta','dashboard'].includes(route.page)?currentHash||'#/dashboard':'#/tiers';
     currentHash=routeHash(location,import.meta.env?.BASE_URL??'/');route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
     if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }
     if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }
@@ -145,6 +148,6 @@ export function createRoutingController({ model, detailService, detailView, coun
     start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

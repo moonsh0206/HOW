@@ -1,0 +1,5353 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1440,
+          "gap": "58px",
+          "padding": "16px 80px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1392,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 766.65625,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 740.65625,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 613.328125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1440,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1440,
+          "gap": "58px",
+          "padding": "16px 80px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1392,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 766.65625,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 740.65625,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 613.328125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1440,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1440,
+          "gap": "58px",
+          "padding": "16px 80px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1392,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 368,
+            "height": 117,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 368,
+            "height": 117,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 368,
+            "height": 117,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 368,
+            "height": 117,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 380,
+          "bottom": 775,
+          "height": 395,
+          "width": 766.65625,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 467,
+          "bottom": 732,
+          "height": 265,
+          "width": 740.65625,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 380,
+          "bottom": 775,
+          "height": 395,
+          "width": 613.328125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 787,
+            "bottom": 1012,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 787,
+            "bottom": 1012,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 787,
+            "bottom": 1012,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 368,
+          "height": 117,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 380,
+          "bottom": 775,
+          "height": 395,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 787,
+          "bottom": 1012,
+          "height": 225,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1028,
+          "height": 940,
+          "width": 1440,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1366,
+          "gap": "58px",
+          "padding": "16px 43px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 138.140625,
+          "height": 34.140625,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 150.140625,
+          "bottom": 214.140625,
+          "height": 64,
+          "width": 1318,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 220.140625,
+          "bottom": 238.140625,
+          "height": 18,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 725.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 461.140625,
+          "bottom": 708.140625,
+          "height": 247,
+          "width": 699.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 580.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 250.140625,
+          "bottom": 362.140625,
+          "height": 112,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 763.140625,
+          "bottom": 988.140625,
+          "height": 225,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1004.140625,
+          "height": 916.140625,
+          "width": 1366,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1366,
+          "gap": "58px",
+          "padding": "16px 43px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 138.140625,
+          "height": 34.140625,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 150.140625,
+          "bottom": 214.140625,
+          "height": 64,
+          "width": 1318,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 220.140625,
+          "bottom": 238.140625,
+          "height": 18,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 362.140625,
+            "height": 112,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 725.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 461.140625,
+          "bottom": 708.140625,
+          "height": 247,
+          "width": 699.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 580.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 763.140625,
+            "bottom": 988.140625,
+            "height": 225,
+            "width": 431.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 250.140625,
+          "bottom": 362.140625,
+          "height": 112,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 374.140625,
+          "bottom": 751.140625,
+          "height": 377,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 763.140625,
+          "bottom": 988.140625,
+          "height": 225,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1004.140625,
+          "height": 916.140625,
+          "width": 1366,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1366,
+          "gap": "58px",
+          "padding": "16px 43px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 138.140625,
+          "height": 34.140625,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 150.140625,
+          "bottom": 214.140625,
+          "height": 64,
+          "width": 1318,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 220.140625,
+          "bottom": 238.140625,
+          "height": 18,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 250.140625,
+            "bottom": 367.140625,
+            "height": 117,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 367.140625,
+            "height": 117,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 367.140625,
+            "height": 117,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 250.140625,
+            "bottom": 367.140625,
+            "height": 117,
+            "width": 320.5,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 379.140625,
+          "bottom": 774.140625,
+          "height": 395,
+          "width": 725.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 466.140625,
+          "bottom": 731.140625,
+          "height": 265,
+          "width": 699.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 379.140625,
+          "bottom": 774.140625,
+          "height": 395,
+          "width": 580.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 786.140625,
+            "bottom": 1027.140625,
+            "height": 241,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 786.140625,
+            "bottom": 1027.140625,
+            "height": 241,
+            "width": 431.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 786.140625,
+            "bottom": 1027.140625,
+            "height": 241,
+            "width": 431.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 250.140625,
+          "bottom": 367.140625,
+          "height": 117,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 379.140625,
+          "bottom": 774.140625,
+          "height": 395,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 786.140625,
+          "bottom": 1027.140625,
+          "height": 241,
+          "width": 1318,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1043.140625,
+          "height": 955.140625,
+          "width": 1366,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1920,
+          "gap": "58px",
+          "padding": "16px 320px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1552,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 855.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 829.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 684.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1600,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history",
+          "dashboard-counters",
+          "dashboard-maps",
+          "dashboard-changes"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1920,
+          "gap": "58px",
+          "padding": "16px 320px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1552,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 855.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 829.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 684.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1600,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history",
+          "dashboard-counters",
+          "dashboard-maps",
+          "dashboard-changes"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1920,
+          "gap": "58px",
+          "padding": "16px 320px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1552,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 770,
+          "height": 395,
+          "width": 855.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 727,
+          "height": 265,
+          "width": 829.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 770,
+          "height": 395,
+          "width": 684.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 782,
+            "bottom": 1007,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 782,
+            "bottom": 1007,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 782,
+            "bottom": 1007,
+            "height": 225,
+            "width": 509.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 770,
+          "height": 395,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 782,
+          "bottom": 1007,
+          "height": 225,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1023,
+          "height": 935,
+          "width": 1600,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history",
+          "dashboard-counters",
+          "dashboard-maps",
+          "dashboard-changes"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 768,
+          "gap": "20px",
+          "padding": "16px 32px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 112,
+          "bottom": 183,
+          "height": 71,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 195,
+          "bottom": 289,
+          "height": 94,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 295,
+          "bottom": 360,
+          "height": 65,
+          "width": 720,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 372,
+            "bottom": 517.796875,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 372,
+            "bottom": 517.796875,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 529.796875,
+            "bottom": 701.59375,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 529.796875,
+            "bottom": 701.59375,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 713.59375,
+          "bottom": 1202.59375,
+          "height": 489,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 814.59375,
+          "bottom": 1145.59375,
+          "height": 331,
+          "width": 694,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1214.59375,
+          "bottom": 1373.390625,
+          "height": 158.796875,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1385.390625,
+            "bottom": 1682.390625,
+            "height": 297,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1385.390625,
+            "bottom": 1682.390625,
+            "height": 297,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1694.390625,
+            "bottom": 1783.28125,
+            "height": 88.890625,
+            "width": 720,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 372,
+          "bottom": 701.59375,
+          "height": 329.59375,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 713.59375,
+          "bottom": 1373.390625,
+          "height": 659.796875,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1385.390625,
+          "bottom": 1783.28125,
+          "height": 397.890625,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1807.28125,
+          "height": 1719.28125,
+          "width": 768,
+          "gap": "normal",
+          "padding": "24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 768,
+          "gap": "20px",
+          "padding": "16px 32px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 112,
+          "bottom": 183,
+          "height": 71,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 195,
+          "bottom": 294.09375,
+          "height": 99.09375,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 300.09375,
+          "bottom": 365.09375,
+          "height": 65,
+          "width": 720,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 377.09375,
+            "bottom": 522.890625,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 377.09375,
+            "bottom": 522.890625,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 534.890625,
+            "bottom": 706.6875,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 534.890625,
+            "bottom": 706.6875,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 718.6875,
+          "bottom": 1207.6875,
+          "height": 489,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 819.6875,
+          "bottom": 1150.6875,
+          "height": 331,
+          "width": 694,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1219.6875,
+          "bottom": 1378.484375,
+          "height": 158.796875,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1390.484375,
+            "bottom": 1695.484375,
+            "height": 305,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1390.484375,
+            "bottom": 1695.484375,
+            "height": 305,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1707.484375,
+            "bottom": 1796.375,
+            "height": 88.890625,
+            "width": 720,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 377.09375,
+          "bottom": 706.6875,
+          "height": 329.59375,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 718.6875,
+          "bottom": 1378.484375,
+          "height": 659.796875,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1390.484375,
+          "bottom": 1796.375,
+          "height": 405.890625,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1820.375,
+          "height": 1732.375,
+          "width": 768,
+          "gap": "normal",
+          "padding": "24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 768,
+          "gap": "20px",
+          "padding": "16px 32px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 112,
+          "bottom": 183,
+          "height": 71,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 195,
+          "bottom": 294.09375,
+          "height": 99.09375,
+          "width": 720,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 300.09375,
+          "bottom": 365.09375,
+          "height": 65,
+          "width": 720,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 377.09375,
+            "bottom": 522.890625,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 377.09375,
+            "bottom": 522.890625,
+            "height": 145.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 534.890625,
+            "bottom": 706.6875,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 534.890625,
+            "bottom": 706.6875,
+            "height": 171.796875,
+            "width": 354,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 718.6875,
+          "bottom": 1225.6875,
+          "height": 507,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 819.6875,
+          "bottom": 1168.6875,
+          "height": 349,
+          "width": 694,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1237.6875,
+          "bottom": 1396.484375,
+          "height": 158.796875,
+          "width": 720,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1408.484375,
+            "bottom": 1705.484375,
+            "height": 297,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1408.484375,
+            "bottom": 1705.484375,
+            "height": 297,
+            "width": 354,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 1717.484375,
+            "bottom": 1806.375,
+            "height": 88.890625,
+            "width": 720,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 377.09375,
+          "bottom": 706.6875,
+          "height": 329.59375,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 718.6875,
+          "bottom": 1396.484375,
+          "height": 677.796875,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1408.484375,
+          "bottom": 1806.375,
+          "height": 397.890625,
+          "width": 720,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1830.375,
+          "height": 1742.375,
+          "width": 768,
+          "gap": "normal",
+          "padding": "24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 430,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 383.515625,
+          "height": 170,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 389.515625,
+          "bottom": 453.515625,
+          "height": 64,
+          "width": 406,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 791.90625,
+          "bottom": 1559.90625,
+          "height": 768,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 894.90625,
+          "bottom": 1500.90625,
+          "height": 606,
+          "width": 376,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1571.90625,
+          "bottom": 1751.5,
+          "height": 179.59375,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1763.5,
+            "bottom": 2038.5,
+            "height": 275,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2050.5,
+            "bottom": 2391.5,
+            "height": 341,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2403.5,
+            "bottom": 2495.09375,
+            "height": 91.59375,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 463.515625,
+          "bottom": 779.90625,
+          "height": 316.390625,
+          "width": 406,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 791.90625,
+          "bottom": 1751.5,
+          "height": 959.59375,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1763.5,
+          "bottom": 2495.09375,
+          "height": 731.59375,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2527.09375,
+          "height": 2412.578125,
+          "width": 430,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 430,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 219.515625,
+          "height": 89,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 231.515625,
+          "bottom": 418.703125,
+          "height": 187.1875,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 424.703125,
+          "bottom": 512.703125,
+          "height": 88,
+          "width": 406,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 522.703125,
+            "bottom": 679.09375,
+            "height": 156.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 522.703125,
+            "bottom": 679.09375,
+            "height": 156.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 687.09375,
+            "bottom": 851.484375,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 687.09375,
+            "bottom": 851.484375,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 863.484375,
+          "bottom": 1631.484375,
+          "height": 768,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 966.484375,
+          "bottom": 1572.484375,
+          "height": 606,
+          "width": 376,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1643.484375,
+          "bottom": 1823.078125,
+          "height": 179.59375,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1835.078125,
+            "bottom": 2126.078125,
+            "height": 291,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2138.078125,
+            "bottom": 2479.078125,
+            "height": 341,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2491.078125,
+            "bottom": 2603.46875,
+            "height": 112.390625,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 522.703125,
+          "bottom": 851.484375,
+          "height": 328.78125,
+          "width": 406,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 863.484375,
+          "bottom": 1823.078125,
+          "height": 959.59375,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1835.078125,
+          "bottom": 2603.46875,
+          "height": 768.390625,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2635.46875,
+          "height": 2520.953125,
+          "width": 430,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 430,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 400.703125,
+          "height": 187.1875,
+          "width": 406,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 406.703125,
+          "bottom": 470.703125,
+          "height": 64,
+          "width": 406,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 480.703125,
+            "bottom": 624.703125,
+            "height": 144,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 480.703125,
+            "bottom": 624.703125,
+            "height": 144,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 632.703125,
+            "bottom": 797.09375,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 632.703125,
+            "bottom": 797.09375,
+            "height": 164.390625,
+            "width": 199,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 809.09375,
+          "bottom": 1577.09375,
+          "height": 768,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 912.09375,
+          "bottom": 1518.09375,
+          "height": 606,
+          "width": 376,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1589.09375,
+          "bottom": 1768.6875,
+          "height": 179.59375,
+          "width": 406,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1780.6875,
+            "bottom": 2071.6875,
+            "height": 291,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2083.6875,
+            "bottom": 2424.6875,
+            "height": 341,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2436.6875,
+            "bottom": 2528.28125,
+            "height": 91.59375,
+            "width": 406,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 480.703125,
+          "bottom": 797.09375,
+          "height": 316.390625,
+          "width": 406,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 809.09375,
+          "bottom": 1768.6875,
+          "height": 959.59375,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1780.6875,
+          "bottom": 2528.28125,
+          "height": 747.59375,
+          "width": 406,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2560.28125,
+          "height": 2445.765625,
+          "width": 430,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 390,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 383.515625,
+          "height": 170,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 389.515625,
+          "bottom": 453.515625,
+          "height": 64,
+          "width": 366,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 791.90625,
+          "bottom": 1559.90625,
+          "height": 768,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 894.90625,
+          "bottom": 1500.90625,
+          "height": 606,
+          "width": 336,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1571.90625,
+          "bottom": 1751.5,
+          "height": 179.59375,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1763.5,
+            "bottom": 2054.5,
+            "height": 291,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2066.5,
+            "bottom": 2407.5,
+            "height": 341,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2419.5,
+            "bottom": 2511.09375,
+            "height": 91.59375,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 463.515625,
+          "bottom": 779.90625,
+          "height": 316.390625,
+          "width": 366,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 791.90625,
+          "bottom": 1751.5,
+          "height": 959.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1763.5,
+          "bottom": 2511.09375,
+          "height": 747.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2543.09375,
+          "height": 2428.578125,
+          "width": 390,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 390,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 219.515625,
+          "height": 89,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 231.515625,
+          "bottom": 418.703125,
+          "height": 187.1875,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 424.703125,
+          "bottom": 512.703125,
+          "height": 88,
+          "width": 366,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 522.703125,
+            "bottom": 679.09375,
+            "height": 156.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 522.703125,
+            "bottom": 679.09375,
+            "height": 156.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 687.09375,
+            "bottom": 851.484375,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 687.09375,
+            "bottom": 851.484375,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 863.484375,
+          "bottom": 1649.484375,
+          "height": 786,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 984.484375,
+          "bottom": 1590.484375,
+          "height": 606,
+          "width": 336,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1661.484375,
+          "bottom": 1841.078125,
+          "height": 179.59375,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1853.078125,
+            "bottom": 2162.078125,
+            "height": 309,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2174.078125,
+            "bottom": 2515.078125,
+            "height": 341,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2527.078125,
+            "bottom": 2639.46875,
+            "height": 112.390625,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 522.703125,
+          "bottom": 851.484375,
+          "height": 328.78125,
+          "width": 366,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 863.484375,
+          "bottom": 1841.078125,
+          "height": 977.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1853.078125,
+          "bottom": 2639.46875,
+          "height": 786.390625,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2671.46875,
+          "height": 2556.953125,
+          "width": 390,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 390,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 417.890625,
+          "height": 204.375,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 423.890625,
+          "bottom": 511.890625,
+          "height": 88,
+          "width": 366,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 521.890625,
+            "bottom": 665.890625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 521.890625,
+            "bottom": 665.890625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 673.890625,
+            "bottom": 838.28125,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 673.890625,
+            "bottom": 838.28125,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 850.28125,
+          "bottom": 1618.28125,
+          "height": 768,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 953.28125,
+          "bottom": 1559.28125,
+          "height": 606,
+          "width": 336,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1630.28125,
+          "bottom": 1809.875,
+          "height": 179.59375,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1821.875,
+            "bottom": 2112.875,
+            "height": 291,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2124.875,
+            "bottom": 2465.875,
+            "height": 341,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2477.875,
+            "bottom": 2590.265625,
+            "height": 112.390625,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 521.890625,
+          "bottom": 838.28125,
+          "height": 316.390625,
+          "width": 366,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 850.28125,
+          "bottom": 1809.875,
+          "height": 959.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1821.875,
+          "bottom": 2590.265625,
+          "height": 768.390625,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2622.265625,
+          "height": 2507.75,
+          "width": 390,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 320,
+          "gap": "5px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 400.703125,
+          "height": 187.1875,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 406.703125,
+          "bottom": 494.703125,
+          "height": 88,
+          "width": 296,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 504.703125,
+            "bottom": 661.09375,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 504.703125,
+            "bottom": 661.09375,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 669.09375,
+            "bottom": 833.484375,
+            "height": 164.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 669.09375,
+            "bottom": 833.484375,
+            "height": 164.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 845.484375,
+          "bottom": 1613.484375,
+          "height": 768,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 948.484375,
+          "bottom": 1554.484375,
+          "height": 606,
+          "width": 266,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1625.484375,
+          "bottom": 1805.078125,
+          "height": 179.59375,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1817.078125,
+            "bottom": 2108.078125,
+            "height": 291,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2120.078125,
+            "bottom": 2461.078125,
+            "height": 341,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2473.078125,
+            "bottom": 2585.46875,
+            "height": 112.390625,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 504.703125,
+          "bottom": 833.484375,
+          "height": 328.78125,
+          "width": 296,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 845.484375,
+          "bottom": 1805.078125,
+          "height": 959.59375,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1817.078125,
+          "bottom": 2585.46875,
+          "height": 768.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2617.46875,
+          "height": 2502.953125,
+          "width": 320,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "en",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 320,
+          "gap": "5px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 219.515625,
+          "height": 89,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 231.515625,
+          "bottom": 435.890625,
+          "height": 204.375,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 441.890625,
+          "bottom": 529.890625,
+          "height": 88,
+          "width": 296,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 539.890625,
+            "bottom": 696.28125,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 539.890625,
+            "bottom": 696.28125,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 704.28125,
+            "bottom": 878.671875,
+            "height": 174.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 704.28125,
+            "bottom": 878.671875,
+            "height": 174.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 890.671875,
+          "bottom": 1749.46875,
+          "height": 858.796875,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 1040.46875,
+          "bottom": 1646.46875,
+          "height": 606,
+          "width": 266,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1761.46875,
+          "bottom": 1941.0625,
+          "height": 179.59375,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1953.0625,
+            "bottom": 2298.0625,
+            "height": 345,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2310.0625,
+            "bottom": 2651.0625,
+            "height": 341,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2663.0625,
+            "bottom": 2775.453125,
+            "height": 112.390625,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 539.890625,
+          "bottom": 878.671875,
+          "height": 338.78125,
+          "width": 296,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 890.671875,
+          "bottom": 1941.0625,
+          "height": 1050.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1953.0625,
+          "bottom": 2775.453125,
+          "height": 822.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2807.453125,
+          "height": 2692.9375,
+          "width": 320,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ja",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 320,
+          "gap": "5px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 439.484375,
+          "height": 225.96875,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 445.484375,
+          "bottom": 549.484375,
+          "height": 104,
+          "width": 296,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 559.484375,
+            "bottom": 715.875,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 559.484375,
+            "bottom": 715.875,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 723.875,
+            "bottom": 913.046875,
+            "height": 189.171875,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 723.875,
+            "bottom": 913.046875,
+            "height": 189.171875,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 925.046875,
+          "bottom": 1783.84375,
+          "height": 858.796875,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 1074.84375,
+          "bottom": 1680.84375,
+          "height": 606,
+          "width": 266,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1795.84375,
+          "bottom": 1975.4375,
+          "height": 179.59375,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1987.4375,
+            "bottom": 2332.4375,
+            "height": 345,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2344.4375,
+            "bottom": 2685.4375,
+            "height": 341,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2697.4375,
+            "bottom": 2809.828125,
+            "height": 112.390625,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 559.484375,
+          "bottom": 913.046875,
+          "height": 353.5625,
+          "width": 296,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 925.046875,
+          "bottom": 1975.4375,
+          "height": 1050.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1987.4375,
+          "bottom": 2809.828125,
+          "height": 822.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2841.828125,
+          "height": 2727.3125,
+          "width": 320,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": []
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [],
+      "errors": []
+    }
+  ]
+}

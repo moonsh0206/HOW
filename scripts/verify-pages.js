@@ -8,6 +8,8 @@ import { expandSnapshotFile } from '../src/models/snapshotV2Model.js';
 import { statisticsQuery } from '../src/models/statisticsModel.js';
 import {normalizePerkArchive,PERK_ARCHIVE_FILE} from '../src/models/perkArchiveModel.js';
 import {normalizeOfficialPatches} from '../src/models/officialPatchModel.js';
+import {normalizeRoleMeanArchive} from '../src/models/roleMeanModel.js';
+import {deriveRoleMeans} from './derive-role-means.js';
 
 const base = pagesBase(process.env.VITE_BASE_PATH);
 const root = path.resolve('dist');
@@ -22,6 +24,7 @@ for (const file of cssFiles) {
   references.push(...[...css.matchAll(/url\(["']?([^\s)"']+)["']?\)/g)].map(match => match[1]));
 }
 const local = new Set();
+references.push(`${base}assets/branding/HOW_logo_animation.svg`);
 for (const ref of references) {
   if (/^(https:|data:)/.test(ref)) continue;
   assert(!/^(http:|file:|[A-Za-z]:)/.test(ref), `Unsafe asset URL: ${ref}`);
@@ -45,7 +48,7 @@ for(const entry of routes.entries){
  const page=await readFile(file,'utf8');
  assert(page.includes(`lang="${relative.split('/')[0]}"`),'Localized HTML lang mismatch');
  assert(page.includes('rel="canonical"')&&LANGUAGES.every(lang=>page.includes(`hreflang="${lang}"`)),'Localized SEO links missing');
- const [language,...segments]=relative.split('/'),route=(segments.join('/')||'tiers').replace(/\/overview$/,'');
+ const [language,...segments]=relative.split('/'),route=(segments.join('/')||'dashboard').replace(/\/overview$/,'');
  const canonical=new URL(page.match(/<link rel="canonical" href="([^"]+)"/)[1]);
  assert.equal(canonical.pathname,`${base}${language}/${route}`,'Canonical route mismatch');
  for(const alternate of LANGUAGES){const href=page.match(new RegExp(`<link rel="alternate" href="([^"]+)" hreflang="${alternate}"`));assert(href,'Alternate missing');assert.equal(new URL(href[1]).pathname,`${base}${alternate}/${route}`,'Alternate route mismatch');}
@@ -58,7 +61,12 @@ assert.deepEqual(await readdir(path.join(root,'data/ranks')),['current.json']);
 validateRankArchive(JSON.parse(await readFile(path.join(root,'data/ranks/current.json'),'utf8')));
 const manifest = JSON.parse(await readFile(path.join(root, 'data/snapshots/index.json'), 'utf8'));
 assert.equal(manifest.schemaVersion, 1);
-assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['patches','perks','ranks','snapshots']);
+assert.deepEqual((await readdir(path.join(root, 'data'))).sort(), ['patches','perks','ranks','role-means','snapshots']);
+assert.deepEqual(await readdir(path.join(root,'data/role-means')),['observations.json']);
+normalizeRoleMeanArchive(JSON.parse(await readFile(path.join(root,'data/role-means/observations.json'),'utf8')));
+const roleCheck=await deriveRoleMeans({directory:path.join(root,'data/snapshots'),output:path.join(root,'data/role-means/observations.json')});
+assert.equal(roleCheck.changed,false,'Role means do not match original snapshots');
+local.add(`${base}data/role-means/observations.json`);
 assert.deepEqual(await readdir(path.join(root,'data/patches')),['notes.json']);
 normalizeOfficialPatches(JSON.parse(await readFile(path.join(root,'data/patches/notes.json'),'utf8')));
 local.add(`${base}data/patches/notes.json`);

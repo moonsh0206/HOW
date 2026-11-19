@@ -5,6 +5,14 @@ import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
 import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommendationPolicy.js';
 import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
 export const ROLES = localizedRecord({ tank: '돌격', damage: '공격', support: '지원' });
+// Shared ordering for the full roster and dashboard, without changing filter state.
+export function compareHowTier(a,b) {
+  const group=recommendationOrder(a)-recommendationOrder(b);if(group)return group;
+  if(a.metaScore==null&&b.metaScore!=null)return 1;
+  if(b.metaScore==null&&a.metaScore!=null)return -1;
+  if(a.metaScore!==b.metaScore)return b.metaScore-a.metaScore;
+  return a.name.localeCompare(b.name,'ko')||a.key.localeCompare(b.key,'en');
+}
 
 // Ordinals describe this sorted cohort, never the API or a separate strength score.
 export function buildListSelection(sorted, state) {
@@ -61,8 +69,7 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
       return enriched().filter(hero => state.role === 'all' || hero.role === state.role)
         .sort((a, b) => {
           if (state.sort === 'tier-desc') {
-            const difference = recommendationOrder(a) - recommendationOrder(b);
-            if (difference) return difference;
+            return compareHowTier(a,b);
           }
           if (state.sort === 'meta-desc' || state.sort === 'tier-desc') {
             if (a.metaScore == null && b.metaScore != null) return 1;

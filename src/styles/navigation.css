@@ -94,10 +94,6 @@
 
 /* Main roster only: detail pages and desktop retain their existing sizing. */
 @media(max-width:767px){
- body:has(#list-page:not([hidden])) .site-header{min-height:54px;padding:5px 12px;gap:10px}
- body:has(#list-page:not([hidden])) .site-header .header-logo{height:30px;width:auto}
- body:has(#list-page:not([hidden])) .header-brand i{font-size:8px}
- body:has(#list-page:not([hidden])) .main-menu>a{min-height:44px;padding:8px 4px}
  #list-page .hero-banner{height:165px;min-height:165px}
  #list-page .banner-content{padding:8px 12px;width:100%}
  #list-page .banner-content h1{font-size:22px;line-height:1.22;letter-spacing:-.9px}

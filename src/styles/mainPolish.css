@@ -34,7 +34,6 @@ body:has(#list-page:not([hidden])) :is(.desktop-header-link,.main-menu>a)[aria-c
  #list-page .insight-hero:hover,#meta-page .insight-hero:hover{background:#ffffff03}
 }
 @media(min-width:1024px){
- body:has(#list-page:not([hidden])) .site-header{gap:40px}
  #list-page .sidebar .insight-panel{padding:14px 16px}
  #hero-rows td{padding-top:11px;padding-bottom:11px}
 }

@@ -60,7 +60,7 @@ export function createHeroDetailView() {
         if(patchHero!==route.key){patchCarry=null;patchHero=route.key;}
         else patchCarry=root.querySelector('.hero-patch-panel')??patchCarry;
         contentKey = signature; overviewKey=null;perkKey=null;lastTab=null;root.querySelector('.hero-patch-panel')?.patchDisclosure?.dispose();root.replaceChildren();
-        const back = node('a', route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기"), 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);
+        const back = node('a', route.returnHash==='#/dashboard'?t('dashboard.back'):route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기"), 'detail-back'); back.href = route.returnHash??(state.favoritesOnly ? '#favorites' : '#heroes'); root.append(back);
         const filterHost=node('div',undefined,'detail-filter-host');filterHost.id='detail-filter-host';root.append(filterHost);
         if (detailState.status !== 'ready') {
           const message = node('div', undefined, 'data-state'); message.setAttribute('role', 'status');
@@ -105,7 +105,7 @@ export function createHeroDetailView() {
         enter([header]);
       }
       if (detailState.status !== 'ready') return;
-      const back=root.querySelector('.detail-back');back.href=route.returnHash??(state.favoritesOnly?'#favorites':'#heroes');back.textContent=route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기");
+      const back=root.querySelector('.detail-back');back.href=route.returnHash??(state.favoritesOnly?'#favorites':'#heroes');back.textContent=route.returnHash==='#/dashboard'?t('dashboard.back'):route.returnHash==='#/meta'?t("← 현재 메타픽으로 돌아가기"):t("← 영웅 목록으로 돌아가기");
       const perkCards=perkStatistics.cards??perkCardsForDetail(route.key,detailState.result.detail,perkStatistics);
       const nextPerkKey=JSON.stringify([perkCards,perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.error]);
       if(nextPerkKey!==perkKey){perkKey=nextPerkKey;

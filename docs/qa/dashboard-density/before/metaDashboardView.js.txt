@@ -1,0 +1,75 @@
+﻿import {node,image} from './dom.js';
+import {t,label,getLanguage,formatLocale,errorText} from '../i18n/i18n.js';
+import {roleName,roleIcon,roleBadge} from './roleIcon.js';
+import {metricValue,formatPercentage,formatPercentagePoints} from './statisticsUI.js';
+import {tierButton} from './tierReasonView.js';
+import {createFilterCombobox} from './filterCombobox.js';
+import {mapDropdownOptions} from './filterOptions.js';
+import maps from '../data/standardMaps.json' with {type:'json'};
+import {filterLabel} from '../models/statisticsModel.js';
+import {MAP_NAMES} from '../models/mapModel.js';
+import {dashboardHistoryChart,animateDashboardHistory} from './dashboardHistoryView.js';
+export const dashboardTime=value=>Number.isFinite(Date.parse(value))?new Date(value).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'—';
+function heroLink(hero){const a=node('a',undefined,'dashboard-hero');a.href=`#/heroes/${hero.key}`;if(hero.portrait)a.append(image(hero.portrait));a.append(node('strong',hero.name));return a;}
+function link(text,href){const a=node('a',text,'dashboard-link');a.href=href;return a;}
+function panel(root,id,title){const article=node('section',undefined,'dashboard-panel');article.id=id;const h=node('h2',t(title));h.dataset.dashboardTitle=title;article.append(h);root.append(article);return article;}
+export function createMetaDashboardView(root){
+ if(!root)return {render(){},destroy(){}};
+ const heading=node('header',undefined,'dashboard-heading'),eyebrow=node('p','META / OVERVIEW','eyebrow'),title=node('h1'),intro=node('p');heading.append(eyebrow,title,intro);
+ const filterHost=node('div',undefined,'dashboard-filter-host');filterHost.id='dashboard-filter-host';
+ const scope=node('p',undefined,'dashboard-scope'),source=node('p',undefined,'dashboard-source');source.setAttribute('role','status');
+ const stateNote=node('div',undefined,'dashboard-state');stateNote.setAttribute('role','status');
+ const highlights=node('div',undefined,'dashboard-highlights'),middle=node('div',undefined,'dashboard-middle'),bottom=node('div',undefined,'dashboard-bottom');
+ root.replaceChildren(heading,filterHost,scope,source,stateNote,highlights,middle,bottom);
+ const ranking=panel(middle,'dashboard-ranking','dashboard.ranking'),roleMenu=node('div',undefined,'role-filters dashboard-role-filters');roleMenu.setAttribute('role','group');
+ for(const role of ['all','tank','damage','support']){const b=node('button');b.type='button';b.dataset.dashboardRole=role;roleMenu.append(b);}
+ const rankContent=node('div');ranking.append(roleMenu,rankContent);
+ const historyPanel=panel(middle,'dashboard-history','dashboard.history'),period=node('label'),days=node('select');days.id='dashboard-days';const periodLabel=node('span',t('dashboard.period')); period.append(periodLabel,days);for(const d of [7,30]){const o=node('option');o.value=d;days.append(o);}historyPanel.append(period);const daysCombo=createFilterCombobox(days,{options:[]});const historyBody=node('div');historyPanel.append(historyBody);
+ const counters=panel(bottom,'dashboard-counters','dashboard.counters'),counterBody=node('div');counters.append(counterBody);
+ const mapPanel=panel(bottom,'dashboard-maps','dashboard.mapTitle'),mapLabel=node('label'),mapSelect=node('select');mapSelect.id='dashboard-map';const mapCaption=node('span',t('전장')); mapLabel.append(mapCaption,mapSelect);mapPanel.append(mapLabel);const mapCombo=createFilterCombobox(mapSelect,{options:[]});const mapBody=node('div');mapPanel.append(mapBody);
+ const changes=panel(bottom,'dashboard-changes','dashboard.changes'),changesBody=node('div');changes.append(changesBody);
+ let signature='',chartKey='',cancelChart=()=>{},frame=null;
+ const loading=()=>node('p',t('dashboard.loading'),'dashboard-empty');
+ const unavailable=()=>node('p',t('dashboard.unavailable'),'dashboard-empty');
+ function error(state,kind){const box=node('div');box.append(node('p',t('dashboard.error'),'dashboard-empty'));if(state.error)box.append(node('small',errorText(state.error)));const button=node('button',t('dashboard.retry'),'dashboard-retry');button.type='button';button.dataset.dashboardRetry=kind;box.append(button);return box;}
+ return {
+  render(model,local,data){
+   const currentSignature=JSON.stringify([getLanguage(),local.role,local.days,local.mapKey,model.state.status,model.state.statsStatus,model.state.statsFilters,data.sorted.map(h=>[h.key,h.name,h.tier,h.metaScore,h.statistics]),data.hot,data.changes&&[...data.changes],local.history,local.map,local.counter]);
+   if(signature===currentSignature)return;signature=currentSignature;
+   const focus=root.contains(document.activeElement)?document.activeElement:null,href=focus?.closest('a')?.getAttribute('href');
+   title.textContent=t('dashboard.title');intro.textContent=t('dashboard.intro');root.querySelectorAll('[data-dashboard-title]').forEach(e=>e.textContent=t(e.dataset.dashboardTitle));
+   scope.textContent=filterLabel(model.state.statsFilters);source.textContent=model.state.statistics?t('dashboard.source',{time:dashboardTime(model.state.statistics.fetchedAt)}):t('dashboard.loading');
+   stateNote.replaceChildren();if(model.state.status==='error'||model.state.statsStatus==='error')stateNote.append(error({error:model.state.statsError||model.state.error},'current'));else if(model.state.statsStatus==='stale')stateNote.append(node('p',t('dashboard.stale')));else if(model.state.status==='loading'||model.state.statsStatus==='loading')stateNote.append(loading());
+   const note=node('small',t('dashboard.sourceNote'));stateNote.append(note);
+   highlights.replaceChildren();for(const item of [...data.leaders,{role:null,hero:data.spotlight}]){
+    const card=node('article',undefined,'dashboard-feature');const isHot=!item.role&&data.hot.heroes.length>0;card.append(node('h2',item.role?t('dashboard.leader',{role:roleName(item.role)}):t(isHot?'dashboard.hot':'dashboard.spotlight')));
+    if(item.hero){card.dataset.heroKey=item.hero.key;card.append(heroLink(item.hero));const value=node('strong',item.role?formatPercentage(item.hero.statistics.pickRate):isHot?formatPercentagePoints(item.hero.winDelta):`META ${item.hero.metaScore.toFixed(1)}`,'dashboard-feature-value');card.append(value);
+     card.append(node('small',item.role?`${t('승률')} ${metricValue(item.hero,'winRate')} · ${t('밴률')} ${metricValue(item.hero,'banRate')}`:isHot?`${t('픽률')} ${formatPercentagePoints(item.hero.pickDelta)} · ${t('승률')} ${formatPercentagePoints(item.hero.winDelta)}`:t('dashboard.spotlightBasis')));
+     if(isHot)card.append(node('small',t('dashboard.compared',{previous:dashboardTime(data.hot.previousAt),current:dashboardTime(data.hot.currentAt)})));else if(!item.role)card.append(node('small',t('dashboard.noHot')));
+    }else card.append(['loading','idle'].includes(model.state.statsStatus)?loading():unavailable());highlights.append(card);
+   }
+   roleMenu.setAttribute('aria-label',t('dashboard.roles'));for(const b of roleMenu.children){b.replaceChildren();if(b.dataset.dashboardRole!=='all')b.append(roleIcon(b.dataset.dashboardRole));b.append(node('span',b.dataset.dashboardRole==='all'?t('전체'):roleName(b.dataset.dashboardRole)));b.setAttribute('aria-pressed',String(local.role===b.dataset.dashboardRole));}
+   rankContent.replaceChildren(node('p',t('dashboard.rankingBasis'),'dashboard-caption'));
+   if(!data.current)rankContent.append(['loading','idle'].includes(model.state.statsStatus)?loading():unavailable());else{
+    const table=node('table',undefined,'dashboard-ranking-table');table.append(node('caption',t('dashboard.tableLabel'),'sr-only'));const head=node('thead'),tr=node('tr');for(const labelKey of [t('순위'),t('영웅'),t('역할'),t('티어'),t('승률'),t('픽률'),t('밴률')])tr.append(node('th',labelKey));head.append(tr);table.append(head);const body=node('tbody');
+    data.sorted.slice(0,6).forEach((hero,index)=>{const row=node('tr');row.dataset.dashboardHero=hero.key;const ordinal=node('td',hero.tier&&hero.metaScore!=null?String(index+1):'—'),change=data.changes.get(hero.key);if(change){const marker=node('small',change.delta>0?'▲'+change.delta:change.delta<0?'▼'+(-change.delta):'=','rank-change '+(change.delta>0?'rank-up':change.delta<0?'rank-down':'rank-equal'));marker.title=change.basis==='daily-observation'?t('rank.dailyPositions',{previousRank:change.previousRank,currentRank:change.currentRank,previous:dashboardTime(change.previousAt),current:dashboardTime(change.currentAt)}):t('rank.daily',{previous:change.previousAt,current:change.currentAt});ordinal.append(marker);}const identity=node('td');identity.append(heroLink(hero));const role=node('td');role.append(roleBadge(hero.role,{showLabel:true}));const tier=node('td');tier.append(tierButton(hero));row.append(ordinal,identity,role,tier);for(const [key,labelKey]of [['winRate',t('승률')],['pickRate',t('픽률')],['banRate',t('밴률')]]){const td=node('td',metricValue(hero,key));td.dataset.label=labelKey;row.append(td);}body.append(row);});table.append(body);rankContent.append(table);
+   }rankContent.append(link(t('dashboard.allHeroes'),'#/tiers'),link(t('dashboard.metaLink'),'#/meta'));
+   periodLabel.textContent=t('dashboard.period');days.setAttribute('aria-label',t('dashboard.period'));daysCombo.setOptions([7,30].map(d=>({value:String(d),label:t('dashboard.days',{days:d})})));for(const o of days.options)o.textContent=t('dashboard.days',{days:o.value});days.value=String(local.days);daysCombo.sync();
+   const nextChartKey=JSON.stringify([getLanguage(),local.days,local.history]);if(nextChartKey!==chartKey){chartKey=nextChartKey;cancelChart();if(frame!==null)cancelAnimationFrame(frame);frame=null;historyBody.replaceChildren(node('p',t('dashboard.meanNote'),'dashboard-caption'));
+    if(local.history.status==='loading')historyBody.append(loading());else if(local.history.status==='error')historyBody.append(error(local.history,'history'));else{const chart=dashboardHistoryChart(data.history);historyBody.append(chart);if(globalThis.requestAnimationFrame)frame=requestAnimationFrame(()=>{frame=null;cancelChart=animateDashboardHistory(chart);});}
+    historyBody.append(node('small',t('dashboard.historyBasis')));if(data.history?.warningCount)historyBody.append(node('small',t('dashboard.historyWarnings')));
+   }
+   counterBody.replaceChildren(node('p',t('dashboard.counterNote'),'dashboard-caption'));
+   if(local.counter){counterBody.append(heroLink(local.counter.target));const relations=local.counter.result.counteredBy.filter(r=>r.status==='reviewed').slice(0,2);for(const relation of relations){const group=node('div',undefined,'dashboard-counter');group.append(heroLink({key:relation.heroKey,name:relation.name,portrait:relation.portrait}),node('p',label(relation.reason)));counterBody.append(group);}if(!relations.length)counterBody.append(node('p',t('dashboard.counterEmpty')));counterBody.append(link(t('dashboard.counterLink'),`#/heroes/${local.counter.target.key}/overview`));}else counterBody.append(unavailable());
+   mapCaption.textContent=t('전장');mapSelect.setAttribute('aria-label',t('전장'));const mapOptions=mapDropdownOptions(maps,local.mapKey).filter(o=>o.value!=='all');mapSelect.replaceChildren(...mapOptions.map(o=>{const option=node('option',o.label);option.value=o.value;return option;}));mapSelect.value=local.mapKey;mapCombo.setOptions(mapOptions);
+   mapBody.replaceChildren(node('p',t('dashboard.mapScope'),'dashboard-caption'),node('small',t('dashboard.mapBasis')));
+   if(local.map.status==='loading')mapBody.append(loading());else if(local.map.status==='error')mapBody.append(error(local.map,'map'));else if(local.map.result?.stale)mapBody.append(node('p',t('dashboard.stale')));else{for(const {role,hero}of data.mapLeaders??[]){const row=node('div',undefined,'dashboard-map-row');row.append(node('small',roleName(role)));if(hero)row.append(heroLink(hero),node('strong',formatPercentage(hero.statistics.pickRate)));else row.append(unavailable());mapBody.append(row);}if(local.map.result)mapBody.append(node('small',`${MAP_NAMES[local.mapKey]} · ${dashboardTime(local.map.result.fetchedAt)} KST`));}
+   const mapLink=link(t('dashboard.mapLink'),'#/tiers');mapLink.dataset.dashboardMapLink=local.mapKey;mapBody.append(mapLink);
+   changesBody.replaceChildren();if(!data.deltas.length)changesBody.append(node('p',t('dashboard.changesEmpty'),'dashboard-empty'));for(const delta of data.deltas){const row=node('article',undefined,'dashboard-change');row.append(heroLink(delta.hero));const field={winRate:t('승률'),pickRate:t('픽률'),banRate:t('밴률')}[delta.metric];row.append(node('p',`${field} · ${formatPercentage(delta.before)} → ${formatPercentage(delta.after)}`),node('strong',formatPercentagePoints(delta.delta),delta.delta>0?'rank-up':'rank-down'));changesBody.append(row);}if(data.hot.available)changesBody.append(node('small',t('dashboard.compared',{previous:dashboardTime(data.hot.previousAt),current:dashboardTime(data.hot.currentAt)})));
+   if(href&&focus&&!focus.isConnected)[...root.querySelectorAll('a')].find(a=>a.getAttribute('href')===href)?.focus({preventScroll:true});
+  },
+  cancelMotion(){cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);frame=null;chartKey='';signature='';},
+  destroy(){cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);daysCombo.destroy();mapCombo.destroy();},
+ };
+}
+

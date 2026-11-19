@@ -1,0 +1,2831 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1366,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 1028.140625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1070.421875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 940.140625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 5328.390625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5370.671875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 498.21875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 640.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 682.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 552.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1366,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 1046,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1088.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 958,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 5328.390625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5370.671875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 498.21875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 640.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 682.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 552.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1366,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 1062.140625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1104.421875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 974.140625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 5328.390625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5370.671875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 498.21875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1351,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1351,
+            "top": 640.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 682.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1351,
+            "top": 88,
+            "height": 552.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 1029,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1071.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 941,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 5334.828125,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5377.109375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 504.65625,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 772.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 814.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 684.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 1030,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1072.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 942,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 5334.828125,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5377.109375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 504.65625,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 772.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 814.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 684.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 1047,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 1089.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 959,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 5334.828125,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 5377.109375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 504.65625,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1425,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "24px"
+          },
+          "logo": {
+            "left": 24,
+            "right": 132,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1425,
+            "top": 772.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "24px"
+          },
+          "footerLogo": {
+            "left": 24,
+            "right": 156,
+            "top": 814.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 1425,
+            "top": 88,
+            "height": 684.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 24,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1920,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 1029,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 1071.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 941,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 5337.140625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 5379.421875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 506.96875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 952.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 994.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 864.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1920,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 1030,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 1072.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 942,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 5337.140625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 5379.421875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 506.96875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 952.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 994.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 864.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 1920,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 1047,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 1089.28125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 959,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 5337.140625,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 5379.421875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 506.96875,
+            "height": 4830.171875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 1905,
+            "top": 0,
+            "height": 88,
+            "paddingTop": "16px",
+            "paddingBottom": "16px",
+            "paddingLeft": "176.5px"
+          },
+          "logo": {
+            "left": 176.5,
+            "right": 284.5,
+            "top": 18.96875,
+            "height": 49.046875,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 1905,
+            "top": 952.421875,
+            "height": 127.578125,
+            "paddingTop": "30px",
+            "paddingBottom": "30px",
+            "paddingLeft": "176.5px"
+          },
+          "footerLogo": {
+            "left": 176.5,
+            "right": 308.5,
+            "top": 994.703125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 152.5,
+            "right": 1752.5,
+            "top": 88,
+            "height": 864.421875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "24px"
+          },
+          "titleLeft": 176.5,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 2599.484375,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2622.484375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 2484.96875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 10259.78125,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10282.78125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 295.515625,
+            "height": 9964.265625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 698.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 721.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 584.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 2679.46875,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2702.46875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 2564.953125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 10314.5625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10337.5625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 295.515625,
+            "height": 10019.046875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 698.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 721.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 584.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 2616.671875,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2639.671875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 2502.15625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 10299.375,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10322.375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 295.515625,
+            "height": 10003.859375,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 415,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 415,
+            "top": 698.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 721.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 415,
+            "top": 114.515625,
+            "height": 584.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 2623.484375,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2646.484375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 2508.96875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 10279.578125,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10302.578125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 295.515625,
+            "height": 9984.0625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 610.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 633.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 496.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 2715.46875,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2738.46875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 2600.953125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 10340.5625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10363.5625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 295.515625,
+            "height": 10045.046875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 610.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 633.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 496.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 2687.046875,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2710.046875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 2572.53125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 10303.75,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 10326.75,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 295.515625,
+            "height": 10008.234375,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 375,
+            "top": 610.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 633.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 375,
+            "top": 114.515625,
+            "height": 496.125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 320,
+      "lang": "ko",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 2715.46875,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2738.46875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 114.515625,
+            "height": 2600.953125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 11104.921875,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 11127.921875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 295.515625,
+            "height": 10809.40625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 499.515625,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 522.515625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 114.515625,
+            "height": 385,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 2952.609375,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2975.609375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 122.890625,
+            "height": 2829.71875,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 11205.46875,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 11228.46875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 303.890625,
+            "height": 10901.578125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 517.640625,
+            "height": 233.359375,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 540.640625,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 122.890625,
+            "height": 394.75,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "pages": [
+        {
+          "route": "dashboard",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 2912.59375,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 2935.59375,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 122.890625,
+            "height": 2789.703125,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "tiers",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 11298.796875,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 11321.796875,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 303.890625,
+            "height": 10994.90625,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        },
+        {
+          "route": "player-search",
+          "header": {
+            "left": 0,
+            "right": 305,
+            "top": 0,
+            "height": 65.515625,
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "paddingLeft": "12px"
+          },
+          "logo": {
+            "left": 12,
+            "right": 108,
+            "top": 10,
+            "height": 44.515625,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "footer": {
+            "left": 0,
+            "right": 305,
+            "top": 561.828125,
+            "height": 253.75,
+            "paddingTop": "22px",
+            "paddingBottom": "22px",
+            "paddingLeft": "12px"
+          },
+          "footerLogo": {
+            "left": 12,
+            "right": 124,
+            "top": 584.828125,
+            "height": 44,
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          },
+          "root": {
+            "left": 0,
+            "right": 305,
+            "top": 122.890625,
+            "height": 438.9375,
+            "paddingTop": "16px",
+            "paddingBottom": "24px",
+            "paddingLeft": "12px"
+          },
+          "titleLeft": 12,
+          "overflow": 0
+        }
+      ],
+      "backForward": true
+    }
+  ]
+}

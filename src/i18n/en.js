@@ -1,9 +1,11 @@
 import patches from './patches.js';
+import {en as dashboard} from './dashboard.js';
 import matchups from './matchups.js';
 import {en as templates} from './templates.js';
 import common from './common.js';
 import {en as extras} from './extras.js';
 export default {
+ ...dashboard,
  'map.chartTitle':'{metric} · Map comparison',
  'map.baselineMissing':'This metric is unavailable for the all-maps baseline.',
  'map.history':'View observations',

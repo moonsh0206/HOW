@@ -81,7 +81,7 @@ export function createHeroController({ model, view, service, statisticsService, 
     finally { if(token===heroGeneration){loading = false; render();} }
   }
   function route() {
-      if (routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/players/')||routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/heroes/')||['#/meta','#/player-search'].includes(routeHash(location,import.meta.env?.BASE_URL??'/'))) return;
+      if (routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/players/')||routeHash(location,import.meta.env?.BASE_URL??'/').startsWith('#/heroes/')||['#/meta','#/dashboard','#/player-search'].includes(routeHash(location,import.meta.env?.BASE_URL??'/'))) return;
     const favorites = routeHash(location,import.meta.env?.BASE_URL??'/') === '#favorites';
     if (model.state.favoritesOnly !== favorites) {
       Object.assign(model.state, { favoritesOnly: favorites, role: 'all', query: '' });

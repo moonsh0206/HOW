@@ -1,5 +1,7 @@
 /* Visual foundation only. Entity colors, chart data and layout breakpoints stay local. */
 :root{
+ --content-max-width:1600px;
+ --page-gutter:24px;
  --surface-page:#10151e;
  --surface-card:#18222f;
  --surface-inset:#131b27;

@@ -23,7 +23,7 @@ test('all View literal messages are extracted and every called key exists in bot
 test('hybrid routes preserve language, base, tabs, opaque IDs and legacy hash routes',()=>{
  for(const base of ['/','/HOW/'])for(const lang of ['ko','en']){
   const path=localizedURL('#/heroes/genji/perks',lang,base);assert.equal(path,`${base}${lang}/heroes/genji/perks`);assert.equal(routeHash({pathname:path,hash:''},base),'#/heroes/genji/perks');
-  assert.equal(routeHash({pathname:`${base}${lang}/index.html`,hash:''},base),'#/tiers');assert.equal(localizedURL('#/unknown',lang,base),`${base}${lang}/tiers#/unknown`);
+  assert.equal(routeHash({pathname:`${base}${lang}/index.html`,hash:''},base),'#/dashboard');assert.equal(localizedURL('#/unknown',lang,base),`${base}${lang}/tiers#/unknown`);
   const id='abc%257Cdef';assert.equal(localizedURL('#/players/'+id,lang,base),`${base}${lang}/player-search#/players/${id}`);assert.equal(routeHash({pathname:base+lang+'/tiers',hash:'#favorites'},base),'#favorites');
  }assert.throws(()=>localizedURL('#/tiers','fr'));
 });

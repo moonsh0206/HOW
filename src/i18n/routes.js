@@ -3,15 +3,15 @@ export function routeHash(location,base='/'){
  if(location.hash&&location.hash!=='#')return location.hash;
  const path=(location.pathname.startsWith(base)?location.pathname.slice(base.length):'').replace(/\/index\.html$/,'/').replace(/\/$/,'');
  const match=/^(ko|en|ja)(?:\/(.*))?$/.exec(path);
- return match&&match[2]?'#/'+match[2]:'#/tiers';
+ return match&&match[2]?'#/'+match[2]:'#/dashboard';
 }
 export function localizedURL(hash,language,base='/'){
  if(!LANGUAGES.includes(language)||!base.startsWith('/')||!base.endsWith('/')||base.startsWith('//'))throw Error('Invalid localized route');
  const route=hash.replace(/^#\/?/,'');
  if(/^players\//.test(route))return `${base}${language}/player-search#/${route}`;
  if(['heroes','favorites'].includes(route))return `${base}${language}/tiers#${route}`;
- if(route&&!/^(tiers|meta|player-search)$/.test(route)&&!/^heroes\/[a-z0-9-]+(?:\/(overview|abilities|perks))?$/.test(route))return `${base}${language}/tiers#/${route}`;
- const path=route||'tiers';
+ if(route&&!/^(dashboard|tiers|meta|player-search)$/.test(route)&&!/^heroes\/[a-z0-9-]+(?:\/(overview|abilities|perks))?$/.test(route))return `${base}${language}/tiers#/${route}`;
+ const path=route||'dashboard';
  return `${base}${language}/${path}`;
 }
 export function installLocalizedNavigation({base='/',window:win=window}={}){

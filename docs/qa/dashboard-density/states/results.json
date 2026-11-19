@@ -1,0 +1,1966 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1920,
+          "gap": "58px",
+          "padding": "16px 320px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1552,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 379,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 855.546875,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 829.546875,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 684.453125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.328125,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 509.34375,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1552,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1600,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history",
+          "dashboard-counters",
+          "dashboard-maps",
+          "dashboard-changes"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [
+        {
+          "name": "loading",
+          "height": 910.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "error",
+          "height": 990.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "empty",
+          "height": 910.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "restored",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "chart-fixture-middle",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "chart-fixture-final",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 88,
+          "height": 88,
+          "width": 1440,
+          "gap": "58px",
+          "padding": "16px 80px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 104,
+          "bottom": 139,
+          "height": 35,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 151,
+          "bottom": 215,
+          "height": 64,
+          "width": 1392,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 221,
+          "bottom": 239,
+          "height": 18,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 251,
+            "bottom": 363,
+            "height": 112,
+            "width": 339,
+            "gap": "4px 10px",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 766.65625,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 462,
+          "bottom": 709,
+          "height": 247,
+          "width": 740.65625,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 613.328125,
+          "gap": "normal",
+          "padding": "12px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 764,
+            "bottom": 989,
+            "height": 225,
+            "width": 456,
+            "gap": "normal",
+            "padding": "12px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 251,
+          "bottom": 363,
+          "height": 112,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 375,
+          "bottom": 752,
+          "height": 377,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 764,
+          "bottom": 989,
+          "height": 225,
+          "width": 1392,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 88,
+          "bottom": 1005,
+          "height": 917,
+          "width": 1440,
+          "gap": "normal",
+          "padding": "16px 24px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen",
+          "dashboard-ranking",
+          "dashboard-history"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [
+        {
+          "name": "loading",
+          "height": 910.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "error",
+          "height": 990.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "empty",
+          "height": 910.1875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 344,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 224,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 224,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "restored",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "chart-fixture-middle",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        },
+        {
+          "name": "chart-fixture-final",
+          "height": 917,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 377,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 225,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 225,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            112,
+            112,
+            112,
+            112
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 390,
+          "gap": "8px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 383.515625,
+          "height": 170,
+          "width": 366,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 389.515625,
+          "bottom": 453.515625,
+          "height": 64,
+          "width": 366,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 463.515625,
+            "bottom": 607.515625,
+            "height": 144,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 615.515625,
+            "bottom": 779.90625,
+            "height": 164.390625,
+            "width": 179,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 791.90625,
+          "bottom": 1559.90625,
+          "height": 768,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 894.90625,
+          "bottom": 1500.90625,
+          "height": 606,
+          "width": 336,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1571.90625,
+          "bottom": 1751.5,
+          "height": 179.59375,
+          "width": 366,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1763.5,
+            "bottom": 2054.5,
+            "height": 291,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2066.5,
+            "bottom": 2407.5,
+            "height": 341,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2419.5,
+            "bottom": 2511.09375,
+            "height": 91.59375,
+            "width": 366,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 463.515625,
+          "bottom": 779.90625,
+          "height": 316.390625,
+          "width": 366,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 791.90625,
+          "bottom": 1751.5,
+          "height": 959.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1763.5,
+          "bottom": 2511.09375,
+          "height": 747.59375,
+          "width": 366,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2543.09375,
+          "height": 2428.578125,
+          "width": 390,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy",
+          "kiriko",
+          "junker-queen"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [
+        {
+          "name": "loading",
+          "height": 1558.5625,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "error",
+          "height": 1698.5625,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "empty",
+          "height": 1558.5625,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "restored",
+          "height": 2428.578125,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            164.390625,
+            164.390625
+          ]
+        },
+        {
+          "name": "chart-fixture-middle",
+          "height": 2578.921875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 329.9375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            164.390625,
+            164.390625
+          ]
+        },
+        {
+          "name": "chart-fixture-final",
+          "height": 2578.921875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 329.9375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 91.59375,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            164.390625,
+            164.390625
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "measurements": {
+        "header": {
+          "top": 0,
+          "bottom": 65.515625,
+          "height": 65.515625,
+          "width": 320,
+          "gap": "5px",
+          "padding": "10px 12px",
+          "fontSize": "16px"
+        },
+        "heading": {
+          "top": 130.515625,
+          "bottom": 201.515625,
+          "height": 71,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "filter": {
+          "top": 213.515625,
+          "bottom": 400.703125,
+          "height": 187.1875,
+          "width": 296,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "context": {
+          "top": 406.703125,
+          "bottom": 494.703125,
+          "height": 88,
+          "width": 296,
+          "gap": "3px 12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "cards": [
+          {
+            "top": 504.703125,
+            "bottom": 661.09375,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 504.703125,
+            "bottom": 661.09375,
+            "height": 156.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 669.09375,
+            "bottom": 833.484375,
+            "height": 164.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 669.09375,
+            "bottom": 833.484375,
+            "height": 164.390625,
+            "width": 144,
+            "gap": "4px",
+            "padding": "10px",
+            "fontSize": "16px"
+          }
+        ],
+        "ranking": {
+          "top": 845.484375,
+          "bottom": 1613.484375,
+          "height": 768,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "table": {
+          "top": 948.484375,
+          "bottom": 1554.484375,
+          "height": 606,
+          "width": 266,
+          "gap": "normal",
+          "padding": "0px",
+          "fontSize": "12px"
+        },
+        "history": {
+          "top": 1625.484375,
+          "bottom": 1805.078125,
+          "height": 179.59375,
+          "width": 296,
+          "gap": "normal",
+          "padding": "14px",
+          "fontSize": "16px"
+        },
+        "bottom": [
+          {
+            "top": 1817.078125,
+            "bottom": 2108.078125,
+            "height": 291,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2120.078125,
+            "bottom": 2461.078125,
+            "height": 341,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          },
+          {
+            "top": 2473.078125,
+            "bottom": 2585.46875,
+            "height": 112.390625,
+            "width": 296,
+            "gap": "normal",
+            "padding": "14px",
+            "fontSize": "16px"
+          }
+        ],
+        "highlights": {
+          "top": 504.703125,
+          "bottom": 833.484375,
+          "height": 328.78125,
+          "width": 296,
+          "gap": "8px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "middle": {
+          "top": 845.484375,
+          "bottom": 1805.078125,
+          "height": 959.59375,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "bottomGrid": {
+          "top": 1817.078125,
+          "bottom": 2585.46875,
+          "height": 768.390625,
+          "width": 296,
+          "gap": "12px",
+          "padding": "0px",
+          "fontSize": "16px"
+        },
+        "dashboard": {
+          "top": 114.515625,
+          "bottom": 2617.46875,
+          "height": 2502.953125,
+          "width": 320,
+          "gap": "normal",
+          "padding": "16px 12px 20px",
+          "fontSize": "16px"
+        },
+        "overflow": 0,
+        "zoom": 1,
+        "rows": 6,
+        "fullVisible": [
+          "winston",
+          "cassidy"
+        ]
+      },
+      "fingerprint": {
+        "features": [
+          [
+            "winston",
+            "14.4%"
+          ],
+          [
+            "cassidy",
+            "30.2%"
+          ],
+          [
+            "kiriko",
+            "43.1%"
+          ],
+          [
+            "junker-queen",
+            "META 90.4"
+          ]
+        ],
+        "rows": [
+          [
+            "junker-queen",
+            [
+              "54.0%",
+              "11.0%",
+              "25.9%"
+            ]
+          ],
+          [
+            "brigitte",
+            [
+              "53.6%",
+              "15.1%",
+              "3.0%"
+            ]
+          ],
+          [
+            "reaper",
+            [
+              "52.2%",
+              "12.9%",
+              "10.5%"
+            ]
+          ],
+          [
+            "zenyatta",
+            [
+              "53.2%",
+              "13.6%",
+              "6.7%"
+            ]
+          ],
+          [
+            "winston",
+            [
+              "51.9%",
+              "14.4%",
+              "9.2%"
+            ]
+          ],
+          [
+            "pharah",
+            [
+              "52.1%",
+              "6.8%",
+              "37.5%"
+            ]
+          ]
+        ]
+      },
+      "states": [
+        {
+          "name": "loading",
+          "height": 1620.546875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "error",
+          "height": 1784.546875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "empty",
+          "height": 1620.546875,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 194.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 117.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 210.796875,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            144,
+            144,
+            144,
+            144
+          ]
+        },
+        {
+          "name": "restored",
+          "height": 2502.953125,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 179.59375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            156.390625,
+            156.390625,
+            164.390625,
+            164.390625
+          ]
+        },
+        {
+          "name": "chart-fixture-middle",
+          "height": 2641.09375,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 299.734375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            156.390625,
+            156.390625,
+            164.390625,
+            164.390625
+          ]
+        },
+        {
+          "name": "chart-fixture-final",
+          "height": 2641.09375,
+          "overflow": 0,
+          "cards": 4,
+          "panels": [
+            {
+              "id": "dashboard-ranking",
+              "height": 768,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-history",
+              "height": 299.734375,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-counters",
+              "height": 291,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-maps",
+              "height": 341,
+              "extraWidth": 0
+            },
+            {
+              "id": "dashboard-changes",
+              "height": 112.390625,
+              "extraWidth": 0
+            }
+          ],
+          "kpis": [
+            156.390625,
+            156.390625,
+            164.390625,
+            164.390625
+          ]
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

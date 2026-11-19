@@ -1,6 +1,8 @@
 // HOW interface translations; hero names and descriptions use OverFast ja-jp.
 import {ja as extras} from './extras.js';
+import {ja as dashboard} from './dashboard.js';
 export default {
+ ...dashboard,
   'map.chartTitle':'{metric}・マップ比較',
   'map.baselineMissing':'全マップ基準のこの指標は提供されていません。',
   'map.history':'観測履歴を見る',

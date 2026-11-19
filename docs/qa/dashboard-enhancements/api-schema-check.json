@@ -1,0 +1,432 @@
+{
+  "checkedAt": "2026-11-18T04:10:26.683Z",
+  "endpoint": {
+    "get": {
+      "tags": [
+        "🦸 Heroes"
+      ],
+      "summary": "Get hero stats",
+      "description": "Get hero statistics usage, filtered by platform, region, role, etc.Only Role Queue gamemodes are concerned.<br />**Cache TTL : 1 hour.**",
+      "operationId": "get_hero_stats",
+      "parameters": [
+        {
+          "name": "platform",
+          "in": "query",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/PlayerPlatform",
+            "title": "Player platform filter",
+            "examples": [
+              "pc"
+            ]
+          }
+        },
+        {
+          "name": "gamemode",
+          "in": "query",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/PlayerGamemode",
+            "title": "Gamemode",
+            "description": "Filter on a specific gamemode.",
+            "examples": [
+              "competitive"
+            ]
+          },
+          "description": "Filter on a specific gamemode."
+        },
+        {
+          "name": "region",
+          "in": "query",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/PlayerRegion",
+            "title": "Region",
+            "description": "Filter on a specific player region.",
+            "examples": [
+              "europe"
+            ]
+          },
+          "description": "Filter on a specific player region."
+        },
+        {
+          "name": "role",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Role"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Role filter",
+            "examples": [
+              "support"
+            ]
+          }
+        },
+        {
+          "name": "map",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MapKey"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Map key filter",
+            "examples": [
+              "hanaoka"
+            ]
+          }
+        },
+        {
+          "name": "competitive_division",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CompetitiveDivisionFilter"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Competitive division filter",
+            "examples": [
+              "diamond"
+            ]
+          }
+        },
+        {
+          "name": "order_by",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string",
+            "pattern": "^(hero|winrate|pickrate|banrate):(asc|desc)$",
+            "title": "Ordering field and the way it's arranged (asc[ending]/desc[ending])",
+            "default": "hero:asc"
+          }
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Successful Response",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/HeroStatsSummary"
+                },
+                "title": "Response Get Hero Stats"
+              }
+            }
+          },
+          "headers": {
+            "X-Cache-TTL": {
+              "description": "The TTL value for the cached response, in seconds",
+              "schema": {
+                "type": "string",
+                "example": "600"
+              }
+            },
+            "Age": {
+              "description": "Number of seconds since the response payload was generated (RFC 7234 §5.1). Present on FastAPI-served responses; also set by nginx for Valkey cache hits.",
+              "schema": {
+                "type": "string",
+                "example": "42"
+              }
+            },
+            "Cache-Control": {
+              "description": "Standard caching directives (RFC 7234 + RFC 5861). ``max-age`` reflects the staleness threshold in seconds. ``stale-while-revalidate`` is present when a background refresh is in-flight, indicating how long stale data may still be served.",
+              "schema": {
+                "type": "string",
+                "example": "public, max-age=86400, stale-while-revalidate=60"
+              }
+            },
+            "X-Cache-Status": {
+              "description": "Indicates whether the response was served from a fresh cache entry (``hit``) or a stale one while a background refresh is in-flight (``stale``).",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "hit",
+                  "stale"
+                ],
+                "example": "hit"
+              }
+            }
+          }
+        },
+        "400": {
+          "description": "Bad Request Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BadRequestErrorMessage"
+              }
+            }
+          }
+        },
+        "422": {
+          "description": "Validation Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HTTPValidationError"
+              }
+            }
+          }
+        },
+        "429": {
+          "description": "API Rate Limit Error",
+          "headers": {
+            "Retry-After": {
+              "description": "Indicates how long to wait before making a new request",
+              "schema": {
+                "type": "string",
+                "example": "1"
+              }
+            }
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RateLimitErrorMessage"
+              }
+            }
+          }
+        },
+        "500": {
+          "description": "Internal Server Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InternalServerErrorMessage"
+              }
+            }
+          }
+        },
+        "503": {
+          "description": "Blizzard Rate Limit Error",
+          "headers": {
+            "Retry-After": {
+              "description": "Indicates how long to wait before making a new request",
+              "schema": {
+                "type": "string",
+                "example": "5"
+              }
+            }
+          },
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlizzardRateLimitErrorMessage"
+              }
+            }
+          }
+        },
+        "504": {
+          "description": "Blizzard Server Error",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BlizzardErrorMessage"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "schemas": {
+    "HeroStat": {
+      "type": "object",
+      "properties": {
+        "hero": {
+          "$ref": "#/components/schemas/HeroKey"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Value",
+          "description": "Value of the statistic for the given hero. Duration values are in seconds."
+        }
+      },
+      "required": [
+        "hero",
+        "value"
+      ]
+    },
+    "HeroStatsSummary": {
+      "type": "object",
+      "properties": {
+        "hero": {
+          "$ref": "#/components/schemas/HeroKey",
+          "description": "Hero key used to identify Overwatch heroes in general"
+        },
+        "pickrate": {
+          "type": "number",
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Pickrate",
+          "description": "Pickrate (in percent)"
+        },
+        "winrate": {
+          "type": "number",
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Winrate",
+          "description": "Winrate (in percent)"
+        },
+        "banrate": {
+          "anyOf": [
+            {
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Banrate",
+          "description": "Banrate (in percent). Only available for the competitive gamemode."
+        }
+      },
+      "required": [
+        "hero",
+        "pickrate",
+        "winrate"
+      ]
+    },
+    "Map": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "$ref": "#/components/schemas/MapKey",
+          "description": "Key name of the map",
+          "examples": [
+            "aatlis"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Name of the map",
+          "examples": [
+            "Aatlis"
+          ]
+        },
+        "screenshot": {
+          "type": "string",
+          "maxLength": 2083,
+          "minLength": 1,
+          "format": "uri",
+          "title": "Screenshot",
+          "description": "Screenshot of the map",
+          "examples": [
+            "https://overfast-api.tekrop.fr/static/maps/aatlis.jpg"
+          ]
+        },
+        "gamemodes": {
+          "items": {
+            "$ref": "#/components/schemas/MapGamemode"
+          },
+          "type": "array",
+          "title": "Gamemodes",
+          "description": "Main gamemodes on which the map is playable"
+        },
+        "uses": {
+          "items": {
+            "$ref": "#/components/schemas/MapUse"
+          },
+          "type": "array",
+          "maxItems": 5,
+          "minItems": 1,
+          "title": "Uses",
+          "description": "Uses of the map: standard play, Stadium, Workshop, Arcade, or training",
+          "examples": [
+            [
+              "standard"
+            ],
+            [
+              "stadium"
+            ],
+            [
+              "standard",
+              "stadium"
+            ],
+            [
+              "workshop"
+            ],
+            [
+              "arcade"
+            ],
+            [
+              "training"
+            ]
+          ]
+        },
+        "location": {
+          "type": "string",
+          "title": "Location",
+          "description": "Location of the map",
+          "examples": [
+            "Morocco"
+          ]
+        },
+        "country_code": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 2,
+              "minLength": 2
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Country Code",
+          "description": "Country Code of the location of the map. If not defined, it's null.",
+          "examples": [
+            "MA"
+          ]
+        }
+      },
+      "required": [
+        "key",
+        "name",
+        "screenshot",
+        "gamemodes",
+        "uses",
+        "location",
+        "country_code"
+      ]
+    },
+    "MapGamemode": {
+      "type": "string"
+    },
+    "MapKey": {
+      "type": "string"
+    },
+    "MapUse": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 293
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 180.046875,
+          "right": 293
+        },
+        "credit": {
+          "left": 12,
+          "right": 293
+        },
+        "height": 2600.5625,
+        "bottom": 2691.078125,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 293
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 186.203125,
+          "right": 293
+        },
+        "credit": {
+          "left": 12,
+          "right": 293
+        },
+        "height": 2813.328125,
+        "bottom": 2912.21875,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 293
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 194.5625,
+          "right": 293
+        },
+        "credit": {
+          "left": 12,
+          "right": 293
+        },
+        "height": 2789.3125,
+        "bottom": 2888.203125,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    }
+  ]
+}

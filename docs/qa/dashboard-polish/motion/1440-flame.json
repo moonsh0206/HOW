@@ -1,0 +1,31 @@
+[
+  {
+    "duration": 600,
+    "samples": [
+      {
+        "delay": 0,
+        "connected": true,
+        "filter": "brightness(1)",
+        "text": "90.4"
+      },
+      {
+        "delay": 180,
+        "connected": true,
+        "filter": "brightness(1)",
+        "text": "90.4"
+      },
+      {
+        "delay": 350,
+        "connected": true,
+        "filter": "brightness(1.07517)",
+        "text": "90.4"
+      },
+      {
+        "delay": 700,
+        "connected": true,
+        "filter": "brightness(1.00036)",
+        "text": "90.4"
+      }
+    ]
+  }
+]

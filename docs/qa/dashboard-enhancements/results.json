@@ -1,0 +1,1715 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1342
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1206,
+          "right": 1342
+        },
+        "credit": {
+          "left": 1224.265625,
+          "right": 1342
+        },
+        "height": 932.140625,
+        "bottom": 1004.140625,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1342
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1206,
+          "right": 1342
+        },
+        "credit": {
+          "left": 1225,
+          "right": 1342
+        },
+        "height": 934,
+        "bottom": 1006,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1342
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1206,
+          "right": 1342
+        },
+        "credit": {
+          "left": 1225,
+          "right": 1342
+        },
+        "height": 966.140625,
+        "bottom": 1038.140625,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1416
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1280,
+          "right": 1416
+        },
+        "credit": {
+          "left": 1298.265625,
+          "right": 1416
+        },
+        "height": 933,
+        "bottom": 1005,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1416
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1280,
+          "right": 1416
+        },
+        "credit": {
+          "left": 1299,
+          "right": 1416
+        },
+        "height": 934,
+        "bottom": 1006,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 24,
+          "right": 132
+        },
+        "content": {
+          "left": 24,
+          "right": 1416
+        },
+        "footer": {
+          "left": 24,
+          "right": 156
+        },
+        "language": {
+          "left": 1280,
+          "right": 1416
+        },
+        "credit": {
+          "left": 1299,
+          "right": 1416
+        },
+        "height": 951,
+        "bottom": 1023,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 184,
+          "right": 292
+        },
+        "content": {
+          "left": 184,
+          "right": 1736
+        },
+        "footer": {
+          "left": 184,
+          "right": 316
+        },
+        "language": {
+          "left": 1600,
+          "right": 1736
+        },
+        "credit": {
+          "left": 1618.265625,
+          "right": 1736
+        },
+        "height": 933,
+        "bottom": 1005,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 184,
+          "right": 292
+        },
+        "content": {
+          "left": 184,
+          "right": 1736
+        },
+        "footer": {
+          "left": 184,
+          "right": 316
+        },
+        "language": {
+          "left": 1600,
+          "right": 1736
+        },
+        "credit": {
+          "left": 1619,
+          "right": 1736
+        },
+        "height": 934,
+        "bottom": 1006,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 184,
+          "right": 292
+        },
+        "content": {
+          "left": 184,
+          "right": 1736
+        },
+        "footer": {
+          "left": 184,
+          "right": 316
+        },
+        "language": {
+          "left": 1600,
+          "right": 1736
+        },
+        "credit": {
+          "left": 1619,
+          "right": 1736
+        },
+        "height": 951,
+        "bottom": 1023,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 418
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 298,
+          "right": 418
+        },
+        "credit": {
+          "left": 12,
+          "right": 418
+        },
+        "height": 2476.96875,
+        "bottom": 2559.484375,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 418
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 298,
+          "right": 418
+        },
+        "credit": {
+          "left": 12,
+          "right": 418
+        },
+        "height": 2572.953125,
+        "bottom": 2655.46875,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 418
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 298,
+          "right": 418
+        },
+        "credit": {
+          "left": 12,
+          "right": 418
+        },
+        "height": 2510.15625,
+        "bottom": 2592.671875,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 378
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 258,
+          "right": 378
+        },
+        "credit": {
+          "left": 12,
+          "right": 378
+        },
+        "height": 2492.96875,
+        "bottom": 2575.484375,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 378
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 258,
+          "right": 378
+        },
+        "credit": {
+          "left": 12,
+          "right": 378
+        },
+        "height": 2608.953125,
+        "bottom": 2691.46875,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 378
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 258,
+          "right": 378
+        },
+        "credit": {
+          "left": 12,
+          "right": 378
+        },
+        "height": 2572.140625,
+        "bottom": 2654.65625,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 308
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 188,
+          "right": 308
+        },
+        "credit": {
+          "left": 12,
+          "right": 308
+        },
+        "height": 2554.953125,
+        "bottom": 2637.46875,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "en",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 308
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 188,
+          "right": 308
+        },
+        "credit": {
+          "left": 12,
+          "right": 308
+        },
+        "height": 2779.328125,
+        "bottom": 2861.84375,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 700,
+      "lang": "ja",
+      "align": {
+        "header": {
+          "left": 12,
+          "right": 108
+        },
+        "content": {
+          "left": 12,
+          "right": 308
+        },
+        "footer": {
+          "left": 12,
+          "right": 124
+        },
+        "language": {
+          "left": 188,
+          "right": 308
+        },
+        "credit": {
+          "left": 12,
+          "right": 308
+        },
+        "height": 2779.3125,
+        "bottom": 2861.828125,
+        "overflow": 0,
+        "image": "https://overfast-api.tekrop.fr/static/maps/busan.jpg"
+      },
+      "leaders": [
+        {
+          "metric": "winRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "domina",
+              "value": "54.6%"
+            },
+            {
+              "role": "damage",
+              "key": "symmetra",
+              "value": "52.7%"
+            },
+            {
+              "role": "support",
+              "key": "brigitte",
+              "value": "53.6%"
+            }
+          ]
+        },
+        {
+          "metric": "banRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "doomfist",
+              "value": "35.1%"
+            },
+            {
+              "role": "damage",
+              "key": "pharah",
+              "value": "37.5%"
+            },
+            {
+              "role": "support",
+              "key": "jetpack-cat",
+              "value": "48.7%"
+            }
+          ]
+        },
+        {
+          "metric": "pickRate",
+          "expected": [
+            {
+              "role": "tank",
+              "key": "winston",
+              "value": "14.4%"
+            },
+            {
+              "role": "damage",
+              "key": "cassidy",
+              "value": "30.2%"
+            },
+            {
+              "role": "support",
+              "key": "kiriko",
+              "value": "43.1%"
+            }
+          ]
+        }
+      ],
+      "statsRequests": 6,
+      "errors": []
+    }
+  ]
+}

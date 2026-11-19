@@ -1,9 +1,11 @@
 import patches from './patches.js';
+import {ko as dashboard} from './dashboard.js';
 import matchups from './matchups.js';
 import {ko as templates} from './templates.js';
 import common from './common.js';
 import {ko as extras} from './extras.js';
 export default {
+ ...dashboard,
  'map.chartTitle':'{metric} · 전장 비교',
  'map.baselineMissing':'전체 전장 기준의 해당 지표가 제공되지 않습니다.',
  'map.history':'관측 이력 보기',

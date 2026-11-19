@@ -1,0 +1,2387 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "times": [
+        5525,
+        6024,
+        5924
+      ],
+      "samples": [
+        {
+          "metric": "winRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.616343",
+                "transform": "none",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.91652)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.169284",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.9843)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.616343",
+                "transform": "none",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.91652)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.169284",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.9843)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.616343",
+                "transform": "none",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.91652)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.169284",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.9843)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 17.08500000007973
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "6.27704e-05",
+                "transform": "none",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.94266)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.903419",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.579484)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "6.27704e-05",
+                "transform": "none",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.94266)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.903419",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.579484)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "6.27704e-05",
+                "transform": "none",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.94266)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.903419",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.579484)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.808697",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.14782)",
+                "time": 166.68500000007924
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "banRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.102549",
+                "transform": "none",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.20968)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.558219",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.65069)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.102549",
+                "transform": "none",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.20968)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.558219",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.65069)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.102549",
+                "transform": "none",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.20968)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.558219",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.65069)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.0785275",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.52884)",
+                "time": 66.68300000682947
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.969895",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.180631)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.969895",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.180631)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.969895",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.180631)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.945587",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.326478)",
+                "time": 233.38300000683
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "pickRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.000805529",
+                "transform": "none",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.73461)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.873793",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.757245)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.000805529",
+                "transform": "none",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.73461)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.873793",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.757245)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.000805529",
+                "transform": "none",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.73461)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.873793",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.757245)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.743897",
+                "transform": "matrix(1, 0, 0, 1, 0, 1.53662)",
+                "time": 150.0969999970394
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          }
+        }
+      ],
+      "slowBefore": {
+        "aura": "0.649296",
+        "magma": "78.7581% 50%",
+        "animations": [
+          {
+            "name": "dashboard-aura",
+            "duration": 9200
+          },
+          {
+            "name": "dashboard-magma",
+            "duration": 7200
+          }
+        ]
+      },
+      "slowAfter": {
+        "aura": "0.646222",
+        "magma": "14.184% 50%"
+      },
+      "focusPause": true,
+      "hoverPause": true,
+      "reduced": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "times": [
+        5520,
+        5952,
+        5988
+      ],
+      "samples": [
+        {
+          "metric": "winRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.0517135",
+                "transform": "none",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.86334)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.651063",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.09362)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.0517135",
+                "transform": "none",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.86334)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.651063",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.09362)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.0517135",
+                "transform": "none",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.86334)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.651063",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.09362)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.260096",
+                "transform": "matrix(1, 0, 0, 1, 0, 4.43942)",
+                "time": 83.32000000183548
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.978233",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.130603)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.978233",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.130603)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.978233",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.130603)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.961399",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.231607)",
+                "time": 250.0200000018342
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "banRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "none",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.00351571",
+                "transform": "none",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.40104)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.835618",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.98629)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.00351571",
+                "transform": "none",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.40104)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.835618",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.98629)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.00351571",
+                "transform": "none",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -5.40104)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.835618",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.98629)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.658963",
+                "transform": "matrix(1, 0, 0, 1, 0, 2.04622)",
+                "time": 133.3250000010242
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "pickRate",
+          "start": {
+            "animations": [
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.624191",
+                "transform": "none",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.895643)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.165442",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.00735)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.624191",
+                "transform": "none",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.895643)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.165442",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.00735)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "DIV",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "0.624191",
+                "transform": "none",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 180,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.895643)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.165442",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.00735)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 6)",
+                "time": 16.679000007695066
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.943974",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.336155)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.943974",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.336155)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "IMG",
+                "delay": 0,
+                "duration": 440,
+                "opacity": "0.943974",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.336155)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "H2",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "STRONG",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              },
+              {
+                "target": "SMALL",
+                "delay": 60,
+                "duration": 380,
+                "opacity": "0.894132",
+                "transform": "matrix(1, 0, 0, 1, 0, 0.635207)",
+                "time": 199.0790000076963
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          }
+        }
+      ],
+      "slowBefore": {
+        "aura": "0.649863",
+        "magma": "81.7527% 50%",
+        "animations": [
+          {
+            "name": "dashboard-aura",
+            "duration": 9200
+          },
+          {
+            "name": "dashboard-magma",
+            "duration": 7200
+          }
+        ]
+      },
+      "slowAfter": {
+        "aura": "0.649625",
+        "magma": "7.91069% 50%"
+      },
+      "focusPause": true,
+      "hoverPause": true,
+      "reduced": true,
+      "errors": []
+    }
+  ]
+}

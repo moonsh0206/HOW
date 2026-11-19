@@ -1,0 +1,27 @@
+/* One frame for every route. Inner cards retain their own spacing. */
+:root{--page-block-gap:16px;--page-end-gap:24px}
+html{scrollbar-gutter:stable}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+body>main{flex:1;min-width:0;display:flex;flex-direction:column}
+.site-header,.site-footer{flex-shrink:0;padding-inline:max(var(--page-gutter),calc((100% - var(--content-max-width))/2 + var(--page-gutter)))}
+.site-header{gap:40px}
+.page-shell,#list-page>.page-shell,#meta-page,#player-search-page,#dashboard-page{width:100%;max-width:var(--content-max-width);margin:0 auto;padding:var(--page-block-gap) var(--page-gutter) var(--page-end-gap)}
+main>.page-shell,#dashboard-page{flex:1;min-height:0}
+.page-shell>:last-child,#dashboard-page>.dashboard-bottom{margin-bottom:0}
+#list-page{flex:1}
+#list-page .hero-banner{margin-top:var(--page-block-gap)}
+#list-page .banner-content{width:100%;max-width:var(--content-max-width);padding-inline:var(--page-gutter)}
+@media(min-width:768px) and (max-width:1100px){.site-header{gap:20px}.site-header .header-tag{display:none}}
+@media(max-width:767px){
+ :root{--page-gutter:12px}
+ .site-header{gap:8px;min-height:64px;padding-block:10px}
+ .main-menu>a{min-height:48px;padding-block:10px}
+}
+@media(max-width:360px){
+ .site-header{gap:5px}
+ .site-header .header-language{flex-shrink:1;min-width:88px}
+ .site-header .header-language .filter-option-label{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .site-header .header-favorites{flex-shrink:0;white-space:nowrap}
+ .site-header .header-favorites{gap:4px;font-size:11px}
+ .site-header #favorite-count{margin-left:0}
+}

@@ -5,11 +5,15 @@ import jaNames from '../data/jaMapNames.json' with {type:'json'};
 export const MAP_KEYS = new Set(standardMaps.map(map=>map.key));
 export const MAP_NAMES = Object.freeze(Object.defineProperties({},Object.fromEntries(Object.entries(names).map(([key,row])=>[key,{enumerable:true,get:()=>getLanguage()==='ja'?(jaNames[key]??standardMaps.find(map=>map.key===key)?.name??key):getLanguage()==='en'?(standardMaps.find(map=>map.key===key)?.name??key):(row.nameKo??key)}]))));
 const modes = new Set(['control','escort','hybrid','push','flashpoint']);
+export function safeMapScreenshot(value,key){
+ if(!/^[a-z0-9-]+$/.test(key))return '';
+ try{const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password&&!url.search&&!url.hash&&url.hostname==='overfast-api.tekrop.fr'&&new RegExp(`^/static/maps/${key}\\.(jpg|jpeg|png|webp|avif)$`).test(url.pathname)?url.href:'';}catch{return '';}
+}
 export function normalizeMaps(raw) {
   if(!Array.isArray(raw))throw new Error('맵 목록 형식이 올바르지 않습니다.');
   const seen=new Set();
   return raw.filter(map=>map&&MAP_KEYS.has(map.key)&&Array.isArray(map.uses)&&map.uses.includes('standard')&&Array.isArray(map.gamemodes)&&map.gamemodes.some(mode=>modes.has(mode))).map(map=>{
     if(seen.has(map.key)||typeof map.name!=='string'||!map.name.trim())throw new Error('맵 목록 검증에 실패했습니다.');
-    seen.add(map.key);return {key:map.key,name:MAP_NAMES[map.key]??map.name};
+    seen.add(map.key);return {key:map.key,name:MAP_NAMES[map.key]??map.name,screenshot:safeMapScreenshot(map.screenshot,map.key)};
   }).sort((a,b)=>a.name.localeCompare(b.name,'ko'));
 }

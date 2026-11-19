@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "dev:meta": "node scripts/dev-meta-experiment.js",
-    "build": "vite build && node scripts/render-localized-pages.js",
+    "build": "node scripts/derive-role-means.js --apply && vite build && node scripts/render-localized-pages.js",
+    "snapshots:role-means": "node scripts/derive-role-means.js --apply",
     "preview": "vite preview --host 127.0.0.1",
     "test": "node --test tests/*.test.js",
     "test:live": "node --test tests/live/overfast.integration.js",

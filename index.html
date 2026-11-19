@@ -9,16 +9,17 @@
   <a class="skip-link" href="#heroes">영웅 목록으로 건너뛰기</a>
   <header class="site-header">
     <a class="brand header-brand" href="#" aria-label="HOW 홈"><img class="header-logo" src="%BASE_URL%assets/branding/how-header-logo.svg" alt="HOW" width="1518" height="448"><i>HUB OVERWATCH</i></a>
-    <a class="desktop-header-link" href="#heroes">영웅 티어리스트</a><a class="desktop-header-link" href="#/player-search">전적 검색</a>
+    <a class="desktop-header-link" href="#/dashboard">대시보드</a><a class="desktop-header-link" href="#heroes">영웅 통계</a><a class="desktop-header-link" href="#/player-search">전적 검색</a>
     <a href="#favorites" id="nav-favorites" class="header-favorites">즐겨찾기 <span id="favorite-count">0</span></a>
     <span class="header-tag">INFORMATION HUB <b> / 01</b></span>
   </header>
   <nav class="main-menu" aria-label="메인 메뉴">
-    <a href="#/tiers" id="nav-heroes" data-main-menu="list" aria-current="page">티어리스트</a>
-    <a href="#/meta" data-main-menu="meta">현재 메타픽</a>
+    <a href="#/dashboard" data-main-menu="dashboard" aria-current="page">대시보드</a>
+    <a href="#/tiers" id="nav-heroes" data-main-menu="list">영웅 통계</a>
     <a href="#/player-search" data-main-menu="player-search">전적 검색</a>
   </nav>
   <main>
+    <section id="dashboard-page" aria-label="대시보드" hidden></section>
     <div id="list-page">
     <section class="hero-banner" aria-labelledby="hero-title">
       <div class="banner-content">

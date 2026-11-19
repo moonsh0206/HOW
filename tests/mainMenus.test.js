@@ -12,7 +12,8 @@ import {normalizeHeroDetail} from '../src/models/heroDetailModel.js';
 import {normalizeStatistics,DEFAULT_FILTERS} from '../src/models/statisticsModel.js';
 
 test('main menu routes keep legacy bookmarks and hero tab URLs',()=>{
- for(const hash of ['', '#', '#/', '#heroes','#favorites','#/tiers'])assert.deepEqual(parseRoute(hash),{page:'list'});
+ for(const hash of ['', '#', '#/', '#/dashboard'])assert.deepEqual(parseRoute(hash),{page:'dashboard'});
+ for(const hash of ['#heroes','#favorites','#/tiers'])assert.deepEqual(parseRoute(hash),{page:'list'});
  assert.deepEqual(parseRoute('#/meta'),{page:'meta'});assert.deepEqual(parseRoute('#/player-search'),{page:'player-search'});
  for(const tab of ['overview','abilities','perks'])assert.deepEqual(parseRoute('#/heroes/genji/'+tab),{page:'detail',key:'genji',tab});
 });
@@ -48,8 +49,9 @@ test('shared model/filter/insights survive three menus, delayed detail, legacy f
   const filters=document.querySelector('#statistics-filters'),insight=document.querySelector('.meta-insights'),patch=document.querySelector('#current-patch-note'),stats=model.state.statistics;
   Object.assign(model.state,{query:'겐지',role:'damage',sort:'name-asc'});
   const go=async hash=>{location.hash=hash;window.dispatchEvent(new window.HashChangeEvent('hashchange'));await flush();};
-  assert(!document.querySelector('#list-page').hidden);assert.equal(document.querySelectorAll('.main-menu>a').length,3);
-  await go('#/meta');assert(!document.querySelector('#meta-page').hidden);assert(document.querySelector('#list-page').hidden);assert.equal(filters.parentElement.id,'meta-filter-host');assert.equal(insight.parentElement.id,'meta-insights-host');assert.equal(patch.parentElement.id,'meta-patch-host');assert.equal(document.querySelector('[data-main-menu=meta]').getAttribute('aria-current'),'page');
+  assert(!document.querySelector('#dashboard-page').hidden);assert(document.querySelector('#list-page').hidden);assert.equal(document.querySelectorAll('.main-menu>a').length,3);
+  await go('#/tiers');assert(!document.querySelector('#list-page').hidden);
+  await go('#/meta');assert(!document.querySelector('#meta-page').hidden);assert(document.querySelector('#list-page').hidden);assert.equal(filters.parentElement.id,'meta-filter-host');assert.equal(insight.parentElement.id,'meta-insights-host');assert.equal(patch.parentElement.id,'meta-patch-host');assert.equal(document.querySelector('[data-main-menu=dashboard]').getAttribute('aria-current'),'page');
   await go('#/heroes/genji');await go('#/player-search');finishDetail({detail,fetchedAt:'2026-11-06T00:00:00Z'});await flush();assert(document.querySelector('#hero-detail-page').hidden);assert(!document.querySelector('#player-search-page').hidden);assert.match(document.querySelector('#player-search-page').textContent,/플레이어 전적 검색/);assert(document.querySelector('#player-search-page input'));
   await go('#/meta');await go('#/heroes/genji');finishDetail({detail,fetchedAt:'2026-11-06T00:00:00Z'});await flush();assert.equal(document.querySelector('.detail-back').hash,'#/meta');
   await go('#/tiers');assert.equal(filters.parentElement.className,'cohort-banner');assert.equal(model.state.statistics,stats);assert.equal(model.state.query,'겐지');assert.equal(model.state.role,'damage');assert.equal(model.state.sort,'name-asc');
