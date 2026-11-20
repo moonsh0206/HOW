@@ -1,0 +1,104 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "requests": [
+      "/heroes?locale=ko-kr",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=ko-kr",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=ko-kr"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "requests": [
+      "/heroes?locale=en-us",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=en-us",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=en-us"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "requests": [
+      "/heroes?locale=ja-jp",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=ja-jp",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=ja-jp"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "requests": [
+      "/heroes?locale=ko-kr",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=ko-kr",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=ko-kr"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "requests": [
+      "/heroes?locale=en-us",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=en-us",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=en-us"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "requests": [
+      "/heroes?locale=ja-jp",
+      "/maps",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=master",
+      "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=grandmaster",
+      "/heroes/genji?locale=ja-jp",
+      "/players?name=TeKrop&limit=20&offset=0",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/summary",
+      "/players/c65b8798bc61d6ffbba120%7Ccfe9dd77a4382165e2b920bdcc035949/stats/summary?gamemode=competitive&platform=pc",
+      "/heroes/baptiste?locale=ja-jp"
+    ],
+    "errors": []
+  }
+]

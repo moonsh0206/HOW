@@ -1,0 +1,2734 @@
+[
+  {
+    "width": 390,
+    "frames": [
+      {
+        "elapsedMs": 253,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.05887, 0, 0, 1.05887, 2.1804, -3.34341)",
+              "opacity": "0.841348",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04941, 0, 0, 1.07881, -3.39961, 3.58223)",
+              "opacity": "0.71406",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.607126",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.03083, 0, 0, 1.03083, 0.0624927, -1.75074)",
+              "opacity": "0.626343",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04236, 0, 0, 1.04944, -1.72505, 2.28144)",
+              "opacity": "0.551903",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.609194",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02773, 0, 0, 1.02773, -1.3901, 0.71616)",
+              "opacity": "0.567627",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04019, 0, 0, 1.04075, -1.21574, 1.88049)",
+              "opacity": "0.504118",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.530166",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.0399, 0, 0, 1.0399, -0.0401738, -0.661517)",
+              "opacity": "0.674101",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02102, 0, 0, 1.02204, 7.40046, -1.30758)",
+              "opacity": "0.43019",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.378299",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 2657,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.03947, 0, 0, 1.03947, 0.714889, -2.24135)",
+              "opacity": "0.692573",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04924, 0, 0, 1.07695, -3.33681, 3.55104)",
+              "opacity": "0.703215",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.637377",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02632, 0, 0, 1.02632, -0.833967, -0.449637)",
+              "opacity": "0.575835",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03991, 0, 0, 1.03991, -1.15603, 1.82914)",
+              "opacity": "0.499636",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.505355",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05571, 0, 0, 1.05571, 1.77909, -2.85868)",
+              "opacity": "0.812419",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.036, 0, 0, 1.036, -0.46826, 1.10705)",
+              "opacity": "0.483989",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.440554",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05891, 0, 0, 1.05891, 7.39334, -2.57806)",
+              "opacity": "0.840498",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02883, 0, 0, 1.03765, 2.13867, -0.170843)",
+              "opacity": "0.508266",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.308275",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 5204,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02973, 0, 0, 1.02973, -0.0610219, -1.61197)",
+              "opacity": "0.616768",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04439, 0, 0, 1.05755, -2.20049, 2.65607)",
+              "opacity": "0.596552",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.627029",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02, 0, 0, 1.02, -2.26583, 1.70362)",
+              "opacity": "0.500009",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02685, 0, 0, 1.02685, 1.14033, -0.582024)",
+              "opacity": "0.447388",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.420511",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05561, 0, 0, 1.05561, 1.93404, -3.15815)",
+              "opacity": "0.816339",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02222, 0, 0, 1.02222, 1.95302, -1.43562)",
+              "opacity": "0.428891",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.409955",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05452, 0, 0, 1.05452, 6.39057, -2.44218)",
+              "opacity": "0.80801",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.0412, 0, 0, 1.06241, -6.20291, 1.63124)",
+              "opacity": "0.632041",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.305553",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 7770,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02151, 0, 0, 1.02151, -1.9231, 1.1886)",
+              "opacity": "0.518142",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04032, 0, 0, 1.04128, -1.24699, 1.9051)",
+              "opacity": "0.507051",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.547245",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.03407, 0, 0, 1.03407, -0.672178, -0.0937625)",
+              "opacity": "0.623087",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02023, 0, 0, 1.02046, 2.29917, -1.80351)",
+              "opacity": "0.422298",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.398989",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.03318, 0, 0, 1.03318, 0.240404, -1.88453)",
+              "opacity": "0.644405",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02065, 0, 0, 1.02131, 2.21623, -1.72541)",
+              "opacity": "0.426529",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.371547",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.03511, 0, 0, 1.03511, 1.33151, -1.57261)",
+              "opacity": "0.659173",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04899, 0, 0, 1.07799, -11.4519, 2.7652)",
+              "opacity": "0.709926",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.344076",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 10212,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02516, 0, 0, 1.02516, -1.68148, 1.04483)",
+              "opacity": "0.54512",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03592, 0, 0, 1.03592, -0.454078, 1.09216)",
+              "opacity": "0.483666",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.446526",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.05756, 0, 0, 1.05756, 1.98894, -3.09509)",
+              "opacity": "0.828607",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02654, 0, 0, 1.03308, 1.06611, -0.638281)",
+              "opacity": "0.485422",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.323838",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02713, 0, 0, 1.02713, -0.650948, -0.724725)",
+              "opacity": "0.585522",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02656, 0, 0, 1.03312, 1.06237, -0.634884)",
+              "opacity": "0.485606",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.307872",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02936, 0, 0, 1.02936, -0.498638, -1.17234)",
+              "opacity": "0.612346",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04941, 0, 0, 1.07763, -11.6521, 2.82569)",
+              "opacity": "0.706977",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.419304",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 12227,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.04677, 0, 0, 1.04677, 0.767452, -1.71756)",
+              "opacity": "0.734279",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02354, 0, 0, 1.02354, 1.72184, -1.19285)",
+              "opacity": "0.434152",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.411298",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.05827, 0, 0, 1.05827, 2.13558, -3.30949)",
+              "opacity": "0.836768",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03657, 0, 0, 1.05315, -0.89339, 1.21344)",
+              "opacity": "0.585735",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.300143",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02019, 0, 0, 1.02019, -2.22161, 1.63755)",
+              "opacity": "0.502331",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03489, 0, 0, 1.04977, -0.563777, 0.902024)",
+              "opacity": "0.568865",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.301516",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02311, 0, 0, 1.02311, -5.38706, 0.508139)",
+              "opacity": "0.537311",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04577, 0, 0, 1.06307, -8.70815, 2.2957)",
+              "opacity": "0.626892",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.493385",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 15215,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.05891, 0, 0, 1.05891, 2.183, -3.34536)",
+              "opacity": "0.841612",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02122, 0, 0, 1.02245, 2.10481, -1.62011)",
+              "opacity": "0.432234",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.369148",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.03556, 0, 0, 1.03556, 0.419885, -2.01946)",
+              "opacity": "0.66262",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04844, 0, 0, 1.07688, -3.21155, 3.40409)",
+              "opacity": "0.70441",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.331548",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.03935, 0, 0, 1.03935, -0.0741826, -0.768197)",
+              "opacity": "0.66927",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04636, 0, 0, 1.07271, -2.80372, 3.01904)",
+              "opacity": "0.683551",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.334409",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02285, 0, 0, 1.02285, -6.70291, 1.0563)",
+              "opacity": "0.524957",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04029, 0, 0, 1.04116, -4.27822, 1.49818)",
+              "opacity": "0.506383",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.589128",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 17680,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.03942, 0, 0, 1.03942, 0.711028, -2.23844)",
+              "opacity": "0.692182",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02897, 0, 0, 1.03794, 0.592259, -0.190569)",
+              "opacity": "0.509676",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.30505",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02925, 0, 0, 1.02925, -0.170359, -1.44757)",
+              "opacity": "0.610978",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.0496, 0, 0, 1.0784, -3.42225, 3.61798)",
+              "opacity": "0.711193",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.401445",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05988, 0, 0, 1.05988, 2.25207, -3.39221)",
+              "opacity": "0.848953",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04996, 0, 0, 1.07993, -3.50851, 3.68515)",
+              "opacity": "0.719636",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.395785",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.04506, 0, 0, 1.04506, 1.97631, -1.18142)",
+              "opacity": "0.719239",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03515, 0, 0, 1.03515, -1.10172, 0.74977)",
+              "opacity": "0.480599",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.632107",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 20198,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02974, 0, 0, 1.02974, -0.0582264, -1.61618)",
+              "opacity": "0.616916",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04077, 0, 0, 1.06155, -1.71346, 1.98862)",
+              "opacity": "0.627729",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.306698",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02108, 0, 0, 1.02108, -2.02173, 1.33651)",
+              "opacity": "0.512933",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04477, 0, 0, 1.05906, -2.28926, 2.72575)",
+              "opacity": "0.604856",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.495959",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.04667, 0, 0, 1.04667, 1.25893, -2.65047)",
+              "opacity": "0.747803",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04841, 0, 0, 1.07365, -3.14382, 3.39904)",
+              "opacity": "0.6851",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.4779",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05989, 0, 0, 1.05989, 7.77333, -2.67603)",
+              "opacity": "0.849004",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02081, 0, 0, 1.02081, 7.59525, -1.33785)",
+              "opacity": "0.423244",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.636064",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      }
+    ],
+    "performance": {
+      "actual": {
+        "elapsedSeconds": 20.200488000002224,
+        "taskSeconds": 4.058968,
+        "scriptSeconds": 0.003066,
+        "layoutCount": 0,
+        "trace": {
+          "Paint": 2427
+        }
+      },
+      "isolated": {
+        "elapsedSeconds": 2.016881999996258,
+        "taskSeconds": 0.004779000000000089,
+        "layoutCount": 0,
+        "trace": {
+          "Paint": 2
+        },
+        "existingMagmaAndAuraPausedForMeasurementOnly": true
+      }
+    },
+    "cycles": [
+      {
+        "expected": "winRate",
+        "intervalMs": 5520,
+        "middle": [
+          {
+            "opacity": "0.342732",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4035)"
+          },
+          {
+            "opacity": "0.657268",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59649)"
+          },
+          {
+            "opacity": "0.342732",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4035)"
+          },
+          {
+            "opacity": "0.657268",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59649)"
+          },
+          {
+            "opacity": "0.342732",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4035)"
+          },
+          {
+            "opacity": "0.657268",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59649)"
+          }
+        ]
+      },
+      {
+        "expected": "banRate",
+        "intervalMs": 6084,
+        "middle": [
+          {
+            "opacity": "0.22521",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6941)"
+          },
+          {
+            "opacity": "0.77479",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30588)"
+          },
+          {
+            "opacity": "0.22521",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6941)"
+          },
+          {
+            "opacity": "0.77479",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30588)"
+          },
+          {
+            "opacity": "0.22521",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6941)"
+          },
+          {
+            "opacity": "0.77479",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30588)"
+          }
+        ]
+      },
+      {
+        "expected": "pickRate",
+        "intervalMs": 6053,
+        "middle": [
+          {
+            "opacity": "0.276818",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2491)"
+          },
+          {
+            "opacity": "0.723182",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.7509)"
+          },
+          {
+            "opacity": "0.276818",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2491)"
+          },
+          {
+            "opacity": "0.723182",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.7509)"
+          },
+          {
+            "opacity": "0.276818",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2491)"
+          },
+          {
+            "opacity": "0.723182",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.7509)"
+          }
+        ]
+      }
+    ],
+    "offscreenPaused": true,
+    "reduced": [
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 131.65625,
+          "y": 507.765625,
+          "width": 111.671875,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 251.328125,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 689.765625,
+          "width": 350.984375,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "frames": [
+      {
+        "elapsedMs": 268,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.05996, 0, 0, 1.05996, 7.44334, -2.73394)",
+              "opacity": "0.849717",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04854, 0, 0, 1.07707, -10.6247, 2.74689)",
+              "opacity": "0.705366",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.594805",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.03305, 0, 0, 1.03305, 0.758591, -1.50704)",
+              "opacity": "0.643412",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.0437, 0, 0, 1.05481, -6.70949, 2.03051)",
+              "opacity": "0.581451",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.624054",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02308, 0, 0, 1.02308, -6.30645, 1.0523)",
+              "opacity": "0.526912",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04059, 0, 0, 1.04236, -4.3103, 1.56939)",
+              "opacity": "0.512992",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.554079",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.03377, 0, 0, 1.03377, -2.32187, -0.0446826)",
+              "opacity": "0.620478",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02031, 0, 0, 1.02061, 7.51244, -1.43631)",
+              "opacity": "0.423075",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.393486",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 2760,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.04474, 0, 0, 1.04474, 3.66282, -2.04008)",
+              "opacity": "0.733042",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04972, 0, 0, 1.07889, -11.3506, 2.92253)",
+              "opacity": "0.713881",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.633653",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.0282, 0, 0, 1.0282, -1.34267, -0.874952)",
+              "opacity": "0.59838",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04005, 0, 0, 1.04018, -3.89066, 1.48873)",
+              "opacity": "0.501018",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.531309",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05078, 0, 0, 1.05078, 4.01526, -1.78933)",
+              "opacity": "0.769287",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03821, 0, 0, 1.03821, -2.81812, 1.21615)",
+              "opacity": "0.492827",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.456444",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05665, 0, 0, 1.05665, 6.20302, -2.39163)",
+              "opacity": "0.82066",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02646, 0, 0, 1.03292, 3.561, -0.524942)",
+              "opacity": "0.484576",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.319137",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 5190,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.03003, 0, 0, 1.03003, 0.00683341, -1.36907)",
+              "opacity": "0.620211",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04576, 0, 0, 1.06303, -8.29423, 2.3351)",
+              "opacity": "0.626671",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.635298",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02034, 0, 0, 1.02034, -7.19822, 1.27447)",
+              "opacity": "0.504094",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03115, 0, 0, 1.03115, 1.26096, 0.170814)",
+              "opacity": "0.464611",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.432968",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05872, 0, 0, 1.05872, 7.134, -2.67717)",
+              "opacity": "0.840171",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.0248, 0, 0, 1.0248, 4.93642, -0.771092)",
+              "opacity": "0.439186",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.411189",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05761, 0, 0, 1.05761, 6.85917, -2.62673)",
+              "opacity": "0.831688",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03841, 0, 0, 1.05683, -4.12055, 1.24675)",
+              "opacity": "0.604133",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.301887",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 7764,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02349, 0, 0, 1.02349, -4.84944, 0.412293)",
+              "opacity": "0.541914",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04085, 0, 0, 1.04341, -4.51287, 1.60832)",
+              "opacity": "0.518772",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.570894",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02846, 0, 0, 1.02846, -4.30018, 0.499959)",
+              "opacity": "0.574023",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02, 0, 0, 1.02, 7.70948, -1.48176)",
+              "opacity": "0.420008",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.406994",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.03739, 0, 0, 1.03739, 1.83517, -1.70464)",
+              "opacity": "0.676637",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02018, 0, 0, 1.02036, 7.5957, -1.45551)",
+              "opacity": "0.421779",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.386512",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.03911, 0, 0, 1.03911, 2.26295, -1.78315)",
+              "opacity": "0.689839",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04789, 0, 0, 1.07578, -10.2078, 2.65073)",
+              "opacity": "0.698877",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.331876",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 10247,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02173, 0, 0, 1.02173, -6.80724, 1.19017)",
+              "opacity": "0.515152",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03842, 0, 0, 1.03842, -2.93894, 1.24712)",
+              "opacity": "0.493663",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.466054",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.05394, 0, 0, 1.05394, 5.19579, -2.11434)",
+              "opacity": "0.797008",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02429, 0, 0, 1.02858, 4.95524, -0.846511)",
+              "opacity": "0.462876",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.341669",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02904, 0, 0, 1.02904, -0.714442, -1.10556)",
+              "opacity": "0.608496",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02463, 0, 0, 1.02927, 4.73325, -0.795311)",
+              "opacity": "0.466331",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.318062",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02995, 0, 0, 1.02995, -0.0354002, -1.35482)",
+              "opacity": "0.61943",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04985, 0, 0, 1.0794, -11.4485, 2.94137)",
+              "opacity": "0.716677",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.39913",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 12249,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.04005, 0, 0, 1.04005, 0.0194766, -0.689268)",
+              "opacity": "0.675457",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02678, 0, 0, 1.02678, 3.79237, -0.477907)",
+              "opacity": "0.4471",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.416298",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.05974, 0, 0, 1.05974, 7.38764, -2.72372)",
+              "opacity": "0.847998",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03353, 0, 0, 1.04706, -0.981744, 0.522806)",
+              "opacity": "0.55528",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.30084",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02129, 0, 0, 1.02129, -6.48892, 1.01411)",
+              "opacity": "0.515516",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03234, 0, 0, 1.04468, -0.218376, 0.346742)",
+              "opacity": "0.543399",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.300142",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02519, 0, 0, 1.02519, -3.58582, -0.0515483)",
+              "opacity": "0.562261",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04708, 0, 0, 1.06833, -9.31641, 2.53157)",
+              "opacity": "0.655838",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.47206",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 15280,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.05995, 0, 0, 1.05995, 7.43995, -2.73332)",
+              "opacity": "0.849613",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02048, 0, 0, 1.02096, 7.40099, -1.4106)",
+              "opacity": "0.424809",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.384961",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.03982, 0, 0, 1.03982, 2.4396, -1.81557)",
+              "opacity": "0.695291",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04708, 0, 0, 1.07416, -9.68911, 2.53109)",
+              "opacity": "0.690803",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.321376",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.03242, 0, 0, 1.03242, -2.82484, 0.0937906)",
+              "opacity": "0.608667",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04472, 0, 0, 1.06945, -8.17465, 2.18179)",
+              "opacity": "0.667232",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.324914",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02081, 0, 0, 1.02081, -7.14897, 1.28425)",
+              "opacity": "0.507127",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04081, 0, 0, 1.04325, -4.48072, 1.60214)",
+              "opacity": "0.517855",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.574513",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 17700,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.04485, 0, 0, 1.04485, 3.69022, -2.04511)",
+              "opacity": "0.733888",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.02661, 0, 0, 1.03323, 3.4609, -0.501855)",
+              "opacity": "0.486134",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.313967",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02993, 0, 0, 1.02993, -0.0523458, -1.3486)",
+              "opacity": "0.619157",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04994, 0, 0, 1.07975, -11.5173, 2.95457)",
+              "opacity": "0.718638",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.382395",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05827, 0, 0, 1.05827, 6.80932, -2.55855)",
+              "opacity": "0.834897",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04967, 0, 0, 1.07934, -11.3545, 2.91521)",
+              "opacity": "0.716724",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.379354",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.03904, 0, 0, 1.03904, -0.356974, -0.585629)",
+              "opacity": "0.666618",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03795, 0, 0, 1.03795, -2.67165, 1.17862)",
+              "opacity": "0.491814",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.62569",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 20210,
+        "state": [
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.03002, 0, 0, 1.03002, 0.00617026, -1.36894)",
+              "opacity": "0.62019",
+              "period": "15s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.03815, 0, 0, 1.0563, -3.95162, 1.20778)",
+              "opacity": "0.601504",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.302754",
+              "period": "31s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02272, 0, 0, 1.02272, -5.42891, 0.625005)",
+              "opacity": "0.532584",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04621, 0, 0, 1.06485, -8.64573, 2.40266)",
+              "opacity": "0.636701",
+              "period": "21s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.473919",
+              "period": "29s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.05228, 0, 0, 1.05228, 5.53563, -2.38381)",
+              "opacity": "0.790841",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.04914, 0, 0, 1.07656, -10.9019, 2.8363)",
+              "opacity": "0.701079",
+              "period": "25s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.458425",
+              "period": "33s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.05872, 0, 0, 1.05872, 6.97527, -2.60424)",
+              "opacity": "0.838794",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse"
+            },
+            "b": {
+              "transform": "matrix(1.0228, 0, 0, 1.0228, 6.08999, -1.06672)",
+              "opacity": "0.431206",
+              "period": "22s",
+              "state": "running",
+              "name": "how-light-flow"
+            },
+            "c": {
+              "opacity": "0.639662",
+              "period": "30s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      }
+    ],
+    "performance": {
+      "actual": {
+        "elapsedSeconds": 20.216562999994494,
+        "taskSeconds": 4.023709,
+        "scriptSeconds": 0.002499,
+        "layoutCount": 0,
+        "trace": {
+          "Paint": 2380
+        }
+      },
+      "isolated": {
+        "elapsedSeconds": 2.017652000009548,
+        "taskSeconds": 0.004359000000000002,
+        "layoutCount": 0,
+        "trace": {
+          "Paint": 2
+        },
+        "existingMagmaAndAuraPausedForMeasurementOnly": true
+      }
+    },
+    "cycles": [
+      {
+        "expected": "winRate",
+        "intervalMs": 5520,
+        "middle": [
+          {
+            "opacity": "0.277661",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2255)"
+          },
+          {
+            "opacity": "0.722339",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.77452)"
+          },
+          {
+            "opacity": "0.277661",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2255)"
+          },
+          {
+            "opacity": "0.722339",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.77452)"
+          },
+          {
+            "opacity": "0.277661",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2255)"
+          },
+          {
+            "opacity": "0.722339",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.77452)"
+          }
+        ]
+      },
+      {
+        "expected": "banRate",
+        "intervalMs": 6077,
+        "middle": [
+          {
+            "opacity": "0.2253",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6916)"
+          },
+          {
+            "opacity": "0.7747",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30839)"
+          },
+          {
+            "opacity": "0.2253",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6916)"
+          },
+          {
+            "opacity": "0.7747",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30839)"
+          },
+          {
+            "opacity": "0.2253",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6916)"
+          },
+          {
+            "opacity": "0.7747",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30839)"
+          }
+        ]
+      },
+      {
+        "expected": "pickRate",
+        "intervalMs": 6068,
+        "middle": [
+          {
+            "opacity": "0.225028",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6992)"
+          },
+          {
+            "opacity": "0.774972",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30079)"
+          },
+          {
+            "opacity": "0.225028",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6992)"
+          },
+          {
+            "opacity": "0.774972",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30079)"
+          },
+          {
+            "opacity": "0.225028",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6992)"
+          },
+          {
+            "opacity": "0.774972",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.30079)"
+          }
+        ]
+      }
+    ],
+    "offscreenPaused": true,
+    "reduced": [
+      {
+        "role": "tank",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "errors": []
+  }
+]

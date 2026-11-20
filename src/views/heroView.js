@@ -9,7 +9,6 @@ import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import { tierButton, showTierReason, closeTierHelp } from './tierReasonView.js';
 import { MAP_KEYS,MAP_NAMES } from '../models/mapModel.js';
 import {statisticsNeedsReview,qualitySummary} from '../models/statisticsQuality.js';
-import {cacheLabel} from './statisticsUI.js';
 import {createFilterCombobox} from './filterCombobox.js';
 import {RANK_OPTIONS,mapDropdownOptions} from './filterOptions.js';
 import {rankEmblem} from './rankEmblem.js';
@@ -156,14 +155,13 @@ export function createHeroView() {
       basicCombos.forEach(combo=>combo.sync());divisionCombo.sync();mapCombo.sync();
       statsMessage.dataset.state = stale ? 'stale' : state.statsStatus;
       statsMessage.setAttribute('aria-description',isCompositeDivision(state.statsFilters.division)?translateLabel(COMPOSITE_NOTICE):'');
-      statsMessage.textContent = state.statsStatus === 'loading' ? t("message.4a786f66695b",{"0":(hasStats ? t(" · 이전 조회값을 표시합니다") : t(" · 도착 전까지 미제공"))}) : stale ? t("message.33c91444afb7",{"0":(errorText(state.statsError))}) : state.statsStatus === 'error' ? t("message.1af811dcd443",{"0":(errorText(state.statsError))}) : state.statsStatus === 'empty' ? t("이 조회 조건의 통계가 없습니다.") : state.statsStatus === 'ready' ? t("실제 통계 연결 · 역할별 승률·픽률·밴률 메타 티어") : t("통계 연결 대기 중");
+      statsMessage.textContent = state.statsStatus === 'loading' ? t("message.4a786f66695b",{"0":(hasStats ? t(" · 이전 조회값을 표시합니다") : t(" · 도착 전까지 미제공"))}) : stale ? t("message.33c91444afb7",{"0":(errorText(state.statsError))}) : state.statsStatus === 'error' ? t("message.1af811dcd443",{"0":(errorText(state.statsError))}) : state.statsStatus === 'empty' ? t("이 조회 조건의 통계가 없습니다.") : state.statsStatus === 'ready' ? t('ui.statsReady') : t("통계 연결 대기 중");
       document.querySelector('[data-action="stats-refresh"]').disabled = state.statsStatus === 'loading';
-      if(isCompositeDivision(state.statsFilters.division))statsMessage.textContent+=` · ${translateLabel(COMPOSITE_NOTICE)}${errorText(state.statistics?.error)?` · ${errorText(state.statistics.error)}`:''}`;
+      if(isCompositeDivision(state.statsFilters.division))statsMessage.textContent+=` · ${t('ui.composite')}${errorText(state.statistics?.error)?` · ${errorText(state.statistics.error)}`:''}`;
       syncCompactMain();
       const quality=qualitySummary(state.statistics?.records??[]);if(quality.review)statsMessage.textContent+=t("message.8a2e056398e8",{"0":(quality.review)});
       document.querySelector('#stats-cohort').textContent = t("message.52241c8dde4b",{"0":(filterLabel(state.statsFilters))});
-      document.querySelector('#stats-timestamp').textContent = state.statistics ? t("message.fe9122f0f690",{"0":(new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})),"1":(stale ? t(" (오래됨)") : '')}) : t("HOW 통계 조회: 아직 성공한 조회 없음");
-      if(state.statistics)document.querySelector('#stats-timestamp').textContent+=t("message.78a52c07d1d1",{"0":(cacheLabel(state.statistics))});
+      document.querySelector('#stats-timestamp').textContent = state.statistics ? t('ui.sourceTime',{time:new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})})+(stale?t(' (오래됨)'):'') : t("HOW 통계 조회: 아직 성공한 조회 없음");
       if (dialog.open && detailKey) { const current = model.heroByKey(detailKey); if (current) renderDetailStatistics(current, state); }
       document.querySelector('#result-count').textContent = state.status === 'ready' ? String(heroes.length).padStart(2, '0') : '—';
       document.querySelector('#favorite-count').textContent = state.favorites.size;

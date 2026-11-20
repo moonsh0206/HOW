@@ -39,12 +39,19 @@ export function createInsightView({patchModel}={}) {
     container.replaceChildren();
     const primary = items.length ? recommendation(items[0], hot, category, mobile) : node('p', mobile ? compactEmpty : empty, 'insight-empty');
     container.append(primary);
+    // A disclosure must reveal additional heroes, not only explanatory copy.
+    if(items.length<=1){
+      if(items.length&&mobile&&hot)container.append(node('small',t('message.f3506c28e6c8',{'0':items[0].winDelta>=0?'+':'','1':items[0].winDelta.toFixed(1)})));
+      if(hot)for(const note of notes)container.append(node('small',translateLabel(note)));
+      if(focusHref)[...container.querySelectorAll('a')].find(a=>a.href===focusHref)?.focus({preventScroll:true});
+      return;
+    }
     const details = node('details', undefined, 'insight-details'); details.open = !mobile || Boolean(expanded);
     const summary=node('summary', t("상세"));summary.setAttribute('aria-label',t("message.e3ea9a7c6613",{"0":(container.closest('article').querySelector('h3').textContent)}));details.append(summary);
     for (const hero of items.slice(1)) details.append(recommendation(hero, hot, category, mobile&&!hot));
     if (!items.length && mobile) details.append(node('p', empty));
     if(items.length&&mobile&&!category)details.append(node('small',hot?t("message.f3506c28e6c8",{"0":(items[0].winDelta>=0?'+':''),"1":(items[0].winDelta.toFixed(1))}):t("message.3c5db878f7eb",{"0":(items[0].statistics.pickRate?.toFixed(1)??t("미제공"))})));
-    for (const note of notes) details.append(node('small', translateLabel(note)));
+    if(hot)for (const note of notes) details.append(node('small', translateLabel(note)));
     container.append(details);
     if(focusSummary)summary.focus({preventScroll:true});else if(focusHref)[...container.querySelectorAll('a')].find(a=>a.href===focusHref)?.focus({preventScroll:true});
   }
@@ -57,7 +64,8 @@ export function createInsightView({patchModel}={}) {
       const current = state.statsStatus === 'loading' || state.statsStatus === 'error' ? null : state.statistics;
       const trend = hotHeroes(heroes, current, state.previousSnapshot);
       const qualityUnavailable=trend.available&&heroes.length>0&&trend.usableHeroes===0;
-      const hotNotes = [t("같은 조회 조건의 이전 통계와 비교합니다."),t('hot.criteria',{pick:INSIGHT_POLICY.hotPickDelta.toFixed(1),win:INSIGHT_POLICY.hotWinDelta.toFixed(1),limit:INSIGHT_POLICY.maxHotHeroes}),t('hot.thresholdNote')];
+      const hotNotes = [t('hot.criteria',{pick:INSIGHT_POLICY.hotPickDelta.toFixed(1),win:INSIGHT_POLICY.hotWinDelta.toFixed(1),limit:INSIGHT_POLICY.maxHotHeroes})];
+      hot.title=t('hot.thresholdNote');
       if(trend.warning)hotNotes.push(trend.warning);
       const diagnostic=state.hotDiagnostic;
       if(!trend.available&&diagnostic?.latestAt)hotNotes.push(t('hot.latest',{time:new Date(diagnostic.latestAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})+' KST'}));

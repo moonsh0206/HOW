@@ -1,0 +1,2522 @@
+[
+  {
+    "width": 320,
+    "lang": "ko",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 281,
+          "height": 126.25
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 524.953125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 156.5,
+          "y": 524.953125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 12,
+          "y": 688.953125,
+          "width": 281,
+          "height": 136
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 850.953125,
+          "width": 281,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 138.890625,
+          "width": 281,
+          "height": 175.5
+        },
+        "text": "Your meta, at a glance.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 598.578125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 156.5,
+          "y": 598.578125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 12,
+          "y": 762.578125,
+          "width": 281,
+          "height": 136
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 924.578125,
+          "width": 281,
+          "height": 126.78125
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "lang": "ja",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 138.890625,
+          "width": 281,
+          "height": 157.5
+        },
+        "text": "今のメタをひと目で。",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 580.578125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 156.5,
+          "y": 580.578125,
+          "width": 136.5,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 12,
+          "y": 744.578125,
+          "width": 281,
+          "height": 136
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 906.578125,
+          "width": 281,
+          "height": 126.78125
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 131.65625,
+          "y": 507.765625,
+          "width": 111.671875,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 251.328125,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 689.765625,
+          "width": 350.984375,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 144.25
+        },
+        "text": "Your meta, at a glance.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 542.953125,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 131.65625,
+          "y": 542.953125,
+          "width": 111.671875,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 251.328125,
+          "y": 542.953125,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 724.953125,
+          "width": 350.984375,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25
+        },
+        "text": "今のメタをひと目で。",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 524.953125,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 131.65625,
+          "y": 524.953125,
+          "width": 111.671875,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 251.328125,
+          "y": 524.953125,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 706.953125,
+          "width": 350.984375,
+          "height": 132.375
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "ko",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 391,
+          "height": 126.25
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 145,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 278,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 665.765625,
+          "width": 391,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "en",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 391,
+          "height": 144.25
+        },
+        "text": "Your meta, at a glance.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 542.953125,
+          "width": 125,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 145,
+          "y": 542.953125,
+          "width": 125,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 278,
+          "y": 542.953125,
+          "width": 125,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 724.953125,
+          "width": 391,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "ja",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 391,
+          "height": 126.25
+        },
+        "text": "今のメタをひと目で。",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 145,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 278,
+          "y": 483.765625,
+          "width": 125,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 665.765625,
+          "width": 391,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "text": "Your meta, at a glance.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "text": "今のメタをひと目で。",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "ko",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 176.5,
+          "y": 104,
+          "width": 1552,
+          "height": 44
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 176.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 567.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 958.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1349.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "en",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 176.5,
+          "y": 104,
+          "width": 1552,
+          "height": 44
+        },
+        "text": "Your meta, at a glance.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 176.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 567.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 958.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1349.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "ja",
+    "state": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 176.5,
+          "y": 104,
+          "width": 1552,
+          "height": 44
+        },
+        "text": "今のメタをひと目で。",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 176.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 567.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 958.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1349.5,
+          "y": 260,
+          "width": 379,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "search": true,
+    "errors": []
+  }
+]

@@ -15,7 +15,7 @@ test('history display rounds only presentation, including current, ticks, toolti
    assert(panel.querySelector('svg title').textContent.includes('14.6%'));
    assert(panel.querySelector('.history-table').textContent.includes('14.6%'));
    assert(!panel.textContent.includes('14.6333'));assert.deepEqual(state,before);
-   assert.equal(panel.querySelectorAll('.history-info').length,1);assert.equal(panel.querySelector('.history-info').open,false);
+   assert.equal(panel.querySelector('.history-info summary'),null);assert.equal(panel.querySelector('.history-info'),null);
   }
  }finally{globalThis.document=previous;dom.window.close();}
 });

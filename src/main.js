@@ -17,6 +17,7 @@ import './styles/dashboard.css';
 import './styles/pageFrame.css';
 import './styles/brandIntro.css';
 import './styles/mobileRebuild.css';
+import './styles/panelEffects.css';
 import {createBrandIntro} from './controllers/brandIntro.js';
 import {createMetaDashboardController} from './controllers/metaDashboardController.js';
 import {createCounterService} from './services/counterService.js';

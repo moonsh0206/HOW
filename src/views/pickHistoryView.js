@@ -83,11 +83,11 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     const labels = node('div', undefined, 'history-x'); labels.setAttribute('aria-hidden','true'); labels.append(node('span',axisLabel(data.points[0])));
     if (data.points.length > 1) labels.append(node('span',axisLabel(data.points.at(-1)))); else labels.classList.add('history-x-single');
     panel.append(graph,labels,selected);
-    const info=node('details',undefined,'history-info'); info.append(node('summary',t("관측 정보")));
+    const info=node('div',undefined,'history-info');
     if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))info.append(node('p',t("채운 점: 저장 · 테두리 점: 현재 조회(미저장)"),'history-observation'));
     if(data.comparisonSegments?.length)info.append(node('p',t("점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다."),'history-observation'));
     if(data.points.some(p=>p.verificationStatus==='verified'))info.append(node('p',t("패치 후 첫 관측이며, 안정된 메타를 뜻하지 않습니다."),'history-observation'));
-    info.append(node('p',t("시각은 HOW 관측 기준입니다. 원본 경기 집계 시각과 다르며 패치 미확인 자료는 일반 관측으로 표시합니다."),'history-observation'));panel.append(info);
+    if(info.childElementCount)panel.append(info);
     const disclosure = node('div', undefined, 'history-records sr-only');
     const table = node('table',undefined,'history-table'); table.append(node('caption',t("message.8c4050efe53c",{"0":(label)})));
     const header = node('tr'); for(const text of [t("관측 시각 (한국)"),label]) {const th=node('th',text);th.scope='col';header.append(th);} const thead=node('thead');thead.append(header);table.append(thead);

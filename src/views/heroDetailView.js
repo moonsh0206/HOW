@@ -16,9 +16,9 @@ import {renderHeroPatch} from './heroPatchView.js';
 import {restorePatchDisclosure} from './patchDisclosure.js';
 import {compactText} from './compactText.js';
 import { node, image } from './dom.js';
-import { METRICS, metricValue, metricClass,cacheLabel } from './statisticsUI.js';
+import { METRICS, metricValue, metricClass } from './statisticsUI.js';
 import {statisticsNeedsReview} from '../models/statisticsQuality.js';
-import { filterLabel,isCompositeDivision,COMPOSITE_NOTICE,divisionName } from '../models/statisticsModel.js';
+import { filterLabel,isCompositeDivision,divisionName } from '../models/statisticsModel.js';
 
 function itemCard(item, compact = false) {
   const card = node('article', undefined, 'ability-card'); const header = node('div', undefined, 'ability-heading');
@@ -45,7 +45,9 @@ export function createHeroDetailView() {
   }
   function section(id, title, items) {
     const wrapper = node('section', undefined, 'detail-section'); wrapper.id = id;
-    wrapper.append(node('h2', title)); const grid = node('div', undefined, 'ability-grid');
+    const heading=node('h2',title);
+    if(['detail-minor','detail-major'].includes(id)){wrapper.classList.add('perk-comparison-panel');heading.replaceChildren(node('span',t('perk.comparisonTitle')),node('small',title));}
+    wrapper.append(heading); const grid = node('div', undefined, 'ability-grid');
     const compact=['detail-minor','detail-major','detail-abilities','detail-unique-passives'].includes(id);
     for (const item of items) {const card=itemCard(item,compact);card.dataset.itemName=item.name;grid.append(card);}
     wrapper.append(items.length ? grid : node('p', t("현재 API에서 제공된 정보가 없습니다."), 'empty-note'));
@@ -109,12 +111,13 @@ export function createHeroDetailView() {
       const perkCards=perkStatistics.cards??perkCardsForDetail(route.key,detailState.result.detail,perkStatistics);
       const nextPerkKey=JSON.stringify([perkCards,perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.error]);
       if(nextPerkKey!==perkKey){perkKey=nextPerkKey;
+      const comparisons=Object.fromEntries(['minor','major'].map(tier=>[tier,perkStageComparison(route.key,tier,perkCards[tier],perkStatistics)]));
       for(const tier of ['minor','major'])for(const card of root.querySelectorAll(`#detail-${tier} .ability-card`)){
         const item=perkCards[tier].find(i=>i.name===card.dataset.itemName);
-        if(!item)continue;const selection=renderPerkSelection(item,perkStatistics,{showBar:false,digits:1}),old=card.querySelector('.perk-selection');
+        if(!item)continue;const selection=renderPerkSelection(item,perkStatistics,{showBar:false,digits:1,showRate:comparisons[tier].status!=='ready'}),old=card.querySelector('.perk-selection');
         if(old)old.replaceWith(selection);else card.append(selection);
       }
-      for(const tier of ['minor','major']){const section=root.querySelector(`#detail-${tier}`),comparison=renderPerkComparison(perkCards[tier],perkStageComparison(route.key,tier,perkCards[tier],perkStatistics)),old=section.querySelector('.perk-stage-comparison');if(old)old.replaceWith(comparison);else if(perkCards[tier].length)section.append(comparison);}
+      for(const tier of ['minor','major']){const section=root.querySelector(`#detail-${tier}`),comparison=renderPerkComparison(perkCards[tier],comparisons[tier]),old=section.querySelector('.perk-stage-comparison');if(old)old.replaceWith(comparison);else if(perkCards[tier].length)section.append(comparison);}
       }
       const oldPerkInfo=root.querySelector('#detail-perk-rates');
       const sourceSignature=JSON.stringify([perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.result?.fetchedAt,perkStatistics.result?.filters,errorText(perkStatistics.error)]);
@@ -150,12 +153,10 @@ export function createHeroDetailView() {
       if(hero.statistics?.missingDivisions?.length)information.append(node('p',t("message.ba3491270c7b",{"0":(hero.statistics.missingDivisions.map(divisionName).join(', '))}),'history-warning'));
       if(statisticsNeedsReview(hero.statistics))information.append(node('p',t("message.0a685bc83ab3",{"0":(hero.statistics.reviewDivisions?.length?` · ${hero.statistics.reviewDivisions.map(divisionName).join(', ')}`:'')}),'history-warning'));
       const button = node('button', state.favorites.has(route.key) ? t("★ 즐겨찾기 저장됨") : t("☆ 즐겨찾기"), 'detail-favorite'); button.dataset.favorite = route.key; button.setAttribute('aria-pressed', state.favorites.has(route.key)); information.append(button);
-      const sourceInfo = node('details', undefined, 'detail-stat-info'); sourceInfo.append(node('summary',t("통계 정보 ⓘ")));
-      if(isCompositeDivision(state.statsFilters.division))sourceInfo.append(node('p',translateLabel(COMPOSITE_NOTICE),'composite-notice'));
-      sourceInfo.append(node('p', filterLabel(state.statsFilters)), node('p', t("message.d4fe1f41a2ec",{"0":(state.statistics?.fetchedAt ? new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}) : t("미제공")),"1":(state.statistics?.stale ? t(" · 오래된 데이터") : '')}))); information.append(sourceInfo);
-      if (stats.querySelector('.detail-stat-info')?.open) sourceInfo.open = true;
-      sourceInfo.append(node('p',t("message.e42ff5d52706",{"0":(cacheLabel(state.statistics))})));
-      for(const component of state.statistics?.components??[])sourceInfo.append(node('p',t("message.a51d6fef15e9",{"0":(divisionName(component.filters?.division??component.division)??t("구성 등급")),"1":(component.fetchedAt??component.collectedAt??t("미제공")),"2":(component.providerAgeSeconds??component.cacheAgeSeconds??t("미제공"))})));
+      const sourceInfo=node('div',undefined,'detail-stat-info');
+      if(isCompositeDivision(state.statsFilters.division))sourceInfo.append(node('p',t('ui.composite'),'composite-notice'));
+      if(state.statistics?.fetchedAt)sourceInfo.append(node('p',t('ui.sourceTime',{time:new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})})));
+      information.append(sourceInfo);
       const focused = document.activeElement === stats.querySelector('[data-favorite]');
       const oldHistory = stats.querySelector('.pick-history');
       const historyFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyDays : null;

@@ -46,6 +46,12 @@ test('saved production snapshots are read with existing service; no last-week tr
  const older=await service.getHistory(DEFAULT_FILTERS,{days:30});assert(older.snapshots.length>0);assert.equal(roleWinHistory(older,roster,DEFAULT_FILTERS,{days:30}).available,false); // one actual grouped batch
 });
 const flush=async()=>{for(let i=0;i<5;i++)await new Promise(r=>setImmediate(r));};
+test('hologram layers keep independent heading/card visibility and release their shared observer',async()=>{
+ const dom=new JSDOM('<section id="dashboard-page"></section>'),previous=globalThis.document;globalThis.document=dom.window.document;let observer,disconnected=0;
+ dom.window.IntersectionObserver=class{constructor(callback){this.callback=callback;this.targets=[];observer=this;}observe(target){this.targets.push(target);}disconnect(){disconnected++;}};
+ const {createMetaDashboardView}=await import('../src/views/metaDashboardView.js');const root=document.querySelector('section'),view=createMetaDashboardView(root),m=model();
+ try{view.render(m,{role:'all',days:7,mapKey:'busan',metric:'pickRate',history:{status:'ready'},map:{status:'idle'},maps:[]},dashboardSelection(m));const films=[...root.querySelectorAll('.dashboard-feature .dashboard-hologram')],heading=root.querySelector('.dashboard-heading'),highlights=root.querySelector('.dashboard-highlights');assert.equal(films.length,4);assert.equal(heading.querySelectorAll('.dashboard-hologram').length,1);assert.equal(heading.querySelector('.dashboard-hologram').dataset.holoRole,'heading');assert(films.every(e=>e.getAttribute('aria-hidden')==='true'&&e.children.length===2));assert.deepEqual(films.map(e=>e.dataset.holoRole),['tank','damage','support','spotlight']);for(const [layer,min,max]of [['a',16000,20000],['b',22000,28000],['c',12000,18000]]){const periods=films.map(e=>parseFloat(e.style.getPropertyValue('--holo-'+layer+'-duration')));assert(periods.every(n=>n>=min&&n<=max));assert.equal(new Set(periods).size,4);assert(films.every(e=>parseFloat(e.style.getPropertyValue('--holo-'+layer+'-delay'))<=0));}assert.deepEqual(observer.targets,[heading,highlights]);observer.callback([{target:heading,isIntersecting:false}]);assert(root.classList.contains('dashboard-heading-offscreen'));assert(!root.classList.contains('dashboard-hologram-offscreen'));observer.callback([{target:highlights,isIntersecting:false},{target:heading,isIntersecting:true}]);assert(root.classList.contains('dashboard-hologram-offscreen'));assert(!root.classList.contains('dashboard-heading-offscreen'));observer.callback([{target:highlights,isIntersecting:true}]);assert(!root.classList.contains('dashboard-hologram-offscreen'));}finally{view.destroy();assert.equal(disconnected,1);dom.window.close();globalThis.document=previous;}
+});
 test('mobile rank expansion retains six real rows and cycle dots track the shared metric across translated refreshes',async()=>{
  const dom=new JSDOM('<section id="dashboard-page"></section>'),prior=globalThis.document;globalThis.document=dom.window.document;
  const {createMetaDashboardView}=await import('../src/views/metaDashboardView.js');const m=model(),root=document.querySelector('section'),view=createMetaDashboardView(root);
@@ -91,12 +97,16 @@ test('history/map failures are independent, retryable and never erase current ca
  document.querySelector('[data-dashboard-retry=history]').click();document.querySelector('[data-dashboard-retry=map]').click();await flush();assert.equal(hits,2);assert.equal(mapHits,2);assert.equal(document.querySelectorAll('.dashboard-map-row .dashboard-hero').length,3);c.setActive(false);c.refresh();await flush();assert.equal(hits,2);
  }finally{c?.stop();globalThis.document=prior;dom.window.close();}
 });
-test('density presentation retains all metadata in disclosures and preserves open state/focus on refresh',async()=>{
+test('dashboard removes explanation-only disclosures while keeping source, filters, ranks and navigation',async()=>{
  const dom=new JSDOM('<section id="dashboard-page"></section>'),prior=globalThis.document;globalThis.document=dom.window.document;let c;
  try{const m=model();c=createMetaDashboardController({model:m,counterService:createCounterService(),snapshotService:{async getHistory(){return {snapshots:[]};}},statisticsService:{async getStatistics(f){return {...snapshot('2026-11-18T01:00:00Z'),filters:f};}}});c.setActive(true);await flush();
   assert.equal(document.querySelectorAll('.dashboard-feature').length,4);assert.equal(document.querySelectorAll('.dashboard-panel').length,5);assert.equal(document.querySelectorAll('[data-dashboard-hero]').length,6);
-  const details=document.querySelector('.dashboard-feature-note');assert(details);assert.equal(details.open,false);assert(details.querySelector('p').textContent.length>20);details.open=true;details.querySelector('summary').focus();
-  document.querySelector('[data-dashboard-role=damage]').click();assert(document.querySelector('.dashboard-feature-note').open);assert.equal(document.activeElement,document.querySelector('.dashboard-feature-note summary'));
-  assert(document.querySelector('#dashboard-history .dashboard-method p').textContent.includes('단순 평균'));assert(document.querySelector('#dashboard-maps .dashboard-method').textContent.includes('픽률 1위'));
+  assert.equal(document.querySelector('.dashboard-feature-note summary,.dashboard-method'),null);
+  assert(document.querySelector('.dashboard-source').textContent.includes('OverFast API'));
+  assert(document.querySelector('#dashboard-maps .dashboard-map-credit').href.startsWith('https://'));
+  const role=document.querySelector('[data-dashboard-role=damage]');role.focus();role.click();
+  assert.equal(document.activeElement,role);assert.equal(role.getAttribute('aria-pressed'),'true');
+  assert.equal(document.querySelector('.dashboard-method'),null);assert.equal(document.querySelectorAll('.dashboard-feature').length,4);
+
  }finally{c?.stop();globalThis.document=prior;dom.window.close();}
 });

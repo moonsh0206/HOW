@@ -1,3 +1,4 @@
+import {COMPOSITE_NOTICE} from '../src/models/statisticsModel.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -49,7 +50,7 @@ test('snapshot v2: raw division arrays restore without rounding; missing/error s
 });
 test('composite UI: all options, default selection, mean disclosure and missing division in cards',async()=>{
  const dom=new JSDOM(await readFile(new URL('../index.html',import.meta.url),'utf8'));const previous=globalThis.document;globalThis.document=dom.window.document;
- try{const model=createHeroModel();model.state.status='ready';model.state.heroes=[{key:'genji',name:'겐지',role:'damage'}];model.state.statistics={filters:f,fetchedAt:'2026-11-02T00:00:00Z',records:[{...row(null,null,null),missingDivisions:['master']}]};const view=createHeroView();view.render(model);assert.equal(document.querySelector('#stats-division').value,'diamond_plus');assert.equal(document.querySelectorAll('#stats-division option').length,16);assert.match(document.querySelector('#stats-status').textContent,/동일 비중/);assert.match(document.querySelector('#hero-cards').textContent,/마스터/);}finally{globalThis.document=previous;dom.window.close();}
+ try{const model=createHeroModel();model.state.status='ready';model.state.heroes=[{key:'genji',name:'겐지',role:'damage'}];model.state.statistics={filters:f,fetchedAt:'2026-11-02T00:00:00Z',records:[{...row(null,null,null),missingDivisions:['master']}]};const view=createHeroView();view.render(model);assert.equal(document.querySelector('#stats-division').value,'diamond_plus');assert.equal(document.querySelectorAll('#stats-division option').length,16);assert(document.querySelector('#stats-status').textContent.includes('HOW'));assert.equal(document.querySelector('#stats-status').getAttribute('aria-description'),COMPOSITE_NOTICE);assert.match(document.querySelector('#hero-cards').textContent,/마스터/);}finally{globalThis.document=previous;dom.window.close();}
 });
 
 test('composite absent hero: every required division is shown missing, never classified or filled from another hero',()=>{

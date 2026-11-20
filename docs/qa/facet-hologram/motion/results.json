@@ -1,0 +1,2232 @@
+[
+  {
+    "width": 390,
+    "boxes": [
+      {
+        "width": 351,
+        "height": 126.25
+      },
+      {
+        "width": 111.65625,
+        "height": 156
+      },
+      {
+        "width": 111.671875,
+        "height": 156
+      },
+      {
+        "width": 111.65625,
+        "height": 156
+      },
+      {
+        "width": 350.984375,
+        "height": 126
+      }
+    ],
+    "frames": [
+      {
+        "elapsedMs": 148,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 12,
+              "y": 130.515625,
+              "width": 351,
+              "height": 126.25
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.02169, 0, 0, 1.02169, 1.70432, -3.01412)",
+              "opacity": "0.634369",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0101, 0, 0, 1.0101, 6.91778, -3.94862)",
+              "opacity": "0.30185",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.369103",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02499, 0, 0, 1.02499, 6.97794, -4.99173)",
+              "opacity": "0.779393",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02974, 0, 0, 1.02974, -8.79102, 5.86939)",
+              "opacity": "0.655298",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.251702",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02182, 0, 0, 1.02182, 1.91644, -3.09367)",
+              "opacity": "0.640202",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02857, 0, 0, 1.02857, -8.00006, 5.42861)",
+              "opacity": "0.63143",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.250088",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.01515, 0, 0, 1.01515, -7.79134, 3.82115)",
+              "opacity": "0.424173",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01828, 0, 0, 1.01828, -0.452429, 0.968286)",
+              "opacity": "0.432488",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.385275",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.0166, 0, 0, 1.0166, -5.59457, 2.55674)",
+              "opacity": "0.47773",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01237, 0, 0, 1.01237, 4.86592, -2.57728)",
+              "opacity": "0.337939",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.424393",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 5172,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 12,
+              "y": 130.515625,
+              "width": 351,
+              "height": 126.25
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.01621, 0, 0, 1.01621, -6.29976, 2.54266)",
+              "opacity": "0.454005",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01767, 0, 0, 1.01767, 0.863364, -0.164603)",
+              "opacity": "0.438074",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.244818",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02029, 0, 0, 1.02029, -0.542705, -2.17149)",
+              "opacity": "0.572576",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02446, 0, 0, 1.02446, -5.12276, 3.78443)",
+              "opacity": "0.549222",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.480324",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.01837, 0, 0, 1.01837, -3.28215, -0.0438731)",
+              "opacity": "0.514357",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02051, 0, 0, 1.02051, -2.35423, 2.20242)",
+              "opacity": "0.470121",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.51588",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02277, 0, 0, 1.02277, 3.65146, -2.99088)",
+              "opacity": "0.699635",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01084, 0, 0, 1.01084, 6.33096, -3.58185)",
+              "opacity": "0.315053",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.284103",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02496, 0, 0, 1.02496, 6.93586, -4.96151)",
+              "opacity": "0.778461",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01277, 0, 0, 1.01277, 4.78358, -2.61474)",
+              "opacity": "0.349869",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.240668",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 10248,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 12,
+              "y": 130.515625,
+              "width": 351,
+              "height": 126.25
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.0213, 0, 0, 1.0213, 1.45572, -1.67343)",
+              "opacity": "0.646937",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02858, 0, 0, 1.02858, -7.86203, 5.28877)",
+              "opacity": "0.634396",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.483919",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.01524, 0, 0, 1.01524, -7.66585, 3.71358)",
+              "opacity": "0.426683",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01835, 0, 0, 1.01835, -0.517389, 1.01159)",
+              "opacity": "0.433642",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.456234",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.0162, 0, 0, 1.0162, -6.20381, 2.92229)",
+              "opacity": "0.463109",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01265, 0, 0, 1.01265, 4.61677, -2.41118)",
+              "opacity": "0.342369",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.487457",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.02268, 0, 0, 1.02268, 3.2907, -3.60901)",
+              "opacity": "0.677994",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02364, 0, 0, 1.02364, -3.9093, 2.81831)",
+              "opacity": "0.545459",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.579938",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02092, 0, 0, 1.02092, 0.476899, -2.55384)",
+              "opacity": "0.600615",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02544, 0, 0, 1.02544, -5.35158, 3.71974)",
+              "opacity": "0.577911",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.491658",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 15136,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 12,
+              "y": 130.515625,
+              "width": 351,
+              "height": 126.25
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.02319, 0, 0, 1.02319, 4.1038, -3.91392)",
+              "opacity": "0.700354",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02835, 0, 0, 1.02835, -7.84562, 5.34035)",
+              "opacity": "0.627018",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.542946",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.0218, 0, 0, 1.0218, 2.19972, -2.11983)",
+              "opacity": "0.664793",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01058, 0, 0, 1.01058, 6.53452, -3.70908)",
+              "opacity": "0.310473",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.242797",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02471, 0, 0, 1.02471, 6.5713, -4.74278)",
+              "opacity": "0.769711",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01225, 0, 0, 1.01225, 5.20169, -2.87606)",
+              "opacity": "0.340462",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.264029",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.01813, 0, 0, 1.01813, -3.62403, 0.249167)",
+              "opacity": "0.507519",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02979, 0, 0, 1.02979, -8.85467, 5.91695)",
+              "opacity": "0.655848",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.314225",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.01659, 0, 0, 1.01659, -5.76891, 2.08764)",
+              "opacity": "0.464622",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02974, 0, 0, 1.02974, -8.82097, 5.8977)",
+              "opacity": "0.654885",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.499546",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 20153,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 12,
+              "y": 130.515625,
+              "width": 351,
+              "height": 126.25
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.01818, 0, 0, 1.01818, -3.54691, 0.183067)",
+              "opacity": "0.509062",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02052, 0, 0, 1.02052, -2.36148, 2.20656)",
+              "opacity": "0.470328",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.33254",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 12,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "14.4%",
+            "a": {
+              "transform": "matrix(1.02367, 0, 0, 1.02367, 4.87952, -4.20482)",
+              "opacity": "0.721687",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0222, 0, 0, 1.0222, -2.75752, 2.09845)",
+              "opacity": "0.519544",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.541518",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 131.65625,
+              "y": 507.765625,
+              "width": 111.671875,
+              "height": 156
+            },
+            "text": "30.2%",
+            "a": {
+              "transform": "matrix(1.02181, 0, 0, 1.02181, 1.90219, -3.08832)",
+              "opacity": "0.63981",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02423, 0, 0, 1.02423, -4.3834, 3.11463)",
+              "opacity": "0.556126",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.391887",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 251.328125,
+              "y": 507.765625,
+              "width": 111.65625,
+              "height": 156
+            },
+            "text": "43.1%",
+            "a": {
+              "transform": "matrix(1.01788, 0, 0, 1.01788, -3.6764, 1.40584)",
+              "opacity": "0.523766",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02097, 0, 0, 1.02097, -2.68155, 2.38946)",
+              "opacity": "0.479473",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.440862",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 12,
+              "y": 689.765625,
+              "width": 350.984375,
+              "height": 126
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.01854, 0, 0, 1.01854, -2.68613, 0.811677)",
+              "opacity": "0.547533",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02169, 0, 0, 1.02169, -3.18395, 2.67654)",
+              "opacity": "0.493827",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.256579",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      }
+    ],
+    "performance": {
+      "seconds": 2.008273999992525,
+      "taskPercent": 0.16262721122775856,
+      "layouts": 0,
+      "paint": 0,
+      "existingMagmaAuraPausedOnlyForMeasurement": true
+    },
+    "cycles": [
+      {
+        "expected": "winRate",
+        "intervalMs": 5502,
+        "animations": [
+          {
+            "opacity": "0.22576",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6787)"
+          },
+          {
+            "opacity": "0.77424",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.32128)"
+          },
+          {
+            "opacity": "0.22576",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6787)"
+          },
+          {
+            "opacity": "0.77424",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.32128)"
+          },
+          {
+            "opacity": "0.22576",
+            "transform": "matrix(1, 0, 0, 1, 0, -21.6787)"
+          },
+          {
+            "opacity": "0.77424",
+            "transform": "matrix(1, 0, 0, 1, 0, 6.32128)"
+          }
+        ]
+      },
+      {
+        "expected": "banRate",
+        "intervalMs": 6109,
+        "animations": [
+          {
+            "opacity": "0.044986",
+            "transform": "matrix(1, 0, 0, 1, 0, -26.7404)"
+          },
+          {
+            "opacity": "0.955014",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.25961)"
+          },
+          {
+            "opacity": "0.044986",
+            "transform": "matrix(1, 0, 0, 1, 0, -26.7404)"
+          },
+          {
+            "opacity": "0.955014",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.25961)"
+          },
+          {
+            "opacity": "0.044986",
+            "transform": "matrix(1, 0, 0, 1, 0, -26.7404)"
+          },
+          {
+            "opacity": "0.955014",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.25961)"
+          }
+        ]
+      },
+      {
+        "expected": "pickRate",
+        "intervalMs": 6059,
+        "animations": [
+          {
+            "opacity": "0.342724",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4037)"
+          },
+          {
+            "opacity": "0.657276",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59626)"
+          },
+          {
+            "opacity": "0.342724",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4037)"
+          },
+          {
+            "opacity": "0.657276",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59626)"
+          },
+          {
+            "opacity": "0.342724",
+            "transform": "matrix(1, 0, 0, 1, 0, -18.4037)"
+          },
+          {
+            "opacity": "0.657276",
+            "transform": "matrix(1, 0, 0, 1, 0, 9.59626)"
+          }
+        ]
+      }
+    ],
+    "independentVisibility": true,
+    "reduced": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 12,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "14.4%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 131.65625,
+          "y": 507.765625,
+          "width": 111.671875,
+          "height": 156
+        },
+        "text": "30.2%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 251.328125,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156
+        },
+        "text": "43.1%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 12,
+          "y": 689.765625,
+          "width": 350.984375,
+          "height": 126
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "boxes": [
+      {
+        "width": 1377,
+        "height": 44
+      },
+      {
+        "width": 335.25,
+        "height": 128
+      },
+      {
+        "width": 335.25,
+        "height": 128
+      },
+      {
+        "width": 335.25,
+        "height": 128
+      },
+      {
+        "width": 335.25,
+        "height": 128
+      }
+    ],
+    "frames": [
+      {
+        "elapsedMs": 251,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 24,
+              "y": 104,
+              "width": 1377,
+              "height": 44
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.02015, 0, 0, 1.02015, -0.766707, -2.08748)",
+              "opacity": "0.566416",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0112, 0, 0, 1.0112, 6.04332, -3.40208)",
+              "opacity": "0.321525",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.345818",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "54.6%",
+            "a": {
+              "transform": "matrix(1.02384, 0, 0, 1.02384, 5.1502, -4.30633)",
+              "opacity": "0.729131",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0297, 0, 0, 1.0297, -8.79251, 5.88144)",
+              "opacity": "0.654072",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.263526",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "52.7%",
+            "a": {
+              "transform": "matrix(1.02024, 0, 0, 1.02024, -0.615119, -2.14433)",
+              "opacity": "0.570584",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02538, 0, 0, 1.02538, -5.76826, 4.15329)",
+              "opacity": "0.567665",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.320324",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "53.6%",
+            "a": {
+              "transform": "matrix(1.01581, 0, 0, 1.01581, -6.7908, 3.27448)",
+              "opacity": "0.449021",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01224, 0, 0, 1.01224, 4.98544, -2.65696)",
+              "opacity": "0.335814",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.325123",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.0202, 0, 0, 1.0202, -0.193503, -0.683898)",
+              "opacity": "0.607356",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01001, 0, 0, 1.01001, 6.99339, -3.99559)",
+              "opacity": "0.300117",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.351401",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 5226,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 24,
+              "y": 104,
+              "width": 1377,
+              "height": 44
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.01501, 0, 0, 1.01501, -7.98028, 3.98817)",
+              "opacity": "0.420473",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02178, 0, 0, 1.02178, -2.42322, 1.88951)",
+              "opacity": "0.512022",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.286648",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "54.6%",
+            "a": {
+              "transform": "matrix(1.0197, 0, 0, 1.0197, -1.41317, -1.64586)",
+              "opacity": "0.551737",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02106, 0, 0, 1.02106, -2.7393, 2.42246)",
+              "opacity": "0.481123",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.571089",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "52.7%",
+            "a": {
+              "transform": "matrix(1.01563, 0, 0, 1.01563, -7.12348, 3.24869)",
+              "opacity": "0.43753",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01985, 0, 0, 1.01985, -1.86842, 1.91228)",
+              "opacity": "0.457661",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.575002",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "53.6%",
+            "a": {
+              "transform": "matrix(1.02496, 0, 0, 1.02496, 6.93653, -4.96192)",
+              "opacity": "0.778477",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01417, 0, 0, 1.01417, 3.66225, -1.91391)",
+              "opacity": "0.375099",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.428039",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02456, 0, 0, 1.02456, 6.29031, -4.73387)",
+              "opacity": "0.760484",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01666, 0, 0, 1.01666, 1.67595, -0.672468)",
+              "opacity": "0.419791",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.281936",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 10223,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 24,
+              "y": 104,
+              "width": 1377,
+              "height": 44
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.0244, 0, 0, 1.0244, 6.09967, -4.4598)",
+              "opacity": "0.758392",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02982, 0, 0, 1.02982, -8.85611, 5.91007)",
+              "opacity": "0.656762",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.552901",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "54.6%",
+            "a": {
+              "transform": "matrix(1.01551, 0, 0, 1.01551, -7.22858, 3.53715)",
+              "opacity": "0.438514",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0126, 0, 0, 1.0126, 4.66218, -2.44145)",
+              "opacity": "0.341561",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.35199",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "52.7%",
+            "a": {
+              "transform": "matrix(1.01961, 0, 0, 1.01961, -1.09134, -0.145193)",
+              "opacity": "0.585808",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01002, 0, 0, 1.01002, 6.98289, -3.98859)",
+              "opacity": "0.300304",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.372527",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "53.6%",
+            "a": {
+              "transform": "matrix(1.02046, 0, 0, 1.02046, -0.26692, -2.2749)",
+              "opacity": "0.58016",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.028, 0, 0, 1.028, -7.39623, 4.99764)",
+              "opacity": "0.623915",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.482883",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02002, 0, 0, 1.02002, -0.975852, -2.00906)",
+              "opacity": "0.560664",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02853, 0, 0, 1.02853, -7.82254, 5.26409)",
+              "opacity": "0.633507",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.566148",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 15378,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 24,
+              "y": 104,
+              "width": 1377,
+              "height": 44
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.02095, 0, 0, 1.02095, 0.515641, -2.56837)",
+              "opacity": "0.60168",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02575, 0, 0, 1.02575, -6.02157, 4.29804)",
+              "opacity": "0.574902",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.445101",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "54.6%",
+            "a": {
+              "transform": "matrix(1.02466, 0, 0, 1.02466, 6.49337, -4.69602)",
+              "opacity": "0.767841",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01336, 0, 0, 1.01336, 4.31258, -2.32036)",
+              "opacity": "0.360467",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.313999",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "52.7%",
+            "a": {
+              "transform": "matrix(1.02483, 0, 0, 1.02483, 6.73221, -4.89958)",
+              "opacity": "0.772636",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01597, 0, 0, 1.01597, 2.22263, -1.01414)",
+              "opacity": "0.407491",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.247349",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "53.6%",
+            "a": {
+              "transform": "matrix(1.01525, 0, 0, 1.01525, -7.65324, 3.70278)",
+              "opacity": "0.426935",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.0274, 0, 0, 1.0274, -7.18278, 4.96159)",
+              "opacity": "0.608079",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.243881",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.01502, 0, 0, 1.01502, -7.97372, 3.97747)",
+              "opacity": "0.420526",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02787, 0, 0, 1.02787, -7.50587, 5.14621)",
+              "opacity": "0.617311",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.380572",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      },
+      {
+        "elapsedMs": 20232,
+        "state": [
+          {
+            "role": "heading",
+            "box": {
+              "x": 24,
+              "y": 104,
+              "width": 1377,
+              "height": 44
+            },
+            "text": "오늘의 메타를 한눈에.",
+            "a": {
+              "transform": "matrix(1.01542, 0, 0, 1.01542, -7.40658, 3.49136)",
+              "opacity": "0.431868",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01999, 0, 0, 1.01999, -1.99125, 1.99416)",
+              "opacity": "0.459844",
+              "period": "28s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+            },
+            "c": {
+              "opacity": "0.25008",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "tank",
+            "box": {
+              "x": 24,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "54.6%",
+            "a": {
+              "transform": "matrix(1.02129, 0, 0, 1.02129, 1.05604, -2.77101)",
+              "opacity": "0.616541",
+              "period": "18s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02692, 0, 0, 1.02692, -6.53839, 4.46149)",
+              "opacity": "0.604614",
+              "period": "24s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+            },
+            "c": {
+              "opacity": "0.579375",
+              "period": "14s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "damage",
+            "box": {
+              "x": 371.25,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "52.7%",
+            "a": {
+              "transform": "matrix(1.02024, 0, 0, 1.02024, -0.608446, -2.14683)",
+              "opacity": "0.570768",
+              "period": "20s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02788, 0, 0, 1.02788, -7.30393, 4.93995)",
+              "opacity": "0.621838",
+              "period": "27s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+            },
+            "c": {
+              "opacity": "0.508088",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "support",
+            "box": {
+              "x": 718.5,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "53.6%",
+            "a": {
+              "transform": "matrix(1.02244, 0, 0, 1.02244, 3.1648, -2.69888)",
+              "opacity": "0.687955",
+              "period": "17s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.01995, 0, 0, 1.01995, -1.95758, 1.97172)",
+              "opacity": "0.459246",
+              "period": "23s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+            },
+            "c": {
+              "opacity": "0.560329",
+              "period": "13s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          },
+          {
+            "role": "spotlight",
+            "box": {
+              "x": 1065.75,
+              "y": 260,
+              "width": 335.25,
+              "height": 128
+            },
+            "text": "META 90.4",
+            "a": {
+              "transform": "matrix(1.02238, 0, 0, 1.02238, 3.07102, -2.64261)",
+              "opacity": "0.685704",
+              "period": "19s",
+              "state": "running",
+              "name": "how-light-diffuse",
+              "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+            },
+            "b": {
+              "transform": "matrix(1.02012, 0, 0, 1.02012, -2.08516, 2.04866)",
+              "opacity": "0.462433",
+              "period": "26s",
+              "state": "running",
+              "name": "how-light-flow",
+              "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+            },
+            "c": {
+              "opacity": "0.249824",
+              "period": "16s",
+              "state": "running",
+              "name": "how-light-reflection"
+            }
+          }
+        ]
+      }
+    ],
+    "performance": {
+      "seconds": 2.022831000009319,
+      "taskPercent": 0.181181720073655,
+      "layouts": 0,
+      "paint": 0,
+      "existingMagmaAuraPausedOnlyForMeasurement": true
+    },
+    "cycles": [
+      {
+        "expected": "banRate",
+        "intervalMs": 5503,
+        "animations": [
+          {
+            "opacity": "0.276369",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2617)"
+          },
+          {
+            "opacity": "0.723631",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.73833)"
+          },
+          {
+            "opacity": "0.276369",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2617)"
+          },
+          {
+            "opacity": "0.723631",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.73833)"
+          },
+          {
+            "opacity": "0.276369",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2617)"
+          },
+          {
+            "opacity": "0.723631",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.73833)"
+          }
+        ]
+      },
+      {
+        "expected": "pickRate",
+        "intervalMs": 6070,
+        "animations": [
+          {
+            "opacity": "0.278462",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2031)"
+          },
+          {
+            "opacity": "0.721538",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79693)"
+          },
+          {
+            "opacity": "0.278462",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2031)"
+          },
+          {
+            "opacity": "0.721538",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79693)"
+          },
+          {
+            "opacity": "0.278462",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2031)"
+          },
+          {
+            "opacity": "0.721538",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79693)"
+          }
+        ]
+      },
+      {
+        "expected": "winRate",
+        "intervalMs": 6067,
+        "animations": [
+          {
+            "opacity": "0.278238",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2093)"
+          },
+          {
+            "opacity": "0.721762",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79066)"
+          },
+          {
+            "opacity": "0.278238",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2093)"
+          },
+          {
+            "opacity": "0.721762",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79066)"
+          },
+          {
+            "opacity": "0.278238",
+            "transform": "matrix(1, 0, 0, 1, 0, -20.2093)"
+          },
+          {
+            "opacity": "0.721762",
+            "transform": "matrix(1, 0, 0, 1, 0, 7.79066)"
+          }
+        ]
+      }
+    ],
+    "independentVisibility": true,
+    "reduced": [
+      {
+        "role": "heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "text": "오늘의 메타를 한눈에.",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-heading-mQ8gmlKe.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(18% 98%, 62% -14%, 81% 72%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "tank",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "54.6%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-tank-5U5FYm3P.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(16% 92%, 72% 30%, 92% 81%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "damage",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "52.7%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-damage-B_QYG7V0.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(-5% 11%, 62% 50%, 12% 94%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "support",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "53.6%",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-support-BxNlVbgg.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(34% -7%, 96% 53%, 66% 88%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      },
+      {
+        "role": "spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "text": "META 90.4",
+        "a": {
+          "transform": "none",
+          "opacity": "0.65",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "mask": "url(\"http://127.0.0.1:5241/HOW/assets/facets-spotlight-C48Xih0A.svg\")"
+        },
+        "b": {
+          "transform": "none",
+          "opacity": "0.45",
+          "period": "0s",
+          "state": "running",
+          "name": "none",
+          "clip": "polygon(27% 96%, 76% 15%, 103% 71%)"
+        },
+        "c": {
+          "opacity": "0.4",
+          "period": "0s",
+          "state": "running",
+          "name": "none"
+        }
+      }
+    ],
+    "errors": []
+  }
+]

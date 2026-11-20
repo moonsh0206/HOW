@@ -1,0 +1,678 @@
+[
+  {
+    "width": 390,
+    "start": [
+      {
+        "opacity": 0.718059,
+        "scan": "matrix(1, 0, 0, 1, 108.559, 0)",
+        "scanOpacity": "0.653035",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 916.7610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 916.7610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.718057,
+        "scan": "matrix(1, 0, 0, 1, 108.563, 0)",
+        "scanOpacity": "0.653025",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 916.7610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 916.7610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.718055,
+        "scan": "matrix(1, 0, 0, 1, 108.568, 0)",
+        "scanOpacity": "0.653015",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 916.7610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 916.7610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.719206,
+        "scan": "matrix(1, 0, 0, 1, 287.099, 0)",
+        "scanOpacity": "0.71304",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 6285.910999986669,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 6285.910999986669,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "middle": [
+      {
+        "opacity": 0.636446,
+        "scan": "matrix(1, 0, 0, 1, 138.944, 0)",
+        "scanOpacity": "0.605164",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 2917.5610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 2917.5610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.636432,
+        "scan": "matrix(1, 0, 0, 1, 138.946, 0)",
+        "scanOpacity": "0.605162",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 2917.5610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 2917.5610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.636418,
+        "scan": "matrix(1, 0, 0, 1, 138.948, 0)",
+        "scanOpacity": "0.60516",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 2917.5610000025945,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 2917.5610000025945,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.645551,
+        "scan": "matrix(1, 0, 0, 1, 429.248, 0)",
+        "scanOpacity": "0.623258",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 8286.710999986668,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 8286.710999986668,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "offscreen": [
+      {
+        "opacity": 0.625822,
+        "scan": "matrix(1, 0, 0, 1, 140.357, 0)",
+        "scanOpacity": "0.603955",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3067.461000002595,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3067.461000002595,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.625807,
+        "scan": "matrix(1, 0, 0, 1, 140.359, 0)",
+        "scanOpacity": "0.603954",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3067.461000002595,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3067.461000002595,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.625793,
+        "scan": "matrix(1, 0, 0, 1, 140.361, 0)",
+        "scanOpacity": "0.603952",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3067.461000002595,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3067.461000002595,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.635366,
+        "scan": "matrix(1, 0, 0, 1, 436.25, 0)",
+        "scanOpacity": "0.620186",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 8436.61099998667,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 8436.61099998667,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "barStart": {
+      "box": {
+        "x": 23,
+        "y": 807.703125,
+        "width": 329,
+        "height": 32,
+        "top": 807.703125,
+        "right": 352,
+        "bottom": 839.703125,
+        "left": 23
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": [
+        {
+          "name": "how-perk-fill",
+          "time": 116.8929999904087,
+          "state": "running",
+          "transform": "matrix(0.805522, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-fill",
+          "time": 116.8929999904087,
+          "state": "running",
+          "transform": "matrix(0.805522, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-label",
+          "time": 116.8929999904087,
+          "state": "running",
+          "transform": "none",
+          "opacity": "0"
+        }
+      ]
+    },
+    "barMiddle": {
+      "box": {
+        "x": 23,
+        "y": 807.703125,
+        "width": 329,
+        "height": 32,
+        "top": 807.703125,
+        "right": 352,
+        "bottom": 839.703125,
+        "left": 23
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": [
+        {
+          "name": "how-perk-fill",
+          "time": 233.52699999040993,
+          "state": "running",
+          "transform": "matrix(0.975782, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-fill",
+          "time": 233.52699999040993,
+          "state": "running",
+          "transform": "matrix(0.975782, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-label",
+          "time": 233.52699999040993,
+          "state": "running",
+          "transform": "none",
+          "opacity": "0.600626"
+        }
+      ]
+    },
+    "barEnd": {
+      "box": {
+        "x": 23,
+        "y": 807.703125,
+        "width": 329,
+        "height": 32,
+        "top": 807.703125,
+        "right": 352,
+        "bottom": 839.703125,
+        "left": 23
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": []
+    },
+    "visibilitySimulation": true,
+    "reduced": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "start": [
+      {
+        "opacity": 0.610822,
+        "scan": "matrix(1, 0, 0, 1, 47.7627, 0)",
+        "scanOpacity": "0.713746",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3284.9249999823046,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3284.9249999823046,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.610829,
+        "scan": "matrix(1, 0, 0, 1, 47.7687, 0)",
+        "scanOpacity": "0.713757",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3284.9249999823046,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3284.9249999823046,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.610844,
+        "scan": "matrix(1, 0, 0, 1, 47.7806, 0)",
+        "scanOpacity": "0.71378",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3284.9249999823046,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3284.9249999823046,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.610852,
+        "scan": "matrix(1, 0, 0, 1, 25.9174, 0)",
+        "scanOpacity": "0.635223",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 3284.9249999823046,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 3284.9249999823046,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "middle": [
+      {
+        "opacity": 0.714182,
+        "scan": "matrix(1, 0, 0, 1, 263.604, 0)",
+        "scanOpacity": "0.71876",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5368.824999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5368.824999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.714184,
+        "scan": "matrix(1, 0, 0, 1, 263.615, 0)",
+        "scanOpacity": "0.718755",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5368.824999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5368.824999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.714187,
+        "scan": "matrix(1, 0, 0, 1, 263.637, 0)",
+        "scanOpacity": "0.718743",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5368.824999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5368.824999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.714189,
+        "scan": "matrix(1, 0, 0, 1, 181.765, 0)",
+        "scanOpacity": "0.744466",
+        "state": "running",
+        "scanState": "running",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5368.824999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5368.824999982305,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "offscreen": [
+      {
+        "opacity": 0.718812,
+        "scan": "matrix(1, 0, 0, 1, 299.969, 0)",
+        "scanOpacity": "0.695235",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5718.924999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5718.924999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.718813,
+        "scan": "matrix(1, 0, 0, 1, 299.978, 0)",
+        "scanOpacity": "0.695228",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5718.924999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5718.924999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.718814,
+        "scan": "matrix(1, 0, 0, 1, 299.998, 0)",
+        "scanOpacity": "0.695213",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5718.924999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5718.924999982305,
+            "duration": 15000
+          }
+        ]
+      },
+      {
+        "opacity": 0.718815,
+        "scan": "matrix(1, 0, 0, 1, 219.57, 0)",
+        "scanOpacity": "0.736371",
+        "state": "paused",
+        "scanState": "paused",
+        "animations": [
+          {
+            "name": "how-panel-breathe",
+            "time": 5718.924999982305,
+            "duration": 13000
+          },
+          {
+            "name": "how-panel-scan",
+            "time": 5718.924999982305,
+            "duration": 17000
+          }
+        ]
+      }
+    ],
+    "barStart": {
+      "box": {
+        "x": 39,
+        "y": 792.015625,
+        "width": 1347,
+        "height": 34,
+        "top": 792.015625,
+        "right": 1386,
+        "bottom": 826.015625,
+        "left": 39
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": [
+        {
+          "name": "how-perk-fill",
+          "time": 133.26599998542488,
+          "state": "running",
+          "transform": "matrix(0.851019, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-fill",
+          "time": 133.26599998542488,
+          "state": "running",
+          "transform": "matrix(0.851019, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-label",
+          "time": 133.26599998542488,
+          "state": "running",
+          "transform": "none",
+          "opacity": "0"
+        }
+      ]
+    },
+    "barMiddle": {
+      "box": {
+        "x": 39,
+        "y": 792.015625,
+        "width": 1347,
+        "height": 34,
+        "top": 792.015625,
+        "right": 1386,
+        "bottom": 826.015625,
+        "left": 39
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": [
+        {
+          "name": "how-perk-fill",
+          "time": 266.5999999854245,
+          "state": "running",
+          "transform": "matrix(0.988314, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-fill",
+          "time": 266.5999999854245,
+          "state": "running",
+          "transform": "matrix(0.988314, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        },
+        {
+          "name": "how-perk-label",
+          "time": 266.5999999854245,
+          "state": "running",
+          "transform": "none",
+          "opacity": "0.761794"
+        }
+      ]
+    },
+    "barEnd": {
+      "box": {
+        "x": 39,
+        "y": 792.015625,
+        "width": 1347,
+        "height": 34,
+        "top": 792.015625,
+        "right": 1386,
+        "bottom": 826.015625,
+        "left": 39
+      },
+      "text": "35.8%64.2%",
+      "widths": [
+        "35.79%",
+        "64.21%"
+      ],
+      "animations": []
+    },
+    "visibilitySimulation": true,
+    "reduced": true,
+    "errors": []
+  }
+]

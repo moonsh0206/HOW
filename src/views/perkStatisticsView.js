@@ -4,12 +4,12 @@ import {t} from '../i18n/i18n.js';
 import {node} from './dom.js';
 import {PERK_SOURCE_URL} from '../models/perkSelectionModel.js';
 const missing=state=>['loading','idle'].includes(state.status)?t("특전 선택률 조회 중"):state.status==='error'?t("특전 통계를 불러오지 못했습니다"):t("OverLooker 선택률 데이터 미제공");
-export function renderPerkSelection(item,state,{showBar=true,digits=2}={}){
+export function renderPerkSelection(item,state,{showBar=true,digits=2,showRate=true}={}){
  const box=node('div',undefined,'perk-selection');box.setAttribute('aria-live','polite');
  const entry=item.selection;
  if(!entry||entry.status!=='ready'||entry.selectionRate==null){box.append(node('p',entry?.status==='mapping-review'||entry?.status==='inactive'?t("선택률 매핑 검토 중"):missing(state),'perk-selection-status'));return box;}
  const label=t("message.3c4a094d1e07",{"0":(item.name),"1":(entry.selectionRate.toFixed(digits))});
- const heading=node('div',undefined,'perk-selection-heading');heading.append(node('strong',`${entry.selectionRate.toFixed(digits)}%`));
+ const heading=node('div',undefined,'perk-selection-heading');if(showRate)heading.append(node('strong',`${entry.selectionRate.toFixed(digits)}%`));
  if(entry.selectionCount!==null)heading.append(node('span',t("message.fbf6cdbcd616",{"0":(entry.selectionCount.toLocaleString(formatLocale()))})));box.append(heading);
  if(!showBar)return box;
  const bar=node('div',undefined,'perk-selection-bar');bar.setAttribute('role','meter');bar.setAttribute('aria-label',label);bar.setAttribute('aria-valuemin','0');bar.setAttribute('aria-valuemax','100');bar.setAttribute('aria-valuenow',String(entry.selectionRate));bar.setAttribute('aria-valuetext',label);
@@ -20,7 +20,12 @@ export function renderPerkComparison(items,comparison){
  if(comparison.status!=='ready'){box.append(node('p',t(comparison.status==='incompatible'?'perk.pairIncompatible':'perk.pairUnavailable'),'perk-selection-status'));return box;}
  const text=items.map((item,i)=>`${item.name} ${comparison.entries[i].selectionRate.toFixed(1)}%`).join(' · '),bar=node('div',undefined,'perk-pair-bar');bar.setAttribute('role','img');bar.setAttribute('aria-label',text);
  for(const [i,e]of comparison.entries.entries()){const fill=node('span',undefined,i===0?'perk-pair-left':'perk-pair-right');fill.style.width=e.selectionRate+'%';bar.append(fill);}
- box.append(bar);if(comparison.partial)box.append(node('small',t('perk.pairPartial')));return box;
+ // Text is independent of the fills: tiny or incomplete rates remain readable
+ // above narrow segments without giving fills a misleading minimum width.
+ const spread=comparison.partial||comparison.entries.some(e=>e.selectionRate<20);bar.dataset.labelLayout=spread?'spread':'segments';box.dataset.labelLayout=bar.dataset.labelLayout;
+ const labels=node('span',undefined,'perk-bar-labels');labels.setAttribute('aria-hidden','true');let offset=0;
+ for(const [i,e]of comparison.entries.entries()){const value=node('span',e.selectionRate.toFixed(1)+'%',`perk-bar-value perk-bar-value-${i===0?'left':'right'}`);value.style.left=(spread?(i===0?25:75):offset+e.selectionRate/2)+'%';offset+=e.selectionRate;labels.append(value);}
+ box.append(bar);if(spread)box.append(labels);else bar.append(labels);if(comparison.partial)box.append(node('small',t('perk.pairPartial')));return box;
 }
 export function renderPerkStatisticsInfo(state){
  const section=node('footer',undefined,'perk-statistics-info');section.id='detail-perk-rates';section.setAttribute('aria-label',t("특전 통계 출처"));
@@ -32,6 +37,6 @@ export function renderPerkStatisticsInfo(state){
   if(state.result.collectedAt)section.append(node('p',t("message.5e3baf1380fd",{"0":(new Date(state.result.collectedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))}),'perk-collected-at'));
   else if(state.result.fetchedAt)section.append(node('p',t("message.9ee275f94d0e",{"0":(new Date(state.result.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}))})));
   if(f?.queue_type||f?.since)section.append(node('p',t("message.96a52d11b54c",{"0":(f.queue_type==='COMPETITIVE'?t("경쟁전"):f.queue_type==='QUICKPLAY'?t("빠른 대전"):t("모드 미지정")),"1":(f.since?t("message.4c7571ae1dc8",{"0":(f.since)}):'')})));}
- section.append(node('p',t("OverLooker 제공 집계이며, HOW 지역·등급·전장·모드 필터와 독립된 통계입니다. HOW 자체 집계가 아니며 선택 건수는 경기 수가 아닙니다.")));
+ section.append(node('p',t('ui.independentPerks')));
  return section;
 }

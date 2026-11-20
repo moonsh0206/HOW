@@ -56,7 +56,7 @@ export function createMetaDashboardController({model,snapshotService,statisticsS
  const focusOut=e=>{if(cycleArea(e.target)&&!cycleArea(e.relatedTarget))cycle.setFocus(false);};
  root?.addEventListener('click',click);root?.addEventListener('change',change);
  const cycleAreas=[...root?.querySelectorAll('.dashboard-highlights,.dashboard-kpi-controls')??[]];for(const area of cycleAreas){area.addEventListener('pointerenter',over);area.addEventListener('pointerleave',out);}for(const [name,fn]of [['focusin',focusIn],['focusout',focusOut]])root?.addEventListener(name,fn);
- return {setActive(next){if(active&&!next){view.cancelMotion();cycle.setHover(false);cycle.setFocus(false);}active=next;cycle.setActive(next&&model.state.status==='ready'&&model.state.statsStatus==='ready');if(active)load();},refresh:load,
+ return {setActive(next){view.setActive(next);if(active&&!next){view.cancelMotion();cycle.setHover(false);cycle.setFocus(false);}active=next;cycle.setActive(next&&model.state.status==='ready'&&model.state.statsStatus==='ready');if(active)load();},refresh:load,
   stop(){stopped=true;active=false;cycle.destroy();++historyToken;++mapToken;root?.removeEventListener('click',click);root?.removeEventListener('change',change);for(const area of cycleAreas){area.removeEventListener('pointerenter',over);area.removeEventListener('pointerleave',out);}for(const [name,fn]of [['focusin',focusIn],['focusout',focusOut]])root?.removeEventListener(name,fn);view.destroy();},
  };
 }

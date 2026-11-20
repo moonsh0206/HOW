@@ -41,8 +41,8 @@ test('HOT v2 KO/EN PC/mobile: exact empty text, threshold note, both changes and
   const dom=new JSDOM(html,{url:'https://example.org/HOW/'}),saved={window:globalThis.window,document:globalThis.document};Object.assign(globalThis,{window:dom.window,document:dom.window.document});dom.window.matchMedia=()=>({matches:width<=767,addEventListener(){},removeEventListener(){}});setLanguage(lang);
   const model=createHeroModel();const row=hero(2,0);Object.assign(model.state,{heroes:[row],statsStatus:'ready',statsFilters:filters,statistics:{...current,records:[row.statistics]},previousSnapshot:old,snapshotStatus:'ready'});
   const view=createInsightView();
-  try{view.render(model);const hot=document.querySelector('#hot-content');assert.equal(hot.querySelector('p').textContent,t('hot.empty'));assert.match(hot.textContent,/0\.5/);assert.match(hot.textContent,/KST/);assert(hot.textContent.includes(t('hot.thresholdNote')));
-   model.state.statistics.records=[hero(2,1).statistics];view.render(model);assert.equal(hot.querySelectorAll('.insight-hero').length,1);assert.match(hot.textContent,/\+2\.0/);assert.match(hot.textContent,/\+1\.0/);assert.equal(hot.querySelector('details').open,width>767);
+  try{view.render(model);const hot=document.querySelector('#hot-content');assert.equal(hot.querySelector('p').textContent,t('hot.empty'));assert.match(hot.textContent,/0\.5/);assert.match(hot.textContent,/KST/);assert.equal(hot.title,t('hot.thresholdNote'));
+   model.state.statistics.records=[hero(2,1).statistics];view.render(model);assert.equal(hot.querySelectorAll('.insight-hero').length,1);assert.match(hot.textContent,/\+2\.0/);assert.match(hot.textContent,/\+1\.0/);assert.equal(hot.querySelector('details'),null);
   }finally{view.destroy();dom.window.close();Object.assign(globalThis,saved);setLanguage('ko');}
  }
 });

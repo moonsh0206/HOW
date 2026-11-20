@@ -20,7 +20,7 @@ export function renderPlayerSearch(root){
  const input=node('input');input.id='player-query';input.type='search';input.placeholder=t("player.placeholder");input.maxLength=80;input.autocomplete='off';
  const button=node('button',t("player.search"),'primary-button');button.type='submit';form.append(label,input,button);root.append(form);
  root.append(node('p',t("player.guide"),'player-guide'));
- root.append(node('p',t('player.caseNote'),'player-guide'));
+
  const hero=node('div',undefined,'player-search-hero');for(const child of [...root.children])if(!child.classList.contains('player-back'))hero.append(child);root.append(hero);
  const status=node('p');status.id='player-search-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');
  const results=node('ul');results.id='player-results';results.setAttribute('aria-label',t("플레이어 검색 결과"));
@@ -92,7 +92,7 @@ export function createPlayerSearchView(root){
    const list=renderPlayerHeroList(stats,heroes,openHeroes,state.heroRole??'all');
    section.append(list.children.length?list:node('p',t(stats.heroes.length?'player.noRoleRecords':'player.noHeroRecords'),'player-role-empty'));profile.append(section);
   }
-  const frames=[['summary',state.summary],['competitive',state.competitive]].filter(([,frame])=>frame);for(const [kind,frame]of frames)profile.append(node('p',t("message.e0ca39b014eb",{"0":(kind==='summary'?t("프로필"):t("전적")),"1":(new Date(frame.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})),"2":(frame.cached?t("브라우저 캐시 재사용"):t("API 조회")),"3":(frame.providerAgeSeconds==null?t("player.noInfo"):frame.providerAgeSeconds+t("초")),"4":(frame.providerStale?t(" · 제공처 오래된 캐시"):'')}),'player-source'));
+  const frames=[state.summary,state.competitive].filter(Boolean);if(frames.length){const fetchedAt=Math.max(...frames.map(f=>Date.parse(f.fetchedAt)).filter(Number.isFinite));if(Number.isFinite(fetchedAt))profile.append(node('p',t('ui.sourceTime',{time:new Date(fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})}),'player-source'));if(frames.some(f=>f.providerStale))profile.append(node('p',t("\uC624\uB798\uB41C \uB370\uC774\uD130"),'history-warning'));}
   if(heroFocus)[...profile.querySelectorAll('[data-player-hero]')].find(el=>el.dataset.playerHero===heroFocus)?.querySelector('summary')?.focus({preventScroll:true});
   if(roleFocused)roleHost?.querySelector('[role=combobox]')?.focus({preventScroll:true});
   const source=node('a',t("출처: OverFast API"));source.href='https://overfast-api.tekrop.fr/docs';source.target='_blank';source.rel='noopener noreferrer';profile.append(source,node('p',t("API 제공 시즌의 전적이며 현재 시즌·실시간 전적과 다를 수 있습니다. HOW 조회 시각은 경기 집계 종료 시각이 아닙니다."),'player-source'));

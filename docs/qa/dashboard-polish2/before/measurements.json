@@ -1,0 +1,737 @@
+[
+  {
+    "width": 320,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 281,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 293,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "15px 31.25px 24px 44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 281,
+          "height": 44,
+          "top": 212.765625,
+          "right": 293,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 249,
+          "y": 133.640625,
+          "width": 44,
+          "height": 44,
+          "top": 133.640625,
+          "right": 293,
+          "bottom": 177.640625,
+          "left": 249
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 802.953125,
+          "width": 281,
+          "height": 80,
+          "top": 802.953125,
+          "right": 293,
+          "bottom": 882.953125,
+          "left": 12
+        },
+        "rows": "16px 44px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 85,
+          "y": 811.953125,
+          "width": 137.609375,
+          "height": 16,
+          "top": 811.953125,
+          "right": 222.609375,
+          "bottom": 827.953125,
+          "left": 85
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 85,
+          "y": 829.953125,
+          "width": 137.609375,
+          "height": 44,
+          "top": 829.953125,
+          "right": 222.609375,
+          "bottom": 873.953125,
+          "left": 85
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 228.609375,
+          "y": 822.0625,
+          "width": 51.390625,
+          "height": 41.78125,
+          "top": 822.0625,
+          "right": 280,
+          "bottom": 863.84375,
+          "left": 228.609375
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 360,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 321,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 333,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "15px 31.25px 24px 44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 321,
+          "height": 44,
+          "top": 212.765625,
+          "right": 333,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 289,
+          "y": 133.640625,
+          "width": 44,
+          "height": 44,
+          "top": 133.640625,
+          "right": 333,
+          "bottom": 177.640625,
+          "left": 289
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 658.953125,
+          "width": 320.984375,
+          "height": 80,
+          "top": 658.953125,
+          "right": 332.984375,
+          "bottom": 738.953125,
+          "left": 12
+        },
+        "rows": "16px 44px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 103,
+          "y": 667.953125,
+          "width": 153.65625,
+          "height": 16,
+          "top": 667.953125,
+          "right": 256.65625,
+          "bottom": 683.953125,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 103,
+          "y": 685.953125,
+          "width": 153.65625,
+          "height": 44,
+          "top": 685.953125,
+          "right": 256.65625,
+          "bottom": 729.953125,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 264.65625,
+          "y": 676.953125,
+          "width": 55.328125,
+          "height": 43.984375,
+          "top": 676.953125,
+          "right": 319.984375,
+          "bottom": 720.9375,
+          "left": 264.65625
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 363,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "15px 31.25px 24px 44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 351,
+          "height": 44,
+          "top": 212.765625,
+          "right": 363,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 319,
+          "y": 133.640625,
+          "width": 44,
+          "height": 44,
+          "top": 133.640625,
+          "right": 363,
+          "bottom": 177.640625,
+          "left": 319
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 641.765625,
+          "width": 350.984375,
+          "height": 80,
+          "top": 641.765625,
+          "right": 362.984375,
+          "bottom": 721.765625,
+          "left": 12
+        },
+        "rows": "16px 44px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 103,
+          "y": 650.765625,
+          "width": 183.65625,
+          "height": 16,
+          "top": 650.765625,
+          "right": 286.65625,
+          "bottom": 666.765625,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 103,
+          "y": 668.765625,
+          "width": 183.65625,
+          "height": 44,
+          "top": 668.765625,
+          "right": 286.65625,
+          "bottom": 712.765625,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 294.65625,
+          "y": 659.765625,
+          "width": 55.328125,
+          "height": 43.984375,
+          "top": 659.765625,
+          "right": 349.984375,
+          "bottom": 703.75,
+          "left": 294.65625
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 391,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 403,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "15px 31.25px 24px 44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 391,
+          "height": 44,
+          "top": 212.765625,
+          "right": 403,
+          "bottom": 256.765625,
+          "left": 12
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 359,
+          "y": 133.640625,
+          "width": 44,
+          "height": 44,
+          "top": 133.640625,
+          "right": 403,
+          "bottom": 177.640625,
+          "left": 359
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 641.765625,
+          "width": 391,
+          "height": 80,
+          "top": 641.765625,
+          "right": 403,
+          "bottom": 721.765625,
+          "left": 12
+        },
+        "rows": "16px 44px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 103,
+          "y": 650.765625,
+          "width": 223.671875,
+          "height": 16,
+          "top": 650.765625,
+          "right": 326.671875,
+          "bottom": 666.765625,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 103,
+          "y": 668.765625,
+          "width": 223.671875,
+          "height": 44,
+          "top": 668.765625,
+          "right": 326.671875,
+          "bottom": 712.765625,
+          "left": 103
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 334.671875,
+          "y": 659.765625,
+          "width": 55.328125,
+          "height": 43.984375,
+          "top": 659.765625,
+          "right": 390,
+          "bottom": 703.75,
+          "left": 334.671875
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1303,
+          "height": 44,
+          "top": 104,
+          "right": 1327,
+          "bottom": 148,
+          "left": 24
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 903,
+          "y": 104,
+          "width": 380,
+          "height": 44,
+          "top": 104,
+          "right": 1283,
+          "bottom": 148,
+          "left": 903
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 1295,
+          "y": 110,
+          "width": 32,
+          "height": 32,
+          "top": 110,
+          "right": 1327,
+          "bottom": 142,
+          "left": 1295
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 1010.25,
+          "y": 260,
+          "width": 316.75,
+          "height": 128,
+          "top": 260,
+          "right": 1327,
+          "bottom": 388,
+          "left": 1010.25
+        },
+        "rows": "17px 81px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 1023.25,
+          "y": 273,
+          "width": 290.75,
+          "height": 17,
+          "top": 273,
+          "right": 1314,
+          "bottom": 290,
+          "left": 1023.25
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 1023.25,
+          "y": 316.5,
+          "width": 165.796875,
+          "height": 36,
+          "top": 316.5,
+          "right": 1189.046875,
+          "bottom": 352.5,
+          "left": 1023.25
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 1199.046875,
+          "y": 320.09375,
+          "width": 114.953125,
+          "height": 28.796875,
+          "top": 320.09375,
+          "right": 1314,
+          "bottom": 348.890625,
+          "left": 1199.046875
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44,
+          "top": 104,
+          "right": 1401,
+          "bottom": 148,
+          "left": 24
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 977,
+          "y": 104,
+          "width": 380,
+          "height": 44,
+          "top": 104,
+          "right": 1357,
+          "bottom": 148,
+          "left": 977
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 1369,
+          "y": 110,
+          "width": 32,
+          "height": 32,
+          "top": 110,
+          "right": 1401,
+          "bottom": 142,
+          "left": 1369
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128,
+          "top": 260,
+          "right": 1401,
+          "bottom": 388,
+          "left": 1065.75
+        },
+        "rows": "17px 81px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 1078.75,
+          "y": 273,
+          "width": 309.25,
+          "height": 17,
+          "top": 273,
+          "right": 1388,
+          "bottom": 290,
+          "left": 1078.75
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 1078.75,
+          "y": 316.5,
+          "width": 184.296875,
+          "height": 36,
+          "top": 316.5,
+          "right": 1263.046875,
+          "bottom": 352.5,
+          "left": 1078.75
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 1273.046875,
+          "y": 320.09375,
+          "width": 114.953125,
+          "height": 28.796875,
+          "top": 320.09375,
+          "right": 1388,
+          "bottom": 348.890625,
+          "left": 1273.046875
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "ko",
+    "measurement": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 176.5,
+          "y": 104,
+          "width": 1552,
+          "height": 44,
+          "top": 104,
+          "right": 1728.5,
+          "bottom": 148,
+          "left": 176.5
+        },
+        "rows": "44px"
+      },
+      {
+        "className": "dashboard-player-search",
+        "box": {
+          "x": 1304.5,
+          "y": 104,
+          "width": 380,
+          "height": 44,
+          "top": 104,
+          "right": 1684.5,
+          "bottom": 148,
+          "left": 1304.5
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-kpi-controls",
+        "box": {
+          "x": 1696.5,
+          "y": 110,
+          "width": 32,
+          "height": 32,
+          "top": 110,
+          "right": 1728.5,
+          "bottom": 142,
+          "left": 1696.5
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 1349.5,
+          "y": 260,
+          "width": 379,
+          "height": 128,
+          "top": 260,
+          "right": 1728.5,
+          "bottom": 388,
+          "left": 1349.5
+        },
+        "rows": "17px 81px"
+      },
+      {
+        "className": "",
+        "box": {
+          "x": 1362.5,
+          "y": 273,
+          "width": 353,
+          "height": 17,
+          "top": 273,
+          "right": 1715.5,
+          "bottom": 290,
+          "left": 1362.5
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-hero",
+        "box": {
+          "x": 1362.5,
+          "y": 316.5,
+          "width": 228.046875,
+          "height": 36,
+          "top": 316.5,
+          "right": 1590.546875,
+          "bottom": 352.5,
+          "left": 1362.5
+        },
+        "rows": "none"
+      },
+      {
+        "className": "dashboard-feature-value",
+        "box": {
+          "x": 1600.546875,
+          "y": 320.09375,
+          "width": 114.953125,
+          "height": 28.796875,
+          "top": 320.09375,
+          "right": 1715.5,
+          "bottom": 348.890625,
+          "left": 1600.546875
+        },
+        "rows": "none"
+      }
+    ],
+    "errors": []
+  }
+]

@@ -2,15 +2,14 @@ import {t,formatLocale} from '../i18n/i18n.js';
 import {errorText} from '../i18n/i18n.js';
 import {node} from './dom.js';
 import {prepareChartMotion} from './chartMotion.js';
-import {filterLabel} from '../models/statisticsModel.js';
 import {MAP_NAMES} from '../models/mapModel.js';
 import {buildMapComparison} from '../models/mapComparisonModel.js';
 import {HISTORY_LABELS} from './pickHistoryView.js';
-import {formatPercentage,formatPercentagePoints,cacheLabel} from './statisticsUI.js';
+import {formatPercentage,formatPercentagePoints} from './statisticsUI.js';
 function information(data,names){
- const info=node('details',undefined,'history-info');info.append(node('summary',t('통계 정보 ⓘ')),node('p',t('map.scale',{max:data.max})),node('p',filterLabel(data.filters)));
- for(const [i,frame]of [data.baseline,data.current].entries())if(frame)info.append(node('p',t('map.observed',{map:names[i],time:Number.isFinite(Date.parse(frame.fetchedAt))?new Date(frame.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}):t('미제공'),cache:cacheLabel(frame)})));
- info.append(node('p',t('map.sourceNote')));return info;
+ const info=node('div',undefined,'history-info');
+ for(const [i,frame]of [data.baseline,data.current].entries())if(frame&&Number.isFinite(Date.parse(frame.fetchedAt)))info.append(node('p',`${names[i]} · ${new Date(frame.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})}`));
+ return info;
 }
 export function renderMapStatistics(state,model,heroKey,{metric='pickRate'}={}){
  const data=buildMapComparison(state,model.state,heroKey,metric),label=HISTORY_LABELS[metric];

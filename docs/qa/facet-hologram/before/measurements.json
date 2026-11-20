@@ -1,0 +1,212 @@
+[
+  {
+    "width": 320,
+    "boxes": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 281,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 293,
+          "bottom": 256.765625,
+          "left": 12
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 12,
+          "y": 524.953125,
+          "width": 136.5,
+          "height": 156,
+          "top": 524.953125,
+          "right": 148.5,
+          "bottom": 680.953125,
+          "left": 12
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 156.5,
+          "y": 524.953125,
+          "width": 136.5,
+          "height": 156,
+          "top": 524.953125,
+          "right": 293,
+          "bottom": 680.953125,
+          "left": 156.5
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 12,
+          "y": 688.953125,
+          "width": 281,
+          "height": 136,
+          "top": 688.953125,
+          "right": 293,
+          "bottom": 824.953125,
+          "left": 12
+        }
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 850.953125,
+          "width": 281,
+          "height": 126,
+          "top": 850.953125,
+          "right": 293,
+          "bottom": 976.953125,
+          "left": 12
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "boxes": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25,
+          "top": 130.515625,
+          "right": 363,
+          "bottom": 256.765625,
+          "left": 12
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 12,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156,
+          "top": 507.765625,
+          "right": 123.65625,
+          "bottom": 663.765625,
+          "left": 12
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 131.65625,
+          "y": 507.765625,
+          "width": 111.671875,
+          "height": 156,
+          "top": 507.765625,
+          "right": 243.328125,
+          "bottom": 663.765625,
+          "left": 131.65625
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 251.328125,
+          "y": 507.765625,
+          "width": 111.65625,
+          "height": 156,
+          "top": 507.765625,
+          "right": 362.984375,
+          "bottom": 663.765625,
+          "left": 251.328125
+        }
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 12,
+          "y": 689.765625,
+          "width": 350.984375,
+          "height": 126,
+          "top": 689.765625,
+          "right": 362.984375,
+          "bottom": 815.765625,
+          "left": 12
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "boxes": [
+      {
+        "className": "dashboard-heading",
+        "box": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44,
+          "top": 104,
+          "right": 1401,
+          "bottom": 148,
+          "left": 24
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 24,
+          "y": 260,
+          "width": 335.25,
+          "height": 128,
+          "top": 260,
+          "right": 359.25,
+          "bottom": 388,
+          "left": 24
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 371.25,
+          "y": 260,
+          "width": 335.25,
+          "height": 128,
+          "top": 260,
+          "right": 706.5,
+          "bottom": 388,
+          "left": 371.25
+        }
+      },
+      {
+        "className": "dashboard-card-slot",
+        "box": {
+          "x": 718.5,
+          "y": 260,
+          "width": 335.25,
+          "height": 128,
+          "top": 260,
+          "right": 1053.75,
+          "bottom": 388,
+          "left": 718.5
+        }
+      },
+      {
+        "className": "dashboard-feature dashboard-spotlight",
+        "box": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128,
+          "top": 260,
+          "right": 1401,
+          "bottom": 388,
+          "left": 1065.75
+        }
+      }
+    ]
+  }
+]

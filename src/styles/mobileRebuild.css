@@ -17,7 +17,6 @@
  .dashboard-meta-label{font-size:12px;letter-spacing:.05em}
  .dashboard-spotlight>small{grid-column:1/-1;grid-row:3}
  .dashboard-spotlight>.dashboard-feature-note{grid-column:1/-1;grid-row:4}
- .dashboard-spotlight .dashboard-feature-note summary{min-height:44px}
  .dashboard-leader-role{display:inline-flex;width:15px;height:15px;flex-shrink:0}
  .dashboard-card-slot>.dashboard-feature{padding:10px}
  .dashboard-feature-content{grid-template-columns:32px minmax(0,1fr);grid-template-rows:minmax(36px,auto) minmax(34px,auto) 32px auto;gap:4px;align-content:start}
@@ -127,9 +126,6 @@
  .dashboard-ranking-table .dashboard-hero{flex-direction:column;gap:2px;align-items:start}
  .dashboard-ranking-table :is(th,td):nth-child(2){width:24%}
 }
-/* Static, low-contrast holographic film stays behind every interactive child. */
-.dashboard-card-slot .dashboard-feature:after{content:'';position:absolute;inset:7px;z-index:-1;pointer-events:none;border-radius:inherit;background:repeating-linear-gradient(125deg,transparent 0 14px,#75d4e306 14px 15px,transparent 15px 29px),linear-gradient(35deg,transparent 58%,#72c8d70c 58% 59%,transparent 59%);mask-image:linear-gradient(to left,#000,transparent 85%)}
-.dashboard-spotlight:before{background:repeating-linear-gradient(125deg,transparent 0 17px,#efaf5d07 17px 18px,transparent 18px 33px),linear-gradient(35deg,transparent 55%,#efaf5d0c 55% 56%,transparent 56%);z-index:-1}
 @media(prefers-reduced-motion:reduce){#dashboard-filter-host .compact-advanced::details-content,#dashboard-filter-host .compact-advanced>summary:after{transition:none}}
 #hero-detail-page :is(#detail-minor,#detail-major) .ability-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:10px}
 #hero-detail-page :is(#detail-minor,#detail-major) .ability-card{min-width:0}
@@ -149,7 +145,6 @@
  #heroes .hero-card .hero-card-stats dd{min-height:0;padding-bottom:0;flex:1;display:flex;align-items:center;justify-content:center}
  #heroes .hero-card .hero-card-stats dd:has(.recommendation-label){padding-bottom:12px}
  #hero-detail-page :is(#detail-minor,#detail-major) .ability-grid{position:relative;gap:20px}
- #hero-detail-page :is(#detail-minor,#detail-major) .ability-grid:after{content:'VS';position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:20px;text-align:center;font-size:10px;font-weight:700;color:var(--text-secondary);pointer-events:none}
  #hero-detail-page :is(#detail-minor,#detail-major) .ability-card{padding:8px}
  #hero-detail-page :is(#detail-minor,#detail-major) .ability-heading{gap:5px}
  #hero-detail-page :is(#detail-minor,#detail-major) .ability-heading img{width:28px;height:28px}

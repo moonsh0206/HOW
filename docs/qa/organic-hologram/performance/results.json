@@ -1,0 +1,78 @@
+[
+  {
+    "width": 390,
+    "samples": [
+      {
+        "mode": "all",
+        "seconds": 2.012564000004204,
+        "taskPercent": 16.390634036945457,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 242
+      },
+      {
+        "mode": "newOnly",
+        "seconds": 2.007121000002371,
+        "taskPercent": 0.2767645797136032,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 0
+      },
+      {
+        "mode": "originalOnly",
+        "seconds": 2.010894000006374,
+        "taskPercent": 16.174447782875134,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 242
+      },
+      {
+        "mode": "static",
+        "seconds": 2.0092989999975543,
+        "taskPercent": 0.048375080065294215,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 0
+      }
+    ],
+    "note": "Equal two-second traced windows without screenshots; animations paused only in QA; task time is page main-thread duty, not OS CPU."
+  },
+  {
+    "width": 1440,
+    "samples": [
+      {
+        "mode": "all",
+        "seconds": 2.0118840000068303,
+        "taskPercent": 26.746373051238205,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 242
+      },
+      {
+        "mode": "newOnly",
+        "seconds": 2.0083989999839105,
+        "taskPercent": 0.42835113939356406,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 0
+      },
+      {
+        "mode": "originalOnly",
+        "seconds": 2.01061500000651,
+        "taskPercent": 20.974030333934373,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 242
+      },
+      {
+        "mode": "static",
+        "seconds": 2.009083000011742,
+        "taskPercent": 0.026230872492418886,
+        "scriptSeconds": 0,
+        "layouts": 0,
+        "paint": 0
+      }
+    ],
+    "note": "Equal two-second traced windows without screenshots; animations paused only in QA; task time is page main-thread duty, not OS CPU."
+  }
+]
