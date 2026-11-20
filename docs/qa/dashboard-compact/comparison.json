@@ -1,0 +1,707 @@
+[
+  {
+    "width": 320,
+    "before": {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 114.515625,
+          "width": 305,
+          "height": 2635.34375
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 65.515625
+        },
+        "heading": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 281,
+          "height": 126.25
+        },
+        "form": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 281,
+          "height": 44
+        },
+        "input": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 224.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 242.90625,
+          "y": 212.765625,
+          "width": 50.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 12,
+          "y": 268.765625,
+          "width": 281,
+          "height": 177.1875
+        },
+        "top": [
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 12,
+          "y": 935.953125,
+          "width": 281,
+          "height": 142
+        },
+        "rank": {
+          "x": 12,
+          "y": 1089.953125,
+          "width": 281,
+          "height": 399.890625
+        },
+        "graph": {
+          "x": 12,
+          "y": 1501.84375,
+          "width": 281,
+          "height": 443.515625
+        },
+        "bottom": {
+          "x": 12,
+          "y": 1957.359375,
+          "width": 281,
+          "height": 768.5
+        },
+        "searchCenterOffset": 0,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 213.46875,
+          "width": 136.5,
+          "y": 651.90625
+        },
+        {
+          "height": 213.46875,
+          "width": 136.5,
+          "y": 651.90625
+        },
+        {
+          "height": 213.46875,
+          "width": 136.5,
+          "y": 936.875
+        },
+        {
+          "height": 213.46875,
+          "width": 136.5,
+          "y": 936.875
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    },
+    "after": {
+      "width": 320,
+      "height": 700,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 114.515625,
+          "width": 305,
+          "height": 2495.34375
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 65.515625
+        },
+        "heading": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 281,
+          "height": 126.25
+        },
+        "form": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 281,
+          "height": 44
+        },
+        "input": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 228.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 246.90625,
+          "y": 212.765625,
+          "width": 46.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 12,
+          "y": 266.765625,
+          "width": 281,
+          "height": 154.1875
+        },
+        "top": [
+          {
+            "height": 156,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 156,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 136,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 12,
+          "y": 850.953125,
+          "width": 281,
+          "height": 126
+        },
+        "rank": {
+          "x": 12,
+          "y": 986.953125,
+          "width": 281,
+          "height": 391.890625
+        },
+        "graph": {
+          "x": 12,
+          "y": 1390.84375,
+          "width": 281,
+          "height": 424.515625
+        },
+        "bottom": {
+          "x": 12,
+          "y": 1825.359375,
+          "width": 281,
+          "height": 760.5
+        },
+        "searchCenterOffset": 0,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 199.09375,
+          "width": 130.5,
+          "y": 651.90625
+        },
+        {
+          "height": 199.09375,
+          "width": 130.5,
+          "y": 651.90625
+        },
+        {
+          "height": 199.09375,
+          "width": 130.5,
+          "y": 920.5
+        },
+        {
+          "height": 199.09375,
+          "width": 130.5,
+          "y": 920.5
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    }
+  },
+  {
+    "width": 390,
+    "before": {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 114.515625,
+          "width": 375,
+          "height": 2329.953125
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 65.515625
+        },
+        "heading": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25
+        },
+        "form": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 351,
+          "height": 44
+        },
+        "input": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 294.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 312.90625,
+          "y": 212.765625,
+          "width": 50.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 12,
+          "y": 268.765625,
+          "width": 351,
+          "height": 160
+        },
+        "top": [
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 176,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 12,
+          "y": 734.765625,
+          "width": 350.984375,
+          "height": 142
+        },
+        "rank": {
+          "x": 12,
+          "y": 888.765625,
+          "width": 351,
+          "height": 353.5
+        },
+        "graph": {
+          "x": 12,
+          "y": 1254.265625,
+          "width": 351,
+          "height": 421.703125
+        },
+        "bottom": {
+          "x": 12,
+          "y": 1687.96875,
+          "width": 351,
+          "height": 732.5
+        },
+        "searchCenterOffset": 0,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 192.96875,
+          "width": 171.5,
+          "y": 646.8125
+        },
+        {
+          "height": 192.96875,
+          "width": 171.5,
+          "y": 646.8125
+        },
+        {
+          "height": 192.96875,
+          "width": 171.5,
+          "y": 911.28125
+        },
+        {
+          "height": 192.96875,
+          "width": 171.5,
+          "y": 911.28125
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    },
+    "after": {
+      "width": 390,
+      "height": 844,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 114.515625,
+          "width": 375,
+          "height": 2229.953125
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 65.515625
+        },
+        "heading": {
+          "x": 12,
+          "y": 130.515625,
+          "width": 351,
+          "height": 126.25
+        },
+        "form": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 351,
+          "height": 44
+        },
+        "input": {
+          "x": 12,
+          "y": 212.765625,
+          "width": 298.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 316.90625,
+          "y": 212.765625,
+          "width": 46.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 12,
+          "y": 266.765625,
+          "width": 351,
+          "height": 137
+        },
+        "top": [
+          {
+            "height": 156,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 156,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 156,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 12,
+          "y": 689.765625,
+          "width": 350.984375,
+          "height": 126
+        },
+        "rank": {
+          "x": 12,
+          "y": 825.765625,
+          "width": 351,
+          "height": 345.5
+        },
+        "graph": {
+          "x": 12,
+          "y": 1183.265625,
+          "width": 351,
+          "height": 402.703125
+        },
+        "bottom": {
+          "x": 12,
+          "y": 1595.96875,
+          "width": 351,
+          "height": 724.5
+        },
+        "searchCenterOffset": 0,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 178.59375,
+          "width": 165.5,
+          "y": 646.8125
+        },
+        {
+          "height": 178.59375,
+          "width": 165.5,
+          "y": 646.8125
+        },
+        {
+          "height": 178.59375,
+          "width": 165.5,
+          "y": 894.90625
+        },
+        {
+          "height": 178.59375,
+          "width": 165.5,
+          "y": 894.90625
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    }
+  },
+  {
+    "width": 1440,
+    "before": {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 88,
+          "width": 1425,
+          "height": 950
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 88
+        },
+        "heading": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "form": {
+          "x": 977,
+          "y": 104,
+          "width": 380,
+          "height": 44
+        },
+        "input": {
+          "x": 977,
+          "y": 104,
+          "width": 321.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 1306.90625,
+          "y": 104,
+          "width": 50.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 24,
+          "y": 160,
+          "width": 1377,
+          "height": 64
+        },
+        "top": [
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "rank": {
+          "x": 24,
+          "y": 400,
+          "width": 758.328125,
+          "height": 377
+        },
+        "graph": {
+          "x": 794.328125,
+          "y": 400,
+          "width": 606.671875,
+          "height": 377
+        },
+        "bottom": {
+          "x": 24,
+          "y": 789,
+          "width": 1377,
+          "height": 225
+        },
+        "searchCenterOffset": 454.5,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 654.78125
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 654.78125
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 947.40625
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 947.40625
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    },
+    "after": {
+      "width": 1440,
+      "height": 900,
+      "lang": "ko",
+      "collapsed": {
+        "root": {
+          "x": 0,
+          "y": 88,
+          "width": 1425,
+          "height": 950
+        },
+        "header": {
+          "x": 0,
+          "y": 0,
+          "width": 1425,
+          "height": 88
+        },
+        "heading": {
+          "x": 24,
+          "y": 104,
+          "width": 1377,
+          "height": 44
+        },
+        "form": {
+          "x": 977,
+          "y": 104,
+          "width": 380,
+          "height": 44
+        },
+        "input": {
+          "x": 977,
+          "y": 104,
+          "width": 321.90625,
+          "height": 44
+        },
+        "button": {
+          "x": 1306.90625,
+          "y": 104,
+          "width": 50.09375,
+          "height": 44
+        },
+        "filter": {
+          "x": 24,
+          "y": 160,
+          "width": 1377,
+          "height": 64
+        },
+        "top": [
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          },
+          {
+            "height": 128,
+            "overflow": 0,
+            "contentOverflow": 0
+          }
+        ],
+        "hot": {
+          "x": 1065.75,
+          "y": 260,
+          "width": 335.25,
+          "height": 128
+        },
+        "rank": {
+          "x": 24,
+          "y": 400,
+          "width": 758.328125,
+          "height": 377
+        },
+        "graph": {
+          "x": 794.328125,
+          "y": 400,
+          "width": 606.671875,
+          "height": 377
+        },
+        "bottom": {
+          "x": 24,
+          "y": 789,
+          "width": 1377,
+          "height": 225
+        },
+        "searchCenterOffset": 454.5,
+        "overflow": 0
+      },
+      "perks": [
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 654.78125
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 654.78125
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 947.40625
+        },
+        {
+          "height": 202.625,
+          "width": 683.5,
+          "y": 947.40625
+        }
+      ],
+      "requests": 9,
+      "errors": []
+    }
+  }
+]

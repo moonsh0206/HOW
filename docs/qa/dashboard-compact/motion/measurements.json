@@ -1,0 +1,1754 @@
+[
+  {
+    "width": 375,
+    "lang": "ko",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.116359",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7419)"
+          },
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.883641",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25806)"
+          },
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.116359",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7419)"
+          },
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.883641",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25806)"
+          },
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.116359",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7419)"
+          },
+          {
+            "time": 183.3909999925174,
+            "opacity": "0.883641",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25806)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.116347",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7423)"
+          },
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.883653",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25771)"
+          },
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.116347",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7423)"
+          },
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.883653",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25771)"
+          },
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.116347",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7423)"
+          },
+          {
+            "time": 183.3989999989978,
+            "opacity": "0.883653",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25771)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.144973",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9407)"
+          },
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.855027",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05926)"
+          },
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.144973",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9407)"
+          },
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.855027",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05926)"
+          },
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.144973",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9407)"
+          },
+          {
+            "time": 167.0449999773407,
+            "opacity": "0.855027",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05926)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 83.484375,
+      "openEnd": 113,
+      "closeMiddle": 79.265625,
+      "closeEnd": 44
+    }
+  },
+  {
+    "width": 375,
+    "lang": "en",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.984000018239,
+            "opacity": "0.145091",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9374)"
+          },
+          {
+            "time": 166.984000018239,
+            "opacity": "0.854909",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06256)"
+          },
+          {
+            "time": 166.984000018239,
+            "opacity": "0.145091",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9374)"
+          },
+          {
+            "time": 166.984000018239,
+            "opacity": "0.854909",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06256)"
+          },
+          {
+            "time": 166.984000018239,
+            "opacity": "0.145091",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9374)"
+          },
+          {
+            "time": 166.984000018239,
+            "opacity": "0.854909",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06256)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.145041",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9389)"
+          },
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.854959",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06115)"
+          },
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.145041",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9389)"
+          },
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.854959",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06115)"
+          },
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.145041",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9389)"
+          },
+          {
+            "time": 167.00999999417388,
+            "opacity": "0.854959",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06115)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.145734",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9194)"
+          },
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.854266",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.08056)"
+          },
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.145734",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9194)"
+          },
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.854266",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.08056)"
+          },
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.145734",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9194)"
+          },
+          {
+            "time": 166.65200001071236,
+            "opacity": "0.854266",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.08056)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 83.421875,
+      "openEnd": 113,
+      "closeMiddle": 79.28125,
+      "closeEnd": 44
+    }
+  },
+  {
+    "width": 375,
+    "lang": "ja",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.14457",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.952)"
+          },
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.85543",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04797)"
+          },
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.14457",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.952)"
+          },
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.85543",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04797)"
+          },
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.14457",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.952)"
+          },
+          {
+            "time": 167.25399999297252,
+            "opacity": "0.85543",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04797)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.144966",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.941)"
+          },
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.855034",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05904)"
+          },
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.144966",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.941)"
+          },
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.855034",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05904)"
+          },
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.144966",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.941)"
+          },
+          {
+            "time": 167.0490000168794,
+            "opacity": "0.855034",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05904)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 600.546875,
+            "valueTop": 604.046875
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 600.546875,
+            "valueTop": 604.046875
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.214000001783,
+            "opacity": "0.144647",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9499)"
+          },
+          {
+            "time": 167.214000001783,
+            "opacity": "0.855353",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05012)"
+          },
+          {
+            "time": 167.214000001783,
+            "opacity": "0.144647",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9499)"
+          },
+          {
+            "time": 167.214000001783,
+            "opacity": "0.855353",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05012)"
+          },
+          {
+            "time": 167.214000001783,
+            "opacity": "0.144647",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9499)"
+          },
+          {
+            "time": 167.214000001783,
+            "opacity": "0.855353",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05012)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 93.34375,
+      "openEnd": 130.1875,
+      "closeMiddle": 88.1875,
+      "closeEnd": 44
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.144532",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9531)"
+          },
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.855468",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04689)"
+          },
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.144532",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9531)"
+          },
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.855468",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04689)"
+          },
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.144532",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9531)"
+          },
+          {
+            "time": 167.2739999842827,
+            "opacity": "0.855468",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.04689)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.145498",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9261)"
+          },
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.854502",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07394)"
+          },
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.145498",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9261)"
+          },
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.854502",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07394)"
+          },
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.145498",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9261)"
+          },
+          {
+            "time": 166.7739999880551,
+            "opacity": "0.854502",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07394)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.145143",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.936)"
+          },
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.854856",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06402)"
+          },
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.145143",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.936)"
+          },
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.854856",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06402)"
+          },
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.145143",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.936)"
+          },
+          {
+            "time": 166.95699998885428,
+            "opacity": "0.854856",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.06402)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 577.265625,
+            "valueTop": 580.765625
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 83.421875,
+      "openEnd": 113,
+      "closeMiddle": 79.296875,
+      "closeEnd": 44
+    }
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.11641",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7405)"
+          },
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.88359",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25948)"
+          },
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.11641",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7405)"
+          },
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.88359",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25948)"
+          },
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.11641",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7405)"
+          },
+          {
+            "time": 183.35899999109097,
+            "opacity": "0.88359",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25948)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.144995",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9401)"
+          },
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.855005",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05985)"
+          },
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.144995",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9401)"
+          },
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.855005",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05985)"
+          },
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.144995",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9401)"
+          },
+          {
+            "time": 167.03399998652736,
+            "opacity": "0.855005",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.05985)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.116102",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7491)"
+          },
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.883898",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25086)"
+          },
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.116102",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7491)"
+          },
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.883898",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25086)"
+          },
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.116102",
+            "transform": "matrix(1, 0, 0, 1, 0, -24.7491)"
+          },
+          {
+            "time": 183.5539999970699,
+            "opacity": "0.883898",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.25086)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 612.453125,
+            "valueTop": 615.953125
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 83.453125,
+      "openEnd": 113,
+      "closeMiddle": 79.296875,
+      "closeEnd": 44
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "samples": [
+      {
+        "metric": "winRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.144778",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9462)"
+          },
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.855222",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.0538)"
+          },
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.144778",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9462)"
+          },
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.855222",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.0538)"
+          },
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.144778",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9462)"
+          },
+          {
+            "time": 167.14600001443182,
+            "opacity": "0.855222",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.0538)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "domina",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "symmetra",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "brigitte",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          }
+        ]
+      },
+      {
+        "metric": "banRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.748999997135,
+            "opacity": "0.145546",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9247)"
+          },
+          {
+            "time": 166.748999997135,
+            "opacity": "0.854454",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07529)"
+          },
+          {
+            "time": 166.748999997135,
+            "opacity": "0.145546",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9247)"
+          },
+          {
+            "time": 166.748999997135,
+            "opacity": "0.854454",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07529)"
+          },
+          {
+            "time": 166.748999997135,
+            "opacity": "0.145546",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9247)"
+          },
+          {
+            "time": 166.748999997135,
+            "opacity": "0.854454",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07529)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "doomfist",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 600.546875,
+            "valueTop": 604.046875
+          },
+          {
+            "key": "pharah",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "jetpack-cat",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 600.546875,
+            "valueTop": 604.046875
+          }
+        ]
+      },
+      {
+        "metric": "pickRate",
+        "start": [
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          },
+          {
+            "time": 0,
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)"
+          },
+          {
+            "time": 0,
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 28)"
+          }
+        ],
+        "middle": [
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.145696",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9205)"
+          },
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.854304",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07948)"
+          },
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.145696",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9205)"
+          },
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.854304",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07948)"
+          },
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.145696",
+            "transform": "matrix(1, 0, 0, 1, 0, -23.9205)"
+          },
+          {
+            "time": 166.6720000014177,
+            "opacity": "0.854304",
+            "transform": "matrix(1, 0, 0, 1, 0, 4.07948)"
+          }
+        ],
+        "cards": [
+          {
+            "key": "winston",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "cassidy",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          },
+          {
+            "key": "kiriko",
+            "height": 156,
+            "overflow": 0,
+            "horizontal": 0,
+            "nameBottom": 594.453125,
+            "valueTop": 597.953125
+          }
+        ]
+      }
+    ],
+    "disclosure": {
+      "openStart": 44,
+      "openMiddle": 93.359375,
+      "openEnd": 130.1875,
+      "closeMiddle": 88.234375,
+      "closeEnd": 44
+    }
+  }
+]
