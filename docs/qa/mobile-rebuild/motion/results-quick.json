@@ -1,0 +1,49 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "metrics": {
+        "overflow": 0,
+        "width": 390,
+        "highlights": "111.656px 111.672px 111.656px",
+        "middle": "351px",
+        "bottom": "171.5px 171.5px",
+        "historyEmpty": true
+      },
+      "requests": 37,
+      "damageKeys": [
+        "reaper",
+        "pharah",
+        "torbjorn",
+        "genji",
+        "junkrat",
+        "tracer"
+      ],
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "metrics": {
+        "overflow": 0,
+        "width": 1440,
+        "highlights": "335.25px 335.25px 335.25px 335.25px",
+        "middle": "758.328px 606.672px",
+        "bottom": "451px 451px 451px",
+        "historyEmpty": true
+      },
+      "requests": 37,
+      "damageKeys": [
+        "reaper",
+        "pharah",
+        "torbjorn",
+        "genji",
+        "junkrat",
+        "tracer"
+      ],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "dryRun": false,
+  "updated": 1,
+  "failures": 0,
+  "status": "collected",
+  "results": [
+    {
+      "region": "asia",
+      "decision": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false
+      },
+      "plannedRequests": 9,
+      "collection": {
+        "status": "complete",
+        "succeeded": 9,
+        "expected": 9,
+        "failedDivisions": []
+      },
+      "errors": [],
+      "persistence": "2026-11-20T00-24-17.799Z.json"
+    }
+  ],
+  "maxStatisticsRequests": 27
+}

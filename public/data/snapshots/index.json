@@ -427,6 +427,240 @@
       "observationDate": "2026-11-06",
       "reviewStatus": "pending",
       "preserveTags": []
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:14.752Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "all",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:15.465Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "bronze",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:15.814Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "silver",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:16.093Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "gold",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:16.373Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "platinum",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:16.934Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "emerald",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:17.214Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "diamond",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:17.493Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "master",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "schemaVersion": 2,
+      "collectedAt": "2026-11-20T00:24:17.773Z",
+      "filters": {
+        "platform": "pc",
+        "gamemode": "competitive",
+        "region": "asia",
+        "division": "grandmaster",
+        "map": "all"
+      },
+      "observationDate": "2026-11-20",
+      "reviewStatus": "pending",
+      "preserveTags": [],
+      "observationPlan": {
+        "collect": true,
+        "reason": "ordinary-observation",
+        "milestone": "ordinary-weekly",
+        "targetPatch": null,
+        "patchVerified": false,
+        "policyVersion": "graph-observations-v2"
+      },
+      "milestones": [
+        "ordinary-weekly"
+      ]
     }
   ]
 }

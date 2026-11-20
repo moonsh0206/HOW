@@ -1,0 +1,6 @@
+Final npm.cmd run build: PASS (exit 0)
+663 localized public entry points generated.
+CSS: index-CYjUxxAE.css (164.03 kB)
+JS: index-7D2JTU0B.js (623.00 kB)
+Existing warning: JS chunk exceeds 500 kB.
+Role-means archive changed: false.

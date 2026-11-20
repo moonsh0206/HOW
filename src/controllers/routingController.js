@@ -1,9 +1,10 @@
 import {updateSEO} from '../i18n/seo.js';
-import {routeHash} from '../i18n/routes.js';
+import {routeHash,localizedURL} from '../i18n/routes.js';
+import {getLanguage} from '../i18n/i18n.js';
 import {syncCompactMain} from '../views/compactMainView.js';
 import {createPlayerSearchController} from './playerSearchController.js';
 import {createOverfastPlayerProvider} from '../services/overfastPlayerProvider.js';
-import {playerPath} from '../models/playerModel.js';
+import {playerPath,playerQuery} from '../models/playerModel.js';
 import { createCounterService } from '../services/counterService.js';
 import { HISTORY_METRICS } from '../models/pickHistoryModel.js';
 import { statisticsQuery } from '../models/statisticsModel.js';
@@ -141,13 +142,16 @@ export function createRoutingController({ model, detailService, detailView, coun
     if (event.target.closest('[data-action="perk-stats-retry"]')) { perkKey=null; render(); }
   };
   const mapChange=()=>{};
+  const dashboardSearch=event=>{const value=event.detail?.query;try{playerQuery(value);}catch{return;}if(typeof value!=='string'||!value.trim())return;
+    window.history.pushState(null,'',localizedURL('#/player-search',getLanguage(),import.meta.env?.BASE_URL??'/'));navigate();playerSearch.reset();document.querySelector('#player-query').value=value;playerSearch.search(value);
+  };
   const resetPlayerMenu=event=>{if(event.button>0||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
     if(event.target.closest('.main-menu a[data-main-menu="player-search"],.site-header a[href="#/player-search"]'))playerSearch.reset();
   };
   return {
-    start() { if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
+    start() { document.addEventListener('how:playersearch',dashboardSearch);if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

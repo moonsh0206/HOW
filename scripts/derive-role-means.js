@@ -23,10 +23,16 @@ export async function deriveRoleMeans({directory='public/data/snapshots',rosterF
   const roles=meanRoleRecords(frame.records,heroes),coverage={validCount:Object.values(roles).reduce((n,r)=>n+r.count,0),targetCount:Object.values(roles).reduce((n,r)=>n+r.targetCount,0)};
   observations.push({date,collectedAt:frame.collectedAt,observationStart:frame.observationStart??frame.collectedAt,filters:frame.filters,source:frame.source,provenance:frame.provenance,patch:frame.patch??null,patchVerification:frame.patchVerification??null,statisticsWindow:frame.statisticsWindow??'unverified-patch-window',sources,roles,coverage});
  }
- observations.sort((a,b)=>a.collectedAt.localeCompare(b.collectedAt)||statisticsQuery(a.filters).localeCompare(statisticsQuery(b.filters)));
  let previous;try{previous=await readFile(output,'utf8');}catch(error){if(error.code!=='ENOENT')throw error;}
+ // Compact historical means survive rolling source-file retention. Never silently
+ // replace an invalid archive or merge a different roster/calculation version.
+ const old=previous===undefined?null:normalizeRoleMeanArchive(JSON.parse(previous));
+ if(old&&stableJSON(old.roster)!==stableJSON(roleRoster(heroes)))throw Error('Role roster changed: explicit archive migration required');
+ const merged=new Map((old?.observations??[]).map(row=>[statisticsQuery(row.filters)+':'+row.collectedAt,row]));
+ for(const row of observations)merged.set(statisticsQuery(row.filters)+':'+row.collectedAt,row);
+ observations.splice(0,observations.length,...merged.values());
+ observations.sort((a,b)=>a.collectedAt.localeCompare(b.collectedAt)||statisticsQuery(a.filters).localeCompare(statisticsQuery(b.filters)));
  const sourceFingerprint=createHash('sha256').update(stableJSON({roster:roleRoster(heroes),observations})).digest('hex');
- let old;try{old=normalizeRoleMeanArchive(JSON.parse(previous));}catch{}
  const generatedAt=old?.sourceFingerprint===sourceFingerprint?old.generatedAt:new Date().toISOString();
  const archive=normalizeRoleMeanArchive({schemaVersion:1,aggregateVersion:ROLE_MEAN_VERSION,method:ROLE_MEAN_METHOD,metric:'winRate',timezone:'Asia/Seoul',roster:roleRoster(heroes),observations,generatedAt,sourceFingerprint});
  const content=stableJSON(archive)+'\n';

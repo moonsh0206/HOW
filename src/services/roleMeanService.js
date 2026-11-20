@@ -9,8 +9,9 @@ export function createRoleMeanService({base='/',fetcher=globalThis.fetch,now=Dat
  return {async getHistory(filters,{days=7,heroes}={}){
   if(![7,30].includes(days))throw Error('Invalid role history period');const archive=await read(),roster=roleRoster(heroes);if(MEAN_ROLES.some(role=>JSON.stringify(roster[role])!==JSON.stringify(archive.roster[role])))throw Error('Role roster changed');
   const end=now(),start=end-days*86400000,query=statisticsQuery(filters),rows=archive.observations.filter(r=>statisticsQuery(r.filters)===query&&Date.parse(r.collectedAt)>=start&&Date.parse(r.collectedAt)<=end).sort((a,b)=>Date.parse(a.collectedAt)-Date.parse(b.collectedAt));
-  const reference=rows.at(-1),daily=new Map();for(const row of rows)if(compatibleDashboardObservation(row,reference,filters))daily.set(row.date,row);
-  const series=MEAN_ROLES.map(role=>({role,points:[...daily].map(([day,row])=>({day,time:Date.parse(row.collectedAt),observedAt:row.collectedAt,...row.roles[role],sources:row.sources}))}));
+  const daily=new Map();for(const row of rows)if(compatibleDashboardObservation(row,row,filters))daily.set(row.date,row);
+  const dailyRows=[...daily.values()];
+  const series=MEAN_ROLES.map(role=>({role,points:dailyRows.map((row,i)=>({day:row.date,time:Date.parse(row.collectedAt),observedAt:row.collectedAt,...row.roles[role],sources:row.sources,patch:row.patch,patchVerification:row.patchVerification,statisticsWindow:row.statisticsWindow,connectPrevious:i>0&&compatibleDashboardObservation(dailyRows[i-1],row,filters)}))}));
   return {series,days,aggregateVersion:archive.aggregateVersion,method:archive.method,available:series.some(s=>s.points.filter(p=>p.value!==null).length>=2),observedUntil:new Date(end).toISOString(),warningCount:0};
  }};
 }

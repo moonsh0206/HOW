@@ -1,0 +1,1163 @@
+{
+  "source": "live-captured API statistics when available; otherwise stored original statistics for all maps; map failures never filled with synthetic values",
+  "results": [
+    {
+      "width": 1440,
+      "lang": "ko",
+      "times": [
+        5520,
+        6055,
+        6051
+      ],
+      "samples": [
+        {
+          "metric": "winRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181349",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9222)",
+                "time": 150.08500001369995
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818651",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07778)",
+                "time": 150.08500001369995
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181349",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9222)",
+                "time": 150.08500001369995
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818651",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07778)",
+                "time": 150.08500001369995
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181349",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9222)",
+                "time": 150.08500001369995
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818651",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07778)",
+                "time": 150.08500001369995
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "banRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858731",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.95553)",
+                "time": 16.719000018637686
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141269",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0445)",
+                "time": 16.719000018637686
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858731",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.95553)",
+                "time": 16.719000018637686
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141269",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0445)",
+                "time": 16.719000018637686
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858731",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.95553)",
+                "time": 16.719000018637686
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141269",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0445)",
+                "time": 16.719000018637686
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181582",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9157)",
+                "time": 149.98700001863696
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818418",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.08429)",
+                "time": 149.98700001863696
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181582",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9157)",
+                "time": 149.98700001863696
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818418",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.08429)",
+                "time": 149.98700001863696
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181582",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9157)",
+                "time": 149.98700001863696
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818418",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.08429)",
+                "time": 149.98700001863696
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "pickRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858943",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.9496)",
+                "time": 16.693000014097237
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141057",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0504)",
+                "time": 16.693000014097237
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858943",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.9496)",
+                "time": 16.693000014097237
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141057",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0504)",
+                "time": 16.693000014097237
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.858943",
+                "transform": "matrix(1, 0, 0, 1, 0, -3.9496)",
+                "time": 16.693000014097237
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.141057",
+                "transform": "matrix(1, 0, 0, 1, 0, 24.0504)",
+                "time": 16.693000014097237
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181406",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9206)",
+                "time": 150.06100001409806
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818594",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07937)",
+                "time": 150.06100001409806
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181406",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9206)",
+                "time": 150.06100001409806
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818594",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07937)",
+                "time": 150.06100001409806
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.181406",
+                "transform": "matrix(1, 0, 0, 1, 0, -22.9206)",
+                "time": 150.06100001409806
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.818594",
+                "transform": "matrix(1, 0, 0, 1, 0, 5.07937)",
+                "time": 150.06100001409806
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          }
+        }
+      ],
+      "slowBefore": {
+        "aura": "0.641208",
+        "magma": "96.4165% 50%",
+        "animations": [
+          {
+            "name": "dashboard-aura",
+            "duration": 9200
+          },
+          {
+            "name": "dashboard-magma",
+            "duration": 7200
+          }
+        ]
+      },
+      "slowAfter": {
+        "aura": "0.637088",
+        "magma": "0.00904198% 50%"
+      },
+      "focusPause": true,
+      "hoverPause": true,
+      "reduced": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "times": [
+        5505,
+        6066,
+        6070
+      ],
+      "samples": [
+        {
+          "metric": "winRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224408",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7166)",
+                "time": 133.64500000858646
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775592",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.28342)",
+                "time": 133.64500000858646
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224408",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7166)",
+                "time": 133.64500000858646
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775592",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.28342)",
+                "time": 133.64500000858646
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224408",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7166)",
+                "time": 133.64500000858646
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775592",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.28342)",
+                "time": 133.64500000858646
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "winRate",
+                "key": "domina",
+                "value": "54.6%"
+              },
+              {
+                "role": "damage",
+                "metric": "winRate",
+                "key": "symmetra",
+                "value": "52.7%"
+              },
+              {
+                "role": "support",
+                "metric": "winRate",
+                "key": "brigitte",
+                "value": "53.6%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "banRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.223996",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7281)",
+                "time": 133.78799999817304
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.776004",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2719)",
+                "time": 133.78799999817304
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.223996",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7281)",
+                "time": 133.78799999817304
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.776004",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2719)",
+                "time": 133.78799999817304
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.223996",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7281)",
+                "time": 133.78799999817304
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.776004",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2719)",
+                "time": 133.78799999817304
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "banRate",
+                "key": "doomfist",
+                "value": "35.1%"
+              },
+              {
+                "role": "damage",
+                "metric": "banRate",
+                "key": "pharah",
+                "value": "37.5%"
+              },
+              {
+                "role": "support",
+                "metric": "banRate",
+                "key": "jetpack-cat",
+                "value": "48.7%"
+              }
+            ]
+          }
+        },
+        {
+          "metric": "pickRate",
+          "start": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "1",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)",
+                "time": 0
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0",
+                "transform": "matrix(1, 0, 0, 1, 0, 28)",
+                "time": 0
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "middle": {
+            "animations": [
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224471",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7148)",
+                "time": 133.62299998030025
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775529",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2852)",
+                "time": 133.62299998030025
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224471",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7148)",
+                "time": 133.62299998030025
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775529",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2852)",
+                "time": 133.62299998030025
+              },
+              {
+                "target": "ARTICLE",
+                "exit": true,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.224471",
+                "transform": "matrix(1, 0, 0, 1, 0, -21.7148)",
+                "time": 133.62299998030025
+              },
+              {
+                "target": "ARTICLE",
+                "exit": false,
+                "delay": 0,
+                "duration": 520,
+                "opacity": "0.775529",
+                "transform": "matrix(1, 0, 0, 1, 0, 6.2852)",
+                "time": 133.62299998030025
+              }
+            ],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          },
+          "end": {
+            "animations": [],
+            "cards": [
+              {
+                "role": "tank",
+                "metric": "pickRate",
+                "key": "winston",
+                "value": "14.4%"
+              },
+              {
+                "role": "damage",
+                "metric": "pickRate",
+                "key": "cassidy",
+                "value": "30.2%"
+              },
+              {
+                "role": "support",
+                "metric": "pickRate",
+                "key": "kiriko",
+                "value": "43.1%"
+              }
+            ]
+          }
+        }
+      ],
+      "slowBefore": {
+        "aura": "0.638068",
+        "magma": "97.5701% 50%",
+        "animations": [
+          {
+            "name": "dashboard-aura",
+            "duration": 9200
+          },
+          {
+            "name": "dashboard-magma",
+            "duration": 7200
+          }
+        ]
+      },
+      "slowAfter": {
+        "aura": "0.637084",
+        "magma": "0.00910547% 50%"
+      },
+      "focusPause": true,
+      "hoverPause": true,
+      "reduced": true,
+      "errors": []
+    }
+  ]
+}

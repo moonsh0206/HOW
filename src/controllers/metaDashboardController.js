@@ -5,13 +5,13 @@ import {createDashboardCycle} from './dashboardCycle.js';
 
 export function createMetaDashboardController({model,snapshotService,statisticsService,counterService,mapService,roleMeanService,root=document.querySelector('#dashboard-page')}) {
  const view=createMetaDashboardView(root);
- const local={role:'all',metric:'pickRate',days:7,mapKey:'busan',history:{status:'idle'},map:{status:'idle'},maps:[],counter:null};
+ const local={role:'all',metric:'pickRate',days:7,historyDivision:'diamond_plus',mapKey:'busan',history:{status:'idle'},map:{status:'idle'},maps:[],counter:null};
  let active=false,historyKey='',mapKey='',context='',historyToken=0,mapToken=0,stopped=false;
  const cycle=createDashboardCycle({document:root?.ownerDocument,window:root?.ownerDocument.defaultView,onMetric(metric){local.metric=metric;return draw();},onState(state){local.cycle=state;view.updateCycle?.(state);}});
  let metadataStarted=false;
  function draw(){if(!active||stopped)return;local.cycle=cycle.state();const data=dashboardSelection(model,local.role,local.metric);
    const target=data.current?(data.spotlight??data.sorted[0]):null;local.counter=target?{target,result:counterService.getHeroCounters(target.key,model.state.heroes)}:null;
-   data.history=local.history.means??roleWinHistory(local.history.result,model.state.heroes,model.state.statsFilters,{days:local.days});
+   data.history=local.history.means??roleWinHistory(local.history.result,model.state.heroes,{...model.state.statsFilters,division:model.state.statsFilters.gamemode==='quickplay'?'all':local.historyDivision},{days:local.days});
    const byKey=new Map(local.map.result?.records?.map(r=>[r.hero,r])??[]);
    data.mapLeaders=pickLeaders(local.map.status==='ready'&&!local.map.result?.stale?model.state.heroes.map(h=>({...h,statistics:byKey.get(h.key)})):[]);
    return view.render(model,local,data);
@@ -22,12 +22,13 @@ export function createMetaDashboardController({model,snapshotService,statisticsS
    const filters={...model.state.statsFilters},query=statisticsQuery(filters);
    if(context!==query){context=query;if(filters.map!=='all')local.mapKey=filters.map;}
    if(model.state.status==='ready'){
-    const key=query+':'+local.days+':'+model.state.heroes.map(h=>h.key+':'+h.role).sort().join(',');
+    const historyFilters={...filters,division:filters.gamemode==='quickplay'?'all':local.historyDivision};local.historyFilters=historyFilters;
+    const key=statisticsQuery(historyFilters)+':'+local.days+':'+model.state.heroes.map(h=>h.key+':'+h.role).sort().join(',');
     if(historyKey!==key){historyKey=key;const token=++historyToken;local.history={status:'loading'};
      const days=local.days,heroes=model.state.heroes;
      Promise.resolve().then(async()=>{
-      if(roleMeanService){try{return {means:await roleMeanService.getHistory(filters,{days,heroes})};}catch{}}
-      return {result:await snapshotService.getHistory(filters,{days,scope:'range'})};
+      if(roleMeanService){try{return {means:await roleMeanService.getHistory(historyFilters,{days,heroes})};}catch{}}
+      return {result:await snapshotService.getHistory(historyFilters,{days,scope:'range'})};
      }).then(result=>{if(token===historyToken&&!stopped)local.history={status:'ready',...result};}).catch(error=>{if(token===historyToken&&!stopped)local.history={status:'error',error:error.message};}).finally(()=>{if(token===historyToken)draw();});
     }
     const mapFilters={...filters,map:local.mapKey},nextKey=statisticsQuery(mapFilters);
@@ -47,7 +48,7 @@ export function createMetaDashboardController({model,snapshotService,statisticsS
   const map=event.target.closest('[data-dashboard-map-link]')?.dataset.dashboardMapLink;
   if(map){const select=document.querySelector('#stats-map');if(select&&select.value!==map){select.value=map;select.dispatchEvent(new select.ownerDocument.defaultView.Event('change',{bubbles:true}));}}
  };
- const change=event=>{if(event.target.id==='dashboard-days'){local.days=Number(event.target.value);load();}if(event.target.id==='dashboard-map'){local.mapKey=event.target.value;load();}};
+ const change=event=>{if(event.target.id==='dashboard-days'){local.days=Number(event.target.value);load();}if(event.target.id==='dashboard-history-division'){local.historyDivision=event.target.value;load();}if(event.target.id==='dashboard-map'){local.mapKey=event.target.value;load();}};
  const cycleArea=e=>e?.closest?.('.dashboard-highlights,.dashboard-kpi-controls');
  const over=e=>{if(e.pointerType!=='touch')cycle.setHover(true);};
  const out=e=>{if(!cycleArea(e.relatedTarget))cycle.setHover(false);};

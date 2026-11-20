@@ -1,4 +1,13 @@
 const messages={
+ 'dashboard.singleObservation':['유효한 관측이 하루뿐입니다. 점은 실제 관측값이며 아직 추이가 아닙니다.','Only one valid observation day is available. Dots are observed values, not a trend.','有効な観測日は1日だけです。点は実測値であり、まだ推移ではありません。'],
+ 'dashboard.graphRank':['그래프 경쟁전 등급','Graph competitive rank','グラフのランク'],
+ 'dashboard.patchBoundary':['패치 발표 표시는 통계 반영 확정이 아닙니다. 집계 구간이 다른 관측은 연결하지 않습니다.','Patch publication does not confirm statistical adoption. Different aggregation windows are not connected.','パッチ公開日は統計への反映確定ではありません。集計区間が異なる観測は接続しません。'],
+ 'dashboard.currentMetric':['현재 지표: {metric}','Current metric: {metric}','現在の指標：{metric}'],
+ 'dashboard.moreRanks':['순위 3개 더 보기','Show 3 more ranks','残り3件を表示'],
+ 'dashboard.lessRanks':['접기','Show less','折りたたむ'],
+ 'perk.pairUnavailable':['동일 단계의 비교 가능한 선택률이 없습니다.','Comparable rates for this stage are unavailable.','同じ段階の比較可能な選択率がありません。'],
+ 'perk.pairIncompatible':['선택률 합계가 100%를 초과해 단일 막대로 비교하지 않습니다.','Rates exceed 100%; a combined bar is not shown.','選択率の合計が100%を超えるため、比較バーを表示しません。'],
+ 'perk.pairPartial':['제공된 비율을 그대로 표시하며 남은 구간은 미표시 비율입니다.','Provider rates are unchanged; the remaining segment is unspecified.','提供された比率をそのまま表示し、残りは未表示の比率です。'],
  'intro.label':['HOW 브랜드 인트로','HOW brand introduction','HOW ブランドイントロ'],
  'intro.skip':['건너뛰기','Skip intro','スキップ'],
  'nav.dashboard':['대시보드','Dashboard','ダッシュボード'],

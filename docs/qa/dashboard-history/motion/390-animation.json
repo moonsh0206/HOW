@@ -1,0 +1,105 @@
+{
+  "start": [
+    {
+      "time": 0,
+      "duration": 520,
+      "state": "running",
+      "transform": "matrix(0, 0, 0, 1, 0, 0)",
+      "opacity": "1"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 0,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    }
+  ],
+  "middle": [
+    {
+      "time": 166.83000000044677,
+      "duration": 520,
+      "state": "running",
+      "transform": "matrix(0.854611, 0, 0, 1, 0, 0)",
+      "opacity": "1"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    },
+    {
+      "time": 166.83000000044677,
+      "duration": 240,
+      "state": "running",
+      "transform": "none",
+      "opacity": "0"
+    }
+  ],
+  "end": []
+}

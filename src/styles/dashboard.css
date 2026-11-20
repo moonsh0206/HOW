@@ -175,3 +175,21 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
  .dashboard-feature-content>small{min-height:36px}
 }
 
+
+/* Independent archive controls and shared player-search entry. */
+.dashboard-player-search{display:flex;gap:8px;align-items:center;min-width:0}
+.dashboard-player-search input{width:100%;min-width:0;min-height:44px;font-size:16px;padding:8px 12px;border:1px solid var(--border-control);border-radius:var(--radius-control);background:var(--surface-inset);color:var(--text-primary)}
+.dashboard-player-search button{min-height:44px;white-space:nowrap;padding:8px 14px}
+.dashboard-history-controls{display:flex;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%}
+.dashboard-history-controls>label{width:170px;flex:1 1 130px;min-width:0}
+.dashboard-history-controls>label>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.dashboard-line{stroke-dasharray:4 4}
+.dashboard-tank{color:#55A8F6;stroke:#55A8F6}.dashboard-damage{color:#F2A448;stroke:#F2A448}.dashboard-support{color:#57C4A3;stroke:#57C4A3}
+.dashboard-dot.dashboard-tank{fill:#55A8F6}.dashboard-dot.dashboard-damage{fill:#F2A448}.dashboard-dot.dashboard-support{fill:#57C4A3}
+.dashboard-dot:focus{outline:none;stroke:var(--text-primary);stroke-width:3}
+.dashboard-patch-marker{stroke:var(--text-secondary);stroke-width:1;stroke-dasharray:2 5;opacity:.4}
+@media(min-width:1200px){.dashboard-heading{grid-template-columns:auto minmax(180px,1fr) minmax(260px,380px) auto}.dashboard-heading>p:not(.eyebrow){display:none}.dashboard-player-search{grid-column:3;grid-row:1}.dashboard-kpi-controls{grid-column:4;grid-row:1}}
+@media(max-width:1199px){.dashboard-player-search{margin-top:10px}.dashboard-history-controls{width:100%}}
+@media(max-width:767px){.dashboard-heading:has(.dashboard-player-search){padding-right:0}.dashboard-heading:has(.dashboard-player-search) h1{padding-right:42px}.dashboard-player-search{gap:6px}.dashboard-history-controls>label{width:auto}.dashboard-history-controls .filter-combobox-trigger{font-size:16px}}
+
+.dashboard-history-chart{position:relative}.dashboard-history-tooltip{position:absolute;top:0;left:0;right:0;z-index:2;padding:8px;background:var(--surface-inset);border:1px solid var(--border-control);border-radius:var(--radius-control);font-size:12px;line-height:1.5;pointer-events:none;overflow-wrap:anywhere}

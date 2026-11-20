@@ -1,0 +1,3098 @@
+{
+  "latest": "2026-11-20T00:24:17.773Z",
+  "count": 66,
+  "method": "equal-hero-weight-complete-roster",
+  "version": "how-role-hero-mean-v1",
+  "results": [
+    {
+      "region": "asia",
+      "division": "all",
+      "dates": [
+        "2026-11-02",
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-02",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-02",
+              "value": 49.19333333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 49.1,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.16,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-02",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-02",
+              "value": 50.00434782608695,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 49.891304347826086,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.90434782608696,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-02",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-02",
+              "value": 48.42499999999999,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 49.300000000000004,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.33749999999999,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "diamond",
+      "dates": [
+        "2026-11-04",
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-04",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-04",
+              "value": 49.07333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 48.986666666666665,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.99999999999999,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-04",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-04",
+              "value": 49.86956521739131,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 49.77826086956521,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.86086956521739,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-04",
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-04",
+              "value": 48.25,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-06",
+              "value": 48.575,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.2375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "bronze",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.2,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.55333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.7304347826087,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 50.00869565217391,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.5875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.0875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "silver",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.893333333333324,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.22,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.83478260869566,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.84347826086955,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.231249999999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.15625000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "gold",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.02666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.11333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.99130434782609,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.87826086956522,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.78750000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.3875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "platinum",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.08666666666666,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.05333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.78695652173913,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.926086956521736,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.45,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.425,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "emerald",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.20000000000001,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.03333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.9913043478261,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.94782608695653,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.85625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.449999999999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "master",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.186666666666675,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.98,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.96521739130434,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.95217391304348,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 47.99375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.85625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "grandmaster",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 47.04666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.839999999999996,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.31739130434782,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.05217391304347,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 45.643750000000004,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.0375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "bronze_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.82833333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.09916666666666,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.799456521739124,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.80869565217392,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.51562499999998,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.07968750000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "diamond_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.40666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.940000000000005,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.68695652173913,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.62173913043479,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 47.40416666666667,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.71041666666666,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "emerald_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.605000000000004,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.963333333333345,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.763043478260855,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.70326086956523,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 47.7671875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.895312499999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "gold_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.75555555555555,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.003333333333345,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.80507246376813,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.76956521739132,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.384375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.065625000000004,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "master_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.116666666666674,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.91,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.641304347826086,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.502173913043485,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 46.81875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.446875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "platinum_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.70133333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 48.98133333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.767826086956525,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.74782608695652,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.10375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.00125,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "asia",
+      "division": "silver_plus",
+      "dates": [
+        "2026-11-06",
+        "2026-11-20"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.775238095238095,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.034285714285716,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.80931677018632,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.78012422360249,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": true
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.50535714285714,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            },
+            {
+              "date": "2026-11-20",
+              "value": 49.07857142857143,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": true
+            }
+          ]
+        }
+      ],
+      "available": true
+    },
+    {
+      "region": "europe",
+      "division": "all",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.50666666666666,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.83913043478262,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.974999999999994,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "diamond",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.093333333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.10000000000001,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.106249999999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "bronze",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.86666666666668,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.93478260869565,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.58749999999999,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "silver",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.79333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.83478260869566,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.67500000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "gold",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.73333333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.63478260869566,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.831250000000004,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "platinum",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.39333333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.81304347826087,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.00625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "emerald",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.233333333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.00869565217393,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.262499999999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "master",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.64,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.98695652173913,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.481249999999996,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "grandmaster",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.940000000000005,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.952173913043474,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.59375000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "bronze_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.33666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.783152173913045,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.94296875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "diamond_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.89111111111111,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.67971014492752,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.06041666666666,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "emerald_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.97666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.76195652173914,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.110937500000006,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "gold_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.172222222222224,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.74927536231884,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.046875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "master_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.79,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.46956521739131,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.03750000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "platinum_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.059999999999995,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.77217391304348,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.09000000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "europe",
+      "division": "silver_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.26095238095238,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.761490683229816,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.993750000000006,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "all",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.5,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.79130434782609,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.83125000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "diamond",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.026666666666664,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.85217391304349,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.974999999999994,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "bronze",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.12666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.98260869565218,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.75625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "silver",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.82,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.80869565217392,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.5625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "gold",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.60666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.70869565217391,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.75000000000001,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "platinum",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.42,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.72608695652173,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.868750000000006,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "emerald",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.24666666666667,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.90434782608696,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.94375,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "master",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 48.80666666666666,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.752173913043485,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.15,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "grandmaster",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.87333333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.50000000000001,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.89374999999999,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "bronze_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.49083333333333,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.90434782608695,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.862500000000004,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "diamond_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.23555555555556,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.03478260869566,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.006249999999994,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "emerald_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.23833333333334,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.002173913043464,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.990625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "gold_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.330000000000005,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.9072463768116,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.93020833333334,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "master_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.34000000000001,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.12608695652173,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 50.021875,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "platinum_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.274666666666675,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.94695652173914,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.96625,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    },
+    {
+      "region": "americas",
+      "division": "silver_plus",
+      "dates": [
+        "2026-11-06"
+      ],
+      "roles": [
+        {
+          "role": "tank",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.4,
+              "count": 15,
+              "total": 15,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "damage",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.893167701863355,
+              "count": 23,
+              "total": 23,
+              "connectPrevious": false
+            }
+          ]
+        },
+        {
+          "role": "support",
+          "validDates": [
+            "2026-11-06"
+          ],
+          "points": [
+            {
+              "date": "2026-11-06",
+              "value": 49.877678571428575,
+              "count": 16,
+              "total": 16,
+              "connectPrevious": false
+            }
+          ]
+        }
+      ],
+      "available": false
+    }
+  ]
+}

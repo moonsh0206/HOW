@@ -40,3 +40,13 @@ export function perkSelectionForItem(heroKey,tier,item,result,{date=new Date().t
 export function perkCardsForDetail(heroKey,detail,state){
  return Object.fromEntries(['minor','major'].map(tier=>[tier,(detail[tier]??[]).map(item=>({...item,selection:state.status==='ready'?perkSelectionForItem(heroKey,tier,item,state.result):null}))]));
 }
+// Rates remain provider percentages; never rescale counts/rates to force 100%.
+export function perkStageComparison(heroKey,tier,items,state){
+ const unavailable={status:'unavailable',entries:[],remaining:null};
+ if(!['minor','major'].includes(tier)||items.length!==2||state.status!=='ready'||state.result?.heroKey!==heroKey)return unavailable;
+ const frame=state.result,filters=f=>JSON.stringify([f?.queue_type??null,f?.since??null]),entries=items.map(i=>i.selection);
+ if(entries.some(e=>!e||e.status!=='ready'||e.heroKey!==heroKey||e.tier!==tier||e.source!=='OverLooker'||!e.perkKey||!Number.isFinite(e.selectionRate)||e.selectionRate<0||e.selectionRate>100||filters(e.filters)!==filters(frame.filters)||!frame.entries.some(p=>p.perkKey===e.perkKey&&p.providerPerkId===e.providerPerkId&&p.tier===tier&&p.selectionRate===e.selectionRate&&p.selectionCount===e.selectionCount)))return unavailable;
+ if(new Set(entries.map(e=>e.perkKey)).size!==2)return unavailable;
+ const total=entries.reduce((sum,e)=>sum+e.selectionRate,0);
+ return {status:total>100+1e-6?'incompatible':'ready',entries,total,remaining:Math.max(0,100-total),partial:Math.abs(total-100)>1e-6};
+}

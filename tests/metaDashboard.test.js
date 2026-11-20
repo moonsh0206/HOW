@@ -36,8 +36,8 @@ test('role history selects latest KST observation/day; no means for missing/revi
  const history={observedUntil:'2026-11-18T02:00:00Z',snapshots:[snapshot('2026-11-16T01:00:00Z'),snapshot('2026-11-17T01:00:00Z'),snapshot('2026-11-17T02:00:00Z',records.map(r=>({...r,winRate:r.winRate+1}))),snapshot('2026-11-19T01:00:00Z')]};
  const d=roleWinHistory(history,roster,filters);assert(d.available);assert.equal(d.series[0].points.length,2);assert.equal(d.series[0].points.at(-1).observedAt,'2026-11-17T02:00:00Z');
  const tank=roster.find(h=>h.role==='tank').key;history.snapshots[2].records=records.filter(r=>r.hero!==tank);assert.equal(roleWinHistory(history,roster,filters).series[0].points.at(-1).value,null);
- history.snapshots[2].filters={...filters,region:'europe'};assert.equal(roleWinHistory(history,roster,filters).available,false);
- const different={...snapshot('2026-11-17T01:00:00Z'),patch:'unknown-new'};assert.equal(roleWinHistory({observedUntil:history.observedUntil,snapshots:[history.snapshots[0],different]},roster,filters).available,false);
+ history.snapshots[2].filters={...filters,region:'europe'};assert.equal(roleWinHistory(history,roster,filters).series[0].points.length,2); // valid earlier same-cohort rows survive; Europe is excluded
+ const different={...snapshot('2026-11-17T01:00:00Z'),patch:'unknown-new'};const boundary=roleWinHistory({observedUntil:history.observedUntil,snapshots:[history.snapshots[0],different]},roster,filters);assert.equal(boundary.series[0].points.length,2);assert.equal(boundary.series[0].points[1].connectPrevious,false); // retain observations without connecting incompatible windows
  assert.equal(roleWinHistory({snapshots:[]},roster,filters).available,false);
 });
 test('saved production snapshots are read with existing service; no last-week trend is invented',async()=>{
@@ -46,6 +46,20 @@ test('saved production snapshots are read with existing service; no last-week tr
  const older=await service.getHistory(DEFAULT_FILTERS,{days:30});assert(older.snapshots.length>0);assert.equal(roleWinHistory(older,roster,DEFAULT_FILTERS,{days:30}).available,false); // one actual grouped batch
 });
 const flush=async()=>{for(let i=0;i<5;i++)await new Promise(r=>setImmediate(r));};
+test('mobile rank expansion retains six real rows and cycle dots track the shared metric across translated refreshes',async()=>{
+ const dom=new JSDOM('<section id="dashboard-page"></section>'),prior=globalThis.document;globalThis.document=dom.window.document;
+ const {createMetaDashboardView}=await import('../src/views/metaDashboardView.js');const m=model(),root=document.querySelector('section'),view=createMetaDashboardView(root);
+ const local={role:'all',days:7,mapKey:'busan',metric:'pickRate',cycle:{metric:'pickRate',automatic:false},history:{status:'ready',snapshots:[]},map:{status:'idle'},maps:[]};
+ try{
+  const data=dashboardSelection(m);view.render(m,local,data);
+  assert.equal(root.querySelectorAll('#dashboard-rank-rows tr').length,6);
+  const button=root.querySelector('.dashboard-rank-more');assert.equal(button.getAttribute('aria-expanded'),'false');button.click();assert.equal(button.getAttribute('aria-expanded'),'true');
+  const rows=[...root.querySelectorAll('#dashboard-rank-rows tr')].map(e=>e.dataset.dashboardHero);
+  for(const lang of ['en','ja','ko']){setLanguage(lang);view.render(m,local,data);assert.equal(button.getAttribute('aria-expanded'),'true');assert.deepEqual([...root.querySelectorAll('#dashboard-rank-rows tr')].map(e=>e.dataset.dashboardHero),rows);}
+  for(const metric of ['winRate','banRate','pickRate']){view.updateCycle({metric,automatic:true});assert.equal(root.querySelector('.dashboard-cycle-dots .is-active').dataset.cycleDot,metric);assert.equal(root.querySelectorAll('.dashboard-cycle-dots .is-active').length,1);}
+  assert.equal(root.querySelectorAll('.dashboard-card-slot').length,3);assert.equal(root.querySelectorAll('.dashboard-spotlight').length,1);assert.equal(root.querySelector('.dashboard-spotlight .dashboard-meta-flame').textContent,data.spotlight.metaScore.toFixed(1));
+ }finally{view.destroy();dom.window.close();globalThis.document=prior;setLanguage('ko');}
+});
 test('dashboard shares cached services, guards old replies, keeps local role/period and translates live controls',async()=>{
  const dom=new JSDOM('<section id="dashboard-page"></section>'),prior=globalThis.document;globalThis.document=dom.window.document;
  const m=model(),requests=[],historyCalls=[];let c;

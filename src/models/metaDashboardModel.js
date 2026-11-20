@@ -17,7 +17,7 @@ export function pickLeaders(heroes,metric='pickRate') {
 export function dashboardSelection(model,role='all',metric='pickRate') {
   const state=model.state;
   let matches=false;try{matches=statisticsQuery(state.statistics?.filters)===statisticsQuery(state.statsFilters);}catch{}
-  const current=matches&&state.statsStatus==='ready'&&!state.statistics.stale?state.statistics:null;
+  const current=state.statistics&&matches&&state.statsStatus==='ready'&&!state.statistics.stale?state.statistics:null;
   const heroes=model.enrichedHeroes(),sorted=heroes.filter(h=>role==='all'||h.role===role).sort(compareHowTier);
   const hot=hotHeroes(heroes,current,state.previousSnapshot);
   const spotlight=hot.heroes[0]??(current?heroes.filter(h=>h.tier&&h.metaScore!=null&&!statisticsNeedsReview(h.statistics)).sort(compareHowTier)[0]:null);
@@ -56,12 +56,12 @@ export function compatibleDashboardObservation(a,b,filters) {
 export function roleWinHistory(history,heroes,filters,{days=7,now=Date.now()}={}) {
   const end=Date.parse(history?.observedUntil)||now,start=end-days*86400000;
   const rows=(history?.snapshots??[]).filter(s=>Number.isFinite(Date.parse(s.collectedAt))&&Date.parse(s.collectedAt)>=start&&Date.parse(s.collectedAt)<=end).sort((a,b)=>Date.parse(a.collectedAt)-Date.parse(b.collectedAt));
-  const reference=rows.at(-1),daily=new Map();
-  for(const row of rows)if(compatibleDashboardObservation(row,reference,filters))daily.set(dayKey(Date.parse(row.collectedAt)),row);
+  const daily=new Map();
+  for(const row of rows)if(compatibleDashboardObservation(row,row,filters))daily.set(dayKey(Date.parse(row.collectedAt)),row);
   const series=DASHBOARD_ROLES.map(role=>{
     const points=[];
-    for(const [day,snapshot]of daily){const mean=meanRoleRecords(snapshot.records,heroes)[role];
-      points.push({day,time:Date.parse(snapshot.collectedAt),observedAt:snapshot.collectedAt,...mean});
+    let previous=null;for(const [day,snapshot]of daily){const mean=meanRoleRecords(snapshot.records,heroes)[role];
+      points.push({day,time:Date.parse(snapshot.collectedAt),observedAt:snapshot.collectedAt,...mean,patch:snapshot.patch,patchVerification:snapshot.patchVerification,statisticsWindow:snapshot.statisticsWindow,connectPrevious:!!previous&&compatibleDashboardObservation(previous,snapshot,filters)});previous=snapshot;
     }
     return {role,points};
   });

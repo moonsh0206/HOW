@@ -10,8 +10,8 @@ import { renderPickHistory } from './pickHistoryView.js';
 import { renderMapStatistics } from './mapStatisticsView.js';
 import { renderSynergies } from './synergyView.js';
 import { withCurrentPickHistory } from '../models/pickHistoryModel.js';
-import {renderPerkSelection,renderPerkStatisticsInfo} from './perkStatisticsView.js';
-import {perkCardsForDetail} from '../models/perkSelectionModel.js';
+import {renderPerkSelection,renderPerkStatisticsInfo,renderPerkComparison} from './perkStatisticsView.js';
+import {perkCardsForDetail,perkStageComparison} from '../models/perkSelectionModel.js';
 import {renderHeroPatch} from './heroPatchView.js';
 import {restorePatchDisclosure} from './patchDisclosure.js';
 import {compactText} from './compactText.js';
@@ -111,9 +111,10 @@ export function createHeroDetailView() {
       if(nextPerkKey!==perkKey){perkKey=nextPerkKey;
       for(const tier of ['minor','major'])for(const card of root.querySelectorAll(`#detail-${tier} .ability-card`)){
         const item=perkCards[tier].find(i=>i.name===card.dataset.itemName);
-        if(!item)continue;const selection=renderPerkSelection(item,perkStatistics),old=card.querySelector('.perk-selection');
+        if(!item)continue;const selection=renderPerkSelection(item,perkStatistics,{showBar:false,digits:1}),old=card.querySelector('.perk-selection');
         if(old)old.replaceWith(selection);else card.append(selection);
       }
+      for(const tier of ['minor','major']){const section=root.querySelector(`#detail-${tier}`),comparison=renderPerkComparison(perkCards[tier],perkStageComparison(route.key,tier,perkCards[tier],perkStatistics)),old=section.querySelector('.perk-stage-comparison');if(old)old.replaceWith(comparison);else if(perkCards[tier].length)section.append(comparison);}
       }
       const oldPerkInfo=root.querySelector('#detail-perk-rates');
       const sourceSignature=JSON.stringify([perkStatistics.status,perkStatistics.result?.collectedAt,perkStatistics.result?.fetchedAt,perkStatistics.result?.filters,errorText(perkStatistics.error)]);
