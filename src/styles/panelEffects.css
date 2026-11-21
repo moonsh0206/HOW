@@ -101,4 +101,8 @@
  #dashboard-page .dashboard-kpi-controls{grid-column:2;grid-row:1}
 }
 @media(max-width:767px){#dashboard-page .dashboard-heading{row-gap:3px}}
+/* Space belongs only to this dashboard's perch, never to the shared header. */
+@media(min-width:1051px){#dashboard-page{padding-top:calc(var(--page-block-gap) + 16px)}}
+@media(min-width:340px) and (max-width:1050px){#dashboard-page .dashboard-player-search{margin-top:21px}}
+@media(min-width:340px){#dashboard-page .dashboard-player-search[data-egg-hero=ana] input{padding-inline-start:18px}}
 @media(prefers-reduced-motion:reduce){.dashboard-title-pending .dashboard-heading-copy>:is(h1,.eyebrow){opacity:1}}

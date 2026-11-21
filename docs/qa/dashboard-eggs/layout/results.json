@@ -1,0 +1,322 @@
+[
+  {
+    "width": 1440,
+    "key": "hanzo",
+    "state": {
+      "key": "hanzo",
+      "image": {
+        "x": 522.5,
+        "y": 90.578125,
+        "width": 70.1875,
+        "height": 41.671875,
+        "top": 90.578125,
+        "right": 592.6875,
+        "bottom": 132.25,
+        "left": 522.5
+      },
+      "input": {
+        "x": 522.5,
+        "y": 120,
+        "width": 321.90625,
+        "height": 44,
+        "top": 120,
+        "right": 844.40625,
+        "bottom": 164,
+        "left": 522.5
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "key": "genji",
+    "state": {
+      "key": "genji",
+      "image": {
+        "x": 507.65625,
+        "y": 89.625,
+        "width": 36.4375,
+        "height": 50.25,
+        "top": 89.625,
+        "right": 544.09375,
+        "bottom": 139.875,
+        "left": 507.65625
+      },
+      "input": {
+        "x": 522.5,
+        "y": 120,
+        "width": 321.90625,
+        "height": 44,
+        "top": 120,
+        "right": 844.40625,
+        "bottom": 164,
+        "left": 522.5
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "key": "ana",
+    "state": {
+      "key": "ana",
+      "image": {
+        "x": 503.609375,
+        "y": 89.234375,
+        "width": 54,
+        "height": 51.296875,
+        "top": 89.234375,
+        "right": 557.609375,
+        "bottom": 140.53125,
+        "left": 503.609375
+      },
+      "input": {
+        "x": 522.5,
+        "y": 120,
+        "width": 321.90625,
+        "height": 44,
+        "top": 120,
+        "right": 844.40625,
+        "bottom": 164,
+        "left": 522.5
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "key": "sombra",
+    "state": {
+      "key": "sombra",
+      "image": {
+        "x": 507.65625,
+        "y": 89.09375,
+        "width": 45.890625,
+        "height": 51.703125,
+        "top": 89.09375,
+        "right": 553.546875,
+        "bottom": 140.796875,
+        "left": 507.65625
+      },
+      "input": {
+        "x": 522.5,
+        "y": 120,
+        "width": 321.90625,
+        "height": 44,
+        "top": 120,
+        "right": 844.40625,
+        "bottom": 164,
+        "left": 522.5
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "key": "winston",
+    "state": {
+      "key": "winston",
+      "image": {
+        "x": 509,
+        "y": 89.890625,
+        "width": 37.796875,
+        "height": 41.703125,
+        "top": 89.890625,
+        "right": 546.796875,
+        "bottom": 131.59375,
+        "left": 509
+      },
+      "input": {
+        "x": 522.5,
+        "y": 120,
+        "width": 321.90625,
+        "height": 44,
+        "top": 120,
+        "right": 844.40625,
+        "bottom": 164,
+        "left": 522.5
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "key": "hanzo",
+    "state": {
+      "key": "hanzo",
+      "image": {
+        "x": 12,
+        "y": 209.46875,
+        "width": 58.046875,
+        "height": 34.453125,
+        "top": 209.46875,
+        "right": 70.046875,
+        "bottom": 243.921875,
+        "left": 12
+      },
+      "input": {
+        "x": 12,
+        "y": 233.765625,
+        "width": 298.90625,
+        "height": 44,
+        "top": 233.765625,
+        "right": 310.90625,
+        "bottom": 277.765625,
+        "left": 12
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "key": "genji",
+    "state": {
+      "key": "genji",
+      "image": {
+        "x": 1.203125,
+        "y": 209.0625,
+        "width": 29.6875,
+        "height": 40.9375,
+        "top": 209.0625,
+        "right": 30.890625,
+        "bottom": 250,
+        "left": 1.203125
+      },
+      "input": {
+        "x": 12,
+        "y": 233.765625,
+        "width": 298.90625,
+        "height": 44,
+        "top": 233.765625,
+        "right": 310.90625,
+        "bottom": 277.765625,
+        "left": 12
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "key": "ana",
+    "state": {
+      "key": "ana",
+      "image": {
+        "x": 0.5,
+        "y": 208.390625,
+        "width": 44.546875,
+        "height": 42.3125,
+        "top": 208.390625,
+        "right": 45.046875,
+        "bottom": 250.703125,
+        "left": 0.5
+      },
+      "input": {
+        "x": 12,
+        "y": 233.765625,
+        "width": 298.90625,
+        "height": 44,
+        "top": 233.765625,
+        "right": 310.90625,
+        "bottom": 277.765625,
+        "left": 12
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "key": "sombra",
+    "state": {
+      "key": "sombra",
+      "image": {
+        "x": 1.203125,
+        "y": 208.25,
+        "width": 37.796875,
+        "height": 42.578125,
+        "top": 208.25,
+        "right": 39,
+        "bottom": 250.828125,
+        "left": 1.203125
+      },
+      "input": {
+        "x": 12,
+        "y": 233.765625,
+        "width": 298.90625,
+        "height": 44,
+        "top": 233.765625,
+        "right": 310.90625,
+        "bottom": 277.765625,
+        "left": 12
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "key": "winston",
+    "state": {
+      "key": "winston",
+      "image": {
+        "x": 2.5625,
+        "y": 209.0625,
+        "width": 31.046875,
+        "height": 34.25,
+        "top": 209.0625,
+        "right": 33.609375,
+        "bottom": 243.3125,
+        "left": 2.5625
+      },
+      "input": {
+        "x": 12,
+        "y": 233.765625,
+        "width": 298.90625,
+        "height": 44,
+        "top": 233.765625,
+        "right": 310.90625,
+        "bottom": 277.765625,
+        "left": 12
+      },
+      "overlap": 0,
+      "center": 0,
+      "pointer": "none",
+      "overflow": 0
+    },
+    "errors": []
+  }
+]

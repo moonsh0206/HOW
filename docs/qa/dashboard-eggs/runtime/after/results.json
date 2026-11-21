@@ -1,0 +1,1110 @@
+[
+  {
+    "width": 320,
+    "lang": "ko",
+    "state": {
+      "key": "genji",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp",
+      "loaded": true,
+      "visible": false,
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "form": {
+        "x": 12,
+        "y": 212.765625,
+        "width": 281,
+        "height": 44,
+        "top": 212.765625,
+        "right": 293,
+        "bottom": 256.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 281,
+        "height": 126.25,
+        "top": 130.515625,
+        "right": 293,
+        "bottom": 256.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "state": {
+      "key": "genji",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp",
+      "loaded": true,
+      "visible": false,
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "form": {
+        "x": 12,
+        "y": 270.390625,
+        "width": 281,
+        "height": 44,
+        "top": 270.390625,
+        "right": 293,
+        "bottom": 314.390625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 138.890625,
+        "width": 281,
+        "height": 175.5,
+        "top": 138.890625,
+        "right": 293,
+        "bottom": 314.390625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 320,
+    "lang": "ja",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": false,
+      "image": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "form": {
+        "x": 12,
+        "y": 252.390625,
+        "width": 281,
+        "height": 44,
+        "top": 252.390625,
+        "right": 293,
+        "bottom": 296.390625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 138.890625,
+        "width": 281,
+        "height": 157.5,
+        "top": 138.890625,
+        "right": 293,
+        "bottom": 296.390625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "lang": "ko",
+    "state": {
+      "key": "winston",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 5,
+        "y": 208.46875,
+        "width": 23,
+        "height": 25.375,
+        "top": 208.46875,
+        "right": 28,
+        "bottom": 233.84375,
+        "left": 5
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 321,
+        "height": 44,
+        "top": 226.765625,
+        "right": 333,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 321,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 333,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "lang": "en",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 4,
+        "y": 225.875,
+        "width": 28,
+        "height": 31.546875,
+        "top": 225.875,
+        "right": 32,
+        "bottom": 257.421875,
+        "left": 4
+      },
+      "form": {
+        "x": 12,
+        "y": 244.765625,
+        "width": 321,
+        "height": 44,
+        "top": 244.765625,
+        "right": 333,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 321,
+        "height": 158.25,
+        "top": 130.515625,
+        "right": 333,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "lang": "ja",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 4,
+        "y": 207.875,
+        "width": 28,
+        "height": 31.546875,
+        "top": 207.875,
+        "right": 32,
+        "bottom": 239.421875,
+        "left": 4
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 321,
+        "height": 44,
+        "top": 226.765625,
+        "right": 333,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 321,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 333,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "state": {
+      "key": "genji",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 4,
+        "y": 208.46875,
+        "width": 22,
+        "height": 30.34375,
+        "top": 208.46875,
+        "right": 26,
+        "bottom": 238.8125,
+        "left": 4
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 351,
+        "height": 44,
+        "top": 226.765625,
+        "right": 363,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 351,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 363,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp"
+      ],
+      "lifecycle": true,
+      "errorSafe": true
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "state": {
+      "key": "hanzo",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 43,
+        "height": 25.53125,
+        "top": 226.765625,
+        "right": 55,
+        "bottom": 252.296875,
+        "left": 12
+      },
+      "form": {
+        "x": 12,
+        "y": 244.765625,
+        "width": 351,
+        "height": 44,
+        "top": 244.765625,
+        "right": 363,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 351,
+        "height": 158.25,
+        "top": 130.515625,
+        "right": 363,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 4,
+        "y": 207.875,
+        "width": 28,
+        "height": 31.546875,
+        "top": 207.875,
+        "right": 32,
+        "bottom": 239.421875,
+        "left": 4
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 351,
+        "height": 44,
+        "top": 226.765625,
+        "right": 363,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 351,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 363,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "ko",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 4,
+        "y": 207.875,
+        "width": 28,
+        "height": 31.546875,
+        "top": 207.875,
+        "right": 32,
+        "bottom": 239.421875,
+        "left": 4
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 391,
+        "height": 44,
+        "top": 226.765625,
+        "right": 403,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 391,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 403,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "en",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 3,
+        "y": 225.96875,
+        "width": 33,
+        "height": 31.34375,
+        "top": 225.96875,
+        "right": 36,
+        "bottom": 257.3125,
+        "left": 3
+      },
+      "form": {
+        "x": 12,
+        "y": 244.765625,
+        "width": 391,
+        "height": 44,
+        "top": 244.765625,
+        "right": 403,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 391,
+        "height": 158.25,
+        "top": 130.515625,
+        "right": 403,
+        "bottom": 288.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "lang": "ja",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 3,
+        "y": 207.96875,
+        "width": 33,
+        "height": 31.34375,
+        "top": 207.96875,
+        "right": 36,
+        "bottom": 239.3125,
+        "left": 3
+      },
+      "form": {
+        "x": 12,
+        "y": 226.765625,
+        "width": 391,
+        "height": 44,
+        "top": 226.765625,
+        "right": 403,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "heading": {
+        "x": 12,
+        "y": 130.515625,
+        "width": 391,
+        "height": 140.25,
+        "top": 130.515625,
+        "right": 403,
+        "bottom": 270.765625,
+        "left": 12
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "lang": "ko",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 108.5,
+        "y": 188.109375,
+        "width": 28,
+        "height": 31.546875,
+        "top": 188.109375,
+        "right": 136.5,
+        "bottom": 219.65625,
+        "left": 108.5
+      },
+      "form": {
+        "x": 116.5,
+        "y": 207,
+        "width": 520,
+        "height": 44,
+        "top": 207,
+        "right": 636.5,
+        "bottom": 251,
+        "left": 116.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 104,
+        "width": 705,
+        "height": 147,
+        "top": 104,
+        "right": 729,
+        "bottom": 251,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "lang": "en",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 107.5,
+        "y": 188.203125,
+        "width": 33,
+        "height": 31.34375,
+        "top": 188.203125,
+        "right": 140.5,
+        "bottom": 219.546875,
+        "left": 107.5
+      },
+      "form": {
+        "x": 116.5,
+        "y": 207,
+        "width": 520,
+        "height": 44,
+        "top": 207,
+        "right": 636.5,
+        "bottom": 251,
+        "left": 116.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 104,
+        "width": 705,
+        "height": 147,
+        "top": 104,
+        "right": 729,
+        "bottom": 251,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "lang": "ja",
+    "state": {
+      "key": "genji",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 108.5,
+        "y": 188.703125,
+        "width": 22,
+        "height": 30.34375,
+        "top": 188.703125,
+        "right": 130.5,
+        "bottom": 219.046875,
+        "left": 108.5
+      },
+      "form": {
+        "x": 116.5,
+        "y": 207,
+        "width": 520,
+        "height": 44,
+        "top": 207,
+        "right": 636.5,
+        "bottom": 251,
+        "left": 116.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 104,
+        "width": 705,
+        "height": 147,
+        "top": 104,
+        "right": 729,
+        "bottom": 251,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "lang": "ko",
+    "state": {
+      "key": "hanzo",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 505.5,
+        "y": 90.203125,
+        "width": 52,
+        "height": 30.875,
+        "top": 90.203125,
+        "right": 557.5,
+        "bottom": 121.078125,
+        "left": 505.5
+      },
+      "form": {
+        "x": 505.5,
+        "y": 112,
+        "width": 340,
+        "height": 44,
+        "top": 112,
+        "right": 845.5,
+        "bottom": 156,
+        "left": 505.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1303,
+        "height": 44,
+        "top": 112,
+        "right": 1327,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "lang": "en",
+    "state": {
+      "key": "winston",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 495.5,
+        "y": 89.703125,
+        "width": 28,
+        "height": 30.890625,
+        "top": 89.703125,
+        "right": 523.5,
+        "bottom": 120.59375,
+        "left": 495.5
+      },
+      "form": {
+        "x": 505.5,
+        "y": 112,
+        "width": 340,
+        "height": 44,
+        "top": 112,
+        "right": 845.5,
+        "bottom": 156,
+        "left": 505.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1303,
+        "height": 44,
+        "top": 112,
+        "right": 1327,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1366,
+    "lang": "ja",
+    "state": {
+      "key": "genji",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 494.5,
+        "y": 89.5,
+        "width": 27,
+        "height": 37.234375,
+        "top": 89.5,
+        "right": 521.5,
+        "bottom": 126.734375,
+        "left": 494.5
+      },
+      "form": {
+        "x": 505.5,
+        "y": 112,
+        "width": 340,
+        "height": 44,
+        "top": 112,
+        "right": 845.5,
+        "bottom": 156,
+        "left": 505.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1303,
+        "height": 44,
+        "top": 112,
+        "right": 1327,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/genji-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "state": {
+      "key": "winston",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 512.5,
+        "y": 89.703125,
+        "width": 28,
+        "height": 30.890625,
+        "top": 89.703125,
+        "right": 540.5,
+        "bottom": 120.59375,
+        "left": 512.5
+      },
+      "form": {
+        "x": 522.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 902.5,
+        "bottom": 156,
+        "left": 522.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1377,
+        "height": 44,
+        "top": 112,
+        "right": 1401,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/winston-search.webp"
+      ],
+      "lifecycle": true,
+      "errorSafe": true
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "state": {
+      "key": "sombra",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 511.5,
+        "y": 89.109375,
+        "width": 34,
+        "height": 38.296875,
+        "top": 89.109375,
+        "right": 545.5,
+        "bottom": 127.40625,
+        "left": 511.5
+      },
+      "form": {
+        "x": 522.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 902.5,
+        "bottom": 156,
+        "left": 522.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1377,
+        "height": 44,
+        "top": 112,
+        "right": 1401,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/sombra-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 508.5,
+        "y": 89.203125,
+        "width": 40,
+        "height": 38,
+        "top": 89.203125,
+        "right": 548.5,
+        "bottom": 127.203125,
+        "left": 508.5
+      },
+      "form": {
+        "x": 522.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 902.5,
+        "bottom": 156,
+        "left": 522.5
+      },
+      "heading": {
+        "x": 24,
+        "y": 112,
+        "width": 1377,
+        "height": 44,
+        "top": 112,
+        "right": 1401,
+        "bottom": 156,
+        "left": 24
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "ko",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 748.5,
+        "y": 89.203125,
+        "width": 40,
+        "height": 38,
+        "top": 89.203125,
+        "right": 788.5,
+        "bottom": 127.203125,
+        "left": 748.5
+      },
+      "form": {
+        "x": 762.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 1142.5,
+        "bottom": 156,
+        "left": 762.5
+      },
+      "heading": {
+        "x": 176.5,
+        "y": 112,
+        "width": 1552,
+        "height": 44,
+        "top": 112,
+        "right": 1728.5,
+        "bottom": 156,
+        "left": 176.5
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "en",
+    "state": {
+      "key": "ana",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 748.5,
+        "y": 89.203125,
+        "width": 40,
+        "height": 38,
+        "top": 89.203125,
+        "right": 788.5,
+        "bottom": 127.203125,
+        "left": 748.5
+      },
+      "form": {
+        "x": 762.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 1142.5,
+        "bottom": 156,
+        "left": 762.5
+      },
+      "heading": {
+        "x": 176.5,
+        "y": 112,
+        "width": 1552,
+        "height": 44,
+        "top": 112,
+        "right": 1728.5,
+        "bottom": 156,
+        "left": 176.5
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/ana-search.webp"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "lang": "ja",
+    "state": {
+      "key": "hanzo",
+      "src": "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp",
+      "loaded": true,
+      "visible": true,
+      "image": {
+        "x": 762.5,
+        "y": 90.203125,
+        "width": 52,
+        "height": 30.875,
+        "top": 90.203125,
+        "right": 814.5,
+        "bottom": 121.078125,
+        "left": 762.5
+      },
+      "form": {
+        "x": 762.5,
+        "y": 112,
+        "width": 380,
+        "height": 44,
+        "top": 112,
+        "right": 1142.5,
+        "bottom": 156,
+        "left": 762.5
+      },
+      "heading": {
+        "x": 176.5,
+        "y": 112,
+        "width": 1552,
+        "height": 44,
+        "top": 112,
+        "right": 1728.5,
+        "bottom": 156,
+        "left": 176.5
+      },
+      "center": 0,
+      "overflow": 0,
+      "initialRequests": [
+        "http://127.0.0.1:5253/HOW/assets/decorations/fishing-silhouette.webp"
+      ]
+    },
+    "errors": []
+  }
+]

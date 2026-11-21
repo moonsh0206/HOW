@@ -1,0 +1,374 @@
+{
+  "initial": [
+    {
+      "src": "http://127.0.0.1:5254/HOW/assets/decorations/winston-search.webp",
+      "ready": true,
+      "intro": false,
+      "duration": 380,
+      "samples": [
+        {
+          "at": 3624.699999988079,
+          "time": 0,
+          "state": "running",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 4)",
+          "connected": true
+        },
+        {
+          "at": 3637.7999999523163,
+          "time": 0,
+          "state": "running",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 4)",
+          "connected": true
+        },
+        {
+          "at": 3684.399999976158,
+          "time": 33.38000002969066,
+          "state": "running",
+          "opacity": "0.358814",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.56474)",
+          "connected": true
+        },
+        {
+          "at": 3726.399999976158,
+          "time": 83.38000002969048,
+          "state": "running",
+          "opacity": "0.712445",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.15022)",
+          "connected": true
+        },
+        {
+          "at": 3738.899999976158,
+          "time": 99.98000002969043,
+          "state": "running",
+          "opacity": "0.784557",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.861773)",
+          "connected": true
+        },
+        {
+          "at": 3754.899999976158,
+          "time": 116.78000002969036,
+          "state": "running",
+          "opacity": "0.840405",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.638382)",
+          "connected": true
+        },
+        {
+          "at": 3771.199999988079,
+          "time": 133.38000002969073,
+          "state": "running",
+          "opacity": "0.882257",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.470973)",
+          "connected": true
+        },
+        {
+          "at": 3787.899999976158,
+          "time": 149.9800000296907,
+          "state": "running",
+          "opacity": "0.913876",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.344497)",
+          "connected": true
+        },
+        {
+          "at": 3804.899999976158,
+          "time": 166.6800000296904,
+          "state": "running",
+          "opacity": "0.937781",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.248874)",
+          "connected": true
+        },
+        {
+          "at": 3821.5,
+          "time": 183.48000002969079,
+          "state": "running",
+          "opacity": "0.955735",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.177059)",
+          "connected": true
+        },
+        {
+          "at": 3837.899999976158,
+          "time": 200.08000002969072,
+          "state": "running",
+          "opacity": "0.968904",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.124385)",
+          "connected": true
+        },
+        {
+          "at": 3854.7999999523163,
+          "time": 216.98000002969042,
+          "state": "running",
+          "opacity": "0.97876",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0849602)",
+          "connected": true
+        },
+        {
+          "at": 3871.7999999523163,
+          "time": 233.58000002969038,
+          "state": "running",
+          "opacity": "0.985787",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0568538)",
+          "connected": true
+        },
+        {
+          "at": 3887.899999976158,
+          "time": 250.08000002969055,
+          "state": "running",
+          "opacity": "0.99079",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0368405)",
+          "connected": true
+        },
+        {
+          "at": 3904.599999964237,
+          "time": 266.7800000296907,
+          "state": "running",
+          "opacity": "0.994331",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0226759)",
+          "connected": true
+        },
+        {
+          "at": 3921.2999999523163,
+          "time": 283.4800000296904,
+          "state": "running",
+          "opacity": "0.996723",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0131094)",
+          "connected": true
+        },
+        {
+          "at": 3937.899999976158,
+          "time": 300.0800000296904,
+          "state": "running",
+          "opacity": "0.998258",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00696815)",
+          "connected": true
+        },
+        {
+          "at": 3954.599999964237,
+          "time": 316.88000002969073,
+          "state": "running",
+          "opacity": "0.999195",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0032207)",
+          "connected": true
+        },
+        {
+          "at": 3971.2999999523163,
+          "time": 333.4800000296907,
+          "state": "running",
+          "opacity": "0.999697",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00121369)",
+          "connected": true
+        },
+        {
+          "at": 3988,
+          "time": 350.1800000296904,
+          "state": "running",
+          "opacity": "0.999925",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000301527)",
+          "connected": true
+        },
+        {
+          "at": 4004.7999999523163,
+          "time": 367.08000002969055,
+          "state": "running",
+          "opacity": "0.999994",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.31672e-05)",
+          "connected": true
+        },
+        {
+          "at": 4021.2999999523163,
+          "time": 380,
+          "state": "finished",
+          "opacity": "1",
+          "transform": "none",
+          "connected": true
+        }
+      ]
+    }
+  ],
+  "traces": [
+    {
+      "src": "http://127.0.0.1:5254/HOW/assets/decorations/winston-search.webp",
+      "ready": true,
+      "intro": false,
+      "duration": 380,
+      "samples": [
+        {
+          "at": 4960.5,
+          "time": 0,
+          "state": "running",
+          "opacity": "0",
+          "transform": "matrix(1, 0, 0, 1, 0, 4)",
+          "connected": true
+        },
+        {
+          "at": 4972,
+          "time": 16.68000003928327,
+          "state": "running",
+          "opacity": "0.190205",
+          "transform": "matrix(1, 0, 0, 1, 0, 3.23918)",
+          "connected": true
+        },
+        {
+          "at": 5033.699999988079,
+          "time": 66.88000003928352,
+          "state": "running",
+          "opacity": "0.620325",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.5187)",
+          "connected": true
+        },
+        {
+          "at": 5050.699999988079,
+          "time": 83.38000003928326,
+          "state": "running",
+          "opacity": "0.712445",
+          "transform": "matrix(1, 0, 0, 1, 0, 1.15022)",
+          "connected": true
+        },
+        {
+          "at": 5066,
+          "time": 99.98000003928276,
+          "state": "running",
+          "opacity": "0.784557",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.861773)",
+          "connected": true
+        },
+        {
+          "at": 5079.099999964237,
+          "time": 116.78000003928358,
+          "state": "running",
+          "opacity": "0.840405",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.638382)",
+          "connected": true
+        },
+        {
+          "at": 5088.599999964237,
+          "time": 133.5800000392835,
+          "state": "running",
+          "opacity": "0.882693",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.469227)",
+          "connected": true
+        },
+        {
+          "at": 5105.799999952316,
+          "time": 150.4800000392832,
+          "state": "running",
+          "opacity": "0.914696",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.341216)",
+          "connected": true
+        },
+        {
+          "at": 5122.099999964237,
+          "time": 166.88000003928317,
+          "state": "running",
+          "opacity": "0.938028",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.247889)",
+          "connected": true
+        },
+        {
+          "at": 5138.599999964237,
+          "time": 183.48000003928354,
+          "state": "running",
+          "opacity": "0.955735",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.177059)",
+          "connected": true
+        },
+        {
+          "at": 5155.699999988079,
+          "time": 200.08000003928305,
+          "state": "running",
+          "opacity": "0.968904",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.124385)",
+          "connected": true
+        },
+        {
+          "at": 5171.899999976158,
+          "time": 216.7800000392832,
+          "state": "running",
+          "opacity": "0.978661",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0853571)",
+          "connected": true
+        },
+        {
+          "at": 5189.199999988079,
+          "time": 233.6800000392829,
+          "state": "running",
+          "opacity": "0.985822",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0567109)",
+          "connected": true
+        },
+        {
+          "at": 5205.699999988079,
+          "time": 250.08000003928288,
+          "state": "running",
+          "opacity": "0.99079",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0368405)",
+          "connected": true
+        },
+        {
+          "at": 5222.199999988079,
+          "time": 266.78000003928304,
+          "state": "running",
+          "opacity": "0.994331",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0226759)",
+          "connected": true
+        },
+        {
+          "at": 5239,
+          "time": 283.68000003928364,
+          "state": "running",
+          "opacity": "0.996746",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.0130175)",
+          "connected": true
+        },
+        {
+          "at": 5255.399999976158,
+          "time": 300.0800000392836,
+          "state": "running",
+          "opacity": "0.998258",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00696815)",
+          "connected": true
+        },
+        {
+          "at": 5272.199999988079,
+          "time": 317.08000003928305,
+          "state": "running",
+          "opacity": "0.999203",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00318781)",
+          "connected": true
+        },
+        {
+          "at": 5289,
+          "time": 333.38000003928323,
+          "state": "running",
+          "opacity": "0.999695",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.00122197)",
+          "connected": true
+        },
+        {
+          "at": 5305.299999952316,
+          "time": 350.0800000392834,
+          "state": "running",
+          "opacity": "0.999924",
+          "transform": "matrix(1, 0, 0, 1, 0, 0.000304675)",
+          "connected": true
+        },
+        {
+          "at": 5322.099999964237,
+          "time": 366.78000003928355,
+          "state": "running",
+          "opacity": "0.999994",
+          "transform": "matrix(1, 0, 0, 1, 0, 2.48434e-05)",
+          "connected": true
+        },
+        {
+          "at": 5338.699999988079,
+          "time": 380,
+          "state": "finished",
+          "opacity": "1",
+          "transform": "none",
+          "connected": true
+        }
+      ]
+    }
+  ]
+}

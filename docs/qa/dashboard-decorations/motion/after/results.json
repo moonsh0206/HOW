@@ -1,0 +1,57 @@
+[
+  {
+    "width": 1440,
+    "samples": [
+      {
+        "opacity": 0.820861,
+        "transform": "matrix(1, 0, 0, 1, 0, -8)",
+        "period": "5.3s",
+        "box": {
+          "x": 1150.75,
+          "y": 300,
+          "width": 11,
+          "height": 16,
+          "top": 300,
+          "right": 1161.75,
+          "bottom": 316,
+          "left": 1150.75
+        },
+        "complete": true
+      },
+      {
+        "opacity": 0.897585,
+        "transform": "matrix(1, 0, 0, 1, 0, -8)",
+        "period": "5.3s",
+        "box": {
+          "x": 1150.75,
+          "y": 300,
+          "width": 11,
+          "height": 16,
+          "top": 300,
+          "right": 1161.75,
+          "bottom": 316,
+          "left": 1150.75
+        },
+        "complete": true
+      },
+      {
+        "opacity": 0.999532,
+        "transform": "matrix(1, 0, 0, 1, 0, -8)",
+        "period": "5.3s",
+        "box": {
+          "x": 1150.75,
+          "y": 300,
+          "width": 11,
+          "height": 16,
+          "top": 300,
+          "right": 1161.75,
+          "bottom": 316,
+          "left": 1150.75
+        },
+        "complete": true
+      }
+    ],
+    "reduced": true,
+    "errors": []
+  }
+]

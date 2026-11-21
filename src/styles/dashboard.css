@@ -146,7 +146,12 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
 @media(prefers-reduced-motion:reduce){.dashboard-meta-flame,.dashboard-spotlight:after{animation:none}}
 .dashboard-feature-content>.dashboard-hero{min-height:44px}
 .dashboard-spotlight{--card-frame:#a07843;--card-inner:#80603966;--card-glow:#e49d3d1a;border-color:var(--card-frame);background:linear-gradient(145deg,#2a2d31,#202730 55%,var(--surface-card))}
-.dashboard-spotlight>h2:before{content:'';display:inline-block;width:5px;height:5px;border-radius:2px;background:var(--orange);margin-right:6px;vertical-align:middle}
+.dashboard-spotlight>h2{position:relative}
+.dashboard-spotlight>h2>span{padding-inline-start:11px}
+.dashboard-spotlight-icon{position:absolute;left:-6px;top:50%;width:11px;height:16px;object-fit:contain;transform:translateY(-50%);pointer-events:none;animation:dashboard-flame-breathe 5.3s ease-in-out -1.7s infinite}
+@keyframes dashboard-flame-breathe{0%,100%{opacity:.82}50%{opacity:1}}
+#dashboard-page:is([hidden],.dashboard-motion-suspended,.dashboard-hologram-offscreen) .dashboard-spotlight-icon{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.dashboard-spotlight-icon{animation:none;opacity:1}}
 .dashboard-spotlight .dashboard-feature-value{color:#ffb65b}
 #dashboard-maps{position:relative;isolation:isolate}
 .dashboard-map-art{position:absolute;inset:0;z-index:-1;border-radius:inherit;overflow:hidden;background:var(--surface-card)}
@@ -169,7 +174,10 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
 
 
 /* Independent archive controls and shared player-search entry. */
-.dashboard-player-search{display:flex;gap:8px;align-items:center;min-width:0}
+.dashboard-player-search{position:relative;isolation:isolate;display:flex;gap:8px;align-items:center;min-width:0}
+.dashboard-easter-egg{position:absolute;left:var(--egg-x);top:var(--egg-y);width:var(--egg-width);height:auto;pointer-events:none;z-index:1}
+@media(max-width:1050px){.dashboard-easter-egg{left:var(--egg-small-x);top:var(--egg-small-y);width:var(--egg-small-width)}}
+@media(max-width:339px){.dashboard-easter-egg{display:none}}
 .dashboard-player-search input{width:100%;min-width:0;min-height:44px;font-size:16px;padding:8px 12px;border:1px solid var(--border-control);border-radius:var(--radius-control);background:var(--surface-inset);color:var(--text-primary)}
 .dashboard-player-search button{min-height:44px;white-space:nowrap;padding:8px 14px}
 .dashboard-history-controls{display:flex;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%}

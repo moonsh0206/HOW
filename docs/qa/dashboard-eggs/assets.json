@@ -1,0 +1,70 @@
+[
+  {
+    "hero": "genji",
+    "source": "검색창 위에서 라면 먹는 사이보그 닌자.png",
+    "sha256": "5321ff8deb1027a0d5f9789c7d5ea14a17cccaed7a5c1d8d47add258cbe83a92",
+    "crop": [
+      457,
+      22,
+      1176,
+      1016
+    ],
+    "size": [
+      116,
+      160
+    ],
+    "output": "genji-search.webp",
+    "bytes": 10066
+  },
+  {
+    "hero": "ana",
+    "source": "후드 쓴 전술 저격수의 휴식.png",
+    "sha256": "0ceea1a2cce06860ed285c229fca7ad4d4ecff1db35e802fa8436f5db5828dbb",
+    "crop": [
+      200,
+      26,
+      1232,
+      1007
+    ],
+    "size": [
+      160,
+      152
+    ],
+    "output": "ana-search.webp",
+    "bytes": 11238
+  },
+  {
+    "hero": "sombra",
+    "source": "해커 실루엣과 해골 노트북.png",
+    "sha256": "184e7bc1738402908451987b4e4ad8fd37894b9e4400655acfac6ed9f48bc6cf",
+    "crop": [
+      375,
+      35,
+      789,
+      503
+    ],
+    "size": [
+      142,
+      160
+    ],
+    "output": "sombra-search.webp",
+    "bytes": 16444
+  },
+  {
+    "hero": "winston",
+    "source": "바나나 먹는 윈스턴과 검색창.png",
+    "sha256": "49dc5879e76db19c5b8ed6634958822620bf3c7ff45dbd99dd2de938f7e50098",
+    "crop": [
+      337,
+      54,
+      722,
+      479
+    ],
+    "size": [
+      145,
+      160
+    ],
+    "output": "winston-search.webp",
+    "bytes": 25684
+  }
+]

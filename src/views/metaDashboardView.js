@@ -1,6 +1,7 @@
 import {dashboardPlayerSearch} from './dashboardPlayerSearch.js';
 import {createDashboardTitleMotion} from './dashboardTitleMotion.js';
 import {createDashboardMapMotion} from './dashboardMapMotion.js';
+import {dashboardDecoration} from './dashboardDecorations.js';
 import {node,image} from './dom.js';
 import {t,label,getLanguage,formatLocale,errorText} from '../i18n/i18n.js';
 import {roleName,roleIcon,roleBadge} from './roleIcon.js';
@@ -27,7 +28,7 @@ function hologramLayer(role){
 function featureCard(item,model,local,data){
  const metric=local.metric??'pickRate',spotlight=!item.role,isHot=spotlight&&data.hot.heroes.length>0;
  const card=node('article',undefined,'dashboard-feature'+(spotlight?' dashboard-spotlight':''));card.dataset.featureRole=item.role??'spotlight';if(item.role)card.dataset.metric=metric;
- const heading=node('h2');if(item.role){const icon=roleIcon(item.role);icon.classList.add('dashboard-leader-role');heading.append(icon);}heading.append(node('span',item.role?t('dashboard.metricLeader',{role:roleName(item.role),metric:metricLabel(metric)}):t(isHot?'dashboard.hot':'dashboard.spotlight')));card.append(heading);
+ const heading=node('h2');if(item.role){const icon=roleIcon(item.role);icon.classList.add('dashboard-leader-role');heading.append(icon);}else heading.append(dashboardDecoration('flame','dashboard-spotlight-icon'));heading.append(node('span',item.role?t('dashboard.metricLeader',{role:roleName(item.role),metric:metricLabel(metric)}):t(isHot?'dashboard.hot':'dashboard.spotlight')));card.append(heading);
  if(item.hero){card.dataset.heroKey=item.hero.key;const value=node('strong',item.role?formatPercentage(item.hero.statistics[metric]):undefined,'dashboard-feature-value');if(spotlight){if(Number.isFinite(item.hero.metaScore))value.append(node('span','META ','dashboard-meta-label'),node('span',item.hero.metaScore.toFixed(1),'dashboard-meta-flame'));else value.textContent=t('미제공');}const identity=heroLink(item.hero);if(spotlight&&item.hero.tier){const tier=metaTierEmblem(item.hero.tier);tier.classList.add('dashboard-spotlight-tier');identity.append(tier);}card.append(identity,value);
   if(item.role){const aux=node('small',undefined,'dashboard-feature-aux');for(const k of ['winRate','pickRate','banRate'].filter(k=>k!==metric))aux.append(node('span',`${metricLabel(k)} ${metricValue(item.hero,k)}`));card.append(aux);}
   else if(isHot)card.append(node('small',`${t('픽률')} ${formatPercentagePoints(item.hero.pickDelta)} · ${t('승률')} ${formatPercentagePoints(item.hero.winDelta)}`),node('small',t('dashboard.compared',{previous:dashboardTime(data.hot.previousAt),current:dashboardTime(data.hot.currentAt)}),'dashboard-feature-note'));
@@ -84,7 +85,7 @@ export function createMetaDashboardView(root){
  const unavailable=()=>node('p',t('dashboard.unavailable'),'dashboard-empty');
  function error(state,kind){const box=node('div');box.append(node('p',t('dashboard.error'),'dashboard-empty'));if(state.error)box.append(node('small',errorText(state.error)));const button=node('button',t('dashboard.retry'),'dashboard-retry');button.type='button';button.dataset.dashboardRetry=kind;box.append(button);return box;}
  return {
-  setActive:next=>titleMotion.setActive(next),
+  setActive(next){titleMotion.setActive(next);playerSearch.setActive(next);},
   updateCycle,
   render(model,local,data){
    const currentSignature=JSON.stringify([getLanguage(),local.role,local.days,local.historyDivision,local.mapKey,model.state.status,model.state.statsStatus,model.state.statsFilters,data.sorted.map(h=>[h.key,h.name,h.tier,h.metaScore,h.statistics]),data.hot,data.changes&&[...data.changes],local.history,local.map,local.maps,local.counter]);
@@ -123,7 +124,7 @@ export function createMetaDashboardView(root){
 
   },
   cancelMotion(){mapMotion.cancel();clearFeatures();spotlightEntered=false;spotlightKey='';featureSignature='';cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);frame=null;chartKey='';signature='';},
-  destroy(){titleMotion.destroy();mapMotion.destroy();hologramObserver?.disconnect();clearFeatures();motionMedia?.removeEventListener?.('change',motionChanged);cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);rankCombo.destroy();daysCombo.destroy();mapCombo.destroy();},
+  destroy(){playerSearch.destroy();titleMotion.destroy();mapMotion.destroy();hologramObserver?.disconnect();clearFeatures();motionMedia?.removeEventListener?.('change',motionChanged);cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);rankCombo.destroy();daysCombo.destroy();mapCombo.destroy();},
  };
 }
 

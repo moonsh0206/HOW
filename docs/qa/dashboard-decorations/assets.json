@@ -1,0 +1,34 @@
+[
+  {
+    "source": "\uac80\uc0c9\ucc3d \uc704\uc758 \ud65c\uc3d8\ub294 \ubb34\uc0ac \ub09a\uc2dc\uafbc.png",
+    "sha256": "7b297d079e0cd40ffb22c8724f621c5be2d02579e66816bb647bf50c199b505c",
+    "crop": [
+      454,
+      66,
+      999,
+      390
+    ],
+    "size": [
+      256,
+      152
+    ],
+    "output": "fishing-silhouette.webp",
+    "bytes": 11846
+  },
+  {
+    "source": "\uc624\ub80c\uc9c0 \uace8\ub4dc \ubbf8\ub2c8\uba40 \ubd88\uaf43 \uc544\uc774\ucf58.png",
+    "sha256": "f59b5d7ba0674e9b6258517589a3286d6041accea0e882808e9c9def38589a00",
+    "crop": [
+      504,
+      423,
+      749,
+      793
+    ],
+    "size": [
+      42,
+      64
+    ],
+    "output": "spotlight-flame.webp",
+    "bytes": 4160
+  }
+]

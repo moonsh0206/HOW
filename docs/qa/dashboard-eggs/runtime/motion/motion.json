@@ -1,0 +1,404 @@
+[
+  {
+    "width": 390,
+    "traces": [
+      {
+        "src": "http://127.0.0.1:5254/HOW/assets/decorations/winston-search.webp",
+        "ready": true,
+        "intro": false,
+        "duration": 380,
+        "samples": [
+          {
+            "at": 4969.300000011921,
+            "time": 0,
+            "state": "running",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 4)",
+            "connected": true
+          },
+          {
+            "at": 4986.200000047684,
+            "time": 0,
+            "state": "running",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 4)",
+            "connected": true
+          },
+          {
+            "at": 5013.700000047684,
+            "time": 16.754999996814846,
+            "state": "running",
+            "opacity": "0.191014",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.23594)",
+            "connected": true
+          },
+          {
+            "at": 5026.200000047684,
+            "time": 33.35499999681524,
+            "state": "running",
+            "opacity": "0.35858",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.56568)",
+            "connected": true
+          },
+          {
+            "at": 5036.600000023842,
+            "time": 50.05499999681451,
+            "state": "running",
+            "opacity": "0.502044",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.99182)",
+            "connected": true
+          },
+          {
+            "at": 5053.300000011921,
+            "time": 66.95499999681509,
+            "state": "running",
+            "opacity": "0.620795",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.51682)",
+            "connected": true
+          },
+          {
+            "at": 5069.800000011921,
+            "time": 83.45499999681482,
+            "state": "running",
+            "opacity": "0.712815",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.14874)",
+            "connected": true
+          },
+          {
+            "at": 5086.700000047684,
+            "time": 100.35499999681451,
+            "state": "running",
+            "opacity": "0.785977",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.856092)",
+            "connected": true
+          },
+          {
+            "at": 5103.600000023842,
+            "time": 117.15499999681444,
+            "state": "running",
+            "opacity": "0.841484",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.634065)",
+            "connected": true
+          },
+          {
+            "at": 5120.200000047684,
+            "time": 133.75499999681483,
+            "state": "running",
+            "opacity": "0.883074",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.467705)",
+            "connected": true
+          },
+          {
+            "at": 5136.600000023842,
+            "time": 150.35499999681522,
+            "state": "running",
+            "opacity": "0.914492",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.342033)",
+            "connected": true
+          },
+          {
+            "at": 5153.800000011921,
+            "time": 167.25499999681492,
+            "state": "running",
+            "opacity": "0.938487",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.24605)",
+            "connected": true
+          },
+          {
+            "at": 5170.300000011921,
+            "time": 183.75499999681466,
+            "state": "running",
+            "opacity": "0.955987",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.176052)",
+            "connected": true
+          },
+          {
+            "at": 5186.900000035763,
+            "time": 200.45499999681482,
+            "state": "running",
+            "opacity": "0.969158",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.123369)",
+            "connected": true
+          },
+          {
+            "at": 5203.800000011921,
+            "time": 217.25499999681475,
+            "state": "running",
+            "opacity": "0.978896",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0844169)",
+            "connected": true
+          },
+          {
+            "at": 5220.300000011921,
+            "time": 233.7549999968145,
+            "state": "running",
+            "opacity": "0.985849",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0566039)",
+            "connected": true
+          },
+          {
+            "at": 5236.900000035763,
+            "time": 250.25499999681512,
+            "state": "running",
+            "opacity": "0.990834",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0366633)",
+            "connected": true
+          },
+          {
+            "at": 5253.900000035763,
+            "time": 266.75499999681483,
+            "state": "running",
+            "opacity": "0.994327",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0226934)",
+            "connected": true
+          },
+          {
+            "at": 5269.900000035763,
+            "time": 283.5549999968148,
+            "state": "running",
+            "opacity": "0.996731",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0130749)",
+            "connected": true
+          },
+          {
+            "at": 5286.600000023842,
+            "time": 300.15499999681515,
+            "state": "running",
+            "opacity": "0.998263",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00694653)",
+            "connected": true
+          },
+          {
+            "at": 5303.200000047684,
+            "time": 316.75499999681466,
+            "state": "running",
+            "opacity": "0.99919",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00324138)",
+            "connected": true
+          },
+          {
+            "at": 5321.200000047684,
+            "time": 333.5549999968146,
+            "state": "running",
+            "opacity": "0.999698",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00120751)",
+            "connected": true
+          },
+          {
+            "at": 5338.300000011921,
+            "time": 351.35499999681485,
+            "state": "running",
+            "opacity": "0.999933",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.000266195)",
+            "connected": true
+          },
+          {
+            "at": 5353.200000047684,
+            "time": 366.95499999681493,
+            "state": "running",
+            "opacity": "0.999994",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.3856e-05)",
+            "connected": true
+          },
+          {
+            "at": 5370.300000011921,
+            "time": 380,
+            "state": "finished",
+            "opacity": "1",
+            "transform": "none",
+            "connected": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "traces": [
+      {
+        "src": "http://127.0.0.1:5254/HOW/assets/decorations/winston-search.webp",
+        "ready": true,
+        "intro": false,
+        "duration": 380,
+        "samples": [
+          {
+            "at": 4960.5,
+            "time": 0,
+            "state": "running",
+            "opacity": "0",
+            "transform": "matrix(1, 0, 0, 1, 0, 4)",
+            "connected": true
+          },
+          {
+            "at": 4972,
+            "time": 16.68000003928327,
+            "state": "running",
+            "opacity": "0.190205",
+            "transform": "matrix(1, 0, 0, 1, 0, 3.23918)",
+            "connected": true
+          },
+          {
+            "at": 5033.699999988079,
+            "time": 66.88000003928352,
+            "state": "running",
+            "opacity": "0.620325",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.5187)",
+            "connected": true
+          },
+          {
+            "at": 5050.699999988079,
+            "time": 83.38000003928326,
+            "state": "running",
+            "opacity": "0.712445",
+            "transform": "matrix(1, 0, 0, 1, 0, 1.15022)",
+            "connected": true
+          },
+          {
+            "at": 5066,
+            "time": 99.98000003928276,
+            "state": "running",
+            "opacity": "0.784557",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.861773)",
+            "connected": true
+          },
+          {
+            "at": 5079.099999964237,
+            "time": 116.78000003928358,
+            "state": "running",
+            "opacity": "0.840405",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.638382)",
+            "connected": true
+          },
+          {
+            "at": 5088.599999964237,
+            "time": 133.5800000392835,
+            "state": "running",
+            "opacity": "0.882693",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.469227)",
+            "connected": true
+          },
+          {
+            "at": 5105.799999952316,
+            "time": 150.4800000392832,
+            "state": "running",
+            "opacity": "0.914696",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.341216)",
+            "connected": true
+          },
+          {
+            "at": 5122.099999964237,
+            "time": 166.88000003928317,
+            "state": "running",
+            "opacity": "0.938028",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.247889)",
+            "connected": true
+          },
+          {
+            "at": 5138.599999964237,
+            "time": 183.48000003928354,
+            "state": "running",
+            "opacity": "0.955735",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.177059)",
+            "connected": true
+          },
+          {
+            "at": 5155.699999988079,
+            "time": 200.08000003928305,
+            "state": "running",
+            "opacity": "0.968904",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.124385)",
+            "connected": true
+          },
+          {
+            "at": 5171.899999976158,
+            "time": 216.7800000392832,
+            "state": "running",
+            "opacity": "0.978661",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0853571)",
+            "connected": true
+          },
+          {
+            "at": 5189.199999988079,
+            "time": 233.6800000392829,
+            "state": "running",
+            "opacity": "0.985822",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0567109)",
+            "connected": true
+          },
+          {
+            "at": 5205.699999988079,
+            "time": 250.08000003928288,
+            "state": "running",
+            "opacity": "0.99079",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0368405)",
+            "connected": true
+          },
+          {
+            "at": 5222.199999988079,
+            "time": 266.78000003928304,
+            "state": "running",
+            "opacity": "0.994331",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0226759)",
+            "connected": true
+          },
+          {
+            "at": 5239,
+            "time": 283.68000003928364,
+            "state": "running",
+            "opacity": "0.996746",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.0130175)",
+            "connected": true
+          },
+          {
+            "at": 5255.399999976158,
+            "time": 300.0800000392836,
+            "state": "running",
+            "opacity": "0.998258",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00696815)",
+            "connected": true
+          },
+          {
+            "at": 5272.199999988079,
+            "time": 317.08000003928305,
+            "state": "running",
+            "opacity": "0.999203",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00318781)",
+            "connected": true
+          },
+          {
+            "at": 5289,
+            "time": 333.38000003928323,
+            "state": "running",
+            "opacity": "0.999695",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.00122197)",
+            "connected": true
+          },
+          {
+            "at": 5305.299999952316,
+            "time": 350.0800000392834,
+            "state": "running",
+            "opacity": "0.999924",
+            "transform": "matrix(1, 0, 0, 1, 0, 0.000304675)",
+            "connected": true
+          },
+          {
+            "at": 5322.099999964237,
+            "time": 366.78000003928355,
+            "state": "running",
+            "opacity": "0.999994",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.48434e-05)",
+            "connected": true
+          },
+          {
+            "at": 5338.699999988079,
+            "time": 380,
+            "state": "finished",
+            "opacity": "1",
+            "transform": "none",
+            "connected": true
+          }
+        ]
+      }
+    ]
+  }
+]
