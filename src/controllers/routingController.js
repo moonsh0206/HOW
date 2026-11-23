@@ -1,3 +1,4 @@
+import {createMenuSwipe} from '../views/menuSwipe.js';
 import {updateSEO} from '../i18n/seo.js';
 import {routeHash,localizedURL} from '../i18n/routes.js';
 import {getLanguage} from '../i18n/i18n.js';
@@ -30,6 +31,7 @@ export function createRoutingController({ model, detailService, detailView, coun
   const menuView=createMainMenuView(),scrollPositions=new Map();
   const bannerEntrance=createBannerEntrance(document.querySelector('#list-page .hero-banner'));
   const playerSearch=createPlayerSearchController({root:document.querySelector('#player-search-page'),provider:playerProvider??createOverfastPlayerProvider(),heroes:()=>model.state.heroes,heroDetails:detailService,onNavigate:id=>{location.hash=`/players/${encodeURIComponent(id)}`;}});
+  let menuSwipe;
   const menuMedia=window.matchMedia?.('(max-width: 767px)');
   let currentHash=routeHash(location,import.meta.env?.BASE_URL??'/'),lastMainHash='#/tiers';
   let scrollFrame=null;
@@ -149,9 +151,9 @@ export function createRoutingController({ model, detailService, detailView, coun
     if(event.target.closest('.main-menu a[data-main-menu="player-search"],.site-header a[href="#/player-search"]'))playerSearch.reset();
   };
   return {
-    start() { document.addEventListener('how:playersearch',dashboardSearch);if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
+    start() { menuSwipe?.destroy();menuSwipe=createMenuSwipe({getPage:()=>route.page});document.addEventListener('how:playersearch',dashboardSearch);if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { menuSwipe?.destroy();document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

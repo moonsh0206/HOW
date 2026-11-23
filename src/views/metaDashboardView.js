@@ -1,3 +1,4 @@
+import {createDashboardEmbers} from './dashboardEmbers.js';
 import {rankChangeMarker} from './rankChangeView.js';
 import {dashboardPlayerSearch} from './dashboardPlayerSearch.js';
 import {createDashboardTitleMotion} from './dashboardTitleMotion.js';
@@ -54,8 +55,8 @@ export function createMetaDashboardView(root){
  const cycleDots=node('div',undefined,'dashboard-cycle-dots');cycleDots.setAttribute('role','img');for(const metric of ['pickRate','winRate','banRate']){const dot=node('span');dot.dataset.cycleDot=metric;dot.setAttribute('aria-hidden','true');cycleDots.append(dot);}
  const context=node('div',undefined,'dashboard-context');context.append(scope,source,stateNote);
  const atmosphere=node('div',undefined,'dashboard-atmosphere');atmosphere.setAttribute('aria-hidden','true');
- for(let i=0;i<8;i++)atmosphere.append(node('span',undefined,'dashboard-ash'));
  root.replaceChildren(atmosphere,heading,filterHost,context,highlights,middle,bottom);
+ const embers=createDashboardEmbers(atmosphere);
  const ranking=panel(middle,'dashboard-ranking','dashboard.ranking'),roleMenu=node('div',undefined,'role-filters dashboard-role-filters');roleMenu.setAttribute('role','group');
  for(const role of ['all','tank','damage','support']){const b=node('button');b.type='button';b.dataset.dashboardRole=role;roleMenu.append(b);}
  const rankContent=node('div');ranking.append(roleMenu,rankContent);
@@ -88,7 +89,7 @@ export function createMetaDashboardView(root){
  const unavailable=()=>node('p',t('dashboard.unavailable'),'dashboard-empty');
  function error(state,kind){const box=node('div');box.append(node('p',t('dashboard.error'),'dashboard-empty'));if(state.error)box.append(node('small',errorText(state.error)));const button=node('button',t('dashboard.retry'),'dashboard-retry');button.type='button';button.dataset.dashboardRetry=kind;box.append(button);return box;}
  return {
-  setActive(next){titleMotion.setActive(next);playerSearch.setActive(next);},
+  setActive(next){embers.setActive(next);titleMotion.setActive(next);playerSearch.setActive(next);},
   updateCycle,
   render(model,local,data){
    const currentSignature=JSON.stringify([getLanguage(),local.role,local.days,local.historyDivision,local.mapKey,model.state.status,model.state.statsStatus,model.state.statsFilters,data.sorted.map(h=>[h.key,h.name,h.tier,h.metaScore,h.statistics]),data.hot,data.spotlight?.key,data.changes&&[...data.changes],local.history,local.map,local.maps,local.counter]);
@@ -127,7 +128,7 @@ export function createMetaDashboardView(root){
 
   },
   cancelMotion(){mapMotion.cancel();clearFeatures();spotlightEntered=false;spotlightKey='';featureSignature='';cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);frame=null;chartKey='';signature='';},
-  destroy(){playerSearch.destroy();titleMotion.destroy();mapMotion.destroy();hologramObserver?.disconnect();clearFeatures();motionMedia?.removeEventListener?.('change',motionChanged);cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);rankCombo.destroy();daysCombo.destroy();mapCombo.destroy();},
+  destroy(){embers.destroy();playerSearch.destroy();titleMotion.destroy();mapMotion.destroy();hologramObserver?.disconnect();clearFeatures();motionMedia?.removeEventListener?.('change',motionChanged);cancelChart();if(frame!==null)globalThis.cancelAnimationFrame?.(frame);rankCombo.destroy();daysCombo.destroy();mapCombo.destroy();},
  };
 }
 

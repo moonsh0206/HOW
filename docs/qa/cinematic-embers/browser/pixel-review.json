@@ -1,0 +1,104 @@
+[
+  {
+    "width": 1440,
+    "framesWithWarmFragments": 3,
+    "examples": [
+      {
+        "second": 0,
+        "id": "1",
+        "pixels": 8,
+        "brightest": [
+          125,
+          93,
+          30
+        ]
+      },
+      {
+        "second": 1,
+        "id": "1",
+        "pixels": 2,
+        "brightest": [
+          101,
+          57,
+          74
+        ]
+      },
+      {
+        "second": 3,
+        "id": "7",
+        "pixels": 1,
+        "brightest": [
+          54,
+          42,
+          38
+        ]
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "framesWithWarmFragments": 9,
+    "examples": [
+      {
+        "second": 0,
+        "id": "2",
+        "pixels": 10,
+        "brightest": [
+          164,
+          122,
+          65
+        ]
+      },
+      {
+        "second": 1,
+        "id": "2",
+        "pixels": 10,
+        "brightest": [
+          164,
+          122,
+          65
+        ]
+      },
+      {
+        "second": 2,
+        "id": "2",
+        "pixels": 10,
+        "brightest": [
+          163,
+          122,
+          66
+        ]
+      },
+      {
+        "second": 3,
+        "id": "2",
+        "pixels": 8,
+        "brightest": [
+          162,
+          121,
+          66
+        ]
+      },
+      {
+        "second": 4,
+        "id": "2",
+        "pixels": 5,
+        "brightest": [
+          160,
+          120,
+          65
+        ]
+      },
+      {
+        "second": 17,
+        "id": "8",
+        "pixels": 12,
+        "brightest": [
+          162,
+          121,
+          66
+        ]
+      }
+    ]
+  }
+]
