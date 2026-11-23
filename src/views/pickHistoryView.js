@@ -7,6 +7,11 @@ import {prepareChartMotion} from './chartMotion.js';
 export const HISTORY_LABELS = Object.freeze({get winRate(){return t('승률');},get pickRate(){return t('픽률');},get banRate(){return t('밴률');}});
 const rate = point => point.value ?? point.pickRate;
 export const formatHistoryRate = value => Number.isFinite(value) ? value.toFixed(1) : '—';
+export function formatHistoryTimestamp(value){
+ if(value==null||!Number.isFinite(new Date(value).getTime()))return null;
+ const parts=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date(value)).map(p=>[p.type,p.value]));
+ return `${parts.year}.${parts.month}.${parts.day} ${parts.hour}:${parts.minute} KST`;
+}
 const stamp = value => new Date(value).toLocaleString(formatLocale(), { timeZone: 'Asia/Seoul', hour12: false });
 // Keep point size and touch targets in screen pixels even in a narrow column.
 const plotLayouts = new WeakMap();
@@ -69,13 +74,14 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     function choose(index) { if(index===selectedIndex)return;selectedIndex=index;const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} · ${label} ${formatHistoryRate(rate(p))}% · ${p.current&&!p.stored?t("현재 조회"):t("저장")}`; selected.title = description(p); plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
     const valueTip=valueTooltip(graph);
     const guide=svg('line',{class:'history-guide',y1:0,y2:180,visibility:'hidden'});plot.append(guide);
-    const showPoint=index=>{choose(index);const mark=plot.querySelectorAll('.history-point')[index];valueTip.show(`${formatHistoryRate(rate(data.points[index]))}%`,mark.querySelector('.history-dot'));guide.setAttribute('x1',x(data.points[index]));guide.setAttribute('x2',x(data.points[index]));guide.setAttribute('visibility','visible');};
+    const pointLabel=p=>`${formatHistoryRate(rate(p))}%\n${formatHistoryTimestamp(p.collectedAt??p.time)??''}`.trim();
+    const showPoint=index=>{choose(index);const mark=plot.querySelectorAll('.history-point')[index];valueTip.show(pointLabel(data.points[index]),mark.querySelector('.history-dot'));guide.setAttribute('x1',x(data.points[index]));guide.setAttribute('x2',x(data.points[index]));guide.setAttribute('visibility','visible');};
     graph.addEventListener('pointerleave',()=>guide.setAttribute('visibility','hidden'));
     graph.addEventListener('keydown',event=>{if(event.key==='Escape')guide.setAttribute('visibility','hidden');});
     graph.addEventListener('focusout',event=>{if(!graph.contains(event.relatedTarget))guide.setAttribute('visibility','hidden');});
     data.points.forEach((p,index)=>{
       const mark = svg('g',{class:'history-point',tabindex:0,role:'button','data-storage':p.current?(p.stored?'both':'browser'):'stored','data-representative':String(p.representative===true),'aria-label':description(p)});
-      const tooltip = svg('title',{}); tooltip.textContent = `${formatHistoryRate(rate(p))}%`;
+      const tooltip = svg('title',{}); tooltip.textContent = pointLabel(p);
       mark.append(tooltip,svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-hit','vector-effect':'non-scaling-stroke'}),svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-dot','vector-effect':'non-scaling-stroke'}));
       mark.addEventListener('click',()=>showPoint(index)); mark.addEventListener('focus',()=>showPoint(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();showPoint(index);}}); mark.addEventListener('pointerenter',()=>showPoint(index)); plot.append(mark);
     });
@@ -95,6 +101,8 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     const nearestPoint=event=>{const rect=plot.getBoundingClientRect();if(!rect.width)return;const position=(event.clientX-rect.left)/rect.width*600;let nearest=0;data.points.forEach((p,i)=>{if(Math.abs(x(p)-position)<Math.abs(x(data.points[nearest])-position))nearest=i;});showPoint(nearest);};
     plot.addEventListener('pointermove',nearestPoint);plot.addEventListener('click',event=>{if(event.detail)nearestPoint(event);});
     panel.append(graph,labels,selected);
+    const lastPoint=data.points.reduce((a,b)=>a.time>b.time?a:b),observedAt=formatHistoryTimestamp(lastPoint.collectedAt??lastPoint.time);
+    if(observedAt)panel.append(node('p',t('dashboard.lastObservation',{time:observedAt}),'history-last-observed'));
     const info=node('div',undefined,'history-info');
     if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))info.append(node('p',t("채운 점: 저장 · 테두리 점: 현재 조회(미저장)"),'history-observation'));
     if(data.comparisonSegments?.length)info.append(node('p',t("점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다."),'history-observation'));

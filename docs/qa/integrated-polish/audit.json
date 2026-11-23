@@ -1,0 +1,121 @@
+{
+  "head": "96cce61be6a7288ef4c903c264050639c47e7588",
+  "checkedAt": "2026-11-23T06:13:18.443Z",
+  "results": [
+    {
+      "name": "rank-workflow",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/daily-ranks.yml",
+      "status": 200,
+      "state": "active"
+    },
+    {
+      "name": "rank-runs",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/daily-ranks.yml/runs?per_page=3",
+      "status": 200,
+      "runs": [
+        {
+          "id": 45000336329,
+          "status": "completed",
+          "conclusion": "skipped",
+          "event": "schedule",
+          "createdAt": "2026-11-22T07:54:28Z"
+        },
+        {
+          "id": 44883599151,
+          "status": "completed",
+          "conclusion": "skipped",
+          "event": "schedule",
+          "createdAt": "2026-11-21T08:10:14Z"
+        },
+        {
+          "id": 44701534644,
+          "status": "completed",
+          "conclusion": "skipped",
+          "event": "schedule",
+          "createdAt": "2026-11-20T08:18:50Z"
+        }
+      ]
+    },
+    {
+      "name": "patch-workflow",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/official-patch-notes.yml",
+      "status": 200,
+      "state": "active"
+    },
+    {
+      "name": "patch-runs",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/official-patch-notes.yml/runs?per_page=3",
+      "status": 200,
+      "runs": [
+        {
+          "id": 44999867848,
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "createdAt": "2026-11-22T07:48:07Z"
+        },
+        {
+          "id": 44882903597,
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "createdAt": "2026-11-21T08:01:24Z"
+        },
+        {
+          "id": 44700003720,
+          "status": "completed",
+          "conclusion": "success",
+          "event": "schedule",
+          "createdAt": "2026-11-20T08:07:08Z"
+        }
+      ]
+    },
+    {
+      "name": "ranks",
+      "url": "https://moonsh0206.github.io/HOW/data/ranks/current.json",
+      "status": 200,
+      "cohorts": 0
+    },
+    {
+      "name": "notes",
+      "url": "https://moonsh0206.github.io/HOW/data/patches/notes.json",
+      "status": 200,
+      "patches": [
+        {
+          "id": "patch-2026-11-05",
+          "date": "2026-11-05",
+          "changes": 3
+        },
+        {
+          "id": "patch-2026-11-03",
+          "date": "2026-11-03",
+          "changes": 62
+        },
+        {
+          "id": "patch-2026-11-16",
+          "date": "2026-11-16",
+          "changes": 0,
+          "system": 1
+        }
+      ]
+    },
+    {
+      "name": "compare",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/compare/96cce61be6a7288ef4c903c264050639c47e7588...main",
+      "status": 200,
+      "comparison": "identical",
+      "ahead": 0,
+      "behind": 0
+    },
+    {
+      "name": "ko-kr",
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/",
+      "status": 200
+    },
+    {
+      "name": "en-us",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/",
+      "status": 200
+    }
+  ]
+}

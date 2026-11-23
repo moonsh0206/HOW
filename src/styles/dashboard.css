@@ -1,14 +1,16 @@
 #dashboard-page{position:relative;isolation:isolate;max-width:var(--content-max-width);margin:auto;padding:16px var(--page-gutter);min-height:65vh}
-.dashboard-atmosphere{position:absolute;inset:0 0 auto;height:min(100%,850px);z-index:-1;pointer-events:none;overflow:clip;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.dashboard-atmosphere{position:absolute;inset:0 0 auto;height:min(100%,850px);z-index:-1;pointer-events:none;overflow:clip;mask-image:linear-gradient(90deg,transparent,#000 2.5%,#000 97.5%,transparent)}
 .dashboard-atmosphere:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 48% 32% at 13% 6%,#d77a2a10,transparent 80%),radial-gradient(ellipse 56% 48% at 91% 27%,#397ca71b,transparent 80%),linear-gradient(160deg,transparent 12%,#21374c14 37%,transparent 63%);mask-image:linear-gradient(#000 55%,transparent)}
-.dashboard-ash{--ash-drift:8px;position:absolute;left:11%;top:24%;width:2px;height:2px;border-radius:50%;background:#d6a16d;opacity:.1;animation:dashboard-ash-drift 23s ease-in-out -7s infinite;pointer-events:none}
+.dashboard-ash{--ash-drift:8px;position:absolute;left:1.2%;top:24%;width:2px;height:3px;border-radius:35%;background:#d6a16d;opacity:.14;animation:dashboard-ash-drift 23s ease-in-out -7s infinite;pointer-events:none}
 .dashboard-ash:nth-child(2){left:34%;top:8%;--ash-drift:-11px;background:#9eb4c6;animation-duration:31s;animation-delay:-19s}
-.dashboard-ash:nth-child(3){left:83%;top:21%;--ash-drift:6px;animation-duration:19s;animation-delay:-13s}
+.dashboard-ash:nth-child(3){left:98.5%;top:21%;--ash-drift:6px;animation-duration:19s;animation-delay:-13s}
 .dashboard-ash:nth-child(4){left:67%;top:60%;--ash-drift:-7px;animation-duration:29s;animation-delay:-3s}
-.dashboard-ash:nth-child(5){left:6%;top:72%;--ash-drift:12px;background:#9eb4c6;animation-duration:34s;animation-delay:-22s}
-.dashboard-ash:nth-child(6){left:94%;top:44%;--ash-drift:-9px;animation-duration:26s;animation-delay:-11s}
-@keyframes dashboard-ash-drift{0%,100%{transform:translate(0,6px);opacity:.04}41%{transform:translate(var(--ash-drift),-10px);opacity:.22}74%{transform:translate(2px,-18px);opacity:.09}}
-#dashboard-page:is([hidden],.dashboard-motion-suspended,.dashboard-heading-offscreen) .dashboard-ash{animation-play-state:paused}
+.dashboard-ash:nth-child(5){left:1.3%;top:72%;--ash-drift:5px;background:#9eb4c6;animation-duration:34s;animation-delay:-22s}
+.dashboard-ash:nth-child(6){left:98.6%;top:54%;--ash-drift:-5px;animation-duration:26s;animation-delay:-11s}
+.dashboard-ash:nth-child(7){left:20%;top:2%;width:3px;height:2px;--ash-drift:-8px;animation-duration:32s;animation-delay:-18s}
+.dashboard-ash:nth-child(8){left:76%;top:6%;width:2px;height:2px;--ash-drift:11px;background:#afa18b;animation-duration:37s;animation-delay:-9s}
+@keyframes dashboard-ash-drift{0%,100%{transform:translate(0,6px);opacity:.07}41%{transform:translate(var(--ash-drift),-10px);opacity:.34}74%{transform:translate(2px,-18px);opacity:.12}}
+#dashboard-page:is([hidden],.dashboard-motion-suspended) .dashboard-ash{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.dashboard-ash{animation:none;opacity:.09}}
 .dashboard-heading{margin-bottom:12px}
 .dashboard-heading .eyebrow{margin-bottom:4px}
@@ -60,6 +62,12 @@
 .dashboard-ranking-table .dashboard-hero strong{font-size:13px}
 .dashboard-ranking-table .recommendation-label{font-size:9px}
 .dashboard-ranking-table .rank-change{display:block;font-size:9px}
+.dashboard-ranking-table .rank-change.rank-up{color:var(--status-success)}
+.dashboard-ranking-table .rank-change.rank-down{color:var(--status-error)}
+.dashboard-ranking-table .rank-change.rank-equal{color:var(--text-secondary)}
+.dashboard-ranking-table tbody tr[data-dashboard-rank="1"]{background-image:linear-gradient(90deg,#f99e1a0c,transparent 75%);box-shadow:inset 2px 0 #d99a4259}
+.dashboard-ranking-table tbody tr[data-dashboard-rank="1"]>td:first-child{color:#edbd73;font-weight:700}
+.dashboard-ranking-table .dashboard-hero .dashboard-row-flame{display:inline-block;width:12px;height:14px;margin-left:4px;border-radius:0;background:none;object-fit:contain;vertical-align:-2px;pointer-events:none}
 .rank-change{position:relative;cursor:default;outline-offset:3px}
 .rank-change:after{content:attr(data-tooltip);display:none;position:absolute;z-index:20;left:0;top:100%;width:max-content;max-width:min(280px,65vw);padding:6px 8px;border:1px solid var(--border-control);border-radius:5px;background:var(--surface-card);color:var(--text);white-space:normal;font-size:11px;font-weight:400;line-height:1.5;text-align:left;box-shadow:0 2px 8px #0003;pointer-events:none}
 .rank-change:is(:hover,:focus):after{display:block}
@@ -74,7 +82,7 @@
 .dashboard-empty{font-size:13px;line-height:1.6;color:var(--text-secondary);margin:10px 0;overflow-wrap:anywhere}
 .dashboard-retry{min-height:44px;background:var(--surface-raised);border:1px solid var(--border-control);border-radius:var(--radius-control);font-size:12px;padding:8px 14px}
 .dashboard-history-chart svg{width:100%;height:auto;display:block;overflow:visible}
-.dashboard-history-chart svg text{font-size:11px;fill:var(--text-secondary);font-variant-numeric:tabular-nums}
+.dashboard-history-chart svg text{font-family:inherit;font-size:11px;font-weight:400;letter-spacing:0;fill:var(--text-secondary);font-variant-numeric:tabular-nums}
 .dashboard-gridline{stroke:var(--border-subtle);stroke-dasharray:3 5}
 .dashboard-line{stroke-width:2;vector-effect:non-scaling-stroke}.dashboard-dot{stroke:var(--surface-card);stroke-width:1.5}
 .dashboard-tank{color:#72b9f5;stroke:#72b9f5}.dashboard-damage{color:#f8ad57;stroke:#f8ad57}.dashboard-support{color:#7ed5b5;stroke:#7ed5b5}
@@ -101,7 +109,7 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
  /* The ranking content sizes the shared row; the chart fills that height. */
  #dashboard-history{contain:size;min-height:260px}
  .dashboard-history-body{flex:1;min-height:0;display:flex;flex-direction:column}.dashboard-history-chart{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.dashboard-history-chart .dashboard-empty{max-width:420px;align-self:center}
- .dashboard-history-chart svg{height:0;min-height:0;flex:1 1 0}.dashboard-history-chart svg text{font-size:14px}.dashboard-legend{margin:2px 0 4px;gap:16px}
+ .dashboard-history-chart svg{height:0;min-height:0;flex:1 1 0}.dashboard-history-chart svg text{font-size:12px}.dashboard-legend{margin:2px 0 4px;gap:16px}
  #dashboard-page .dashboard-hero{min-height:28px}.dashboard-ranking-table .dashboard-hero img,.dashboard-bottom .dashboard-hero img{width:28px;height:28px}
  #dashboard-ranking .dashboard-role-filters button{min-height:32px;padding:4px 10px}
  #dashboard-ranking .dashboard-caption{margin:3px 0 5px}
@@ -124,7 +132,7 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
  #dashboard-page{padding-top:16px;padding-bottom:20px}.dashboard-heading{margin-bottom:12px}
  .dashboard-feature{padding:10px;gap:4px}.dashboard-context{margin:6px 0 10px}
  .dashboard-panel-head label{width:132px}
- .dashboard-history-chart svg text{font-size:20px}
+ .dashboard-history-chart svg text{font-size:11px}
  .dashboard-link{font-size:12px}
 }
 @media(max-width:360px){
@@ -146,6 +154,9 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
 .dashboard-kpi-controls button{min-height:32px;min-width:32px;padding:5px 8px;border:1px solid var(--border-subtle);border-radius:var(--radius-control);background:var(--surface-inset);font-size:12px;color:var(--text-secondary)}
 .dashboard-kpi-controls button[aria-pressed=true]{color:var(--orange);border-color:#916b36;background:var(--surface-selected)}
 .dashboard-kpi-controls button:disabled{opacity:.45}
+#dashboard-page :is(.dashboard-role-filters button,.dashboard-kpi-controls button,.dashboard-rank-more,.dashboard-retry,.filter-combobox-trigger,.filter-option,.dashboard-link){transition:color var(--motion-fast) ease-out,background-color var(--motion-fast) ease-out,border-color var(--motion-fast) ease-out,transform var(--motion-fast) ease-out}
+#dashboard-page :is(.dashboard-link,.dashboard-hero):focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){#dashboard-page :is(.dashboard-role-filters button,.dashboard-kpi-controls button,.dashboard-rank-more,.dashboard-retry,.filter-combobox-trigger,.filter-option,.dashboard-link){transition:none}}
 .dashboard-highlights{isolation:isolate}
 .dashboard-feature{min-height:128px}
 .dashboard-feature:not(.dashboard-spotlight){position:relative;display:block;padding:14px 16px 16px}

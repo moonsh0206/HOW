@@ -1,0 +1,67 @@
+2T07:48:37.2509961Z {
+2026-11-22T07:48:37.2510522Z   "checkedAt": "2026-11-22T07:48:37.249Z",
+2026-11-22T07:48:37.2511032Z   "status": "unchanged",
+2026-11-22T07:48:37.2511324Z   "changed": false,
+2026-11-22T07:48:37.2511909Z   "candidateDigest": "c8222d342e3d28ba14cdedc5afc2b1899dc232160006dc7d36c9755de47514b0",
+2026-11-22T07:48:37.2512475Z   "collection": {
+2026-11-22T07:48:37.2512734Z     "applied": false,
+2026-11-22T07:48:37.2513009Z     "detected": [
+2026-11-22T07:48:37.2513277Z       "patch-2026-11-16",
+2026-11-22T07:48:37.2513567Z       "patch-2026-11-05",
+2026-11-22T07:48:37.2514139Z       "patch-2026-11-03"
+2026-11-22T07:48:37.2514408Z     ],
+2026-11-22T07:48:37.2514646Z     "added": [],
+2026-11-22T07:48:37.2514967Z     "updated": [],
+2026-11-22T07:48:37.2515225Z     "skipped": [
+2026-11-22T07:48:37.2515479Z       "patch-2026-11-05",
+2026-11-22T07:48:37.2515772Z       "patch-2026-11-03"
+2026-11-22T07:48:37.2516051Z     ],
+2026-11-22T07:48:37.2516322Z     "pending": [],
+2026-11-22T07:48:37.2516588Z     "pendingChanges": 0,
+2026-11-22T07:48:37.2516869Z     "heroChanges": 65
+2026-11-22T07:48:37.2517127Z   },
+2026-11-22T07:48:37.2517355Z   "validation": {
+2026-11-22T07:48:37.2517619Z     "patches": 2,
+2026-11-22T07:48:37.2517870Z     "changes": 65,
+2026-11-22T07:48:37.2518126Z     "partial": []
+2026-11-22T07:48:37.2518386Z   }
+2026-11-22T07:48:37.2518602Z }
+2026-11-22T07:48:37.2962081Z ##[group]Run actions/upload-artifact@v4
+2026-11-22T07:48:37.2962404Z with:
+2026-11-22T07:48:37.2962639Z   name: official-patch-review
+2026-11-22T07:48:37.2962915Z   path: .artifacts/*.json
+2026-11-22T07:48:37.2963159Z   if-no-files-found: warn
+2026-11-22T07:48:37.2963397Z   include-hidden-files: true
+2026-11-22T07:48:37.2963932Z   retention-days: 30
+2026-11-22T07:48:37.2964181Z   compression-level: 6
+2026-11-22T07:48:37.2964400Z   overwrite: false
+2026-11-22T07:48:37.2964618Z ##[endgroup]
+2026-11-22T07:48:37.4682084Z (node:2577) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-22T07:48:37.4683971Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-22T07:48:37.4740359Z With the provided path, there will be 2 files uploaded
+2026-11-22T07:48:37.4758132Z Artifact name is valid!
+2026-11-22T07:48:37.4759225Z Root directory input is valid!
+2026-11-22T07:48:37.7020478Z Beginning upload of artifact content to blob storage
+2026-11-22T07:48:37.7404353Z (node:2577) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-22T07:48:37.7892243Z Uploaded bytes 21852
+2026-11-22T07:48:37.8077731Z Finished uploading artifact content to blob storage!
+2026-11-22T07:48:37.8079046Z SHA256 digest of uploaded artifact zip is 0d20fc1e42dd1f39b839eb891b4c04b9321dacdbe0a1ddf4aba3fe4935eda994
+2026-11-22T07:48:37.8080522Z Finalizing artifact upload
+2026-11-22T07:48:38.1347546Z Artifact official-patch-review.zip successfully finalized. Artifact ID 14745158357
+2026-11-22T07:48:38.1349127Z Artifact official-patch-review has been successfully uploaded! Final size is 21852 bytes. Artifact ID is 14745158357
+2026-11-22T07:48:38.1355170Z Artifact download URL: https://github.com/moonsh0206/HOW/actions/runs/44999867848/artifacts/14745158357
+2026-11-22T07:48:38.1543088Z Post job cleanup.
+2026-11-22T07:48:38.2714044Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-a64b3f142f579e0b883ecce5ac939324f1d876fafa85ea486087ef5d65d4bc61, not saving cache.
+2026-11-22T07:48:38.2845934Z Post job cleanup.
+2026-11-22T07:48:38.3894827Z [command]/usr/bin/git version
+2026-11-22T07:48:38.3995015Z git version 2.56.1
+2026-11-22T07:48:38.4086786Z Temporarily overriding HOME='/home/runner/work/_temp/6005cc2c-d489-4f25-9b9c-1134b95d674a' before making global git config changes
+2026-11-22T07:48:38.4115070Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-22T07:48:38.4132701Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/HOW/HOW
+2026-11-22T07:48:38.4195211Z Removing SSH command configuration
+2026-11-22T07:48:38.4224675Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-22T07:48:38.4276407Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-22T07:48:38.5040199Z Removing HTTP extra header
+2026-11-22T07:48:38.5041111Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-22T07:48:38.5187532Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-22T07:48:38.5701048Z Removing includeIf

@@ -1,0 +1,24 @@
+{
+  "applied": false,
+  "detected": [
+    "patch-2026-11-16",
+    "patch-2026-11-05",
+    "patch-2026-11-03"
+  ],
+  "added": [],
+  "updated": [],
+  "skipped": [
+    "patch-2026-11-16",
+    "patch-2026-11-05",
+    "patch-2026-11-03"
+  ],
+  "pending": [
+    "patch-2026-11-05",
+    "patch-2026-11-03"
+  ],
+  "pendingChanges": 0,
+  "pendingSystemChanges": 13,
+  "pendingPatches": 2,
+  "heroChanges": 65,
+  "systemChanges": 1
+}

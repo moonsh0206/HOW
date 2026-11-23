@@ -5,6 +5,7 @@ export function valueTooltip(host) {
  function show(text,anchor){
   tip.textContent=text;tip.hidden=false;
   const bounds=host.getBoundingClientRect(),rect=anchor.getBoundingClientRect();
+  tip.style.maxWidth=`${Math.max(0,bounds.width)}px`;
   const width=tip.offsetWidth||72,height=tip.offsetHeight||28;
   tip.style.left=`${Math.max(0,Math.min(bounds.width-width,rect.left+rect.width/2-bounds.left-width/2))}px`;
   tip.style.top=`${Math.max(0,rect.top-bounds.top-height-5)}px`;

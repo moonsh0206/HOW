@@ -6,6 +6,13 @@ import {verifiedPatch} from '../models/patchHistoryModel.js';
 const ns='http://www.w3.org/2000/svg';
 const svgNode=(tag,attrs={})=>{const e=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,String(v));return e;};
 const dayIndex=day=>Date.parse(day+'T00:00:00Z')/86400000;
+// The plot fills its panel, but text stays in CSS pixels rather than stretching
+// with the SVG's independent horizontal/vertical scale factors.
+export function syncDashboardTextScale(svg,width,height){
+ if(!(width>0&&height>0))return;
+ for(const text of svg.querySelectorAll('text')){const x=Number(text.getAttribute('x')),y=Number(text.getAttribute('y'));text.setAttribute('transform',`translate(${x} ${y}) scale(${510/width} ${220/height}) translate(${-x} ${-y})`);}
+}
+const textObserver=typeof ResizeObserver==='undefined'?null:new ResizeObserver(entries=>{for(const {target,contentRect}of entries){if(!target.isConnected){textObserver.unobserve(target);continue;}syncDashboardTextScale(target,contentRect.width,contentRect.height);}});
 function roleLegend(data){
  const legend=node('div',undefined,'dashboard-legend'),series=data?.series??[];
  const latestDay=series.flatMap(s=>s.points.map(p=>p.day)).sort().at(-1);
@@ -40,7 +47,7 @@ export function dashboardHistoryChart(data){
    const row=node('tr');row.append(node('th',roleName(series.role)+' · '+p.day),node('td',p.value.toFixed(2)+'% · '+t('dashboard.meanCoverage',{count:p.count,total:p.targetCount??p.count})));table.append(row);
   }const path=svgNode('path',{d,fill:'none',class:'dashboard-line dashboard-'+series.role});traces.prepend(path);
  }
- svg.append(traces);root.append(svg,accessible);
+ svg.append(traces);root.append(svg,accessible);textObserver?.observe(svg);
  const tooltip=node('output',undefined,'dashboard-history-tooltip');tooltip.hidden=true;root.append(tooltip);
  const show=event=>{const dot=event.target.closest?.('.dashboard-dot');if(dot){tooltip.textContent=dot.getAttribute('aria-label');tooltip.hidden=false;}};
  const hide=event=>{if(!event.relatedTarget?.closest?.('.dashboard-dot'))tooltip.hidden=true;};
@@ -50,6 +57,7 @@ export function dashboardHistoryChart(data){
  return root;
 }
 export function animateDashboardHistory(root){
+ const svg=root?.querySelector('svg');if(svg?.isConnected){const rect=svg.getBoundingClientRect();syncDashboardTextScale(svg,rect.width,rect.height);}
  if(!root?.isConnected||root.closest('[hidden]')||globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return ()=>{};
  const animations=[];
  try{const reveal=root.querySelector('[data-dashboard-reveal]');if(reveal?.animate)animations.push(reveal.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:520,easing:'cubic-bezier(0.22, 1, 0.36, 1)'}));for(const dot of root.querySelectorAll('.dashboard-dot'))if(dot.animate)animations.push(dot.animate([{opacity:0},{opacity:1}],{duration:240,delay:220,fill:'backwards'}));}catch{}

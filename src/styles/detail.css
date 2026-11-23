@@ -309,7 +309,8 @@
 .map-bar{transform-origin:center bottom}
 .history-trace{transform-box:view-box}
 .map-compare-chart,.history-graph{position:relative}
-.chart-value-tooltip{position:absolute;z-index:5;pointer-events:none;padding:4px 8px;border:1px solid var(--border-control);border-radius:5px;background:var(--surface-card,#121c29);color:var(--text);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.5}
+.chart-value-tooltip{position:absolute;z-index:5;pointer-events:none;padding:4px 8px;border:1px solid var(--border-control);border-radius:5px;background:var(--surface-card,#121c29);color:var(--text);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;white-space:pre-line;overflow-wrap:anywhere;box-sizing:border-box;line-height:1.5}
+.history-last-observed{font-size:11px;line-height:1.5;color:var(--text-secondary);font-variant-numeric:tabular-nums;margin:5px 0}
 .chart-value-tooltip[hidden]{display:none}
 .history-guide{stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4;opacity:.4;pointer-events:none;vector-effect:non-scaling-stroke}
 .history-date-axis{position:relative;display:block;height:17px;overflow:visible;white-space:nowrap}

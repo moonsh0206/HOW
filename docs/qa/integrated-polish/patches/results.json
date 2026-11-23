@@ -1,0 +1,311 @@
+{
+  "source": "local production notes.json; captured OverFast responses",
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "current": {
+        "text": "이번 패치 노트2026.11.16 · 라이브 핫픽스6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.공식 패치노트 보기 ↗통계 집계 패치와 별도",
+        "summary": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · 라이브 핫픽스",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 592.703125,
+          "width": 273,
+          "height": 107.5,
+          "top": 592.703125,
+          "right": 289,
+          "bottom": 700.203125,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "최근 패치 변경사항너프2026.11.03 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 1개생체 수류탄90 → 60폭발 피해가 줄어 적에게 주는 순간 피해가 감소했습니다."
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "최근 패치 변경사항버프자세히 보기⌄2026.11.05 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 2개갈고리 고정갈고리 회수 중 기본 속도 제한이 15% 높아졌습니다.갈고리 고정갈고리를 회수하는 동안 아군 가속 효과가 제한 속도에도 반영됩니다.더보기"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "current": {
+        "text": "Latest patch notes2026.11.16 · Live hotfixChampion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.Read official patch notes ↗Separate from the statistics aggregation patch",
+        "summary": "Champion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · Live hotfix",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 292.671875,
+          "width": 273,
+          "height": 114.5,
+          "top": 292.671875,
+          "right": 289,
+          "bottom": 407.171875,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "Latest hero changesNerf2026.11.03 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 1 changesBiotic Grenade90 → 60Lower explosion damage reduces burst damage against enemies.Show more"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "Latest hero changesBuffView details⌄2026.11.05 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 2 changesGrappling ClawThe base speed cap during grapple retraction increased by 15%.Show moreGrappling ClawAllied acceleration now contributes to the speed cap during grapple retraction.Show more"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "current": {
+        "text": "最新パッチノート2026.11.16 · ライブ・ホットフィックス6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。公式パッチノートを読む ↗統計の集計対象パッチとは別の情報です",
+        "summary": "6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。",
+        "summaryVisible": true,
+        "date": "2026.11.16 · ライブ・ホットフィックス",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 291.671875,
+          "width": 273,
+          "height": 117.5,
+          "top": 291.671875,
+          "right": 289,
+          "bottom": 409.171875,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "ヒーローの最新変更弱体化2026.11.03・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更1件バイオティック・グレネード90 → 60爆発ダメージの減少により、敵への瞬間ダメージが低下しました。"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "ヒーローの最新変更強化詳細を見る⌄2026.11.05・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更2件グラップリング・クロー巻き取り時の基本速度上限が15%増加しました。グラップリング・クロー味方による加速が巻き取り時の速度上限に反映されるようになりました。"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "current": {
+        "text": "이번 패치 노트2026.11.16 · 라이브 핫픽스6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.공식 패치노트 보기 ↗통계 집계 패치와 별도",
+        "summary": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · 라이브 핫픽스",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 592.515625,
+          "width": 343,
+          "height": 107.5,
+          "top": 592.515625,
+          "right": 359,
+          "bottom": 700.015625,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "최근 패치 변경사항너프2026.11.03 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 1개생체 수류탄90 → 60폭발 피해가 줄어 적에게 주는 순간 피해가 감소했습니다."
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "최근 패치 변경사항버프자세히 보기⌄2026.11.05 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 2개갈고리 고정갈고리 회수 중 기본 속도 제한이 15% 높아졌습니다.갈고리 고정갈고리를 회수하는 동안 아군 가속 효과가 제한 속도에도 반영됩니다.더보기"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "current": {
+        "text": "Latest patch notes2026.11.16 · Live hotfixChampion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.Read official patch notes ↗Separate from the statistics aggregation patch",
+        "summary": "Champion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · Live hotfix",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 585.703125,
+          "width": 343,
+          "height": 114.5,
+          "top": 585.703125,
+          "right": 359,
+          "bottom": 700.203125,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "Latest hero changesNerf2026.11.03 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 1 changesBiotic Grenade90 → 60Lower explosion damage reduces burst damage against enemies.Show more"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "Latest hero changesBuffView details⌄2026.11.05 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 2 changesGrappling ClawThe base speed cap during grapple retraction increased by 15%.Show moreGrappling ClawAllied acceleration now contributes to the speed cap during grapple retraction.Show more"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "current": {
+        "text": "最新パッチノート2026.11.16 · ライブ・ホットフィックス6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。公式パッチノートを読む ↗統計の集計対象パッチとは別の情報です",
+        "summary": "6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。",
+        "summaryVisible": true,
+        "date": "2026.11.16 · ライブ・ホットフィックス",
+        "details": 0,
+        "box": {
+          "x": 16,
+          "y": 582.515625,
+          "width": 343,
+          "height": 117.5,
+          "top": 582.515625,
+          "right": 359,
+          "bottom": 700.015625,
+          "left": 16
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "ヒーローの最新変更弱体化2026.11.03・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更1件バイオティック・グレネード90 → 60爆発ダメージの減少により、敵への瞬間ダメージが低下しました。"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "ヒーローの最新変更強化詳細を見る⌄2026.11.05・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更2件グラップリング・クロー巻き取り時の基本速度上限が15%増加しました。グラップリング・クロー味方による加速が巻き取り時の速度上限に反映されるようになりました。"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "current": {
+        "text": "이번 패치 노트2026.11.16 · 라이브 핫픽스6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.공식 패치노트 보기 ↗통계 집계 패치와 별도",
+        "summary": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · 라이브 핫픽스",
+        "details": 0,
+        "box": {
+          "x": 1113,
+          "y": 490.65625,
+          "width": 288,
+          "height": 208.96875,
+          "top": 490.65625,
+          "right": 1401,
+          "bottom": 699.625,
+          "left": 1113
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "최근 패치 변경사항너프2026.11.03 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 1개생체 수류탄90 → 60폭발 피해가 줄어 적에게 주는 순간 피해가 감소했습니다."
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "최근 패치 변경사항버프접기⌄2026.11.05 · 일반 라이브 5v5 · 공식 노트 기준공식 패치노트 ↗일반 라이브 5v5 · 변경 2개갈고리 고정갈고리 회수 중 기본 속도 제한이 15% 높아졌습니다.갈고리 고정갈고리를 회수하는 동안 아군 가속 효과가 제한 속도에도 반영됩니다.더보기"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "current": {
+        "text": "Latest patch notes2026.11.16 · Live hotfixChampion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.Read official patch notes ↗Separate from the statistics aggregation patch",
+        "summary": "Champion groups in 6v6 Open Queue: maximum rank width reduced from 4 to 3.",
+        "summaryVisible": true,
+        "date": "2026.11.16 · Live hotfix",
+        "details": 0,
+        "box": {
+          "x": 1113,
+          "y": 490.65625,
+          "width": 288,
+          "height": 208.96875,
+          "top": 490.65625,
+          "right": 1401,
+          "bottom": 699.625,
+          "left": 1113
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "Latest hero changesNerf2026.11.03 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 1 changesBiotic Grenade90 → 60Lower explosion damage reduces burst damage against enemies.Show more"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "Latest hero changesBuffShow less⌄2026.11.05 · Live 5v5 · Official notesOfficial patch notes ↗Live 5v5 · 2 changesGrappling ClawThe base speed cap during grapple retraction increased by 15%.Show moreGrappling ClawAllied acceleration now contributes to the speed cap during grapple retraction.Show more"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "current": {
+        "text": "最新パッチノート2026.11.16 · ライブ・ホットフィックス6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。公式パッチノートを読む ↗統計の集計対象パッチとは別の情報です",
+        "summary": "6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が4から3に縮小。",
+        "summaryVisible": true,
+        "date": "2026.11.16 · ライブ・ホットフィックス",
+        "details": 0,
+        "box": {
+          "x": 1113,
+          "y": 488.65625,
+          "width": 288,
+          "height": 210.96875,
+          "top": 488.65625,
+          "right": 1401,
+          "bottom": 699.625,
+          "left": 1113
+        },
+        "overflow": 0
+      },
+      "heroChecks": [
+        {
+          "key": "ana",
+          "date": "2026-11-03",
+          "text": "ヒーローの最新変更弱体化2026.11.03・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更1件バイオティック・グレネード90 → 60爆発ダメージの減少により、敵への瞬間ダメージが低下しました。"
+        },
+        {
+          "key": "wrecking-ball",
+          "date": "2026-11-05",
+          "text": "ヒーローの最新変更強化閉じる⌄2026.11.05・ライブ5v5・公式ノート公式パッチノート ↗ライブ5v5 · 変更2件グラップリング・クロー巻き取り時の基本速度上限が15%増加しました。グラップリング・クロー味方による加速が巻き取り時の速度上限に反映されるようになりました。"
+        }
+      ]
+    }
+  ]
+}

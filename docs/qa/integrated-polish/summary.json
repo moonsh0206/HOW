@@ -1,0 +1,78 @@
+{
+  "dateKst": "2026-11-23",
+  "scope": "로컬 수정 및 검증. Commit/Push/배포/워크플로 실행/원격 설정 변경 없음",
+  "changes": {
+    "dashboardTypography": "SVG의 비균등 확대가 글자를 늘리던 문제를 축 텍스트의 역배율 보정으로 해결. 차트 영역과 데이터 좌표는 유지하고 글자는 실제 CSS 픽셀 기준으로 표시. PC 12px, 모바일 11px.",
+    "background": "8개의 작은 잿조각을 여백과 가장자리 위주로 배치. 기존 입자가 불투명 카드 아래에 가려지고 제목이 화면 밖으로 나가면 멈추던 표현을 개선. 19~37초의 서로 다른 transform/opacity 주기. Reduced Motion은 정적 표시, 숨겨진 페이지와 기존 motion-suspended 상태에서는 정지.",
+    "interactions": "기존 --motion-fast 160ms 토큰과 ease-out을 대시보드 버튼/필터/링크에 재사용. focus-visible 링과 Reduced Motion 유지. 기존 카드 순환/맵 전환 로직 유지.",
+    "firstRank": "유효한 현재 표시 순위 1위에 낮은 투명도의 주황 그라데이션과 2px 안쪽 포인트, 금빛 순위 숫자를 적용. 순위/Meta Score 계산은 변경하지 않음.",
+    "spotlightLink": "주목 카드의 실제 선택 heroKey와 같은 표 행에 기존 불꽃 WebP를 12x14px로 표시. 주목 대상 변경을 렌더링 signature에도 포함하여 표의 마크가 뒤처지지 않도록 함.",
+    "heroHistory": "실제 포인트의 퍼센트와 YYYY.MM.DD HH:mm KST 시각을 툴팁에 표시. Hover/터치/Focus/Enter/Space/Escape 유지. 하단에는 표시 중인 실제 최신 관측 시각을 한 줄로 표시. 저장 이력과 현재 조회를 혼동하는 '저장 시각' 명칭은 사용하지 않음.",
+    "tooltipBounds": "툴팁 최대 너비를 그래프 너비로 제한하고 두 줄 표시. 좁은 화면에서 가장자리 자동 위치 보정 유지.",
+    "rankColors": "대시보드 공통 small 색상이 등락 배지 색상을 덮던 결함 수정. 상승은 status-success, 하락은 status-error, 유지는 text-secondary를 명시. 필터/역할/정렬/정책/전일 검증 로직은 그대로 유지."
+  },
+  "operations": {
+    "localHeadAtStart": "96cce61be6a7288ef4c903c264050639c47e7588",
+    "remoteMainAtStart": "동일 HEAD, 비교 결과 identical. 시작 시 미커밋 변경 없음.",
+    "rankWorkflow": {
+      "state": "active",
+      "cron": "0 1 * * *",
+      "latestRun": 45000336329,
+      "createdAt": "2026-11-22T07:54:28Z",
+      "result": "publish skipped",
+      "publishedCohorts": 0,
+      "cause": "공개 순위 JSON이 비어 있어 실제 전일 비교 데이터가 없음. main 작업에는 HOW_RANKS_ENABLED == 'true' 조건이 있으며 실제 변수 값은 이번에 조회하지 못함. 최근 3회도 skipped.",
+      "localVerification": "시험용 이틀 관측을 메모리에서 생성하여 수집→순위 계산→전일 비교→정적 JSON 제공→영웅 통계/대시보드 표시를 검증. 시험 기록은 운영 JSON에 저장하지 않음.",
+      "policy": "역할별 HOW 티어순, 동일 cohort/정책/역할 명단, KST 10시 보고 날짜, 정확한 전일만 비교. 전체 역할/다른 정렬/결측/첫날/정책 변경 시 숨김. 이미 구현된 ready-stored-order를 유지하여 실시간 표시 순위가 달라도 유효한 저장 순위 등락을 잃지 않음.",
+      "followup": "승인 후 HOW_RANKS_ENABLED=true와 HOW_RANKS_URL의 공개 JSON 주소, 게시 권한/환경을 확인. 유효한 이틀 관측이 확보되어야 실제 운영 배지가 표시됨. 이번에 활성화하거나 실행하지 않음."
+    },
+    "patchWorkflow": {
+      "state": "active",
+      "cron": "0 1 * * *",
+      "latestRun": 44999867848,
+      "createdAt": "2026-11-22T07:48:07Z",
+      "runHead": "3fb4de2d5595a741141413f94d637363e363f06f",
+      "result": "prepare success / publish skipped",
+      "log": "수정 전 커밋에서 11월 16일을 감지했으나 영웅 변경 0건 때문에 unchanged로 종료. 변경된 후보가 없어 publish 조건이 성립하지 않음. 권한 오류로 실패한 기록은 아님.",
+      "currentPublishedLatest": "patch-2026-11-16",
+      "currentSourceLatest": "공식 KO/EN 11월 원문 모두 11월 16일",
+      "currentLocalCollector": "이미 수정된 수집기로 공식 캡처 원문을 dry-run: added 0, updated 0, 세 패치 모두 재수집 보존. 영웅 65건 및 시스템 1건 유지. 과거 일반 변경 13건은 검토 대기.",
+      "interpretation": "현재 main과 공개 JSON에는 이전 시스템 패치 수정이 반영되어 있음. 다만 가장 최근 예약 실행은 수정 전 커밋으로 실행되었으므로, 수정 버전의 예약 수집·자동 게시 성공까지 확인했다고 보고할 수 없음.",
+      "heroPolicy": "영웅 통계는 전체 최신 검증 패치 11월 16일. 아나는 마지막 관련 11월 3일, 레킹볼은 11월 5일을 유지. previous-update 제외와 통계 반영 미확인 정책 유지.",
+      "followup": "다음 승인된 기존 예약 실행에서 수정 버전의 prepare 결과/검토 아티팩트와 변경 시 publish를 확인. 워크플로 재작성/수동 실행/권한 변경은 하지 않음."
+    }
+  },
+  "verification": {
+    "unitIntegrationTests": {"total": 397, "pass": 397, "fail": 0},
+    "build": "성공, 지역화 정적 HTML 663개. 기존 대형 JS 청크 경고는 유지.",
+    "pages": "성공, /HOW/ 기준 로컬 자산 23개",
+    "diffCheck": "통과. LF/CRLF 안내 외 공백 오류 없음.",
+    "dashboardBrowserCases": 24,
+    "heroGraphBrowserCases": 18,
+    "rankBrowserCases": 18,
+    "patchBrowserCases": 9,
+    "motionBrowserCases": 2,
+    "languages": ["ko", "en", "ja"],
+    "dashboardWidths": [320, 375, 390, 430, 768, 1024, 1280, 1440],
+    "textGeometry": "모든 대시보드 브라우저 조합에서 SVG text.getScreenCTM()의 a,d가 1:1. 데이터 좌표 변경 없음.",
+    "backgroundVisibility": "390px/1440px에서 실제 시간별 transform/opacity 변화 및 입자 표시/숨김 스크린샷 픽셀 차이 확인. DOM에만 존재하는 효과가 아님.",
+    "fixtures": "브라우저 통계는 기존 캡처 응답 사용. 순위는 명시적 시험 데이터이며 운영 성공으로 간주하지 않음. 공식 패치 JSON은 로컬 프로덕션 파일을 그대로 제공."
+  },
+  "modifiedSourceFiles": [
+    "src/styles/dashboard.css",
+    "src/styles/detail.css",
+    "src/views/dashboardHistoryView.js",
+    "src/views/metaDashboardView.js",
+    "src/views/pickHistoryView.js",
+    "src/views/valueTooltip.js"
+  ],
+  "testFiles": [
+    "tests/historyAxisTooltip.test.js",
+    "tests/integratedPolish.test.js",
+    "scripts/qa-integrated-dashboard.cjs",
+    "scripts/qa-integrated-graphs.cjs",
+    "scripts/qa-integrated-ranks.cjs",
+    "scripts/qa-integrated-patches.cjs"
+  ],
+  "preserved": ["Meta Score", "HOW 티어 및 정렬 정책", "통계 API/캐시", "스냅샷/일일 순위 저장 정책", "공식 패치 아카이브", "다국어/URL/SEO", "플레이어 검색/즐겨찾기"]
+}
