@@ -1,0 +1,80 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "metrics": {
+      "height": 2050.84375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 59.609375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 59.609375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 60.296875,
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격",
+        "공격",
+        "지원"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "metrics": {
+      "height": 1010.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 13,
+          "bottom": 61.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 13,
+          "bottom": 61.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 13,
+          "bottom": 61.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 102,
+        "fit": "cover",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격",
+        "공격",
+        "지원"
+      ]
+    }
+  }
+]

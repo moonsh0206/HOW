@@ -1,0 +1,108 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "metrics": {
+      "height": 2070.4375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 48.34375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "metrics": {
+      "height": 1010.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  }
+]

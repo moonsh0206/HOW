@@ -6,10 +6,21 @@ import {verifiedPatch} from '../models/patchHistoryModel.js';
 const ns='http://www.w3.org/2000/svg';
 const svgNode=(tag,attrs={})=>{const e=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))e.setAttribute(k,String(v));return e;};
 const dayIndex=day=>Date.parse(day+'T00:00:00Z')/86400000;
+function roleLegend(data){
+ const legend=node('div',undefined,'dashboard-legend'),series=data?.series??[];
+ const latestDay=series.flatMap(s=>s.points.map(p=>p.day)).sort().at(-1);
+ for(const role of ['tank','damage','support']){
+  // Use the common latest observation day; never present an older valid value as current.
+  const point=series.find(s=>s.role===role)?.points.findLast(p=>p.day===latestDay);
+  const entry=node('span',undefined,'dashboard-'+role),name=node('span',roleName(role)),value=node('strong',Number.isFinite(point?.value)?point.value.toFixed(1)+'%':t('미제공'));
+  entry.dataset.legendRole=role;entry.append(name,value);legend.append(entry);
+ }
+ return legend;
+}
 export function dashboardHistoryChart(data){
  const root=node('div',undefined,'dashboard-history-chart');
  const hasPoint=data?.series?.some(s=>s.points.some(p=>Number.isFinite(p.value)));
- if(!hasPoint){root.append(node('p',t('dashboard.historyEmpty'),'dashboard-empty'));return root;}
+ if(!hasPoint){root.append(node('p',t('dashboard.historyEmpty'),'dashboard-empty'),roleLegend(data));return root;}
  if(!data.available)root.append(node('p',t('dashboard.singleObservation'),'dashboard-caption'));
  const points=data.series.flatMap(s=>s.points.filter(p=>p.value!==null));
  const minDay=Math.min(...points.map(p=>dayIndex(p.day))),maxDay=Math.max(...points.map(p=>dayIndex(p.day)));
@@ -34,7 +45,7 @@ export function dashboardHistoryChart(data){
  const show=event=>{const dot=event.target.closest?.('.dashboard-dot');if(dot){tooltip.textContent=dot.getAttribute('aria-label');tooltip.hidden=false;}};
  const hide=event=>{if(!event.relatedTarget?.closest?.('.dashboard-dot'))tooltip.hidden=true;};
  root.addEventListener('focusin',show);root.addEventListener('pointerover',show);root.addEventListener('focusout',hide);root.addEventListener('pointerout',hide);
- const legend=node('div',undefined,'dashboard-legend');for(const s of data.series)legend.append(node('span',roleName(s.role),'dashboard-'+s.role));root.append(legend);
+ root.append(roleLegend(data));
  root.append(node('small',t('dashboard.lastObservation',{time:new Date(Math.max(...points.map(p=>p.time))).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})})));
  return root;
 }

@@ -1,4 +1,15 @@
-#dashboard-page{max-width:var(--content-max-width);margin:auto;padding:16px var(--page-gutter);min-height:65vh}
+#dashboard-page{position:relative;isolation:isolate;max-width:var(--content-max-width);margin:auto;padding:16px var(--page-gutter);min-height:65vh}
+.dashboard-atmosphere{position:absolute;inset:0 0 auto;height:min(100%,850px);z-index:-1;pointer-events:none;overflow:clip;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.dashboard-atmosphere:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 48% 32% at 13% 6%,#d77a2a10,transparent 80%),radial-gradient(ellipse 56% 48% at 91% 27%,#397ca71b,transparent 80%),linear-gradient(160deg,transparent 12%,#21374c14 37%,transparent 63%);mask-image:linear-gradient(#000 55%,transparent)}
+.dashboard-ash{--ash-drift:8px;position:absolute;left:11%;top:24%;width:2px;height:2px;border-radius:50%;background:#d6a16d;opacity:.1;animation:dashboard-ash-drift 23s ease-in-out -7s infinite;pointer-events:none}
+.dashboard-ash:nth-child(2){left:34%;top:8%;--ash-drift:-11px;background:#9eb4c6;animation-duration:31s;animation-delay:-19s}
+.dashboard-ash:nth-child(3){left:83%;top:21%;--ash-drift:6px;animation-duration:19s;animation-delay:-13s}
+.dashboard-ash:nth-child(4){left:67%;top:60%;--ash-drift:-7px;animation-duration:29s;animation-delay:-3s}
+.dashboard-ash:nth-child(5){left:6%;top:72%;--ash-drift:12px;background:#9eb4c6;animation-duration:34s;animation-delay:-22s}
+.dashboard-ash:nth-child(6){left:94%;top:44%;--ash-drift:-9px;animation-duration:26s;animation-delay:-11s}
+@keyframes dashboard-ash-drift{0%,100%{transform:translate(0,6px);opacity:.04}41%{transform:translate(var(--ash-drift),-10px);opacity:.22}74%{transform:translate(2px,-18px);opacity:.09}}
+#dashboard-page:is([hidden],.dashboard-motion-suspended,.dashboard-heading-offscreen) .dashboard-ash{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.dashboard-ash{animation:none;opacity:.09}}
 .dashboard-heading{margin-bottom:12px}
 .dashboard-heading .eyebrow{margin-bottom:4px}
 .dashboard-heading h1{font-size:clamp(24px,2vw,28px);line-height:1.25;letter-spacing:-.035em;margin:0 0 4px}
@@ -69,7 +80,9 @@
 .dashboard-tank{color:#72b9f5;stroke:#72b9f5}.dashboard-damage{color:#f8ad57;stroke:#f8ad57}.dashboard-support{color:#7ed5b5;stroke:#7ed5b5}
 .dashboard-dot.dashboard-tank{fill:#72b9f5}.dashboard-dot.dashboard-damage{fill:#f8ad57}.dashboard-dot.dashboard-support{fill:#7ed5b5}
 [data-dashboard-reveal]{transform-box:fill-box;transform-origin:left center}
-.dashboard-legend{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;font-size:12px;margin:6px 0 12px}
+.dashboard-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;font-size:12px;margin:6px 0 12px}
+.dashboard-legend>span{display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap;min-width:0}
+.dashboard-legend strong{font-size:14px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.4}
 .dashboard-legend>span:before{content:'';display:inline-block;width:12px;height:2px;background:currentColor;vertical-align:middle;margin-right:6px}
 .dashboard-counter{display:grid;grid-template-columns:minmax(80px,.65fr) minmax(0,1.5fr);gap:8px;align-items:center;padding:4px 0;border-bottom:1px solid var(--border-subtle)}
 .dashboard-counter p,.dashboard-change p{font-size:12px;line-height:1.5;color:var(--text-secondary);margin:3px 0;overflow-wrap:anywhere}
@@ -135,7 +148,7 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
 .dashboard-kpi-controls button:disabled{opacity:.45}
 .dashboard-highlights{isolation:isolate}
 .dashboard-feature{min-height:128px}
-.dashboard-feature:not(.dashboard-spotlight){position:relative;display:block}
+.dashboard-feature:not(.dashboard-spotlight){position:relative;display:block;padding:14px 16px 16px}
 .dashboard-feature-content{display:grid;grid-template-columns:minmax(0,1fr);align-content:start;gap:4px 10px;min-width:0}
 .dashboard-card-slot{position:relative;min-width:0;block-size:128px;isolation:isolate;overflow:clip;overflow-clip-margin:5px;border-radius:var(--radius-card)}
 .dashboard-card-slot>.dashboard-feature{block-size:100%;min-height:0}

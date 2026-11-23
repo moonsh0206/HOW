@@ -1,0 +1,264 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "metrics": {
+      "height": 2070.4375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 48.34375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        }
+      ],
+      "motion": {
+        "a": [
+          {
+            "transform": "matrix(1, 0, 0, 1, 7.36495, -10.8467)",
+            "opacity": "0.206241",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.99735, -17.9682)",
+            "opacity": "0.0899338",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.582702, -0.992419)",
+            "opacity": "0.0545675",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -4.6938, -4.72869)",
+            "opacity": "0.160698",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.95008, -17.401)",
+            "opacity": "0.088752",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -3.05393, -14.3244)",
+            "opacity": "0.149728",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          }
+        ],
+        "b": [
+          {
+            "transform": "matrix(1, 0, 0, 1, 2.00021, -17.9997)",
+            "opacity": "0.0900046",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.257749, 2.90701)",
+            "opacity": "0.0464437",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 3.12238, -2.32635)",
+            "opacity": "0.133671",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -6.76535, -10.2086)",
+            "opacity": "0.216611",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.213227, 3.44127)",
+            "opacity": "0.0453307",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.72345, -14.6814)",
+            "opacity": "0.0830861",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "metrics": {
+      "height": 1010.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ],
+      "motion": {
+        "a": [
+          {
+            "transform": "matrix(1, 0, 0, 1, 7.63158, -10.4912)",
+            "opacity": "0.212018",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.99159, -17.9948)",
+            "opacity": "0.0900841",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.846188, -4.15426)",
+            "opacity": "0.0611547",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -4.30911, -3.84941)",
+            "opacity": "0.150806",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.98258, -17.7909)",
+            "opacity": "0.0895644",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -3.93821, -13.6813)",
+            "opacity": "0.160179",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          }
+        ],
+        "b": [
+          {
+            "transform": "matrix(1, 0, 0, 1, 2.0408, -17.9456)",
+            "opacity": "0.090884",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.37839, 1.45931)",
+            "opacity": "0.0494598",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 2.57108, -0.856219)",
+            "opacity": "0.117132",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, -6.91128, -10.0789)",
+            "opacity": "0.218718",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 0.313538, 2.23754)",
+            "opacity": "0.0478385",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          },
+          {
+            "transform": "matrix(1, 0, 0, 1, 1.84196, -16.1035)",
+            "opacity": "0.0860489",
+            "animation": "dashboard-ash-drift",
+            "state": "running"
+          }
+        ]
+      }
+    }
+  }
+]

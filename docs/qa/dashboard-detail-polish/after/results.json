@@ -1,0 +1,1274 @@
+[
+  {
+    "width": 320,
+    "lang": "ko",
+    "metrics": {
+      "height": 2330.984375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 46.5
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 46.5
+        },
+        {
+          "height": 136,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 75.25
+        }
+      ],
+      "portrait": {
+        "width": 50,
+        "height": 50,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 10
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 10
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 44.75
+        }
+      ]
+    }
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "metrics": {
+      "height": 2478.84375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 45
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 45
+        },
+        {
+          "height": 136,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 75.25
+        }
+      ],
+      "portrait": {
+        "width": 50,
+        "height": 50,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 8.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 8.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 44.75
+        }
+      ]
+    }
+  },
+  {
+    "width": 320,
+    "lang": "ja",
+    "metrics": {
+      "height": 2474.453125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 46.5
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 45
+        },
+        {
+          "height": 136,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 75.25
+        }
+      ],
+      "portrait": {
+        "width": 50,
+        "height": 50,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 10
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 8.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 44.75
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "lang": "ko",
+    "metrics": {
+      "height": 2063.125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 48.5
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 48.5
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 48.5
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "lang": "en",
+    "metrics": {
+      "height": 2159.5,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 47
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 47
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 47
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "lang": "ja",
+    "metrics": {
+      "height": 2171.765625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 47
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 47
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 47
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "metrics": {
+      "height": 2070.4375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 48.34375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 48.34375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "metrics": {
+      "height": 2166.8125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 46.84375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 46.84375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 46.84375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "metrics": {
+      "height": 2159.578125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 46.84375
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 46.84375
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 46.84375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "lang": "ko",
+    "metrics": {
+      "height": 2072.328125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 47.296875
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 47.296875
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 47.296875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 13
+        }
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "lang": "en",
+    "metrics": {
+      "height": 2168.703125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 45.796875
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 45.796875
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 45.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "lang": "ja",
+    "metrics": {
+      "height": 2138.71875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 156,
+          "value": "14.4%",
+          "clearance": 9,
+          "bottom": 45.796875
+        },
+        {
+          "height": 156,
+          "value": "30.2%",
+          "clearance": 9,
+          "bottom": 45.796875
+        },
+        {
+          "height": 156,
+          "value": "43.1%",
+          "clearance": 9,
+          "bottom": 45.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        },
+        {
+          "clearance": 9,
+          "auxBottom": 11.5
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "lang": "ko",
+    "metrics": {
+      "height": 2287.328125,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "lang": "en",
+    "metrics": {
+      "height": 2292.421875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "lang": "ja",
+    "metrics": {
+      "height": 2310.421875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "lang": "ko",
+    "metrics": {
+      "height": 2397.765625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "lang": "en",
+    "metrics": {
+      "height": 2397.765625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "lang": "ja",
+    "metrics": {
+      "height": 2415.765625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 176,
+          "value": "14.4%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "30.2%",
+          "clearance": 11,
+          "bottom": 62.796875
+        },
+        {
+          "height": 176,
+          "value": "43.1%",
+          "clearance": 11,
+          "bottom": 62.796875
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        },
+        {
+          "clearance": 11,
+          "auxBottom": 24
+        }
+      ]
+    }
+  },
+  {
+    "width": 1280,
+    "lang": "ko",
+    "metrics": {
+      "height": 1010.390625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  },
+  {
+    "width": 1280,
+    "lang": "en",
+    "metrics": {
+      "height": 1024.140625,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  },
+  {
+    "width": 1280,
+    "lang": "ja",
+    "metrics": {
+      "height": 1049.234375,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "metrics": {
+      "height": 1010.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "돌격48.9%",
+        "공격49.6%",
+        "지원48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "metrics": {
+      "height": 1026.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "Tank48.9%",
+        "Damage49.6%",
+        "Support48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "metrics": {
+      "height": 1028.46875,
+      "overflow": 0,
+      "slots": [
+        {
+          "height": 128,
+          "value": "14.4%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "30.2%",
+          "clearance": 17,
+          "bottom": 59.609375
+        },
+        {
+          "height": 128,
+          "value": "43.1%",
+          "clearance": 17,
+          "bottom": 59.609375
+        }
+      ],
+      "portrait": {
+        "width": 64,
+        "height": 64,
+        "fit": "contain",
+        "position": "50% 50%"
+      },
+      "legend": [
+        "タンク48.9%",
+        "ダメージ49.6%",
+        "サポート48.7%"
+      ],
+      "stress": [
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        },
+        {
+          "clearance": 17,
+          "auxBottom": 34
+        }
+      ]
+    }
+  }
+]

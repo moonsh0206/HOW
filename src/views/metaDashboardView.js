@@ -53,7 +53,9 @@ export function createMetaDashboardView(root){
  const hologramObserver=Observer?new Observer(entries=>{for(const entry of entries)root.classList.toggle(entry.target===heading?'dashboard-heading-offscreen':'dashboard-hologram-offscreen',!entry.isIntersecting);},{rootMargin:'80px'}):null;hologramObserver?.observe(heading);hologramObserver?.observe(highlights);
  const cycleDots=node('div',undefined,'dashboard-cycle-dots');cycleDots.setAttribute('role','img');for(const metric of ['pickRate','winRate','banRate']){const dot=node('span');dot.dataset.cycleDot=metric;dot.setAttribute('aria-hidden','true');cycleDots.append(dot);}
  const context=node('div',undefined,'dashboard-context');context.append(scope,source,stateNote);
- root.replaceChildren(heading,filterHost,context,highlights,middle,bottom);
+ const atmosphere=node('div',undefined,'dashboard-atmosphere');atmosphere.setAttribute('aria-hidden','true');
+ for(let i=0;i<6;i++)atmosphere.append(node('span',undefined,'dashboard-ash'));
+ root.replaceChildren(atmosphere,heading,filterHost,context,highlights,middle,bottom);
  const ranking=panel(middle,'dashboard-ranking','dashboard.ranking'),roleMenu=node('div',undefined,'role-filters dashboard-role-filters');roleMenu.setAttribute('role','group');
  for(const role of ['all','tank','damage','support']){const b=node('button');b.type='button';b.dataset.dashboardRole=role;roleMenu.append(b);}
  const rankContent=node('div');ranking.append(roleMenu,rankContent);
