@@ -125,7 +125,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     const next=parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
     if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta','dashboard'].includes(route.page)?currentHash||'#/dashboard':'#/tiers';
     currentHash=routeHash(location,import.meta.env?.BASE_URL??'/');route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
-    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }
+    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=document.documentElement.classList.contains('how-swipe-transition')?0:scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }
     if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }
     else render();
   }

@@ -12,7 +12,7 @@ import {createMetaDashboardView} from '../src/views/metaDashboardView.js';
 test('dashboard axis inverse scale preserves physical glyph proportions without changing observation coordinates',()=>{
  const dom=new JSDOM('<body/>'),old=globalThis.document;globalThis.document=dom.window.document;
  try{const data={available:false,series:[{role:'tank',points:[{day:'2026-11-20',time:Date.parse('2026-11-20T01:00:00Z'),value:48.3,count:2}]}]},before=structuredClone(data),chart=dashboardHistoryChart(data),svg=chart.querySelector('svg'),circle=svg.querySelector('circle'),coords=[circle.getAttribute('cx'),circle.getAttribute('cy')];
-  for(const [width,height]of [[300,140],[580,210],[720,280]]){syncDashboardTextScale(svg,width,height);for(const text of svg.querySelectorAll('text')){const [x,y]=text.getAttribute('transform').match(/scale\(([^)]+)\)/)[1].split(' ').map(Number);assert(Math.abs(x*width/510-1)<1e-10);assert(Math.abs(y*height/220-1)<1e-10);}}
+  for(const [width,height]of [[300,140],[580,210],[720,280]]){syncDashboardTextScale(svg,width,height);for(const text of svg.querySelectorAll('text')){const factor=Number(text.getAttribute('transform').match(/scale\(([^)]+)\)/)[1]);assert(Math.abs(factor*Math.min(width/510,height/220)-1)<1e-10);}}
   assert.deepEqual([circle.getAttribute('cx'),circle.getAttribute('cy')],coords);assert.deepEqual(data,before);
  }finally{globalThis.document=old;dom.window.close();}
 });

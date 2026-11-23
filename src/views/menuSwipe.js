@@ -35,17 +35,26 @@ export function createMenuSwipe({getPage,document:doc=document}){
   if(!direction||next<0||next>=PAGES.length)return;
   const link=doc.querySelector(`a[href="${HASHES[next]}"]`);if(!link)return;
   busy=true;const token=++generation,old=doc.querySelector(ROOTS[g.index]);
-  async function play(el,frames,duration){if(reduced?.matches||!el?.animate)return;const a=el.animate(frames,{duration,easing:'ease-out'});animations.push(a);try{await a.finished;}catch{}finally{a.cancel();animations=animations.filter(v=>v!==a);}}
+  const incoming=doc.querySelector(ROOTS[next]);
+  const cleanup=()=>{for(const a of animations)a.cancel();animations=[];doc.documentElement.classList.remove('how-swipe-transition');};
+  const animate=(el,frames,duration)=>{if(reduced?.matches||!el?.animate)return null;const a=el.animate(frames,{duration,easing:'cubic-bezier(0.22,1,0.36,1)',fill:'both'});animations.push(a);return a;};
   try{
-   await play(old,[{opacity:1,transform:'translateX(0)'},{opacity:0,transform:`translateX(${-direction*10}px)`}],90);
+   doc.documentElement.classList.add('how-swipe-transition');
+   // Hold the destination's initial style before the router makes it visible.
+   const entrance=animate(incoming,[{opacity:0,transform:`translateX(${direction*8}px)`},{opacity:1,transform:'translateX(0)'}],270);entrance?.pause();
+   const exit=animate(old,[{opacity:1,transform:'translateX(0)'},{opacity:.12,transform:`translateX(${-direction*6}px)`}],160);
+   if(exit)try{await exit.finished;}catch{}
    if(disposed||token!==generation||getPage()!==g.page||blocked())return;
-   link.click();
-   await new Promise(resolve=>win.requestAnimationFrame(()=>win.requestAnimationFrame(resolve)));
+   link.dataset.swipeNavigation='true';link.click();delete link.dataset.swipeNavigation;
+   // Localized navigation queues its router dispatch; run after that dispatch,
+   // before the next paint, so no unanimated destination frame is exposed.
+   await new Promise(resolve=>win.queueMicrotask(resolve));
    if(disposed||token!==generation||getPage()!==PAGES[next])return;
-   await play(doc.querySelector(ROOTS[next]),[{opacity:0,transform:`translateX(${direction*10}px)`},{opacity:1,transform:'translateX(0)'}],130);
-  }finally{busy=false;}
+   entrance?.play();if(entrance)try{await entrance.finished;}catch{}
+  }catch{if(!disposed&&getPage()===g.page)link.click(); /* Restore usable navigation if motion is unsupported or fails. */ }
+  finally{cleanup();busy=false;}
  }
  const scroll=()=>cancel(),hide=()=>{if(doc.hidden)cancel();};
  doc.addEventListener('touchstart',start,{passive:true});doc.addEventListener('touchmove',move,{passive:true});doc.addEventListener('touchend',end,{passive:true});doc.addEventListener('touchcancel',cancel,{passive:true});doc.addEventListener('scroll',scroll,{passive:true,capture:true});doc.addEventListener('visibilitychange',hide);
- return {destroy(){disposed=true;++generation;cancel();animations.forEach(a=>a.cancel());animations=[];doc.removeEventListener('touchstart',start);doc.removeEventListener('touchmove',move);doc.removeEventListener('touchend',end);doc.removeEventListener('touchcancel',cancel);doc.removeEventListener('scroll',scroll,true);doc.removeEventListener('visibilitychange',hide);}};
+ return {destroy(){disposed=true;++generation;cancel();animations.forEach(a=>a.cancel());animations=[];doc.documentElement.classList.remove('how-swipe-transition');doc.removeEventListener('touchstart',start);doc.removeEventListener('touchmove',move);doc.removeEventListener('touchend',end);doc.removeEventListener('touchcancel',cancel);doc.removeEventListener('scroll',scroll,true);doc.removeEventListener('visibilitychange',hide);}};
 }

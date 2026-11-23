@@ -225,3 +225,11 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
 
 .dashboard-map-body>.dashboard-link{grid-column:1/-1;margin:0}
 .dashboard-map-credit{display:inline-flex;align-items:center;min-height:44px}
+/* Swipe motion affects content only; clip its small horizontal offset. */
+html.how-swipe-transition{overflow-x:clip}
+@media(max-width:767px){
+ .dashboard-history-chart svg text{font-size:10.5px;font-weight:400;letter-spacing:0}
+ .dashboard-history-controls{gap:6px;flex-wrap:wrap}
+ .dashboard-legend{gap:6px;margin-block:4px 6px}
+ .dashboard-legend strong{font-size:13px}
+}
