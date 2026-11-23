@@ -21,7 +21,7 @@ export function extractOfficialPatches(html,{locale,sourceUrl,heroes}){
   const patchId=block.querySelector(':scope > .anchor[id]')?.id,title=clean(block.querySelector('.PatchNotes-patchTitle')?.textContent??'');
   if(!/^patch-\d{4}-\d{2}-\d{2}$/.test(patchId??'')||!title)throw new Error('공식 패치 ID/제목 구조 변경');
   const publishedDate=patchId.slice(6),sourceHash=digest(clean(block.textContent)),permalink=new URL('#'+patchId,sourceUrl).href;
-  const candidates=[],excluded=[];let mode='live-5v5';
+  const candidates=[],excluded=[],systemCandidates=[];let mode='live-5v5';
   const add=(name,heroKey,abilityName,text,gameMode,category='balance')=>{
    const fact=parsePatchFact(text),id=digest([patchId,name,abilityName,text].join('|'));
    candidates.push({id,patchId,publishedDate,sourceUrl:permalink,gameMode,heroKey,abilityName,...classifyPatchChange(text),...fact,category,summaryKo:fact.summaryKo??(locale==='ko-kr'?'공식 기술 변경 · 원문 검토 필요':null),verificationStatus:'review-required',evidenceHash:digest(text),evidenceText:text,...(/이전 업데이트|in a previous update/i.test(text)?{timing:'previous-update'}:{})});
@@ -54,10 +54,28 @@ export function extractOfficialPatches(html,{locale,sourceUrl,heroes}){
     }
    }
   }
+  // Generic sections are independent of hero updates. Hotfix boilerplate is not a change.
+  for(const section of block.querySelectorAll(':scope > .PatchNotes-section')){
+   const heading=clean(section.querySelector('.PatchNotes-sectionTitle')?.textContent??'');
+   if(/^(핫픽스 업데이트|Hotfix Update)$/.test(heading))continue;
+   const category=/경쟁전|Competitive/i.test(heading)?'competitive':/버그 수정|Bug Fixes/i.test(heading)?'bugfix':/일반|시스템|General|System/i.test(heading)?'system':'other';
+   for(const description of section.querySelectorAll('.PatchNotes-sectionDescription,.PatchNotesGeneralUpdate-description')){
+    if(description.closest('.PatchNotesHeroUpdate'))continue;
+    const list=[...description.querySelectorAll('li')].filter(li=>!li.querySelector('li'));
+    const items=list.length?list:[...description.querySelectorAll('p')];
+    if(!items.length&&clean(description.textContent))throw new Error('일반 패치 변경 목록 구조 변경');
+    for(const item of items){const text=clean(item.textContent);if(!text||candidates.some(c=>c.evidenceText===text))continue;
+     // Hero-section commentary is not an independently verified system update.
+     if(section.querySelector('.PatchNotesHeroUpdate'))continue;
+     systemCandidates.push({id:digest([patchId,heading,text].join('|')),patchId,publishedDate,sourceUrl:permalink,category,section:heading,evidenceText:text,evidenceHash:digest(text),verificationStatus:'review-required'});
+    }
+   }
+  }
+  if(block.querySelector('.PatchNotesHeroUpdate')&&!candidates.length)throw new Error('영웅 패치 파싱 결과가 비어 있습니다. 구조 검토 필요');
   const titleDate=locale==='ko-kr'?/([0-9]{4})년\s*(\d+)월\s*(\d+)일/.exec(title):null;
   const headings=[...block.querySelectorAll('.PatchNotes-sectionTitle')].map(h=>clean(h.textContent));
   const type=headings.some(h=>/^(핫픽스 업데이트|Hotfix Update)$/.test(h))?'hotfix':block.querySelector('.PatchNotesHeroUpdate')?'balance':headings.some(h=>/^(버그 수정|Bug Fixes)$/.test(h))?'bugfix':'adjustment';
-  return {patchId,publishedDate,localizedTitleDate:titleDate?`${titleDate[1]}-${titleDate[2].padStart(2,'0')}-${titleDate[3].padStart(2,'0')}`:publishedDate,officialTitle:title,sourceUrl:permalink,sourceHash,type,candidates,excluded};
+  return {patchId,publishedDate,localizedTitleDate:titleDate?`${titleDate[1]}-${titleDate[2].padStart(2,'0')}-${titleDate[3].padStart(2,'0')}`:publishedDate,officialTitle:title,sourceUrl:permalink,sourceHash,type,candidates,systemCandidates,excluded};
  });
  if(new Set(patches.map(p=>p.patchId)).size!==patches.length)throw new Error('공식 패치 ID 중복');
  return {patches,rssAdvertised:!!doc.querySelector('link[type="application/rss+xml"],link[type="application/atom+xml"]')};

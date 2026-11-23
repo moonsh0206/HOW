@@ -1,0 +1,116 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "after": {
+      "rankHeight": 323.5,
+      "rankBottomGap": 11,
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 315.703125,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 145.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "genji",
+      "rows": 6
+    }
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "after": {
+      "rankHeight": 367.5,
+      "rankBottomGap": 11,
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 332.890625,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 163.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "genji",
+      "rows": 6
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "after": {
+      "rankHeight": 389.890625,
+      "rankBottomGap": 11,
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 332.890625,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 145.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "hanzo",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "after": {
+      "rankHeight": 351,
+      "rankBottomGap": 13,
+      "graphHeight": 207,
+      "graphWidth": 580.671875,
+      "panelHeight": 351,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 44.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "genji",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "after": {
+      "rankHeight": 351,
+      "rankBottomGap": 13,
+      "graphHeight": 202.8125,
+      "graphWidth": 580.671875,
+      "panelHeight": 351,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 60.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "hanzo",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "after": {
+      "rankHeight": 369,
+      "rankBottomGap": 13,
+      "graphHeight": 220.8125,
+      "graphWidth": 580.671875,
+      "panelHeight": 369,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 44.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "ana",
+      "rows": 6
+    }
+  }
+]

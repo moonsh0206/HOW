@@ -119,7 +119,9 @@
  #heroes .compact-source .statistics-notice{margin:4px 0;padding:8px}
  #heroes>#current-patch-note{margin-bottom:6px;padding:0 8px;grid-template-columns:minmax(0,1fr) 72px;min-height:44px}
  #heroes>#current-patch-note .patch-note-date{grid-row:1;align-self:center;font-size:12px;line-height:1.5}
- #heroes>#current-patch-note .patch-note-summary{display:none}
+ #heroes>#current-patch-note:has(details) .patch-note-summary{display:none}
+ #heroes>#current-patch-note:not(:has(details)) .patch-note-summary{display:block;grid-column:1/-1;grid-row:2;-webkit-line-clamp:unset;overflow:visible;padding-bottom:4px}
+ #heroes>#current-patch-note:not(:has(details)) .patch-note-info{grid-column:1/-1}
  #heroes>#current-patch-note details{grid-row:1}
  #heroes>#current-patch-note details[open]{grid-row:2}
  #heroes>#current-patch-note details[open] .patch-note-summary{display:block}

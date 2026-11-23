@@ -43,7 +43,7 @@ test('B/C verified partial candidate updates shared main/hero source, uncertain-
  assert(result.changed);validatePatchUpdate(seed,next);assert.equal(next.patches.flatMap(p=>p.changes).length,66);assert.equal(latestHeroPatch(next,'genji').patch.patchId,'patch-2026-11-03');assert.equal(latestHeroPatch(next,'ana').patch.patchId,'patch-2026-11-07');
  assert.equal(next.patches.find(p=>p.patchId==='patch-2026-11-07').reviewStatus,'partial');
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
- try{assert.match(renderHeroPatch(next,'ana').textContent,/70 → 65/);assert.match(renderPatchNote(selectCurrentPatchNote(next)).textContent,/2026.11.08/);}finally{globalThis.document=prior;dom.window.close();}
+ try{assert.match(renderHeroPatch(next,'ana').textContent,/70 → 65/);assert.match(renderPatchNote(selectCurrentPatchNote(next)).textContent,/2026.11.07/);}finally{globalThis.document=prior;dom.window.close();}
  const revised=await prepareOfficialPatchUpdate({...paths,fetcher:fetchPage(locale=>future(locale,{after:60}))});assert(revised.changed);const revision=JSON.parse(await fs.readFile(paths.target));validatePatchUpdate(next,revision);assert.equal(revision.patches.filter(p=>p.patchId==='patch-2026-11-07').length,2);assert.equal(latestHeroPatch(revision,'ana').changes[0].after,60);
 }));
 

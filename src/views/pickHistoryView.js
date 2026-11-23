@@ -1,3 +1,5 @@
+import {historyDateLabels} from './historyAxis.js';
+import {valueTooltip} from './valueTooltip.js';
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
 import { node } from './dom.js';
@@ -6,7 +8,6 @@ export const HISTORY_LABELS = Object.freeze({get winRate(){return t('승률');},
 const rate = point => point.value ?? point.pickRate;
 export const formatHistoryRate = value => Number.isFinite(value) ? value.toFixed(1) : '—';
 const stamp = value => new Date(value).toLocaleString(formatLocale(), { timeZone: 'Asia/Seoul', hour12: false });
-const day = value => new Date(value).toLocaleString(formatLocale(), { timeZone: 'Asia/Seoul', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false });
 // Keep point size and touch targets in screen pixels even in a narrow column.
 const plotLayouts = new WeakMap();
 const plotObserver = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(entries=>{
@@ -51,7 +52,8 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     for (const rate of scale.ticks) axis.append(node('span',`${formatHistoryRate(rate)}%`));
     const plot = svg('svg',{viewBox:'0 0 600 180',preserveAspectRatio:'none',role:'group','aria-label':t("message.9637e9fb6aba",{"0":(label),"1":(scale.min),"2":(scale.max)})});
     const first = data.points[0].time, last = data.points.at(-1).time;
-    let plotMargin=20;
+    const yearBoundary=new Date(first+9*3600000).getUTCFullYear()!==new Date(last+9*3600000).getUTCFullYear();
+    let plotMargin=yearBoundary?44:24;
     const x = p => first === last ? 300 : plotMargin + (p.time-first)/(last-first)*(600-2*plotMargin);
     const y = p => 12 + (scale.max-rate(p))/(scale.max-scale.min)*156;
     prepareChartMotion(panel,['history',filters,state.metric,state.days,data.points.map(p=>[p.time,rate(p),p.stored,p.current]),data.segments,data.comparisonSegments]);
@@ -60,28 +62,38 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     for (const [a,b] of data.segments) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
     for (const [a,b] of data.comparisonSegments??[]) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','vector-effect':'non-scaling-stroke'}));
     plot.append(trace);
-    const selected = node('p', '', 'history-observation'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
+    const selected = node('p', '', 'history-observation sr-only'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
     const provenance=p=>(p.current?(p.stored?t("저장 이력 + 현재 조회"):t("현재 조회 · 저장 안 됨")):t("저장 이력"))+(p.composite?t(" · HOW 등급 균등 평균"):'');
     const description=p=>`${stamp(p.collectedAt)} (KST) · ${label} ${formatHistoryRate(rate(p))}% · ${provenance(p)}${p.patch&&p.verificationStatus==='verified' ? t("message.37981ca724d6",{"0":(translateLabel(p.patchLabel??p.patch)),"1":(p.representative?t(" · 패치 대표값"):'')}) : t(" · 패치 미확인")}`;
-    function choose(index) { const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} · ${label} ${formatHistoryRate(rate(p))}% · ${p.current&&!p.stored?t("현재 조회"):t("저장")}`; selected.title = description(p); plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
+    let selectedIndex=-1;
+    function choose(index) { if(index===selectedIndex)return;selectedIndex=index;const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} · ${label} ${formatHistoryRate(rate(p))}% · ${p.current&&!p.stored?t("현재 조회"):t("저장")}`; selected.title = description(p); plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
+    const valueTip=valueTooltip(graph);
+    const guide=svg('line',{class:'history-guide',y1:0,y2:180,visibility:'hidden'});plot.append(guide);
+    const showPoint=index=>{choose(index);const mark=plot.querySelectorAll('.history-point')[index];valueTip.show(`${formatHistoryRate(rate(data.points[index]))}%`,mark.querySelector('.history-dot'));guide.setAttribute('x1',x(data.points[index]));guide.setAttribute('x2',x(data.points[index]));guide.setAttribute('visibility','visible');};
+    graph.addEventListener('pointerleave',()=>guide.setAttribute('visibility','hidden'));
+    graph.addEventListener('keydown',event=>{if(event.key==='Escape')guide.setAttribute('visibility','hidden');});
+    graph.addEventListener('focusout',event=>{if(!graph.contains(event.relatedTarget))guide.setAttribute('visibility','hidden');});
     data.points.forEach((p,index)=>{
       const mark = svg('g',{class:'history-point',tabindex:0,role:'button','data-storage':p.current?(p.stored?'both':'browser'):'stored','data-representative':String(p.representative===true),'aria-label':description(p)});
-      const tooltip = svg('title',{}); tooltip.textContent = description(p);
+      const tooltip = svg('title',{}); tooltip.textContent = `${formatHistoryRate(rate(p))}%`;
       mark.append(tooltip,svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-hit','vector-effect':'non-scaling-stroke'}),svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-dot','vector-effect':'non-scaling-stroke'}));
-      mark.addEventListener('click',()=>choose(index)); mark.addEventListener('focus',()=>choose(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();choose(index);}}); plot.append(mark);
+      mark.addEventListener('click',()=>showPoint(index)); mark.addEventListener('focus',()=>showPoint(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();showPoint(index);}}); mark.addEventListener('pointerenter',()=>showPoint(index)); plot.append(mark);
     });
     plotLayouts.set(plot,({width,height})=>{
-      plotMargin=Math.min(220,Math.max(20,24*600/width));
+      plotMargin=Math.min(220,Math.max(20,(yearBoundary?44:24)*600/width));
+      updateLabels(width);valueTip.hide();guide.setAttribute('visibility','hidden');
       const segments=[...data.segments,...(data.comparisonSegments??[])];
       plot.querySelectorAll('.history-segment,.history-comparison').forEach((line,i)=>{line.setAttribute('x1',x(segments[i][0]));line.setAttribute('x2',x(segments[i][1]));});
       plot.querySelectorAll('.history-point').forEach((mark,i)=>{
         for(const ellipse of mark.querySelectorAll('ellipse')){const radius=ellipse.classList.contains('history-hit')?22:4;ellipse.setAttribute('cx',x(data.points[i]));ellipse.setAttribute('rx',radius*600/width);ellipse.setAttribute('ry',radius*180/height);}
       });
     });plotObserver?.observe(plot);
-    choose(data.points.length-1); graph.append(axis,plot);
-    const axisLabel = p => p.patchLabel&&p.verificationStatus==='verified' ? `${translateLabel(p.patchLabel)}${p.ongoing?t(" · 진행 중"):''}` : `${p.current?t("현재 조회"):t("저장")} · ${day(p.collectedAt)}`;
-    const labels = node('div', undefined, 'history-x'); labels.setAttribute('aria-hidden','true'); labels.append(node('span',axisLabel(data.points[0])));
-    if (data.points.length > 1) labels.append(node('span',axisLabel(data.points.at(-1)))); else labels.classList.add('history-x-single');
+    choose(data.points.length-1); graph.prepend(axis,plot);
+    const labels=node('div',undefined,'history-x history-date-axis');labels.setAttribute('aria-hidden','true');
+    function updateLabels(width=600){labels.replaceChildren();for(const item of historyDateLabels(data.points,width,plotMargin)){const text=node('span',item.text);text.style.left=`${item.x/6}%`;labels.append(text);}}
+    updateLabels();
+    const nearestPoint=event=>{const rect=plot.getBoundingClientRect();if(!rect.width)return;const position=(event.clientX-rect.left)/rect.width*600;let nearest=0;data.points.forEach((p,i)=>{if(Math.abs(x(p)-position)<Math.abs(x(data.points[nearest])-position))nearest=i;});showPoint(nearest);};
+    plot.addEventListener('pointermove',nearestPoint);plot.addEventListener('click',event=>{if(event.detail)nearestPoint(event);});
     panel.append(graph,labels,selected);
     const info=node('div',undefined,'history-info');
     if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))info.append(node('p',t("채운 점: 저장 · 테두리 점: 현재 조회(미저장)"),'history-observation'));

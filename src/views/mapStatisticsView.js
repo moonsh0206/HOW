@@ -1,3 +1,4 @@
+import {valueTooltip} from './valueTooltip.js';
 import {t,formatLocale} from '../i18n/i18n.js';
 import {errorText} from '../i18n/i18n.js';
 import {node} from './dom.js';
@@ -24,12 +25,12 @@ export function renderMapStatistics(state,model,heroKey,{metric='pickRate'}={}){
  const chart=node('div',undefined,'map-compare-chart'),axis=node('div',undefined,'map-compare-axis');axis.setAttribute('aria-hidden','true');
  prepareChartMotion(panel,['map',data.filters,metric,data.values,data.max]);
  for(const value of [data.max,data.max/2,0])axis.append(node('span',formatPercentage(value,2)));
- const bars=node('div',undefined,'map-bars');
+ const bars=node('div',undefined,'map-bars'),tooltip=valueTooltip(chart);
  for(let i=0;i<2;i++){
   const column=node('figure',undefined,'map-column'),value=data.values[i];column.dataset.series=i?'selected':'all';
   column.append(node('strong',Number.isFinite(value)?formatPercentage(value,2):data.statuses[i]==='review'?t('검토 중'):t('미제공'),'map-value'));
   const track=node('div',undefined,'map-bar-track');track.setAttribute('aria-hidden','true');
-  if(Number.isFinite(value)){const bar=node('div',undefined,'map-bar');bar.style.height=`${value/data.max*100}%`;track.append(bar);column.title=t('map.raw',{value});}
+  if(Number.isFinite(value)){const bar=node('div',undefined,'map-bar');bar.style.height=`${value/data.max*100}%`;track.append(bar);column.title=formatPercentage(value,2);column.tabIndex=0;column.setAttribute('aria-label',`${names[i]}: ${formatPercentage(value,2)}`);for(const event of ['pointerenter','focus','click'])column.addEventListener(event,()=>tooltip.show(formatPercentage(value,2),column.querySelector('.map-value')));}
   column.append(track,node('figcaption',names[i]));bars.append(column);
  }
  chart.append(axis,bars);panel.append(chart,node('p',t('map.delta',{difference:formatPercentagePoints(data.difference)}),'map-difference'));

@@ -14,8 +14,9 @@ export function dashboardHistoryChart(data){
  const points=data.series.flatMap(s=>s.points.filter(p=>p.value!==null));
  const minDay=Math.min(...points.map(p=>dayIndex(p.day))),maxDay=Math.max(...points.map(p=>dayIndex(p.day)));
  const min=Math.max(0,Math.floor((Math.min(...points.map(p=>p.value))-2)/5)*5),max=Math.min(100,Math.ceil((Math.max(...points.map(p=>p.value))+2)/5)*5);
- const x=p=>50+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*430,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;
- const svg=svgNode('svg',{viewBox:'0 0 510 220',role:'img','aria-label':t('dashboard.graphLabel')});
+ root.classList.toggle('is-single-observation',minDay===maxDay);
+ const x=p=>minDay===maxDay?265:50+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*430,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;
+ const svg=svgNode('svg',{viewBox:'0 0 510 220',preserveAspectRatio:'none',role:'img','aria-label':t('dashboard.graphLabel')});
  const title=svgNode('title');title.textContent=t('dashboard.graphLabel');svg.append(title);
  for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:50,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:43,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}
  for(const day of [...new Set(points.map(p=>p.day))].filter((_,i,all)=>i===0||i===all.length-1||i===Math.floor(all.length/2))){const text=svgNode('text',{x:x({day}),y:202,'text-anchor':'middle'});text.textContent=new Date(day+'T00:00:00Z').toLocaleDateString(formatLocale(),{month:'numeric',day:'numeric',timeZone:'UTC'});svg.append(text);}

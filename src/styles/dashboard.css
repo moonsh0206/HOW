@@ -49,6 +49,14 @@
 .dashboard-ranking-table .dashboard-hero strong{font-size:13px}
 .dashboard-ranking-table .recommendation-label{font-size:9px}
 .dashboard-ranking-table .rank-change{display:block;font-size:9px}
+.rank-change{position:relative;cursor:default;outline-offset:3px}
+.rank-change:after{content:attr(data-tooltip);display:none;position:absolute;z-index:20;left:0;top:100%;width:max-content;max-width:min(280px,65vw);padding:6px 8px;border:1px solid var(--border-control);border-radius:5px;background:var(--surface-card);color:var(--text);white-space:normal;font-size:11px;font-weight:400;line-height:1.5;text-align:left;box-shadow:0 2px 8px #0003;pointer-events:none}
+.rank-change:is(:hover,:focus):after{display:block}
+.rank-change:focus-visible{outline:1px solid var(--orange);border-radius:2px}
+.dashboard-ranking-table tbody tr{transition:background-color 180ms ease-out}
+.dashboard-ranking-table :is(th,td):nth-child(n+5){font-variant-numeric:tabular-nums;white-space:nowrap}
+.dashboard-history-chart.is-single-observation .dashboard-legend{margin-bottom:5px}
+@media(prefers-reduced-motion:reduce){.dashboard-ranking-table tbody tr{transition:none}}
 .dashboard-link{display:inline-flex;align-items:center;min-height:44px;max-width:100%;font-size:12px;color:var(--blue);line-height:1.5;margin-right:12px}
 .dashboard-panel label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--text-secondary);max-width:100%;margin:0}
 
@@ -76,15 +84,18 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}
  .dashboard-filter-host .filter-combobox-trigger,.dashboard-panel .filter-combobox-trigger{min-height:40px;padding:6px 10px}
  .dashboard-filter-host .statistics-filters>label{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:8px}
  .dashboard-feature{grid-template-columns:minmax(0,1fr) auto;min-height:112px;align-items:center}.dashboard-feature>h2,.dashboard-feature-content>h2{grid-column:1/-1}.dashboard-feature>.dashboard-hero,.dashboard-feature-content>.dashboard-hero{grid-column:1;grid-row:2}.dashboard-feature-value{grid-column:2;grid-row:2;white-space:nowrap}.dashboard-feature>small,.dashboard-feature-content>small,.dashboard-feature-note{grid-column:1/-1}
- .dashboard-middle>.dashboard-panel{min-height:344px;display:flex;flex-direction:column}.dashboard-history-body{flex:1;display:flex;flex-direction:column}.dashboard-history-chart{flex:1;display:flex;flex-direction:column;justify-content:center}.dashboard-history-chart .dashboard-empty{max-width:420px;align-self:center}
- .dashboard-history-chart svg{height:180px;flex:none}.dashboard-history-chart svg text{font-size:14px}.dashboard-legend{margin:2px 0 4px;gap:16px}
+ .dashboard-middle>.dashboard-panel{min-height:0;display:flex;flex-direction:column}
+ /* The ranking content sizes the shared row; the chart fills that height. */
+ #dashboard-history{contain:size;min-height:260px}
+ .dashboard-history-body{flex:1;min-height:0;display:flex;flex-direction:column}.dashboard-history-chart{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.dashboard-history-chart .dashboard-empty{max-width:420px;align-self:center}
+ .dashboard-history-chart svg{height:0;min-height:0;flex:1 1 0}.dashboard-history-chart svg text{font-size:14px}.dashboard-legend{margin:2px 0 4px;gap:16px}
  #dashboard-page .dashboard-hero{min-height:28px}.dashboard-ranking-table .dashboard-hero img,.dashboard-bottom .dashboard-hero img{width:28px;height:28px}
  #dashboard-ranking .dashboard-role-filters button{min-height:32px;padding:4px 10px}
  #dashboard-ranking .dashboard-caption{margin:3px 0 5px}
  .dashboard-ranking-table td{padding-block:2px;vertical-align:middle}.dashboard-ranking-table .dashboard-hero{display:flex}
  #dashboard-page .dashboard-ranking-table .tier-badge[data-tier]{min-height:28px;height:28px;width:40px;min-width:28px}.dashboard-ranking-table .meta-tier-emblem{width:24px;height:27px}
  .dashboard-ranking-table .tier-badge:has(.recommendation-label){margin-bottom:10px}
- .dashboard-link{min-height:30px}.dashboard-bottom>.dashboard-panel{min-height:224px}
+ .dashboard-link{min-height:30px}.dashboard-bottom{align-items:start}.dashboard-bottom>.dashboard-panel{min-height:0}
 }
 @media(max-width:1199px){.dashboard-middle{grid-template-columns:minmax(0,1fr)}.dashboard-bottom{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-bottom>:last-child{grid-column:1/-1}.dashboard-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}#dashboard-page{padding:24px}}
 @media(min-width:768px) and (max-width:1100px){body:has(#dashboard-page:not([hidden])) .site-header{gap:20px}body:has(#dashboard-page:not([hidden])) .header-tag{display:none}}

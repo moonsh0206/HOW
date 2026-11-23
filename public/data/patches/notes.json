@@ -1405,6 +1405,58 @@
           "verificationMethod": "bilingual-manual-review"
         }
       ]
+    },
+    {
+      "patchId": "patch-2026-11-16",
+      "publishedDate": "2026-11-16",
+      "localizedTitleDate": "2026-11-17",
+      "officialTitle": "오버워치 패치 노트 - 2026년 11월 17일",
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+      "sourceUrlEn": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/#patch-2026-11-16",
+      "sourceHash": "d2c67f2078ebdb68317f98159a292a9206d5e8ac9dcee1706f61007c545c7cdc",
+      "sourceHashEn": "bece6538bdb7f6628d724146ca72eb4d846326641d1d9c28b71ce0fe2c43f13b",
+      "type": "hotfix",
+      "effectiveAt": null,
+      "statisticsWindowStatus": "unverified",
+      "verificationStatus": "verified",
+      "reviewStatus": "complete",
+      "reviewedAt": "2026-11-21",
+      "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+      "normalizationVersion": "official-patches-v2",
+      "coverage": {
+        "sourceCandidates": 0,
+        "verified": 0,
+        "pending": 0,
+        "excluded": 0
+      },
+      "changes": [],
+      "systemChanges": [
+        {
+          "id": "acdbdbd348b687690f809ef8ecae99ee12201c3eeff06e003a1399201630f3f1",
+          "patchId": "patch-2026-11-16",
+          "publishedDate": "2026-11-16",
+          "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+          "category": "competitive",
+          "section": "경쟁전 업데이트",
+          "evidenceHash": "89a4eb5e94f20b022a5eec460e82aa5cc3008c498039e223567d65e68b68a730",
+          "ruleKey": "champion-group-width",
+          "gameMode": "live-6v6",
+          "before": 4,
+          "after": 3,
+          "unit": "rank-width",
+          "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+          "englishEvidenceId": "f7441f8bcbe279c0f67e7287635a69b2df1f04eae6c861467602c6a92c9b8c88",
+          "englishEvidenceHash": "adb79809dde447375dc903b134fe03164cdbf1843745f0cf58534e64673b8d7c",
+          "verificationMethod": "bilingual-system-rule",
+          "verificationStatus": "verified"
+        }
+      ],
+      "systemNormalizationVersion": "official-system-v1",
+      "systemCoverage": {
+        "sourceCandidates": 1,
+        "verified": 1,
+        "pending": 0
+      }
     }
   ]
 }

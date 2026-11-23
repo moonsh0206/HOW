@@ -5,6 +5,7 @@ import {ko as templates} from './templates.js';
 import common from './common.js';
 import {ko as extras} from './extras.js';
 export default {
+ 'patch.competitiveWidth':'6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 {before}에서 {after}으로 감소했습니다.',
  ...dashboard,
  'map.chartTitle':'{metric} · 전장 비교',
  'map.baselineMissing':'전체 전장 기준의 해당 지표가 제공되지 않습니다.',

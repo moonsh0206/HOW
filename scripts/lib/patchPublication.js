@@ -14,7 +14,8 @@ export function validatePatchUpdate(before,after){
  const keys=new Set(heroes.map(h=>h.key));
  for(const p of after.patches){
   if(p.coverage&&(!Number.isInteger(p.coverage.pending)||p.coverage.pending<0||p.coverage.verified!==p.changes.length||p.coverage.sourceCandidates!==p.coverage.verified+p.coverage.pending))throw Error('패치 부분 반영/검토 건수 불일치');
-  if(p.reviewStatus&&p.reviewStatus!==(p.coverage?.pending>0?'partial':'complete'))throw Error('패치 검토 상태 불일치');
+  if(p.systemCoverage&&(!Number.isInteger(p.systemCoverage.pending)||p.systemCoverage.pending<0||p.systemCoverage.verified!==(p.systemChanges?.length??0)||p.systemCoverage.sourceCandidates!==p.systemCoverage.verified+p.systemCoverage.pending))throw Error('일반 패치 검토 건수 불일치');
+  if(p.reviewStatus&&p.reviewStatus!==((p.coverage?.pending??0)+(p.systemCoverage?.pending??0)>0?'partial':'complete'))throw Error('패치 검토 상태 불일치');
   for(const c of p.changes)if(!keys.has(c.heroKey))throw Error('등록되지 않은 영웅 변경 게시 차단');
  }
  // Old revisions and every previously verified fact must survive. A revision with
@@ -23,6 +24,7 @@ export function validatePatchUpdate(before,after){
   const preserved=after.patches.find(p=>p.patchId===old.patchId&&p.sourceHash===old.sourceHash&&p.sourceHashEn===old.sourceHashEn);
   if(!preserved)throw Error('기존 패치 이력 삭제 차단');
   for(const c of old.changes)if(!preserved.changes.some(next=>JSON.stringify(next)===JSON.stringify(c)))throw Error('기존 검증 변경사항 삭제/변조 차단');
+  for(const c of old.systemChanges??[])if(!(preserved.systemChanges??[]).some(next=>JSON.stringify(next)===JSON.stringify(c)))throw Error('기존 일반 패치 변경사항 삭제/변조 차단');
  }
- return {patches:after.patches.length,changes:after.patches.reduce((n,p)=>n+p.changes.length,0),partial:after.patches.filter(p=>p.coverage?.pending>0).map(p=>({patchId:p.patchId,pending:p.coverage.pending,verified:p.changes.length}))};
+ return {patches:after.patches.length,changes:after.patches.reduce((n,p)=>n+p.changes.length,0),systemChanges:after.patches.reduce((n,p)=>n+(p.systemChanges?.length??0),0),systemPartial:after.patches.filter(p=>p.systemCoverage?.pending>0).map(p=>({patchId:p.patchId,pending:p.systemCoverage.pending})),partial:after.patches.filter(p=>p.coverage?.pending>0).map(p=>({patchId:p.patchId,pending:p.coverage.pending,verified:p.changes.length}))};
 }

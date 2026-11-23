@@ -35,7 +35,7 @@ test('snapshot preservation: original file bytes/index retained; diamond/all/map
 
 test('patch note card: compact own summary, Korean date, verified direct official link and safe disclosure',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
- try{const card=renderPatchNote(CURRENT_PATCH_NOTE);assert.equal(card.querySelector('h2').textContent,'이번 패치 노트');assert(card.textContent.includes(CURRENT_PATCH_NOTE.dateKo.replaceAll('-','.')));assert.equal(card.querySelector('details').open,false);
+ try{const card=renderPatchNote(CURRENT_PATCH_NOTE);assert.equal(card.querySelector('h2').textContent,'이번 패치 노트');assert(card.textContent.includes(CURRENT_PATCH_NOTE.dateKo.replaceAll('-','.')));if(CURRENT_PATCH_NOTE.heroChangeCount===0)assert.equal(card.querySelector('details'),null);else assert.equal(card.querySelector('details').open,false);
  const link=card.querySelector('a');assert.equal(link.href,CURRENT_PATCH_NOTE.sourceUrl);assert.equal(link.target,'_blank');assert(link.rel.includes('noopener'));assert(link.rel.includes('noreferrer'));assert.equal(new URL(link.href).hash,'#'+CURRENT_PATCH_NOTE.sourceId);assert.equal(CURRENT_PATCH_NOTE.statisticsWindowStatus,'unverified');
  }finally{globalThis.document=prior;dom.window.close();}
 });

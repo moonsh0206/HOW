@@ -1,0 +1,2 @@
+﻿import fs from 'node:fs/promises';
+const dir='docs/qa/official-patch-repair',deployments=JSON.parse(await fs.readFile(dir+'/deployments.json','utf8'));const d=deployments[0];const r=await fetch(d.statuses_url,{headers:{'User-Agent':'HOW-local-readonly-audit'}}),data=await r.json();await fs.writeFile(dir+'/deployment-status.json',JSON.stringify(data,null,2));console.log(JSON.stringify(data.map(x=>({state:x.state,created_at:x.created_at,environment_url:x.environment_url,log_url:x.log_url})),null,2));

@@ -6,6 +6,7 @@ import {extractOfficialPatches} from './lib/officialPatchParser.js';
 import {normalizeOfficialPatches} from '../src/models/officialPatchModel.js';
 import {pairAutomaticChange,PATCH_NORMALIZATION_VERSION} from './lib/patchChangeRules.js';
 import abilityNames from '../src/data/patchAbilityNames.json' with {type:'json'};
+import {pairSystemChange,SYSTEM_NORMALIZATION_VERSION} from './lib/systemPatchRules.js';
 export function reviewOfficialPatches(detected,english,review,existing={schemaVersion:1,patches:[]},{automatic=false}={}){
  normalizeOfficialPatches(existing);const added=[],updated=[],pending=[],skipped=[],patches=[...existing.patches];
  for(const p of detected.patches){
@@ -14,7 +15,9 @@ export function reviewOfficialPatches(detected,english,review,existing={schemaVe
   const r=review?.patches?.find(r=>r.patchId===p.patchId&&r.sourceHash===p.sourceHash&&r.sourceHashEn===en?.sourceHash);
   if(!en){pending.push({...p,reason:'영문 교차 검증 불가'});continue;}
   const manual=new Map();for(const c of r?.changes??[]){const evidence=p.candidates.find(e=>e.id===c.id),englishEvidence=en.candidates.find(e=>e.id===c.englishId);if(!evidence||!evidence.heroKey||c.before!==evidence.before||c.after!==evidence.after||c.gameMode!==evidence.gameMode||!englishEvidence||englishEvidence.heroKey!==evidence.heroKey||englishEvidence.gameMode!==evidence.gameMode||englishEvidence.before!==c.before||englishEvidence.after!==c.after)throw new Error('검토 내용과 한/영 공식 변경이 일치하지 않습니다.');manual.set(c.id,c);}
-  if(old?.normalizationVersion===PATCH_NORMALIZATION_VERSION&&old.coverage?.pending===0){skipped.push(p.patchId);continue;}
+  const systemCandidates=p.systemCandidates??[],englishSystems=en.systemCandidates??[];
+  for(const c of r?.systemChanges??[]){const evidence=systemCandidates.find(e=>e.id===c.id),peer=englishSystems.find(e=>e.id===c.englishEvidenceId);if(!evidence||!peer||c.category!==evidence.category||peer.category!==evidence.category||c.evidenceHash!==evidence.evidenceHash||c.englishEvidenceHash!==peer.evidenceHash)throw new Error('일반 패치 검토 내용과 공식 근거 불일치');}
+  if(old?.normalizationVersion===PATCH_NORMALIZATION_VERSION&&old.coverage?.pending===0&&(!systemCandidates.length||old.systemNormalizationVersion===SYSTEM_NORMALIZATION_VERSION&&old.systemCoverage?.pending===0)){skipped.push(p.patchId);continue;}
   const changes=[],waiting=[];
   for(const evidence of p.candidates){
    const c=manual.get(evidence.id),previous=(old?.changes??existing.patches.filter(x=>x.patchId===p.patchId).flatMap(x=>x.changes)).find(x=>x.id===evidence.id&&x.before===evidence.before&&x.after===evidence.after&&x.unit===evidence.unit&&en.candidates.some(e=>e.id===x.englishEvidenceId)),auto=automatic?pairAutomaticChange(evidence,en.candidates,abilityNames,p.candidates):null;
@@ -25,10 +28,24 @@ export function reviewOfficialPatches(detected,english,review,existing={schemaVe
    const slug=peer.abilityName.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'base-stats';
    changes.push({...facts,abilityKey:`${evidence.heroKey}:${slug}`,changeType:c?.changeType??auto.changeType,category:c?.category??facts.category,summaryKo:c?.summaryKo??facts.summaryKo,englishEvidenceId:peer.id,verificationMethod:c?'bilingual-manual-review':'bilingual-numeric-rule',verificationStatus:'verified'});
   }
-  if(waiting.length)pending.push({...p,candidates:waiting,reason:'식별·수치 또는 문맥 검토 필요'});
-  if(!changes.length&&!r){continue;}
+  const systemChanges=[],systemWaiting=[];
+  for(const evidence of systemCandidates){
+   const previous=(old?.systemChanges??existing.patches.filter(x=>x.patchId===p.patchId).flatMap(x=>x.systemChanges??[])).find(c=>c.id===evidence.id&&englishSystems.some(e=>e.id===c.englishEvidenceId));
+   if(previous){systemChanges.push(previous);continue;}
+   const manual=(r?.systemChanges??[]).find(c=>c.id===evidence.id),auto=automatic?pairSystemChange(evidence,englishSystems):null;
+   if(!manual&&!auto){systemWaiting.push(evidence);continue;}
+   const peer=manual?englishSystems.find(e=>e.id===manual.englishEvidenceId):auto.peer;
+   if(!peer||peer.category!==evidence.category||manual&&(!manual.summaryKo||manual.category!==evidence.category||manual.evidenceHash!==evidence.evidenceHash||manual.englishEvidenceHash!==peer.evidenceHash))throw new Error('일반 패치 한/영 검토 근거 불일치');
+   const {evidenceText,verificationStatus,...facts}=evidence;
+   systemChanges.push({...facts,...(manual?{summaryKo:manual.summaryKo}:auto.facts),englishEvidenceId:peer.id,englishEvidenceHash:peer.evidenceHash,verificationMethod:manual?'bilingual-manual-review':'bilingual-system-rule',verificationStatus:'verified'});
+  }
+  if(waiting.length||systemWaiting.length)pending.push({...p,candidates:waiting,systemCandidates:systemWaiting,reason:'식별·수치 또는 문맥 검토 필요'});
+  if(!changes.length&&!systemChanges.length){if(!waiting.length&&!systemWaiting.length)pending.push({...p,candidates:[],systemCandidates:[],reason:'해석 가능한 변경사항 없음 · 원문 구조 검토 필요'});continue;}
+  // Do not rewrite a verified historic hero patch merely to add pending prose.
+  if(old&&!systemChanges.length&&JSON.stringify(old.changes)===JSON.stringify(changes)&&old.normalizationVersion===PATCH_NORMALIZATION_VERSION&&JSON.stringify(old.coverage)===JSON.stringify({sourceCandidates:p.candidates.length,verified:changes.length,pending:waiting.length,excluded:p.excluded?.length??0})){skipped.push(p.patchId);continue;}
   const row={patchId:p.patchId,publishedDate:p.publishedDate,localizedTitleDate:p.localizedTitleDate,officialTitle:p.officialTitle,sourceUrl:p.sourceUrl,sourceUrlEn:en.sourceUrl,sourceHash:p.sourceHash,sourceHashEn:en.sourceHash,type:p.type,effectiveAt:null,statisticsWindowStatus:'unverified',verificationStatus:'verified',reviewStatus:waiting.length?'partial':'complete',reviewedAt:r?.reviewedAt??old?.reviewedAt??new Date().toISOString().slice(0,10),summaryKo:old?.summaryKo??r?.summaryKo??`공식 노트에서 영웅 ${new Set(changes.map(c=>c.heroKey)).size}명의 변경 ${changes.length}건을 확인했습니다. 모드별로 구분해 제공합니다.`,...((old?.highlightsKo??r?.highlightsKo)?{highlightsKo:old?.highlightsKo??r.highlightsKo}:{}),normalizationVersion:PATCH_NORMALIZATION_VERSION,coverage:{sourceCandidates:p.candidates.length,verified:changes.length,pending:waiting.length,excluded:p.excluded?.length??0},changes};
-  if(old){if(old.normalizationVersion===row.normalizationVersion&&JSON.stringify(old.changes)===JSON.stringify(changes)&&JSON.stringify(old.coverage)===JSON.stringify(row.coverage)){skipped.push(p.patchId);continue;}patches[patches.indexOf(old)]=row;updated.push(p.patchId);}else{patches.push(row);added.push(p.patchId);}
+  if(systemCandidates.length){row.systemChanges=systemChanges;row.systemNormalizationVersion=SYSTEM_NORMALIZATION_VERSION;row.systemCoverage={sourceCandidates:systemCandidates.length,verified:systemChanges.length,pending:systemWaiting.length};row.reviewStatus=waiting.length+systemWaiting.length?'partial':'complete';if(!changes.length)row.summaryKo=r?.summaryKo??systemChanges[0].summaryKo;}
+  if(old){if(old.normalizationVersion===row.normalizationVersion&&JSON.stringify(old.changes)===JSON.stringify(changes)&&JSON.stringify(old.systemChanges)===JSON.stringify(row.systemChanges)&&JSON.stringify(old.coverage)===JSON.stringify(row.coverage)&&JSON.stringify(old.systemCoverage)===JSON.stringify(row.systemCoverage)){skipped.push(p.patchId);continue;}patches[patches.indexOf(old)]=row;updated.push(p.patchId);}else{patches.push(row);added.push(p.patchId);}
  }
  const archive={schemaVersion:1,patches};normalizeOfficialPatches(archive);return {archive,added,updated,skipped,pending};
 }
@@ -55,7 +72,7 @@ async function collectInternal({apply=false,review=null,report=null,target=resol
  if(report){await io.mkdir(dirname(report),{recursive:true});await io.writeFile(report,JSON.stringify({checkedAt:new Date().toISOString(),detected:pages[0],english:pages[1],added:result.added,updated:result.updated,skipped:result.skipped,pending:result.pending,partial:result.archive.patches.filter(p=>p.coverage?.pending>0).map(p=>({patchId:p.patchId,verified:p.changes.length,pending:p.coverage.pending}))},null,2)+'\n');}
  const changed=result.added.length+result.updated.length;
  if(apply&&changed)await atomicWrite(target,result.archive,io);
- return {applied:!!(apply&&changed),detected:pages[0].patches.map(p=>p.patchId),added:result.added,updated:result.updated,skipped:result.skipped,pending:result.pending.map(p=>p.patchId),pendingChanges:result.pending.reduce((n,p)=>n+p.candidates.length,0),heroChanges:result.archive.patches.reduce((n,p)=>n+p.changes.length,0)};
+ return {applied:!!(apply&&changed),detected:pages[0].patches.map(p=>p.patchId),added:result.added,updated:result.updated,skipped:result.skipped,pending:result.pending.map(p=>p.patchId),pendingChanges:result.pending.reduce((n,p)=>n+p.candidates.length,0),pendingSystemChanges:result.pending.reduce((n,p)=>n+(p.systemCandidates?.length??0),0),pendingPatches:result.pending.length,heroChanges:result.archive.patches.reduce((n,p)=>n+p.changes.length,0),systemChanges:result.archive.patches.reduce((n,p)=>n+(p.systemChanges?.length??0),0)};
 }
 export async function collectOfficialPatchNotes(options={}){
  const target=options.target??resolve('public/data/patches/notes.json'),io=options.io??fs;

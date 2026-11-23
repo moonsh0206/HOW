@@ -1,0 +1,572 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 320,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          236,
+          283.640625,
+          320
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          99.75,
+          154.46875,
+          320
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          236,
+          283.625,
+          320
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          99.75,
+          154.453125,
+          320
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 320,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          236,
+          283.625,
+          320
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          99.75,
+          154.453125,
+          320
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          306,
+          353.640625,
+          390
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          117.25,
+          171.96875,
+          390
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          306,
+          353.625,
+          390
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          117.25,
+          171.953125,
+          390
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 390,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          306,
+          353.625,
+          390
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          117.25,
+          171.953125,
+          390
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    },
+    {
+      "width": 430,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          346,
+          393.640625,
+          430
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          127.25,
+          181.96875,
+          430
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 430,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          346,
+          393.625,
+          430
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          127.25,
+          181.953125,
+          430
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 430,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          346,
+          393.625,
+          430
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          127.25,
+          181.953125,
+          430
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    },
+    {
+      "width": 1366,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          746.890625,
+          794.53125,
+          1366
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          243.96875,
+          298.6875,
+          1366
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 1366,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          746.890625,
+          794.515625,
+          1366
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          243.96875,
+          298.671875,
+          1366
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 1366,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          746.890625,
+          794.515625,
+          1366
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          243.96875,
+          298.671875,
+          1366
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          790.5,
+          838.140625,
+          1440
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          255.21875,
+          309.9375,
+          1440
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          790.5,
+          838.125,
+          1440
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          255.21875,
+          309.921875,
+          1440
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 1440,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          790.5,
+          838.125,
+          1440
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          255.21875,
+          309.921875,
+          1440
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    },
+    {
+      "width": 1920,
+      "lang": "ko",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          1045.828125,
+          1093.46875,
+          1920
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          434.3125,
+          489.03125,
+          1920
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 1920,
+      "lang": "en",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          1045.828125,
+          1093.453125,
+          1920
+        ],
+        "metric": "Pick rate · Patch and observation history"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          434.3125,
+          489.015625,
+          1920
+        ],
+        "metric": "Ban rate · Map comparison"
+      }
+    },
+    {
+      "width": 1920,
+      "lang": "ja",
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          1045.828125,
+          1093.453125,
+          1920
+        ],
+        "metric": "ピック率・パッチと観測履歴"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          434.3125,
+          489.015625,
+          1920
+        ],
+        "metric": "BAN率・マップ比較"
+      }
+    }
+  ]
+}

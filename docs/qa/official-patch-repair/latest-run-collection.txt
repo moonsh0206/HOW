@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-21T08:01:54.191Z",
+  "status": "unchanged",
+  "changed": false,
+  "candidateDigest": "c8222d342e3d28ba14cdedc5afc2b1899dc232160006dc7d36c9755de47514b0",
+  "collection": {
+    "applied": false,
+    "detected": [
+      "patch-2026-11-16",
+      "patch-2026-11-05",
+      "patch-2026-11-03"
+    ],
+    "added": [],
+    "updated": [],
+    "skipped": [
+      "patch-2026-11-05",
+      "patch-2026-11-03"
+    ],
+    "pending": [],
+    "pendingChanges": 0,
+    "heroChanges": 65
+  },
+  "validation": {
+    "patches": 2,
+    "changes": 65,
+    "partial": []
+  }
+}

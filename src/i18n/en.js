@@ -5,6 +5,7 @@ import {en as templates} from './templates.js';
 import common from './common.js';
 import {en as extras} from './extras.js';
 export default {
+ 'patch.competitiveWidth':'Champion groups in 6v6 Open Queue: maximum rank width reduced from {before} to {after}.',
  ...dashboard,
  'map.chartTitle':'{metric} · Map comparison',
  'map.baselineMissing':'This metric is unavailable for the all-maps baseline.',

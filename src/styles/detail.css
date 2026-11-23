@@ -309,6 +309,13 @@
 .map-bar{transform-origin:center bottom}
 .history-trace{transform-box:view-box}
 .map-compare-chart,.history-graph{position:relative}
+.chart-value-tooltip{position:absolute;z-index:5;pointer-events:none;padding:4px 8px;border:1px solid var(--border-control);border-radius:5px;background:var(--surface-card,#121c29);color:var(--text);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.5}
+.chart-value-tooltip[hidden]{display:none}
+.history-guide{stroke:var(--muted);stroke-width:1;stroke-dasharray:2 4;opacity:.4;pointer-events:none;vector-effect:non-scaling-stroke}
+.history-date-axis{position:relative;display:block;height:17px;overflow:visible;white-space:nowrap}
+.history-date-axis span{position:absolute;transform:translateX(-50%);max-width:none!important;text-align:center!important;font-variant-numeric:tabular-nums}
+.history-point:focus-visible{outline:none}.history-point:focus-visible .history-dot,.history-point:hover .history-dot{stroke:var(--text);stroke-width:2}
+.map-column:focus-visible{outline:1px solid var(--orange);outline-offset:3px;border-radius:4px}
 .chart-exit-layer{position:absolute!important;inset:0;z-index:1;pointer-events:none;margin:0}
 .chart-loading-transition{position:relative}
 @media(prefers-reduced-motion:no-preference){

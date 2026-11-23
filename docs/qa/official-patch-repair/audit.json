@@ -1,0 +1,188 @@
+{
+  "checkedAt": "2026-11-21T15:57:26.212Z",
+  "localHead": "3fb4de2d5595a741141413f94d637363e363f06f",
+  "results": [
+    {
+      "name": "workflow",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/official-patch-notes.yml",
+      "status": 200,
+      "bytes": 537,
+      "workflow": "active"
+    },
+    {
+      "name": "runs",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/official-patch-notes.yml/runs?per_page=12",
+      "status": 200,
+      "bytes": 139362,
+      "runs": [
+        {
+          "id": 44882903597,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-21T08:01:24Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd"
+        },
+        {
+          "id": 44700003720,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-20T08:07:08Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd"
+        },
+        {
+          "id": 44487648645,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-19T08:26:41Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08"
+        },
+        {
+          "id": 44265327759,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-18T08:14:45Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea"
+        },
+        {
+          "id": 44050171889,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-17T08:50:28Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea"
+        },
+        {
+          "id": 43825542640,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-16T07:41:08Z",
+          "head_sha": "17ddb0cbe23b5466e4cde2aead547894a676de96"
+        },
+        {
+          "id": 43690685826,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-15T07:36:15Z",
+          "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+        },
+        {
+          "id": 43570902879,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-14T07:23:47Z",
+          "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+        },
+        {
+          "id": 43387102642,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-13T07:37:40Z",
+          "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+        },
+        {
+          "id": 43179249285,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-12T07:58:49Z",
+          "head_sha": "763127111ef9ed9e6650a1f87fc14f4bd6e6f677"
+        },
+        {
+          "id": 42979974148,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-11T07:30:24Z",
+          "head_sha": "ad88fe38a5ef81a87a53224c0f429fda3021cf53"
+        },
+        {
+          "id": 42779480006,
+          "event": "schedule",
+          "conclusion": "success",
+          "created_at": "2026-11-10T08:01:53Z",
+          "head_sha": "0a5f67e78ff6bb7eae54d680473382bf7afad017"
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/commits/main",
+      "status": 200,
+      "bytes": 296061,
+      "sha": "3fb4de2d5595a741141413f94d637363e363f06f"
+    },
+    {
+      "name": "comparison",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/compare/3fb4de2d5595a741141413f94d637363e363f06f...main",
+      "status": 200,
+      "bytes": 7132,
+      "comparison": "identical",
+      "ahead": 0,
+      "behind": 0
+    },
+    {
+      "name": "notes-commits",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/commits?path=public/data/patches/notes.json&per_page=4",
+      "status": 200,
+      "bytes": 3249,
+      "commits": [
+        {
+          "sha": "9beafab1fd7a6d06d266370ff08d9fb7b67abaa1",
+          "date": "2026-11-09T02:13:42Z",
+          "message": "패치별 영웅 데이터 적용 및 모바일 UI개선"
+        }
+      ]
+    },
+    {
+      "name": "published",
+      "url": "https://moonsh0206.github.io/HOW/data/patches/notes.json",
+      "status": 200,
+      "bytes": 64709,
+      "patches": [
+        {
+          "id": "patch-2026-11-05",
+          "date": "2026-11-05",
+          "changes": 3
+        },
+        {
+          "id": "patch-2026-11-03",
+          "date": "2026-11-03",
+          "changes": 62
+        }
+      ]
+    },
+    {
+      "name": "remote-notes",
+      "url": "https://raw.githubusercontent.com/moonsh0206/HOW/main/public/data/patches/notes.json",
+      "status": 200,
+      "bytes": 64709,
+      "patches": [
+        {
+          "id": "patch-2026-11-05",
+          "date": "2026-11-05",
+          "changes": 3
+        },
+        {
+          "id": "patch-2026-11-03",
+          "date": "2026-11-03",
+          "changes": 62
+        }
+      ]
+    },
+    {
+      "name": "workflow-source",
+      "url": "https://raw.githubusercontent.com/moonsh0206/HOW/main/.github/workflows/official-patch-notes.yml",
+      "status": 200,
+      "bytes": 5702
+    },
+    {
+      "name": "ko-kr",
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "bytes": 54585
+    },
+    {
+      "name": "en-us",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "bytes": 62801
+    }
+  ]
+}

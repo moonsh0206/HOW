@@ -1,0 +1,70 @@
+[
+  {
+    "url": "https://api.github.com/repos/moonsh0206/HOW/contents/.github/workflows/daily-ranks.yml",
+    "status": 200,
+    "data": {
+      "name": "daily-ranks.yml",
+      "path": ".github/workflows/daily-ranks.yml",
+      "sha": "cf45071f6860627eb4ca54bf4b78831afd532e14",
+      "size": 2403,
+      "url": "https://api.github.com/repos/moonsh0206/HOW/contents/.github/workflows/daily-ranks.yml?ref=main",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/daily-ranks.yml",
+      "git_url": "https://api.github.com/repos/moonsh0206/HOW/git/blobs/cf45071f6860627eb4ca54bf4b78831afd532e14",
+      "download_url": "https://raw.githubusercontent.com/moonsh0206/HOW/main/.github/workflows/daily-ranks.yml",
+      "type": "file",
+      "content": "IyBMb2NhbCBpbXBsZW1lbnRhdGlvbjsgcmVtYWlucyBkaXNhYmxlZCB1bnRp\nbCBIT1dfUkFOS1NfRU5BQkxFRD10cnVlLgpuYW1lOiBMaWdodHdlaWdodCBk\nYWlseSByb2xlIHJhbmtzCm9uOgogIHdvcmtmbG93X2Rpc3BhdGNoOgogIHNj\naGVkdWxlOgogICAgLSBjcm9uOiAnMCAxICogKiAqJwpwZXJtaXNzaW9uczoK\nICBjb250ZW50czogcmVhZApjb25jdXJyZW5jeToKICBncm91cDogcGFnZXMK\nICBjYW5jZWwtaW4tcHJvZ3Jlc3M6IGZhbHNlCmpvYnM6CiAgcHVibGlzaDoK\nICAgIGlmOiB2YXJzLkhPV19SQU5LU19FTkFCTEVEID09ICd0cnVlJyAmJiBn\naXRodWIucmVmID09ICdyZWZzL2hlYWRzL21haW4nCiAgICBydW5zLW9uOiB1\nYnVudHUtbGF0ZXN0CiAgICB0aW1lb3V0LW1pbnV0ZXM6IDIwCiAgICBwZXJt\naXNzaW9uczoKICAgICAgY29udGVudHM6IHJlYWQKICAgICAgcGFnZXM6IHdy\naXRlCiAgICAgIGlkLXRva2VuOiB3cml0ZQogICAgZW52aXJvbm1lbnQ6CiAg\nICAgIG5hbWU6IGdpdGh1Yi1wYWdlcwogICAgICB1cmw6ICR7eyBzdGVwcy5k\nZXBsb3ltZW50Lm91dHB1dHMucGFnZV91cmwgfX0KICAgIHN0ZXBzOgogICAg\nICAtIHVzZXM6IGFjdGlvbnMvY2hlY2tvdXRAM2QzYzQyZTVhYWM1YmE4MDU4\nMjVkYTc2NDEwYzE4MTI3M2JhOTBiMQogICAgICAtIHVzZXM6IGFjdGlvbnMv\nc2V0dXAtbm9kZUA4MjA3NjI3ODYwMjY3NDBjNzZmMzYwODViMGVmYzQ3YTMx\nZmU1MDIwCiAgICAgICAgd2l0aDoKICAgICAgICAgIG5vZGUtdmVyc2lvbjog\nJzI0JwogICAgICAgICAgY2FjaGU6IG5wbQogICAgICAtIHJ1bjogbnBtIGNp\nCiAgICAgIC0gbmFtZTogUmVzdG9yZSBkdXJhYmxlIGdyYXBoIG9ic2VydmF0\naW9ucyB3aGVuIGVuYWJsZWQKICAgICAgICBpZjogdmFycy5IT1dfR1JBUEhf\nQVJDSElWRV9FTkFCTEVEID09ICd0cnVlJwogICAgICAgIGVudjoKICAgICAg\nICAgIEdIX1RPS0VOOiAke3sgZ2l0aHViLnRva2VuIH19CiAgICAgICAgcnVu\nOiBub2RlIHNjcmlwdHMvZ3JhcGgtYXJjaGl2ZS5qcyByZXN0b3JlCiAgICAg\nIC0gbmFtZTogUmVzdG9yZSBzdWNjZXNzZnVsIHB1YmxpY2F0aW9uIGFuZCBj\nb21wdXRlIGluIG1lbW9yeQogICAgICAgIGVudjoKICAgICAgICAgIFJBTktT\nX1VSTDogJHt7IHZhcnMuSE9XX1JBTktTX1VSTCB9fQogICAgICAgIHJ1bjog\nbm9kZSBzY3JpcHRzL2NvbGxlY3QtZGFpbHktcmFua3MuanMgLS1hcHBseSAt\nLXJlc3RvcmUtdXJsICIkUkFOS1NfVVJMIgogICAgICAtIHJ1bjogbnBtIHRl\nc3QKICAgICAgLSB1c2VzOiBhY3Rpb25zL2NvbmZpZ3VyZS1wYWdlc0A0NWJm\nZTAxOTJjYTFmYWViMDA3YWRlOWRlYWU5MmIxNmI4MjU0YTBkCiAgICAgICAg\naWQ6IHBhZ2VzCiAgICAgIC0gcnVuOiBucG0gcnVuIGJ1aWxkCiAgICAgICAg\nZW52OgogICAgICAgICAgVklURV9CQVNFX1BBVEg6ICR7eyBzdGVwcy5wYWdl\ncy5vdXRwdXRzLmJhc2VfcGF0aCB9fS8KICAgICAgLSBydW46IG5wbSBydW4g\ndmVyaWZ5OnBhZ2VzCiAgICAgICAgZW52OgogICAgICAgICAgVklURV9CQVNF\nX1BBVEg6ICR7eyBzdGVwcy5wYWdlcy5vdXRwdXRzLmJhc2VfcGF0aCB9fS8K\nICAgICAgLSBuYW1lOiBSZWZ1c2UgcHVibGljYXRpb24gaWYgbWFpbiBjaGFu\nZ2VkIGR1cmluZyBjb2xsZWN0aW9uCiAgICAgICAgcnVuOiB8CiAgICAgICAg\nICBnaXQgZmV0Y2ggb3JpZ2luIG1haW4KICAgICAgICAgIHRlc3QgIiQoZ2l0\nIHJldi1wYXJzZSBIRUFEKSIgPSAiJChnaXQgcmV2LXBhcnNlIG9yaWdpbi9t\nYWluKSIKICAgICAgLSB1c2VzOiBhY3Rpb25zL3VwbG9hZC1wYWdlcy1hcnRp\nZmFjdEBmYzMyNGQzNTQ3MTA0Mjc2YjgyN2E2OGFmYzUyZmYyYTExY2M0OWM5\nCiAgICAgICAgd2l0aDoKICAgICAgICAgIHBhdGg6IGRpc3QKICAgICAgLSB1\nc2VzOiBhY3Rpb25zL2RlcGxveS1wYWdlc0AzNjhmODI1Mjg2NDVhNTRmYjc5\nM2Q0ZDA0ZTM0MjYyOWEzZjUxMzQ2CiAgICAgICAgaWQ6IGRlcGxveW1lbnQK\nICAgICAgLSBuYW1lOiBSZWNvcmQgY29uZmlybWVkIHB1YmxpY2F0aW9uIHRp\nbWUgb25seSBhZnRlciBzdWNjZXNzZnVsIGRlcGxveW1lbnQKICAgICAgICBl\nbnY6CiAgICAgICAgICBERVBMT1lFRF9VUkw6ICR7eyBzdGVwcy5kZXBsb3lt\nZW50Lm91dHB1dHMucGFnZV91cmwgfX0KICAgICAgICAgIFJBTktTX1VSTDog\nJHt7IHZhcnMuSE9XX1JBTktTX1VSTCB9fQogICAgICAgIHJ1bjogbm9kZSBz\nY3JpcHRzL3ZlcmlmeS1yYW5rLXB1YmxpY2F0aW9uLmpzCiAgICAgIC0gdXNl\nczogYWN0aW9ucy91cGxvYWQtYXJ0aWZhY3RAdjQKICAgICAgICB3aXRoOgog\nICAgICAgICAgbmFtZTogY29uZmlybWVkLXJhbmstcHVibGljYXRpb24KICAg\nICAgICAgIHBhdGg6IHJhbmstcHVibGljYXRpb24uanNvbgogICAgICAgICAg\ncmV0ZW50aW9uLWRheXM6IDcK\n",
+      "encoding": "base64",
+      "_links": {
+        "self": "https://api.github.com/repos/moonsh0206/HOW/contents/.github/workflows/daily-ranks.yml?ref=main",
+        "git": "https://api.github.com/repos/moonsh0206/HOW/git/blobs/cf45071f6860627eb4ca54bf4b78831afd532e14",
+        "html": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/daily-ranks.yml"
+      },
+      "decoded": "# Local implementation; remains disabled until HOW_RANKS_ENABLED=true.\nname: Lightweight daily role ranks\non:\n  workflow_dispatch:\n  schedule:\n    - cron: '0 1 * * *'\npermissions:\n  contents: read\nconcurrency:\n  group: pages\n  cancel-in-progress: false\njobs:\n  publish:\n    if: vars.HOW_RANKS_ENABLED == 'true' && github.ref == 'refs/heads/main'\n    runs-on: ubuntu-latest\n    timeout-minutes: 20\n    permissions:\n      contents: read\n      pages: write\n      id-token: write\n    environment:\n      name: github-pages\n      url: ${{ steps.deployment.outputs.page_url }}\n    steps:\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1\n      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020\n        with:\n          node-version: '24'\n          cache: npm\n      - run: npm ci\n      - name: Restore durable graph observations when enabled\n        if: vars.HOW_GRAPH_ARCHIVE_ENABLED == 'true'\n        env:\n          GH_TOKEN: ${{ github.token }}\n        run: node scripts/graph-archive.js restore\n      - name: Restore successful publication and compute in memory\n        env:\n          RANKS_URL: ${{ vars.HOW_RANKS_URL }}\n        run: node scripts/collect-daily-ranks.js --apply --restore-url \"$RANKS_URL\"\n      - run: npm test\n      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d\n        id: pages\n      - run: npm run build\n        env:\n          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/\n      - run: npm run verify:pages\n        env:\n          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/\n      - name: Refuse publication if main changed during collection\n        run: |\n          git fetch origin main\n          test \"$(git rev-parse HEAD)\" = \"$(git rev-parse origin/main)\"\n      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9\n        with:\n          path: dist\n      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346\n        id: deployment\n      - name: Record confirmed publication time only after successful deployment\n        env:\n          DEPLOYED_URL: ${{ steps.deployment.outputs.page_url }}\n          RANKS_URL: ${{ vars.HOW_RANKS_URL }}\n        run: node scripts/verify-rank-publication.js\n      - uses: actions/upload-artifact@v4\n        with:\n          name: confirmed-rank-publication\n          path: rank-publication.json\n          retention-days: 7\n"
+    }
+  },
+  {
+    "url": "https://api.github.com/repos/moonsh0206/HOW/actions/runs/44883599151/jobs",
+    "status": 200,
+    "data": {
+      "total_count": 1,
+      "jobs": [
+        {
+          "id": 136783999252,
+          "run_id": 44883599151,
+          "workflow_name": "Lightweight daily role ranks",
+          "head_branch": "main",
+          "run_url": "https://api.github.com/repos/moonsh0206/HOW/actions/runs/44883599151",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOVfsWTs8AAAAf2PYxFA",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "url": "https://api.github.com/repos/moonsh0206/HOW/actions/jobs/136783999252",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44883599151/job/136783999252",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-21T08:10:15Z",
+          "started_at": "2026-11-21T08:10:15Z",
+          "completed_at": "2026-11-21T08:10:14Z",
+          "name": "publish",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/moonsh0206/HOW/check-runs/136783999252",
+          "labels": [
+            "ubuntu-latest"
+          ],
+          "runner_id": null,
+          "runner_name": null,
+          "runner_group_id": null,
+          "runner_group_name": null
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://api.github.com/repos/moonsh0206/HOW/actions/variables",
+    "status": 401,
+    "data": {
+      "message": "Requires authentication",
+      "documentation_url": "https://docs.github.com/rest",
+      "status": "401"
+    }
+  }
+]

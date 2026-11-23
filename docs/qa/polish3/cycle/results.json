@@ -1,0 +1,60 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "after": {
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 145.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "ana",
+      "rows": 6
+    },
+    "previous": {
+      "font": "24px",
+      "titleHeight": 30,
+      "headingHeight": 146,
+      "center": 0,
+      "overflow": 0,
+      "egg": "ana",
+      "rows": 6
+    }
+  },
+  {
+    "width": 390,
+    "metricBefore": "pickRate",
+    "metricAfter": "winRate",
+    "height": 156,
+    "eggPreserved": true
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "after": {
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 44.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "sombra",
+      "rows": 6
+    },
+    "previous": {
+      "font": "28px",
+      "titleHeight": 35,
+      "headingHeight": 44,
+      "center": 0,
+      "overflow": 0,
+      "egg": "sombra",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "metricBefore": "pickRate",
+    "metricAfter": "winRate",
+    "height": 128,
+    "eggPreserved": true
+  }
+]

@@ -1,3 +1,4 @@
+import {selectCurrentPatchNote} from '../src/models/officialPatchModel.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -17,7 +18,8 @@ function setup(width=1440) {
   dom.window.matchMedia=()=>media;
   const model=createHeroModel(),cohort=evidence.cases.find(c=>c.filters.region==='asia'&&c.filters.division==='diamond');
   Object.assign(model.state,{heroes:evidence.heroes.records,status:'ready',statsFilters:cohort.filters,statsStatus:'ready',statistics:{filters:cohort.filters,records:normalizeStatistics(cohort.api.records),fetchedAt:cohort.api.fetchedAt,source:'OverFast API'}});
-  const view=createInsightView();view.render(model);
+  const archive=JSON.parse(fs.readFileSync(new URL('./fixtures/official-patch-november-complete.json',import.meta.url),'utf8'));
+  const view=createInsightView({patchModel:{current:()=>selectCurrentPatchNote(archive)}});view.render(model);
   return {model,view,listenerCount:()=>listeners.size,resize(width){media.matches=width<=767;listeners.forEach(f=>f({matches:media.matches}));},close(){view.destroy();dom.window.close();Object.assign(globalThis,prior);}};
 }
 test('responsive insight DOM: one shared section moves between filter/roster and original desktop sidebar',()=>{

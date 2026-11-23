@@ -29,8 +29,8 @@ test('all previous 52 candidates resolved; original four exact records survive; 
  for(const c of source52){const found=published.find(p=>p.id===c.id)??published.find(p=>p.evidenceHash===c.evidenceHash&&p.heroKey===c.heroKey&&p.gameMode===c.gameMode);assert(found,`Unresolved original candidate ${c.id}`);if(found.id!==c.id)corrected++;}assert.equal(corrected,2);
  assert.equal(manual.patches.reduce((n,p)=>n+p.changes.length,0),65);
 });
-test('complete manual review plus generic automatic rules: all 65 applied, pending 0, second run skips, original histories stay',()=>{
- const result=reviewOfficialPatches(ko,en,fixtureReview(),{schemaVersion:1,patches:[]},{automatic:true});assert.equal(result.archive.patches.reduce((n,p)=>n+p.changes.length,0),65);assert.equal(result.pending.length,0);assert.equal(reviewOfficialPatches(ko,en,fixtureReview(),result.archive,{automatic:true}).skipped.length,2);
+test('complete manual review plus generic automatic rules: all 65 hero facts applied, non-hero prose pending, second run skips, original histories stay',()=>{
+ const result=reviewOfficialPatches(ko,en,fixtureReview(),{schemaVersion:1,patches:[]},{automatic:true});assert.equal(result.archive.patches.reduce((n,p)=>n+p.changes.length,0),65);assert(result.pending.every(p=>p.candidates.length===0));assert(result.pending.some(p=>p.systemCandidates.length>0));assert.equal(reviewOfficialPatches(ko,en,fixtureReview(),result.archive,{automatic:true}).skipped.length,2);
  const automatic=reviewOfficialPatches(ko,en,null,{schemaVersion:1,patches:[]},{automatic:true});assert(automatic.archive.patches.flatMap(p=>p.changes).length>=30);assert(automatic.pending.length);assert(automatic.archive.patches.flatMap(p=>p.changes).every(c=>c.verificationMethod==='bilingual-numeric-rule'));
 });
 test('numeric rules handle trailing periods, reversed up/down, inverse cooldown, units and ambiguous matching without forced classification',()=>{
@@ -45,7 +45,7 @@ test('saved-HTML new-patch end-to-end: no code/manual review edits -> detect -> 
   const next=normalizeOfficialPatches(JSON.parse(await fs.readFile(target,'utf8')));assert.equal(next.patches.find(p=>p.patchId==='patch-2026-11-07').changes.length,2);assert.equal(latestHeroPatch(next,'ana').patch.patchId,'patch-2026-11-07');assert.equal(latestHeroPatch(next,'genji').patch.patchId,'patch-2026-11-03');assert.equal(selectCurrentPatchNote(next).sourceId,'patch-2026-11-07');
   for(const old of seed.patches)assert.deepEqual(next.patches.find(p=>p.patchId===old.patchId),old);
   const bytes=await fs.readFile(target,'utf8');assert.equal((await collectOfficialPatchNotes({target,fetcher,apply:true})).applied,false);assert.equal(await fs.readFile(target,'utf8'),bytes);
-  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;try{const card=renderHeroPatch(next,'ana');assert.match(card.textContent,/70 → 65/);assert.equal(card.querySelectorAll('[data-change-id]').length,2);assert.match(card.textContent,/복합 조정/);assert.match(renderPatchNote(selectCurrentPatchNote(next)).textContent,/2026.11.08/);}finally{globalThis.document=prior;dom.window.close();}
+  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;try{const card=renderHeroPatch(next,'ana');assert.match(card.textContent,/70 → 65/);assert.equal(card.querySelectorAll('[data-change-id]').length,2);assert.match(card.textContent,/복합 조정/);assert.match(renderPatchNote(selectCurrentPatchNote(next)).textContent,/2026.11.07/);}finally{globalThis.document=prior;dom.window.close();}
  }finally{await fs.rm(root,{recursive:true,force:true});}
 });
 test('54 hero cards: full records survive more disclosure, mode-only heroes labelled, prior-update note cannot replace D.Mon balance date',()=>{

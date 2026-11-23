@@ -14,17 +14,23 @@ export async function prepareOfficialPatchUpdate({target=resolve('public/data/pa
   const original=await fs.readFile(target),before=JSON.parse(original);await fs.writeFile(stage,original,{flag:'wx'});owned=true;
   const collection=await collector({target:stage,apply:true,review,fetcher,report:resolve(dirname(report),'official-patch-detection.json')});
   const candidate=await fs.readFile(stage),after=JSON.parse(candidate),validation=validatePatchUpdate(before,after);
-  const changed=!original.equals(candidate),result={checkedAt:new Date().toISOString(),status:changed?'candidate':collection.pendingChanges?'review-required':'unchanged',changed,candidateDigest:patchDigest(candidate),collection,validation};
+  const changed=!original.equals(candidate),result={checkedAt:new Date().toISOString(),status:changed?'candidate':collection.pendingChanges||collection.pendingSystemChanges||collection.pendingPatches?'review-required':'unchanged',changed,candidateDigest:patchDigest(candidate),collection,validation};
   // All validation happens before replacement. A concurrent local writer wins.
   if(changed){if(!(await fs.readFile(target)).equals(original))throw Error('수집 중 원본이 변경되어 게시 차단');await fs.rename(stage,target);owned=false;}
   await fs.writeFile(report,JSON.stringify(result,null,2)+'\n');
-  if(output)await fs.appendFile(output,`changed=${changed}\ncandidate_digest=${result.candidateDigest}\npending=${collection.pendingChanges}\n`);
+  if(output)await fs.appendFile(output,`changed=${changed}\ncandidate_digest=${result.candidateDigest}\npending=${collection.pendingChanges+(collection.pendingSystemChanges??0)}\n`);
   return result;
  }catch(error){
   await fs.writeFile(report,JSON.stringify({checkedAt:new Date().toISOString(),status:'failed',changed:false,error:error.message},null,2)+'\n');throw error;
  }finally{if(owned)await fs.unlink(stage);if(lock){await lock.close();await fs.unlink(target+'.update.lock');}}
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
- try{const review=JSON.parse(await fs.readFile(resolve('docs/research/official-patches/review-complete.json'),'utf8'));console.log(JSON.stringify(await prepareOfficialPatchUpdate({review,output:process.env.GITHUB_OUTPUT??null}),null,2));}
+ try{
+  const review=JSON.parse(await fs.readFile(resolve('docs/research/official-patches/review-complete.json'),'utf8'));
+  const result=await prepareOfficialPatchUpdate({review,output:process.env.GITHUB_OUTPUT??null});console.log(JSON.stringify(result,null,2));
+  const collection=result.collection,pending=collection.pendingChanges+(collection.pendingSystemChanges??0);
+  if(process.env.GITHUB_STEP_SUMMARY)await fs.appendFile(process.env.GITHUB_STEP_SUMMARY,`## Official patch notes\n\nStatus: **${result.status}**\n\nAdded: ${collection.added.join(', ')||'none'}\n\nUpdated: ${collection.updated.join(', ')||'none'}\n\nReview required: ${collection.pendingPatches??collection.pending.length} patches / ${pending} changes\n\nHero changes: ${collection.heroChanges}; system changes: ${collection.systemChanges??0}.\n\nSee the official-patch-review artifact for evidence. Publication requires a changed, validated candidate.\n`);
+  if(collection.pendingPatches||pending)console.log(`::warning title=Official patch review required::${collection.pendingPatches??collection.pending.length} patches / ${pending} changes require bilingual review; see official-patch-review artifact.`);
+ }
  catch(error){console.error(`공식 패치 갱신 차단: ${error.message}`);process.exitCode=1;}
 }

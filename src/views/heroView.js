@@ -1,3 +1,4 @@
+import {rankChangeMarker} from './rankChangeView.js';
 import {errorText} from '../i18n/i18n.js';
 import {roleIcon,roleBadge,roleName} from './roleIcon.js';
 import {metaTierEmblem} from './metaTierEmblem.js';
@@ -59,10 +60,7 @@ function ordinalNode(tag, ordinal, label, change) {
   number.setAttribute('aria-label',ordinal==null?t("미분류 · 순번 미제공"):`${label} ${ordinal}`);
   if(ordinal===1)number.classList.add('hero-ordinal-first');
   if(change){
-    const delta=change.delta;
-    const marker=element('small',delta>0?`▲${delta}`:delta<0?`▼${-delta}`:'=',`rank-change ${delta>0?'rank-up':delta<0?'rank-down':'rank-equal'}`);
-    marker.title=change.basis==='daily-observation'?t('rank.dailyPositions',{previousRank:change.previousRank,currentRank:change.currentRank,previous:new Date(change.previousAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'}),current:new Date(change.currentAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})}):t('rank.daily',{previous:change.previousAt,current:change.currentAt});
-    marker.setAttribute('aria-label',`${marker.title}: ${delta>0?'+':''}${delta}`);
+    const marker=rankChangeMarker(change);
     number.setAttribute('aria-label',`${number.getAttribute('aria-label')}. ${marker.getAttribute('aria-label')}`);
     number.append(marker);
   }

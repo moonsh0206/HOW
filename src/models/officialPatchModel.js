@@ -6,11 +6,16 @@ export function normalizeOfficialPatches(raw){
  const revisions=new Set();
  for(const p of raw.patches){
   if(p.highlightsKo!==undefined&&(!Array.isArray(p.highlightsKo)||p.highlightsKo.length>3))throw new Error('패치 요약 목록 오류');
-  const summaries=[p.summaryKo,...(p.highlightsKo??[]),...(p.changes??[]).map(c=>c.summaryKo)];
+  if(p.systemChanges!==undefined&&!Array.isArray(p.systemChanges))throw new Error('일반 패치 변경 배열 오류');
+  const summaries=[p.summaryKo,...(p.highlightsKo??[]),...(p.changes??[]).map(c=>c.summaryKo),...(p.systemChanges??[]).map(c=>c.summaryKo)];
   if(summaries.some(s=>typeof s!=='string'||!/[가-힣]/.test(s)||/\?{2,}|\uFFFD/.test(s)))throw new Error('한국어 패치 요약 인코딩·검토 오류');
   if(!/^patch-\d{4}-\d{2}-\d{2}$/.test(p.patchId)||p.patchId!==`patch-${p.publishedDate}`||!date(p.publishedDate)||!date(p.localizedTitleDate)||!officialPatchUrl(p.sourceUrl,p.patchId)||!officialPatchUrl(p.sourceUrlEn,p.patchId)||!['balance','hotfix','bugfix','adjustment'].includes(p.type)||p.verificationStatus!=='verified'||p.effectiveAt!==null||p.statisticsWindowStatus!=='unverified'||typeof p.sourceHash!=='string'||!/^[a-f0-9]{64}$/.test(p.sourceHash)||typeof p.summaryKo!=='string'||!p.summaryKo||!Array.isArray(p.changes)||!date(p.reviewedAt)||typeof p.officialTitle!=='string')throw new Error('공식 패치 식별자·날짜·검증 상태 오류');
   if(!/^[a-f0-9]{64}$/.test(p.sourceHashEn??''))throw new Error('영문 출처 검증 해시 누락');
   const key=p.patchId+':'+p.sourceHash+':'+p.sourceHashEn;if(revisions.has(key))throw new Error('중복 공식 패치');revisions.add(key);
+  if(!p.changes.length&&!(p.systemChanges?.length))throw new Error('검증된 변경사항 없는 패치');
+  const systemIds=new Set();for(const c of p.systemChanges??[]){
+   if(c.patchId!==p.patchId||c.publishedDate!==p.publishedDate||c.sourceUrl!==p.sourceUrl||!['competitive','system','bugfix','other'].includes(c.category)||c.verificationStatus!=='verified'||!['bilingual-system-rule','bilingual-manual-review'].includes(c.verificationMethod)||!c.summaryKo||c.summaryKo.length>200||!['id','evidenceHash','englishEvidenceId','englishEvidenceHash'].every(k=>/^[a-f0-9]{64}$/.test(c[k]??''))||systemIds.has(c.id)||[c.before,c.after].some(v=>v!==undefined&&v!==null&&!Number.isFinite(v)))throw new Error('일반 패치 변경 검증 실패');systemIds.add(c.id);
+  }
   const changes=new Set();for(const c of p.changes){
    if(c.patchId!==p.patchId||c.publishedDate!==p.publishedDate||c.sourceUrl!==p.sourceUrl||!['live-5v5','live-6v6','stadium'].includes(c.gameMode)||!PATCH_CHANGE_TYPES.includes(c.changeType)||c.verificationStatus!=='verified'||!/^[-a-z0-9]+$/.test(c.heroKey)||typeof c.abilityName!=='string'||!c.abilityName||typeof c.summaryKo!=='string'||!c.summaryKo||c.summaryKo.length>200||typeof c.id!=='string'||changes.has(c.id)||![c.before,c.after].every(v=>v===null||Number.isFinite(v))||!(c.unit===null||typeof c.unit==='string'))throw new Error('영웅 패치 변경 검증 실패');changes.add(c.id);
   }
@@ -20,7 +25,7 @@ export function normalizeOfficialPatches(raw){
 const newest=patches=>patches.filter(p=>p.verificationStatus==='verified').reverse().sort((a,b)=>b.publishedDate.localeCompare(a.publishedDate)||b.reviewedAt.localeCompare(a.reviewedAt));
 export function selectCurrentPatchNote(archive){
  const p=newest(archive?.patches??[])[0];if(!p)return null;
- return {officialTitle:p.officialTitle,dateKo:p.localizedTitleDate,label:{hotfix:'라이브 핫픽스',balance:'라이브 밸런스 패치',bugfix:'버그 수정',adjustment:'공식 패치 조정'}[p.type],type:p.type,summary:p.summaryKo,changes:p.highlightsKo??p.changes.filter(c=>c.gameMode==='live-5v5').slice(0,3).map(c=>c.summaryKo),sourceUrl:p.sourceUrl,sourceId:p.patchId,reviewedAt:p.reviewedAt,statisticsWindowStatus:p.statisticsWindowStatus};
+ return {officialTitle:p.officialTitle,dateKo:p.publishedDate,localizedTitleDate:p.localizedTitleDate,label:{hotfix:'라이브 핫픽스',balance:'라이브 밸런스 패치',bugfix:'버그 수정',adjustment:'공식 패치 조정'}[p.type],type:p.type,summary:p.summaryKo,systemChanges:p.systemChanges??[],heroChangeCount:p.changes.length,changes:p.highlightsKo??[...p.changes.filter(c=>c.gameMode==='live-5v5'),...(p.systemChanges??[])].slice(0,3).map(c=>c.summaryKo),sourceUrl:p.sourceUrl,sourceId:p.patchId,reviewedAt:p.reviewedAt,statisticsWindowStatus:p.statisticsWindowStatus};
 }
 export function latestHeroPatch(archive,key,gameMode='live-5v5'){
  for(const patch of newest(archive?.patches??[])){const changes=patch.changes.filter(c=>c.heroKey===key&&c.gameMode===gameMode&&c.verificationStatus==='verified'&&c.timing!=='previous-update');if(changes.length)return {patch,changes,gameMode,changeType:aggregateChangeType(changes)};}

@@ -1,0 +1,104 @@
+[
+  {
+    "width": 390,
+    "lang": "ko",
+    "after": {
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 315.703125,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 145.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "ana",
+      "rows": 6
+    }
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "after": {
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 332.890625,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 163.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "hanzo",
+      "rows": 6
+    }
+  },
+  {
+    "width": 390,
+    "lang": "ja",
+    "after": {
+      "graphHeight": 141.90625,
+      "graphWidth": 329,
+      "panelHeight": 332.890625,
+      "titleOffset": -6,
+      "font": "25.74px",
+      "titleHeight": 29.84375,
+      "headingHeight": 145.84375,
+      "center": 0,
+      "overflow": 0,
+      "egg": "sombra",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ko",
+    "after": {
+      "graphHeight": 250.484375,
+      "graphWidth": 580.671875,
+      "panelHeight": 394.484375,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 44.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "sombra",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "en",
+    "after": {
+      "graphHeight": 250.484375,
+      "graphWidth": 580.671875,
+      "panelHeight": 398.671875,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 60.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "winston",
+      "rows": 6
+    }
+  },
+  {
+    "width": 1440,
+    "lang": "ja",
+    "after": {
+      "graphHeight": 250.484375,
+      "graphWidth": 580.671875,
+      "panelHeight": 398.671875,
+      "titleOffset": -10,
+      "font": "38px",
+      "titleHeight": 44.078125,
+      "headingHeight": 44.078125,
+      "center": 0,
+      "overflow": 0,
+      "egg": "ana",
+      "rows": 6
+    }
+  }
+]

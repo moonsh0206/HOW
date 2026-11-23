@@ -1,0 +1,196 @@
+{
+  "total_count": 2,
+  "jobs": [
+    {
+      "id": 133158408720,
+      "run_id": 43825542640,
+      "workflow_name": "Daily official patch notes and Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/moonsh0206/HOW/actions/runs/43825542640",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVfsWTs8AAAAfANwSEA",
+      "head_sha": "17ddb0cbe23b5466e4cde2aead547894a676de96",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/jobs/133158408720",
+      "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43825542640/job/133158408720",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T07:41:08Z",
+      "started_at": "2026-11-16T07:41:11Z",
+      "completed_at": "2026-11-16T07:41:35Z",
+      "name": "prepare",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-16T07:41:12Z",
+          "completed_at": "2026-11-16T07:41:14Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-16T07:41:14Z",
+          "completed_at": "2026-11-16T07:41:24Z"
+        },
+        {
+          "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-16T07:41:24Z",
+          "completed_at": "2026-11-16T07:41:26Z"
+        },
+        {
+          "name": "Run npm ci",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-16T07:41:26Z",
+          "completed_at": "2026-11-16T07:41:28Z"
+        },
+        {
+          "name": "Detect and validate JSON atomically",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-16T07:41:28Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Test changed candidate",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Resolve Pages base",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 7,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Restore published lightweight ranks when enabled",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Restore durable graph observations when enabled",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 9,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Build changed candidate",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 10,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Verify Pages paths",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Save exactly the validated JSON",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 12,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Upload tested site from this same workflow",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:31Z"
+        },
+        {
+          "name": "Retain review and failure reports without committing them",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-11-16T07:41:31Z",
+          "completed_at": "2026-11-16T07:41:32Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-11-16T07:41:32Z",
+          "completed_at": "2026-11-16T07:41:32Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-11-16T07:41:32Z",
+          "completed_at": "2026-11-16T07:41:32Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29,
+          "started_at": "2026-11-16T07:41:32Z",
+          "completed_at": "2026-11-16T07:41:32Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/moonsh0206/HOW/check-runs/133158408720",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000129,
+      "runner_name": "GitHub Actions 1000000129",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 133158569060,
+      "run_id": 43825542640,
+      "workflow_name": "Daily official patch notes and Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/moonsh0206/HOW/actions/runs/43825542640",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVfsWTs8AAAAfAN6EZA",
+      "head_sha": "17ddb0cbe23b5466e4cde2aead547894a676de96",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/jobs/133158569060",
+      "html_url": "https://github.com/moonsh0206/HOW/actions/runs/43825542640/job/133158569060",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-16T07:41:35Z",
+      "started_at": "2026-11-16T07:41:35Z",
+      "completed_at": "2026-11-16T07:41:35Z",
+      "name": "publish",
+      "steps": [],
+      "check_run_url": "https://api.github.com/repos/moonsh0206/HOW/check-runs/133158569060",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": null,
+      "runner_name": null,
+      "runner_group_id": null,
+      "runner_group_name": null
+    }
+  ]
+}

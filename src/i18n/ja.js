@@ -2,6 +2,7 @@
 import {ja as extras} from './extras.js';
 import {ja as dashboard} from './dashboard.js';
 export default {
+ 'patch.competitiveWidth':'6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が{before}から{after}に縮小。',
  ...dashboard,
   'map.chartTitle':'{metric}・マップ比較',
   'map.baselineMissing':'全マップ基準のこの指標は提供されていません。',

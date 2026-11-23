@@ -1,0 +1,5226 @@
+{
+  "fixtureOnly": true,
+  "results": [
+    {
+      "width": 390,
+      "lang": "ko",
+      "reduced": false,
+      "animationStart": {
+        "state": "pending",
+        "animations": []
+      },
+      "traces": [
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 16.573999948054528,
+              "state": "running",
+              "opacity": "0.436262",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.60187)",
+              "clip": "inset(-10% 86.729% -10% 0px)"
+            },
+            {
+              "time": 33.373999948054454,
+              "state": "running",
+              "opacity": "0.517318",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22776)",
+              "clip": "inset(-10% 74.2588% -10% 0px)"
+            },
+            {
+              "time": 50.07399994805461,
+              "state": "running",
+              "opacity": "0.59059",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.88958)",
+              "clip": "inset(-10% 62.9861% -10% 0px)"
+            },
+            {
+              "time": 66.67399994805456,
+              "state": "running",
+              "opacity": "0.655598",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.58955)",
+              "clip": "inset(-10% 52.985% -10% 0px)"
+            },
+            {
+              "time": 83.3739999480545,
+              "state": "running",
+              "opacity": "0.712907",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32505)",
+              "clip": "inset(-10% 44.1682% -10% 0px)"
+            },
+            {
+              "time": 99.97399994805446,
+              "state": "running",
+              "opacity": "0.762016",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.09839)",
+              "clip": "inset(-10% 36.613% -10% 0px)"
+            },
+            {
+              "time": 116.7739999480546,
+              "state": "running",
+              "opacity": "0.804262",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.903407)",
+              "clip": "inset(-10% 30.1136% -10% 0px)"
+            },
+            {
+              "time": 133.37399994805455,
+              "state": "running",
+              "opacity": "0.839366",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.741386)",
+              "clip": "inset(-10% 24.7129% -10% 0px)"
+            },
+            {
+              "time": 150.07399994805448,
+              "state": "running",
+              "opacity": "0.868849",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.605315)",
+              "clip": "inset(-10% 20.1772% -10% 0px)"
+            },
+            {
+              "time": 166.67399994805464,
+              "state": "running",
+              "opacity": "0.893176",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.493036)",
+              "clip": "inset(-10% 16.4345% -10% 0px)"
+            },
+            {
+              "time": 183.37399994805457,
+              "state": "running",
+              "opacity": "0.913412",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.399638)",
+              "clip": "inset(-10% 13.3213% -10% 0px)"
+            },
+            {
+              "time": 200.07399994805454,
+              "state": "running",
+              "opacity": "0.930087",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.322677)",
+              "clip": "inset(-10% 10.7559% -10% 0px)"
+            },
+            {
+              "time": 216.87399994805446,
+              "state": "running",
+              "opacity": "0.943869",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.259064)",
+              "clip": "inset(-10% 8.63547% -10% 0px)"
+            },
+            {
+              "time": 233.47399994805463,
+              "state": "running",
+              "opacity": "0.955042",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.2075)",
+              "clip": "inset(-10% 6.91666% -10% 0px)"
+            },
+            {
+              "time": 250.07399994805456,
+              "state": "running",
+              "opacity": "0.964198",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.16524)",
+              "clip": "inset(-10% 5.508% -10% 0px)"
+            },
+            {
+              "time": 266.7739999480545,
+              "state": "running",
+              "opacity": "0.971723",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.130508)",
+              "clip": "inset(-10% 4.35028% -10% 0px)"
+            },
+            {
+              "time": 283.4739999480544,
+              "state": "running",
+              "opacity": "0.977847",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.102245)",
+              "clip": "inset(-10% 3.40818% -10% 0px)"
+            },
+            {
+              "time": 300.1739999480546,
+              "state": "running",
+              "opacity": "0.982809",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0793408)",
+              "clip": "inset(-10% 2.64469% -10% 0px)"
+            },
+            {
+              "time": 316.77399994805455,
+              "state": "running",
+              "opacity": "0.986789",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0609738)",
+              "clip": "inset(-10% 2.03246% -10% 0px)"
+            },
+            {
+              "time": 333.3739999480545,
+              "state": "running",
+              "opacity": "0.989981",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0462419)",
+              "clip": "inset(-10% 1.5414% -10% 0px)"
+            },
+            {
+              "time": 350.17399994805464,
+              "state": "running",
+              "opacity": "0.992548",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0343949)",
+              "clip": "inset(-10% 1.1465% -10% 0px)"
+            },
+            {
+              "time": 366.7739999480546,
+              "state": "running",
+              "opacity": "0.994543",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0251875)",
+              "clip": "inset(-10% 0.839584% -10% 0px)"
+            },
+            {
+              "time": 383.47399994805454,
+              "state": "running",
+              "opacity": "0.996103",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0179868)",
+              "clip": "inset(-10% 0.59956% -10% 0px)"
+            },
+            {
+              "time": 400.1739999480545,
+              "state": "running",
+              "opacity": "0.997296",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0124808)",
+              "clip": "inset(-10% 0.416028% -10% 0px)"
+            },
+            {
+              "time": 416.9739999480546,
+              "state": "running",
+              "opacity": "0.998195",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00833295)",
+              "clip": "inset(-10% 0.277765% -10% 0px)"
+            },
+            {
+              "time": 433.4739999480546,
+              "state": "running",
+              "opacity": "0.99884",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00535472)",
+              "clip": "inset(-10% 0.178491% -10% 0px)"
+            },
+            {
+              "time": 450.17399994805453,
+              "state": "running",
+              "opacity": "0.999302",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0032212)",
+              "clip": "inset(-10% 0.107373% -10% 0px)"
+            },
+            {
+              "time": 466.87399994805446,
+              "state": "running",
+              "opacity": "0.999614",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00178183)",
+              "clip": "inset(-10% 0.0593945% -10% 0px)"
+            },
+            {
+              "time": 483.4739999480546,
+              "state": "running",
+              "opacity": "0.99981",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000876246)",
+              "clip": "inset(-10% 0.0292082% -10% 0px)"
+            },
+            {
+              "time": 500.1739999480546,
+              "state": "running",
+              "opacity": "0.999923",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000353507)",
+              "clip": "inset(-10% 0.0117836% -10% 0px)"
+            },
+            {
+              "time": 516.8739999480545,
+              "state": "running",
+              "opacity": "0.999978",
+              "transform": "matrix(1, 0, 0, 1, 0, 9.98573e-05)",
+              "clip": "inset(-10% 0.00332858% -10% 0px)"
+            },
+            {
+              "time": 533.5739999480546,
+              "state": "running",
+              "opacity": "0.999997",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.17153e-05)",
+              "clip": "inset(-10% 0.000390511% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.573999948054528,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.373999948054454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.07399994805461,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.67399994805456,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.3739999480545,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.97399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.7739999480546,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.37399994805455,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.07399994805448,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.67399994805464,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.37399994805457,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.07399994805454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.87399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.47399994805463,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.07399994805456,
+              "state": "running",
+              "opacity": "0.00112094",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.7739999480545,
+              "state": "running",
+              "opacity": "0.238666",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.4739999480544,
+              "state": "running",
+              "opacity": "0.439527",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.1739999480546,
+              "state": "running",
+              "opacity": "0.598977",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.77399994805455,
+              "state": "running",
+              "opacity": "0.718307",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.3739999480545,
+              "state": "running",
+              "opacity": "0.804991",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.17399994805464,
+              "state": "running",
+              "opacity": "0.867257",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7739999480546,
+              "state": "running",
+              "opacity": "0.910411",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.47399994805454,
+              "state": "running",
+              "opacity": "0.940667",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1739999480545,
+              "state": "running",
+              "opacity": "0.961562",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.9739999480546,
+              "state": "running",
+              "opacity": "0.9759",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4739999480546,
+              "state": "running",
+              "opacity": "0.98536",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.17399994805453,
+              "state": "running",
+              "opacity": "0.991639",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.87399994805446,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.4739999480546,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1739999480546,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.8739999480545,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5739999480546,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.573999948054528,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.373999948054454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.07399994805461,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.67399994805456,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.3739999480545,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.97399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.7739999480546,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.37399994805455,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.07399994805448,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.67399994805464,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.37399994805457,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.07399994805454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.87399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.47399994805463,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.07399994805456,
+              "state": "running",
+              "opacity": "0.00112094",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.7739999480545,
+              "state": "running",
+              "opacity": "0.238666",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.4739999480544,
+              "state": "running",
+              "opacity": "0.439527",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.1739999480546,
+              "state": "running",
+              "opacity": "0.598977",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.77399994805455,
+              "state": "running",
+              "opacity": "0.718307",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.3739999480545,
+              "state": "running",
+              "opacity": "0.804991",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.17399994805464,
+              "state": "running",
+              "opacity": "0.867257",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7739999480546,
+              "state": "running",
+              "opacity": "0.910411",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.47399994805454,
+              "state": "running",
+              "opacity": "0.940667",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1739999480545,
+              "state": "running",
+              "opacity": "0.961562",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.9739999480546,
+              "state": "running",
+              "opacity": "0.9759",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4739999480546,
+              "state": "running",
+              "opacity": "0.98536",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.17399994805453,
+              "state": "running",
+              "opacity": "0.991639",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.87399994805446,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.4739999480546,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1739999480546,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.8739999480545,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5739999480546,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.573999948054528,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.373999948054454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.07399994805461,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.67399994805456,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.3739999480545,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.97399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.7739999480546,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.37399994805455,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.07399994805448,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.67399994805464,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.37399994805457,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.07399994805454,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.87399994805446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.47399994805463,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.07399994805456,
+              "state": "running",
+              "opacity": "0.00112094",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.7739999480545,
+              "state": "running",
+              "opacity": "0.238666",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.4739999480544,
+              "state": "running",
+              "opacity": "0.439527",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.1739999480546,
+              "state": "running",
+              "opacity": "0.598977",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.77399994805455,
+              "state": "running",
+              "opacity": "0.718307",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.3739999480545,
+              "state": "running",
+              "opacity": "0.804991",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.17399994805464,
+              "state": "running",
+              "opacity": "0.867257",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7739999480546,
+              "state": "running",
+              "opacity": "0.910411",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.47399994805454,
+              "state": "running",
+              "opacity": "0.940667",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1739999480545,
+              "state": "running",
+              "opacity": "0.961562",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.9739999480546,
+              "state": "running",
+              "opacity": "0.9759",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4739999480546,
+              "state": "running",
+              "opacity": "0.98536",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.17399994805453,
+              "state": "running",
+              "opacity": "0.991639",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.87399994805446,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.4739999480546,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1739999480546,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.8739999480545,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5739999480546,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.35",
+              "transform": "matrix(1, 0, 0, 1, 0, 3)",
+              "clip": "inset(-10% 100% -10% 0px)"
+            },
+            {
+              "time": 16.664999946765626,
+              "state": "running",
+              "opacity": "0.436719",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.59976)",
+              "clip": "inset(-10% 86.6586% -10% 0px)"
+            },
+            {
+              "time": 33.364999946765565,
+              "state": "running",
+              "opacity": "0.517276",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22796)",
+              "clip": "inset(-10% 74.2652% -10% 0px)"
+            },
+            {
+              "time": 50.0649999467655,
+              "state": "running",
+              "opacity": "0.590553",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.88976)",
+              "clip": "inset(-10% 62.9918% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.664999946765626,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.364999946765565,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.0649999467655,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.664999946765626,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.364999946765565,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.0649999467655,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.664999946765626,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.364999946765565,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.0649999467655,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.35",
+              "transform": "matrix(1, 0, 0, 1, 0, 3)",
+              "clip": "inset(-10% 100% -10% 0px)"
+            },
+            {
+              "time": 16.637999997287878,
+              "state": "running",
+              "opacity": "0.436583",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.60038)",
+              "clip": "inset(-10% 86.6795% -10% 0px)"
+            },
+            {
+              "time": 33.33799999728804,
+              "state": "running",
+              "opacity": "0.517152",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22853)",
+              "clip": "inset(-10% 74.2844% -10% 0px)"
+            },
+            {
+              "time": 50.037999997288196,
+              "state": "running",
+              "opacity": "0.590441",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.89027)",
+              "clip": "inset(-10% 63.0091% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.637999997287878,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.33799999728804,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.037999997288196,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.637999997287878,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.33799999728804,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.037999997288196,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.637999997287878,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.33799999728804,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.037999997288196,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-graph chart-exit-layer",
+          "duration": 120,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-bar",
+          "duration": 450,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 16.623999944143097,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.161415, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 33.52399994414279,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.310171, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 50.02399994414297,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.438179, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 66.62399994414292,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.548689, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 83.42399994414285,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.642146, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-bar",
+          "duration": 450,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 16.623999944143097,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 33.52399994414279,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 50.02399994414297,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.000242411, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 66.62399994414292,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.161415, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 83.42399994414285,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.309341, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-value",
+          "duration": 220,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.25",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.623999944143097,
+              "state": "running",
+              "opacity": "0.485605",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.52399994414279,
+              "state": "running",
+              "opacity": "0.670341",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.02399994414297,
+              "state": "running",
+              "opacity": "0.795261",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.62399994414292,
+              "state": "running",
+              "opacity": "0.876566",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.42399994414285,
+              "state": "running",
+              "opacity": "0.927757",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-value",
+          "duration": 220,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.25",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.623999944143097,
+              "state": "running",
+              "opacity": "0.485605",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.52399994414279,
+              "state": "running",
+              "opacity": "0.670341",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.02399994414297,
+              "state": "running",
+              "opacity": "0.795261",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.62399994414292,
+              "state": "running",
+              "opacity": "0.876566",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.42399994414285,
+              "state": "running",
+              "opacity": "0.927757",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-compare-chart chart-exit-layer",
+          "duration": 120,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-compare-chart chart-exit-layer",
+          "duration": 120,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.35",
+              "transform": "matrix(1, 0, 0, 1, 0, 3)",
+              "clip": "inset(-10% 100% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.35",
+              "transform": "matrix(1, 0, 0, 1, 0, 3)",
+              "clip": "inset(-10% 100% -10% 0px)"
+            },
+            {
+              "time": 16.570999964978572,
+              "state": "running",
+              "opacity": "0.436247",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.60194)",
+              "clip": "inset(-10% 86.7313% -10% 0px)"
+            },
+            {
+              "time": 33.27099996497873,
+              "state": "running",
+              "opacity": "0.516842",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22996)",
+              "clip": "inset(-10% 74.3319% -10% 0px)"
+            },
+            {
+              "time": 49.970999964978446,
+              "state": "running",
+              "opacity": "0.590162",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.89156)",
+              "clip": "inset(-10% 63.052% -10% 0px)"
+            },
+            {
+              "time": 66.5709999649784,
+              "state": "running",
+              "opacity": "0.655219",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.5913)",
+              "clip": "inset(-10% 53.0432% -10% 0px)"
+            },
+            {
+              "time": 83.27099996497856,
+              "state": "running",
+              "opacity": "0.712578",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32656)",
+              "clip": "inset(-10% 44.2188% -10% 0px)"
+            },
+            {
+              "time": 99.8709999649785,
+              "state": "running",
+              "opacity": "0.761734",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.09969)",
+              "clip": "inset(-10% 36.6563% -10% 0px)"
+            },
+            {
+              "time": 116.67099996497842,
+              "state": "running",
+              "opacity": "0.804024",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.904503)",
+              "clip": "inset(-10% 30.1501% -10% 0px)"
+            },
+            {
+              "time": 133.47099996497835,
+              "state": "running",
+              "opacity": "0.839554",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.740522)",
+              "clip": "inset(-10% 24.6841% -10% 0px)"
+            },
+            {
+              "time": 149.97099996497855,
+              "state": "running",
+              "opacity": "0.868683",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.606079)",
+              "clip": "inset(-10% 20.2026% -10% 0px)"
+            },
+            {
+              "time": 166.6709999649787,
+              "state": "running",
+              "opacity": "0.893172",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.493054)",
+              "clip": "inset(-10% 16.4351% -10% 0px)"
+            },
+            {
+              "time": 183.3709999649784,
+              "state": "running",
+              "opacity": "0.913409",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.399653)",
+              "clip": "inset(-10% 13.3218% -10% 0px)"
+            },
+            {
+              "time": 199.97099996497835,
+              "state": "running",
+              "opacity": "0.929993",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.323107)",
+              "clip": "inset(-10% 10.7702% -10% 0px)"
+            },
+            {
+              "time": 216.77099996497873,
+              "state": "running",
+              "opacity": "0.943793",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.259417)",
+              "clip": "inset(-10% 8.64723% -10% 0px)"
+            },
+            {
+              "time": 233.57099996497865,
+              "state": "running",
+              "opacity": "0.955101",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.207227)",
+              "clip": "inset(-10% 6.90758% -10% 0px)"
+            },
+            {
+              "time": 249.97099996497863,
+              "state": "running",
+              "opacity": "0.964147",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.165477)",
+              "clip": "inset(-10% 5.51589% -10% 0px)"
+            },
+            {
+              "time": 266.67099996497836,
+              "state": "running",
+              "opacity": "0.971681",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.130702)",
+              "clip": "inset(-10% 4.35672% -10% 0px)"
+            },
+            {
+              "time": 283.3709999649785,
+              "state": "running",
+              "opacity": "0.977813",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.102402)",
+              "clip": "inset(-10% 3.41341% -10% 0px)"
+            },
+            {
+              "time": 299.97099996497843,
+              "state": "running",
+              "opacity": "0.982755",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0795909)",
+              "clip": "inset(-10% 2.65303% -10% 0px)"
+            },
+            {
+              "time": 316.7709999649784,
+              "state": "running",
+              "opacity": "0.986788",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0609768)",
+              "clip": "inset(-10% 2.03256% -10% 0px)"
+            },
+            {
+              "time": 333.47099996497855,
+              "state": "running",
+              "opacity": "0.989998",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0461653)",
+              "clip": "inset(-10% 1.53884% -10% 0px)"
+            },
+            {
+              "time": 350.07099996497845,
+              "state": "running",
+              "opacity": "0.992534",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0344593)",
+              "clip": "inset(-10% 1.14864% -10% 0px)"
+            },
+            {
+              "time": 367.0709999649784,
+              "state": "running",
+              "opacity": "0.994574",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0250426)",
+              "clip": "inset(-10% 0.834753% -10% 0px)"
+            },
+            {
+              "time": 383.4709999649784,
+              "state": "running",
+              "opacity": "0.996103",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0179879)",
+              "clip": "inset(-10% 0.599597% -10% 0px)"
+            },
+            {
+              "time": 400.07099996497874,
+              "state": "running",
+              "opacity": "0.997289",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0125103)",
+              "clip": "inset(-10% 0.417009% -10% 0px)"
+            },
+            {
+              "time": 417.2709999649786,
+              "state": "running",
+              "opacity": "0.998208",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00827046)",
+              "clip": "inset(-10% 0.275682% -10% 0px)"
+            },
+            {
+              "time": 433.4709999649786,
+              "state": "running",
+              "opacity": "0.99884",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00535517)",
+              "clip": "inset(-10% 0.178506% -10% 0px)"
+            },
+            {
+              "time": 450.07099996497857,
+              "state": "running",
+              "opacity": "0.9993",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00323205)",
+              "clip": "inset(-10% 0.107735% -10% 0px)"
+            },
+            {
+              "time": 466.7709999649787,
+              "state": "running",
+              "opacity": "0.999612",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00178893)",
+              "clip": "inset(-10% 0.0596311% -10% 0px)"
+            },
+            {
+              "time": 483.47099996497843,
+              "state": "running",
+              "opacity": "0.99981",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000876371)",
+              "clip": "inset(-10% 0.0292124% -10% 0px)"
+            },
+            {
+              "time": 500.1709999649786,
+              "state": "running",
+              "opacity": "0.999923",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000353573)",
+              "clip": "inset(-10% 0.0117858% -10% 0px)"
+            },
+            {
+              "time": 516.6709999649784,
+              "state": "running",
+              "opacity": "0.999978",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000101753)",
+              "clip": "inset(-10% 0.00339175% -10% 0px)"
+            },
+            {
+              "time": 533.4709999649787,
+              "state": "running",
+              "opacity": "0.999997",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.19399e-05)",
+              "clip": "inset(-10% 0.000397997% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.570999964978572,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.27099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.970999964978446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.5709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.27099996497856,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.8709999649785,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.67099996497842,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.47099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.97099996497855,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.6709999649787,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.3709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 199.97099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.77099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.57099996497865,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 249.97099996497863,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.67099996497836,
+              "state": "running",
+              "opacity": "0.237305",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.3709999649785,
+              "state": "running",
+              "opacity": "0.438414",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 299.97099996497843,
+              "state": "running",
+              "opacity": "0.597286",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.7709999649784,
+              "state": "running",
+              "opacity": "0.718289",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.47099996497855,
+              "state": "running",
+              "opacity": "0.805417",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.07099996497845,
+              "state": "running",
+              "opacity": "0.866939",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 367.0709999649784,
+              "state": "running",
+              "opacity": "0.911051",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.4709999649784,
+              "state": "running",
+              "opacity": "0.940662",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.07099996497874,
+              "state": "running",
+              "opacity": "0.961456",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 417.2709999649786,
+              "state": "running",
+              "opacity": "0.976106",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4709999649786,
+              "state": "running",
+              "opacity": "0.985358",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.07099996497857,
+              "state": "running",
+              "opacity": "0.991608",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.7709999649787,
+              "state": "running",
+              "opacity": "0.995571",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.47099996497843,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1709999649786,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.6709999649784,
+              "state": "running",
+              "opacity": "0.999777",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.4709999649787,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.570999964978572,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.27099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.970999964978446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.5709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.27099996497856,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.8709999649785,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.67099996497842,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.47099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.97099996497855,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.6709999649787,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.3709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 199.97099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.77099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.57099996497865,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 249.97099996497863,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.67099996497836,
+              "state": "running",
+              "opacity": "0.237305",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.3709999649785,
+              "state": "running",
+              "opacity": "0.438414",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 299.97099996497843,
+              "state": "running",
+              "opacity": "0.597286",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.7709999649784,
+              "state": "running",
+              "opacity": "0.718289",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.47099996497855,
+              "state": "running",
+              "opacity": "0.805417",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.07099996497845,
+              "state": "running",
+              "opacity": "0.866939",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 367.0709999649784,
+              "state": "running",
+              "opacity": "0.911051",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.4709999649784,
+              "state": "running",
+              "opacity": "0.940662",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.07099996497874,
+              "state": "running",
+              "opacity": "0.961456",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 417.2709999649786,
+              "state": "running",
+              "opacity": "0.976106",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4709999649786,
+              "state": "running",
+              "opacity": "0.985358",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.07099996497857,
+              "state": "running",
+              "opacity": "0.991608",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.7709999649787,
+              "state": "running",
+              "opacity": "0.995571",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.47099996497843,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1709999649786,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.6709999649784,
+              "state": "running",
+              "opacity": "0.999777",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.4709999649787,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.570999964978572,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.27099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.970999964978446,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.5709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.27099996497856,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 99.8709999649785,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.67099996497842,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.47099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.97099996497855,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.6709999649787,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.3709999649784,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 199.97099996497835,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.77099996497873,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.57099996497865,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 249.97099996497863,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.67099996497836,
+              "state": "running",
+              "opacity": "0.237305",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.3709999649785,
+              "state": "running",
+              "opacity": "0.438414",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 299.97099996497843,
+              "state": "running",
+              "opacity": "0.597286",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.7709999649784,
+              "state": "running",
+              "opacity": "0.718289",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.47099996497855,
+              "state": "running",
+              "opacity": "0.805417",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.07099996497845,
+              "state": "running",
+              "opacity": "0.866939",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 367.0709999649784,
+              "state": "running",
+              "opacity": "0.911051",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.4709999649784,
+              "state": "running",
+              "opacity": "0.940662",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.07099996497874,
+              "state": "running",
+              "opacity": "0.961456",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 417.2709999649786,
+              "state": "running",
+              "opacity": "0.976106",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4709999649786,
+              "state": "running",
+              "opacity": "0.985358",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.07099996497857,
+              "state": "running",
+              "opacity": "0.991608",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.7709999649787,
+              "state": "running",
+              "opacity": "0.995571",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.47099996497843,
+              "state": "running",
+              "opacity": "0.997923",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.1709999649786,
+              "state": "running",
+              "opacity": "0.999195",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.6709999649784,
+              "state": "running",
+              "opacity": "0.999777",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.4709999649787,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        }
+      ],
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          306,
+          353.640625,
+          390
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          117.25,
+          171.96875,
+          390
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 390,
+      "lang": "ko",
+      "reduced": true,
+      "animationStart": {
+        "state": "complete",
+        "animations": []
+      },
+      "traces": [],
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          306,
+          353.640625,
+          390
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          117.25,
+          171.96875,
+          390
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "reduced": false,
+      "animationStart": {
+        "state": "running",
+        "animations": [
+          {
+            "time": 16.984000021684874,
+            "opacity": "0.438321",
+            "transform": "matrix(1, 0, 0, 1, 0, 2.59237)"
+          },
+          {
+            "time": 16.984000021684874,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "time": 16.984000021684874,
+            "opacity": "0",
+            "transform": "none"
+          },
+          {
+            "time": 16.984000021684874,
+            "opacity": "0",
+            "transform": "none"
+          }
+        ]
+      },
+      "traces": [
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 16.984000021684874,
+              "state": "running",
+              "opacity": "0.438321",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.59237)",
+              "clip": "inset(-10% 86.4122% -10% 0px)"
+            },
+            {
+              "time": 33.384000021684955,
+              "state": "running",
+              "opacity": "0.517364",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22755)",
+              "clip": "inset(-10% 74.2517% -10% 0px)"
+            },
+            {
+              "time": 50.08400002168489,
+              "state": "running",
+              "opacity": "0.590632",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.88939)",
+              "clip": "inset(-10% 62.9797% -10% 0px)"
+            },
+            {
+              "time": 66.78400002168495,
+              "state": "running",
+              "opacity": "0.656002",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.58768)",
+              "clip": "inset(-10% 52.9228% -10% 0px)"
+            },
+            {
+              "time": 83.38400002168488,
+              "state": "running",
+              "opacity": "0.712939",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.3249)",
+              "clip": "inset(-10% 44.1633% -10% 0px)"
+            },
+            {
+              "time": 100.08400002168494,
+              "state": "running",
+              "opacity": "0.762316",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.097)",
+              "clip": "inset(-10% 36.5668% -10% 0px)"
+            },
+            {
+              "time": 116.68400002168488,
+              "state": "running",
+              "opacity": "0.804054",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.904365)",
+              "clip": "inset(-10% 30.1455% -10% 0px)"
+            },
+            {
+              "time": 133.38400002168493,
+              "state": "running",
+              "opacity": "0.839386",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.741297)",
+              "clip": "inset(-10% 24.7099% -10% 0px)"
+            },
+            {
+              "time": 149.9840000216849,
+              "state": "running",
+              "opacity": "0.868704",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.605983)",
+              "clip": "inset(-10% 20.1994% -10% 0px)"
+            },
+            {
+              "time": 166.68400002168494,
+              "state": "running",
+              "opacity": "0.893189",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.492974)",
+              "clip": "inset(-10% 16.4325% -10% 0px)"
+            },
+            {
+              "time": 183.48400002168498,
+              "state": "running",
+              "opacity": "0.913533",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.39908)",
+              "clip": "inset(-10% 13.3027% -10% 0px)"
+            },
+            {
+              "time": 200.08400002168491,
+              "state": "running",
+              "opacity": "0.930096",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.322636)",
+              "clip": "inset(-10% 10.7545% -10% 0px)"
+            },
+            {
+              "time": 216.78400002168496,
+              "state": "running",
+              "opacity": "0.943803",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.259372)",
+              "clip": "inset(-10% 8.64575% -10% 0px)"
+            },
+            {
+              "time": 233.4840000216849,
+              "state": "running",
+              "opacity": "0.955048",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.207472)",
+              "clip": "inset(-10% 6.91572% -10% 0px)"
+            },
+            {
+              "time": 250.08400002168497,
+              "state": "running",
+              "opacity": "0.964203",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.165217)",
+              "clip": "inset(-10% 5.50723% -10% 0px)"
+            },
+            {
+              "time": 266.6840000216849,
+              "state": "running",
+              "opacity": "0.971687",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.130677)",
+              "clip": "inset(-10% 4.35591% -10% 0px)"
+            },
+            {
+              "time": 283.48400002168495,
+              "state": "running",
+              "opacity": "0.97785",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.10223)",
+              "clip": "inset(-10% 3.40767% -10% 0px)"
+            },
+            {
+              "time": 300.0840000216849,
+              "state": "running",
+              "opacity": "0.982785",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0794516)",
+              "clip": "inset(-10% 2.64839% -10% 0px)"
+            },
+            {
+              "time": 316.78400002168496,
+              "state": "running",
+              "opacity": "0.986791",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0609639)",
+              "clip": "inset(-10% 2.03213% -10% 0px)"
+            },
+            {
+              "time": 333.4840000216849,
+              "state": "running",
+              "opacity": "0.99",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.046155)",
+              "clip": "inset(-10% 1.5385% -10% 0px)"
+            },
+            {
+              "time": 350.0840000216849,
+              "state": "running",
+              "opacity": "0.992536",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0344512)",
+              "clip": "inset(-10% 1.14837% -10% 0px)"
+            },
+            {
+              "time": 366.78400002168485,
+              "state": "running",
+              "opacity": "0.994544",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0251826)",
+              "clip": "inset(-10% 0.839421% -10% 0px)"
+            },
+            {
+              "time": 383.48400002168495,
+              "state": "running",
+              "opacity": "0.996104",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.017983)",
+              "clip": "inset(-10% 0.599434% -10% 0px)"
+            },
+            {
+              "time": 400.084000021685,
+              "state": "running",
+              "opacity": "0.99729",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0125066)",
+              "clip": "inset(-10% 0.416885% -10% 0px)"
+            },
+            {
+              "time": 416.7840000216849,
+              "state": "running",
+              "opacity": "0.998186",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0083731)",
+              "clip": "inset(-10% 0.279103% -10% 0px)"
+            },
+            {
+              "time": 433.48400002168484,
+              "state": "running",
+              "opacity": "0.99884",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00535319)",
+              "clip": "inset(-10% 0.17844% -10% 0px)"
+            },
+            {
+              "time": 450.184000021685,
+              "state": "running",
+              "opacity": "0.999302",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00322015)",
+              "clip": "inset(-10% 0.107338% -10% 0px)"
+            },
+            {
+              "time": 466.8840000216849,
+              "state": "running",
+              "opacity": "0.999614",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00178115)",
+              "clip": "inset(-10% 0.0593715% -10% 0px)"
+            },
+            {
+              "time": 483.6840000216849,
+              "state": "running",
+              "opacity": "0.999812",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000867526)",
+              "clip": "inset(-10% 0.0289175% -10% 0px)"
+            },
+            {
+              "time": 500.28400002168485,
+              "state": "running",
+              "opacity": "0.999924",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000351078)",
+              "clip": "inset(-10% 0.0117026% -10% 0px)"
+            },
+            {
+              "time": 516.884000021685,
+              "state": "running",
+              "opacity": "0.999978",
+              "transform": "matrix(1, 0, 0, 1, 0, 9.97646e-05)",
+              "clip": "inset(-10% 0.00332549% -10% 0px)"
+            },
+            {
+              "time": 533.5840000216849,
+              "state": "running",
+              "opacity": "0.999997",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.16937e-05)",
+              "clip": "inset(-10% 0.000389789% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.984000021684874,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.384000021684955,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.08400002168489,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.78400002168495,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.38400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.08400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.68400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.38400002168493,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.9840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.68400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.48400002168498,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.08400002168491,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.78400002168496,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.4840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.08400002168497,
+              "state": "running",
+              "opacity": "0.00127238",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.6840000216849,
+              "state": "running",
+              "opacity": "0.237477",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.48400002168495,
+              "state": "running",
+              "opacity": "0.439635",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.0840000216849,
+              "state": "running",
+              "opacity": "0.598228",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.78400002168496,
+              "state": "running",
+              "opacity": "0.718369",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.4840000216849,
+              "state": "running",
+              "opacity": "0.805474",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.0840000216849,
+              "state": "running",
+              "opacity": "0.866979",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.78400002168485,
+              "state": "running",
+              "opacity": "0.910432",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.48400002168495,
+              "state": "running",
+              "opacity": "0.940682",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.084000021685,
+              "state": "running",
+              "opacity": "0.961469",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.7840000216849,
+              "state": "running",
+              "opacity": "0.975767",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.48400002168484,
+              "state": "running",
+              "opacity": "0.985364",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.184000021685,
+              "state": "running",
+              "opacity": "0.991642",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.8840000216849,
+              "state": "running",
+              "opacity": "0.995591",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.6840000216849,
+              "state": "running",
+              "opacity": "0.997945",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.28400002168485,
+              "state": "running",
+              "opacity": "0.999201",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.884000021685,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5840000216849,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.984000021684874,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.384000021684955,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.08400002168489,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.78400002168495,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.38400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.08400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.68400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.38400002168493,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.9840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.68400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.48400002168498,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.08400002168491,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.78400002168496,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.4840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.08400002168497,
+              "state": "running",
+              "opacity": "0.00127238",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.6840000216849,
+              "state": "running",
+              "opacity": "0.237477",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.48400002168495,
+              "state": "running",
+              "opacity": "0.439635",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.0840000216849,
+              "state": "running",
+              "opacity": "0.598228",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.78400002168496,
+              "state": "running",
+              "opacity": "0.718369",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.4840000216849,
+              "state": "running",
+              "opacity": "0.805474",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.0840000216849,
+              "state": "running",
+              "opacity": "0.866979",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.78400002168485,
+              "state": "running",
+              "opacity": "0.910432",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.48400002168495,
+              "state": "running",
+              "opacity": "0.940682",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.084000021685,
+              "state": "running",
+              "opacity": "0.961469",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.7840000216849,
+              "state": "running",
+              "opacity": "0.975767",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.48400002168484,
+              "state": "running",
+              "opacity": "0.985364",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.184000021685,
+              "state": "running",
+              "opacity": "0.991642",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.8840000216849,
+              "state": "running",
+              "opacity": "0.995591",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.6840000216849,
+              "state": "running",
+              "opacity": "0.997945",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.28400002168485,
+              "state": "running",
+              "opacity": "0.999201",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.884000021685,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5840000216849,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.984000021684874,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.384000021684955,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.08400002168489,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.78400002168495,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.38400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.08400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.68400002168488,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.38400002168493,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 149.9840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.68400002168494,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.48400002168498,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.08400002168491,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.78400002168496,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.4840000216849,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.08400002168497,
+              "state": "running",
+              "opacity": "0.00127238",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.6840000216849,
+              "state": "running",
+              "opacity": "0.237477",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.48400002168495,
+              "state": "running",
+              "opacity": "0.439635",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.0840000216849,
+              "state": "running",
+              "opacity": "0.598228",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.78400002168496,
+              "state": "running",
+              "opacity": "0.718369",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.4840000216849,
+              "state": "running",
+              "opacity": "0.805474",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.0840000216849,
+              "state": "running",
+              "opacity": "0.866979",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.78400002168485,
+              "state": "running",
+              "opacity": "0.910432",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.48400002168495,
+              "state": "running",
+              "opacity": "0.940682",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.084000021685,
+              "state": "running",
+              "opacity": "0.961469",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.7840000216849,
+              "state": "running",
+              "opacity": "0.975767",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.48400002168484,
+              "state": "running",
+              "opacity": "0.985364",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.184000021685,
+              "state": "running",
+              "opacity": "0.991642",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.8840000216849,
+              "state": "running",
+              "opacity": "0.995591",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.6840000216849,
+              "state": "running",
+              "opacity": "0.997945",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.28400002168485,
+              "state": "running",
+              "opacity": "0.999201",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.884000021685,
+              "state": "running",
+              "opacity": "0.999781",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.5840000216849,
+              "state": "running",
+              "opacity": "0.999975",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 16.667999978736027,
+              "state": "running",
+              "opacity": "0.436734",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.59969)",
+              "clip": "inset(-10% 86.6563% -10% 0px)"
+            },
+            {
+              "time": 33.26799997873597,
+              "state": "running",
+              "opacity": "0.516828",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.23002)",
+              "clip": "inset(-10% 74.3341% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.667999978736027,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.26799997873597,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.667999978736027,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.26799997873597,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.667999978736027,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.26799997873597,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 16.58100001635021,
+              "state": "running",
+              "opacity": "0.436297",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.60171)",
+              "clip": "inset(-10% 86.7236% -10% 0px)"
+            },
+            {
+              "time": 33.48100001635035,
+              "state": "running",
+              "opacity": "0.517811",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22549)",
+              "clip": "inset(-10% 74.1829% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.58100001635021,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.48100001635035,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.58100001635021,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.48100001635035,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 16.58100001635021,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.48100001635035,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-graph chart-exit-layer",
+          "duration": 120,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-bar",
+          "duration": 450,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 16.68800000669424,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.16201, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 33.2880000066944,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.308212, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 50.188000006694324,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.439361, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 66.88800000669426,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.550299, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 83.38800000669444,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.641964, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-bar",
+          "duration": 450,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 16.68800000669424,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 33.2880000066944,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 50.188000006694324,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.00189822, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 66.88800000669426,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.163865, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": 83.38800000669444,
+              "state": "running",
+              "opacity": "1",
+              "transform": "matrix(1, 0, 0, 0.309042, 0, 0)",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-value",
+          "duration": 220,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.25",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.68800000669424,
+              "state": "running",
+              "opacity": "0.486416",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.2880000066944,
+              "state": "running",
+              "opacity": "0.668171",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.188000006694324,
+              "state": "running",
+              "opacity": "0.796258",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.88800000669426,
+              "state": "running",
+              "opacity": "0.877577",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.38800000669444,
+              "state": "running",
+              "opacity": "0.927672",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-value",
+          "duration": 220,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.25",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.68800000669424,
+              "state": "running",
+              "opacity": "0.486416",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.2880000066944,
+              "state": "running",
+              "opacity": "0.668171",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 50.188000006694324,
+              "state": "running",
+              "opacity": "0.796258",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.88800000669426,
+              "state": "running",
+              "opacity": "0.877577",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.38800000669444,
+              "state": "running",
+              "opacity": "0.927672",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "map-compare-chart chart-exit-layer",
+          "duration": 120,
+          "samples": [
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "",
+              "transform": "",
+              "clip": ""
+            }
+          ]
+        },
+        {
+          "className": "history-trace",
+          "duration": 550,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0.35",
+              "transform": "matrix(1, 0, 0, 1, 0, 3)",
+              "clip": "inset(-10% 100% -10% 0px)"
+            },
+            {
+              "time": 16.669000021833913,
+              "state": "running",
+              "opacity": "0.436739",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.59967)",
+              "clip": "inset(-10% 86.6555% -10% 0px)"
+            },
+            {
+              "time": 33.36900002183407,
+              "state": "running",
+              "opacity": "0.517295",
+              "transform": "matrix(1, 0, 0, 1, 0, 2.22787)",
+              "clip": "inset(-10% 74.2624% -10% 0px)"
+            },
+            {
+              "time": 49.96900002183402,
+              "state": "running",
+              "opacity": "0.590154",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.8916)",
+              "clip": "inset(-10% 63.0532% -10% 0px)"
+            },
+            {
+              "time": 66.66900002183374,
+              "state": "running",
+              "opacity": "0.655579",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.58963)",
+              "clip": "inset(-10% 52.9878% -10% 0px)"
+            },
+            {
+              "time": 83.4690000218341,
+              "state": "running",
+              "opacity": "0.71321",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.32365)",
+              "clip": "inset(-10% 44.1216% -10% 0px)"
+            },
+            {
+              "time": 100.06900002183406,
+              "state": "running",
+              "opacity": "0.762275",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.09719)",
+              "clip": "inset(-10% 36.5731% -10% 0px)"
+            },
+            {
+              "time": 116.76900002183376,
+              "state": "running",
+              "opacity": "0.80425",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.90346)",
+              "clip": "inset(-10% 30.1153% -10% 0px)"
+            },
+            {
+              "time": 133.36900002183373,
+              "state": "running",
+              "opacity": "0.839357",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.741431)",
+              "clip": "inset(-10% 24.7144% -10% 0px)"
+            },
+            {
+              "time": 150.0690000218339,
+              "state": "running",
+              "opacity": "0.86884",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.605352)",
+              "clip": "inset(-10% 20.1784% -10% 0px)"
+            },
+            {
+              "time": 166.76900002183405,
+              "state": "running",
+              "opacity": "0.893302",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.492452)",
+              "clip": "inset(-10% 16.4151% -10% 0px)"
+            },
+            {
+              "time": 183.46900002183375,
+              "state": "running",
+              "opacity": "0.913516",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.399156)",
+              "clip": "inset(-10% 13.3052% -10% 0px)"
+            },
+            {
+              "time": 200.06900002183414,
+              "state": "running",
+              "opacity": "0.930082",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.322698)",
+              "clip": "inset(-10% 10.7566% -10% 0px)"
+            },
+            {
+              "time": 216.76900002183385,
+              "state": "running",
+              "opacity": "0.943792",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.259424)",
+              "clip": "inset(-10% 8.64746% -10% 0px)"
+            },
+            {
+              "time": 233.3690000218338,
+              "state": "running",
+              "opacity": "0.954978",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.207795)",
+              "clip": "inset(-10% 6.92649% -10% 0px)"
+            },
+            {
+              "time": 250.16900002183374,
+              "state": "running",
+              "opacity": "0.964245",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.165022)",
+              "clip": "inset(-10% 5.50072% -10% 0px)"
+            },
+            {
+              "time": 266.76900002183413,
+              "state": "running",
+              "opacity": "0.971721",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.130518)",
+              "clip": "inset(-10% 4.35059% -10% 0px)"
+            },
+            {
+              "time": 283.46900002183384,
+              "state": "running",
+              "opacity": "0.977845",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.102253)",
+              "clip": "inset(-10% 3.40844% -10% 0px)"
+            },
+            {
+              "time": 300.169000021834,
+              "state": "running",
+              "opacity": "0.982808",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.079347)",
+              "clip": "inset(-10% 2.6449% -10% 0px)"
+            },
+            {
+              "time": 316.8690000218337,
+              "state": "running",
+              "opacity": "0.986809",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0608798)",
+              "clip": "inset(-10% 2.02933% -10% 0px)"
+            },
+            {
+              "time": 333.36900002183387,
+              "state": "running",
+              "opacity": "0.98998",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0462459)",
+              "clip": "inset(-10% 1.54153% -10% 0px)"
+            },
+            {
+              "time": 350.06900002183403,
+              "state": "running",
+              "opacity": "0.992534",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0344606)",
+              "clip": "inset(-10% 1.14869% -10% 0px)"
+            },
+            {
+              "time": 366.7690000218338,
+              "state": "running",
+              "opacity": "0.994542",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.02519)",
+              "clip": "inset(-10% 0.839665% -10% 0px)"
+            },
+            {
+              "time": 383.46900002183395,
+              "state": "running",
+              "opacity": "0.996102",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0179887)",
+              "clip": "inset(-10% 0.599622% -10% 0px)"
+            },
+            {
+              "time": 400.1690000218341,
+              "state": "running",
+              "opacity": "0.997295",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.0124823)",
+              "clip": "inset(-10% 0.416076% -10% 0px)"
+            },
+            {
+              "time": 416.769000021834,
+              "state": "running",
+              "opacity": "0.998185",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00837628)",
+              "clip": "inset(-10% 0.279209% -10% 0px)"
+            },
+            {
+              "time": 433.4690000218337,
+              "state": "running",
+              "opacity": "0.99884",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00535548)",
+              "clip": "inset(-10% 0.178516% -10% 0px)"
+            },
+            {
+              "time": 450.1690000218339,
+              "state": "running",
+              "opacity": "0.999302",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00322173)",
+              "clip": "inset(-10% 0.107391% -10% 0px)"
+            },
+            {
+              "time": 466.86900002183404,
+              "state": "running",
+              "opacity": "0.999614",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.00178218)",
+              "clip": "inset(-10% 0.0594059% -10% 0px)"
+            },
+            {
+              "time": 483.5690000218338,
+              "state": "running",
+              "opacity": "0.999811",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000872294)",
+              "clip": "inset(-10% 0.0290765% -10% 0px)"
+            },
+            {
+              "time": 500.26900002183396,
+              "state": "running",
+              "opacity": "0.999924",
+              "transform": "matrix(1, 0, 0, 1, 0, 0.000351408)",
+              "clip": "inset(-10% 0.0117136% -10% 0px)"
+            },
+            {
+              "time": 516.9690000218341,
+              "state": "running",
+              "opacity": "0.999979",
+              "transform": "matrix(1, 0, 0, 1, 0, 9.89787e-05)",
+              "clip": "inset(-10% 0.00329929% -10% 0px)"
+            },
+            {
+              "time": 533.6690000218338,
+              "state": "running",
+              "opacity": "0.999997",
+              "transform": "matrix(1, 0, 0, 1, 0, 1.15107e-05)",
+              "clip": "inset(-10% 0.000383692% -10% 0px)"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.669000021833913,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.36900002183407,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.96900002183402,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.66900002183374,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.4690000218341,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.06900002183406,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.76900002183376,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.36900002183373,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.0690000218339,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.76900002183405,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.46900002183375,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.06900002183414,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.76900002183385,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.3690000218338,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.16900002183374,
+              "state": "running",
+              "opacity": "0.00255921",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.76900002183413,
+              "state": "running",
+              "opacity": "0.2386",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.46900002183384,
+              "state": "running",
+              "opacity": "0.439473",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.169000021834,
+              "state": "running",
+              "opacity": "0.598935",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.8690000218337,
+              "state": "running",
+              "opacity": "0.718889",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.36900002183387,
+              "state": "running",
+              "opacity": "0.804969",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.06900002183403,
+              "state": "running",
+              "opacity": "0.866933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7690000218338,
+              "state": "running",
+              "opacity": "0.9104",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.46900002183395,
+              "state": "running",
+              "opacity": "0.940659",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1690000218341,
+              "state": "running",
+              "opacity": "0.961557",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.769000021834,
+              "state": "running",
+              "opacity": "0.975757",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4690000218337,
+              "state": "running",
+              "opacity": "0.985357",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.1690000218339,
+              "state": "running",
+              "opacity": "0.991637",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.86900002183404,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.5690000218338,
+              "state": "running",
+              "opacity": "0.997933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.26900002183396,
+              "state": "running",
+              "opacity": "0.9992",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.9690000218341,
+              "state": "running",
+              "opacity": "0.999783",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.6690000218338,
+              "state": "running",
+              "opacity": "0.999976",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.669000021833913,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.36900002183407,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.96900002183402,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.66900002183374,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.4690000218341,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.06900002183406,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.76900002183376,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.36900002183373,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.0690000218339,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.76900002183405,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.46900002183375,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.06900002183414,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.76900002183385,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.3690000218338,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.16900002183374,
+              "state": "running",
+              "opacity": "0.00255921",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.76900002183413,
+              "state": "running",
+              "opacity": "0.2386",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.46900002183384,
+              "state": "running",
+              "opacity": "0.439473",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.169000021834,
+              "state": "running",
+              "opacity": "0.598935",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.8690000218337,
+              "state": "running",
+              "opacity": "0.718889",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.36900002183387,
+              "state": "running",
+              "opacity": "0.804969",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.06900002183403,
+              "state": "running",
+              "opacity": "0.866933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7690000218338,
+              "state": "running",
+              "opacity": "0.9104",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.46900002183395,
+              "state": "running",
+              "opacity": "0.940659",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1690000218341,
+              "state": "running",
+              "opacity": "0.961557",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.769000021834,
+              "state": "running",
+              "opacity": "0.975757",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4690000218337,
+              "state": "running",
+              "opacity": "0.985357",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.1690000218339,
+              "state": "running",
+              "opacity": "0.991637",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.86900002183404,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.5690000218338,
+              "state": "running",
+              "opacity": "0.997933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.26900002183396,
+              "state": "running",
+              "opacity": "0.9992",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.9690000218341,
+              "state": "running",
+              "opacity": "0.999783",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.6690000218338,
+              "state": "running",
+              "opacity": "0.999976",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        },
+        {
+          "className": "history-dot",
+          "duration": 300,
+          "samples": [
+            {
+              "time": 0,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 16.669000021833913,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 33.36900002183407,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 49.96900002183402,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 66.66900002183374,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 83.4690000218341,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 100.06900002183406,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 116.76900002183376,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 133.36900002183373,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 150.0690000218339,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 166.76900002183405,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 183.46900002183375,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 200.06900002183414,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 216.76900002183385,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 233.3690000218338,
+              "state": "running",
+              "opacity": "0",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 250.16900002183374,
+              "state": "running",
+              "opacity": "0.00255921",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 266.76900002183413,
+              "state": "running",
+              "opacity": "0.2386",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 283.46900002183384,
+              "state": "running",
+              "opacity": "0.439473",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 300.169000021834,
+              "state": "running",
+              "opacity": "0.598935",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 316.8690000218337,
+              "state": "running",
+              "opacity": "0.718889",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 333.36900002183387,
+              "state": "running",
+              "opacity": "0.804969",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 350.06900002183403,
+              "state": "running",
+              "opacity": "0.866933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 366.7690000218338,
+              "state": "running",
+              "opacity": "0.9104",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 383.46900002183395,
+              "state": "running",
+              "opacity": "0.940659",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 400.1690000218341,
+              "state": "running",
+              "opacity": "0.961557",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 416.769000021834,
+              "state": "running",
+              "opacity": "0.975757",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 433.4690000218337,
+              "state": "running",
+              "opacity": "0.985357",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 450.1690000218339,
+              "state": "running",
+              "opacity": "0.991637",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 466.86900002183404,
+              "state": "running",
+              "opacity": "0.995589",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 483.5690000218338,
+              "state": "running",
+              "opacity": "0.997933",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 500.26900002183396,
+              "state": "running",
+              "opacity": "0.9992",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 516.9690000218341,
+              "state": "running",
+              "opacity": "0.999783",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": 533.6690000218338,
+              "state": "running",
+              "opacity": "0.999976",
+              "transform": "none",
+              "clip": "none"
+            },
+            {
+              "time": null,
+              "state": "idle",
+              "opacity": "1",
+              "transform": "none",
+              "clip": "none"
+            }
+          ]
+        }
+      ],
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          790.5,
+          838.140625,
+          1440
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          255.21875,
+          309.9375,
+          1440
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    },
+    {
+      "width": 1440,
+      "lang": "ko",
+      "reduced": true,
+      "animationStart": {
+        "state": "complete",
+        "animations": []
+      },
+      "traces": [],
+      "initial": {
+        "tip": "8.6%",
+        "dates": [
+          "11/06",
+          "11/20",
+          "11/21"
+        ],
+        "points": 3,
+        "overflow": 0,
+        "tipBounds": [
+          790.5,
+          838.140625,
+          1440
+        ],
+        "metric": "픽률 · 패치·관측 이력"
+      },
+      "mapped": {
+        "tip": "0.00%",
+        "dates": [],
+        "points": 0,
+        "overflow": 0,
+        "tipBounds": [
+          255.21875,
+          309.9375,
+          1440
+        ],
+        "metric": "밴률 · 전장 비교"
+      }
+    }
+  ]
+}
