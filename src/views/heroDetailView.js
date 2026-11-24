@@ -1,3 +1,6 @@
+import {recommendHeroMaps} from '../models/heroMapRecommendationModel.js';
+import {mapPerformanceEnd} from '../services/heroMapPerformance.js';
+import {renderHeroMapRecommendations} from './heroMapRecommendationView.js';
 import {errorText} from '../i18n/i18n.js';
 import {preserveChartMotion,syncChartMotion} from './chartMotion.js';
 import {roleBadge} from './roleIcon.js';
@@ -54,7 +57,8 @@ export function createHeroDetailView() {
     return wrapper;
   }
   return {
-    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null) {
+    render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null,heroMaps=null) {
+      const renderStarted=globalThis.performance?.now?.()??0;
       const { state } = model;
       root.setAttribute('aria-busy',String(detailState.status==='loading'));
       const signature = `${getLanguage()}:${route.key}:${detailState.status}:${detailState.result?.fetchedAt ?? ''}`;
@@ -126,7 +130,7 @@ export function createHeroDetailView() {
         if(perkFocus)(perkInfo.querySelector('button')??perkInfo.querySelector('a')).focus({preventScroll:true});
       }
       const hero = model.heroByKey(route.key) ?? { ...detailState.result.detail, tier: null, statistics: null, metaScore: null };
-      const nextOverviewKey=JSON.stringify([hero,state.statsFilters,state.statistics,state.metaPolicy,state.favorites.has(route.key),history,counters,synergies,patchArchive,mapStatistics]);
+      const nextOverviewKey=JSON.stringify([hero,state.statsFilters,state.statistics,state.metaPolicy,state.favorites.has(route.key),history,counters,synergies,patchArchive,mapStatistics,heroMaps]);
       if(nextOverviewKey!==overviewKey){overviewKey=nextOverviewKey;
       const stats = root.querySelector('#detail-page-statistics');
       const summary = node('div', undefined, 'detail-summary');
@@ -172,7 +176,16 @@ export function createHeroDetailView() {
       if(mapSelected){const toggle=node('button',comparison?t('map.history'):t('map.comparison'),'chart-mode-toggle');toggle.type='button';toggle.dataset.chartMode=comparison?'history':'comparison';toggle.setAttribute('aria-pressed',String(!comparison));chart.querySelector('.history-heading').append(toggle);}
       if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
       if(chartInfoOpen&&chart.querySelector('.history-info'))chart.querySelector('.history-info').open=true;
-      main.append(chart, information);
+      main.append(chart);
+      const mapFocus=stats.querySelector('[data-hero-map]:focus')?.dataset.heroMap;
+      if(heroMaps){
+        const result=heroMaps.recommendation??recommendHeroMaps(heroMaps,route.key,state.statsFilters);
+        const signature=JSON.stringify([getLanguage(),route.key,result,heroMaps.maps]);
+        const previous=stats.querySelector('#hero-map-recommendations');
+        const recommendations=previous?.recommendationSignature===signature?previous:renderHeroMapRecommendations(result,heroMaps);
+        recommendations.recommendationSignature=signature;main.append(recommendations);
+      }
+      main.append(information);
       const basis=node('p',`${state.statsFilters.map==='all'?t("전체 전장 기준"):t("선택 전장 기준")}${isCompositeDivision(state.statsFilters.division)?t(" · HOW 등급 균등 평균"):''}${state.metaPolicy?.version==='local-60-27-13'?t(" · 로컬 실험 모델"):''}`,'detail-stat-basis');main.prepend(basis);
       const detail = detailState.result.detail;
       root.querySelector('#detail-passives')?.remove();
@@ -205,6 +218,8 @@ export function createHeroDetailView() {
       if(route.tab!=='abilities')summaryTop.append(passive);
       else root.querySelector('#detail-abilities').append(passive);
       stats.replaceChildren(summary); if (focused) button.focus({ preventScroll: true });
+      if(heroMaps?.traceId)mapPerformanceEnd(heroMaps.traceId,'rendered',{hero:route.key,renderMs:(globalThis.performance?.now?.()??0)-renderStarted});
+      if(mapFocus)[...stats.querySelectorAll('[data-hero-map]')].find(el=>el.dataset.heroMap===mapFocus)?.focus({preventScroll:true});
       if(patchToggleFocus)patchPanel?.querySelector('.hero-patch-toggle')?.focus({preventScroll:true});
       if(patchDetailFocus)[...(patchPanel?.querySelectorAll('details')??[])].find(el=>el.dataset.patchDetail===patchDetailFocus)?.querySelector('summary')?.focus({preventScroll:true});
       if(patchFocus){const item=[...stats.querySelectorAll('[data-change-id]')].find(el=>el.dataset.changeId===patchFocus);item?.querySelector('.compact-text-toggle')?.focus({preventScroll:true});}

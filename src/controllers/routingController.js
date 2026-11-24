@@ -1,3 +1,4 @@
+import {createPageTransition} from '../views/pageTransition.js';
 import {createMenuSwipe} from '../views/menuSwipe.js';
 import {updateSEO} from '../i18n/seo.js';
 import {routeHash,localizedURL} from '../i18n/routes.js';
@@ -15,6 +16,7 @@ import { createSynergyService } from '../services/synergyService.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {createMainMenuView} from '../views/mainMenuView.js';
 import {createBannerEntrance} from '../views/bannerEntrance.js';
+import {createHeroMapRecommendationController} from './heroMapRecommendationController.js';
 export function parseRoute(hash) {
   const player=/^#\/players\/([^/?#]+)$/.exec(hash);
   if(player){try{const id=decodeURIComponent(player[1]);playerPath(id);return {page:'player',id};}catch{return {page:'not-found'};}}
@@ -26,7 +28,7 @@ export function parseRoute(hash) {
   if(hash==='#/player-search')return {page:'player-search'};
   return { page: 'not-found' };
 }
-export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider,dashboardController }) {
+export function createRoutingController({ model, detailService, detailView, counterService = createCounterService(), historyService, mapStatisticsController, synergyService=createSynergyService(),perkStatisticsService,patchModel,playerProvider,dashboardController,heroMapService }) {
   let generation = 0, currentKey, route = parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
   const menuView=createMainMenuView(),scrollPositions=new Map();
   const bannerEntrance=createBannerEntrance(document.querySelector('#list-page .hero-banner'));
@@ -54,6 +56,12 @@ export function createRoutingController({ model, detailService, detailView, coun
       perkState={status:'ready',result};
     }).catch(error=>{if(token===perkGeneration)perkState={status:'error',result:null,error:error.message};})
       .finally(()=>{if(token===perkGeneration)render();});
+  }
+  const heroMaps=createHeroMapRecommendationController({service:heroMapService,onChange:()=>render()});let heroMapState=null;
+  function leaveHeroMaps(){heroMaps.leave();heroMapState=null;}
+  function loadHeroMaps(){
+    if(route.tab!=='overview'){leaveHeroMaps();return;}if(!heroMapService||detailState.status!=='ready')return;
+    heroMapState=heroMaps.setContext(route.key,model.state.statsFilters);
   }
   let historyGeneration = 0, historyKey, historyDays = 7;
   let historyState = { status: 'idle', days: historyDays };
@@ -97,11 +105,11 @@ export function createRoutingController({ model, detailService, detailView, coun
     if (route.page === 'detail') {
       const nextChartContext=route.key+':'+statisticsQuery(model.state.statsFilters);if(chartContext!==nextChartContext){chartContext=nextChartContext;chartMode='comparison';}
       if(detailState.status==='ready')mapStatisticsController?.setContext(route.key,model.state.statsFilters);
-      loadHistory(); loadPerks();
+      loadHistory(); loadPerks();loadHeroMaps();
       const perkPresentation=detailState.status==='ready'?{...perkState,cards:perkCardsForDetail(route.key,detailState.result.detail,perkState)}:perkState;
-      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope,chartMode }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data);
+      detailView.render(detailState, model, route, counterService.getHeroCounters(route.key, model.state.heroes), { ...historyState, metric: historyMetric, scope: historyScope,chartMode }, mapStatisticsController?.getState(),synergyService.getHeroSynergies(route.key,model.state.heroes),perkPresentation,patchModel?.state.data,heroMapState);
       const host=document.querySelector('#detail-filter-host');if(host&&sharedFilters&&sharedFilters.parentElement!==host)host.append(sharedFilters);
-    } else {mapStatisticsController?.leave();const metaHost=route.page==='dashboard'?document.querySelector('#dashboard-filter-host'):route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
+    } else {leaveHeroMaps();mapStatisticsController?.leave();const metaHost=route.page==='dashboard'?document.querySelector('#dashboard-filter-host'):route.page==='meta'&&mobile?document.querySelector('#meta-filter-host'):null;if(metaHost&&sharedFilters){if(sharedFilters.parentElement!==metaHost)metaHost.append(sharedFilters);}else if(sharedFilters&&sharedFilters.previousSibling!==filterHome)filterHome.after(sharedFilters);}
     syncCompactMain(sharedFilters);
     dashboardController?.setActive(route.page==='dashboard');
   }
@@ -121,7 +129,7 @@ export function createRoutingController({ model, detailService, detailView, coun
     }
     render(); detailView.focusHeading();
   }
-  function navigate() {
+  function commitNavigation() {
     const next=parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));
     if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta','dashboard'].includes(route.page)?currentHash||'#/dashboard':'#/tiers';
     currentHash=routeHash(location,import.meta.env?.BASE_URL??'/');route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;
@@ -129,8 +137,20 @@ export function createRoutingController({ model, detailService, detailView, coun
     if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }
     else render();
   }
+  const pageTransition=createPageTransition();let navigated=false;
+  const pageRoot=page=>document.querySelector({'dashboard':'#dashboard-page','list':'#list-page','detail':'#hero-detail-page','player-search':'#player-search-page','player':'#player-search-page','meta':'#meta-page'}[page]??'#route-not-found');
+  function navigate(){
+    const hash=routeHash(location,import.meta.env?.BASE_URL??'/'),next=parseRoute(hash);
+    if(navigated&&!document.documentElement.classList.contains('how-swipe-transition')&&route.page!==next.page){
+      pageTransition.run(pageRoot(route.page),pageRoot(next.page),commitNavigation,()=>routeHash(location,import.meta.env?.BASE_URL??'/')===hash);
+    }else{pageTransition.cancel();commitNavigation();}
+    navigated=true;
+  }
   const retry = event => {
     if (route.page !== 'detail') return;
+    if(event.target.closest('[data-hero-maps-retry]')){heroMaps.retry();heroMapState=heroMaps.getState();render();}
+    const recommended=event.target.closest('[data-hero-map]');if(recommended){const select=document.querySelector('#stats-map');if(select){select.value=recommended.dataset.heroMap;select.dispatchEvent(new Event('change',{bubbles:true}));}}
+
     if (event.target.closest('[data-action="detail-retry"]')) load();
     if (event.target.closest('[data-action="map-stats-retry"],[data-map-stats-retry]')) mapStatisticsController?.retry();
     const mode=event.target.closest('[data-chart-mode]');if(mode&&['comparison','history'].includes(mode.dataset.chartMode)){chartMode=mode.dataset.chartMode;render();}
@@ -154,6 +174,6 @@ export function createRoutingController({ model, detailService, detailView, coun
     start() { menuSwipe?.destroy();menuSwipe=createMenuSwipe({getPage:()=>route.page});document.addEventListener('how:playersearch',dashboardSearch);if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { menuSwipe?.destroy();document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { leaveHeroMaps();heroMaps.destroy();pageTransition.destroy();menuSwipe?.destroy();document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

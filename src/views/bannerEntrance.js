@@ -22,7 +22,7 @@ export function createBannerEntrance(banner, win = window) {
     setVisible(next) {
       if (next === visible) return;
       visible = next; cancel();
-      if (!next || !banner || banner.ownerDocument.documentElement.classList.contains('how-swipe-transition') || reduced?.matches || !win.requestAnimationFrame || !banner.querySelector('.eyebrow')?.animate) return;
+      if (!next || !banner || (banner.ownerDocument.documentElement.classList.contains('how-swipe-transition')||banner.ownerDocument.documentElement.classList.contains('how-page-transition')) || reduced?.matches || !win.requestAnimationFrame || !banner.querySelector('.eyebrow')?.animate) return;
       frame = win.requestAnimationFrame(() => {
         frame = null;
         if (!visible || !banner.isConnected || banner.closest('[hidden]') || reduced?.matches) return;

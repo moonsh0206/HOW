@@ -7,7 +7,7 @@ export function createMenuSwipe({getPage,document:doc=document}){
  const win=doc.defaultView,media=win.matchMedia?.('(max-width: 767px) and (any-pointer: coarse)'),reduced=win.matchMedia?.('(prefers-reduced-motion: reduce)');
  let gesture=null,busy=false,disposed=false,animations=[],generation=0;
  const visible=el=>!el.closest('[hidden]')&&win.getComputedStyle(el).display!=='none';
- function blocked(){return doc.documentElement.classList.contains('how-brand-intro-active')||[...doc.querySelectorAll('[aria-modal="true"],dialog[open],[role="combobox"][aria-expanded="true"],.site-header [aria-expanded="true"]')].some(visible);}
+ function blocked(){return doc.documentElement.classList.contains('how-page-transition')||doc.documentElement.classList.contains('how-brand-intro-active')||[...doc.querySelectorAll('[aria-modal="true"],dialog[open],[role="combobox"][aria-expanded="true"],.site-header [aria-expanded="true"]')].some(visible);}
  function excluded(event){
   return event.composedPath().some(el=>{
    if(!el.matches)return false;

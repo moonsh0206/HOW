@@ -1,0 +1,36 @@
+{
+  "at": "2026-11-24T02:56:28.966Z",
+  "requests": [
+    {
+      "url": "https://overwatch.nexon.com/robots.txt",
+      "status": 200,
+      "cors": null,
+      "size": 122
+    },
+    {
+      "url": "https://overwatch.nexon.com/hero/rate",
+      "status": 200,
+      "cors": null,
+      "size": 207816,
+      "scripts": [
+        "https://www.googletagmanager.com/gtag/js?id=G-WC9T3B7NQ5",
+        "https://signin.nexon.com/sdk/inface.js",
+        "https://ssl.nexon.com/s1/p2/ps.min.js",
+        "https://sht-vod.dn.nexoncdn.co.kr/overwatch/app-assets/7DB75CQV.js",
+        "https://rs.nxfs.nexon.com/common/js/gnb.min.js"
+      ]
+    },
+    {
+      "url": "https://overfast-api.tekrop.fr/maps",
+      "status": 200,
+      "cors": "*",
+      "size": 12421
+    },
+    {
+      "url": "https://overfast-api.tekrop.fr/openapi.json",
+      "status": 200,
+      "cors": "*",
+      "size": 178100
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import {createHeroMapRecommendationService} from './services/heroMapRecommendationService.js';
 import {validateFilters,statisticsQuery} from './models/statisticsModel.js';
 import {getLanguage} from './i18n/i18n.js';
 import {installLocalizedNavigation} from './i18n/routes.js';
@@ -61,7 +62,7 @@ const mapService=createMapService();
 const dashboardController=createMetaDashboardController({model,snapshotService:snapshots,statisticsService,counterService,mapService,roleMeanService:createRoleMeanService({base:import.meta.env.BASE_URL})});
 brandIntro.mount(document.querySelector('.site-header .header-brand'));
 const mapStatisticsController=createMapStatisticsController({statisticsService,onChange:()=>router.refresh()});
-const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots, mapStatisticsController,perkStatisticsService:createPerkStatisticsService({base:import.meta.env.BASE_URL}),patchModel,counterService,dashboardController });
+const router = createRoutingController({ model, detailService: createHeroDetailService(), detailView, historyService: snapshots, heroMapService:createHeroMapRecommendationService({statisticsService,mapService}), mapStatisticsController,perkStatisticsService:createPerkStatisticsService({base:import.meta.env.BASE_URL}),patchModel,counterService,dashboardController });
 const insights = createInsightView({patchModel});
 createOfficialPatchService({base:import.meta.env.BASE_URL}).getNotes().then(data=>{patchModel.set(data);router.refresh();insights.render(model);}).catch(error=>{patchModel.fail(error);insights.render(model);});
 if (!saved.available) view.notify('저장된 즐겨찾기를 읽지 못했습니다. 이번 방문에서 새로 선택할 수 있습니다.');

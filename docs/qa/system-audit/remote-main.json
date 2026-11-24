@@ -1,0 +1,185 @@
+{
+  "sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+  "node_id": "C_kwDOVfsWTtoAKGRlNjEzMGQyOGMxZmUxYjE1OWQ4MjI4M2E4ODU1YjZmOGM3ZjI4NmY",
+  "commit": {
+    "author": {
+      "name": "sung hoon",
+      "email": "abs8027@naver.com",
+      "date": "2026-11-23T07:59:53Z"
+    },
+    "committer": {
+      "name": "sung hoon",
+      "email": "abs8027@naver.com",
+      "date": "2026-11-23T07:59:53Z"
+    },
+    "message": "UX 슬라이드 개선",
+    "tree": {
+      "sha": "f3ceea345727e0084e1c65a99790bf8090b35a72",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/git/trees/f3ceea345727e0084e1c65a99790bf8090b35a72"
+    },
+    "url": "https://api.github.com/repos/moonsh0206/HOW/git/commits/de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/moonsh0206/HOW/commits/de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+  "html_url": "https://github.com/moonsh0206/HOW/commit/de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+  "comments_url": "https://api.github.com/repos/moonsh0206/HOW/commits/de6130d28c1fe1b159d82283a8855b6f8c7f286f/comments",
+  "author": {
+    "login": "moonsh0206",
+    "id": 187877696,
+    "node_id": "U_kgDOCzLJQA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/187877696?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/moonsh0206",
+    "html_url": "https://github.com/moonsh0206",
+    "followers_url": "https://api.github.com/users/moonsh0206/followers",
+    "following_url": "https://api.github.com/users/moonsh0206/following{/other_user}",
+    "gists_url": "https://api.github.com/users/moonsh0206/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/moonsh0206/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/moonsh0206/subscriptions",
+    "organizations_url": "https://api.github.com/users/moonsh0206/orgs",
+    "repos_url": "https://api.github.com/users/moonsh0206/repos",
+    "events_url": "https://api.github.com/users/moonsh0206/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/moonsh0206/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "moonsh0206",
+    "id": 187877696,
+    "node_id": "U_kgDOCzLJQA",
+    "avatar_url": "https://avatars.githubusercontent.com/u/187877696?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/moonsh0206",
+    "html_url": "https://github.com/moonsh0206",
+    "followers_url": "https://api.github.com/users/moonsh0206/followers",
+    "following_url": "https://api.github.com/users/moonsh0206/following{/other_user}",
+    "gists_url": "https://api.github.com/users/moonsh0206/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/moonsh0206/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/moonsh0206/subscriptions",
+    "organizations_url": "https://api.github.com/users/moonsh0206/orgs",
+    "repos_url": "https://api.github.com/users/moonsh0206/repos",
+    "events_url": "https://api.github.com/users/moonsh0206/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/moonsh0206/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "128148c2dd6f00a7d6072d0d135eb35d756ad73d",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/commits/128148c2dd6f00a7d6072d0d135eb35d756ad73d",
+      "html_url": "https://github.com/moonsh0206/HOW/commit/128148c2dd6f00a7d6072d0d135eb35d756ad73d"
+    }
+  ],
+  "stats": {
+    "total": 50,
+    "additions": 35,
+    "deletions": 15
+  },
+  "files": [
+    {
+      "sha": "c0c73fb0c9ef51a31edf0346b93ecb9eb50fdd49",
+      "filename": "src/controllers/routingController.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fcontrollers%2FroutingController.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fcontrollers%2FroutingController.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fcontrollers%2FroutingController.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -125,7 +125,7 @@ export function createRoutingController({ model, detailService, detailView, coun\n     const next=parseRoute(routeHash(location,import.meta.env?.BASE_URL??'/'));\n     if(next.page==='detail'&&route.page!=='detail')lastMainHash=['list','meta','dashboard'].includes(route.page)?currentHash||'#/dashboard':'#/tiers';\n     currentHash=routeHash(location,import.meta.env?.BASE_URL??'/');route=next.page==='detail'?{...next,returnHash:lastMainHash}:next;\n-    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }\n+    if (route.page !== 'detail') { ++generation; currentKey = null; resetHistory(); resetPerks(); render();const targetHash=currentHash;const y=document.documentElement.classList.contains('how-swipe-transition')?0:scrollPositions.get(targetHash);if(y!==undefined||targetHash.startsWith('#/'))scheduleScroll(()=>currentHash===targetHash&&route.page!=='detail',y??0);else cancelScroll();return; }\n     if (route.key !== currentKey) { currentKey = route.key;const key=currentKey;load();scheduleScroll(()=>route.page==='detail'&&route.key===key,0); }\n     else render();\n   }"
+    },
+    {
+      "sha": "365c017b7318f8ddda7062ec25154961f5bcacd2",
+      "filename": "src/styles/dashboard.css",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fstyles%2Fdashboard.css",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fstyles%2Fdashboard.css",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fstyles%2Fdashboard.css?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -225,3 +225,11 @@ body:has(#dashboard-page:not([hidden])) .desktop-header-link{white-space:nowrap}\n \n .dashboard-map-body>.dashboard-link{grid-column:1/-1;margin:0}\n .dashboard-map-credit{display:inline-flex;align-items:center;min-height:44px}\n+/* Swipe motion affects content only; clip its small horizontal offset. */\n+html.how-swipe-transition{overflow-x:clip}\n+@media(max-width:767px){\n+ .dashboard-history-chart svg text{font-size:10.5px;font-weight:400;letter-spacing:0}\n+ .dashboard-history-controls{gap:6px;flex-wrap:wrap}\n+ .dashboard-legend{gap:6px;margin-block:4px 6px}\n+ .dashboard-legend strong{font-size:13px}\n+}"
+    },
+    {
+      "sha": "44772cfbd68f86d42b17113ae62d6dfe1aeea5ce",
+      "filename": "src/views/bannerEntrance.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FbannerEntrance.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FbannerEntrance.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fviews%2FbannerEntrance.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -22,7 +22,7 @@ export function createBannerEntrance(banner, win = window) {\n     setVisible(next) {\n       if (next === visible) return;\n       visible = next; cancel();\n-      if (!next || !banner || reduced?.matches || !win.requestAnimationFrame || !banner.querySelector('.eyebrow')?.animate) return;\n+      if (!next || !banner || banner.ownerDocument.documentElement.classList.contains('how-swipe-transition') || reduced?.matches || !win.requestAnimationFrame || !banner.querySelector('.eyebrow')?.animate) return;\n       frame = win.requestAnimationFrame(() => {\n         frame = null;\n         if (!visible || !banner.isConnected || banner.closest('[hidden]') || reduced?.matches) return;"
+    },
+    {
+      "sha": "cb7d74b62326fdf1b1d868dda89398bc0d24fa01",
+      "filename": "src/views/dashboardHistoryView.js",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 5,
+      "changes": 10,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FdashboardHistoryView.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FdashboardHistoryView.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fviews%2FdashboardHistoryView.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -10,7 +10,7 @@ const dayIndex=day=>Date.parse(day+'T00:00:00Z')/86400000;\n // with the SVG's independent horizontal/vertical scale factors.\n export function syncDashboardTextScale(svg,width,height){\n  if(!(width>0&&height>0))return;\n- for(const text of svg.querySelectorAll('text')){const x=Number(text.getAttribute('x')),y=Number(text.getAttribute('y'));text.setAttribute('transform',`translate(${x} ${y}) scale(${510/width} ${220/height}) translate(${-x} ${-y})`);}\n+ for(const text of svg.querySelectorAll('text')){const x=Number(text.getAttribute('x')),y=Number(text.getAttribute('y'));text.setAttribute('transform',`translate(${x} ${y}) scale(${1/Math.min(width/510,height/220)}) translate(${-x} ${-y})`);}\n }\n const textObserver=typeof ResizeObserver==='undefined'?null:new ResizeObserver(entries=>{for(const {target,contentRect}of entries){if(!target.isConnected){textObserver.unobserve(target);continue;}syncDashboardTextScale(target,contentRect.width,contentRect.height);}});\n function roleLegend(data){\n@@ -33,12 +33,12 @@ export function dashboardHistoryChart(data){\n  const minDay=Math.min(...points.map(p=>dayIndex(p.day))),maxDay=Math.max(...points.map(p=>dayIndex(p.day)));\n  const min=Math.max(0,Math.floor((Math.min(...points.map(p=>p.value))-2)/5)*5),max=Math.min(100,Math.ceil((Math.max(...points.map(p=>p.value))+2)/5)*5);\n  root.classList.toggle('is-single-observation',minDay===maxDay);\n- const x=p=>minDay===maxDay?265:50+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*430,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;\n- const svg=svgNode('svg',{viewBox:'0 0 510 220',preserveAspectRatio:'none',role:'img','aria-label':t('dashboard.graphLabel')});\n+ const x=p=>minDay===maxDay?272:64+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*416,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;\n+ const svg=svgNode('svg',{viewBox:'0 0 510 220',preserveAspectRatio:'xMidYMid meet',role:'img','aria-label':t('dashboard.graphLabel')});\n  const title=svgNode('title');title.textContent=t('dashboard.graphLabel');svg.append(title);\n- for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:50,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:43,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}\n+ for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:64,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:57,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}\n  for(const day of [...new Set(points.map(p=>p.day))].filter((_,i,all)=>i===0||i===all.length-1||i===Math.floor(all.length/2))){const text=svgNode('text',{x:x({day}),y:202,'text-anchor':'middle'});text.textContent=new Date(day+'T00:00:00Z').toLocaleDateString(formatLocale(),{month:'numeric',day:'numeric',timeZone:'UTC'});svg.append(text);}\n- const defs=svgNode('defs'),clip=svgNode('clipPath',{id:'dashboard-history-reveal'}),rect=svgNode('rect',{x:46,y:20,width:440,height:165});rect.dataset.dashboardReveal='';clip.append(rect);defs.append(clip);svg.append(defs);\n+ const defs=svgNode('defs'),clip=svgNode('clipPath',{id:'dashboard-history-reveal'}),rect=svgNode('rect',{x:60,y:20,width:426,height:165});rect.dataset.dashboardReveal='';clip.append(rect);defs.append(clip);svg.append(defs);\n  const traces=svgNode('g',{'clip-path':'url(#dashboard-history-reveal)'});\n  for(const patch of PATCH_CATALOG){const day=patch.publishedDate??patch.date;if(dayIndex(day)<minDay||dayIndex(day)>maxDay)continue;const marker=svgNode('line',{x1:x({day}),x2:x({day}),y1:25,y2:175,class:'dashboard-patch-marker'});const hint=svgNode('title');hint.textContent=`${day} · ${patch.id} · ${t('dashboard.patchBoundary')}`;marker.append(hint);svg.append(marker);}\n  const table=node('table'),accessible=node('div',undefined,'sr-only');accessible.append(table);table.append(node('caption',t('dashboard.graphLabel')));"
+    },
+    {
+      "sha": "230ef326fff42a4f8797ca06383c862f5242ab4a",
+      "filename": "src/views/dashboardTitleMotion.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FdashboardTitleMotion.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FdashboardTitleMotion.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fviews%2FdashboardTitleMotion.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -5,6 +5,7 @@ export function createDashboardTitleMotion(root,targets){\n  const cancel=()=>{if(frame!==null)win.cancelAnimationFrame?.(frame);frame=null;for(const animation of animations)animation.cancel();animations=[];root.classList.remove('dashboard-title-pending');};\n  function start(){\n   if(disposed||!active||played||frame!==null||!root.isConnected||root.hidden||doc.documentElement.classList.contains('how-brand-intro-active'))return;\n+  if(doc.documentElement.classList.contains('how-swipe-transition')){played=true;return;}\n   if(media?.matches||!win.requestAnimationFrame||!targets.every(el=>typeof el.animate==='function')){played=true;return;}\n   root.classList.add('dashboard-title-pending');frame=win.requestAnimationFrame(()=>{frame=win.requestAnimationFrame(()=>{\n    frame=null;if(disposed||!active||root.hidden||doc.documentElement.classList.contains('how-brand-intro-active')){root.classList.remove('dashboard-title-pending');return;}"
+    },
+    {
+      "sha": "2eec227f06f762f4149039ecc9e142aad71f8b66",
+      "filename": "src/views/menuSwipe.js",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 7,
+      "changes": 23,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FmenuSwipe.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/src%2Fviews%2FmenuSwipe.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/src%2Fviews%2FmenuSwipe.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -35,17 +35,26 @@ export function createMenuSwipe({getPage,document:doc=document}){\n   if(!direction||next<0||next>=PAGES.length)return;\n   const link=doc.querySelector(`a[href=\"${HASHES[next]}\"]`);if(!link)return;\n   busy=true;const token=++generation,old=doc.querySelector(ROOTS[g.index]);\n-  async function play(el,frames,duration){if(reduced?.matches||!el?.animate)return;const a=el.animate(frames,{duration,easing:'ease-out'});animations.push(a);try{await a.finished;}catch{}finally{a.cancel();animations=animations.filter(v=>v!==a);}}\n+  const incoming=doc.querySelector(ROOTS[next]);\n+  const cleanup=()=>{for(const a of animations)a.cancel();animations=[];doc.documentElement.classList.remove('how-swipe-transition');};\n+  const animate=(el,frames,duration)=>{if(reduced?.matches||!el?.animate)return null;const a=el.animate(frames,{duration,easing:'cubic-bezier(0.22,1,0.36,1)',fill:'both'});animations.push(a);return a;};\n   try{\n-   await play(old,[{opacity:1,transform:'translateX(0)'},{opacity:0,transform:`translateX(${-direction*10}px)`}],90);\n+   doc.documentElement.classList.add('how-swipe-transition');\n+   // Hold the destination's initial style before the router makes it visible.\n+   const entrance=animate(incoming,[{opacity:0,transform:`translateX(${direction*8}px)`},{opacity:1,transform:'translateX(0)'}],270);entrance?.pause();\n+   const exit=animate(old,[{opacity:1,transform:'translateX(0)'},{opacity:.12,transform:`translateX(${-direction*6}px)`}],160);\n+   if(exit)try{await exit.finished;}catch{}\n    if(disposed||token!==generation||getPage()!==g.page||blocked())return;\n-   link.click();\n-   await new Promise(resolve=>win.requestAnimationFrame(()=>win.requestAnimationFrame(resolve)));\n+   link.dataset.swipeNavigation='true';link.click();delete link.dataset.swipeNavigation;\n+   // Localized navigation queues its router dispatch; run after that dispatch,\n+   // before the next paint, so no unanimated destination frame is exposed.\n+   await new Promise(resolve=>win.queueMicrotask(resolve));\n    if(disposed||token!==generation||getPage()!==PAGES[next])return;\n-   await play(doc.querySelector(ROOTS[next]),[{opacity:0,transform:`translateX(${direction*10}px)`},{opacity:1,transform:'translateX(0)'}],130);\n-  }finally{busy=false;}\n+   entrance?.play();if(entrance)try{await entrance.finished;}catch{}\n+  }catch{if(!disposed&&getPage()===g.page)link.click(); /* Restore usable navigation if motion is unsupported or fails. */ }\n+  finally{cleanup();busy=false;}\n  }\n  const scroll=()=>cancel(),hide=()=>{if(doc.hidden)cancel();};\n  doc.addEventListener('touchstart',start,{passive:true});doc.addEventListener('touchmove',move,{passive:true});doc.addEventListener('touchend',end,{passive:true});doc.addEventListener('touchcancel',cancel,{passive:true});doc.addEventListener('scroll',scroll,{passive:true,capture:true});doc.addEventListener('visibilitychange',hide);\n- return {destroy(){disposed=true;++generation;cancel();animations.forEach(a=>a.cancel());animations=[];doc.removeEventListener('touchstart',start);doc.removeEventListener('touchmove',move);doc.removeEventListener('touchend',end);doc.removeEventListener('touchcancel',cancel);doc.removeEventListener('scroll',scroll,true);doc.removeEventListener('visibilitychange',hide);}};\n+ return {destroy(){disposed=true;++generation;cancel();animations.forEach(a=>a.cancel());animations=[];doc.documentElement.classList.remove('how-swipe-transition');doc.removeEventListener('touchstart',start);doc.removeEventListener('touchmove',move);doc.removeEventListener('touchend',end);doc.removeEventListener('touchcancel',cancel);doc.removeEventListener('scroll',scroll,true);doc.removeEventListener('visibilitychange',hide);}};\n }"
+    },
+    {
+      "sha": "59e79bc5483b4111aa84f33be0e85d87f20153cf",
+      "filename": "tests/integratedPolish.test.js",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/tests%2FintegratedPolish.test.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/tests%2FintegratedPolish.test.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/tests%2FintegratedPolish.test.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -12,7 +12,7 @@ import {createMetaDashboardView} from '../src/views/metaDashboardView.js';\n test('dashboard axis inverse scale preserves physical glyph proportions without changing observation coordinates',()=>{\n  const dom=new JSDOM('<body/>'),old=globalThis.document;globalThis.document=dom.window.document;\n  try{const data={available:false,series:[{role:'tank',points:[{day:'2026-11-20',time:Date.parse('2026-11-20T01:00:00Z'),value:48.3,count:2}]}]},before=structuredClone(data),chart=dashboardHistoryChart(data),svg=chart.querySelector('svg'),circle=svg.querySelector('circle'),coords=[circle.getAttribute('cx'),circle.getAttribute('cy')];\n-  for(const [width,height]of [[300,140],[580,210],[720,280]]){syncDashboardTextScale(svg,width,height);for(const text of svg.querySelectorAll('text')){const [x,y]=text.getAttribute('transform').match(/scale\\(([^)]+)\\)/)[1].split(' ').map(Number);assert(Math.abs(x*width/510-1)<1e-10);assert(Math.abs(y*height/220-1)<1e-10);}}\n+  for(const [width,height]of [[300,140],[580,210],[720,280]]){syncDashboardTextScale(svg,width,height);for(const text of svg.querySelectorAll('text')){const factor=Number(text.getAttribute('transform').match(/scale\\(([^)]+)\\)/)[1]);assert(Math.abs(factor*Math.min(width/510,height/220)-1)<1e-10);}}\n   assert.deepEqual([circle.getAttribute('cx'),circle.getAttribute('cy')],coords);assert.deepEqual(data,before);\n  }finally{globalThis.document=old;dom.window.close();}\n });"
+    },
+    {
+      "sha": "c034a0b3e9cab3a961e2ba6a9bf57419731640ec",
+      "filename": "tests/menuSwipe.test.js",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/moonsh0206/HOW/blob/de6130d28c1fe1b159d82283a8855b6f8c7f286f/tests%2FmenuSwipe.test.js",
+      "raw_url": "https://github.com/moonsh0206/HOW/raw/de6130d28c1fe1b159d82283a8855b6f8c7f286f/tests%2FmenuSwipe.test.js",
+      "contents_url": "https://api.github.com/repos/moonsh0206/HOW/contents/tests%2FmenuSwipe.test.js?ref=de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+      "patch": "@@ -8,3 +8,5 @@ const settle=()=>new Promise(r=>setTimeout(r,60));\n test('routes once through menu links, bounds and detail/desktop guards',async()=>{const s=setup();s.emit('touchstart',220);s.emit('touchend',100);s.emit('touchstart',220);s.emit('touchend',100);await settle();assert.equal(s.page,'list');assert.equal(s.count,1);s.setPage('player-search');s.emit('touchstart',220);s.emit('touchend',100);await settle();assert.equal(s.count,1);s.setPage('detail');s.emit('touchstart',220);s.emit('touchend',100);assert.equal(s.count,1);s.setPage('dashboard');s.setMobile(false);s.emit('touchstart',220);s.emit('touchend',100);assert.equal(s.count,1);s.swipe.destroy();});\n test('input, chart, custom ignore, edge, scroll and changed touch are excluded',async()=>{const s=setup();for(const target of s.doc.querySelectorAll('input,svg,[data-swipe-ignore]')){s.emit('touchstart',220,100,target);s.emit('touchend',100,100,target);}s.emit('touchstart',10);s.emit('touchend',150);s.emit('touchstart',220);s.emit('touchmove',215,130);s.emit('touchend',100,130);s.emit('touchstart',220);s.emit('touchend',100,100,undefined,2);s.emit('touchstart',220);s.doc.dispatchEvent(new s.doc.defaultView.Event('scroll'));s.emit('touchend',100);await settle();assert.equal(s.count,0);s.swipe.destroy();s.emit('touchstart',220);s.emit('touchend',100);await settle();assert.equal(s.count,0);});\n test('reverse navigation and an open combobox block a background gesture',async()=>{const s=setup();s.setPage('list');const target=s.doc.querySelector('#list-page');s.emit('touchstart',100,100,target);s.emit('touchend',220,100,target);await settle();assert.equal(s.page,'dashboard');const combo=s.doc.createElement('button');combo.setAttribute('role','combobox');combo.setAttribute('aria-expanded','true');s.doc.body.append(combo);s.emit('touchstart',220);s.emit('touchend',100);await settle();assert.equal(s.count,1);combo.remove();s.swipe.destroy();});\n+test('destination is held before route reveal; motion resources are cleaned',async()=>{const s=setup(),calls=[];s.doc.defaultView.matchMedia=()=>({matches:false});const original=s.doc.defaultView.HTMLElement.prototype.animate;s.doc.defaultView.HTMLElement.prototype.animate=function(frames,options){const a={finished:Promise.resolve(),pause(){calls.push('pause');},play(){calls.push('play');},cancel(){calls.push('cancel');}};calls.push({root:this.id,frames,options});return a;}; // recreate to read non-reduced media\n+s.swipe.destroy();s.doc.defaultView.matchMedia=q=>({matches:!q.includes('reduce')});const swipe=createMenuSwipe({document:s.doc,getPage:()=>s.page});s.emit('touchstart',220);s.emit('touchend',100);await settle();assert.equal(s.page,'list');const motion=calls.filter(c=>typeof c==='object');assert.equal(motion[0].root,'list-page');assert.equal(motion[0].options.duration,270);assert.equal(motion[1].options.duration,160);assert(calls.indexOf('pause')<calls.indexOf('play'));assert.equal(s.doc.documentElement.classList.contains('how-swipe-transition'),false);assert.equal(calls.filter(c=>c==='cancel').length,2);swipe.destroy();s.doc.defaultView.HTMLElement.prototype.animate=original;});"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "at": "2026-11-24T00:28:47.061Z",
+  "searches": [
+    {
+      "name": "TeKrop",
+      "status": 200,
+      "total": 1
+    },
+    {
+      "name": "tekrop",
+      "status": 200,
+      "total": 0
+    },
+    {
+      "name": "TEKROP",
+      "status": 200,
+      "total": 0
+    }
+  ],
+  "profiles": [
+    {
+      "key": "summary",
+      "status": 200,
+      "normalized": {
+        "name": "TeKrop",
+        "avatar": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/30e37a0d096d92c18f7c6f9519d483e75d1d8ab5280d672f2553f650f4c050e5.png",
+        "title": "Data Broker",
+        "endorsement": 2,
+        "updatedAt": 1777998881,
+        "ranks": [
+          {
+            "platform": "pc",
+            "role": "support",
+            "season": 22,
+            "division": "silver",
+            "tier": 4
+          }
+        ]
+      }
+    },
+    {
+      "key": "competitive",
+      "status": 200,
+      "normalized": {
+        "general": {
+          "played": 19,
+          "won": 6,
+          "lost": 13,
+          "seconds": 12164,
+          "winRate": 31.58,
+          "kda": 1.71,
+          "total": {
+            "eliminations": 185,
+            "assists": 54,
+            "deaths": 140,
+            "damage": 87194,
+            "healing": 176745
+          },
+          "average": {
+            "eliminations": 9.13,
+            "assists": 2.66,
+            "deaths": 6.91,
+            "damage": 4300.92,
+            "healing": 8718.1
+          }
+        },
+        "heroes": [
+          {
+            "key": "baptiste",
+            "played": 10,
+            "won": 2,
+            "lost": 8,
+            "seconds": 6056,
+            "winRate": 20,
+            "kda": 1.25,
+            "total": {
+              "eliminations": 88,
+              "assists": 6,
+              "deaths": 75,
+              "damage": 43299,
+              "healing": 84678
+            },
+            "average": {
+              "eliminations": 8.72,
+              "assists": 0.59,
+              "deaths": 7.43,
+              "damage": 4289.86,
+              "healing": 8389.5
+            }
+          },
+          {
+            "key": "ana",
+            "played": 8,
+            "won": 3,
+            "lost": 5,
+            "seconds": 5363,
+            "winRate": 37.5,
+            "kda": 2.38,
+            "total": {
+              "eliminations": 76,
+              "assists": 48,
+              "deaths": 52,
+              "damage": 33261,
+              "healing": 89965
+            },
+            "average": {
+              "eliminations": 8.5,
+              "assists": 5.37,
+              "deaths": 5.82,
+              "damage": 3721.16,
+              "healing": 10065.08
+            }
+          },
+          {
+            "key": "cassidy",
+            "played": 1,
+            "won": 1,
+            "lost": 0,
+            "seconds": 501,
+            "winRate": 100,
+            "kda": 3.17,
+            "total": {
+              "eliminations": 19,
+              "assists": 0,
+              "deaths": 6,
+              "damage": 9264,
+              "healing": 314
+            },
+            "average": {
+              "eliminations": 22.75,
+              "assists": 0,
+              "deaths": 7.19,
+              "damage": 11094.61,
+              "healing": 376.05
+            }
+          },
+          {
+            "key": "lucio",
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "seconds": 198,
+            "winRate": 0,
+            "kda": 0.33,
+            "total": {
+              "eliminations": 2,
+              "assists": 0,
+              "deaths": 6,
+              "damage": 1257,
+              "healing": 802
+            },
+            "average": {
+              "eliminations": 6.06,
+              "assists": 0,
+              "deaths": 18.18,
+              "damage": 3809.09,
+              "healing": 2430.3
+            }
+          },
+          {
+            "key": "kiriko",
+            "played": 0,
+            "won": 0,
+            "lost": 0,
+            "seconds": 46,
+            "winRate": 0,
+            "kda": 0,
+            "total": {
+              "eliminations": 0,
+              "assists": 0,
+              "deaths": 1,
+              "damage": 113,
+              "healing": 986
+            },
+            "average": {
+              "eliminations": 0,
+              "assists": 0,
+              "deaths": 13.04,
+              "damage": 1473.91,
+              "healing": 12860.87
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

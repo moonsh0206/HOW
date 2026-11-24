@@ -1,0 +1,38 @@
+[
+  {
+    "map": "busan",
+    "status": 200,
+    "fetchedAt": "2026-11-24T02:57:51.669Z",
+    "age": "1851",
+    "genji": {
+      "hero": "genji",
+      "pickrate": 20.8,
+      "winrate": 50.6,
+      "banrate": 1.9
+    }
+  },
+  {
+    "map": "ilios",
+    "status": 200,
+    "fetchedAt": "2026-11-24T02:57:52.896Z",
+    "age": null,
+    "genji": {
+      "hero": "genji",
+      "pickrate": 22,
+      "winrate": 52.9,
+      "banrate": 0.9
+    }
+  },
+  {
+    "map": "oasis",
+    "status": 200,
+    "fetchedAt": "2026-11-24T02:57:55.202Z",
+    "age": null,
+    "genji": {
+      "hero": "genji",
+      "pickrate": 21.6,
+      "winrate": 50.3,
+      "banrate": 1.6
+    }
+  }
+]

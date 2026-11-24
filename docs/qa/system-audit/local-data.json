@@ -1,0 +1,379 @@
+{
+  "at": "2026-11-24T00:24:42.067Z",
+  "snapshot": {
+    "indexKeys": [
+      "schemaVersion",
+      "snapshots"
+    ],
+    "indexEntries": 38,
+    "indexFiles": [
+      "2026-11-02T05-36-24.500Z.json",
+      "2026-11-04T00-52-25.812Z.json",
+      "2026-11-06T02-37-44.293Z.json",
+      "2026-11-06T02-38-15.758Z.json",
+      "2026-11-06T02-38-31.983Z.json",
+      "2026-11-20T00-24-17.799Z.json"
+    ],
+    "unindexed": [],
+    "dates": [
+      "2026-11-02T05:36:24.500Z",
+      "2026-11-04T00:52:25.812Z",
+      "2026-11-06T02:37:40.344Z",
+      "2026-11-06T02:37:40.735Z",
+      "2026-11-06T02:37:41.259Z",
+      "2026-11-06T02:37:41.591Z",
+      "2026-11-06T02:37:42.221Z",
+      "2026-11-06T02:37:42.863Z",
+      "2026-11-06T02:37:43.499Z",
+      "2026-11-06T02:37:43.824Z",
+      "2026-11-06T02:37:44.253Z",
+      "2026-11-06T02:38:12.319Z",
+      "2026-11-06T02:38:12.768Z",
+      "2026-11-06T02:38:13.459Z",
+      "2026-11-06T02:38:13.898Z",
+      "2026-11-06T02:38:14.267Z",
+      "2026-11-06T02:38:14.634Z",
+      "2026-11-06T02:38:14.939Z",
+      "2026-11-06T02:38:15.248Z",
+      "2026-11-06T02:38:15.725Z",
+      "2026-11-06T02:38:28.313Z",
+      "2026-11-06T02:38:28.989Z",
+      "2026-11-06T02:38:29.356Z",
+      "2026-11-06T02:38:29.902Z",
+      "2026-11-06T02:38:30.269Z",
+      "2026-11-06T02:38:30.863Z",
+      "2026-11-06T02:38:31.223Z",
+      "2026-11-06T02:38:31.577Z",
+      "2026-11-06T02:38:31.943Z",
+      "2026-11-20T00:24:14.752Z",
+      "2026-11-20T00:24:15.465Z",
+      "2026-11-20T00:24:15.814Z",
+      "2026-11-20T00:24:16.093Z",
+      "2026-11-20T00:24:16.373Z",
+      "2026-11-20T00:24:16.934Z",
+      "2026-11-20T00:24:17.214Z",
+      "2026-11-20T00:24:17.493Z",
+      "2026-11-20T00:24:17.773Z"
+    ],
+    "conditions": [
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"all\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"diamond\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"bronze\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"silver\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"gold\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"platinum\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"emerald\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"master\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"asia\",\"division\":\"grandmaster\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"all\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"bronze\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"silver\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"gold\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"platinum\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"emerald\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"diamond\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"master\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"europe\",\"division\":\"grandmaster\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"all\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"bronze\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"silver\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"gold\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"platinum\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"emerald\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"diamond\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"master\",\"map\":\"all\"}",
+      "{\"platform\":\"pc\",\"gamemode\":\"competitive\",\"region\":\"americas\",\"division\":\"grandmaster\",\"map\":\"all\"}"
+    ]
+  },
+  "datasets": {
+    "ranks/current.json": {
+      "keys": [
+        "schemaVersion",
+        "generatedAt",
+        "cohorts"
+      ],
+      "metadata": {
+        "schemaVersion": 1
+      },
+      "arrays": {
+        "cohorts": {
+          "count": 0
+        }
+      }
+    },
+    "role-means/observations.json": {
+      "keys": [
+        "aggregateVersion",
+        "generatedAt",
+        "method",
+        "metric",
+        "observations",
+        "roster",
+        "schemaVersion",
+        "sourceFingerprint",
+        "timezone"
+      ],
+      "metadata": {
+        "aggregateVersion": "how-role-hero-mean-v1",
+        "generatedAt": "2026-11-20T00:24:17.921Z",
+        "method": "equal-hero-weight-complete-roster",
+        "metric": "winRate",
+        "schemaVersion": 1,
+        "sourceFingerprint": "384359f8247281be56633db9ed7817dc0a59bd965e3f169d49610114a5a1c924",
+        "timezone": "Asia/Seoul"
+      },
+      "arrays": {
+        "count": 66,
+        "dates": [
+          "2026-11-02",
+          "2026-11-04",
+          "2026-11-06",
+          "2026-11-20"
+        ],
+        "latest": "2026-11-20T00:24:17.773Z",
+        "conditions": [
+          "{\"division\":\"all\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"diamond\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"bronze\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"silver\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"gold\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"platinum\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"emerald\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"master\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"grandmaster\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"bronze_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"diamond_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"emerald_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"gold_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"master_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"platinum_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"silver_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"asia\"}",
+          "{\"division\":\"all\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"bronze\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"silver\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"gold\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"platinum\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"emerald\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"diamond\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"master\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"grandmaster\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"bronze_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"diamond_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"emerald_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"gold_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"master_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"platinum_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"silver_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"europe\"}",
+          "{\"division\":\"all\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"bronze\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"silver\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"gold\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"platinum\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"emerald\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"diamond\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"master\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"grandmaster\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"bronze_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"diamond_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"emerald_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"gold_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"master_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"platinum_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}",
+          "{\"division\":\"silver_plus\",\"gamemode\":\"competitive\",\"map\":\"all\",\"platform\":\"pc\",\"region\":\"americas\"}"
+        ],
+        "nullRoles": 0
+      }
+    },
+    "patches/notes.json": {
+      "keys": [
+        "schemaVersion",
+        "patches"
+      ],
+      "metadata": {
+        "schemaVersion": 1
+      },
+      "arrays": {
+        "patches": {
+          "count": 3,
+          "first": {
+            "patchId": "patch-2026-11-05",
+            "publishedDate": "2026-11-05",
+            "localizedTitleDate": "2026-11-06",
+            "officialTitle": "오버워치 패치 노트 - 2026년 11월 6일",
+            "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-05",
+            "sourceUrlEn": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/#patch-2026-11-05",
+            "sourceHash": "8a27fac2932cc9550f33d19892315d1806d5ed5add66cf5821a62818514606b7",
+            "sourceHashEn": "02b88c8f8b685be0a61fd80603fe3479dc770c4068c18822a9008ec040481a46",
+            "type": "hotfix",
+            "effectiveAt": null,
+            "statisticsWindowStatus": "unverified",
+            "verificationStatus": "verified",
+            "reviewedAt": "2026-11-09",
+            "summaryKo": "레킹볼의 갈고리 회수 중 이동 제한과 아군 가속 적용이 개선됐습니다.",
+            "normalizationVersion": "official-patches-v2",
+            "coverage": {
+              "sourceCandidates": 3,
+              "verified": 3,
+              "pending": 0,
+              "excluded": 2
+            },
+            "changes": [
+              {
+                "id": "8926c8fb7f635b4b8813a4481be3714c8d78e2e0a48454dde1539989d2722133",
+                "patchId": "patch-2026-11-05",
+                "publishedDate": "2026-11-05",
+                "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-05",
+                "gameMode": "live-5v5",
+                "heroKey": "wrecking-ball",
+                "abilityName": "갈고리 고정",
+                "before": null,
+                "after": null,
+                "unit": null,
+                "changeType": "buff",
+                "summaryKo": "갈고리 회수 중 기본 속도 제한이 15% 높아졌습니다.",
+                "verificationStatus": "verified",
+                "evidenceHash": "d89d47be9d160e66d0ad2507eefb91e704f5c24778d0b9e6534fe9cd50a86f15",
+                "englishEvidenceId": "efb0659dd20272598e6e74e58ffb52cf68825ccfff7b929c411703c26b9f6225"
+              },
+              {
+                "id": "5129eceed5b24c8deb4e16bf1eb2c08fa77005f6f43b4231121c18ded207c8df",
+                "patchId": "patch-2026-11-05",
+                "publishedDate": "2026-11-05",
+                "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-05",
+                "gameMode": "live-5v5",
+                "heroKey": "wrecking-ball",
+                "abilityName": "갈고리 고정",
+                "before": null,
+                "after": null,
+                "unit": null,
+                "changeType": "buff",
+                "summaryKo": "갈고리를 회수하는 동안 아군 가속 효과가 제한 속도에도 반영됩니다.",
+                "verificationStatus": "verified",
+                "evidenceHash": "ff7bc790facdddd5ed9b20e1897591a2d518819ba7d9b0ec07042b0ade325e72",
+                "englishEvidenceId": "435f991308582aa13fdc9aa91f715fb301e6c6da4ef974543cf7a807bc3d5675"
+              },
+              {
+                "id": "be52e856d25b9b0b7b8983c29f5f518dd7ffb755b0588bec709f93c11ba0834e",
+                "patchId": "patch-2026-11-05",
+                "publishedDate": "2026-11-05",
+                "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-05",
+                "gameMode": "live-5v5",
+                "heroKey": "dmon",
+                "abilityName": "버그 수정",
+                "before": null,
+                "after": null,
+                "unit": null,
+                "changeType": "bugfix",
+                "metricKey": null,
+                "summaryKo": "조종사 상태로 부활할 때 메카 재탑승을 막던 궁극기 충전 문제를 이전 업데이트에서 수정했다고 안내했습니다.",
+                "category": "bugfix",
+                "verificationStatus": "verified",
+                "evidenceHash": "c36d4562341ecc88a797c2ef59686d65e83de1939a60a78f9ca2ee6448daedca",
+                "timing": "previous-update",
+                "abilityKey": "dmon:bug-fixes",
+                "englishEvidenceId": "ef2623bcfad9fc14076d06b6eb85b8df6b2fa60606d6c2e086246b5bdceef8ea",
+                "verificationMethod": "bilingual-manual-review"
+              }
+            ]
+          },
+          "last": {
+            "patchId": "patch-2026-11-16",
+            "publishedDate": "2026-11-16",
+            "localizedTitleDate": "2026-11-17",
+            "officialTitle": "오버워치 패치 노트 - 2026년 11월 17일",
+            "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+            "sourceUrlEn": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/#patch-2026-11-16",
+            "sourceHash": "d2c67f2078ebdb68317f98159a292a9206d5e8ac9dcee1706f61007c545c7cdc",
+            "sourceHashEn": "bece6538bdb7f6628d724146ca72eb4d846326641d1d9c28b71ce0fe2c43f13b",
+            "type": "hotfix",
+            "effectiveAt": null,
+            "statisticsWindowStatus": "unverified",
+            "verificationStatus": "verified",
+            "reviewStatus": "complete",
+            "reviewedAt": "2026-11-21",
+            "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+            "normalizationVersion": "official-patches-v2",
+            "coverage": {
+              "sourceCandidates": 0,
+              "verified": 0,
+              "pending": 0,
+              "excluded": 0
+            },
+            "changes": [],
+            "systemChanges": [
+              {
+                "id": "acdbdbd348b687690f809ef8ecae99ee12201c3eeff06e003a1399201630f3f1",
+                "patchId": "patch-2026-11-16",
+                "publishedDate": "2026-11-16",
+                "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+                "category": "competitive",
+                "section": "경쟁전 업데이트",
+                "evidenceHash": "89a4eb5e94f20b022a5eec460e82aa5cc3008c498039e223567d65e68b68a730",
+                "ruleKey": "champion-group-width",
+                "gameMode": "live-6v6",
+                "before": 4,
+                "after": 3,
+                "unit": "rank-width",
+                "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+                "englishEvidenceId": "f7441f8bcbe279c0f67e7287635a69b2df1f04eae6c861467602c6a92c9b8c88",
+                "englishEvidenceHash": "adb79809dde447375dc903b134fe03164cdbf1843745f0cf58534e64673b8d7c",
+                "verificationMethod": "bilingual-system-rule",
+                "verificationStatus": "verified"
+              }
+            ],
+            "systemNormalizationVersion": "official-system-v1",
+            "systemCoverage": {
+              "sourceCandidates": 1,
+              "verified": 1,
+              "pending": 0
+            }
+          }
+        }
+      }
+    },
+    "perks/overlooker-perks.json": {
+      "keys": [
+        "schemaVersion",
+        "source",
+        "sourceUrl",
+        "requestUrl",
+        "collectedAt",
+        "mappingVersion",
+        "filters",
+        "rateUnit",
+        "fields",
+        "providerUpdatedAt",
+        "patch",
+        "window",
+        "stageDenominators",
+        "providerSampleUnit",
+        "responseDate",
+        "cacheControl",
+        "ageSeconds",
+        "heroCount",
+        "perkCount",
+        "heroes"
+      ],
+      "metadata": {
+        "schemaVersion": 1,
+        "source": "OverLooker",
+        "sourceUrl": "https://overlooker.app/stats/perks",
+        "requestUrl": "https://stats.overlooker.app/api/perks",
+        "collectedAt": "2026-11-06T16:38:44.705Z",
+        "mappingVersion": "overlooker-perks-2026-11-07",
+        "rateUnit": "fraction",
+        "responseDate": "Fri, 06 Nov 2026 16:38:44 GMT",
+        "heroCount": 54,
+        "perkCount": 216
+      },
+      "arrays": {
+        "fields": {
+          "count": 3,
+          "first": "providerPerkId",
+          "last": "selectionCount"
+        }
+      },
+      "heroesCount": 54
+    }
+  }
+}

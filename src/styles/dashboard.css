@@ -233,3 +233,9 @@ html.how-swipe-transition{overflow-x:clip}
  .dashboard-legend{gap:6px;margin-block:4px 6px}
  .dashboard-legend strong{font-size:13px}
 }
+html.how-page-transition{overflow-x:clip;overflow-anchor:none}
+@media(max-width:767px){
+ .dashboard-history-chart svg{overflow:hidden}
+ .dashboard-history-chart>.dashboard-legend{margin-block:6px 8px}
+ .dashboard-history-chart>small{display:block;font-size:11px;line-height:1.5;color:var(--text-secondary)}
+}

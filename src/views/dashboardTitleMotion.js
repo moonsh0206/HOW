@@ -4,8 +4,9 @@ export function createDashboardTitleMotion(root,targets){
  let active=false,played=false,disposed=false,frame=null,animations=[];
  const cancel=()=>{if(frame!==null)win.cancelAnimationFrame?.(frame);frame=null;for(const animation of animations)animation.cancel();animations=[];root.classList.remove('dashboard-title-pending');};
  function start(){
-  if(disposed||!active||played||frame!==null||!root.isConnected||root.hidden||doc.documentElement.classList.contains('how-brand-intro-active'))return;
-  if(doc.documentElement.classList.contains('how-swipe-transition')){played=true;return;}
+  if(disposed||!active||played||frame!==null||!root.isConnected||root.hidden)return;
+  if(doc.documentElement.classList.contains('how-brand-intro-active')){played=true;return;}
+  if(doc.documentElement.classList.contains('how-swipe-transition')||doc.documentElement.classList.contains('how-page-transition')){played=true;return;}
   if(media?.matches||!win.requestAnimationFrame||!targets.every(el=>typeof el.animate==='function')){played=true;return;}
   root.classList.add('dashboard-title-pending');frame=win.requestAnimationFrame(()=>{frame=win.requestAnimationFrame(()=>{
    frame=null;if(disposed||!active||root.hidden||doc.documentElement.classList.contains('how-brand-intro-active')){root.classList.remove('dashboard-title-pending');return;}

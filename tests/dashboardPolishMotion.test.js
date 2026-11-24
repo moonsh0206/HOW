@@ -10,13 +10,13 @@ function fixture(){
  win.HTMLElement.prototype.animate=function(keyframes,options){let finish;const finished=new Promise(resolve=>finish=resolve),a={target:this,keyframes,options,finished,finish,cancelled:false,cancel(){this.cancelled=true;finish();}};animations.push(a);return a;};
  return {dom,win,doc,media,animations,frame(){const queue=[...frames];frames.clear();for(const [,fn]of queue)fn(0);},close(){dom.window.close();}};
 }
-test('title waits for connected visible route and logo completion, runs once despite redraw/language, cancels on leave',async()=>{
+test('intro reveal owns first title entrance; normal visits animate once and cancel on leave',async()=>{
  const f=fixture(),root=f.doc.querySelector('main'),targets=[...f.doc.querySelector('header').children],motion=createDashboardTitleMotion(root,targets);
  try{
   f.doc.documentElement.classList.add('how-brand-intro-active');motion.setActive(true);f.frame();f.frame();assert.equal(f.animations.length,0);
-  f.doc.documentElement.classList.remove('how-brand-intro-active');await tick();f.frame();f.frame();assert.deepEqual(f.animations.map(a=>a.options.duration),[500,620]);assert.equal(f.animations[1].options.delay,90);
-  targets[1].textContent='Translated';motion.setActive(true);await tick();f.frame();f.frame();assert.equal(f.animations.length,2);
-  motion.setActive(false);assert(f.animations.every(a=>a.cancelled));motion.setActive(true);f.frame();f.frame();assert.equal(f.animations.length,4);
+  f.doc.documentElement.classList.remove('how-brand-intro-active');await tick();f.frame();f.frame();assert.equal(f.animations.length,0);
+  targets[1].textContent='Translated';motion.setActive(true);await tick();f.frame();f.frame();assert.equal(f.animations.length,0);
+  motion.setActive(false);assert(f.animations.every(a=>a.cancelled));motion.setActive(true);f.frame();f.frame();assert.deepEqual(f.animations.map(a=>a.options.duration),[500,620]);
   f.media.matches=true;f.media.dispatchEvent(new f.win.Event('change'));assert(f.animations.every(a=>a.cancelled));assert(!root.classList.contains('dashboard-title-pending'));
  }finally{motion.destroy();f.close();}
 });

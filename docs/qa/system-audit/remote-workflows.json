@@ -1,0 +1,77 @@
+{
+  "total_count": 6,
+  "workflows": [
+    {
+      "id": 419719984,
+      "node_id": "W_kwDOVfsWTs4ZBGsw",
+      "name": "Lightweight daily role ranks",
+      "path": ".github/workflows/daily-ranks.yml",
+      "state": "active",
+      "created_at": "2026-11-16T04:04:12.000Z",
+      "updated_at": "2026-11-16T04:04:12.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/419719984",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/daily-ranks.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Lightweight%20daily%20role%20ranks/badge.svg"
+    },
+    {
+      "id": 406804506,
+      "node_id": "W_kwDOVfsWTs4YP1ga",
+      "name": "Daily diamond snapshot manual validation",
+      "path": ".github/workflows/daily-snapshots.yml",
+      "state": "active",
+      "created_at": "2026-11-04T11:01:08.000Z",
+      "updated_at": "2026-11-04T13:30:55.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/406804506",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/daily-snapshots.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Daily%20diamond%20snapshot%20manual%20validation/badge.svg"
+    },
+    {
+      "id": 419810151,
+      "node_id": "W_kwDOVfsWTs4ZBctn",
+      "name": "Preserve and publish graph observations",
+      "path": ".github/workflows/graph-snapshots.yml",
+      "state": "active",
+      "created_at": "2026-11-16T06:41:15.000Z",
+      "updated_at": "2026-11-16T06:41:15.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/419810151",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/graph-snapshots.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Preserve%20and%20publish%20graph%20observations/badge.svg"
+    },
+    {
+      "id": 411623148,
+      "node_id": "W_kwDOVfsWTs4YiN7s",
+      "name": "Daily official patch notes and Pages",
+      "path": ".github/workflows/official-patch-notes.yml",
+      "state": "active",
+      "created_at": "2026-11-09T02:13:51.000Z",
+      "updated_at": "2026-11-09T09:54:59.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/411623148",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/official-patch-notes.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Daily%20official%20patch%20notes%20and%20Pages/badge.svg"
+    },
+    {
+      "id": 404139395,
+      "node_id": "W_kwDOVfsWTs4YFq2D",
+      "name": "Build and deploy HOW to Pages",
+      "path": ".github/workflows/pages.yml",
+      "state": "active",
+      "created_at": "2026-11-02T04:53:38.000Z",
+      "updated_at": "2026-11-02T04:53:38.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/404139395",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/pages.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Build%20and%20deploy%20HOW%20to%20Pages/badge.svg"
+    },
+    {
+      "id": 406438461,
+      "node_id": "W_kwDOVfsWTs4YOcI9",
+      "name": "Patch snapshot manual validation",
+      "path": ".github/workflows/patch-snapshots.yml",
+      "state": "active",
+      "created_at": "2026-11-04T02:29:19.000Z",
+      "updated_at": "2026-11-04T02:29:19.000Z",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows/406438461",
+      "html_url": "https://github.com/moonsh0206/HOW/blob/main/.github/workflows/patch-snapshots.yml",
+      "badge_url": "https://github.com/moonsh0206/HOW/workflows/Patch%20snapshot%20manual%20validation/badge.svg"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export function consumeIntroVisit({location,base='/',storage,reduced=false,navig
 export function introGeometry(viewport,target,art={x:0,y:0,width:439,height:217}){
  const width=Math.min(680,viewport.width*.88),height=width*217/439;
  const from={left:(viewport.width-width)/2,top:(viewport.height-height)/2,width,height};
- const scale=target.width/art.width,toWidth=439*scale,toHeight=217*scale;
+ const scale=Math.min(target.width/art.width,target.height/art.height),toWidth=439*scale,toHeight=217*scale;
  const to={left:target.left-art.x*scale,top:target.top+target.height/2-(art.y+art.height/2)*scale,width:toWidth,height:toHeight};
  return {from,to,transform:`translate3d(${to.left-from.left}px,${to.top-from.top}px,0) scale(${to.width/from.width})`};
 }
@@ -36,8 +36,8 @@ export function createBrandIntro({document:doc=document,window:win=window,base='
  function stopListeners(){resizeObserver?.disconnect();resizeObserver=null;win.removeEventListener('resize',resize);win.visualViewport?.removeEventListener('resize',resize);win.removeEventListener('hashchange',navigation);win.removeEventListener('popstate',navigation);doc.removeEventListener('how:languagechange',navigation);doc.removeEventListener('visibilitychange',visibility);doc.removeEventListener('keydown',key,true);media?.removeEventListener?.('change',motion);}
  function finish(reason='complete',focus=true){
   if(done||disposed)return;done=true;setPhase(reason);if(frame!==null)cancelFrame(frame);frame=null;if(watchdog!==null)clearTimer(watchdog);watchdog=null;
-  logo.classList.remove('how-brand-deploy');flight?.cancel();reveal?.cancel();backdrop?.getAnimations?.().forEach(a=>a.cancel());
-  logo.removeAttribute('style');if(reason==='complete'&&host?.isConnected){host.style.setProperty('--brand-logo-width',439/art.width*100+'%');host.style.setProperty('--brand-logo-left',-art.x/art.width*100+'%');host.style.setProperty('--brand-logo-center',-(art.y+art.height/2)/217*100+'%');host.classList.add('how-brand-settled');logo.setAttribute('aria-hidden','true');logo.setAttribute('focusable','false');host.append(logo);}else{logo.remove();clearHeader();}
+  logo.classList.remove('how-brand-deploy');if(reason==='complete'&&geometry){styleAt(geometry.to);}flight?.cancel();reveal?.cancel();backdrop?.getAnimations?.().forEach(a=>a.cancel());
+  logo.removeAttribute('style');if(reason==='complete'&&host?.isConnected){const target=host.getBoundingClientRect(),landing=introGeometry(viewport(),target,art).to;host.style.setProperty('--brand-logo-width',landing.width/target.width*100+'%');host.style.setProperty('--brand-logo-left',(landing.left-target.left)/target.width*100+'%');host.style.setProperty('--brand-logo-center',-(art.y+art.height/2)/217*100+'%');host.classList.add('how-brand-settled');logo.setAttribute('aria-hidden','true');logo.setAttribute('focusable','false');host.append(logo);}else{logo.remove();clearHeader();}
   doc.documentElement.classList.remove('how-brand-intro-active');doc.documentElement.style.overflow=overflow;
   for(const [element,inert,attribute]of inertBefore){element.inert=inert;if(!attribute)element.removeAttribute('inert');}inertBefore=[];
   skip?.removeEventListener('click',skipClick);overlay?.remove();overlay=null;skip=null;backdrop=null;flight=null;reveal=null;stopListeners();

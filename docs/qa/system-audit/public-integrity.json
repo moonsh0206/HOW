@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-24T00:28:21.057Z",
+  "snapshotFiles": [
+    {
+      "file": "2026-11-02T05-36-24.500Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "0e9853d0c11d022a437bb5f3f355714da9fe45b349ae7210ea0985c87b0bd816"
+    },
+    {
+      "file": "2026-11-04T00-52-25.812Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "e6dce1cd90d8f902ce0397c4f9f7b9797e96b72452427a6f7eac548ee89cba2c"
+    },
+    {
+      "file": "2026-11-06T02-37-44.293Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "9616c40f1e7b402c97f84d45b1fba716fba5a079b8a812a94d10566049898457"
+    },
+    {
+      "file": "2026-11-06T02-38-15.758Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "78734a5da6fe967ea8a5966098ed926030297a7865850dea1d67c031fa54a092"
+    },
+    {
+      "file": "2026-11-06T02-38-31.983Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "6fc97329b12b38424bde9660820dd436ebfaa1b03d2808891d976cb31c2825a8"
+    },
+    {
+      "file": "2026-11-20T00-24-17.799Z.json",
+      "status": 200,
+      "exactBytes": true,
+      "sha256": "dba398b22fa1a88ffc90abc439a005b9908a71e113671bee97f5e55e09df20f8"
+    }
+  ],
+  "extra": [
+    {
+      "key": "archive-branch",
+      "status": 404,
+      "data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/git/refs#get-a-reference",
+        "status": "404"
+      }
+    },
+    {
+      "key": "daily-manual-runs",
+      "status": 200,
+      "data": {
+        "total_count": 0,
+        "workflow_runs": []
+      }
+    },
+    {
+      "key": "patch-manual-runs",
+      "status": 200,
+      "data": {
+        "total_count": 0,
+        "workflow_runs": []
+      }
+    }
+  ]
+}

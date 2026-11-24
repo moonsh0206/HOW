@@ -758,5 +758,15 @@ export default {
   "player.timeBarNote": "ロール内の最多プレイ時間との比率 · 選択して詳細へ",
   "player.noHeroRecords": "ヒーロー別のライバル・プレイ戦績なし",
   "patch.primaryCount": "{mode} · 変更{count}件",
-  "patch.otherCount": " / 他モード{count}件"
+  "patch.otherCount": " / 他モード{count}件",
+ 'heroMaps.title':"勝率で選ぶおすすめマップ TOP 3",
+ 'heroMaps.loading':"マップ別勝率を確認中",
+ 'heroMaps.empty':"おすすめマップのデータを確認できません。",
+ 'heroMaps.retry':"再試行",
+ 'heroMaps.lowPick':"低ピック率",
+ 'heroMaps.infoLabel':'おすすめの基準',
+ 'heroMaps.info':'取得可能なマップ統計に基づきます。一部のマップや現在のシーズン対象マップは未確認の場合があります。',
+ 'heroMaps.observed':"取得: {time}",
+ 'heroMaps.refreshing':'前回の観測を表示・更新中',
+ 'heroMaps.stale':'更新失敗・前回の観測',
 };

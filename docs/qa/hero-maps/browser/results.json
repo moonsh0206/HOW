@@ -1,0 +1,905 @@
+[
+  {
+    "width": 320,
+    "height": 700,
+    "lang": "ko",
+    "before": {
+      "height": 2022,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 911.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2242,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 998.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 86,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 700,
+    "lang": "en",
+    "before": {
+      "height": 2074,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 926.59375,
+      "graphHeight": 278.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2376,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 1029.984375,
+      "graphHeight": 320.78125,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 86,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 700,
+    "lang": "ja",
+    "before": {
+      "height": 2097,
+      "overflow": false,
+      "heroHeight": 173.296875,
+      "graphTop": 949.28125,
+      "graphHeight": 278.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2377,
+      "overflow": false,
+      "heroHeight": 177.296875,
+      "graphTop": 1079.46875,
+      "graphHeight": 278.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 86,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 86,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "lang": "ko",
+    "before": {
+      "height": 1982,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 911.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2202,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 998.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 99.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "lang": "en",
+    "before": {
+      "height": 2022,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 926.59375,
+      "graphHeight": 261.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2259,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 1029.984375,
+      "graphHeight": 261.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 99.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "lang": "ja",
+    "before": {
+      "height": 2036,
+      "overflow": false,
+      "heroHeight": 153.796875,
+      "graphTop": 924.6875,
+      "graphHeight": 261.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2260,
+      "overflow": false,
+      "heroHeight": 157.796875,
+      "graphTop": 1015.578125,
+      "graphHeight": 261.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 99.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 99.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "lang": "ko",
+    "before": {
+      "height": 1947,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 911.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2202,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 998.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 109.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "lang": "en",
+    "before": {
+      "height": 2022,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 926.59375,
+      "graphHeight": 261.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2259,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 1029.984375,
+      "graphHeight": 261.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 109.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "lang": "ja",
+    "before": {
+      "height": 1955,
+      "overflow": false,
+      "heroHeight": 153.796875,
+      "graphTop": 919.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2180,
+      "overflow": false,
+      "heroHeight": 157.796875,
+      "graphTop": 1010.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 109.328125,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 109.34375,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "lang": "ko",
+    "before": {
+      "height": 1911,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 911.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2132,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 998.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 122.65625,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 122.671875,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 122.65625,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "lang": "en",
+    "before": {
+      "height": 1931,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 926.59375,
+      "graphHeight": 261.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2152,
+      "overflow": false,
+      "heroHeight": 160.796875,
+      "graphTop": 1013.484375,
+      "graphHeight": 261.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 122.65625,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 122.671875,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 122.65625,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "lang": "ja",
+    "before": {
+      "height": 1919,
+      "overflow": false,
+      "heroHeight": 153.796875,
+      "graphTop": 919.59375,
+      "graphHeight": 236.890625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2144,
+      "overflow": false,
+      "heroHeight": 157.796875,
+      "graphTop": 1010.484375,
+      "graphHeight": 236.890625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 122.65625,
+          "height": 100.890625
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 122.671875,
+          "height": 100.890625
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 122.65625,
+          "height": 100.890625
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "lang": "ko",
+    "before": {
+      "height": 1994,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 844.578125,
+      "graphHeight": 288.953125,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1994,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1089.953125,
+      "graphHeight": 288.953125,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 128.9375,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 128.953125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 128.953125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "lang": "en",
+    "before": {
+      "height": 2035,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 844.578125,
+      "graphHeight": 317.34375,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2035,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1089.953125,
+      "graphHeight": 317.34375,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 128.9375,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 128.953125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 128.953125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "lang": "ja",
+    "before": {
+      "height": 2030,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 844.578125,
+      "graphHeight": 288.953125,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 2030,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1089.953125,
+      "graphHeight": 288.953125,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 128.9375,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 128.953125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 128.953125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "lang": "ko",
+    "before": {
+      "height": 1676,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 842.578125,
+      "graphHeight": 277.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1676,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1087.953125,
+      "graphHeight": 277.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 182.078125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "lang": "en",
+    "before": {
+      "height": 1694,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 842.578125,
+      "graphHeight": 300.1875,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1694,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1087.953125,
+      "graphHeight": 300.1875,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 182.078125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "lang": "ja",
+    "before": {
+      "height": 1694,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 842.578125,
+      "graphHeight": 280.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1694,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1087.953125,
+      "graphHeight": 280.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 182.078125,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 182.078125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "lang": "ko",
+    "before": {
+      "height": 1405,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 758.578125,
+      "graphHeight": 277.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1549,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1003.953125,
+      "graphHeight": 277.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1일리오스52.90%",
+          "width": 260.28125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2부산50.60%",
+          "width": 260.296875,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3오아시스50.30%",
+          "width": 260.28125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "lang": "en",
+    "before": {
+      "height": 1423,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 758.578125,
+      "graphHeight": 277.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1549,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1003.953125,
+      "graphHeight": 277.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1Ilios52.90%",
+          "width": 260.28125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2Busan50.60%",
+          "width": 260.296875,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3Oasis50.30%",
+          "width": 260.28125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "lang": "ja",
+    "before": {
+      "height": 1423,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 758.578125,
+      "graphHeight": 280.390625,
+      "cards": [],
+      "graphTransform": "none"
+    },
+    "after": {
+      "height": 1552,
+      "overflow": false,
+      "heroHeight": 244.78125,
+      "graphTop": 1003.953125,
+      "graphHeight": 280.390625,
+      "cards": [
+        {
+          "key": "ilios",
+          "text": "1イリオス52.90%",
+          "width": 260.28125,
+          "height": 122.1875
+        },
+        {
+          "key": "busan",
+          "text": "2釜山50.60%",
+          "width": 260.296875,
+          "height": 122.1875
+        },
+        {
+          "key": "oasis",
+          "text": "3オアシス50.30%",
+          "width": 260.28125,
+          "height": 122.1875
+        }
+      ],
+      "graphTransform": "none"
+    },
+    "errors": []
+  }
+]

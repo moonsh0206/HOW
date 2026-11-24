@@ -1,0 +1,167 @@
+{
+  "checkedDateKST": "2026-11-24",
+  "jobs": [
+    {
+      "jobs": [
+        {
+          "id": 137575573716,
+          "name": "prepare",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 45140070109,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run npm ci",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Detect and validate JSON atomically",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Test changed candidate",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6
+            },
+            {
+              "name": "Resolve Pages base",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 7
+            },
+            {
+              "name": "Restore published lightweight ranks when enabled",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 8
+            },
+            {
+              "name": "Restore durable graph observations when enabled",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 9
+            },
+            {
+              "name": "Build changed candidate",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 10
+            },
+            {
+              "name": "Verify Pages paths",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 11
+            },
+            {
+              "name": "Save exactly the validated JSON",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 12
+            },
+            {
+              "name": "Upload tested site from this same workflow",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 13
+            },
+            {
+              "name": "Retain review and failure reports without committing them",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 14
+            },
+            {
+              "name": "Post Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 27
+            },
+            {
+              "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 28
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 29
+            }
+          ]
+        },
+        {
+          "id": 137575929355,
+          "name": "publish",
+          "status": "completed",
+          "conclusion": "skipped",
+          "run_id": 45140070109,
+          "logs_url": null,
+          "steps": null
+        }
+      ]
+    },
+    {
+      "jobs": [
+        {
+          "id": 137581650537,
+          "name": "publish",
+          "status": "completed",
+          "conclusion": "skipped",
+          "run_id": 45141878673,
+          "logs_url": null,
+          "steps": null
+        }
+      ]
+    },
+    {
+      "jobs": [
+        {
+          "id": 137981078821,
+          "name": "publish",
+          "status": "completed",
+          "conclusion": "skipped",
+          "run_id": 45256927957,
+          "logs_url": null,
+          "steps": null
+        }
+      ]
+    }
+  ],
+  "patchPrepare": {
+    "run": 45140070109,
+    "job": 137575573716,
+    "checkedAt": "2026-11-23T08:37:48.947Z",
+    "status": "review-required",
+    "changed": false,
+    "pendingPatches": 2,
+    "pendingSystemChanges": 13,
+    "heroChanges": 65,
+    "systemChanges": 1
+  }
+}

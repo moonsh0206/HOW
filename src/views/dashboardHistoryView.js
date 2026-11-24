@@ -33,12 +33,12 @@ export function dashboardHistoryChart(data){
  const minDay=Math.min(...points.map(p=>dayIndex(p.day))),maxDay=Math.max(...points.map(p=>dayIndex(p.day)));
  const min=Math.max(0,Math.floor((Math.min(...points.map(p=>p.value))-2)/5)*5),max=Math.min(100,Math.ceil((Math.max(...points.map(p=>p.value))+2)/5)*5);
  root.classList.toggle('is-single-observation',minDay===maxDay);
- const x=p=>minDay===maxDay?272:64+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*416,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;
+ const x=p=>minDay===maxDay?278:76+(dayIndex(p.day)-minDay)/Math.max(1,maxDay-minDay)*404,y=p=>175-(p.value-min)/Math.max(1,max-min)*145;
  const svg=svgNode('svg',{viewBox:'0 0 510 220',preserveAspectRatio:'xMidYMid meet',role:'img','aria-label':t('dashboard.graphLabel')});
  const title=svgNode('title');title.textContent=t('dashboard.graphLabel');svg.append(title);
- for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:64,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:57,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}
+ for(let i=0;i<4;i++){const value=min+(max-min)*i/3,py=175-145*i/3;svg.append(svgNode('line',{x1:76,x2:480,y1:py,y2:py,class:'dashboard-gridline'}));const text=svgNode('text',{x:69,y:py+4,'text-anchor':'end'});text.textContent=value.toFixed(1)+'%';svg.append(text);}
  for(const day of [...new Set(points.map(p=>p.day))].filter((_,i,all)=>i===0||i===all.length-1||i===Math.floor(all.length/2))){const text=svgNode('text',{x:x({day}),y:202,'text-anchor':'middle'});text.textContent=new Date(day+'T00:00:00Z').toLocaleDateString(formatLocale(),{month:'numeric',day:'numeric',timeZone:'UTC'});svg.append(text);}
- const defs=svgNode('defs'),clip=svgNode('clipPath',{id:'dashboard-history-reveal'}),rect=svgNode('rect',{x:60,y:20,width:426,height:165});rect.dataset.dashboardReveal='';clip.append(rect);defs.append(clip);svg.append(defs);
+ const defs=svgNode('defs'),clip=svgNode('clipPath',{id:'dashboard-history-reveal'}),rect=svgNode('rect',{x:72,y:20,width:414,height:165});rect.dataset.dashboardReveal='';clip.append(rect);defs.append(clip);svg.append(defs);
  const traces=svgNode('g',{'clip-path':'url(#dashboard-history-reveal)'});
  for(const patch of PATCH_CATALOG){const day=patch.publishedDate??patch.date;if(dayIndex(day)<minDay||dayIndex(day)>maxDay)continue;const marker=svgNode('line',{x1:x({day}),x2:x({day}),y1:25,y2:175,class:'dashboard-patch-marker'});const hint=svgNode('title');hint.textContent=`${day} · ${patch.id} · ${t('dashboard.patchBoundary')}`;marker.append(hint);svg.append(marker);}
  const table=node('table'),accessible=node('div',undefined,'sr-only');accessible.append(table);table.append(node('caption',t('dashboard.graphLabel')));

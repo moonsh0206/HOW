@@ -1,6 +1,7 @@
 import { normalizeStatistics, statisticsQuery, validateFilters,isCompositeDivision,divisionMembers } from '../models/statisticsModel.js';
 import {combineDivisionStatistics} from '../models/compositeStatisticsModel.js';
 import {originalProvenance,derivedProvenance} from '../models/statisticsProvenance.js';
+import {mapPerformanceStart,mapPerformanceMark,mapPerformanceEnd} from './heroMapPerformance.js';
 
 export const STATISTICS_TTL = 60 * 60 * 1000;
 export function createStatisticsService({ fetcher = globalThis.fetch, now = Date.now, timeoutMs = 12000, ttlMs = STATISTICS_TTL, baseUrl = 'https://overfast-api.tekrop.fr' } = {}) {
@@ -12,6 +13,14 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
   let active=0;const queue=[];
   async function limited(task){if(active>=3)await new Promise(resolve=>queue.push(resolve));else active++;try{return await task();}finally{const next=queue.shift();if(next)next();else active--;}}
   const service = {
+    // Read-only scheduling hint: reuse the existing response/Promise; never
+    // extend TTL or compute a separate composite policy for recommendations.
+    canReuseStatistics(input){
+      const filters=validateFilters(input),key=statisticsQuery(filters);
+      if(pending.has(key))return true;
+      if(isCompositeDivision(filters.division))return divisionMembers(filters.division).every(division=>service.canReuseStatistics({...filters,division}));
+      return !!cache.get(key)&&now()<cache.get(key).expiresAt;
+    },
     getStatistics(input) {
       let filters, key;
       try { filters = validateFilters(input); key = statisticsQuery(filters); } catch (error) { return Promise.reject(error); }
@@ -33,10 +42,11 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
           }finally{pending.delete(key);}
         }
         const controller = new AbortController();
+        const trace=mapPerformanceStart();
         const timeout = setTimeout(() => controller.abort(), timeoutMs);
         let retryMs = 60000;
         try {
-          const {response,raw} = await limited(async()=>{const response=await fetcher(`${baseUrl}/heroes/stats?${key}`, { signal: controller.signal });return {response,raw:response.ok?await response.json():undefined};});
+          const {response,raw} = await limited(async()=>{const started=globalThis.performance?.now?.()??0;mapPerformanceMark(trace,'network-start',{query:key});const response=await fetcher(`${baseUrl}/heroes/stats?${key}`, { signal: controller.signal });const raw=response.ok?await response.json():undefined;mapPerformanceEnd(trace,'network-complete',{query:key,status:response.status,networkMs:(globalThis.performance?.now?.()??0)-started});return {response,raw};});
           if (!response.ok) {
             const header = response.headers?.get('retry-after');
             if (header) {
@@ -45,7 +55,8 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
             }
             throw new Error(response.status === 429 ? '통계 요청이 제한되었습니다. 잠시 후 다시 확인해 주세요. (429)' : response.status === 503 ? '통계 제공처가 일시적으로 응답하지 않습니다. (503)' : `통계 요청 실패 (HTTP ${response.status})`);
           }
-          const records = normalizeStatistics(raw);
+          const normalizationStarted=globalThis.performance?.now?.()??0,records = normalizeStatistics(raw);
+          mapPerformanceEnd(trace,'normalized',{query:key,records:records.length,normalizationMs:(globalThis.performance?.now?.()??0)-normalizationStarted});
           const ageHeader = response.headers?.get('age');
           const age = ageHeader != null && /^\d+$/.test(ageHeader) ? Number(ageHeader) : 0;
           const timestamp = now();
@@ -57,7 +68,7 @@ export function createStatisticsService({ fetcher = globalThis.fetch, now = Date
           const failure = { message: `${message} 최소 ${Math.ceil(retryMs / 1000)}초 뒤 다시 확인합니다.`, retryAt: now() + retryMs };
           failures.set(key, failure);
           return fallback(cached, failure);
-        } finally { clearTimeout(timeout); pending.delete(key); }
+        } finally { clearTimeout(timeout); pending.delete(key);mapPerformanceEnd(trace,'statistics-finished'); }
       })();
       pending.set(key, request);
       return request;

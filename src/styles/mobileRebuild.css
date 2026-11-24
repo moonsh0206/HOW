@@ -107,7 +107,7 @@
  .dashboard-rank-more{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:6px 10px;border:1px solid var(--border-subtle);border-radius:var(--radius-control);background:var(--surface-inset);color:var(--text-secondary);font-size:12px;margin-top:6px}
  .dashboard-role-filters{display:flex;flex-wrap:wrap}
  .dashboard-role-filters button{padding:6px 8px;font-size:12px}
- .dashboard-history-chart svg text{font-size:17px}
+ .dashboard-history-chart svg text{font-size:10.5px;font-weight:400;letter-spacing:0;font-stretch:normal}
  .dashboard-bottom{gap:8px;align-items:start}
  .dashboard-bottom .dashboard-panel-head{align-items:start}
  .dashboard-bottom .dashboard-panel-head label{width:100%}

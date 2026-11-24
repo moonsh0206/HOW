@@ -102,7 +102,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     plot.addEventListener('pointermove',nearestPoint);plot.addEventListener('click',event=>{if(event.detail)nearestPoint(event);});
     panel.append(graph,labels,selected);
     const lastPoint=data.points.reduce((a,b)=>a.time>b.time?a:b),observedAt=formatHistoryTimestamp(lastPoint.collectedAt??lastPoint.time);
-    if(observedAt)panel.append(node('p',t('dashboard.lastObservation',{time:observedAt}),'history-last-observed'));
+    if(observedAt)panel.append(node('p',t('dashboard.lastObservation',{time:observedAt.replace(/ KST$/,'')}),'history-last-observed'));
     const info=node('div',undefined,'history-info');
     if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))info.append(node('p',t("채운 점: 저장 · 테두리 점: 현재 조회(미저장)"),'history-observation'));
     if(data.comparisonSegments?.length)info.append(node('p',t("점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다."),'history-observation'));

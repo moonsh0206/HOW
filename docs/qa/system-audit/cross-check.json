@@ -1,0 +1,544 @@
+{
+  "at": "2026-11-24T00:27:08.306Z",
+  "http": [
+    {
+      "key": "stats-diamond",
+      "path": "/heroes/stats?platform=pc&gamemode=competitive&region=asia&competitive_division=diamond",
+      "status": 200,
+      "age": "2044",
+      "cors": "*"
+    },
+    {
+      "key": "detail-genji",
+      "path": "/heroes/genji?locale=ko-kr",
+      "status": 200,
+      "age": "25064",
+      "cors": "*"
+    },
+    {
+      "key": "search-TeKrop",
+      "path": "/players?name=TeKrop&limit=20&offset=0",
+      "status": 200,
+      "age": null,
+      "cors": "*",
+      "total": 1,
+      "results": 1
+    },
+    {
+      "key": "search-tekrop",
+      "path": "/players?name=tekrop&limit=20&offset=0",
+      "status": 200,
+      "age": null,
+      "cors": "*",
+      "total": 0,
+      "results": 0
+    },
+    {
+      "key": "search-TEKROP",
+      "path": "/players?name=TEKROP&limit=20&offset=0",
+      "status": 200,
+      "age": null,
+      "cors": "*",
+      "total": 0,
+      "results": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "ranks",
+      "equal": true,
+      "localHash": "376a5dab3b09a8fb2ae5715ae7aefb8025399cc9fa10ab17916fdae492fd2b79",
+      "remoteHash": "376a5dab3b09a8fb2ae5715ae7aefb8025399cc9fa10ab17916fdae492fd2b79"
+    },
+    {
+      "key": "snapshots",
+      "equal": true,
+      "localHash": "5e7d552b126408cab257a9f2f101600374a68acc5894f457ccfc5ac5ced395b3",
+      "remoteHash": "5e7d552b126408cab257a9f2f101600374a68acc5894f457ccfc5ac5ced395b3"
+    },
+    {
+      "key": "means",
+      "equal": true,
+      "localHash": "5faa227ea0e02a6ade2e281263ee56d70843dc5f5e27e8a38e59b8d52fb97816",
+      "remoteHash": "5faa227ea0e02a6ade2e281263ee56d70843dc5f5e27e8a38e59b8d52fb97816"
+    },
+    {
+      "key": "patches",
+      "equal": true,
+      "localHash": "c41572bf3a9fc4ae06b235e10d6f4a9e6148507201eaff41b27fcb6de9de8f2e",
+      "remoteHash": "c41572bf3a9fc4ae06b235e10d6f4a9e6148507201eaff41b27fcb6de9de8f2e"
+    },
+    {
+      "key": "perks",
+      "equal": true,
+      "localHash": "48449d946bebb8a9a30ffe351e5a81cfc21bebc9ab7c0dec904064140f06c221",
+      "remoteHash": "48449d946bebb8a9a30ffe351e5a81cfc21bebc9ab7c0dec904064140f06c221"
+    }
+  ],
+  "statistics": {
+    "heroes": 54,
+    "rows": 54,
+    "missingKeys": [],
+    "unrecognized": [],
+    "classified": 54,
+    "nullMetrics": [],
+    "top": [
+      {
+        "key": "junker-queen",
+        "role": "tank",
+        "statistics": {
+          "hero": "junker-queen",
+          "winRate": 55.4,
+          "pickRate": 11.6,
+          "banRate": 28.1
+        },
+        "tier": "S",
+        "score": 95,
+        "percentiles": [
+          100,
+          85.71428571428571,
+          85.71428571428571
+        ]
+      },
+      {
+        "key": "torbjorn",
+        "role": "damage",
+        "statistics": {
+          "hero": "torbjorn",
+          "winRate": 53.8,
+          "pickRate": 8.6,
+          "banRate": 4.5
+        },
+        "tier": "S",
+        "score": 90.4545454545,
+        "percentiles": [
+          100,
+          72.72727272727273,
+          72.72727272727273
+        ]
+      },
+      {
+        "key": "brigitte",
+        "role": "support",
+        "statistics": {
+          "hero": "brigitte",
+          "winRate": 53.7,
+          "pickRate": 14.3,
+          "banRate": 2.1
+        },
+        "tier": "S",
+        "score": 88,
+        "percentiles": [
+          100,
+          73.33333333333333,
+          46.666666666666664
+        ]
+      },
+      {
+        "key": "reaper",
+        "role": "damage",
+        "statistics": {
+          "hero": "reaper",
+          "winRate": 52.9,
+          "pickRate": 13.2,
+          "banRate": 8.3
+        },
+        "tier": "S",
+        "score": 85,
+        "percentiles": [
+          86.36363636363636,
+          81.81818181818183,
+          84.0909090909091
+        ]
+      },
+      {
+        "key": "pharah",
+        "role": "damage",
+        "statistics": {
+          "hero": "pharah",
+          "winRate": 53.2,
+          "pickRate": 6.8,
+          "banRate": 42
+        },
+        "tier": "S",
+        "score": 83.8636363636,
+        "percentiles": [
+          90.9090909090909,
+          59.09090909090909,
+          100
+        ]
+      }
+    ],
+    "sampleMapping": [
+      {
+        "raw": {
+          "hero": "ana",
+          "pickrate": 29.6,
+          "winrate": 46.1,
+          "banrate": 5.7
+        },
+        "normalized": {
+          "hero": "ana",
+          "winRate": 46.1,
+          "pickRate": 29.6,
+          "banRate": 5.7
+        }
+      },
+      {
+        "raw": {
+          "hero": "anran",
+          "pickrate": 6.1,
+          "winrate": 49.8,
+          "banrate": 3
+        },
+        "normalized": {
+          "hero": "anran",
+          "winRate": 49.8,
+          "pickRate": 6.1,
+          "banRate": 3
+        }
+      },
+      {
+        "raw": {
+          "hero": "ashe",
+          "pickrate": 5.5,
+          "winrate": 49.5,
+          "banrate": 0.2
+        },
+        "normalized": {
+          "hero": "ashe",
+          "winRate": 49.5,
+          "pickRate": 5.5,
+          "banRate": 0.2
+        }
+      }
+    ]
+  },
+  "perks": {
+    "collectedAt": "2026-11-06T16:38:44.705Z",
+    "heroes": 54,
+    "pairs": [
+      {
+        "heroKey": "ana",
+        "status": "ready",
+        "source": "OverLooker",
+        "sourceUrl": "https://overlooker.app/stats/perks",
+        "permission": "user-confirmed-provider-approval",
+        "mappingVersion": "overlooker-perks-2026-11-07",
+        "patch": null,
+        "window": null,
+        "filters": {
+          "queue_type": null,
+          "since": null
+        },
+        "sample": {
+          "unit": null,
+          "minor": null,
+          "major": null
+        },
+        "fetchedAt": null,
+        "entries": [
+          {
+            "heroKey": "ana",
+            "providerHeroSlug": "ana",
+            "providerPerkId": "local_anesthetic",
+            "perkKey": "ana:local_anesthetic",
+            "tier": "minor",
+            "selectionRate": 54.75,
+            "selectionCount": 415,
+            "sampleSize": null,
+            "observedAt": null,
+            "filters": {
+              "queue_type": null,
+              "since": null
+            },
+            "source": "OverLooker",
+            "status": "ready"
+          },
+          {
+            "heroKey": "ana",
+            "providerHeroSlug": "ana",
+            "providerPerkId": "speed_serum",
+            "perkKey": "ana:speed_serum",
+            "tier": "minor",
+            "selectionRate": 44.99,
+            "selectionCount": 341,
+            "sampleSize": null,
+            "observedAt": null,
+            "filters": {
+              "queue_type": null,
+              "since": null
+            },
+            "source": "OverLooker",
+            "status": "ready"
+          },
+          {
+            "heroKey": "ana",
+            "providerHeroSlug": "ana",
+            "providerPerkId": "biotic_bounce",
+            "perkKey": "ana:biotic_bounce",
+            "tier": "major",
+            "selectionRate": 37.79,
+            "selectionCount": 692,
+            "sampleSize": null,
+            "observedAt": null,
+            "filters": {
+              "queue_type": null,
+              "since": null
+            },
+            "source": "OverLooker",
+            "status": "ready"
+          },
+          {
+            "heroKey": "ana",
+            "providerHeroSlug": "ana",
+            "providerPerkId": "headhunter",
+            "perkKey": "ana:headhunter",
+            "tier": "major",
+            "selectionRate": 62.21,
+            "selectionCount": 1139,
+            "sampleSize": null,
+            "observedAt": null,
+            "filters": {
+              "queue_type": null,
+              "since": null
+            },
+            "source": "OverLooker",
+            "status": "ready"
+          }
+        ],
+        "providerHeroSlug": "ana",
+        "providerSampleSize": 2589,
+        "providerSampleUnit": null,
+        "storage": "same-origin-json",
+        "collectedAt": "2026-11-06T16:38:44.705Z",
+        "providerUpdatedAt": null
+      }
+    ]
+  },
+  "patches": {
+    "latest": {
+      "officialTitle": "오버워치 패치 노트 - 2026년 11월 17일",
+      "dateKo": "2026-11-16",
+      "localizedTitleDate": "2026-11-17",
+      "label": "라이브 핫픽스",
+      "type": "hotfix",
+      "summary": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+      "systemChanges": [
+        {
+          "id": "acdbdbd348b687690f809ef8ecae99ee12201c3eeff06e003a1399201630f3f1",
+          "patchId": "patch-2026-11-16",
+          "publishedDate": "2026-11-16",
+          "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+          "category": "competitive",
+          "section": "경쟁전 업데이트",
+          "evidenceHash": "89a4eb5e94f20b022a5eec460e82aa5cc3008c498039e223567d65e68b68a730",
+          "ruleKey": "champion-group-width",
+          "gameMode": "live-6v6",
+          "before": 4,
+          "after": 3,
+          "unit": "rank-width",
+          "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+          "englishEvidenceId": "f7441f8bcbe279c0f67e7287635a69b2df1f04eae6c861467602c6a92c9b8c88",
+          "englishEvidenceHash": "adb79809dde447375dc903b134fe03164cdbf1843745f0cf58534e64673b8d7c",
+          "verificationMethod": "bilingual-system-rule",
+          "verificationStatus": "verified"
+        }
+      ],
+      "heroChangeCount": 0,
+      "changes": [
+        "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다."
+      ],
+      "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+      "sourceId": "patch-2026-11-16",
+      "reviewedAt": "2026-11-21",
+      "statisticsWindowStatus": "unverified"
+    },
+    "ana": "patch-2026-11-03",
+    "wreckingBall": "patch-2026-11-05"
+  },
+  "ranks": {
+    "cohorts": 0
+  },
+  "means": {
+    "asia-7": {
+      "available": false,
+      "points": [
+        {
+          "role": "tank",
+          "days": [
+            "2026-11-20"
+          ],
+          "values": [
+            48.940000000000005
+          ]
+        },
+        {
+          "role": "damage",
+          "days": [
+            "2026-11-20"
+          ],
+          "values": [
+            49.62173913043479
+          ]
+        },
+        {
+          "role": "support",
+          "days": [
+            "2026-11-20"
+          ],
+          "values": [
+            48.71041666666666
+          ]
+        }
+      ]
+    },
+    "asia-30": {
+      "available": true,
+      "points": [
+        {
+          "role": "tank",
+          "days": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "values": [
+            48.40666666666667,
+            48.940000000000005
+          ]
+        },
+        {
+          "role": "damage",
+          "days": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "values": [
+            49.68695652173913,
+            49.62173913043479
+          ]
+        },
+        {
+          "role": "support",
+          "days": [
+            "2026-11-06",
+            "2026-11-20"
+          ],
+          "values": [
+            47.40416666666667,
+            48.71041666666666
+          ]
+        }
+      ]
+    },
+    "europe-7": {
+      "available": false,
+      "points": [
+        {
+          "role": "tank",
+          "days": [],
+          "values": []
+        },
+        {
+          "role": "damage",
+          "days": [],
+          "values": []
+        },
+        {
+          "role": "support",
+          "days": [],
+          "values": []
+        }
+      ]
+    },
+    "europe-30": {
+      "available": false,
+      "points": [
+        {
+          "role": "tank",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            48.89111111111111
+          ]
+        },
+        {
+          "role": "damage",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            49.67971014492752
+          ]
+        },
+        {
+          "role": "support",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            50.06041666666666
+          ]
+        }
+      ]
+    },
+    "americas-7": {
+      "available": false,
+      "points": [
+        {
+          "role": "tank",
+          "days": [],
+          "values": []
+        },
+        {
+          "role": "damage",
+          "days": [],
+          "values": []
+        },
+        {
+          "role": "support",
+          "days": [],
+          "values": []
+        }
+      ]
+    },
+    "americas-30": {
+      "available": false,
+      "points": [
+        {
+          "role": "tank",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            49.23555555555556
+          ]
+        },
+        {
+          "role": "damage",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            50.03478260869566
+          ]
+        },
+        {
+          "role": "support",
+          "days": [
+            "2026-11-06"
+          ],
+          "values": [
+            50.006249999999994
+          ]
+        }
+      ]
+    }
+  },
+  "derive": {
+    "changed": false,
+    "observations": 66,
+    "applied": false
+  }
+}

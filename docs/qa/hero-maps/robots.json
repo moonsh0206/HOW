@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /health
+Disallow: /preview
+Disallow: /paid-item
+
+Sitemap: https://overwatch.nexon.com/sitemap.xml

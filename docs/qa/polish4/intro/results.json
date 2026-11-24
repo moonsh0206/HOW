@@ -1,0 +1,292 @@
+[
+  {
+    "width": 390,
+    "frames": [
+      {
+        "phase": "deploy",
+        "logos": 1,
+        "logo": {
+          "left": 23.390625,
+          "top": 337.171875,
+          "width": 343.1875,
+          "height": 169.640625,
+          "right": 366.578125,
+          "bottom": 506.8125
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "hold",
+        "logos": 1,
+        "logo": {
+          "left": 23.390625,
+          "top": 337.171875,
+          "width": 343.1875,
+          "height": 169.640625,
+          "right": 366.578125,
+          "bottom": 506.8125
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "flight",
+        "logos": 1,
+        "logo": {
+          "left": -8.45461654663086,
+          "top": 41.25189208984375,
+          "width": 168.37075805664062,
+          "height": 83.22715759277344,
+          "right": 159.91614151000977,
+          "bottom": 124.47904968261719
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "flight",
+        "logos": 1,
+        "logo": {
+          "left": -13.33163070678711,
+          "top": -4.06744384765625,
+          "width": 141.59805297851562,
+          "height": 69.99317169189453,
+          "right": 128.26642227172852,
+          "bottom": 65.92572784423828
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "complete",
+        "logos": 1,
+        "logo": {
+          "left": -13.328125,
+          "top": -4.206394195556641,
+          "width": 141.515625,
+          "height": 69.9375,
+          "right": 128.1875,
+          "bottom": 65.73110580444336
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": true,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "complete",
+        "logos": 1,
+        "logo": {
+          "left": -13.328125,
+          "top": -4.206394195556641,
+          "width": 141.515625,
+          "height": 69.9375,
+          "right": 128.1875,
+          "bottom": 65.73110580444336
+        },
+        "host": {
+          "left": 12,
+          "top": 10,
+          "width": 96,
+          "height": 44.515625,
+          "right": 108,
+          "bottom": 54.515625
+        },
+        "landed": true,
+        "originalVisibility": "hidden"
+      }
+    ],
+    "errors": [],
+    "routing": {
+      "detail": true,
+      "search": true,
+      "oldScroll": 250,
+      "newScroll": 0,
+      "restoredScroll": 250
+    }
+  },
+  {
+    "width": 1440,
+    "frames": [
+      {
+        "phase": "deploy",
+        "logos": 1,
+        "logo": {
+          "left": 380,
+          "top": 281.921875,
+          "width": 680,
+          "height": 336.125,
+          "right": 1060,
+          "bottom": 618.046875
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "hold",
+        "logos": 1,
+        "logo": {
+          "left": 380,
+          "top": 281.921875,
+          "width": 680,
+          "height": 336.125,
+          "right": 1060,
+          "bottom": 618.046875
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "flight",
+        "logos": 1,
+        "logo": {
+          "left": 123.79705810546875,
+          "top": 95.70852661132812,
+          "width": 332.9875183105469,
+          "height": 164.59622192382812,
+          "right": 456.7845764160156,
+          "bottom": 260.30474853515625
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "flight",
+        "logos": 1,
+        "logo": {
+          "left": 1.263153076171875,
+          "top": 6.648468017578125,
+          "width": 167.02227783203125,
+          "height": 82.55935668945312,
+          "right": 168.28543090820312,
+          "bottom": 89.20782470703125
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "landed",
+        "logos": 1,
+        "logo": {
+          "left": -4.505645751953125,
+          "top": 2.455596923828125,
+          "width": 159.20875549316406,
+          "height": 78.6971206665039,
+          "right": 154.70310974121094,
+          "bottom": 81.15271759033203
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": false,
+        "originalVisibility": "hidden"
+      },
+      {
+        "phase": "complete",
+        "logos": 1,
+        "logo": {
+          "left": -4.5,
+          "top": 2.4674644470214844,
+          "width": 159.203125,
+          "height": 78.6875,
+          "right": 154.703125,
+          "bottom": 81.15496444702148
+        },
+        "host": {
+          "left": 24,
+          "top": 18.96875,
+          "width": 108,
+          "height": 49.046875,
+          "right": 132,
+          "bottom": 68.015625
+        },
+        "landed": true,
+        "originalVisibility": "hidden"
+      }
+    ],
+    "errors": [],
+    "routing": {
+      "detail": true,
+      "search": true,
+      "oldScroll": 250,
+      "newScroll": 0,
+      "restoredScroll": 250
+    }
+  }
+]

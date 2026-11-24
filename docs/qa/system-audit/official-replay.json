@@ -1,0 +1,86 @@
+{
+  "at": "2026-11-24T00:33:17.107Z",
+  "detected": [
+    [
+      {
+        "id": "patch-2026-11-16",
+        "heroCandidates": 0,
+        "systems": 1
+      },
+      {
+        "id": "patch-2026-11-05",
+        "heroCandidates": 3,
+        "systems": 2
+      },
+      {
+        "id": "patch-2026-11-03",
+        "heroCandidates": 62,
+        "systems": 11
+      }
+    ],
+    [
+      {
+        "id": "patch-2026-11-16",
+        "heroCandidates": 0,
+        "systems": 1
+      },
+      {
+        "id": "patch-2026-11-05",
+        "heroCandidates": 3,
+        "systems": 2
+      },
+      {
+        "id": "patch-2026-11-03",
+        "heroCandidates": 62,
+        "systems": 12
+      }
+    ]
+  ],
+  "added": [],
+  "updated": [],
+  "skipped": [
+    "patch-2026-11-16",
+    "patch-2026-11-05",
+    "patch-2026-11-03"
+  ],
+  "pending": [
+    {
+      "id": "patch-2026-11-05",
+      "reason": "식별·수치 또는 문맥 검토 필요",
+      "heroCandidates": 0,
+      "systemCandidates": 2
+    },
+    {
+      "id": "patch-2026-11-03",
+      "reason": "식별·수치 또는 문맥 검토 필요",
+      "heroCandidates": 0,
+      "systemCandidates": 11
+    }
+  ],
+  "patch16": [
+    {
+      "heroChanges": 0,
+      "systemChanges": [
+        {
+          "id": "acdbdbd348b687690f809ef8ecae99ee12201c3eeff06e003a1399201630f3f1",
+          "patchId": "patch-2026-11-16",
+          "publishedDate": "2026-11-16",
+          "sourceUrl": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/#patch-2026-11-16",
+          "category": "competitive",
+          "section": "경쟁전 업데이트",
+          "evidenceHash": "89a4eb5e94f20b022a5eec460e82aa5cc3008c498039e223567d65e68b68a730",
+          "ruleKey": "champion-group-width",
+          "gameMode": "live-6v6",
+          "before": 4,
+          "after": 3,
+          "unit": "rank-width",
+          "summaryKo": "6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 4에서 3으로 감소했습니다.",
+          "englishEvidenceId": "f7441f8bcbe279c0f67e7287635a69b2df1f04eae6c861467602c6a92c9b8c88",
+          "englishEvidenceHash": "adb79809dde447375dc903b134fe03164cdbf1843745f0cf58534e64673b8d7c",
+          "verificationMethod": "bilingual-system-rule",
+          "verificationStatus": "verified"
+        }
+      ]
+    }
+  ]
+}

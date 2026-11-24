@@ -1,0 +1,684 @@
+{
+  "checkedAt": "2026-11-24T00:25:09.740Z",
+  "requests": [
+    {
+      "key": "main",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/commits/main",
+      "status": 200,
+      "at": "2026-11-24T00:25:10.410Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:11 GMT",
+        "age": null,
+        "cache-control": "public, max-age=60, s-maxage=60",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"d9c85667bb5c05532a7bc1268cbf225227e50de9d6e5d42ec9c39c7c35f2d372\"",
+        "x-ratelimit-remaining": "58"
+      },
+      "sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f"
+    },
+    {
+      "key": "workflows",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/workflows",
+      "status": 200,
+      "at": "2026-11-24T00:25:10.658Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:11 GMT",
+        "age": null,
+        "cache-control": "public, max-age=60, s-maxage=60",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"69246220cffddfae6dde4553b9917dd7a99b2f5280887c74fcffa4cb8fadce3a\"",
+        "x-ratelimit-remaining": "57"
+      },
+      "workflows": [
+        {
+          "id": 419719984,
+          "path": ".github/workflows/daily-ranks.yml",
+          "state": "active"
+        },
+        {
+          "id": 406804506,
+          "path": ".github/workflows/daily-snapshots.yml",
+          "state": "active"
+        },
+        {
+          "id": 419810151,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "state": "active"
+        },
+        {
+          "id": 411623148,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "state": "active"
+        },
+        {
+          "id": 404139395,
+          "path": ".github/workflows/pages.yml",
+          "state": "active"
+        },
+        {
+          "id": 406438461,
+          "path": ".github/workflows/patch-snapshots.yml",
+          "state": "active"
+        }
+      ]
+    },
+    {
+      "key": "runs",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/actions/runs?per_page=45",
+      "status": 200,
+      "at": "2026-11-24T00:25:11.816Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:13 GMT",
+        "age": null,
+        "cache-control": "public, max-age=60, s-maxage=60",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"58cf2b82e1b8316aeddec75dec77737b73c12f10b70e36c834aac35d084b9255\"",
+        "x-ratelimit-remaining": "56"
+      },
+      "runs": [
+        {
+          "id": 45256927957,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-23T20:12:22Z",
+          "head_sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45256927957"
+        },
+        {
+          "id": 45141878673,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-23T08:50:35Z",
+          "head_sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45141878673"
+        },
+        {
+          "id": 45140070109,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T08:37:06Z",
+          "head_sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45140070109"
+        },
+        {
+          "id": 45135146940,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T07:59:59Z",
+          "head_sha": "de6130d28c1fe1b159d82283a8855b6f8c7f286f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45135146940"
+        },
+        {
+          "id": 45133333978,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T07:44:46Z",
+          "head_sha": "128148c2dd6f00a7d6072d0d135eb35d756ad73d",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45133333978"
+        },
+        {
+          "id": 45131963588,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-23T07:33:24Z",
+          "head_sha": "c7fdfe5b2d59abf48bd537d6be1cb1187542d66b",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45131963588"
+        },
+        {
+          "id": 45125504803,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T06:38:51Z",
+          "head_sha": "c7fdfe5b2d59abf48bd537d6be1cb1187542d66b",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45125504803"
+        },
+        {
+          "id": 45103080444,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T02:57:03Z",
+          "head_sha": "96cce61be6a7288ef4c903c264050639c47e7588",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45103080444"
+        },
+        {
+          "id": 45097872138,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-23T02:02:11Z",
+          "head_sha": "0b2ee260c01a8e9b77bf10ee627d04b7096e768e",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45097872138"
+        },
+        {
+          "id": 45084081489,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-22T23:35:35Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45084081489"
+        },
+        {
+          "id": 45051483439,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-22T17:48:18Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45051483439"
+        },
+        {
+          "id": 45009014857,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-22T09:44:37Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45009014857"
+        },
+        {
+          "id": 45000336329,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-22T07:54:28Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/45000336329"
+        },
+        {
+          "id": 44999867848,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-22T07:48:07Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44999867848"
+        },
+        {
+          "id": 44974987765,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-22T02:12:24Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44974987765"
+        },
+        {
+          "id": 44952584370,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-21T21:38:28Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44952584370"
+        },
+        {
+          "id": 44918694502,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-21T15:20:53Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44918694502"
+        },
+        {
+          "id": 44907825594,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-21T13:13:59Z",
+          "head_sha": "3fb4de2d5595a741141413f94d637363e363f06f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44907825594"
+        },
+        {
+          "id": 44883599151,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-21T08:10:14Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44883599151"
+        },
+        {
+          "id": 44882903597,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-21T08:01:24Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44882903597"
+        },
+        {
+          "id": 44878362402,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-21T07:02:34Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44878362402"
+        },
+        {
+          "id": 44840619217,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-20T23:58:30Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44840619217"
+        },
+        {
+          "id": 44786563030,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-20T17:46:58Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44786563030"
+        },
+        {
+          "id": 44703258337,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-20T08:31:44Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44703258337"
+        },
+        {
+          "id": 44701534644,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-20T08:18:50Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44701534644"
+        },
+        {
+          "id": 44700003720,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-20T08:07:08Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44700003720"
+        },
+        {
+          "id": 44690738342,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-20T06:51:16Z",
+          "head_sha": "d5b70fe925d223cfd8ff465e73d01a65b4fdfdbd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44690738342"
+        },
+        {
+          "id": 44664895516,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-20T03:01:53Z",
+          "head_sha": "26c14bca9591b3ff059967a5510404f938f10a0c",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44664895516"
+        },
+        {
+          "id": 44654211807,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-20T01:31:18Z",
+          "head_sha": "819d82fa2918ae2db580107a25692a52138acafd",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44654211807"
+        },
+        {
+          "id": 44647554774,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-20T00:39:09Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44647554774"
+        },
+        {
+          "id": 44585831401,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-19T18:15:16Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44585831401"
+        },
+        {
+          "id": 44490455931,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-19T08:46:24Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44490455931"
+        },
+        {
+          "id": 44488967359,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-19T08:35:59Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44488967359"
+        },
+        {
+          "id": 44487648645,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-19T08:26:41Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44487648645"
+        },
+        {
+          "id": 44484213149,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-19T08:02:00Z",
+          "head_sha": "f9905bfaac5a9acf7da74bcc117a246723e81e08",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44484213149"
+        },
+        {
+          "id": 44466463960,
+          "path": ".github/workflows/pages.yml",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-19T05:37:40Z",
+          "head_sha": "6ed820bf417c3d4d0f61a814c845df41d518564f",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44466463960"
+        },
+        {
+          "id": 44435108234,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-19T01:12:23Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44435108234"
+        },
+        {
+          "id": 44374038132,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-18T18:50:24Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44374038132"
+        },
+        {
+          "id": 44282293688,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-18T10:06:58Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44282293688"
+        },
+        {
+          "id": 44266728301,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-18T08:24:38Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44266728301"
+        },
+        {
+          "id": 44265327759,
+          "path": ".github/workflows/official-patch-notes.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-11-18T08:14:45Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44265327759"
+        },
+        {
+          "id": 44217070167,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-18T01:36:16Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44217070167"
+        },
+        {
+          "id": 44149023644,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-17T18:32:53Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44149023644"
+        },
+        {
+          "id": 44053386131,
+          "path": ".github/workflows/graph-snapshots.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-17T09:12:09Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44053386131"
+        },
+        {
+          "id": 44051266367,
+          "path": ".github/workflows/daily-ranks.yml",
+          "event": "schedule",
+          "status": "completed",
+          "conclusion": "skipped",
+          "created_at": "2026-11-17T08:58:12Z",
+          "head_sha": "55a5439477f2c5b5f5c553192ae9d609159fe7ea",
+          "html_url": "https://github.com/moonsh0206/HOW/actions/runs/44051266367"
+        }
+      ]
+    },
+    {
+      "key": "pages",
+      "url": "https://api.github.com/repos/moonsh0206/HOW/pages",
+      "status": 404,
+      "at": "2026-11-24T00:25:12.058Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:13 GMT",
+        "age": null,
+        "cache-control": null,
+        "access-control-allow-origin": "*",
+        "etag": null,
+        "x-ratelimit-remaining": "55"
+      },
+      "message": "Not Found"
+    },
+    {
+      "key": "ranks",
+      "url": "https://moonsh0206.github.io/HOW/data/ranks/current.json",
+      "status": 200,
+      "at": "2026-11-24T00:25:12.338Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:13 GMT",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "access-control-allow-origin": "*",
+        "etag": "\"6b03f2e9-34\"",
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "snapshots",
+      "url": "https://moonsh0206.github.io/HOW/data/snapshots/index.json",
+      "status": 200,
+      "at": "2026-11-24T00:25:12.587Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:14 GMT",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"6b03f2e9-4574\"",
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "means",
+      "url": "https://moonsh0206.github.io/HOW/data/role-means/observations.json",
+      "status": 200,
+      "at": "2026-11-24T00:25:12.821Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:14 GMT",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"6b03f2e9-157db\"",
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "patches",
+      "url": "https://moonsh0206.github.io/HOW/data/patches/notes.json",
+      "status": 200,
+      "at": "2026-11-24T00:25:13.076Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:14 GMT",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"6b03f2e9-114e9\"",
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "perks",
+      "url": "https://moonsh0206.github.io/HOW/data/perks/overlooker-perks.json",
+      "status": 200,
+      "at": "2026-11-24T00:25:13.303Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:14 GMT",
+        "age": "0",
+        "cache-control": "max-age=600",
+        "access-control-allow-origin": "*",
+        "etag": "W/\"6b03f2e9-26ec\"",
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "heroes",
+      "url": "https://overfast-api.tekrop.fr/heroes?locale=ko-kr",
+      "status": 200,
+      "at": "2026-11-24T00:25:14.423Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:15 GMT",
+        "age": "51674",
+        "cache-control": "public, max-age=86400",
+        "access-control-allow-origin": "*",
+        "etag": null,
+        "x-ratelimit-remaining": null
+      }
+    },
+    {
+      "key": "stats",
+      "url": "https://overfast-api.tekrop.fr/heroes/stats?platform=pc&gamemode=competitive&region=asia&division=diamond&map=all",
+      "status": 422,
+      "at": "2026-11-24T00:25:14.707Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:15 GMT",
+        "age": null,
+        "cache-control": null,
+        "access-control-allow-origin": "*",
+        "etag": null,
+        "x-ratelimit-remaining": null
+      },
+      "message": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"query\",\"map\"],\"msg\":\"Input should be 'aatlis', 'antarctic-peninsul"
+    },
+    {
+      "key": "officialEN",
+      "url": "https://overwatch.blizzard.com/en-us/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "at": "2026-11-24T00:25:14.913Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:16 GMT",
+        "age": null,
+        "cache-control": "max-age=300",
+        "access-control-allow-origin": null,
+        "etag": "W/\"f5b9-Sd4YY9QVkT3GmLfckqpAY3q/qnA\"",
+        "x-ratelimit-remaining": null
+      },
+      "patchIds": [
+        "patch-2026-11-16",
+        "patch-2026-11-05",
+        "patch-2026-11-03"
+      ]
+    },
+    {
+      "key": "officialKO",
+      "url": "https://overwatch.blizzard.com/ko-kr/news/patch-notes/live/2026/11/",
+      "status": 200,
+      "at": "2026-11-24T00:25:15.465Z",
+      "headers": {
+        "date": "Tue, 24 Nov 2026 00:25:16 GMT",
+        "age": null,
+        "cache-control": "max-age=300",
+        "access-control-allow-origin": null,
+        "etag": "W/\"100f5-TRrG4e9D1Q18cjDIkQ8cZRYzgAQ\"",
+        "x-ratelimit-remaining": null
+      },
+      "patchIds": [
+        "patch-2026-11-16",
+        "patch-2026-11-05",
+        "patch-2026-11-03"
+      ]
+    }
+  ]
+}

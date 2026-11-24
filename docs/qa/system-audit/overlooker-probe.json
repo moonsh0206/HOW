@@ -1,0 +1,66 @@
+{
+  "at": "2026-11-24T00:33:42.955Z",
+  "url": "https://stats.overlooker.app/api/perks",
+  "status": 200,
+  "age": null,
+  "valid": true,
+  "heroes": 54,
+  "perks": 216,
+  "ratesAndCountsEqual": false,
+  "sample": {
+    "stored": {
+      "providerSampleSize": 2589,
+      "minor": [
+        [
+          "local_anesthetic",
+          0.5475,
+          415
+        ],
+        [
+          "speed_serum",
+          0.4499,
+          341
+        ]
+      ],
+      "major": [
+        [
+          "biotic_bounce",
+          0.3779,
+          692
+        ],
+        [
+          "headhunter",
+          0.6221,
+          1139
+        ]
+      ]
+    },
+    "live": {
+      "providerSampleSize": 3369,
+      "minor": [
+        [
+          "local_anesthetic",
+          0.5633,
+          681
+        ],
+        [
+          "speed_serum",
+          0.4351,
+          526
+        ]
+      ],
+      "major": [
+        [
+          "biotic_bounce",
+          0.3681,
+          795
+        ],
+        [
+          "headhunter",
+          0.6319,
+          1365
+        ]
+      ]
+    }
+  }
+}
