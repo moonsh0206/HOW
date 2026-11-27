@@ -40,7 +40,7 @@ function itemCard(item, compact = false) {
 export function createHeroDetailView() {
   const root = document.querySelector('#hero-detail-page');
   let contentKey;
-  let overviewKey,perkKey,lastTab;
+  let overviewKey,chartLayoutKey,perkKey,lastTab;
   let patchCarry=null,patchHero;
   function enter(elements){
     if(root.ownerDocument.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches)return;
@@ -55,6 +55,14 @@ export function createHeroDetailView() {
     for (const item of items) {const card=itemCard(item,compact);card.dataset.itemName=item.name;grid.append(card);}
     wrapper.append(items.length ? grid : node('p', t("현재 API에서 제공된 정보가 없습니다."), 'empty-note'));
     return wrapper;
+  }
+  function historyChart(history,mapStatistics,model,route,oldHistory){
+    const state=model.state,activeMetric=history.metric??'pickRate',mapSelected=state.statsFilters.map!=='all',comparison=mapSelected&&history.chartMode!=='history';
+    const chart=comparison?renderMapStatistics(mapStatistics,model,route.key,{metric:activeMetric}):renderPickHistory(withCurrentPickHistory(history,state.statistics,route.key,state.statsFilters,activeMetric),state.statsFilters);
+    preserveChartMotion(oldHistory,chart);
+    if(mapSelected){const toggle=node('button',comparison?t('map.history'):t('map.comparison'),'chart-mode-toggle');toggle.type='button';toggle.dataset.chartMode=comparison?'history':'comparison';toggle.setAttribute('aria-pressed',String(!comparison));chart.querySelector('.history-heading').append(toggle);}
+    for(const selector of ['.history-records','.history-info'])if(oldHistory?.querySelector(selector)?.open&&chart.querySelector(selector))chart.querySelector(selector).open=true;
+    return chart;
   }
   return {
     render(detailState, model, route, counters = { status: 'empty', counteredBy: [] }, history = { status: 'idle', days: 7 }, mapStatistics = {},synergies={status:'empty',allies:[]},perkStatistics={status:'unavailable',result:null},patchArchive=null,heroMaps=null) {
@@ -131,7 +139,16 @@ export function createHeroDetailView() {
       }
       const hero = model.heroByKey(route.key) ?? { ...detailState.result.detail, tier: null, statistics: null, metaScore: null };
       const nextOverviewKey=JSON.stringify([hero,state.statsFilters,state.statistics,state.metaPolicy,state.favorites.has(route.key),history,counters,synergies,patchArchive,mapStatistics,heroMaps]);
-      if(nextOverviewKey!==overviewKey){overviewKey=nextOverviewKey;
+      const nextLayoutKey=JSON.stringify([hero,state.statsFilters,state.statistics,state.metaPolicy,state.favorites.has(route.key),counters,synergies,patchArchive,heroMaps]);
+      const existingChart=root.querySelector('#detail-page-statistics .pick-history');
+      if(nextOverviewKey!==overviewKey&&chartLayoutKey===nextLayoutKey&&existingChart){
+        overviewKey=nextOverviewKey;
+        const modeFocused=existingChart.querySelector('[data-chart-mode]')===document.activeElement;
+        const chart=historyChart(history,mapStatistics,model,route,existingChart);
+        existingChart.replaceWith(chart);
+        for(const button of root.querySelectorAll('.detail-metric-button'))button.setAttribute('aria-pressed',String(button.dataset.historyMetric===(history.metric??'pickRate')));
+        if(modeFocused)chart.querySelector('[data-chart-mode]')?.focus({preventScroll:true});
+      }else if(nextOverviewKey!==overviewKey){overviewKey=nextOverviewKey;chartLayoutKey=nextLayoutKey;
       const stats = root.querySelector('#detail-page-statistics');
       const summary = node('div', undefined, 'detail-summary');
       const metrics = node('dl', undefined, 'detail-metrics');
@@ -165,17 +182,10 @@ export function createHeroDetailView() {
       const oldHistory = stats.querySelector('.pick-history');
       const historyFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyDays : null;
       const scopeFocus = oldHistory?.contains(document.activeElement) ? document.activeElement.dataset.historyScope : null;
-      const recordsOpen = oldHistory?.querySelector('.history-records')?.open;
-      const mapSelected=state.statsFilters.map!=='all',comparison=mapSelected&&history.chartMode!=='history';
       const modeFocused=oldHistory?.contains(document.activeElement)&&document.activeElement.hasAttribute('data-chart-mode');
       const mapRetryFocused=oldHistory?.contains(document.activeElement)&&document.activeElement.hasAttribute('data-map-stats-retry');
-      const chartInfoOpen=oldHistory?.querySelector('.history-info')?.open;
       const chartInfoFocused=document.activeElement===oldHistory?.querySelector('.history-info>summary');
-      const chart = comparison?renderMapStatistics(mapStatistics,model,route.key,{metric:activeMetric}):renderPickHistory(withCurrentPickHistory(history, state.statistics, route.key, state.statsFilters, activeMetric), state.statsFilters);
-      preserveChartMotion(oldHistory,chart);
-      if(mapSelected){const toggle=node('button',comparison?t('map.history'):t('map.comparison'),'chart-mode-toggle');toggle.type='button';toggle.dataset.chartMode=comparison?'history':'comparison';toggle.setAttribute('aria-pressed',String(!comparison));chart.querySelector('.history-heading').append(toggle);}
-      if (recordsOpen && chart.querySelector('.history-records')) chart.querySelector('.history-records').open = true;
-      if(chartInfoOpen&&chart.querySelector('.history-info'))chart.querySelector('.history-info').open=true;
+      const chart = historyChart(history,mapStatistics,model,route,oldHistory);
       main.append(chart);
       const mapFocus=stats.querySelector('[data-hero-map]:focus')?.dataset.heroMap;
       if(heroMaps){
@@ -186,7 +196,7 @@ export function createHeroDetailView() {
         recommendations.recommendationSignature=signature;main.append(recommendations);
       }
       main.append(information);
-      const basis=node('p',`${state.statsFilters.map==='all'?t("전체 전장 기준"):t("선택 전장 기준")}${isCompositeDivision(state.statsFilters.division)?t(" · HOW 등급 균등 평균"):''}${state.metaPolicy?.version==='local-60-27-13'?t(" · 로컬 실험 모델"):''}`,'detail-stat-basis');main.prepend(basis);
+      const basis=node('p',`${state.statsFilters.map==='all'?t("전체 전장 기준"):t("선택 전장 기준")}${isCompositeDivision(state.statsFilters.division)?t(" · HOW 등급 균등 평균"):''}${(state.metaPolicy?.version==='local-60-27-13'||state.metaPolicy?.preview===true)?t(" · 로컬 실험 모델"):''}`,'detail-stat-basis');main.prepend(basis);
       const detail = detailState.result.detail;
       root.querySelector('#detail-passives')?.remove();
       const passive = section('detail-passives', t("지속 능력"), detail.subrole ? [{name:translateLabel(detail.subrole.subroleNameKo),description:translateLabel(detail.subrole.descriptionKo)}] : []);

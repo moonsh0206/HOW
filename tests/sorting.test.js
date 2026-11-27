@@ -24,7 +24,7 @@ test('sorting: final tiers take precedence over higher capped scores; unclassifi
     assert(recommendationOrder(a) <= recommendationOrder(b));
     if (recommendationOrder(a) === recommendationOrder(b)) { assert(a.metaScore >= b.metaScore); if (a.metaScore === b.metaScore) assert(names(a, b) <= 0); }
   }
-  const capped = rows.find(h => h.capped);
+  const capped = rows.find(h => (h.capped||h.recommendationCapped)&&rows.some(s=>s.tier==='S'&&s.metaScore<h.metaScore));
   const lowerS = rows.find(h => h.tier === 'S' && h.metaScore < capped.metaScore);
   assert(capped && lowerS); assert(rows.indexOf(lowerS) < rows.indexOf(capped));
   model.state.sort = 'meta-desc'; const scores = model.visibleHeroes();

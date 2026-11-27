@@ -45,12 +45,13 @@ export function sEligibility(hero, size) {
 
 export function attachMetaTiers(heroes, records, policy = META_POLICY) {
   const fields = ['winRate', 'pickRate', 'banRate'];
-  const weights = fields.map(field => policy.weights[field]);
-  if (!weights.every(value => Number.isFinite(value) && value >= 0) || Math.abs(weights.reduce((a, b) => a + b, 0) - 1) > 1e-9) throw new Error('Meta weights must be non-negative and sum to 1.');
+  const validatedWeights=source=>{const weights=fields.map(field=>source[field]);if(!weights.every(value=>Number.isFinite(value)&&value>=0)||Math.abs(weights.reduce((a,b)=>a+b,0)-1)>1e-9)throw new Error('Meta weights must be non-negative and sum to 1.');return weights;};
+  const defaultWeights=validatedWeights(policy.weights);
   const byKey = new Map(records.map(record => [record.hero, record]));
   const valid = value => Number.isFinite(value) && value >= 0 && value <= 100;
   const joined = heroes.map(hero => ({ ...hero, statistics: byKey.get(hero.key) ?? null, tier: null, provisionalTier: null, roleRank: null, roleSize: 0, metaScore: null, winPercentile: null, pickPercentile: null, banPercentile: null, eligibility: [], capped: false, lowPick: false }));
   for (const role of ['tank', 'damage', 'support']) {
+    const weights=policy.roleWeights?.[role]?validatedWeights(policy.roleWeights[role]):defaultWeights;
     const group = joined.filter(hero => hero.role === role && statisticsUsable(hero.statistics) && fields.every(field => valid(hero.statistics?.[field])));
     for (const hero of group) {
       hero.roleSize = group.length;

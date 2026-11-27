@@ -2,6 +2,7 @@ import {t,formatLocale} from '../i18n/i18n.js';
 import {node,image} from './dom.js';
 import {topPlayerHeroes,formatPlayerTime} from '../models/playerModel.js';
 import {ROLES} from '../models/heroModel.js';
+import {roleText} from './roleIcon.js';
 import {formatPercentage} from './statisticsUI.js';
 import {playerHeroColor} from '../data/playerHeroColors.js';
 export const playerNumber=(v,digits=0)=>Number.isFinite(v)&&v>=0?v.toLocaleString(formatLocale(),{maximumFractionDigits:digits,minimumFractionDigits:digits}):t('player.noInfo');
@@ -27,7 +28,7 @@ export function renderPlayerHeroList(stats,heroes,openHeroes=new Set(),role='all
  for(const hero of topPlayerHeroes(stats,heroes,role).heroes){
   const li=node('li',undefined,'player-hero-card');li.dataset.heroKey=hero.key;li.dataset.role=hero.role??'unknown';li.style.setProperty('--player-hero-color',playerHeroColor(hero.key));
   const details=node('details');details.dataset.playerHero=hero.key;details.open=openHeroes.has(hero.key);const summary=node('summary');summary.setAttribute('aria-label',t('player.heroAnalysis',{hero:hero.name}));
-  const identity=node('span',undefined,'player-hero-identity');if(hero.portrait)identity.append(image(hero.portrait));const name=node('span');name.append(node('strong',hero.name),node('small',ROLES[hero.role]??t('player.noInfo')));identity.append(name);
+  const identity=node('span',undefined,'player-hero-identity');if(hero.portrait)identity.append(image(hero.portrait));const name=node('span');name.append(node('strong',hero.name),Object.hasOwn(ROLES,hero.role)?roleText(hero.role,'small'):node('small',t('player.noInfo')));identity.append(name);
   summary.append(identity,statCell(t('player.playtime'),formatPlayerTime(hero.seconds),null,'player-hero-time'),statCell(t('승률'),formatPercentage(hero.winRate),playerWinLoss(hero),'player-hero-winrate'),statCell('KDA',playerNumber(hero.kda,2),t('player.gamesValue',{count:playerNumber(hero.played)}),'player-hero-kda'));
   const arrow=node('span','⌄','player-analysis-arrow');arrow.setAttribute('aria-hidden','true');summary.append(arrow);
   if(hero.barPercent!=null){const bar=node('span',undefined,'player-time-bar');bar.setAttribute('role','meter');bar.setAttribute('aria-label',t('message.17ae345528ee',{'0':hero.name,'1':formatPlayerTime(hero.seconds)}));bar.setAttribute('aria-valuemin','0');bar.setAttribute('aria-valuemax','100');bar.setAttribute('aria-valuenow',String(hero.barPercent));const fill=node('span');fill.style.width=`${hero.barPercent}%`;bar.append(fill);summary.append(bar);}

@@ -16,6 +16,7 @@ import { createSynergyService } from '../services/synergyService.js';
 import {perkCardsForDetail} from '../models/perkSelectionModel.js';
 import {createMainMenuView} from '../views/mainMenuView.js';
 import {createBannerEntrance} from '../views/bannerEntrance.js';
+import {createHeaderEntrance} from '../views/headerEntrance.js';
 import {createHeroMapRecommendationController} from './heroMapRecommendationController.js';
 export function parseRoute(hash) {
   const player=/^#\/players\/([^/?#]+)$/.exec(hash);
@@ -33,6 +34,8 @@ export function createRoutingController({ model, detailService, detailView, coun
   const menuView=createMainMenuView(),scrollPositions=new Map();
   const bannerEntrance=createBannerEntrance(document.querySelector('#list-page .hero-banner'));
   const playerSearch=createPlayerSearchController({root:document.querySelector('#player-search-page'),provider:playerProvider??createOverfastPlayerProvider(),heroes:()=>model.state.heroes,heroDetails:detailService,onNavigate:id=>{location.hash=`/players/${encodeURIComponent(id)}`;}});
+  const searchRoot=document.querySelector('#player-search-page');
+  const searchEntrance=createHeaderEntrance(searchRoot,{targets:()=>[...searchRoot.querySelectorAll('.player-search-hero>.eyebrow,.player-search-hero>h1,.player-search-hero>.player-guide')],options:i=>({distance:10,duration:460,delay:i*80,easing:'cubic-bezier(0.22, 1, 0.36, 1)'})});
   let menuSwipe;
   const menuMedia=window.matchMedia?.('(max-width: 767px)');
   let currentHash=routeHash(location,import.meta.env?.BASE_URL??'/'),lastMainHash='#/tiers';
@@ -93,6 +96,11 @@ export function createRoutingController({ model, detailService, detailView, coun
   }
   function render() {
     updateSEO(route,model);
+    // Prepare before any controller/view makes the destination visible.
+    if(route.page==='dashboard')dashboardController?.prepareEntrance?.();
+    if(route.page==='list'||route.page==='meta'&&!menuMedia?.matches)bannerEntrance.prepare();
+    if(route.page==='player-search')searchEntrance.prepare();
+    searchEntrance.setActive(route.page==='player-search');
     const mobile=menuMedia?.matches??(window.innerWidth<=767);
     menuView.render(route,lastMainHash,mobile);
     playerSearch.setActive(route.page==='player-search'||route.page==='player');
@@ -174,6 +182,6 @@ export function createRoutingController({ model, detailService, detailView, coun
     start() { menuSwipe?.destroy();menuSwipe=createMenuSwipe({getPage:()=>route.page});document.addEventListener('how:playersearch',dashboardSearch);if(previousScrollRestoration!==undefined)window.history.scrollRestoration='manual';menuMedia?.addEventListener?.('change',render);window.addEventListener('hashchange', navigate);window.addEventListener('scroll',rememberScroll,{passive:true});document.addEventListener('click',rememberScroll,true); document.addEventListener('click', retry);document.addEventListener('click',resetPlayerMenu); document.addEventListener('change',mapChange); navigate(); },
     refresh: render,
     refreshLanguage(){if(route.page==='detail')load();else render();},
-    stop() { leaveHeroMaps();heroMaps.destroy();pageTransition.destroy();menuSwipe?.destroy();document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
+    stop() { leaveHeroMaps();heroMaps.destroy();pageTransition.destroy();menuSwipe?.destroy();document.removeEventListener('how:playersearch',dashboardSearch);dashboardController?.stop();bannerEntrance.destroy();searchEntrance.destroy();playerSearch.stop();++generation;cancelScroll();menuMedia?.removeEventListener?.('change',render);if(previousScrollRestoration!==undefined)window.history.scrollRestoration=previousScrollRestoration; resetHistory();resetPerks();mapStatisticsController?.leave(); window.removeEventListener('hashchange', navigate);window.removeEventListener('scroll',rememberScroll);document.removeEventListener('click',rememberScroll,true); document.removeEventListener('click', retry);document.removeEventListener('click',resetPlayerMenu);document.removeEventListener('change',mapChange); },
   };
 }

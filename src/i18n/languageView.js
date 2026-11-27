@@ -4,8 +4,8 @@ import {createFilterCombobox} from '../views/filterCombobox.js';
 const STATE_KEY='how:language-transfer:v1';
 export function translateStatic(root=document){
  const walker=root.createTreeWalker?root.createTreeWalker(root.body,4):root.ownerDocument.createTreeWalker(root,4);
- let text;while((text=walker.nextNode())){if(text.parentElement?.closest('script,style,.header-language'))continue;const source=text.textContent.trim();text.textContent=text.textContent.replace(source,label(source));}
- for(const element of root.querySelectorAll('[aria-label],[title],[placeholder]'))for(const attr of ['aria-label','title','placeholder']){const source=element.getAttribute(attr);if(source)element.setAttribute(attr,label(source));}
+ let text;while((text=walker.nextNode())){if(text.parentElement?.closest('script,style,.header-language'))continue;const source=text.textContent.trim(),key=text.parentElement?.closest('[data-i18n]')?.dataset.i18n;text.textContent=text.textContent.replace(source,key?t(key):label(source));}
+ for(const element of root.querySelectorAll('[aria-label],[title],[placeholder]'))for(const attr of ['aria-label','title','placeholder']){const source=element.getAttribute(attr),key=element.dataset.i18n;if(source)element.setAttribute(attr,key?t(key):label(source));}
 }
 export function languagePicker({model,base='/',window:win=window}){
  const container=win.document.createElement('div');container.className='header-language';const name=win.document.createElement('span');name.className='sr-only';name.textContent='Language';container.append(name);

@@ -1,6 +1,9 @@
 import {META_POLICY} from './meta.js';
+import {META_V22_POLICY} from './metaV22Policy.js';
+export {META_V22_POLICY};
 export const BASELINE_META_POLICY=META_POLICY;
+export const DEFAULT_META_POLICY=META_V22_POLICY;
 export const LOCAL_META_EXPERIMENT=Object.freeze({version:'local-60-27-13',weights:Object.freeze({winRate:.60,pickRate:.27,banRate:.13}),lowPickRate:1});
 export const ALTERNATIVE_META_POLICY=Object.freeze({version:'research-60-25-15',weights:Object.freeze({winRate:.60,pickRate:.25,banRate:.15}),lowPickRate:1});
-// The production build cannot opt into a local experiment, even if an env flag leaks.
-export function selectMetaPolicy({development=false,experiment='off'}={}){return development&&experiment==='60-27-13'?LOCAL_META_EXPERIMENT:BASELINE_META_POLICY;}
+// Production always uses the default; historical comparisons are development-only.
+export function selectMetaPolicy({development=false,experiment='off'}={}){if(development&&experiment==='v2.1')return BASELINE_META_POLICY;if(development&&experiment==='60-27-13')return LOCAL_META_EXPERIMENT;return DEFAULT_META_POLICY;}

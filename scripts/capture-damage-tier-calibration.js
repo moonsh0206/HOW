@@ -1,0 +1,9 @@
+// Explicit opt-in capture: one roster and three original rank requests, no retries.
+if(!process.argv.includes('--fetch'))throw Error('Use --fetch for the four public read requests.');
+﻿import fs from 'node:fs/promises';
+import {createStatisticsService} from '../src/services/statisticsService.js';
+import {DEFAULT_FILTERS} from '../src/models/statisticsModel.js';
+const evidence={requestedAt:new Date().toISOString(),source:'OverFast API',requests:[]};let cooling=false;
+const capture=async(url,options)=>{if(cooling)throw Error('Provider cooldown: no more requests');const started=Date.now(),response=await fetch(url,{...options,signal:AbortSignal.timeout(25000)});const raw=await response.clone().json();evidence.requests.push({url,fetchedAt:new Date().toISOString(),status:response.status,ms:Date.now()-started,headers:Object.fromEntries(['age','date','cache-control','x-cache-status','retry-after','x-cache-ttl'].map(k=>[k,response.headers.get(k)])),raw});if([429,503].includes(response.status))cooling=true;return response;};
+try{const response=await capture('https://overfast-api.tekrop.fr/heroes?locale=ko-kr');if(!response.ok)throw Error('Heroes HTTP '+response.status);evidence.heroes=await response.json();evidence.result=await createStatisticsService({fetcher:capture,timeoutMs:25000}).getStatistics(DEFAULT_FILTERS);if(evidence.result.stale||evidence.result.components?.some(c=>c.failed||c.stale))throw Error('Incomplete or stale component');evidence.valid=true;}catch(error){evidence.valid=false;evidence.error=error.message;}
+evidence.completedAt=new Date().toISOString();await fs.writeFile('docs/qa/damage-tier-calibration/live.json',JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify({valid:evidence.valid,error:evidence.error,requests:evidence.requests.map(r=>({url:r.url,status:r.status,ms:r.ms,age:r.headers.age})),count:evidence.result?.records.length}));

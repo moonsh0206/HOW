@@ -81,7 +81,8 @@ test('actual Genji detail DOM: diamond empty, all-rank single point, period cont
     router.refresh();assert.equal(document.querySelectorAll('#pick-history').length,1);
     model.state.statsFilters={...ALL_RANK_FILTERS};router.refresh();await flush();await flush();
     assert.equal(panel().querySelectorAll('.history-point').length,1);
-    assert(panel().textContent.includes('저장 이력'));
+    assert.equal(panel().querySelectorAll('.history-point[data-storage="stored"]').length,1);
+    assert(panel().querySelector('.history-availability').textContent.includes('1'));
     fail=true;model.state.statsFilters={...DEFAULT_FILTERS,region:'europe'};router.refresh();await flush();await flush();
     assert(panel().querySelector('[data-action="history-retry"]'));
     fail=false;panel().querySelector('[data-action="history-retry"]').click();await flush();await flush();
@@ -112,12 +113,12 @@ test('history: duplicate instant collapse; conflicts and invalid/missing hero ob
   const conflict=build([a,b,{...b,records:[{hero:'ana',pickRate:21}]},c]);assert.equal(conflict.points.length,2);assert.equal(conflict.segments.length,0);assert(conflict.warnings.length);
   for(const missing of [[],[{hero:'ana',pickRate:null}],[{hero:'ana',pickRate:101}],[{hero:'ana',pickRate:'20'}]]) assert.equal(build([a,{...b,records:missing},c]).segments.length,0);
 });
-test('history: unknown patch, changed patch and >24h gap never receive a connecting line',()=>{
+test('history: matching provenance connects unknown patches and long gaps; patch boundaries are comparison guides',()=>{
   const a=snap('2026-11-01T00:00:00Z',10),b=snap('2026-11-01T06:00:00Z',11);
   assert.equal(build([a,b]).segments.length,1);
-  assert.equal(build([a,{...b,patch:'p2'}]).segments.length,0);
-  assert.equal(build([{...a,patch:null},{...b,patch:null}]).segments.length,0);
-  assert.equal(build([a,snap('2026-11-02T12:00:00Z',12)]).segments.length,0);
+  assert.equal(build([a,{...b,patch:'p2'}]).comparisonSegments.length,1);
+  assert.equal(build([{...a,patch:null},{...b,patch:null}]).segments.length,1);
+  assert.equal(build([a,snap('2026-11-02T12:00:00Z',12)]).segments.length,1);
 });
 test('snapshot history service: Pages base, shared HOT/index/file requests and strict filter keys',async()=>{
   const data=[raw('2026-11-02T00:00:00Z',10),raw('2026-11-02T06:00:00Z',11),raw('2026-11-02T12:00:00Z',99,null,ALL_RANK_FILTERS)];

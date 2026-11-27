@@ -102,7 +102,7 @@ test('HOT patch safety: known patch boundary or verified/unknown windows withhel
 test('history DOM: all three series show two exact actual times and values from unknown-patch derived observations',async()=>{
  const {service}=archive([(await fixture(1)).batch,(await fixture(2)).batch]),history=await service.getHistory(f,{scope:'compare'});
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
- try{for(const metric of ['winRate','pickRate','banRate']){const result=buildObservationTimeline(history.snapshots,'genji',f,{metric,now:Date.parse(history.observedUntil)}),panel=renderPickHistory({status:'ready',metric,result});assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-comparison').length,1);assert.equal(result.points[0].value,history.snapshots[0].records[0][metric]);assert.match(panel.querySelector('.history-point').getAttribute('aria-label'),/패치 미확인/);assert.equal(result.points[0].collectedAt,history.snapshots[0].collectedAt);}}
+ try{for(const metric of ['winRate','pickRate','banRate']){const result=buildObservationTimeline(history.snapshots,'genji',f,{metric,now:Date.parse(history.observedUntil)}),panel=renderPickHistory({status:'ready',metric,result});assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-segment,.history-comparison').length,1);assert.equal(result.points[0].value,history.snapshots[0].records[0][metric]);assert.match(panel.querySelector('.history-point').getAttribute('aria-label'),/패치 미확인/);assert.equal(result.points[0].collectedAt,history.snapshots[0].collectedAt);}}
  finally{globalThis.document=prior;dom.window.close();}
 });
 

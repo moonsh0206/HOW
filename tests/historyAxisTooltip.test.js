@@ -19,12 +19,12 @@ test('date labels use actual KST observations, adapt at 7/30/90 days and preserv
  assert.equal(historyDateLabels([{time:Date.parse('2026-11-20T16:00:00Z')}])[0].text,'11/21');
  const gaps=points(3).filter((_,i)=>i!==1);assert.deepEqual(historyDateLabels(gaps).map(p=>p.text),['09/01','09/03']);
 });
-test('point tooltips expose percentages and actual timestamps on hover, touch and keyboard, preserving all points and values',()=>{
+test('point tooltips expose only percentages on hover, touch and keyboard; dates and timestamps remain separate',()=>{
  const dom=new JSDOM('<body/>'),old=globalThis.document;globalThis.document=dom.window.document;
  try{for(const lang of ['ko','en','ja']){setLanguage(lang);for(const metric of ['winRate','pickRate','banRate']){
   const data=points(30),before=structuredClone(data),panel=renderMetricHistory({status:'ready',metric,days:30,result:{points:data,segments:[],warnings:[]}});document.body.replaceChildren(panel);
   const marks=panel.querySelectorAll('.history-point'),tip=panel.querySelector('.chart-value-tooltip');assert.equal(marks.length,30);assert(tip.hidden);
-  for(const event of ['pointerenter','click','focus']){marks[5].dispatchEvent(new dom.window.Event(event));assert.equal(tip.textContent.split('\n')[0],'50.0%');assert(tip.textContent.includes('2026.09.06 10:00 KST'));assert(!tip.hidden);}
+  for(const event of ['pointerenter','click','focus']){marks[5].dispatchEvent(new dom.window.Event(event));assert.equal(tip.textContent,'50.0%');assert(marks[5].getAttribute('aria-label').includes('2026'));assert(!tip.hidden);}
   assert.equal(marks[5].querySelector('title').textContent,tip.textContent);assert(panel.querySelector('.history-last-observed').textContent.includes('2026.09.30 10:00 KST'));assert.equal((panel.querySelector('.history-last-observed').textContent.match(/KST/g)??[]).length,1);assert(panel.querySelectorAll('.history-x span').length<30);
   panel.querySelector('.history-graph').dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert(tip.hidden);assert.deepEqual(data,before);
   assert.equal(panel.querySelectorAll('.history-table tbody tr').length,30);

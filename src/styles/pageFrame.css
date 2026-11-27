@@ -1,4 +1,7 @@
 /* One frame for every route. Inner cards retain their own spacing. */
+/* Applied by JS before a route is exposed; never hide non-enhanced content. */
+.how-header-prepared{opacity:0;transform:translateY(var(--how-header-distance,10px))}
+@media(prefers-reduced-motion:reduce){.how-header-prepared{opacity:1;transform:none}}
 :root{--page-block-gap:16px;--page-end-gap:24px}
 html{scrollbar-gutter:stable}
 body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}

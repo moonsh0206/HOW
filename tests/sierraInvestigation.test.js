@@ -4,7 +4,7 @@ import * as fs from 'node:fs/promises';
 import {JSDOM} from 'jsdom';
 import {createStatisticsService} from '../src/services/statisticsService.js';
 import {normalizeHeroes,createHeroModel} from '../src/models/heroModel.js';
-import {attachMetaTiers,percentile} from '../src/domain/meta.js';
+import {attachMetaTiers,percentile,META_POLICY} from '../src/domain/meta.js';
 import {applyRecommendationPolicy} from '../src/domain/recommendationPolicy.js';
 import {createHeroView} from '../src/views/heroView.js';
 const directory=new URL('../docs/research/sierra-tiers/2026-11-10T01-08-19-666Z/',import.meta.url);
@@ -32,7 +32,7 @@ test('captured Sierra: A/C/A to S follows metric averages then same-role percent
 test('captured four cohorts: Model and table/card tiers agree, changed filters cannot reuse another cohort',async()=>{
  const {service,composite}=await frames(),html=await fs.readFile(new URL('../index.html',import.meta.url),'utf8');
  const dom=new JSDOM(html,{url:'https://example.com/HOW/'}),old={window:globalThis.window,document:globalThis.document};Object.assign(globalThis,{window:dom.window,document:dom.window.document});
- try{const model=createHeroModel(),view=createHeroView();model.state.heroes=heroes;model.state.status='ready';
+ try{const model=createHeroModel([],{metaPolicy:META_POLICY}),view=createHeroView();model.state.heroes=heroes;model.state.status='ready';
  for(const division of ['diamond','master','grandmaster','diamond_plus']){
   const frame=division==='diamond_plus'?composite:await service.getStatistics({...filters,division});Object.assign(model.state,{statsFilters:{...filters,division},statistics:frame,statsStatus:'ready'});view.render(model);
   const actual=model.heroByKey('sierra');assert.equal(actual.tier,analysis.results.find(r=>r.division===division).sierra.tier);

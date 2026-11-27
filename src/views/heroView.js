@@ -1,6 +1,7 @@
 import {rankChangeMarker} from './rankChangeView.js';
 import {errorText} from '../i18n/i18n.js';
 import {roleIcon,roleBadge,roleName} from './roleIcon.js';
+import {roleTranslationKey} from '../i18n/roles.js';
 import {metaTierEmblem} from './metaTierEmblem.js';
 import {formatLocale} from '../i18n/i18n.js';
 import {t,label as translateLabel} from '../i18n/i18n.js';
@@ -83,10 +84,11 @@ export function createHeroView() {
   const rows = document.querySelector('#hero-rows');
   const cards = document.querySelector('#hero-cards');
   const dialog = document.querySelector('#hero-dialog');
-  for(const button of document.querySelectorAll('.role-filters [data-role]')){
-    const role=button.dataset.role;if(role==='all')continue;
-    const caption=element('span',roleName(role),'role-filter-label');button.replaceChildren(roleIcon(role),caption);button.title=roleName(role);button.setAttribute('aria-label',roleName(role));
-  }
+  function syncRoleFilters(){for(const button of document.querySelectorAll('.role-filters [data-role]')){
+    const role=button.dataset.role;if(role==='all'){button.textContent=t('전체');continue;}
+    button.dataset.i18n=roleTranslationKey(role);let caption=button.querySelector('.role-filter-label');if(!caption){caption=element('span',undefined,'role-filter-label');button.replaceChildren(roleIcon(role),caption);}caption.textContent=roleName(role);button.title=roleName(role);button.setAttribute('aria-label',roleName(role));
+  }}
+  syncRoleFilters();
   for(const legend of document.querySelectorAll('.tier-legend'))legend.replaceChildren(...['S','A','B','C','D'].map(tier=>metaTierEmblem(tier,{decorative:false})));
   let detailKey;
   dialog.addEventListener('close', () => document.documentElement.classList.remove('detail-open'));
@@ -147,7 +149,7 @@ export function createHeroView() {
       const statsMessage = document.querySelector('#stats-status');
       const hasStats = state.statistics?.records.length > 0;
       const stale = state.statistics?.stale || state.statsStatus === 'error' && hasStats;
-      document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?t(" · 선택 전장 기준"):''}${state.metaPolicy?.version==='local-60-27-13'?t(" · 로컬 실험 모델"):''}`;
+      document.querySelector('#active-cohort').textContent = `${filterLabel(state.statsFilters)}${state.statsFilters.map!=='all'?t(" · 선택 전장 기준"):''}${(state.metaPolicy?.version==='local-60-27-13'||state.metaPolicy?.preview===true)?t(" · 로컬 실험 모델"):''}`;
       document.querySelector('#active-cohort-freshness').textContent = t("message.b4ee07800ee7",{"0":(state.statsStatus === 'loading' ? t("현재 조건 조회 중") : state.statistics ? t("message.89bac84cd658",{"0":(new Date(state.statistics.fetchedAt).toLocaleString(formatLocale(),{timeZone:'Asia/Seoul'})),"1":(stale ? t(" · 오래된 통계") : '')}) : t("현재 조건의 성공한 통계 조회 없음"))});
       document.querySelector('#stats-division').title = state.statsFilters.gamemode === 'quickplay' ? t("빠른 대전은 전체 등급으로 조회합니다.") : t("개별 등급 또는 HOW 등급 균등 평균을 선택합니다. 그랜드마스터는 챔피언을 포함합니다.");
       basicCombos.forEach(combo=>combo.sync());divisionCombo.sync();mapCombo.sync();
@@ -168,7 +170,7 @@ export function createHeroView() {
         if(link.dataset.mainMenu)continue;
         if (current) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
       }
-      document.querySelectorAll('[data-role]').forEach(button => button.setAttribute('aria-pressed', button.dataset.role === state.role));
+      syncRoleFilters();document.querySelectorAll('[data-role]').forEach(button => button.setAttribute('aria-pressed', button.dataset.role === state.role));
       document.querySelector('#heroes').setAttribute('aria-busy', state.status === 'loading');
       const message = document.querySelector('#data-state');
       message.replaceChildren();

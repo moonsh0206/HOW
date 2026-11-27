@@ -24,9 +24,9 @@ export function buildObservationTimeline(snapshots,heroKey,filters,options={}){
     const patch=verified?verifiedPatch(verified,catalog):null;
     return {...point,stored:true,patch:patch?.id??null,patchLabel:patch?.name??patch?.version??patch?.date??patch?.id,verificationStatus:patch?'verified':'unverified',representative:representatives.some(r=>r.time===point.time&&r.patch===patch?.id),ongoing:patch?.id===options.currentPatch};
   });
-  const segments=[],comparisonSegments=[];let previous=null;
-  for(const observation of checked.observations){const point=points.find(p=>p.time===observation.time);if(!point){previous=null;continue;}if(previous){if(previous.patch&&previous.patch===point.patch&&point.time-previous.time<=86400000)segments.push([previous,point]);else comparisonSegments.push([previous,point]);}previous=point;}
-  const storedChange=points.length>=2?{from:points.at(-2).collectedAt,to:points.at(-1).collectedAt,delta:points.at(-1).value-points.at(-2).value,unit:'percentage-points',aggregationWindowComparable:!!points.at(-1).patch&&points.at(-1).patch===points.at(-2).patch}:null;
+  const byTime=new Map(points.map(point=>[point.time,point])),mapSegments=segments=>segments.map(([a,b])=>[byTime.get(a.time),byTime.get(b.time)]);
+  const segments=mapSegments(checked.segments),comparisonSegments=mapSegments(checked.comparisonSegments);
+  const storedChange=points.length>=2?{from:points.at(-2).collectedAt,to:points.at(-1).collectedAt,delta:points.at(-1).value-points.at(-2).value,unit:'percentage-points',aggregationWindowComparable:checked.connections.some(c=>c.from===points.at(-2).time&&c.to===points.at(-1).time&&c.aggregationWindowComparable)}:null;
   return {...checked,points,segments,comparisonSegments,storedChange,comparisonWindow:'potentially-different-aggregation-windows',representativePolicy:'first-confirmed-after-day-one'};
 }
 // Preserve the first verified observation after day one, rather than replacing it later.
@@ -39,7 +39,7 @@ export function buildPatchTimeline(snapshots, heroKey, filters, {metric='pickRat
     const patch=catalog.find(row=>row.id===point.patch);
     return {...point,patchLabel:patch.name??patch.version??patch.date??patch.id,ongoing:point.patch===currentPatch,verificationStatus:'verified'};
   });
-  return {...checked,points,segments:[],comparisonWindow:'different-patch-windows',representativePolicy:'first-confirmed-after-day-one',patchCount:points.length};
+  return {...checked,points,segments:[],comparisonSegments:[],connections:[],comparisonWindow:'different-patch-windows',representativePolicy:'first-confirmed-after-day-one',patchCount:points.length};
 }
 export function buildPatchHistory(snapshots, heroKey, filters, { metric='pickRate', mode='patch', currentPatch=null, catalog=PATCH_CATALOG, now=Date.now(), releasedAt=null } = {}) {
   if (!['patch','compare'].includes(mode)) throw new Error('Invalid patch view');
@@ -53,6 +53,6 @@ export function buildPatchHistory(snapshots, heroKey, filters, { metric='pickRat
   }
   const selected = mode==='patch' ? eligible.filter(s=>s.patch===currentPatch) : groups.size>=2 ? [...groups.values()].flatMap(representatives) : [];
   const result = buildMetricHistory(selected,heroKey,filters,{metric,now,all:true});
-  if(mode==='compare') result.segments=[];
+  if(mode==='compare') {result.segments=[];result.comparisonSegments=[];result.connections=[];}
   return {...result,mode,comparisonWindow:mode==='compare'?'different-patch-windows':'within-verified-patch',patchCount:groups.size};
 }

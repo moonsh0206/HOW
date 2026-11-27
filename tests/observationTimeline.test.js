@@ -6,24 +6,24 @@ import fixture from './fixtures/history-observations.json' with {type:'json'};
 import {buildObservationTimeline} from '../src/models/patchHistoryModel.js';
 import {withCurrentMetricHistory} from '../src/models/pickHistoryModel.js';
 import {renderMetricHistory} from '../src/views/pickHistoryView.js';
-import {BASELINE_META_POLICY,LOCAL_META_EXPERIMENT,ALTERNATIVE_META_POLICY,selectMetaPolicy} from '../src/domain/metaPolicies.js';
+import {BASELINE_META_POLICY,LOCAL_META_EXPERIMENT,ALTERNATIVE_META_POLICY,META_V22_POLICY,selectMetaPolicy} from '../src/domain/metaPolicies.js';
 import {createHeroModel} from '../src/models/heroModel.js';
 import {dailyCollectionDecision} from '../src/models/snapshotCollectionModel.js';
 import {parseSnapshotRequest} from '../scripts/snapshot-request.js';
 const now=Date.parse('2026-11-03T00:00:00Z'),filters=fixture.filters;
-const data=()=>fixture.snapshots.map(s=>({...structuredClone(s),filters:{...filters}}));
+const data=()=>fixture.snapshots.map(s=>({...structuredClone(s),source:'OverFast API',filters:{...filters}}));
 const build=(snapshots,metric='pickRate',extra={})=>buildObservationTimeline(snapshots,'genji',filters,{metric,now,...extra});
 
 test('observation fixture: two dated points for all three metrics; actual values/timestamps and dashed comparison DOM',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try{
   for(const [metric,values,label] of [['winRate',[50,52],'승률'],['pickRate',[10,12],'픽률'],['banRate',[1,3],'밴률']]){
-   const result=build(data(),metric);assert.deepEqual(result.points.map(p=>p.value),values);assert.equal(result.comparisonSegments.length,1);assert(result.points.every(p=>p.verificationStatus==='unverified'&&p.patch===null&&p.stored));
-   const panel=renderMetricHistory({metric,status:'ready',result},filters);assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-comparison').length,1);
+   const result=build(data(),metric);assert.deepEqual(result.points.map(p=>p.value),values);assert.equal(result.segments.length,1);assert(result.points.every(p=>p.verificationStatus==='unverified'&&p.patch===null&&p.stored));
+   const panel=renderMetricHistory({metric,status:'ready',result},filters);assert.equal(panel.querySelectorAll('.history-point').length,2);assert.equal(panel.querySelectorAll('.history-segment,.history-comparison').length,1);
    const marks=panel.querySelectorAll('.history-point');assert(marks[0].getAttribute('aria-label').includes(`${values[0].toFixed(1)}%`));assert(marks[1].getAttribute('aria-label').includes(`${values[1].toFixed(1)}%`));
    marks[0].dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));assert(panel.querySelector('.history-observation').textContent.includes(`${label} ${values[0].toFixed(1)}%`));
    assert.equal(result.points[0].collectedAt,'2026-11-01T00:00:00Z');assert.equal(result.points[1].collectedAt,'2026-11-02T00:00:00Z');assert.equal(panel.querySelectorAll('.history-table tbody tr').length,2);
-   assert(panel.textContent.includes('원본 집계 기간이 다를 수 있습니다'));
+   assert(!panel.textContent.includes('원본 집계 기간이 다를 수 있습니다'));assert.equal(result.comparisonWindow,'potentially-different-aggregation-windows');
   }
  }finally{globalThis.document=prior;dom.window.close();}
 });
@@ -43,7 +43,7 @@ test('verified patches: all actual observations visible, first verified represen
 });
 test('browser query is distinct from saved points and never creates duplicates for identical observation instant',()=>{
  const history={status:'ready',result:build(data())};
- const stats={filters,fetchedAt:'2026-11-02T06:00:00Z',records:[{hero:'genji',pickRate:13}],cached:true};
+ const stats={source:'OverFast API',filters,fetchedAt:'2026-11-02T06:00:00Z',records:[{hero:'genji',pickRate:13}],cached:true};
  const combined=withCurrentMetricHistory(history,stats,'genji',filters);
  assert.equal(combined.result.points.length,3);assert.equal(combined.result.points.at(-1).stored,false);assert.equal(history.result.points.length,2);
  const same=withCurrentMetricHistory(history,{...stats,fetchedAt:'2026-11-02T00:00:00Z',records:[{hero:'genji',pickRate:12}]},'genji',filters);
@@ -51,7 +51,7 @@ test('browser query is distinct from saved points and never creates duplicates f
  assert.equal(withCurrentMetricHistory(history,{...stats,filters:{...filters,division:'all'}},'genji',filters).result.points.length,2);
 });
 test('local experiment opt-in, production baseline and both candidate policies keep original S gates',()=>{
- assert.equal(selectMetaPolicy({development:false,experiment:'60-27-13'}),BASELINE_META_POLICY);assert.equal(selectMetaPolicy({development:true}),BASELINE_META_POLICY);assert.equal(selectMetaPolicy({development:true,experiment:'60-27-13'}),LOCAL_META_EXPERIMENT);
+ assert.equal(selectMetaPolicy({development:false,experiment:'60-27-13'}),META_V22_POLICY);assert.equal(selectMetaPolicy({development:true}),META_V22_POLICY);assert.equal(selectMetaPolicy({development:true,experiment:'60-27-13'}),LOCAL_META_EXPERIMENT);
  assert.deepEqual(BASELINE_META_POLICY.weights,{winRate:.65,pickRate:.25,banRate:.10});
  const source=JSON.parse(fs.readFileSync(new URL('../docs/research/tier-design/evidence.json',import.meta.url)));
  for(const policy of [BASELINE_META_POLICY,LOCAL_META_EXPERIMENT,ALTERNATIVE_META_POLICY]){const model=createHeroModel([],{metaPolicy:policy});model.state.heroes=source.heroes.records;model.state.statistics={filters:source.cases[3].filters,records:source.cases[3].api.records.map(r=>({hero:r.hero,winRate:r.winrate,pickRate:r.pickrate,banRate:r.banrate}))};

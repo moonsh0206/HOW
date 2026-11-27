@@ -48,6 +48,7 @@ const storage = createFavoritesStorage();
 const saved = storage.load();
 const view = createHeroView();
 const model = createHeroModel(saved.keys,{metaPolicy:selectMetaPolicy({development:import.meta.env.DEV,experiment:import.meta.env.VITE_META_EXPERIMENT})});
+document.documentElement.dataset.metaPolicy=model.state.metaPolicy.version;
 const filterStorage=createFilterStorage(),savedFilters=filterStorage.load();if(savedFilters)model.state.statsFilters=savedFilters;
 const transfer=readLanguageTransfer();
 if(transfer){try{model.state.statsFilters=validateFilters(transfer.statsFilters);for(const key of ['query','role','sort','favoritesOnly'])if(typeof transfer[key]===typeof model.state[key])model.state[key]=transfer[key];if(transfer.statistics?.expiresAt>Date.now()&&statisticsQuery(transfer.statistics.filters)===statisticsQuery(model.state.statsFilters)&&Array.isArray(transfer.statistics.records)){Object.assign(model.state,{statistics:transfer.statistics,statsStatus:transfer.statsStatus,previousSnapshot:transfer.previousSnapshot,snapshotStatus:transfer.snapshotStatus});}}catch{}}

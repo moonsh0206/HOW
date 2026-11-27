@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "dev:meta": "node scripts/dev-meta-experiment.js",
+    "dev:meta:v22": "node scripts/dev-meta-v22.js",
+    "dev:meta:v21": "node scripts/dev-meta-v22.js --baseline",
     "build": "node scripts/derive-role-means.js --apply && vite build && node scripts/render-localized-pages.js",
     "snapshots:role-means": "node scripts/derive-role-means.js --apply",
     "preview": "vite preview --host 127.0.0.1",

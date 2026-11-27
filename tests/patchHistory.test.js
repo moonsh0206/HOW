@@ -4,13 +4,14 @@ import fs from 'node:fs';
 import { buildPatchHistory,buildPatchTimeline,verifiedPatch } from '../src/models/patchHistoryModel.js';
 import { retentionPlan } from '../src/models/snapshotRetentionModel.js';
 import { DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
+import {derivedProvenance} from '../src/models/statisticsProvenance.js';
 import { renderMetricHistory } from '../src/views/pickHistoryView.js';
 import { validateSubroles } from '../src/models/subroleModel.js';
 import subroles from '../src/data/subroles.json' with { type:'json' };
 import { JSDOM } from 'jsdom';
 const catalog=[{id:'p1',type:'balance',effectiveAt:'2026-09-29T00:00:00Z',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'},{id:'p2',type:'balance',effectiveAt:'2026-10-29T00:00:00Z',sourceUrl:'https://overwatch.blizzard.com/ko-kr/news/patch-notes/'}];
 const now=Date.parse('2026-11-03T00:00:00Z');
-const snap=(patch,collectedAt,value=5)=>({patch,collectedAt,filters:DEFAULT_FILTERS,patchVerification:{status:'verified',catalogId:patch,sourceUrl:catalog[0].sourceUrl,verifiedAt:'2026-11-03T00:00:00Z',statisticsWindow:'since-patch-start'},records:[{hero:'genji',pickRate:value}]});
+const snap=(patch,collectedAt,value=5)=>({patch,collectedAt,filters:DEFAULT_FILTERS,provenance:derivedProvenance(DEFAULT_FILTERS),patchVerification:{status:'verified',catalogId:patch,sourceUrl:catalog[0].sourceUrl,verifiedAt:'2026-11-03T00:00:00Z',statisticsWindow:'since-patch-start'},records:[{hero:'genji',pickRate:value}]});
 test('patch history: explicit evidence only, exact cohort, current patch and separate windows',()=>{
  const a=snap('p1','2026-10-01T00:00:00Z'),b=snap('p1','2026-10-01T12:00:00Z',6),c=snap('p2','2026-11-01T00:00:00Z',7);
  const options={now,catalog,currentPatch:'p1'};

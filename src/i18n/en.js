@@ -5,6 +5,7 @@ import {en as templates} from './templates.js';
 import common from './common.js';
 import {en as extras} from './extras.js';
 export default {
+ 'role.tank':'Tank','role.damage':'Damage','role.support':'Support',
  'patch.competitiveWidth':'Champion groups in 6v6 Open Queue: maximum rank width reduced from {before} to {after}.',
  ...dashboard,
  'map.chartTitle':'{metric} · Map comparison',
@@ -102,8 +103,11 @@ export default {
  'heroMaps.retry':"Try again",
  'heroMaps.lowPick':"Low pick rate",
  'heroMaps.infoLabel':'Recommendation criteria',
+ 'history.singleObservation':'One observation is available',
+ 'patch.additionalChanges':'More changes ({count})',
  'heroMaps.info':'Based on available map statistics. Some maps and the current seasonal rotation may be unverified.',
  'heroMaps.observed':"Fetched: {time}",
  'heroMaps.refreshing':'Previous observation · refreshing',
  'heroMaps.stale':'Refresh unavailable · previous observation',
+ 'meta.v22DamageRule':'v2.2 Damage: win 55%, pick 35%, ban 10%. Below 8% pick rate is capped at B. S also requires the existing eligibility checks.',
 };

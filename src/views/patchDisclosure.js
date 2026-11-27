@@ -2,19 +2,19 @@ import {t} from '../i18n/i18n.js';
 import {node} from './dom.js';
 
 // Only display state is managed here; patch contents and their own details are unchanged.
-export function addPatchDisclosure(section,body,{heroKey,eligible,initialOpen=false}) {
+export function addPatchDisclosure(section,body,{heroKey,eligible,initialOpen=false,mobileOnly=true,placement='heading',collapsedLabel}) {
   if(!eligible)return;
   const win=section.ownerDocument.defaultView,media=win?.matchMedia?.('(max-width: 600px)');
-  const button=node('button',undefined,'hero-patch-toggle'),text=node('span'),arrow=node('span','⌄','hero-patch-arrow');
-  button.type='button';body.id=`hero-patch-body-${heroKey}`;button.setAttribute('aria-controls',body.id);arrow.setAttribute('aria-hidden','true');button.append(text,arrow);section.querySelector('.hero-patch-heading').append(button);
+  const button=node('button',undefined,'hero-patch-toggle'),text=node('span'),arrow=node('span','','hero-patch-arrow');
+  button.type='button';body.id=`hero-patch-body-${heroKey}`;button.setAttribute('aria-controls',body.id);arrow.setAttribute('aria-hidden','true');button.append(text,arrow);if(placement==='body')body.before(button);else section.querySelector('.hero-patch-heading').append(button);
   let mobileOpen=initialOpen,animation=null,version=0;
   function apply(animate=false){
-    const expanded=!media?.matches||mobileOpen;
+    const expanded=mobileOnly&&!media?.matches||mobileOpen;
     const height=body.hidden?0:body.getBoundingClientRect().height;
     ++version;const token=version;animation?.cancel();animation=null;
-    button.setAttribute('aria-expanded',String(expanded));text.textContent=expanded?t('접기'):t('patch.viewDetails');section.dataset.patchOpen=String(expanded);
+    button.setAttribute('aria-expanded',String(expanded));text.textContent=expanded?t('접기'):(collapsedLabel??t('patch.viewDetails'));section.dataset.patchOpen=String(expanded);
     if(!expanded&&body.contains(section.ownerDocument.activeElement))button.focus({preventScroll:true});
-    if(!media?.matches&&section.ownerDocument.activeElement===button)section.querySelector('.hero-patch-meta a')?.focus({preventScroll:true});
+    if(mobileOnly&&!media?.matches&&section.ownerDocument.activeElement===button)section.querySelector('.hero-patch-meta a')?.focus({preventScroll:true});
     body.inert=!expanded;body.hidden=false;
     const finish=()=>{if(token!==version)return;body.hidden=!expanded;body.style.overflow='';animation?.cancel();animation=null;};
     if(!animate||!body.animate||win.matchMedia?.('(prefers-reduced-motion: reduce)').matches){finish();return;}

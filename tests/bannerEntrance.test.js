@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {JSDOM} from 'jsdom';
 import {createBannerEntrance} from '../src/views/bannerEntrance.js';
 function setup(reduce=false){
- const dom=new JSDOM('<section><p class="eyebrow">Slogan</p><h1>First<br><em>Second</em></h1><p class="banner-copy">Copy</p><a class="primary-button">Go</a></section>');
+ const dom=new JSDOM('<section><p class="eyebrow">Slogan</p><h1>First<br><em>Second</em></h1><p class="banner-copy">Copy</p><a class="primary-button">Go</a></section>',{pretendToBeVisual:true});
  const win=dom.window,root=win.document.querySelector('section'),calls=[],frames=new Map();let id=0;
  const media={matches:reduce,addEventListener(){},removeEventListener(){}};
  win.matchMedia=()=>media;win.requestAnimationFrame=fn=>{frames.set(++id,fn);return id;};win.cancelAnimationFrame=i=>frames.delete(i);
@@ -18,4 +18,12 @@ test('reduced motion, cancelled visit, disconnected DOM and unavailable animatio
  const h=setup(true);h.view.setVisible(true);h.flush();assert.equal(h.calls.length,0);assert.equal(h.root.style.opacity,'');
  const b=setup();b.view.setVisible(true);b.view.setVisible(false);b.flush();assert.equal(b.calls.length,0);b.view.setVisible(true);b.root.remove();b.flush();assert.equal(b.calls.length,0);
  const c=setup();for(const e of c.root.querySelectorAll('*'))e.animate=undefined;c.view.setVisible(true);c.flush();assert.equal(c.calls.length,0);assert.equal(c.root.textContent,'SloganFirstSecondCopyGo');
+});
+
+test('banner defers during page/swipe motion and resumes once after visibility settles',async()=>{
+ const h=setup(),html=h.root.ownerDocument.documentElement;
+ html.classList.add('how-page-transition');h.view.setVisible(true);h.flush();assert.equal(h.calls.length,0);
+ html.classList.remove('how-page-transition');await new Promise(resolve=>setImmediate(resolve));h.flush();assert.equal(h.calls.length,5);
+ h.view.setVisible(true);h.flush();assert.equal(h.calls.length,5);h.view.setVisible(false);
+ html.classList.add('how-swipe-transition');h.view.setVisible(true);h.view.setVisible(false);html.classList.remove('how-swipe-transition');await new Promise(resolve=>setImmediate(resolve));h.flush();assert.equal(h.calls.length,5);h.view.destroy();
 });

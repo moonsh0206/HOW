@@ -50,13 +50,16 @@ export function createMetaDashboardController({model,snapshotService,statisticsS
  };
  const change=event=>{if(event.target.id==='dashboard-days'){local.days=Number(event.target.value);load();}if(event.target.id==='dashboard-history-division'){local.historyDivision=event.target.value;load();}if(event.target.id==='dashboard-map'){local.mapKey=event.target.value;load();}};
  const cycleArea=e=>e?.closest?.('.dashboard-highlights,.dashboard-kpi-controls');
- const over=e=>{if(e.pointerType!=='touch')cycle.setHover(true);};
+ let touchInteraction=false;
+ const pointerDown=e=>{touchInteraction=e.pointerType==='touch';if(touchInteraction){cycle.setHover(false);cycle.setFocus(false);}};
+ const keyboard=()=>{touchInteraction=false;if(cycleArea(root?.ownerDocument.activeElement))cycle.setFocus(true);};
+ const over=e=>{cycle.setHover(e.pointerType!=='touch');};
  const out=e=>{if(!cycleArea(e.relatedTarget))cycle.setHover(false);};
- const focusIn=e=>{if(cycleArea(e.target))cycle.setFocus(true);};
+ const focusIn=e=>{if(cycleArea(e.target)&&!touchInteraction)cycle.setFocus(true);};
  const focusOut=e=>{if(cycleArea(e.target)&&!cycleArea(e.relatedTarget))cycle.setFocus(false);};
- root?.addEventListener('click',click);root?.addEventListener('change',change);
+ root?.addEventListener('click',click);root?.addEventListener('change',change);root?.addEventListener('pointerdown',pointerDown);root?.ownerDocument.addEventListener('keydown',keyboard);
  const cycleAreas=[...root?.querySelectorAll('.dashboard-highlights,.dashboard-kpi-controls')??[]];for(const area of cycleAreas){area.addEventListener('pointerenter',over);area.addEventListener('pointerleave',out);}for(const [name,fn]of [['focusin',focusIn],['focusout',focusOut]])root?.addEventListener(name,fn);
- return {setActive(next){view.setActive(next);if(active&&!next){view.cancelMotion();cycle.setHover(false);cycle.setFocus(false);}active=next;cycle.setActive(next&&model.state.status==='ready'&&model.state.statsStatus==='ready');if(active)load();},refresh:load,
-  stop(){stopped=true;active=false;cycle.destroy();++historyToken;++mapToken;root?.removeEventListener('click',click);root?.removeEventListener('change',change);for(const area of cycleAreas){area.removeEventListener('pointerenter',over);area.removeEventListener('pointerleave',out);}for(const [name,fn]of [['focusin',focusIn],['focusout',focusOut]])root?.removeEventListener(name,fn);view.destroy();},
+ return {prepareEntrance(){view.prepareEntrance?.();},setActive(next){view.setActive(next);if(active&&!next){view.cancelMotion();cycle.setHover(false);cycle.setFocus(false);}active=next;cycle.setActive(next&&model.state.status==='ready'&&model.state.statsStatus==='ready');if(active)load();},refresh:load,
+  stop(){stopped=true;active=false;cycle.destroy();++historyToken;++mapToken;root?.removeEventListener('click',click);root?.removeEventListener('change',change);root?.removeEventListener('pointerdown',pointerDown);root?.ownerDocument.removeEventListener('keydown',keyboard);for(const area of cycleAreas){area.removeEventListener('pointerenter',over);area.removeEventListener('pointerleave',out);}for(const [name,fn]of [['focusin',focusIn],['focusout',focusOut]])root?.removeEventListener(name,fn);view.destroy();},
  };
 }

@@ -51,7 +51,7 @@ test('saved-HTML new-patch end-to-end: no code/manual review edits -> detect -> 
 test('54 hero cards: full records survive more disclosure, mode-only heroes labelled, prior-update note cannot replace D.Mon balance date',()=>{
  const dom=new JSDOM('<body></body>'),prior=globalThis.document;globalThis.document=dom.window.document;
  try{let count=0;for(const h of heroes){const card=renderHeroPatch(actual,h.key);if(card){count++;assert(card.querySelector('[data-change-id]'));}}
-  assert.equal(count,27);const dmon=latestHeroPatch(actual,'dmon');assert.equal(dmon.patch.patchId,'patch-2026-11-03');assert.equal(dmon.changes.length,5);const card=renderHeroPatch(actual,'dmon');assert.equal(card.querySelectorAll('[data-change-id]').length,5);assert.equal(card.querySelector('.hero-patch-more').open,false);
+  assert.equal(count,27);const dmon=latestHeroPatch(actual,'dmon');assert.equal(dmon.patch.patchId,'patch-2026-11-03');assert.equal(dmon.changes.length,5);const card=renderHeroPatch(actual,'dmon');assert.equal(card.querySelectorAll('[data-change-id]').length,5);assert.equal(card.querySelector('.hero-patch-body').hidden,true);assert(card.querySelector('.hero-patch-primary'));
   assert.match(renderHeroPatch(actual,'cassidy').textContent,/스타디움 전용/);assert.equal(latestHeroPatch(actual,'cassidy'),null);assert.equal(latestHeroPatch(actual,'junker-queen','live-6v6').changes[0].before,450);assert.equal(renderHeroPatch(actual,'kiriko'),null);
  }finally{globalThis.document=prior;dom.window.close();}
 });

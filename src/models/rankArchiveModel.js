@@ -1,10 +1,10 @@
 import {createHeroModel} from './heroModel.js';
 import {RANK_POLICY_ID,rankDay} from './dailyRankModel.js';
-import {META_POLICY} from '../domain/meta.js';
 import {RECOMMENDATION_POLICY} from '../domain/recommendationPolicy.js';
+import {DEFAULT_META_POLICY} from '../domain/metaPolicies.js';
 import {statisticsQuery,validateFilters} from './statisticsModel.js';
-export const scorePolicyId=()=>[META_POLICY.version,...Object.values(META_POLICY.weights),META_POLICY.lowPickRate].join(':');
-export const recommendationPolicyId=()=>[RECOMMENDATION_POLICY.version,RECOMMENDATION_POLICY.sPickRate,RECOMMENDATION_POLICY.conditionalPickRate].join(':');
+export const scorePolicyId=()=>[DEFAULT_META_POLICY.version,...Object.values(DEFAULT_META_POLICY.weights),Object.entries(DEFAULT_META_POLICY.roleWeights??{}).map(([role,weights])=>role+'='+Object.values(weights).join(',')).sort().join(';'),DEFAULT_META_POLICY.lowPickRate].join(':');
+export const recommendationPolicyId=()=>['damage-s8-a8',DEFAULT_META_POLICY.version,'tank-support',RECOMMENDATION_POLICY.version,RECOMMENDATION_POLICY.sPickRate,RECOMMENDATION_POLICY.conditionalPickRate].join(':');
 export const RANK_ROLES=['tank','damage','support'];
 const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
 const onlyKeys=(value,allowed)=>value&&typeof value==='object'&&!Array.isArray(value)&&Object.keys(value).every(key=>allowed.includes(key));

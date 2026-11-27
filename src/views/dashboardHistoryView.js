@@ -1,6 +1,6 @@
 import {node} from './dom.js';
 import {t,formatLocale} from '../i18n/i18n.js';
-import {roleName} from './roleIcon.js';
+import {roleName,roleText} from './roleIcon.js';
 import {PATCH_CATALOG} from '../data/patchCatalog.js';
 import {verifiedPatch} from '../models/patchHistoryModel.js';
 const ns='http://www.w3.org/2000/svg';
@@ -19,7 +19,7 @@ function roleLegend(data){
  for(const role of ['tank','damage','support']){
   // Use the common latest observation day; never present an older valid value as current.
   const point=series.find(s=>s.role===role)?.points.findLast(p=>p.day===latestDay);
-  const entry=node('span',undefined,'dashboard-'+role),name=node('span',roleName(role)),value=node('strong',Number.isFinite(point?.value)?point.value.toFixed(1)+'%':t('미제공'));
+  const entry=node('span',undefined,'dashboard-'+role),name=roleText(role),value=node('strong',Number.isFinite(point?.value)?point.value.toFixed(1)+'%':t('미제공'));
   entry.dataset.legendRole=role;entry.append(name,value);legend.append(entry);
  }
  return legend;

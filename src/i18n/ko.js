@@ -5,6 +5,7 @@ import {ko as templates} from './templates.js';
 import common from './common.js';
 import {ko as extras} from './extras.js';
 export default {
+ 'role.tank':'돌격','role.damage':'공격','role.support':'지원',
  'patch.competitiveWidth':'6대6 자유 모드 경쟁전에서 챔피언 포함 그룹의 최대 등급 폭이 {before}에서 {after}으로 감소했습니다.',
  ...dashboard,
  'map.chartTitle':'{metric} · 전장 비교',
@@ -102,8 +103,11 @@ export default {
  'heroMaps.retry':"다시 확인",
  'heroMaps.lowPick':"낮은 픽률",
  'heroMaps.infoLabel':'추천 기준',
+ 'history.singleObservation':'관측 기록이 1개입니다',
+ 'patch.additionalChanges':'추가 변경사항 {count}건 보기',
  'heroMaps.info':'조회 가능한 전장 통계 기준이며, 일부 전장이나 현재 시즌 로테이션은 확인되지 않을 수 있습니다.',
  'heroMaps.observed':"조회: {time}",
  'heroMaps.refreshing':'이전 관측 유지 · 갱신 중',
  'heroMaps.stale':'갱신 실패 · 이전 관측',
+ 'meta.v22DamageRule':'v2.2 공격 · 승률 55%·픽률 35%·밴률 10%. 픽률 8% 미만은 최대 B이며, S는 기존 추가 자격도 충족해야 합니다.',
 };

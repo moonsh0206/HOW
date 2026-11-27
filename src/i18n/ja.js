@@ -2,6 +2,7 @@
 import {ja as extras} from './extras.js';
 import {ja as dashboard} from './dashboard.js';
 export default {
+ 'role.tank':'タンク','role.damage':'ダメージ','role.support':'サポート',
  'patch.competitiveWidth':'6対6オープンキュー：チャンピオンを含むグループの最大ランク幅が{before}から{after}に縮小。',
  ...dashboard,
   'map.chartTitle':'{metric}・マップ比較',
@@ -570,8 +571,6 @@ export default {
   "저장": "保存済み",
   " · 진행 중": "・進行中",
   "관측 정보": "観測情報",
-  "채운 점: 저장 · 테두리 점: 현재 조회(미저장)": "塗りつぶし：保存済み・輪郭のみ：現在の取得値（未保存）",
-  "점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다.": "破線は集計期間が異なる可能性のある観測同士の比較です。中間の値は生成しません。",
   "패치 후 첫 관측이며, 안정된 메타를 뜻하지 않습니다.": "パッチ後の最初の観測が安定したメタを示すとは限りません。",
   "시각은 HOW 관측 기준입니다. 원본 경기 집계 시각과 다르며 패치 미확인 자료는 일반 관측으로 표시합니다.": "時刻はHOWの観測時刻であり、元統計の集計時点ではありません。未確認のパッチは一般観測として表示します。",
   "관측 시각 (한국)": "観測時刻（KST）",
@@ -765,8 +764,11 @@ export default {
  'heroMaps.retry':"再試行",
  'heroMaps.lowPick':"低ピック率",
  'heroMaps.infoLabel':'おすすめの基準',
+ 'history.singleObservation':'観測記録は1件です',
+ 'patch.additionalChanges':'他の変更を表示（{count}件）',
  'heroMaps.info':'取得可能なマップ統計に基づきます。一部のマップや現在のシーズン対象マップは未確認の場合があります。',
  'heroMaps.observed':"取得: {time}",
  'heroMaps.refreshing':'前回の観測を表示・更新中',
  'heroMaps.stale':'更新失敗・前回の観測',
+ 'meta.v22DamageRule':'v2.2ダメージ：勝率55%・使用率35%・BAN率10%。使用率8%未満は最大B。Sには既存の追加条件も適用されます。',
 };

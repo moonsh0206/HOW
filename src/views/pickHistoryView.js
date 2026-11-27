@@ -48,7 +48,7 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
   if (state.status === 'loading') { panel.setAttribute('aria-busy','true'); panel.append(node('p',t("불러오는 중"))); if (!state.current) return panel; }
   if (state.status === 'error') { panel.append(node('p',t("message.01d57da2f363",{"0":(label)}), 'history-warning')); const retry = node('button',t("다시 시도")); retry.dataset.action = 'history-retry'; panel.append(retry); if (!state.current) return panel; }
   const data = state.result ?? { points: [], segments: [], warnings: [] };
-  if(data.points.length&&data.points.filter(p=>p.stored).length<2)panel.append(node('p',t("저장 이력 부족 · 변화 비교를 위한 기록 수집 중"),'history-availability'));
+  if(data.points.length===1)panel.append(node('p',t('history.singleObservation'),'history-availability'));
   if (data.warnings?.length) { panel.append(node('p', t("일부 기록이 누락되거나 조회에 실패했습니다. 표시된 관측값만 확인하세요."), 'history-warning')); const retry = node('button',t("이력 다시 확인")); retry.dataset.action = 'history-retry'; panel.append(retry); }
   if (!data.points.length) panel.append(node('p',t("기록 수집 중"), 'history-empty'));
   else {
@@ -64,8 +64,8 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     prepareChartMotion(panel,['history',filters,state.metric,state.days,data.points.map(p=>[p.time,rate(p),p.stored,p.current]),data.segments,data.comparisonSegments]);
     for (const tick of scale.ticks) { const yy = y({value:tick}); plot.append(svg('line',{x1:0,y1:yy,x2:600,y2:yy,class:'history-grid-line'})); }
     const trace=svg('g',{class:'history-trace'});
-    for (const [a,b] of data.segments) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','vector-effect':'non-scaling-stroke'}));
-    for (const [a,b] of data.comparisonSegments??[]) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','vector-effect':'non-scaling-stroke'}));
+    for (const [a,b] of data.segments) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-segment','data-connection':'observation-guide','data-patch-boundary':'false','vector-effect':'non-scaling-stroke'}));
+    for (const [a,b] of data.comparisonSegments??[]) trace.append(svg('line',{x1:x(a),y1:y(a),x2:x(b),y2:y(b),class:'history-comparison','data-connection':'patch-window-comparison','data-patch-boundary':String(a.sourcePatch!==b.sourcePatch),'vector-effect':'non-scaling-stroke'}));
     plot.append(trace);
     const selected = node('p', '', 'history-observation sr-only'); selected.setAttribute('role','status'); selected.setAttribute('aria-live','polite');
     const provenance=p=>(p.current?(p.stored?t("저장 이력 + 현재 조회"):t("현재 조회 · 저장 안 됨")):t("저장 이력"))+(p.composite?t(" · HOW 등급 균등 평균"):'');
@@ -74,13 +74,13 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     function choose(index) { if(index===selectedIndex)return;selectedIndex=index;const p = data.points[index]; selected.textContent = `${stamp(p.collectedAt)} · ${label} ${formatHistoryRate(rate(p))}% · ${p.current&&!p.stored?t("현재 조회"):t("저장")}`; selected.title = description(p); plot.querySelectorAll('.history-point').forEach((el,i)=>el.setAttribute('data-selected',String(i===index))); }
     const valueTip=valueTooltip(graph);
     const guide=svg('line',{class:'history-guide',y1:0,y2:180,visibility:'hidden'});plot.append(guide);
-    const pointLabel=p=>`${formatHistoryRate(rate(p))}%\n${formatHistoryTimestamp(p.collectedAt??p.time)??''}`.trim();
+    const pointLabel=p=>`${formatHistoryRate(rate(p))}%`;
     const showPoint=index=>{choose(index);const mark=plot.querySelectorAll('.history-point')[index];valueTip.show(pointLabel(data.points[index]),mark.querySelector('.history-dot'));guide.setAttribute('x1',x(data.points[index]));guide.setAttribute('x2',x(data.points[index]));guide.setAttribute('visibility','visible');};
     graph.addEventListener('pointerleave',()=>guide.setAttribute('visibility','hidden'));
     graph.addEventListener('keydown',event=>{if(event.key==='Escape')guide.setAttribute('visibility','hidden');});
     graph.addEventListener('focusout',event=>{if(!graph.contains(event.relatedTarget))guide.setAttribute('visibility','hidden');});
     data.points.forEach((p,index)=>{
-      const mark = svg('g',{class:'history-point',tabindex:0,role:'button','data-storage':p.current?(p.stored?'both':'browser'):'stored','data-representative':String(p.representative===true),'aria-label':description(p)});
+      const mark = svg('g',{class:'history-point',tabindex:0,role:'button','data-current':String(p.current===true),'data-storage':p.current?(p.stored?'both':'browser'):'stored','data-representative':String(p.representative===true),'aria-label':description(p)});
       const tooltip = svg('title',{}); tooltip.textContent = pointLabel(p);
       mark.append(tooltip,svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-hit','vector-effect':'non-scaling-stroke'}),svg('ellipse',{cx:x(p),cy:y(p),rx:6,ry:6,class:'history-dot','vector-effect':'non-scaling-stroke'}));
       mark.addEventListener('click',()=>showPoint(index)); mark.addEventListener('focus',()=>showPoint(index)); mark.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();showPoint(index);}}); mark.addEventListener('pointerenter',()=>showPoint(index)); plot.append(mark);
@@ -104,8 +104,6 @@ export function renderPickHistory(state = { status: 'idle', days: 7 }, filters) 
     const lastPoint=data.points.reduce((a,b)=>a.time>b.time?a:b),observedAt=formatHistoryTimestamp(lastPoint.collectedAt??lastPoint.time);
     if(observedAt)panel.append(node('p',t('dashboard.lastObservation',{time:observedAt.replace(/ KST$/,'')}),'history-last-observed'));
     const info=node('div',undefined,'history-info');
-    if(data.points.some(p=>p.current&&!p.stored)&&data.points.some(p=>p.stored))info.append(node('p',t("채운 점: 저장 · 테두리 점: 현재 조회(미저장)"),'history-observation'));
-    if(data.comparisonSegments?.length)info.append(node('p',t("점선은 관측값 비교이며 원본 집계 기간이 다를 수 있습니다. 중간 날짜의 값은 제공하지 않습니다."),'history-observation'));
     if(data.points.some(p=>p.verificationStatus==='verified'))info.append(node('p',t("패치 후 첫 관측이며, 안정된 메타를 뜻하지 않습니다."),'history-observation'));
     if(info.childElementCount)panel.append(info);
     const disclosure = node('div', undefined, 'history-records sr-only');

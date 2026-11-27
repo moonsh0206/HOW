@@ -4,12 +4,13 @@ import fs from 'node:fs';
 import { JSDOM } from 'jsdom';
 import { buildMetricHistory, withCurrentMetricHistory } from '../src/models/pickHistoryModel.js';
 import { DEFAULT_FILTERS } from '../src/models/statisticsModel.js';
+import {derivedProvenance} from '../src/models/statisticsProvenance.js';
 import { createHeroDetailView } from '../src/views/heroDetailView.js';
 import { normalizeHeroDetail } from '../src/models/heroDetailModel.js';
 import { createHeroModel } from '../src/models/heroModel.js';
 import { createRoutingController } from '../src/controllers/routingController.js';
 const now=Date.parse('2026-11-03T00:00:00Z');
-const snapshot=(time,record,patch='p1')=>({collectedAt:time,filters:{...DEFAULT_FILTERS},patch,records:[{hero:'genji',...record}]});
+const snapshot=(time,record,patch='p1')=>({provenance:derivedProvenance(DEFAULT_FILTERS),collectedAt:time,filters:{...DEFAULT_FILTERS},patch,records:[{hero:'genji',...record}]});
 test('three metric history: exact fields, zero/null, patch gaps, independent current values',()=>{
   const records=[snapshot('2026-11-02T00:00:00Z',{winRate:51,pickRate:12,banRate:0}),snapshot('2026-11-02T06:00:00Z',{winRate:52,pickRate:13,banRate:null})];
   for(const [metric,values] of [['winRate',[51,52]],['pickRate',[12,13]],['banRate',[0]]]){
@@ -19,7 +20,7 @@ test('three metric history: exact fields, zero/null, patch gaps, independent cur
     const statistics={filters:DEFAULT_FILTERS,fetchedAt:'2026-11-02T12:00:00Z',records:[{hero:'genji',winRate:53,pickRate:14,banRate:1}]};
     const state=withCurrentMetricHistory({metric,result},statistics,'genji',DEFAULT_FILTERS,metric);
     assert.equal(state.current.value,statistics.records[0][metric]);assert.equal(state.result.segments.length,result.segments.length);
-    assert.equal(buildMetricHistory(records.map(s=>({...s,patch:null})),'genji',DEFAULT_FILTERS,{now,metric}).segments.length,0);
+    assert.equal(buildMetricHistory(records.map(s=>({...s,patch:null})),'genji',DEFAULT_FILTERS,{now,metric}).segments.length,metric==='banRate'?0:1);
   }
   assert.throws(()=>buildMetricHistory([],'genji',DEFAULT_FILTERS,{now,metric:'tier'}));
 });

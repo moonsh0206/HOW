@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { JSDOM } from 'jsdom';
 import { DEFAULT_FILTERS, ALL_RANK_FILTERS, DIVISIONS, DIVISION_GROUPS, statisticsQuery, normalizeStatistics, validateFilters } from '../src/models/statisticsModel.js';
 import { normalizeHeroes, createHeroModel } from '../src/models/heroModel.js';
-import { attachMetaTiers } from '../src/domain/meta.js';
+import { attachMetaTiers, META_POLICY } from '../src/domain/meta.js';
 import { compareHeroCohorts } from '../src/domain/cohortComparison.js';
 import { classifyMeta } from '../src/domain/insights.js';
 import { createStatisticsService } from '../src/services/statisticsService.js';
@@ -57,7 +57,7 @@ test('captured API: Domina and Winston tied winrates are separated by role pick 
 });
 test('rank comparison: independent row calculation and model prevents explicitly mismatched cohort data', () => {
   const inputs = ['gold', 'emerald', 'diamond', 'master'].map(division => cohort(division));
-  const rows = compareHeroCohorts('genji', heroes, inputs);
+  const rows = compareHeroCohorts('genji', heroes, inputs, META_POLICY);
   rows.forEach((row, index) => assert.equal(row.hero.metaScore, attachMetaTiers(heroes, inputs[index].records).find(hero => hero.key === 'genji').metaScore));
   assert.throws(() => compareHeroCohorts('genji', heroes, [inputs[0], inputs[0]]));
   const model = createHeroModel(); model.state.heroes = heroes; model.state.statistics = cohort('all');

@@ -1,10 +1,13 @@
 import {storedRankChanges,rankChangeDiagnostic} from './rankArchiveModel.js';
 import {dailyRankChanges} from './dailyRankModel.js';
-import {label,localizedRecord} from '../i18n/i18n.js';
-import { attachMetaTiers,META_POLICY } from '../domain/meta.js';
-import {applyRecommendationPolicy,recommendationOrder} from '../domain/recommendationPolicy.js';
+import {label} from '../i18n/i18n.js';
+import {ROLE_NAMES as ROLES} from '../i18n/roles.js';
+import { attachMetaTiers } from '../domain/meta.js';
+import {recommendationOrder} from '../domain/recommendationPolicy.js';
+import {applyMetaRecommendation} from '../domain/metaV22Policy.js';
+import {DEFAULT_META_POLICY} from '../domain/metaPolicies.js';
 import { DEFAULT_FILTERS, statisticsQuery,isCompositeDivision,divisionMembers } from './statisticsModel.js';
-export const ROLES = localizedRecord({ tank: '돌격', damage: '공격', support: '지원' });
+export {ROLES};
 // Shared ordering for the full roster and dashboard, without changing filter state.
 export function compareHowTier(a,b) {
   const group=recommendationOrder(a)-recommendationOrder(b);if(group)return group;
@@ -39,7 +42,7 @@ export function normalizeHeroes(data) {
   });
 }
 
-export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
+export function createHeroModel(favorites = [],{metaPolicy=DEFAULT_META_POLICY}={}) {
   const state = { heroes: [], favorites: new Set(favorites), query: '', role: 'all', sort: 'tier-desc', favoritesOnly: false, status: 'loading', error: '', fetchedAt: null, statistics: null, statsStatus: 'idle', statsError: '', statsFilters: { ...DEFAULT_FILTERS }, previousSnapshot: null, snapshotStatus: 'idle', snapshotError: '' };
   state.metaPolicy=metaPolicy;
   const enriched = () => {
@@ -47,7 +50,7 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
     const matches = state.statistics?.filters && statisticsQuery(state.statistics.filters) === statisticsQuery(state.statsFilters);
     const records=matches?[...(state.statistics?.records??[])]:[];
     if(matches&&isCompositeDivision(state.statsFilters.division))for(const hero of state.heroes)if(!records.some(r=>r.hero===hero.key))records.push({hero:hero.key,winRate:null,pickRate:null,banRate:null,missingDivisions:divisionMembers(state.statsFilters.division)});
-    return attachMetaTiers(state.heroes,records,metaPolicy).map(applyRecommendationPolicy);
+    return attachMetaTiers(state.heroes,records,metaPolicy).map(hero=>applyMetaRecommendation(hero,metaPolicy));
   };
   return {
     state,
@@ -56,8 +59,8 @@ export function createHeroModel(favorites = [],{metaPolicy=META_POLICY}={}) {
     visibleHeroes() { return this.listSelection().heroes; },
     listSelection() {
       const selection=buildListSelection(this.sortedHeroes(),state);
-      const eligible=metaPolicy.version===META_POLICY.version&&state.sort==='tier-desc'&&state.role!=='all';
-      selection.rankDiagnostic=state.role==='all'?'role-all':state.sort!=='tier-desc'?'sort-ineligible':metaPolicy.version!==META_POLICY.version?'policy-mismatch':state.statsStatus==='loading'?'statistics-loading':['stale','error'].includes(state.statsStatus)?'statistics-unavailable':state.dailyRankStatus&&state.dailyRankStatus!=='ready'?state.dailyRankStatus:rankChangeDiagnostic({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role:state.role,sorted:this.sortedHeroes()});
+      const eligible=metaPolicy.version===DEFAULT_META_POLICY.version&&state.sort==='tier-desc'&&state.role!=='all';
+      selection.rankDiagnostic=state.role==='all'?'role-all':state.sort!=='tier-desc'?'sort-ineligible':metaPolicy.version!==DEFAULT_META_POLICY.version?'policy-mismatch':state.statsStatus==='loading'?'statistics-loading':['stale','error'].includes(state.statsStatus)?'statistics-unavailable':state.dailyRankStatus&&state.dailyRankStatus!=='ready'?state.dailyRankStatus:rankChangeDiagnostic({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role:state.role,sorted:this.sortedHeroes()});
       const changes=eligible&&state.dailyRankArchive?storedRankChanges({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role:state.role,sorted:this.sortedHeroes()}):eligible?dailyRankChanges({snapshots:state.dailyRankSnapshots??[],heroes:state.heroes,filters:state.statsFilters,role:state.role}):new Map();
       // Daily deltas compare the two stored observations, never today's live ordinal.
       // Legacy snapshot markers retain their original ordinal guard.

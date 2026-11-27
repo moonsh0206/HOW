@@ -35,7 +35,7 @@ export function createPlayerSearchView(root){
  renderPlayerSearch(root);
  let observer,roleCombo,roleHost,roleSelect;
  function roleFilter(selected='all'){
-  const options=PLAYER_ROLE_KEYS.map(value=>({value,label:value==='all'?t('player.roleAll'):ROLES[value]}));
+  const options=PLAYER_ROLE_KEYS.map(value=>({value,label:value==='all'?t('player.roleAll'):ROLES[value],labelKey:value==='all'?'player.roleAll':`role.${value}`}));
   if(!roleHost){roleHost=node('label',undefined,'player-role-filter');roleHost.append(node('span',t('player.roleLabel'),'sr-only'));roleSelect=node('select');roleSelect.id='player-hero-role';roleHost.htmlFor=roleSelect.id;roleHost.append(roleSelect);}
   roleHost.querySelector('.sr-only').textContent=t('player.roleLabel');
   roleSelect.replaceChildren(...options.map(choice=>{const option=node('option',choice.label);option.value=choice.value;return option;}));roleSelect.value=PLAYER_ROLE_KEYS.includes(selected)?selected:'all';

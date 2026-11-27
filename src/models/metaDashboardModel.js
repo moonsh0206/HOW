@@ -1,3 +1,4 @@
+import {DEFAULT_META_POLICY} from '../domain/metaPolicies.js';
 import {compareHowTier} from './heroModel.js';
 import {hotHeroes} from '../domain/insights.js';
 import {rateStatus,statisticsNeedsReview} from './statisticsQuality.js';
@@ -6,7 +7,6 @@ import {validatedProvenance,OBSERVATION_TOLERANCE_MS} from './statisticsProvenan
 import {verifiedPatch} from './patchHistoryModel.js';
 import {storedRankChanges} from './rankArchiveModel.js';
 import {dailyRankChanges} from './dailyRankModel.js';
-import {META_POLICY} from '../domain/meta.js';
 import {meanRoleRecords,ROLE_MEAN_VERSION,ROLE_MEAN_METHOD} from './roleMeanModel.js';
 
 export const DASHBOARD_ROLES=Object.freeze(['tank','damage','support']);
@@ -17,12 +17,14 @@ export function pickLeaders(heroes,metric='pickRate') {
 export function dashboardSelection(model,role='all',metric='pickRate') {
   const state=model.state;
   let matches=false;try{matches=statisticsQuery(state.statistics?.filters)===statisticsQuery(state.statsFilters);}catch{}
-  const current=state.statistics&&matches&&state.statsStatus==='ready'&&!state.statistics.stale?state.statistics:null;
+  // A same-cohort background refresh keeps its last successful observation visible.
+  // Loading a different cohort never borrows these records.
+  const current=state.statistics&&matches&&['ready','loading'].includes(state.statsStatus)&&!state.statistics.stale?state.statistics:null;
   const heroes=model.enrichedHeroes(),sorted=heroes.filter(h=>role==='all'||h.role===role).sort(compareHowTier);
   const hot=hotHeroes(heroes,current,state.previousSnapshot);
   const spotlight=hot.heroes[0]??(current?heroes.filter(h=>h.tier&&h.metaScore!=null&&!statisticsNeedsReview(h.statistics)).sort(compareHowTier)[0]:null);
   let changes=new Map();
-  if(current&&role!=='all'&&state.metaPolicy.version===META_POLICY.version){
+  if(current&&role!=='all'&&state.metaPolicy.version===DEFAULT_META_POLICY.version){
     changes=state.dailyRankArchive?storedRankChanges({archive:state.dailyRankArchive,heroes:state.heroes,filters:state.statsFilters,role,sorted}):dailyRankChanges({snapshots:state.dailyRankSnapshots??[],heroes:state.heroes,filters:state.statsFilters,role});
     changes=new Map([...changes].filter(([key,c])=>c.basis==='daily-observation'||sorted.findIndex(h=>h.key===key)+1===c.currentRank));
   }
